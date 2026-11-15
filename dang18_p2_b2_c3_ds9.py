@@ -145,10 +145,10 @@ def bt_dang18_p2_b2_c3_ds9(self):
         list_nb_da_1 = [nb_da_1_d, nb_da_1_s]
         loigiai_nb_1 = ('''Thay $g = 9,8$ và $\\mu = %s$ vào công thức, ta được $v = \\sqrt{2 \\cdot 9,8 \\cdot %s \\cdot s} = \\sqrt{%s \\cdot s}$.''' % (mu_str, mu_str, coef_str))
 
-        th_da_1_d = '\True Nếu vết trượt của xe $A$ dài $s_A = 10\text{ m}$ thì tốc độ của xe $A$ là $v_A = \sqrt{%s}\text{ m/s}$' % (str(round(coef_prod * 10, 1)).replace('.', ','))
+        th_da_1_d = '\\True Nếu vết trượt của xe $A$ dài $s_A = 10\text{ m}$ thì tốc độ của xe $A$ là $v_A = \sqrt{%s}\text{ m/s}$' % (str(round(coef_prod * 10, 1)).replace('.', ','))
         th_da_1_s = 'Nếu vết trượt của xe $A$ dài $s_A = 10\text{ m}$ thì tốc độ của xe $A$ là $v_A = %s\text{ m/s}$' % (str(round(coef_prod * 10, 1)).replace('.', ','))
         list_th_da_1 = [th_da_1_d, th_da_1_s]
-        loigiai_th_1 = ('''Thay $s_A = 10$ vào công thức $v = \sqrt{%s \cdot s}$, ta được $v_A = \sqrt{%s \cdot 10} = \sqrt{%s}\text{ (m/s)}$.''' % (coef_str, coef_str, str(round(coef_prod * 10, 1)).replace('.', ',')))
+        loigiai_th_1 = ('''Thay $s_A = 10$ vào công thức $v = \\sqrt{%s \\cdot s}$, ta được $v_A = \\sqrt{%s \\cdot 10} = \\sqrt{%s}\\text{ (m/s)}$.''' % (coef_str, coef_str, str(round(coef_prod * 10, 1)).replace('.', ',')))
 
         vd_da_1_d = '\\True Nếu vết trượt của xe $B$ dài gấp $%d$ lần vết trượt của xe $A$ ($s_B = %ds_A$) thì tốc độ của xe $B$ gấp $%d$ lần tốc độ của xe $A$' % (k_sq, k_sq, k_ratio)
         vd_da_1_s = 'Nếu vết trượt của xe $B$ dài gấp $%d$ lần vết trượt của xe $A$ ($s_B = %ds_A$) thì tốc độ của xe $B$ gấp $%d$ lần tốc độ của xe $A$' % (k_sq, k_sq, k_sq)
