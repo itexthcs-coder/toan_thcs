@@ -198,5 +198,5 @@ Xét tính đúng sai của các nhận xét về bài làm của bạn An:''' %
                '\\item ' + str(shuffled_solutions_vd[0]) + '\n' +
                '\\item ' + str(shuffled_solutions_vdc[0]) + '\n' +
                '\\end{enumEX}} \n' +
-               '\\end{ex}\n \end{minipage} \n\n')
+               '\\end{ex}\n \\end{minipage} \n\n')
     return content

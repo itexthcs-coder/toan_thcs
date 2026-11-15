@@ -162,5 +162,5 @@ def bt_dang19_p3_b2_c3_ds9(self):
                str(dapan) +
                '\\loigiai{ \n' +
                str(loigiai) + '}\n' +
-               '\\end{ex}\n \end{minipage} \n\n')
+               '\\end{ex}\n \\end{minipage} \n\n')
     return content
