@@ -141,11 +141,11 @@ def bt_dang16_p4_b2_c3_ds9(self):
         m_ratio = p ** 2
         w_ratio = q ** 2
         ans_ratio = Rational(q, p)
-
+    
         # Nội dung câu hỏi
-        noidungcauhoi = ('''Động năng $W_đ$ (tính bằng Jun, ký hiệu $\\text{J}$) của một vật có khối lượng $m$ ($\\text{kg}$) chuyển động với vận tốc $v$ ($\\text{m/s}$) được tính theo công thức $W_đ = \\dfrac{1}{2}mv^2$, từ đó suy ra vận tốc $v = \\sqrt{\\dfrac{2W_đ}{m}}$. Một ô tô tải và một ô tô con cùng di chuyển trên đường cao tốc. Biết khối lượng của ô tô tải gấp $%s$ lần khối lượng của ô tô con, nhưng động năng của ô tô tải lại gấp $%s$ lần động năng của ô tô con. Hỏi vận tốc của ô tô tải gấp bao nhiêu lần vận tốc của ô tô con?'''
+        noidungcauhoi = ('''Động năng $W_d$ (tính bằng Jun, ký hiệu J) của một vật có khối lượng $m$ (kg) chuyển động với vận tốc $v$ (m/s) được tính theo công thức $W_d = \\dfrac{1}{2}mv^2$, từ đó suy ra vận tốc $v = \\sqrt{\\dfrac{2W_d}{m}}$. Một ô tô tải và một ô tô con cùng di chuyển trên đường cao tốc. Biết khối lượng của ô tô tải gấp $%s$ lần khối lượng của ô tô con, nhưng động năng của ô tô tải lại gấp $%s$ lần động năng của ô tô con. Hỏi vận tốc của ô tô tải gấp bao nhiêu lần vận tốc của ô tô con?'''
                          % (m_ratio, w_ratio))
-
+    
         # Nội dung lời giải
         loigiai = ('''Gọi $m_1, W_1, v_1$ lần lượt là khối lượng, động năng, vận tốc của ô tô tải và $m_2, W_2, v_2$ lần lượt là khối lượng, động năng, vận tốc của ô tô con ($m_1, m_2, W_1, W_2 > 0$).\\\\
         Theo đề bài, ta có $m_1 = %sm_2$ và $W_1 = %sW_2$.\\\\
@@ -155,7 +155,7 @@ def bt_dang16_p4_b2_c3_ds9(self):
                    % (m_ratio, w_ratio,
                       w_ratio, m_ratio, w_ratio, m_ratio, q, p,
                       latex(ans_ratio)))
-
+    
     # Xuất câu hỏi tự luận
     content = ('\\begin{minipage}{\\textwidth}\n' +
                '\\begin{ex}\n' +
