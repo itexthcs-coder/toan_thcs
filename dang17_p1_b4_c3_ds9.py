@@ -138,13 +138,13 @@ def bt_dang17_p1_b4_c3_ds9(self):
         mau = x - x0
         
         # Các đáp án trắc nghiệm
-        du = ['$x \ne %s$' % latex(x0)]
+        du = ['$x \\ne %s$' % latex(x0)]
         da = random.choice(du)
         s = [
             '$x > %s$' % latex(x0),
-            '$x \ge %s$' % latex(x0),
+            '$x \\ge %s$' % latex(x0),
             '$x < %s$' % latex(x0),
-            'Với mọi $x \in \mathbb{R}$'
+            'Với mọi $x \\in \\mathbb{R}$'
         ]
         
         das1 = random.choice(s)
