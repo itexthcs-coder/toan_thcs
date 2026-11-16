@@ -24,14 +24,14 @@ if dang == '1':
     bien_so = random.choice(['a', 'x', 'm', 'y'])
     
     # Các đáp án trắc nghiệm
-    du = ['$\sqrt[3]{%s^3} = %s$' % (bien_so, bien_so)]
+    du = ['$\\sqrt[3]{%s^3} = %s$' % (bien_so, bien_so)]
     da = random.choice(du)
     s = [
-        '$\sqrt[3]{%s^3} = |%s|$' % (bien_so, bien_so),
-        '$(\sqrt[3]{%s})^3 = -%s$' % (bien_so, bien_so),
-        '$(\sqrt[3]{%s})^3 = 3%s$' % (bien_so, bien_so),
-        '$\sqrt[3]{%s^3} = -|%s|$' % (bien_so, bien_so),
-        '$(\sqrt[3]{%s})^3 = |%s|$' % (bien_so, bien_so)
+        '$\\sqrt[3]{%s^3} = |%s|$' % (bien_so, bien_so),
+        '$(\\sqrt[3]{%s})^3 = -%s$' % (bien_so, bien_so),
+        '$(\\sqrt[3]{%s})^3 = 3%s$' % (bien_so, bien_so),
+        '$\\sqrt[3]{%s^3} = -|%s|$' % (bien_so, bien_so),
+        '$(\\sqrt[3]{%s})^3 = |%s|$' % (bien_so, bien_so)
     ]
     
     das1 = random.choice(s)

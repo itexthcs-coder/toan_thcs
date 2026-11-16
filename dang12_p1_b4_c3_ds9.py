@@ -26,14 +26,14 @@ if dang == '1':
     so_ss = -(k - 1)
     
     # Các đáp án trắc nghiệm
-    du = ['$\sqrt[3]{%s} > %s$' % (latex(a), latex(so_ss))]
+    du = ['$\\sqrt[3]{%s} > %s$' % (latex(a), latex(so_ss))]
     da = random.choice(du)
     s = [
-        '$\sqrt[3]{-27} < \sqrt[3]{-8}$',
-        '$\sqrt[3]{125} > 4$',
-        '$\sqrt[3]{0,008} = 0,2$',
-        '$\sqrt[3]{64} = 4$',
-        '$\sqrt[3]{-1} > -2$'
+        '$\\sqrt[3]{-27} < \\sqrt[3]{-8}$',
+        '$\\sqrt[3]{125} > 4$',
+        '$\\sqrt[3]{0,008} = 0,2$',
+        '$\\sqrt[3]{64} = 4$',
+        '$\\sqrt[3]{-1} > -2$'
     ]
     
     das1 = random.choice(s)

@@ -26,14 +26,14 @@ if dang == '1':
     bt = a*x - b
     
     # Các đáp án trắc nghiệm
-    du = ['$\sqrt[3]{%s}$' % latex(bt)]
+    du = ['$\\\sqrt[3]{%s}$' % latex(bt)]
     da = random.choice(du)
     s = [
-        '$\sqrt{%s}$' % latex(bt),
-        '$3\sqrt{%s}$' % latex(bt),
+        '$\\sqrt{%s}$' % latex(bt),
+        '$3\\sqrt{%s}$' % latex(bt),
         '$(%s)^3$' % latex(bt),
-        '$\frac{1}{3}(%s)$' % latex(bt),
-        '$\sqrt[3]{%s}$' % latex(a + b)
+        '$\\frac{1}{3}(%s)$' % latex(bt),
+        '$\\sqrt[3]{%s}$' % latex(a + b)
     ]
     
     das1 = random.choice(s)
@@ -56,7 +56,7 @@ if dang == '1':
     random.shuffle(list_1)
     
     # Nội dung lời giải
-    loigiai = ('''Căn thức bậc ba là biểu thức có dạng $\\sqrt[3]{A}$, trong đó $A$ là một biểu thức đại số. Do đó $\\sqrt[3]{%s}$ là căn thức bậc ba.'''
+    loigiai = ('''Căn thức bậc ba là biểu thức có dạng $\\sqrt[3]{A}$, trong đó $A$ là một biểu thức đại số. Do đó $\\qrt[3]{%s}$ là căn thức bậc ba.'''
                % latex(bt))
 
 # Xuất câu trắc nghiệm
