@@ -143,23 +143,7 @@ def bt_dang20_p4_b2_c4_hh9(self):
         cv_val = kc_km * (360.0 / deg_val)
         cv_str = str(int(Decimal(str(cv_val)).quantize(Decimal('1'), rounding=ROUND_HALF_UP)))
 
-        hinhve = ('''\\begin{center}
-    \\begin{tikzpicture}[scale=1, font=\\footnotesize, line join=round, line cap=round, >=stealth]
-    \\coordinate (O) at (0,0);
-    \\draw[line width=1pt] (O) circle (1.6);
-    \\coordinate (S) at (1.51,0.52);
-    \\coordinate (A) at (1.28,0.96);
-    \\coordinate (H) at (1.68,1.26);
-    \\coordinate (B) at (1.13,1.11);
-    \\draw[line width=1pt] (O)--(S) (O)--(H) (H)--(B);
-    \\draw[line width=1pt, dashed] (S)--(2.7,0.93) (H)--(2.7,2.02);
-    \\fill (O) circle (1pt) node[below left] {$O$};
-    \\fill (S) circle (1pt) node[below right] {$S$};
-    \\fill (A) circle (1pt) node[below right] {$A$};
-    \\fill (H) circle (1pt) node[above] {$H$};
-    \\fill (B) circle (1pt) node[above left] {$B$};
-    \\end{tikzpicture}
-    \\end{center}''')
+
 
         # Nội dung câu hỏi
         noidungcauhoi = ('''Vào khoảng năm 200 trước Công nguyên, nhà toán học và thiên văn học người Hy Lạp Eratosthenes đã ước lượng chu vi của Trái Đất nhờ hai quan sát vào đúng trưa ngày Hạ chí (21/6): \\\\
@@ -167,8 +151,7 @@ def bt_dang20_p4_b2_c4_hh9(self):
     - Cùng lúc đó tại thành phố Alexandria ($A$) cách Syene $%s\\text{ km}$, một cột tháp thẳng đứng $AH$ cao $%s\\text{ m}$ đổ bóng trên mặt đất $AB$ dài $%s\\text{ m}$ (như hình vẽ). \\\\
     Coi các tia nắng Mặt Trời chiếu tới Trái Đất là song song, mặt đất tại chân tháp vuông góc với thân tháp và Trái Đất có dạng hình cầu tâm $O$. \\\\
     a) Tính số đo góc ở tâm $\\widehat{SOA}$ chắn cung kinh tuyến từ Syene đến Alexandria (làm tròn đến phút). \\\\
-    b) Từ kết quả trên, hãy trình bày cách tính và ước lượng chu vi của Trái Đất (làm tròn đến hàng đơn vị kilômét).
-    %s''' % (kc_km, thap_m, bong_str, hinhve))
+    b) Từ kết quả trên, hãy trình bày cách tính và ước lượng chu vi của Trái Đất (làm tròn đến hàng đơn vị kilômét).''' % (kc_km, thap_m, bong_str))
 
         # Nội dung lời giải
         loigiai = ('''\\begin{enumEX}[a)]{1}

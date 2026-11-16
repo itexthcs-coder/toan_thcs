@@ -147,27 +147,10 @@ def bt_dang20_p3_b2_c4_hh9(self):
         kq = number.quantize(Decimal('1'), rounding=ROUND_HALF_UP)
         kq_str = str(kq)
 
-        hinhve = ('''\\begin{center}
-    \\begin{tikzpicture}[scale=1, font=\\footnotesize, line join=round, line cap=round, >=stealth]
-    \\coordinate (O) at (0,0);
-    \\draw[line width=1pt] (O) circle (1.6);
-    \\coordinate (S) at (1.51,0.52);
-    \\coordinate (A) at (1.28,0.96);
-    \\coordinate (H) at (1.68,1.26);
-    \\coordinate (B) at (1.13,1.11);
-    \\draw[line width=1pt] (O)--(S) (O)--(H) (H)--(B);
-    \\draw[line width=1pt, dashed] (S)--(2.7,0.93) (H)--(2.7,2.02);
-    \\fill (O) circle (1pt) node[below left] {$O$};
-    \\fill (S) circle (1pt) node[below right] {$S$};
-    \\fill (A) circle (1pt) node[below right] {$A$};
-    \\fill (H) circle (1pt) node[above] {$H$};
-    \\fill (B) circle (1pt) node[above left] {$B$};
-    \\end{tikzpicture}
-    \\end{center}''')
+
 
         # Nội dung câu hỏi
-        noidungcauhoi = ('''Vào trưa ngày Hạ chí, tia sáng Mặt Trời chiếu thẳng đứng xuống đáy giếng tại thành phố Syene ($S$), trong khi tại thành phố Alexandria ($A$) cách đó $%s\\text{ km}$, một tháp thẳng đứng $AH$ cao $%s\\text{ m}$ có bóng trên mặt đất $AB$ dài $%s\\text{ m}$ (như hình vẽ). Dựa vào số liệu trên và lấy $\\pi \\approx 3,14$, hãy ước lượng bán kính của Trái Đất theo đơn vị kilômét (làm tròn kết quả đến hàng đơn vị).
-    %s''' % (kc_km, thap_m, bong_str, hinhve))
+        noidungcauhoi = ('''Vào trưa ngày Hạ chí, tia sáng Mặt Trời chiếu thẳng đứng xuống đáy giếng tại thành phố Syene ($S$), trong khi tại thành phố Alexandria ($A$) cách đó $%s\\text{ km}$, một tháp thẳng đứng $AH$ cao $%s\\text{ m}$ có bóng trên mặt đất $AB$ dài $%s\\text{ m}$ (như hình vẽ). Dựa vào số liệu trên và lấy $\\pi \\approx 3,14$, hãy ước lượng bán kính của Trái Đất theo đơn vị kilômét (làm tròn kết quả đến hàng đơn vị).''' % (kc_km, thap_m, bong_str))
 
         # Nội dung lời giải
         loigiai = ('''Xét tam giác $HAB$ vuông tại $A$, ta có $\\tan \\widehat{AHB} = \\dfrac{AB}{AH} = \\dfrac{%s}{%s} = 0,124 \\Rightarrow \\widehat{AHB} \\approx %s^\\circ$.\\\\
