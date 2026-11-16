@@ -56,7 +56,7 @@ if dang == '1':
     random.shuffle(list_1)
     
     # Nội dung lời giải
-    loigiai = ('''Căn thức bậc ba là biểu thức có dạng $\\sqrt[3]{A}$, trong đó $A$ là một biểu thức đại số. Do đó $\\qrt[3]{%s}$ là căn thức bậc ba.'''
+    loigiai = ('''Căn thức bậc ba là biểu thức có dạng $\\sqrt[3]{A}$, trong đó $A$ là một biểu thức đại số. Do đó $\\sqrt[3]{%s}$ là căn thức bậc ba.'''
                % latex(bt))
 
 # Xuất câu trắc nghiệm
