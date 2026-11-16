@@ -165,10 +165,10 @@ def bt_dang1_p4_b1_c1_ds9(self):
     Vậy xưởng đã may được $%s$ áo sơ mi và $%s$ quần âu.''' % (a1_s, b1_s, c1, a1_s, b1_s, c1, a2_s, b2_s, c2, a2_s, b2_s, c2, a1_s, b1_s, c1, a2_s, b2_s, c2, x_val, y_val, x_val, y_val))
     
     # Xuất câu hỏi với đáp án và lời giải đã được xáo trộn
-    content = ('\\begin{minipage}{\\textwidth} \\n'
-               '\\begin{ex}\\n'+
+    content = ('\\begin{minipage}{\\textwidth} \n'
+               '\\begin{ex}\n'+
                str(noidungcauhoi)+
-               '\\loigiai{ \\n' +str(loigiai)+'}\\n'
-               '\\end{ex}\\n'
-               '\\end{minipage} \\n\\n')
+               '\\loigiai{ \n' +str(loigiai)+'}\n'
+               '\\end{ex}\n'
+               '\\end{minipage} \n\n')
     return content

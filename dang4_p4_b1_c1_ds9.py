@@ -152,10 +152,10 @@ def bt_dang4_p4_b1_c1_ds9(self):
     Vậy cửa hàng đã nhập $%s$ chiếc $43$ inch và $%s$ chiếc $55$ inch.''' % (tong_so, tong_so, tong_so, gia_1, gia_2, tong_von, gia_1, gia_2, tong_von, tong_so, gia_1, gia_2, tong_von, x_val, y_val, x_val, y_val))
     
     # Xuất câu hỏi với đáp án và lời giải đã được xáo trộn
-    content = ('\\begin{minipage}{\\textwidth} \\n'
-               '\\begin{ex}\\n'+
+    content = ('\\begin{minipage}{\\textwidth} \n'
+               '\\begin{ex}\n'+
                str(noidungcauhoi)+
-               '\\loigiai{ \\n' +str(loigiai)+'}\\n'
-               '\\end{ex}\\n'
-               '\\end{minipage} \\n\\n')
+               '\\loigiai{ \n' +str(loigiai)+'}\n'
+               '\\end{ex}\n'
+               '\\end{minipage} \n\n')
     return content

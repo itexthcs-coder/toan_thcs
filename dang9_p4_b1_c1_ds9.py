@@ -151,10 +151,10 @@ def bt_dang9_p4_b1_c1_ds9(self):
     Vậy nhà trường đã thuê $%s$ xe $%s$ chỗ và $%s$ xe $%s$ chỗ.''' % (c1, c2, tong_xe, tong_xe, tong_xe, c1, c1, c2, c2, tong_hs, c1, c2, tong_hs, tong_xe, c1, c2, tong_hs, x_val, y_val, x_val, c1, y_val, c2))
     
     # Xuất câu hỏi với đáp án và lời giải đã được xáo trộn
-    content = ('\\begin{minipage}{\\textwidth} \\n'
-               '\\begin{ex}\\n'+
+    content = ('\\begin{minipage}{\\textwidth} \n'
+               '\\begin{ex}\n'+
                str(noidungcauhoi)+
-               '\\loigiai{ \\n' +str(loigiai)+'}\\n'
-               '\\end{ex}\\n'
-               '\\end{minipage} \\n\\n')
+               '\\loigiai{ \n' +str(loigiai)+'}\n'
+               '\\end{ex}\n'
+               '\\end{minipage} \n\n')
     return content

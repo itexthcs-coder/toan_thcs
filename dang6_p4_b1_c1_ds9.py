@@ -158,10 +158,10 @@ def bt_dang6_p4_b1_c1_ds9(self):
     Vậy cần lấy $%s$ gam thỏi thứ nhất và $%s$ gam thỏi thứ hai.''' % (tong, tong, tong, p1, p1/100, p2, p2/100, p3, tong, int(p3*tong/100), p1/100, p2/100, int(p3*tong/100), tong, p1/100, p2/100, int(p3*tong/100), x_val, y_val, x_val, y_val))
     
     # Xuất câu hỏi với đáp án và lời giải đã được xáo trộn
-    content = ('\\begin{minipage}{\\textwidth} \\n'
-               '\\begin{ex}\\n'+
+    content = ('\\begin{minipage}{\\textwidth} \n'
+               '\\begin{ex}\n'+
                str(noidungcauhoi)+
-               '\\loigiai{ \\n' +str(loigiai)+'}\\n'
-               '\\end{ex}\\n'
-               '\\end{minipage} \\n\\n')
+               '\\loigiai{ \n' +str(loigiai)+'}\n'
+               '\\end{ex}\n'
+               '\\end{minipage} \n\n')
     return content

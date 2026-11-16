@@ -158,10 +158,10 @@ def bt_dang8_p4_b1_c1_ds9(self):
     Vậy cần ăn $%s$ gam thực phẩm A và $%s$ gam thực phẩm B.''' % (pA, pA/100, cA, cA/100, pB, pB/100, cB, cB/100, prot, pA/100, pB/100, prot, carb, cA/100, cB/100, carb, pA/100, pB/100, prot, cA/100, cB/100, carb, x_val, y_val, x_val, y_val))
     
     # Xuất câu hỏi với đáp án và lời giải đã được xáo trộn
-    content = ('\\begin{minipage}{\\textwidth} \\n'
-               '\\begin{ex}\\n'+
+    content = ('\\begin{minipage}{\\textwidth} \n'
+               '\\begin{ex}\n'+
                str(noidungcauhoi)+
-               '\\loigiai{ \\n' +str(loigiai)+'}\\n'
-               '\\end{ex}\\n'
-               '\\end{minipage} \\n\\n')
+               '\\loigiai{ \n' +str(loigiai)+'}\n'
+               '\\end{ex}\n'
+               '\\end{minipage} \n\n')
     return content

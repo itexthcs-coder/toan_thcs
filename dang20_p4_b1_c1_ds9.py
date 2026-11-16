@@ -153,10 +153,10 @@ def bt_dang20_p4_b1_c1_ds9(self):
     Vậy có $%s$ tờ $200.000$ đồng và $%s$ tờ $500.000$ đồng.''' % (tt_s, int(t_tien * 1000000), t_to, t_to, t_to, int(t_tien * 1000000), int(t_tien * 1000000), int(t_tien * 10), t_to, int(t_tien * 10), x_val, y_val, x_val, y_val))
     
     # Xuất câu hỏi với đáp án và lời giải đã được xáo trộn
-    content = ('\\begin{minipage}{\\textwidth} \\n'
-               '\\begin{ex}\\n'+
+    content = ('\\begin{minipage}{\\textwidth} \n'
+               '\\begin{ex}\n'+
                str(noidungcauhoi)+
-               '\\loigiai{ \\n' +str(loigiai)+'}\\n'
-               '\\end{ex}\\n'
-               '\\end{minipage} \\n\\n')
+               '\\loigiai{ \n' +str(loigiai)+'}\n'
+               '\\end{ex}\n'
+               '\\end{minipage} \n\n')
     return content

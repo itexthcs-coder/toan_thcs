@@ -160,10 +160,10 @@ def bt_dang3_p4_b1_c1_ds9(self):
     Vậy vận tốc ô tô là $%s$ km/h, vận tốc xe máy là $%s$ km/h.''' % (t1_s, t1_s, t1_s, S, t2_s, t3_s, t2_s, t3_s, t23_s, t23_s, t3_s, S, t1_s, t1_s, S, t23_s, t3_s, S, x_val, y_val, x_val, y_val))
     
     # Xuất câu hỏi với đáp án và lời giải đã được xáo trộn
-    content = ('\\begin{minipage}{\\textwidth} \\n'
-               '\\begin{ex}\\n'+
+    content = ('\\begin{minipage}{\\textwidth} \n'
+               '\\begin{ex}\n'+
                str(noidungcauhoi)+
-               '\\loigiai{ \\n' +str(loigiai)+'}\\n'
-               '\\end{ex}\\n'
-               '\\end{minipage} \\n\\n')
+               '\\loigiai{ \n' +str(loigiai)+'}\n'
+               '\\end{ex}\n'
+               '\\end{minipage} \n\n')
     return content

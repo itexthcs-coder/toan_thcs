@@ -160,10 +160,10 @@ def bt_dang10_p4_b1_c1_ds9(self):
     Vậy tháng trước nhà A trả $%s$ triệu đồng, nhà B trả $%s$ triệu đồng.''' % (tt_s, tt_s, tt_s, giam_A, giam_A, str((100-giam_A)/100).replace('.', ','), tang_B, tang_B, str((100+tang_B)/100).replace('.', ','), ts_s, str((100-giam_A)/100).replace('.', ','), str((100+tang_B)/100).replace('.', ','), ts_s, tt_s, str((100-giam_A)/100).replace('.', ','), str((100+tang_B)/100).replace('.', ','), ts_s, str(x_val).replace('.', ','), str(y_val).replace('.', ','), str(x_val).replace('.', ','), str(y_val).replace('.', ',')))
     
     # Xuất câu hỏi với đáp án và lời giải đã được xáo trộn
-    content = ('\\begin{minipage}{\\textwidth} \\n'
-               '\\begin{ex}\\n'+
+    content = ('\\begin{minipage}{\\textwidth} \n'
+               '\\begin{ex}\n'+
                str(noidungcauhoi)+
-               '\\loigiai{ \\n' +str(loigiai)+'}\\n'
+               '\\loigiai{ \n' +str(loigiai)+'}\n'
                '\\end{ex}\\n'
-               '\\end{minipage} \\n\\n')
+               '\\end{minipage} \n\n')
     return content

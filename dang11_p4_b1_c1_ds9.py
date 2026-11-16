@@ -156,10 +156,10 @@ def bt_dang11_p4_b1_c1_ds9(self):
     Vậy số phút gọi trong tháng là $%s$ phút và số tiền phải trả là $%s$ đồng.''' % (tb1, phi1, tb2, phi2, phi1, tb1, phi2, tb2, phi1 - phi2, tb2 - tb1, x_val, x_val, tb1, phi1, x_val, y_val, x_val, y_val))
     
     # Xuất câu hỏi với đáp án và lời giải đã được xáo trộn
-    content = ('\\begin{minipage}{\\textwidth} \\n'
-               '\\begin{ex}\\n'+
+    content = ('\\begin{minipage}{\\textwidth} \n'
+               '\\begin{ex}\n'+
                str(noidungcauhoi)+
-               '\\loigiai{ \\n' +str(loigiai)+'}\\n'
-               '\\end{ex}\\n'
-               '\\end{minipage} \\n\\n')
+               '\\loigiai{ \n' +str(loigiai)+'}\n'
+               '\\end{ex}\n'
+               '\\end{minipage} \n\n')
     return content

@@ -161,10 +161,10 @@ def bt_dang15_p4_b1_c1_ds9(self):
     Vậy lò đã làm được $%s$ mẻ bánh ngọt và $%s$ mẻ bánh mặn.''' % (bn_s, bm_s, t_bot, bn_s, bm_s, t_bot, dn_s, dm_s, t_duong, dn_s, dm_s, t_duong, bn_s, bm_s, t_bot, dn_s, dm_s, t_duong, x_val, y_val, x_val, y_val))
     
     # Xuất câu hỏi với đáp án và lời giải đã được xáo trộn
-    content = ('\\begin{minipage}{\\textwidth} \\n'
-               '\\begin{ex}\\n'+
+    content = ('\\begin{minipage}{\\textwidth} \n'
+               '\\begin{ex}\n'+
                str(noidungcauhoi)+
-               '\\loigiai{ \\n' +str(loigiai)+'}\\n'
-               '\\end{ex}\\n'
-               '\\end{minipage} \\n\\n')
+               '\\loigiai{ \n' +str(loigiai)+'}\n'
+               '\\end{ex}\n'
+               '\\end{minipage} \n\n')
     return content

@@ -168,10 +168,10 @@ def bt_dang2_p4_b1_c1_ds9(self):
     Vậy nếu chảy riêng, vòi một cần $%s$ giờ, vòi hai cần $%s$ giờ.''' % (time_str, tu_t0, mau_t0, tu_t0, mau_t0, tu_t0, mau_t0, mau_t0, tu_t0, mau_t0, tu_t0, t1, t2, tu, mau, t1, t2, tu, mau, mau_t0, tu_t0, t1, t2, tu, mau, x_val, y_val, x_val, y_val, x_val, y_val))
     
     # Xuất câu hỏi với đáp án và lời giải đã được xáo trộn
-    content = ('\\begin{minipage}{\\textwidth} \\n'
-               '\\begin{ex}\\n'+
+    content = ('\\begin{minipage}{\\textwidth} \n'
+               '\\begin{ex}\n'+
                str(noidungcauhoi)+
-               '\\loigiai{ \\n' +str(loigiai)+'}\\n'
-               '\\end{ex}\\n'
-               '\\end{minipage} \\n\\n')
+               '\\loigiai{ \n' +str(loigiai)+'}\n'
+               '\\end{ex}\n'
+               '\\end{minipage} \n\n')
     return content

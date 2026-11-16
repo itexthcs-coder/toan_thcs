@@ -154,10 +154,10 @@ def bt_dang17_p4_b1_c1_ds9(self):
     Vậy lúc đầu có $%s$ liều loại A và $%s$ liều loại B.''' % (pA, str(pA/100).replace('.', ','), pB, str(pB/100).replace('.', ','), t_dung, str(pA/100).replace('.', ','), str(pB/100).replace('.', ','), t_dung, str(pA/100).replace('.', ','), str(pB/100).replace('.', ','), t_dung, x_val, y_val, x_val, y_val))
     
     # Xuất câu hỏi với đáp án và lời giải đã được xáo trộn
-    content = ('\\begin{minipage}{\\textwidth} \\n'
-               '\\begin{ex}\\n'+
+    content = ('\\begin{minipage}{\\textwidth} \n'
+               '\\begin{ex}\n'+
                str(noidungcauhoi)+
-               '\\loigiai{ \\n' +str(loigiai)+'}\\n'
-               '\\end{ex}\\n'
-               '\\end{minipage} \\n\\n')
+               '\\loigiai{ \n' +str(loigiai)+'}\n'
+               '\\end{ex}\n'
+               '\\end{minipage} \n\n')
     return content
