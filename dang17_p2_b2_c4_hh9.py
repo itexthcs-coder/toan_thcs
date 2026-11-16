@@ -125,7 +125,7 @@ from PyQt5.QtCore import Qt
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
 from matplotlib.figure import Figure
 from mpl_toolkits.mplot3d import Axes3D  # Cần cho 3D
-
+from decimal import Decimal, ROUND_HALF_UP
 
 def bt_dang17_p2_b2_c4_hh9(self):
     rong_str = '4,4'
@@ -133,41 +133,41 @@ def bt_dang17_p2_b2_c4_hh9(self):
     nua_str = '2,2'
     mai_val = math.sqrt(1.8**2 + 2.2**2)
     mai_str = str(Decimal(str(mai_val)).quantize(Decimal('0.01'), rounding=ROUND_HALF_UP)).replace('.', ',')
-
+    
     noidungcauhoi = ('''Một chiếc lều dã ngoại có mặt cắt ngang là một tam giác cân với bề rộng đáy lều bằng $%s\\text{ m}$ và chiều cao trụ chống thẳng đứng ở chính giữa bằng $%s\\text{ m}$. Gọi $\\alpha$ là góc tạo bởi mái lều và mặt đất. Xét tính đúng sai của các khẳng định sau:'''
                      % (rong_str, cao_str))
-
+    
     # a)
     nb_da_1_d = '\\True Chân trụ chống chính giữa cách mỗi mép cọc neo hai bên một khoảng bằng $%s\\text{ m}$' % nua_str
     nb_da_1_s = 'Chân trụ chống chính giữa cách mỗi mép cọc neo hai bên một khoảng bằng $4,4\\text{ m}$'
     list_nb_da_1 = [nb_da_1_d, nb_da_1_s]
     loigiai_nb_1 = ('''Trong tam giác cân, đường cao đồng thời là đường trung tuyến nên chân trụ chống cách mỗi mép cọc neo hai bên là $\\dfrac{4,4}{2} = %s\\text{ (m)}$.''' % nua_str)
     list_nb_2 = [loigiai_nb_1]
-
+    
     # b)
     th_da_1_d = '\\True Giá trị của $\\tan \\alpha$ bằng $\\dfrac{9}{11}$'
     th_da_1_s = 'Giá trị của $\\tan \\alpha$ bằng $\\dfrac{11}{9}$'
     list_th_da_1 = [th_da_1_d, th_da_1_s]
     loigiai_th_1 = ('''Xét tam giác vuông tạo bởi trụ chống, nửa đáy lều và mái lều, ta có $\\tan \\alpha = \\dfrac{1,8}{2,2} = \\dfrac{18}{22} = \\dfrac{9}{11}$.''')
     list_th_2 = [loigiai_th_1]
-
+    
     # c)
-    vd_da_1_d = '\\True Số đo góc nghiêng $\\alpha$ của mái lều (làm tròn đến phút) bằng $39^\\circ 17\''
-    vd_da_1_s = 'Số đo góc nghiêng $\\alpha$ của mái lều (làm tròn đến phút) bằng $50^\\circ 43\''
+    vd_da_1_d = '\\True Số đo góc nghiêng $\\alpha$ của mái lều (làm tròn đến phút) bằng $39^\\circ 17\'$'
+    vd_da_1_s = 'Số đo góc nghiêng $\\alpha$ của mái lều (làm tròn đến phút) bằng $50^\\circ 43\'$'
     list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
     loigiai_vd_1 = ('''Từ $\\tan \\alpha = \\dfrac{9}{11}$, sử dụng máy tính cầm tay ta tìm được $\\alpha \\approx 39,289^\\circ \\approx 39^\\circ 17'$.''')
     list_vd_2 = [loigiai_vd_1]
-
+    
     # d)
     vdc_da_1_d = '\\True Độ dài phần bạt căng thẳng một bên mái lều xấp xỉ bằng $%s\\text{ m}$' % mai_str
     vdc_da_1_s = 'Độ dài phần bạt căng thẳng một bên mái lều nhỏ hơn $2,8\\text{ m}$'
     list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
     loigiai_vdc_1 = ('''Áp dụng định lí Pythagore, độ dài một bên mái lều là $\\sqrt{1,8^2 + 2,2^2} = \\sqrt{8,08} \\approx %s\\text{ (m)} > 2,8\\text{ m}$.''' % mai_str)
     list_vdc_2 = [loigiai_vdc_1]
-
+    
     def count_true_answers(answers):
         return sum('\\True' in ans for ans in answers)
-
+    
     while True:
         nb_da_1 = random.choice(list_nb_da_1)
         th_da_1 = random.choice(list_th_da_1)
@@ -176,27 +176,27 @@ def bt_dang17_p2_b2_c4_hh9(self):
         answers = [nb_da_1, th_da_1, vd_da_1, vdc_da_1]
         if 1 <= count_true_answers(answers) <= 3:
             break
-
+    
     list_nb_1 = [nb_da_1]
     list_th_1 = [th_da_1]
     list_vd_1 = [vd_da_1]
     list_vdc_1 = [vdc_da_1]
-
+    
     combined_nb = list(zip(list_nb_1, list_nb_2))
     combined_th = list(zip(list_th_1, list_th_2))
     combined_vd = list(zip(list_vd_1, list_vd_2))
     combined_vdc = list(zip(list_vdc_1, list_vdc_2))
-
+    
     random.shuffle(combined_nb)
     random.shuffle(combined_th)
     random.shuffle(combined_vd)
     random.shuffle(combined_vdc)
-
+    
     shuffled_answers_nb, shuffled_solutions_nb = zip(*combined_nb)
     shuffled_answers_th, shuffled_solutions_th = zip(*combined_th)
     shuffled_answers_vd, shuffled_solutions_vd = zip(*combined_vd)
     shuffled_answers_vdc, shuffled_solutions_vdc = zip(*combined_vdc)
-
+    
     content = ('\\begin{minipage}{\\textwidth} \n' +
                '\\begin{ex}\n' +
                str(noidungcauhoi) + '\n' +
