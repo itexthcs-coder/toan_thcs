@@ -155,5 +155,5 @@ $S = 1 + 1 + 1 + 1 - %s = 4 - %s = %s$.'''
                str(noidungcauhoi) +
                '\\loigiai{ \n' +
                str(loigiai) + '}\n' +
-               '\\end{ex}\n \end{minipage} \n\n')
+               '\\end{ex}\n \\end{minipage} \n\n')
     return content

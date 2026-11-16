@@ -159,5 +159,5 @@ $P = \\dfrac{%s \\cdot \\dfrac{1}{2} + %s\\sqrt{3} \\cdot \\dfrac{\\sqrt{3}}{2}}
                str(noidungcauhoi) +
                '\\loigiai{ \n' +
                str(loigiai) + '}\n' +
-               '\\end{ex}\n \end{minipage} \n\n')
+               '\\end{ex}\n \\end{minipage} \n\n')
     return content

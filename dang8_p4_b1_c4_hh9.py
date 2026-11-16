@@ -176,5 +176,5 @@ $\\cot \\alpha = \\dfrac{AB}{AC} = %s$.'''
                str(noidungcauhoi) +
                '\\loigiai{ \n' +
                str(loigiai) + '}\n' +
-               '\\end{ex}\n \end{minipage} \n\n')
+               '\\end{ex}\n \\end{minipage} \n\n')
     return content

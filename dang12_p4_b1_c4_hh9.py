@@ -162,5 +162,5 @@ $M = \\dfrac{%s \\cdot %s - %s}{%s \\cdot %s + %s} = \\dfrac{%s}{%s} = %s$.'''
                str(noidungcauhoi) +
                '\\loigiai{ \n' +
                str(loigiai) + '}\n' +
-               '\\end{ex}\n \end{minipage} \n\n')
+               '\\end{ex}\n \\end{minipage} \n\n')
     return content

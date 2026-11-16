@@ -175,5 +175,5 @@ Vậy $\\sin %s^\\circ %s \\cos %s^\\circ$. \n
                str(noidungcauhoi) +
                '\\loigiai{ \n' +
                str(loigiai) + '}\n' +
-               '\\end{ex}\n \end{minipage} \n\n')
+               '\\end{ex}\n \\end{minipage} \n\n')
     return content

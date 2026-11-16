@@ -162,5 +162,5 @@ Do đó $x + %s^\\circ = 60^\\circ \\Leftrightarrow x = 60^\\circ - %s^\\circ = 
                str(noidungcauhoi) +
                '\\loigiai{ \n' +
                str(loigiai) + '}\n' +
-               '\\end{ex}\n \end{minipage} \n\n')
+               '\\end{ex}\n \\end{minipage} \n\n')
     return content

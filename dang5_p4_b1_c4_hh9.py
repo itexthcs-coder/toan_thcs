@@ -177,5 +177,5 @@ $B = (\\cos %s^\\circ - \\cos %s^\\circ) + %s \\cdot 1 = 0 + %s = %s$. \n
                str(noidungcauhoi) +
                '\\loigiai{ \n' +
                str(loigiai) + '}\n' +
-               '\\end{ex}\n \end{minipage} \n\n')
+               '\\end{ex}\n \\end{minipage} \n\n')
     return content
