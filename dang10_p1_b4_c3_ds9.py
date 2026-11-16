@@ -138,14 +138,14 @@ def bt_dang10_p1_b4_c3_ds9(self):
         bt = a*x - b
         
         # Các đáp án trắc nghiệm
-        du = ['$\sqrt[3]{%s}$' % latex(bt)]
+        du = ['$\\sqrt[3]{%s}$' % latex(bt)]
         da = random.choice(du)
         s = [
-            '$\sqrt{%s}$' % latex(bt),
-            '$3\sqrt{%s}$' % latex(bt),
+            '$\\sqrt{%s}$' % latex(bt),
+            '$3\\sqrt{%s}$' % latex(bt),
             '$(%s)^3$' % latex(bt),
-            '$\frac{1}{3}(%s)$' % latex(bt),
-            '$\sqrt[3]{%s}$' % latex(a + b)
+            '$\\frac{1}{3}(%s)$' % latex(bt),
+            '$\\sqrt[3]{%s}$' % latex(a + b)
         ]
         
         das1 = random.choice(s)
