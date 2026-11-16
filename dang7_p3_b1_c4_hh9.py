@@ -162,5 +162,5 @@ Làm tròn đến hàng đơn vị (độ), ta được $x \\approx %s^\\circ$.'
                str(dapan) +
                '\\loigiai{ \n' +
                str(loigiai) + '}\n' +
-               '\\end{ex}\n \end{minipage} \n\n')
+               '\\end{ex}\n \\end{minipage} \n\n')
     return content

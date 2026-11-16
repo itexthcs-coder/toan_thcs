@@ -179,5 +179,5 @@ $BH = AB \\cdot \\sin %s^\\circ = %s \\cdot \\sin %s^\\circ \\approx %s\\text{ (
                str(dapan) +
                '\\loigiai{ \n' +
                str(loigiai) + '}\n' +
-               '\\end{ex}\n \end{minipage} \n\n')
+               '\\end{ex}\n \\end{minipage} \n\n')
     return content

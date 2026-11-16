@@ -185,5 +185,5 @@ Suy ra $AD = \\dfrac{DH}{\\cos 60^\\circ} = \\dfrac{%s}{\\dfrac{1}{2}} = %s\\tex
                str(dapan) +
                '\\loigiai{ \n' +
                str(loigiai) + '}\n' +
-               '\\end{ex}\n \end{minipage} \n\n')
+               '\\end{ex}\n \\end{minipage} \n\n')
     return content

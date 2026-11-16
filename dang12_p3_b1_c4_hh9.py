@@ -181,5 +181,5 @@ Làm tròn kết quả đến hàng đơn vị, ta được độ dài bóng c�
                str(dapan) +
                '\\loigiai{ \n' +
                str(loigiai) + '}\n' +
-               '\\end{ex}\n \end{minipage} \n\n')
+               '\\end{ex}\n \\end{minipage} \n\n')
     return content

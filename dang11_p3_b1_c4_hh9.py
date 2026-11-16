@@ -180,5 +180,5 @@ Sử dụng máy tính cầm tay, ta tìm được $\\alpha \\approx %s^\\circ$.
                str(dapan) +
                '\\loigiai{ \n' +
                str(loigiai) + '}\n' +
-               '\\end{ex}\n \end{minipage} \n\n')
+               '\\end{ex}\n \\end{minipage} \n\n')
     return content

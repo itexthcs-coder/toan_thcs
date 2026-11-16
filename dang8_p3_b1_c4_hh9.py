@@ -162,5 +162,5 @@ $= %s \\cdot \\dfrac{1}{4} + %s \\cdot \\dfrac{2}{4} + %s = %s + %s + %s = %s$.'
                str(dapan) +
                '\\loigiai{ \n' +
                str(loigiai) + '}\n' +
-               '\\end{ex}\n \end{minipage} \n\n')
+               '\\end{ex}\n \\end{minipage} \n\n')
     return content

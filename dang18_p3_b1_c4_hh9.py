@@ -192,5 +192,5 @@ Làm tròn đến hàng đơn vị, chiều cao tòa tháp là $%s\\text{ m}$.''
                str(dapan) +
                '\\loigiai{ \n' +
                str(loigiai) + '}\n' +
-               '\\end{ex}\n \end{minipage} \n\n')
+               '\\end{ex}\n \\end{minipage} \n\n')
     return content

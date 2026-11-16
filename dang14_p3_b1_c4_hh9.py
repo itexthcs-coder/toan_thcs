@@ -182,5 +182,5 @@ Làm tròn đến hàng đơn vị, máy bay ở độ cao $%s\\text{ m}$ so v�
                str(dapan) +
                '\\loigiai{ \n' +
                str(loigiai) + '}\n' +
-               '\\end{ex}\n \end{minipage} \n\n')
+               '\\end{ex}\n \\end{minipage} \n\n')
     return content

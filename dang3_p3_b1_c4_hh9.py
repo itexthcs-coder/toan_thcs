@@ -164,5 +164,5 @@ $A = \\dfrac{\\cos %s^\\circ}{\\cos %s^\\circ} + \\dfrac{\\cot %s^\\circ}{\\cot 
                str(dapan) +
                '\\loigiai{ \n' +
                str(loigiai) + '}\n' +
-               '\\end{ex}\n \end{minipage} \n\n')
+               '\\end{ex}\n \\end{minipage} \n\n')
     return content

@@ -172,5 +172,5 @@ Suy ra $AB = BC \\cdot \\sin C = %s \\cdot \\sin 30^\\circ = %s \\cdot \\dfrac{1
                str(dapan) +
                '\\loigiai{ \n' +
                str(loigiai) + '}\n' +
-               '\\end{ex}\n \end{minipage} \n\n')
+               '\\end{ex}\n \\end{minipage} \n\n')
     return content

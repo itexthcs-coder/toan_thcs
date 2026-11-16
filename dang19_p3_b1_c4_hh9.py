@@ -182,5 +182,5 @@ $P = (\\sin^2 %s^\\circ + \\cos^2 %s^\\circ) + (\\sin^2 %s^\\circ + \\cos^2 %s^\
                str(dapan) +
                '\\loigiai{ \n' +
                str(loigiai) + '}\n' +
-               '\\end{ex}\n \end{minipage} \n\n')
+               '\\end{ex}\n \\end{minipage} \n\n')
     return content

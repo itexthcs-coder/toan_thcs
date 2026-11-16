@@ -177,5 +177,5 @@ Mà $\\dfrac{AB}{AC} = \\dfrac{%s}{%s}$ nên $\\cot C = \\dfrac{%s}{%s} = %s$.''
                str(dapan) +
                '\\loigiai{ \n' +
                str(loigiai) + '}\n' +
-               '\\end{ex}\n \end{minipage} \n\n')
+               '\\end{ex}\n \\end{minipage} \n\n')
     return content

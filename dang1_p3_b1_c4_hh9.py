@@ -179,5 +179,5 @@ $\\sin B = \\dfrac{AC}{BC} = \\dfrac{%s}{%s} = %s$.'''
                str(dapan) +
                '\\loigiai{ \n' +
                str(loigiai) + '}\n' +
-               '\\end{ex}\n \end{minipage} \n\n')
+               '\\end{ex}\n \\end{minipage} \n\n')
     return content

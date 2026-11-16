@@ -164,5 +164,5 @@ $\\cot \\alpha = \\dfrac{1}{%s} \\approx %s$.'''
                str(dapan) +
                '\\loigiai{ \n' +
                str(loigiai) + '}\n' +
-               '\\end{ex}\n \end{minipage} \n\n')
+               '\\end{ex}\n \\end{minipage} \n\n')
     return content

@@ -172,5 +172,5 @@ Suy ra $DF = DE \\cdot \\tan 60^\\circ = %s\\sqrt{3} \\cdot \\sqrt{3} = %s \\cdo
                str(dapan) +
                '\\loigiai{ \n' +
                str(loigiai) + '}\n' +
-               '\\end{ex}\n \end{minipage} \n\n')
+               '\\end{ex}\n \\end{minipage} \n\n')
     return content
