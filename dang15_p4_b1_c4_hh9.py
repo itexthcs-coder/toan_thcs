@@ -159,7 +159,7 @@ def bt_dang15_p4_b1_c4_hh9(self):
 \\end{center}''' % (str(ab), str(ac)))
 
         # Nội dung câu hỏi
-        noidungcauhoi = ('''Cho tam giác $ABC$ có $AB = %s\\text{ cm}$, $AC = %s\\text{ cm}$ và góc tù $\\widehat{BAC} = 120^\\circ$. Kẻ đường cao $BH$ ($H$ thuộc tia đối của tia $AC$). %s \\\\
+        noidungcauhoi = ('''Cho tam giác $ABC$ có $AB = %s\\text{ cm}$, $AC = %s\\text{ cm}$ và góc tù $\\widehat{BAC} = 120^\\circ$. Kẻ đường cao $BH$ ($H$ thuộc tia đối của tia $AC$). %s
 a) Tính độ dài các đoạn thẳng $AH$ và $BH$. \\\\
 b) Tính độ dài cạnh $BC$ và diện tích tam giác $ABC$.'''
                          % (str(ab), str(ac), hinh_ve))
@@ -187,5 +187,5 @@ $S_{ABC} = \\dfrac{1}{2} \\cdot BH \\cdot AC = \\dfrac{1}{2} \\cdot %s\\sqrt{3} 
                str(noidungcauhoi) +
                '\\loigiai{ \n' +
                str(loigiai) + '}\n' +
-               '\\end{ex}\n \end{minipage} \n\n')
+               '\\end{ex}\n \\end{minipage} \n\n')
     return content

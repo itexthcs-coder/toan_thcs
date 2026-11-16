@@ -154,7 +154,7 @@ def bt_dang18_p4_b1_c4_hh9(self):
 \\end{center}''')
 
         # Nội dung câu hỏi
-        noidungcauhoi = ('''Cho tam giác $ABC$ nhọn có hai đường cao $BD$ và $CE$ ($D \\in AC$, $E \\in AB$). %s \\\\
+        noidungcauhoi = ('''Cho tam giác $ABC$ nhọn có hai đường cao $BD$ và $CE$ ($D \\in AC$, $E \\in AB$). %s
 a) Chứng minh $\\triangle ADE \\backsim \\triangle ABC$ và suy ra $\\dfrac{DE}{BC} = \\cos A$. \\\\
 b) Biết $\\widehat{A} = 60^\\circ$ và $BC = %s\\text{ cm}$, hãy tính độ dài đoạn thẳng $DE$.'''
                          % (hinh_ve, str(bc)))
@@ -177,5 +177,5 @@ $DE = BC \\cdot \\cos 60^\\circ = %s \\cdot \\dfrac{1}{2} = %s\\text{ (cm)}$. \n
                str(noidungcauhoi) +
                '\\loigiai{ \n' +
                str(loigiai) + '}\n' +
-               '\\end{ex}\n \end{minipage} \n\n')
+               '\\end{ex}\n \\end{minipage} \n\n')
     return content

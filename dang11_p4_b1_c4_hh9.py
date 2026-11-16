@@ -149,7 +149,7 @@ def bt_dang11_p4_b1_c4_hh9(self):
 \\end{center}''' % (ten_goc))
 
         # Nội dung câu hỏi
-        noidungcauhoi = ('''Cho góc nhọn $%s$. Dựa vào định nghĩa tỉ số lượng giác trong tam giác vuông và định lí Pythagore, hãy chứng minh các hệ thức sau: %s \\\\
+        noidungcauhoi = ('''Cho góc nhọn $%s$. Dựa vào định nghĩa tỉ số lượng giác trong tam giác vuông và định lí Pythagore, hãy chứng minh các hệ thức sau: %s
 a) $\\sin^2 %s + \\cos^2 %s = 1$. \\\\
 b) $\\tan %s = \\dfrac{\\sin %s}{\\cos %s}$ và $\\cot %s = \\dfrac{\\cos %s}{\\sin %s}$. \\\\
 c) $1 + \\tan^2 %s = \\dfrac{1}{\\cos^2 %s}$.'''
@@ -181,5 +181,5 @@ $1 + \\tan^2 %s = 1 + \\dfrac{\\sin^2 %s}{\\cos^2 %s} = \\dfrac{\\cos^2 %s + \\s
                str(noidungcauhoi) +
                '\\loigiai{ \n' +
                str(loigiai) + '}\n' +
-               '\\end{ex}\n \end{minipage} \n\n')
+               '\\end{ex}\n \\end{minipage} \n\n')
     return content

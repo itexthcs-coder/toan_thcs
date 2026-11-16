@@ -156,7 +156,7 @@ def bt_dang3_p4_b1_c4_hh9(self):
 \\end{center}''' % (str(ef), str(goc_e)))
 
         # Nội dung câu hỏi
-        noidungcauhoi = ('''Cho tam giác $DEF$ vuông tại $D$, biết cạnh huyền $EF = %s\\text{ cm}$ và $\\widehat{E} = %s^\\circ$. %s \\\\
+        noidungcauhoi = ('''Cho tam giác $DEF$ vuông tại $D$, biết cạnh huyền $EF = %s\\text{ cm}$ và $\\widehat{E} = %s^\\circ$. %s
 a) Tính số đo góc nhọn $F$. \\\\
 b) Tính độ dài hai cạnh góc vuông $DE$ và $DF$ (làm tròn kết quả đến chữ số thập phân thứ hai).'''
                          % (str(ef), str(goc_e), hinh_ve))
@@ -179,5 +179,5 @@ $\\sin E = \\dfrac{DF}{EF} \\Rightarrow DF = EF \\cdot \\sin %s^\\circ = %s \\cd
                str(noidungcauhoi) +
                '\\loigiai{ \n' +
                str(loigiai) + '}\n' +
-               '\\end{ex}\n \end{minipage} \n\n')
+               '\\end{ex}\n \\end{minipage} \n\n')
     return content

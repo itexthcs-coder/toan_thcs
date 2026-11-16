@@ -159,7 +159,7 @@ def bt_dang19_p4_b1_c4_hh9(self):
 \\end{center}''')
 
         # Nội dung câu hỏi
-        noidungcauhoi = ('''Cho tứ giác $ABCD$ có $\\widehat{ABC} = \\widehat{ADC} = 90^\\circ$, $\\widehat{BAD} = 60^\\circ$, $AB = %s\\text{ cm}$ và $AD = %s\\text{ cm}$. Kéo dài $AB$ và $DC$ cắt nhau tại $E$. %s \\\\
+        noidungcauhoi = ('''Cho tứ giác $ABCD$ có $\\widehat{ABC} = \\widehat{ADC} = 90^\\circ$, $\\widehat{BAD} = 60^\\circ$, $AB = %s\\text{ cm}$ và $AD = %s\\text{ cm}$. Kéo dài $AB$ và $DC$ cắt nhau tại $E$. %s
 a) Tính độ dài các đoạn thẳng $AE$, $BE$ và $DE$. \\\\
 b) Tính độ dài các cạnh $BC$ và $CD$.'''
                          % (str(ab), str(ad), hinh_ve))
@@ -186,5 +186,5 @@ Vì điểm $C$ nằm giữa $D$ và $E$ nên $CD = DE - EC = %s\\sqrt{3} - %s\\
                str(noidungcauhoi) +
                '\\loigiai{ \n' +
                str(loigiai) + '}\n' +
-               '\\end{ex}\n \end{minipage} \n\n')
+               '\\end{ex}\n \\end{minipage} \n\n')
     return content

@@ -166,7 +166,7 @@ def bt_dang17_p4_b1_c4_hh9(self):
 \\end{center}''' % (str(ab), str(cd), str(goc_c)))
 
         # Nội dung câu hỏi
-        noidungcauhoi = ('''Cho hình thang vuông $ABCD$ ($\\widehat{A} = \\widehat{D} = 90^\\circ$) có đáy nhỏ $AB = %s\\text{ cm}$, đáy lớn $CD = %s\\text{ cm}$ và $\\widehat{BCD} = %s^\\circ$. Kẻ đường cao $BH$ ($H \\in CD$). %s \\\\
+        noidungcauhoi = ('''Cho hình thang vuông $ABCD$ ($\\widehat{A} = \\widehat{D} = 90^\\circ$) có đáy nhỏ $AB = %s\\text{ cm}$, đáy lớn $CD = %s\\text{ cm}$ và $\\widehat{BCD} = %s^\\circ$. Kẻ đường cao $BH$ ($H \\in CD$). %s
 a) Tính độ dài cạnh bên $BC$ và chiều cao $AD$ (làm tròn đến chữ số thập phân thứ hai). \\\\
 b) Tính diện tích hình thang $ABCD$ (làm tròn đến chữ số thập phân thứ hai).'''
                          % (str(ab), str(cd), str(goc_c), hinh_ve))
@@ -192,5 +192,5 @@ $S_{ABCD} = \\dfrac{(AB + CD) \\cdot AD}{2} \\approx \\dfrac{(%s + %s) \\cdot %s
                str(noidungcauhoi) +
                '\\loigiai{ \n' +
                str(loigiai) + '}\n' +
-               '\\end{ex}\n \end{minipage} \n\n')
+               '\\end{ex}\n \\end{minipage} \n\n')
     return content

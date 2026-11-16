@@ -154,7 +154,7 @@ def bt_dang14_p4_b1_c4_hh9(self):
 \\end{center}''')
 
         # Nội dung câu hỏi
-        noidungcauhoi = ('''Cho tam giác nhọn $ABC$ có cạnh $BC = %s\\text{ cm}$, $\\widehat{B} = 60^\\circ$ và $\\widehat{C} = 45^\\circ$. Kẻ đường cao $AH$ ($H \\in BC$). %s \\\\
+        noidungcauhoi = ('''Cho tam giác nhọn $ABC$ có cạnh $BC = %s\\text{ cm}$, $\\widehat{B} = 60^\\circ$ và $\\widehat{C} = 45^\\circ$. Kẻ đường cao $AH$ ($H \\in BC$). %s
 a) Tính độ dài đường cao $AH$. \\\\
 b) Tính độ dài các cạnh $AB$, $AC$ và diện tích tam giác $ABC$.'''
                          % (str(bc), hinh_ve))
@@ -186,5 +186,5 @@ $S_{ABC} = \\dfrac{1}{2} \\cdot AH \\cdot BC = \\dfrac{1}{2} \\cdot %s(3 - \\sqr
                str(noidungcauhoi) +
                '\\loigiai{ \n' +
                str(loigiai) + '}\n' +
-               '\\end{ex}\n \end{minipage} \n\n')
+               '\\end{ex}\n \\end{minipage} \n\n')
     return content

@@ -155,7 +155,7 @@ def bt_dang1_p4_b1_c4_hh9(self):
 \\end{center}''' % (str(ab), str(bc)))
 
         # Nội dung câu hỏi
-        noidungcauhoi = ('''Cho tam giác $ABC$ vuông tại $A$, biết $AB = %s\\text{ cm}$ và $BC = %s\\text{ cm}$. %s \\\\
+        noidungcauhoi = ('''Cho tam giác $ABC$ vuông tại $A$, biết $AB = %s\\text{ cm}$ và $BC = %s\\text{ cm}$. %s
 a) Tính độ dài cạnh $AC$. \\\\
 b) Tính các tỉ số lượng giác $\\sin B$, $\\cos B$, $\\tan B$, $\\cot B$ và từ đó suy ra các tỉ số lượng giác của góc $C$.'''
                          % (str(ab), str(bc), hinh_ve))
@@ -182,5 +182,5 @@ $\\sin C = \\cos B = %s$; $\\cos C = \\sin B = %s$; $\\tan C = \\cot B = %s$; $\
                str(noidungcauhoi) +
                '\\loigiai{ \n' +
                str(loigiai) + '}\n' +
-               '\\end{ex}\n \end{minipage} \n\n')
+               '\\end{ex}\n \\end{minipage} \n\n')
     return content

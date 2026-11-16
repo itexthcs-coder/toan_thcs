@@ -158,7 +158,7 @@ def bt_dang9_p4_b1_c4_hh9(self):
 \\end{center}''' % (str(goc_b)))
 
         # Nội dung câu hỏi
-        noidungcauhoi = ('''Cho tam giác $ABC$ cân tại $A$ có cạnh đáy $BC = %s\\text{ cm}$ và góc ở đáy $\\widehat{B} = %s^\\circ$. Kẻ đường cao $AH$ ($H \\in BC$). %s \\\\
+        noidungcauhoi = ('''Cho tam giác $ABC$ cân tại $A$ có cạnh đáy $BC = %s\\text{ cm}$ và góc ở đáy $\\widehat{B} = %s^\\circ$. Kẻ đường cao $AH$ ($H \\in BC$). %s
 a) Tính độ dài đường cao $AH$ (làm tròn đến chữ số thập phân thứ hai). \\\\
 b) Tính độ dài cạnh bên $AB$ (làm tròn đến chữ số thập phân thứ hai).'''
                          % (str(bc), str(goc_b), hinh_ve))
@@ -181,5 +181,5 @@ $\\cos B = \\dfrac{BH}{AB} \\Rightarrow AB = \\dfrac{BH}{\\cos %s^\\circ} = \\df
                str(noidungcauhoi) +
                '\\loigiai{ \n' +
                str(loigiai) + '}\n' +
-               '\\end{ex}\n \end{minipage} \n\n')
+               '\\end{ex}\n \\end{minipage} \n\n')
     return content

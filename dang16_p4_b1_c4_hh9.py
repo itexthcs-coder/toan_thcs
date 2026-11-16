@@ -153,7 +153,7 @@ def bt_dang16_p4_b1_c4_hh9(self):
 \\end{center}''' % (str(ab)))
 
         # Nội dung câu hỏi
-        noidungcauhoi = ('''Cho tam giác $ABC$ vuông tại $A$, điểm $D$ nằm trên cạnh $AC$ sao cho $\\widehat{ABD} = 30^\\circ$ và $\\widehat{DBC} = 15^\\circ$. Biết cạnh $AB = %s\\text{ cm}$. %s \\\\
+        noidungcauhoi = ('''Cho tam giác $ABC$ vuông tại $A$, điểm $D$ nằm trên cạnh $AC$ sao cho $\\widehat{ABD} = 30^\\circ$ và $\\widehat{DBC} = 15^\\circ$. Biết cạnh $AB = %s\\text{ cm}$. %s
 a) Tính độ dài đoạn thẳng $AD$. \\\\
 b) Tính độ dài cạnh $AC$ và đoạn thẳng $DC$.'''
                          % (str(ab), hinh_ve))
@@ -174,5 +174,5 @@ Vì điểm $D$ nằm trên cạnh $AC$ nên $DC = AC - AD = %s - %s\\sqrt{3}\\t
                str(noidungcauhoi) +
                '\\loigiai{ \n' +
                str(loigiai) + '}\n' +
-               '\\end{ex}\n \end{minipage} \n\n')
+               '\\end{ex}\n \\end{minipage} \n\n')
     return content

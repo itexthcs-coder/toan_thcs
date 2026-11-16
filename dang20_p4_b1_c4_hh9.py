@@ -149,7 +149,7 @@ def bt_dang20_p4_b1_c4_hh9(self):
 \\end{center}''' % (ten_goc))
 
         # Nội dung câu hỏi
-        noidungcauhoi = ('''Cho góc nhọn $%s$. Chứng minh các bất đẳng thức sau: %s \\\\
+        noidungcauhoi = ('''Cho góc nhọn $%s$. Chứng minh các bất đẳng thức sau: %s
 a) $\\sin %s + \\cos %s > 1$. \\\\
 b) $\\sin %s \\cdot \\cos %s \\le \\dfrac{1}{2}$. Dấu đẳng thức xảy ra khi nào?'''
                          % (ten_goc, hinh_ve, ten_goc, ten_goc, ten_goc, ten_goc))
@@ -177,5 +177,5 @@ Dấu đẳng thức xảy ra khi và chỉ khi $AB = AC$, tức là tam giác $
                str(noidungcauhoi) +
                '\\loigiai{ \n' +
                str(loigiai) + '}\n' +
-               '\\end{ex}\n \end{minipage} \n\n')
+               '\\end{ex}\n \\end{minipage} \n\n')
     return content
