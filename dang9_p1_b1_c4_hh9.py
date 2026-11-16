@@ -122,7 +122,6 @@ from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
 from matplotlib.figure import Figure
 from mpl_toolkits.mplot3d import Axes3D
 
-
 def bt_dang9_p1_b1_c4_hh9(self):
     # Khai báo biến
     lisdang = ['1']
@@ -148,7 +147,8 @@ def bt_dang9_p1_b1_c4_hh9(self):
         d_ans = total_minutes // 60
         m_ans = total_minutes % 60
 
-        du = ['$%s^\\circ %s'$' % (d_ans, m_ans)]
+        # Sửa dấu nháy bao chuỗi thành nháy kép " để không đụng dấu phút '
+        du = ["$%s^\\circ %s'$" % (d_ans, m_ans)]
         da = random.choice(du)
 
         m_s1 = (m_ans + 1) if m_ans < 59 else 58
@@ -156,10 +156,11 @@ def bt_dang9_p1_b1_c4_hh9(self):
         d_phu = 89 - d_ans if m_ans > 0 else 90 - d_ans
         m_phu = (60 - m_ans) % 60
 
+        # Sửa các chuỗi trong danh sách s thành nháy kép "
         s = [
-            '$%s^\\circ %s'$' % (d_ans, m_s1),
-            '$%s^\\circ %s'$' % (d_ans, m_s2),
-            '$%s^\\circ %s'$' % (d_phu, m_phu)
+            "$%s^\\circ %s'$" % (d_ans, m_s1),
+            "$%s^\\circ %s'$" % (d_ans, m_s2),
+            "$%s^\\circ %s'$" % (d_phu, m_phu)
         ]
 
         das1 = random.choice(s)

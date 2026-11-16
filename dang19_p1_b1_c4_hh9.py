@@ -147,12 +147,13 @@ def bt_dang19_p1_b1_c4_hh9(self):
         d_phu = total_min_phu // 60
         m_phu = total_min_phu % 60
 
-        du = ['$%s^\\circ %s'$' % (d_ans, m_ans)]
+        # Đổi dấu nháy đơn bao ngoài thành nháy kép "
+        du = ["$%s^\\circ %s'$" % (d_ans, m_ans)]
         da = random.choice(du)
         s = [
-            '$%s^\\circ %s'$' % (d_phu, m_phu),
-            '$%s^\\circ %s'$' % (d_ans, (m_ans + 1) if m_ans < 59 else 58),
-            '$%s^\\circ %s'$' % (d_ans, (m_ans - 1) if m_ans > 0 else 1)
+            "$%s^\\circ %s'$" % (d_phu, m_phu),
+            "$%s^\\circ %s'$" % (d_ans, (m_ans + 1) if m_ans < 59 else 58),
+            "$%s^\\circ %s'$" % (d_ans, (m_ans - 1) if m_ans > 0 else 1)
         ]
 
         das1 = random.choice(s)
