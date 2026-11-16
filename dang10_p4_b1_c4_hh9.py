@@ -158,7 +158,7 @@ def bt_dang10_p4_b1_c4_hh9(self):
 \\end{center}''' % (str(canh)))
 
         # Nội dung câu hỏi
-        noidungcauhoi = ('''Cho hình thoi $ABCD$ có cạnh bằng $%s\\text{ cm}$ và góc $\\widehat{BAD} = 60^\\circ$. Gọi $O$ là giao điểm hai đường chéo $AC$ và $BD$. %s \\\\
+        noidungcauhoi = ('''Cho hình thoi $ABCD$ có cạnh bằng $%s\\text{ cm}$ và góc $\\widehat{BAD} = 60^\\circ$. Gọi $O$ là giao điểm hai đường chéo $AC$ và $BD$. %s 
 a) Tính độ dài đường chéo $BD$. \\\\
 b) Tính độ dài đường chéo $AC$.'''
                          % (str(canh), hinh_ve))
@@ -183,5 +183,5 @@ Vậy $AC = 2OA = 2 \\cdot %s\\sqrt{3} = %s\\sqrt{3}\\text{ (cm)}$. \n
                str(noidungcauhoi) +
                '\\loigiai{ \n' +
                str(loigiai) + '}\n' +
-               '\\end{ex}\n \end{minipage} \n\n')
+               '\\end{ex}\n \\end{minipage} \n\n')
     return content

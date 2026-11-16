@@ -151,7 +151,7 @@ def bt_dang2_p4_b1_c4_hh9(self):
 \\end{center}''' % (str(mn)))
 
         # Nội dung câu hỏi
-        noidungcauhoi = ('''Cho tam giác $MNP$ vuông tại $M$, có $\\widehat{N} = 60^\\circ$ và cạnh $MN = %s\\text{ cm}$. %s \\\\
+        noidungcauhoi = ('''Cho tam giác $MNP$ vuông tại $M$, có $\\widehat{N} = 60^\\circ$ và cạnh $MN = %s\\text{ cm}$. %s 
 a) Tính độ dài cạnh góc vuông $MP$. \\\\
 b) Tính độ dài cạnh huyền $NP$.'''
                          % (str(mn), hinh_ve))
@@ -171,5 +171,5 @@ $\\cos N = \\dfrac{MN}{NP} \\Rightarrow NP = \\dfrac{MN}{\\cos 60^\\circ} = \\df
                str(noidungcauhoi) +
                '\\loigiai{ \n' +
                str(loigiai) + '}\n' +
-               '\\end{ex}\n \end{minipage} \n\n')
+               '\\end{ex}\n \\end{minipage} \n\n')
     return content
