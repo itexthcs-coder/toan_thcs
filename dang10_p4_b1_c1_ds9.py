@@ -164,6 +164,6 @@ def bt_dang10_p4_b1_c1_ds9(self):
                '\\begin{ex}\n'+
                str(noidungcauhoi)+
                '\\loigiai{ \n' +str(loigiai)+'}\n'
-               '\\end{ex}\\n'
+               '\\end{ex}\n'
                '\\end{minipage} \n\n')
     return content
