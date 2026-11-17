@@ -151,7 +151,7 @@ def bt_dang13_p2_b3_c5_hh9(self):
         \node at (0,1.25cm) {\tiny 8};
         \node at (0,1.75cm) {\tiny 7};
     \end{tikzpicture}
-    \end{center}"""())
+    \end{center}""")
 
     noidungcauhoi = (r"""Một tấm bia tròn dùng để luyện tập ném phi tiêu được tạo bởi bốn đường tròn đồng tâm lần lượt có bán kính là $5\text{ cm}, 10\text{ cm}, 15\text{ cm}$ và $%d\text{ cm}$ (như hình vẽ). Vòng tính điểm $10$ là hình tròn trong cùng, vòng $9$ nằm giữa đường tròn thứ nhất và thứ hai, vòng $8$ nằm giữa đường tròn thứ hai và thứ ba, vòng $7$ nằm ngoài cùng. Giả sử người chơi ném phi tiêu ngẫu nhiên và luôn trúng bia. Xét tính đúng sai của các khẳng định sau:
     %s""" % (R_bia, hinh_ve))

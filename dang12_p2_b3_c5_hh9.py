@@ -148,7 +148,7 @@ def bt_dang12_p2_b3_c5_hh9(self):
         \draw[thick] (0,0.6cm) -- (3.2cm,1.1cm);
         \draw[thick] (0,-0.6cm) -- (3.2cm,-1.1cm);
     \end{tikzpicture}
-    \end{center}"""())
+    \end{center}""")
 
     noidungcauhoi = (r"""Một chiếc xe đạp thể thao có bánh xe (khi bơm căng) đường kính $%d\text{ mm}$. Bộ truyền chuyển động gồm giò đĩa có bán kính $%d\text{ cm}$ và líp gắn với bánh xe sau có bán kính $%d\text{ cm}$ (như hình vẽ). Khi người đi xe đạp đều đặn $%d$ vòng giò đĩa, xét tính đúng sai của các khẳng định sau:
     %s""" % (d_mm, r_dia, r_lip, so_vong_dap, hinh_ve))

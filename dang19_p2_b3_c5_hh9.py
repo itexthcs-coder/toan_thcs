@@ -145,7 +145,7 @@ def bt_dang19_p2_b3_c5_hh9(self):
         \node at (54:0.9cm) {$108^\circ$};
         \fill (0,0) circle (1.5pt) node[below left] {$O$};
     \end{tikzpicture}
-    \end{center}"""())
+    \end{center}""")
 
     noidungcauhoi = (r"""Một vòi phun nước tự động đặt tại góc một khu vườn có khả năng phun xa tối đa $%d\text{ m}$ và quay qua lại một góc $108^\circ$ để tưới cỏ (như hình vẽ). Xét tính đúng sai của các khẳng định sau:
     %s""" % (R_phun, hinh_ve))

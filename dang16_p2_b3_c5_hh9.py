@@ -149,7 +149,7 @@ def bt_dang16_p2_b3_c5_hh9(self):
         \node[above right] at (H) {$H$};
         \node[below] at (C) {$C$};
     \end{tikzpicture}
-    \end{center}"""())
+    \end{center}""")
 
     noidungcauhoi = (r"""Một chiếc guồng nước (cọn nước) bằng tre có dạng hình tròn đặt thẳng đứng dưới dòng suối. Ngấn nước ngăn cách giữa phần trên và phần dưới mặt nước được biểu thị bởi một dây cung $AB = %d\text{ m}$ và điểm ngập sâu nhất của guồng nước dưới mặt nước là $HC = %d\text{ m}$ (với $H$ là trung điểm $AB$ và $C$ là điểm chính giữa cung nhỏ $\overparen{AB}$, như hình vẽ). Xét tính đúng sai của các khẳng định sau:
     %s""" % (ab_val, hc_val, hinh_ve))

@@ -147,7 +147,7 @@ def bt_dang18_p2_b3_c5_hh9(self):
         \draw[thick] (0,0) circle (1.3cm);
         \node at (0,0) {\scriptsize Bồn hoa};
     \end{tikzpicture}
-    \end{center}"""())
+    \end{center}""")
 
     noidungcauhoi = (r"""Trong một công viên, người ta xây một bồn hoa hình tròn có đường kính $%d\text{ m}$. Xung quanh bồn hoa, người ta làm một lối đi lát gạch dạng hình vành khuyên có bề rộng lối đi là $%d\text{ m}$ (như hình vẽ). Xét tính đúng sai của các khẳng định sau:
     %s""" % (d_bon, be_rong, hinh_ve))

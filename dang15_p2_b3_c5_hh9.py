@@ -145,7 +145,7 @@ def bt_dang15_p2_b3_c5_hh9(self):
         \foreach \a in {30,45,...,150} \draw (0,0) -- (\a:2.2cm);
         \fill (0,0) circle (1.5pt);
     \end{tikzpicture}
-    \end{center}"""())
+    \end{center}""")
 
     noidungcauhoi = (r"""Một chiếc quạt giấy truyền thống khi xòe hết cỡ tạo thành một hình quạt tròn có góc ở tâm bằng $150^\circ$ và bán kính nan quạt dài $2,4\text{ dm}$. Biết rằng khi gấp lại, phần giấy dán trên nan quạt có chiều dài $1,6\text{ dm}$ tính từ mép ngoài vào (như hình vẽ). Xét tính đúng sai của các khẳng định sau:
     %s""" % hinh_ve)

@@ -146,7 +146,7 @@ def bt_dang14_p2_b3_c5_hh9(self):
         \foreach \a in {0,36,...,324} \draw (2.2,0) -- ++(\a:1.6cm);
         \node[below] at (2.2,-1.7) {\scriptsize Bánh cỡ lớn};
     \end{tikzpicture}
-    \end{center}"""())
+    \end{center}""")
 
     noidungcauhoi = (r"""Một cửa hàng bán hai cỡ bánh pizza hình tròn cùng độ dày. Bánh cỡ vừa có đường kính $%d\text{ cm}$ được cắt thành $%d$ miếng đều nhau dạng hình quạt tròn; bánh cỡ lớn có đường kính $%d\text{ cm}$ được cắt thành $%d$ miếng đều nhau dạng hình quạt tròn (như hình vẽ). Xét tính đúng sai của các khẳng định sau:
     %s""" % (d1, n1, d2, n2, hinh_ve))
