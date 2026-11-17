@@ -136,7 +136,7 @@ def bt_dang4_p1_b1_c6_ds9(self):
         a_val = random.choice([-2026, -2025, -15, -7, 7, 15, 2025, 2026])
 
         # Các đáp án trắc nghiệm
-        du = ['$\mathbb{R}$']
+        du = ['$\\mathbb{R}$']
         da = random.choice(du)
         s = [
             '$\\mathbb{R} \\setminus \\{0\\}$',
