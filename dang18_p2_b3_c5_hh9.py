@@ -176,12 +176,12 @@ def bt_dang18_p2_b3_c5_hh9(self):
     loigiai_vd_1 = (r"""Chu vi mép ngoài của lối đi là $C = 2\pi R \approx 2 \cdot 3,14 \cdot %d = %.2f\text{ (m)}$.""" % (R_ngoai, C_ngoai))
     list_vd_2 = [loigiai_vd_1]
 
-    vdc_da_1_d = '\\True Nếu chi phí lát gạch hoàn thiện là $250\\,000\\text{ đồng/m}^2$ (lấy $\\pi \\approx 3,14$) thì tổng chi phí làm lối đi là $%s\\text{ đồng}$' % f"{chi_phi:,}".replace(",", "\,")
-    vdc_da_1_s = 'Nếu chi phí lát gạch hoàn thiện là $250\\,000\\text{ đồng/m}^2$ (lấy $\\pi \\approx 3,14$) thì tổng chi phí làm lối đi là $%s\\text{ đồng}$' % f"{chi_phi + 2500000:,}".replace(",", "\,")
+    vdc_da_1_d = '\\True Nếu chi phí lát gạch hoàn thiện là $250\\,000\\text{ đồng/m}^2$ (lấy $\\pi \\approx 3,14$) thì tổng chi phí làm lối đi là $%s\\text{ đồng}$' % f"{chi_phi:,}".replace(",", "\\,")
+    vdc_da_1_s = 'Nếu chi phí lát gạch hoàn thiện là $250\\,000\\text{ đồng/m}^2$ (lấy $\\pi \\approx 3,14$) thì tổng chi phí làm lối đi là $%s\\text{ đồng}$' % f"{chi_phi + 2500000:,}".replace(",", "\\,")
     list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
     vdc_da_1 = random.choice(list_vdc_da_1)
     list_vdc_1 = [vdc_da_1]
-    loigiai_vdc_1 = (r"""Diện tích lối đi gần đúng là $%d \cdot 3,14 = %.2f\text{ m}^2$. \\ Tổng chi phí làm lối đi là $%.2f \cdot 250\,000 = %s\text{ (đồng)}$.""" % (R_ngoai**2 - r_trong**2, (R_ngoai**2 - r_trong**2)*3.14, (R_ngoai**2 - r_trong**2)*3.14, f"{chi_phi:,}".replace(",", "\,")))
+    loigiai_vdc_1 = (r"""Diện tích lối đi gần đúng là $%d \cdot 3,14 = %.2f\text{ m}^2$. \\ Tổng chi phí làm lối đi là $%.2f \cdot 250\,000 = %s\\text{ (đồng)}$.""" % (R_ngoai**2 - r_trong**2, (R_ngoai**2 - r_trong**2)*3.14, (R_ngoai**2 - r_trong**2)*3.14, f"{chi_phi:,}".replace(",", "\,")))
     list_vdc_2 = [loigiai_vdc_1]
 
     def count_true_answers(answers):
