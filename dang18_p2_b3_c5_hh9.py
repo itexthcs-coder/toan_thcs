@@ -181,7 +181,7 @@ def bt_dang18_p2_b3_c5_hh9(self):
     list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
     vdc_da_1 = random.choice(list_vdc_da_1)
     list_vdc_1 = [vdc_da_1]
-    loigiai_vdc_1 = (r"""Diện tích lối đi gần đúng là $%d \cdot 3,14 = %.2f\text{ m}^2$. \\ Tổng chi phí làm lối đi là $%.2f \cdot 250\,000 = %s\\text{ (đồng)}$.""" % (R_ngoai**2 - r_trong**2, (R_ngoai**2 - r_trong**2)*3.14, (R_ngoai**2 - r_trong**2)*3.14, f"{chi_phi:,}".replace(",", "\,")))
+    loigiai_vdc_1 = (r"""Diện tích lối đi gần đúng là $%d \cdot 3,14 = %.2f\text{ m}^2$. \\ Tổng chi phí làm lối đi là $%.2f \cdot 250\,000 = %s\text{ (đồng)}$.""" % (R_ngoai**2 - r_trong**2, (R_ngoai**2 - r_trong**2)*3.14, (R_ngoai**2 - r_trong**2)*3.14, f"{chi_phi:,}".replace(",", "\\,")))
     list_vdc_2 = [loigiai_vdc_1]
 
     def count_true_answers(answers):
