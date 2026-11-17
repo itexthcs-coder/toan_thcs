@@ -157,7 +157,7 @@ def bt_dang1_p2_b3_c5_hh9(self):
     list_nb_da_1 = [nb_da_1_d, nb_da_1_s]
     nb_da_1 = random.choice(list_nb_da_1)
     list_nb_1 = [nb_da_1]
-    loigiai_nb_1 = ('''Số đo cung nhỏ $\\overparen{AB}$ bằng $\\widehat{AOB} = %d^\\circ$. Suy ra số đo cung lớn $\\overparen{AB}$ là $360^\\circ - %d^\circ = %d^\\circ$.''' % (goc_nho, goc_nho, goc_lon))
+    loigiai_nb_1 = ('''Số đo cung nhỏ $\\overparen{AB}$ bằng $\\widehat{AOB} = %d^\\circ$. Suy ra số đo cung lớn $\\overparen{AB}$ là $360^\\circ - %d^\\circ = %d^\\circ$.''' % (goc_nho, goc_nho, goc_lon))
     list_nb_2 = [loigiai_nb_1]
 
     th_da_1_d = '\\True Độ dài cung nhỏ $\\overparen{AB}$ bằng $%s\\text{ cm}$' % latex(l_nho)

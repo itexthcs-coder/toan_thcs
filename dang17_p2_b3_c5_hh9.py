@@ -146,7 +146,7 @@ def bt_dang17_p2_b3_c5_hh9(self):
         \draw[thick, red] (0,0) -- (-30:1.5cm);
         \fill (0,0) circle (2pt);
     \end{tikzpicture}
-    \end{center}"""())
+    \end{center}""")
 
     noidungcauhoi = (r"""Một chiếc đồng hồ treo tường có kim giờ dài $%d\text{ cm}$ và kim phút dài $%d\text{ cm}$. Xét chuyển động của hai kim này trong khoảng thời gian từ $12\text{ giờ } 00\text{ phút}$ đến $12\text{ giờ } %d\text{ phút}$ (như hình vẽ). Xét tính đúng sai của các khẳng định sau:
     %s""" % (r_gio, r_phut, phut, hinh_ve))

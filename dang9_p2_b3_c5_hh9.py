@@ -149,7 +149,7 @@ def bt_dang9_p2_b3_c5_hh9(self):
         \node[below right] at (A1) {$A'$};
         \node[below left] at (B1) {$B'$};
     \end{tikzpicture}
-    \end{center}'''())
+    \end{center}''')
 
     noidungcauhoi = (r'''Cho đường tròn $(O; %d\text{ cm})$ và dây $AB = %s\text{ cm}$ không đi qua tâm. Gọi $A'$ và $B'$ lần lượt là hai điểm đối xứng với $A$ và $B$ qua tâm $O$ (như hình vẽ). Xét tính đúng sai của các khẳng định sau:
     %s''' % (R_val, latex(AB_val), hinh_ve))
