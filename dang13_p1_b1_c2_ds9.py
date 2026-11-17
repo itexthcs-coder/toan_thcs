@@ -137,7 +137,7 @@ def bt_dang13_p1_b1_c2_ds9(self):
         while True:
             a = random.choice([2, 3, 4])
             b = random.choice([-5, -4, -3, -2, -1, 1, 2, 3, 4, 5])
-            c = random.choice([1, 2, 3])
+            c = random.choice([2, 3])
             if a != c:
                 break
     
