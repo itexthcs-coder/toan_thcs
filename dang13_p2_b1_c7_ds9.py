@@ -173,8 +173,8 @@ def bt_dang13_p2_b1_c7_ds9(self):
         list_nb_da_1 = [nb_da_1_d, nb_da_1_s]
         
         ######################################################################## Mệnh đề b ############################################################################
-        th_da_1_d = '\\True ' + ('Hai cỡ áo bán chạy nhất chiếm $63\\%$ tổng số áo bán ra')
-        th_da_1_s = ('Hai cỡ áo bán chạy nhất chiếm $50\\%$ tổng số áo bán ra')
+        th_da_1_d = '\\True ' + ('Hai cỡ áo bán chạy nhất chiếm $63\\%%$ tổng số áo bán ra')
+        th_da_1_s = ('Hai cỡ áo bán chạy nhất chiếm $50\\%%$ tổng số áo bán ra')
         list_th_da_1 = [th_da_1_d, th_da_1_s]
         
         ######################################################################## Mệnh đề c ############################################################################
@@ -201,9 +201,9 @@ def bt_dang13_p2_b1_c7_ds9(self):
                 break
         
         loigiai_nb_1 = ('Đúng. Tổng số áo bán ra là $12 + 35 + 28 + 15 + 10 = 100$ (chiếc).') if '\\True' in nb_da_1 else ('Sai. Cộng tần số của cả $5$ cỡ áo ta được $12 + 35 + 28 + 15 + 10 = 100$ (chiếc).')
-        loigiai_th_1 = ('Đúng. Hai cỡ bán chạy nhất là $M$ ($35$) và $L$ ($28$), tổng là $35 + 28 = 63$ chiếc, chiếm $63\\%$.') if '\\True' in th_da_1 else ('Sai. Hai cỡ có tần số lớn nhất là $M$ và $L$ có tổng là $63$ trên $100$ chiếc, chiếm $63\\%$.')
-        loigiai_vd_1 = ('Đúng. Tỉ lệ cỡ $L$ là $28\\%$, nên trong $300$ chiếc cần nhập $300 \\cdot 28\\% = 84$ (chiếc).') if '\\True' in vd_da_1 else ('Sai. Cỡ $L$ chiếm $28\\%$ nên cần nhập $300 \\cdot 28\\% = 84$ chiếc, không phải $90$ chiếc.')
-        loigiai_vdc_1 = ('Đúng. Cỡ $XXL$ vẫn có nhu cầu ($10\\%$), nên giải pháp hợp lý là nhập số lượng ít nhất thay vì ngừng bán.') if '\\True' in vdc_da_1 else ('Sai. Tần số bằng $10$ cho thấy vẫn có khách hàng mua cỡ $XXL$, không nên loại bỏ hoàn toàn.')
+        loigiai_th_1 = ('Đúng. Hai cỡ bán chạy nhất là $M$ ($35$) và $L$ ($28$), tổng là $35 + 28 = 63$ chiếc, chiếm $63\\%%$.') if '\\True' in th_da_1 else ('Sai. Hai cỡ có tần số lớn nhất là $M$ và $L$ có tổng là $63$ trên $100$ chiếc, chiếm $63\\%%$.')
+        loigiai_vd_1 = ('Đúng. Tỉ lệ cỡ $L$ là $28\\%%$, nên trong $300$ chiếc cần nhập $300 \\cdot 28\\%% = 84$ (chiếc).') if '\\True' in vd_da_1 else ('Sai. Cỡ $L$ chiếm $28\\%%$ nên cần nhập $300 \\cdot 28\\%% = 84$ chiếc, không phải $90$ chiếc.')
+        loigiai_vdc_1 = ('Đúng. Cỡ $XXL$ vẫn có nhu cầu ($10\\%%$), nên giải pháp hợp lý là nhập số lượng ít nhất thay vì ngừng bán.') if '\\True' in vdc_da_1 else ('Sai. Tần số bằng $10$ cho thấy vẫn có khách hàng mua cỡ $XXL$, không nên loại bỏ hoàn toàn.')
         
         list_nb_1 = [nb_da_1]
         list_nb_2 = [loigiai_nb_1]
