@@ -129,22 +129,22 @@ def bt_dang14_p4_b2_c7_ds9(self):
     if dang == '1':
         noidungcauhoi = (
             'Kết quả khảo sát phương tiện đến trường của học sinh hai lớp 9A (sĩ số $40$ em) và 9B (sĩ số $45$ em) được cho như sau:\\\\ '
-            '- Lớp 9A: Xe đạp ($50\\%%$), Xe đạp điện ($30\\%%$), Đi bộ ($20\\%%$).\\\\ '
-            '- Lớp 9B: Xe đạp ($40\\%%$), Xe đạp điện ($40\\%%$), Đi bộ ($20\\%%$).\\\\ '
+            '- Lớp 9A: Xe đạp ($50\\%$), Xe đạp điện ($30\\%$), Đi bộ ($20\\%$).\\\\ '
+            '- Lớp 9B: Xe đạp ($40\\%$), Xe đạp điện ($40\\%$), Đi bộ ($20\\%$).\\\\ '
             'Hãy lập bảng tần số tương đối chung cho cả hai lớp 9A và 9B (làm tròn đến hàng phần mười).'
         )
 
         loigiai = (
-            'Số học sinh đi từng loại phương tiện ở lớp 9A là: Xe đạp ($40 \\cdot 50\\%% = 20$ em), Xe đạp điện ($40 \\cdot 30\\%% = 12$ em), Đi bộ ($40 \\cdot 20\\%% = 8$ em).\\\\ '
-            'Số học sinh đi từng loại phương tiện ở lớp 9B là: Xe đạp ($45 \\cdot 40\\%% = 18$ em), Xe đạp điện ($45 \\cdot 40\\%% = 18$ em), Đi bộ ($45 \\cdot 20\\%% = 9$ em).\\\\ '
+            'Số học sinh đi từng loại phương tiện ở lớp 9A là: Xe đạp ($40 \\cdot 50\\% = 20$ em), Xe đạp điện ($40 \\cdot 30\\% = 12$ em), Đi bộ ($40 \\cdot 20\\% = 8$ em).\\\\ '
+            'Số học sinh đi từng loại phương tiện ở lớp 9B là: Xe đạp ($45 \\cdot 40\\% = 18$ em), Xe đạp điện ($45 \\cdot 40\\% = 18$ em), Đi bộ ($45 \\cdot 20\\% = 9$ em).\\\\ '
             'Gộp cả hai lớp có tổng cộng $n = 40 + 45 = 85$ (học sinh), gồm: Xe đạp ($38$ em), Xe đạp điện ($30$ em), Đi bộ ($17$ em).\\\\ '
-            'Tần số tương đối chung làm tròn đến hàng phần mười: Xe đạp chiếm $\\frac{38}{85} \\cdot 100\\%% \\approx 44,7\\%%$; Xe đạp điện chiếm $\\frac{30}{85} \\cdot 100\\%% \\approx 35,3\\%%$; Đi bộ chiếm $\\frac{17}{85} \\cdot 100\\%% = 20,0\\%%$.\\\\ '
+            'Tần số tương đối chung làm tròn đến hàng phần mười: Xe đạp chiếm $\\frac{38}{85} \\cdot 100\\% \\approx 44,7\\%$; Xe đạp điện chiếm $\\frac{30}{85} \\cdot 100\\% \\approx 35,3\\%$; Đi bộ chiếm $\\frac{17}{85} \\cdot 100\\% = 20,0\\%$.\\\\ '
             '\\begin{center}\n'
             '\\begin{tabular}{|l|c|c|c|}\n'
             '\\hline\n'
             'Phương tiện & Xe đạp & Xe đạp điện & Đi bộ \\\\ \n'
             '\\hline\n'
-            'Tần số tương đối & $44,7\\%%$ & $35,3\\%%$ & $20,0\\%%$ \\\\ \n'
+            'Tần số tương đối & $44,7\\%$ & $35,3\\%$ & $20,0\\%$ \\\\ \n'
             '\\hline\n'
             '\\end{tabular}\n'
             '\\end{center}'

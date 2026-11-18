@@ -136,7 +136,7 @@ def bt_dang10_p4_b2_c7_ds9(self):
             '\\hline\n'
             'Môn thể thao & Bóng đá & Bóng rổ & Cầu lông & Bơi lội \\\\ \n'
             '\\hline\n'
-            'Tỉ lệ học sinh chọn & $65\\%%$ & $40\\%%$ & $50\\%%$ & $35\\%%$ \\\\ \n'
+            'Tỉ lệ học sinh chọn & $65\\%$ & $40\\%$ & $50\\%$ & $35\\%$ \\\\ \n'
             '\\hline\n'
             '\\end{tabular}\n'
             '\\end{center}'
@@ -150,8 +150,8 @@ def bt_dang10_p4_b2_c7_ds9(self):
 
         loigiai = (
             '\\begin{enumEX}[a)]{1}\n'
-            '\\item Bảng thống kê trên \\textbf{không phải} là bảng tần số tương đối. Vì mỗi học sinh có thể chọn nhiều hơn $1$ môn thể thao nên tổng các tỉ lệ là $65\\%% + 40\\%% + 50\\%% + 35\\%% = %s\\%% > 100\\%%$.\n'
-            '\\item Bạn Mai dùng biểu đồ hình quạt tròn là \\textbf{không đúng} vì tổng các tỉ lệ khác $100\\%%$. Loại biểu đồ thích hợp nhất để biểu diễn bảng thống kê này là \\textbf{biểu đồ cột}.\n'
+            '\\item Bảng thống kê trên \\textbf{không phải} là bảng tần số tương đối. Vì mỗi học sinh có thể chọn nhiều hơn $1$ môn thể thao nên tổng các tỉ lệ là $65\\% + 40\\% + 50\\% + 35\\% = %s\\% > 100\\%$.\n'
+            '\\item Bạn Mai dùng biểu đồ hình quạt tròn là \\textbf{không đúng} vì tổng các tỉ lệ khác $100\\%$. Loại biểu đồ thích hợp nhất để biểu diễn bảng thống kê này là \\textbf{biểu đồ cột}.\n'
             '\\end{enumEX}'
         ) % (tong_p)
     content = ('\\begin{minipage}{\\textwidth} \n' +

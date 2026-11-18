@@ -128,22 +128,22 @@ def bt_dang13_p4_b2_c7_ds9(self):
     dang = random.choice(lisdang)
     if dang == '1':
         noidungcauhoi = (
-            'Thống kê xếp loại thi đua cuối tháng 10 của $36$ học sinh lớp 9B cho thấy: loại Tốt chiếm $25\\%%$, loại Khá chiếm $50\\%%$, loại Đạt chiếm $25\\%%$. Sang tháng 11, có $3$ học sinh từ loại Khá vươn lên đạt loại Tốt và $2$ học sinh từ loại Đạt vươn lên đạt loại Khá (sĩ số lớp không đổi).\\\\ '
+            'Thống kê xếp loại thi đua cuối tháng 10 của $36$ học sinh lớp 9B cho thấy: loại Tốt chiếm $25\\%$, loại Khá chiếm $50\\%$, loại Đạt chiếm $25\\%$. Sang tháng 11, có $3$ học sinh từ loại Khá vươn lên đạt loại Tốt và $2$ học sinh từ loại Đạt vươn lên đạt loại Khá (sĩ số lớp không đổi).\\\\ '
             'a) Tính số học sinh mỗi loại của lớp 9B trong tháng 10 và tháng 11.\\\\ '
             'b) Lập bảng tần số tương đối xếp loại thi đua của lớp 9B trong tháng 11 (làm tròn đến hàng phần mười).'
         )
 
         loigiai = (
             '\\begin{enumEX}[a)]{1}\n'
-            '\\item Trong tháng 10, số học sinh mỗi loại là: Tốt có $36 \\cdot 25\\%% = 9$ (em); Khá có $36 \\cdot 50\\%% = 18$ (em); Đạt có $36 \\cdot 25\\%% = 9$ (em).\\\\ '
+            '\\item Trong tháng 10, số học sinh mỗi loại là: Tốt có $36 \\cdot 25\\% = 9$ (em); Khá có $36 \\cdot 50\\% = 18$ (em); Đạt có $36 \\cdot 25\\% = 9$ (em).\\\\ '
             'Sang tháng 11, số học sinh mỗi loại là: Tốt có $9 + 3 = 12$ (em); Khá có $18 - 3 + 2 = 17$ (em); Đạt có $9 - 2 = 7$ (em).\n'
-            '\\item Tần số tương đối của từng loại trong tháng 11 là: Tốt chiếm $\\frac{12}{36} \\cdot 100\\%% \\approx 33,3\\%%$; Khá chiếm $\\frac{17}{36} \\cdot 100\\%% \\approx 47,2\\%%$; Đạt chiếm $\\frac{7}{36} \\cdot 100\\%% \\approx 19,4\\%%$.\\\\ '
+            '\\item Tần số tương đối của từng loại trong tháng 11 là: Tốt chiếm $\\frac{12}{36} \\cdot 100\\% \\approx 33,3\\%$; Khá chiếm $\\frac{17}{36} \\cdot 100\\% \\approx 47,2\\%$; Đạt chiếm $\\frac{7}{36} \\cdot 100\\% \\approx 19,4\\%$.\\\\ '
             '\\begin{center}\n'
             '\\begin{tabular}{|l|c|c|c|}\n'
             '\\hline\n'
             'Xếp loại & Tốt & Khá & Đạt \\\\ \n'
             '\\hline\n'
-            'Tần số tương đối & $33,3\\%%$ & $47,2\\%%$ & $19,4\\%%$ \\\\ \n'
+            'Tần số tương đối & $33,3\\%$ & $47,2\\%$ & $19,4\\%$ \\\\ \n'
             '\\hline\n'
             '\\end{tabular}\n'
             '\\end{center}\n'

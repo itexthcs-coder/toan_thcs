@@ -135,17 +135,17 @@ def bt_dang16_p4_b2_c7_ds9(self):
 
         loigiai = (
             '\\begin{enumEX}[a)]{1}\n'
-            '\\item Tần số tương đối của các trạng thái thời tiết là: Trời nắng ($\\frac{15}{30} \\cdot 100\\%% = 50\\%%$), Trời râm mát ($\\frac{9}{30} \\cdot 100\\%% = 30\\%%$), Trời mưa ($\\frac{6}{30} \\cdot 100\\%% = 20\\%%$).\\\\ '
+            '\\item Tần số tương đối của các trạng thái thời tiết là: Trời nắng ($\\frac{15}{30} \\cdot 100\\%% = 50\\%%$), Trời râm mát ($\\frac{9}{30} \\cdot 100\\% = 30\\%$), Trời mưa ($\\frac{6}{30} \\cdot 100\\% = 20\\%$).\\\\ '
             '\\begin{center}\n'
             '\\begin{tabular}{|l|c|c|c|}\n'
             '\\hline\n'
             'Thời tiết & Trời nắng & Trời râm mát & Trời mưa \\\\ \n'
             '\\hline\n'
-            'Tần số tương đối & $50\\%%$ & $30\\%%$ & $20\\%%$ \\\\ \n'
+            'Tần số tương đối & $50\\%$ & $30\\%$ & $20\\%$ \\\\ \n'
             '\\hline\n'
             '\\end{tabular}\n'
             '\\end{center}\n'
-            '\\item Xác suất ước lượng để một ngày bất kì thỏa mãn điều kiện tổ chức cắm trại (trời nắng hoặc râm mát) là: $50\\%% + 30\\%% = 80\\%%$.\n'
+            '\\item Xác suất ước lượng để một ngày bất kì thỏa mãn điều kiện tổ chức cắm trại (trời nắng hoặc râm mát) là: $50\\% + 30\\% = 80\\%$.\n'
             '\\end{enumEX}'
         )
     content = ('\\begin{minipage}{\\textwidth} \n' +

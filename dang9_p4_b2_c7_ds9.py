@@ -136,7 +136,7 @@ def bt_dang9_p4_b2_c7_ds9(self):
             '\\hline\n'
             'Đánh giá & Rất tốt & Tốt & Trung bình & Chưa tốt \\\\ \n'
             '\\hline\n'
-            'Tần số tương đối & $28\\%%$ & $x\\%%$ & $y\\%%$ & $12\\%%$ \\\\ \n'
+            'Tần số tương đối & $28\\%$ & $x\\%$ & $y\\%$ & $12\\%$ \\\\ \n'
             '\\hline\n'
             '\\end{tabular}\n'
             '\\end{center}'
@@ -151,9 +151,9 @@ def bt_dang9_p4_b2_c7_ds9(self):
 
         loigiai = (
             '\\begin{enumEX}[a)]{1}\n'
-            '\\item Vì tổng các tần số tương đối bằng $100\\%%$ nên $x + y = 100 - (28 + 12) = 60$.\\\\ '
+            '\\item Vì tổng các tần số tương đối bằng $100\\%$ nên $x + y = 100 - (28 + 12) = 60$.\\\\ '
             'Thay $x = 1,5y$ vào phương trình trên ta được $1,5y + y = 60 \\Leftrightarrow 2,5y = 60 \\Leftrightarrow y = 24$, suy ra $x = 1,5 \\cdot 24 = 36$.\n'
-            '\\item Số hành khách đánh giá ở mức ``Tốt'' là: $%s \\cdot 36\\%% = %s$ (hành khách).\n'
+            '\\item Số hành khách đánh giá ở mức ``Tốt'' là: $%s \\cdot 36\\% = %s$ (hành khách).\n'
             '\\end{enumEX}'
         ) % (n_khach, m_tot)
     content = ('\\begin{minipage}{\\textwidth} \n' +

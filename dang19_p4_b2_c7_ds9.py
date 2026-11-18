@@ -128,17 +128,17 @@ def bt_dang19_p4_b2_c7_ds9(self):
     dang = random.choice(lisdang)
     if dang == '1':
         noidungcauhoi = (
-            'Khảo sát $50$ học sinh lớp 9D về việc đăng kí học bồi dưỡng hai môn Toán và Ngữ văn (mỗi học sinh đều đăng kí ít nhất $1$ trong $2$ môn), kết quả cho thấy có $64\\%%$ học sinh đăng kí môn Toán và $56\\%%$ học sinh đăng kí môn Ngữ văn.\\\\ '
+            'Khảo sát $50$ học sinh lớp 9D về việc đăng kí học bồi dưỡng hai môn Toán và Ngữ văn (mỗi học sinh đều đăng kí ít nhất $1$ trong $2$ môn), kết quả cho thấy có $64\\%$ học sinh đăng kí môn Toán và $56\\%$ học sinh đăng kí môn Ngữ văn.\\\\ '
             'a) Tính số học sinh đăng kí môn Toán và số học sinh đăng kí môn Ngữ văn.\\\\ '
             'b) Tính tần số tương đối của nhóm học sinh đăng kí \\textbf{cả hai} môn học trên.'
         )
 
         loigiai = (
             '\\begin{enumEX}[a)]{1}\n'
-            '\\item Số học sinh đăng kí môn Toán là: $50 \\cdot 64\\%% = 32$ (em).\\\\ '
-            'Số học sinh đăng kí môn Ngữ văn là: $50 \\cdot 56\\%% = 28$ (em).\n'
+            '\\item Số học sinh đăng kí môn Toán là: $50 \\cdot 64\\% = 32$ (em).\\\\ '
+            'Số học sinh đăng kí môn Ngữ văn là: $50 \\cdot 56\\% = 28$ (em).\n'
             '\\item Vì mỗi học sinh đều đăng kí ít nhất $1$ môn nên số học sinh đăng kí cả hai môn là: $32 + 28 - 50 = 10$ (em).\\\\ '
-            'Tần số tương đối của nhóm học sinh đăng kí cả hai môn là: $f = \\frac{10}{50} \\cdot 100\\%% = 20\\%%$.\n'
+            'Tần số tương đối của nhóm học sinh đăng kí cả hai môn là: $f = \\frac{10}{50} \\cdot 100\\% = 20\\%$.\n'
             '\\end{enumEX}'
         )
     content = ('\\begin{minipage}{\\textwidth} \n' +

@@ -130,16 +130,16 @@ def bt_dang18_p4_b2_c7_ds9(self):
         noidungcauhoi = (
             'Một báo cáo thống kê về kết quả kiểm tra thể lực của $120$ học sinh khối 9 đưa ra hai biểu diễn:\\\\ '
             '- Biểu đồ cột tần số ghi nhận: Mức Tốt ($54$ em), Mức Đạt ($48$ em), Mức Chưa đạt ($18$ em).\\\\ '
-            '- Biểu đồ hình quạt tròn đi kèm ghi chú giải: Mức Tốt ($45\\%%$), Mức Đạt ($40\\%%$), Mức Chưa đạt ($15\\%%$), với số đo cung lần lượt là $162^\\circ$, $144^\\circ$ và $54^\\circ$.\\\\ '
+            '- Biểu đồ hình quạt tròn đi kèm ghi chú giải: Mức Tốt ($45\\%$), Mức Đạt ($40\\%$), Mức Chưa đạt ($15\\%$), với số đo cung lần lượt là $162^\\circ$, $144^\\circ$ và $54^\\circ$.\\\\ '
             'Hãy kiểm tra xem biểu đồ hình quạt tròn có biểu diễn chính xác dữ liệu từ biểu đồ cột hay không. Giải thích rõ bằng phép tính.'
         )
 
         loigiai = (
             'Tổng số học sinh được kiểm tra là $n = 54 + 48 + 18 = 120$ (em).\\\\ '
             'Tần số tương đối thực tế của từng mức là:\\\\ '
-            '- Mức Tốt: $\\frac{54}{120} \\cdot 100\\%% = 45\\%%$, số đo cung tương ứng là $360^\\circ \\cdot 45\\%% = 162^\\circ$.\\\\ '
-            '- Mức Đạt: $\\frac{48}{120} \\cdot 100\\%% = 40\\%%$, số đo cung tương ứng là $360^\\circ \\cdot 40\\%% = 144^\\circ$.\\\\ '
-            '- Mức Chưa đạt: $\\frac{18}{120} \\cdot 100\\%% = 15\\%%$, số đo cung tương ứng là $360^\\circ \\cdot 15\\%% = 54^\\circ$.\\\\ '
+            '- Mức Tốt: $\\frac{54}{120} \\cdot 100\\% = 45\\%$, số đo cung tương ứng là $360^\\circ \\cdot 45\\% = 162^\\circ$.\\\\ '
+            '- Mức Đạt: $\\frac{48}{120} \\cdot 100\\% = 40\\%$, số đo cung tương ứng là $360^\\circ \\cdot 40\\% = 144^\\circ$.\\\\ '
+            '- Mức Chưa đạt: $\\frac{18}{120} \\cdot 100\\% = 15\\%$, số đo cung tương ứng là $360^\\circ \\cdot 15\\% = 54^\\circ$.\\\\ '
             'Vậy biểu đồ hình quạt tròn đã biểu diễn \\textbf{hoàn toàn chính xác} dữ liệu từ biểu đồ cột.'
         )
     content = ('\\begin{minipage}{\\textwidth} \n' +

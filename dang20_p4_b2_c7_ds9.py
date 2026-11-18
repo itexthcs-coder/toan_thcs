@@ -130,15 +130,15 @@ def bt_dang20_p4_b2_c7_ds9(self):
         noidungcauhoi = (
             'Một nông trại kiểm tra chất lượng $150$ quả bưởi thu hoạch đợt đầu thì phát hiện có $24$ quả không đạt tiêu chuẩn xuất khẩu.\\\\ '
             'a) Tính tần số tương đối của số quả bưởi đạt tiêu chuẩn xuất khẩu trong đợt đầu.\\\\ '
-            'b) Ở đợt thu hoạch thứ hai, nông trại muốn nâng tỉ lệ quả bưởi đạt tiêu chuẩn xuất khẩu tính chung cho cả hai đợt lên mức $90\\%%$. Hỏi trong đợt thứ hai, nông trại cần thu hoạch thêm ít nhất bao nhiêu quả bưởi đạt tiêu chuẩn (giả sử đợt hai không có quả nào hỏng)?'
+            'b) Ở đợt thu hoạch thứ hai, nông trại muốn nâng tỉ lệ quả bưởi đạt tiêu chuẩn xuất khẩu tính chung cho cả hai đợt lên mức $90\\%$. Hỏi trong đợt thứ hai, nông trại cần thu hoạch thêm ít nhất bao nhiêu quả bưởi đạt tiêu chuẩn (giả sử đợt hai không có quả nào hỏng)?'
         )
 
         loigiai = (
             '\\begin{enumEX}[a)]{1}\n'
             '\\item Số quả bưởi đạt tiêu chuẩn xuất khẩu trong đợt đầu là $150 - 24 = 126$ (quả).\\\\ '
-            'Tần số tương đối tương ứng là: $f = \\frac{126}{150} \\cdot 100\\%% = 84\\%%$.\n'
-            '\\item Khi tỉ lệ đạt chuẩn chung cả hai đợt đạt $90\\%%$ thì $24$ quả không đạt chuẩn chiếm $100\\%% - 90\\%% = 10\\%%$ tổng số quả cả hai đợt.\\\\ '
-            'Tổng số quả bưởi cả hai đợt cần đạt là: $24 : 10\\%% = 240$ (quả).\\\\ '
+            'Tần số tương đối tương ứng là: $f = \\frac{126}{150} \\cdot 100\\% = 84\\%$.\n'
+            '\\item Khi tỉ lệ đạt chuẩn chung cả hai đợt đạt $90\\%$ thì $24$ quả không đạt chuẩn chiếm $100\\% - 90\\% = 10\\%$ tổng số quả cả hai đợt.\\\\ '
+            'Tổng số quả bưởi cả hai đợt cần đạt là: $24 : 10\\% = 240$ (quả).\\\\ '
             'Vậy ở đợt thứ hai, nông trại cần thu hoạch thêm ít nhất: $240 - 150 = 90$ (quả bưởi đạt tiêu chuẩn).\n'
             '\\end{enumEX}'
         )
