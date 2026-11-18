@@ -136,7 +136,7 @@ def bt_dang8_p1_b4_c6_ds9(self):
         mass = random.choice([300, 450, 520, 640, 750])
 
         # Các đáp án trắc nghiệm
-        du = ['$\dfrac{%s}{x}$' % (mass)]
+        du = ['$\\dfrac{%s}{x}$' % (mass)]
         da = random.choice(du)
         s = [
             '$%sx$' % (mass),
