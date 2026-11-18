@@ -150,10 +150,10 @@ def bt_dang3_p2_b2_c7_ds9(self):
 
     noidungcauhoi = ('Biểu đồ cột dưới đây biểu diễn tần số tương đối các loại phương tiện mà $%s$ nhân viên một công ty sử dụng để đi làm hằng ngày:%sXét tính đúng sai của các khẳng định sau:' % (n, hinh_cot))
 
-    nb_da_1_d = '\\True Tổng các tần số tương đối của bốn loại phương tiện trên bằng $100\\%%$'
+    nb_da_1_d = '\\True Tổng các tần số tương đối của bốn loại phương tiện trên bằng $100\\%$'
     nb_da_1_s = 'Phương tiện được sử dụng nhiều thứ hai là Ô tô cá nhân'
     list_nb_da_1 = [nb_da_1_d, nb_da_1_s]
-    loigiai_nb_1 = ('Tổng các tần số tương đối là $54\\%% + 16\\%% + 22\\%% + 8\\%% = 100\\%%$, và phương tiện đứng thứ hai là Xe buýt ($22\\%%$).')
+    loigiai_nb_1 = ('Tổng các tần số tương đối là $54\\% + 16\\% + 22\\% + 8\\% = 100\\%$, và phương tiện đứng thứ hai là Xe buýt ($22\\%$).')
     list_nb_2 = [loigiai_nb_1]
 
     th_da_1_d = '\\True Số nhân viên đi làm bằng xe máy nhiều hơn số nhân viên đi bằng xe buýt là $%s$ người' % (hieu_13)
@@ -201,18 +201,18 @@ def bt_dang3_p2_b2_c7_ds9(self):
     shuffled_answers_vdc, shuffled_solutions_vdc = zip(*combined_vdc)
 
     content = ('\\begin{minipage}{\\textwidth} \n' +
-               '\\begin{ex}\n' + str(noidungcauhoi) + '\n' +
-               '\\choiceTFn \n' +
-               '{' + str(shuffled_answers_nb[0]) + '}\n' +
-               '{' + str(shuffled_answers_th[0]) + '}\n' +
-               '{' + str(shuffled_answers_vd[0]) + '}\n' +
-               '{' + str(shuffled_answers_vdc[0]) + '}\n' +
-               '\\loigiai{ \n' +
-               '\\begin{enumEX}[a)]{1} \n' +
-               '\\item ' + str(shuffled_solutions_nb[0]) + '\n' +
-               '\\item ' + str(shuffled_solutions_th[0]) + '\n' +
-               '\\item ' + str(shuffled_solutions_vd[0]) + '\n' +
-               '\\item ' + str(shuffled_solutions_vdc[0]) + '\n' +
-               '\\end{enumEX}} \n' +
-               '\\end{ex}\n \\end{minipage}\n\n')
+            '\\begin{ex}\n' + str(noidungcauhoi) + '\n' +
+            '\\choiceTFn \n' +
+            '{' + str(shuffled_answers_nb[0]) + '}\n' +
+            '{' + str(shuffled_answers_th[0]) + '}\n' +
+            '{' + str(shuffled_answers_vd[0]) + '}\n' +
+            '{' + str(shuffled_answers_vdc[0]) + '}\n' +
+            '\\loigiai{ \n' +
+            '\\begin{enumEX}[a)]{1} \n' +
+            '\\item ' + str(shuffled_solutions_nb[0]) + '\n' +
+            '\\item ' + str(shuffled_solutions_th[0]) + '\n' +
+            '\\item ' + str(shuffled_solutions_vd[0]) + '\n' +
+            '\\item ' + str(shuffled_solutions_vdc[0]) + '\n' +
+            '\\end{enumEX}} \n' +
+            '\\end{ex}\n \\end{minipage}\n\n')
     return content
