@@ -160,8 +160,8 @@ Tần số & $%s$ & $%s$ & $%s$ & $%s$ \\\\
         list_th_da_1 = [th_da_1_d, th_da_1_s]
         
         ######################################################################## Mệnh đề c ############################################################################
-        vd_da_1_d = '\\True ' + ('Tỉ lệ khách hàng đánh giá ``Không hài lòng'' chiếm $6,25\\%%$ tổng số khách hàng')
-        vd_da_1_s = ('Tỉ lệ khách hàng đánh giá ``Không hài lòng'' chiếm $5\\%%$ tổng số khách hàng')
+        vd_da_1_d = '\\True ' + ('Tỉ lệ khách hàng đánh giá ``Không hài lòng'' chiếm $6,25\\%$ tổng số khách hàng')
+        vd_da_1_s = ('Tỉ lệ khách hàng đánh giá ``Không hài lòng'' chiếm $5\\%$ tổng số khách hàng')
         list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
         
         ######################################################################## Mệnh đề d ############################################################################
@@ -184,7 +184,7 @@ Tần số & $%s$ & $%s$ & $%s$ & $%s$ \\\\
         
         loigiai_nb_1 = ('Đúng. Cỡ mẫu bằng $%s + %s + %s + %s = 80$ (khách hàng).' % (f1, f2, f3, f4)) if '\\True' in nb_da_1 else ('Sai. Tổng số khách hàng tham gia đánh giá là $%s + %s + %s + %s = 80$.' % (f1, f2, f3, f4))
         loigiai_th_1 = ('Đúng. Mức ``Hài lòng'' có tần số bằng $%s$, lớn nhất trong $4$ mức.' % f2) if '\\True' in th_da_1 else ('Sai. Mức ``Hài lòng'' có tần số $%s$ lớn hơn ``Rất hài lòng'' ($%s$).' % (f2, f1))
-        loigiai_vd_1 = ('Đúng. Tỉ lệ khách hàng không hài lòng là $\\dfrac{5}{80} \\cdot 100\\%% = 6,25\\%%$.') if '\\True' in vd_da_1 else ('Sai. Có $5$ trên $80$ khách hàng không hài lòng, chiếm $\\dfrac{5}{80} \\cdot 100\\%% = 6,25\\%%$, không phải $5\\%%$.')
+        loigiai_vd_1 = ('Đúng. Tỉ lệ khách hàng không hài lòng là $\\dfrac{5}{80} \\cdot 100\\% = 6,25\\%$.') if '\\True' in vd_da_1 else ('Sai. Có $5$ trên $80$ khách hàng không hài lòng, chiếm $\\dfrac{5}{80} \\cdot 100\\% = 6,25\\%$, không phải $5\\%$.')
         loigiai_vdc_1 = ('Đúng. Số khách hàng đánh giá ``Hài lòng'' hoặc ``Rất hài lòng'' là $%s + %s = %s$.' % (f1, f2, tu_hl)) if '\\True' in vdc_da_1 else ('Sai. Cần cộng cả hai mức ``Hài lòng'' và ``Rất hài lòng'': $%s + %s = %s$ (khách hàng).' % (f1, f2, tu_hl))
         
         list_nb_1 = [nb_da_1]

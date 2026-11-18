@@ -151,8 +151,8 @@ Số lượng & $8$ & $12$ & $54$ & $76$ \\\\
         list_nb_da_1 = [nb_da_1_d, nb_da_1_s]
         
         ######################################################################## Mệnh đề b ############################################################################
-        th_da_1_d = '\\True ' + ('Bão và lũ lụt là hai loại thiên tai xảy ra nhiều nhất, chiếm trên $85\\%%$ tổng số đợt thiên tai')
-        th_da_1_s = ('Bão và lũ lụt chiếm dưới $80\\%%$ tổng số đợt thiên tai')
+        th_da_1_d = '\\True ' + ('Bão và lũ lụt là hai loại thiên tai xảy ra nhiều nhất, chiếm trên $85\\%$ tổng số đợt thiên tai')
+        th_da_1_s = ('Bão và lũ lụt chiếm dưới $80\\%$ tổng số đợt thiên tai')
         list_th_da_1 = [th_da_1_d, th_da_1_s]
         
         ######################################################################## Mệnh đề c ############################################################################
