@@ -157,7 +157,7 @@ def bt_dang5_p2_b2_c7_ds9(self):
     th_da_1_d = '\\True Tần số tương đối của số học sinh chọn CLB Bóng rổ là $30\\%$'
     th_da_1_s = 'Tần số tương đối của số học sinh chọn CLB Bóng rổ là $25\\%$'
     list_th_da_1 = [th_da_1_d, th_da_1_s]
-    loigiai_th_1 = ('Số học sinh chọn CLB Bóng rổ là $%s$, chiếm $\\frac{%s}{%s} \\cdot 100\\% = 30\\%$.' % (m1, m1, tong))
+    loigiai_th_1 = ('Số học sinh chọn CLB Bóng rổ là $%s$, chiếm $\\frac{%s}{%s} \\cdot 100\\%% = 30\\%%$.' % (m1, m1, tong))
     list_th_2 = [loigiai_th_1]
 
     vd_da_1_d = '\\True Tần số tương đối của số học sinh chọn CLB Mỹ thuật là $10\\%$'
