@@ -150,7 +150,7 @@ def bt_dang11_p2_b2_c7_ds9(self):
     loigiai_nb_1 = ('Số lần xuất hiện mặt $6$ chấm là $%s \\cdot 25\\%% = %s$ (lần).' % (n_gieo, m6))
     list_nb_2 = [loigiai_nb_1]
 
-    th_da_1_d = '\\True Xác suất ước lượng để gieo được mặt có số chấm là số chẵn bằng $%s\\%$' % (p_chan)
+    th_da_1_d = '\\True Xác suất ước lượng để gieo được mặt có số chấm là số chẵn bằng $%s\\%%$' % (p_chan)
     th_da_1_s = 'Xác suất ước lượng để gieo được mặt có số chấm là số chẵn bằng $50\\%$'
     list_th_da_1 = [th_da_1_d, th_da_1_s]
     loigiai_th_1 = ('Các mặt có số chấm chẵn gồm $2, 4, 6$ chấm, có tổng tần số tương đối là $12\\%% + 14\\%% + 25\\%% = %s\\%%$.' % (p_chan))
