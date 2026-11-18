@@ -135,14 +135,14 @@ def bt_dang6_p1_b1_c8_ds9(self):
     if dang == '1':
         khu_vuc = random.choice(['một khu phố', 'một thôn', 'một chung cư', 'một xã'])
         
-        du = ['$\Omega = \\{(\\text{Trai, Trai}); (\\text{Trai, Gái}); (\\text{Gái, Trai}); (\\text{Gái, Gái})\\}$']
+        du = ['$\\Omega = \\{(\\text{Trai, Trai}); (\\text{Trai, Gái}); (\\text{Gái, Trai}); (\\text{Gái, Gái})\\}$']
         da = random.choice(du)
         
         s = [
-            '$\Omega = \\{(\\text{Trai, Trai}); (\\text{Gái, Gái})\\}$',
-            '$\Omega = \\{(\\text{Trai, Trai}); (\\text{Trai, Gái}); (\\text{Gái, Gái})\\}$',
-            '$\Omega = \\{\\text{Trai}; \\text{Gái}\\}$',
-            '$\Omega = \\{(\\text{Trai, Gái}); (\\text{Gái, Trai})\\}$'
+            '$\\Omega = \\{(\\text{Trai, Trai}); (\\text{Gái, Gái})\\}$',
+            '$\\Omega = \\{(\\text{Trai, Trai}); (\\text{Trai, Gái}); (\\text{Gái, Gái})\\}$',
+            '$\\Omega = \\{\\text{Trai}; \\text{Gái}\\}$',
+            '$\\Omega = \\{(\\text{Trai, Gái}); (\\text{Gái, Trai})\\}$'
         ]
         
         das1 = random.choice(s)

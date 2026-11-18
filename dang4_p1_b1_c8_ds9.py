@@ -135,14 +135,14 @@ def bt_dang4_p1_b1_c8_ds9(self):
     if dang == '1':
         ten = random.choice(['Hùng', 'Dũng', 'Nam', 'Trang', 'Ngọc'])
         
-        du = ['$\Omega = \\{(S, S); (S, N); (N, S); (N, N)\\}$']
+        du = ['$\\Omega = \\{(S, S); (S, N); (N, S); (N, N)\\}$']
         da = random.choice(du)
         
         s = [
-            '$\Omega = \\{(S, S); (N, N)\\}$',
-            '$\Omega = \\{(S, S); (S, N); (N, N)\\}$',
-            '$\Omega = \\{S; N\\}$',
-            '$\Omega = \\{(S, N); (N, S)\\}$'
+            '$\\Omega = \\{(S, S); (N, N)\\}$',
+            '$\\Omega = \\{(S, S); (S, N); (N, N)\\}$',
+            '$\\Omega = \\{S; N\\}$',
+            '$\\Omega = \\{(S, N); (N, S)\\}$'
         ]
         
         das1 = random.choice(s)
