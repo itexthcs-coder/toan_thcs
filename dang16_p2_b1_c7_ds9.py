@@ -151,8 +151,8 @@ Số lượng & $8$ & $12$ & $54$ & $76$ \\\\
         list_nb_da_1 = [nb_da_1_d, nb_da_1_s]
         
         ######################################################################## Mệnh đề b ############################################################################
-        th_da_1_d = '\\True ' + ('Bão và lũ lụt là hai loại thiên tai xảy ra nhiều nhất, chiếm trên $85\\%%$ tổng số đợt thiên tai')
-        th_da_1_s = ('Bão và lũ lụt chiếm dưới $80\\%%$ tổng số đợt thiên tai')
+        th_da_1_d = '\\True ' + ('Bão và lũ lụt là hai loại thiên tai xảy ra nhiều nhất, chiếm trên $85\\%$ tổng số đợt thiên tai')
+        th_da_1_s = ('Bão và lũ lụt chiếm dưới $80\\%$ tổng số đợt thiên tai')
         list_th_da_1 = [th_da_1_d, th_da_1_s]
         
         ######################################################################## Mệnh đề c ############################################################################
@@ -179,7 +179,7 @@ Số lượng & $8$ & $12$ & $54$ & $76$ \\\\
                 break
         
         loigiai_nb_1 = ('Đúng. Cỡ mẫu của bảng thống kê là $8 + 12 + 54 + 76 = 150$ (đợt).') if '\\True' in nb_da_1 else ('Sai. Cộng tần số của cả $4$ loại thiên tai ta được $8 + 12 + 54 + 76 = 150$ (đợt).')
-        loigiai_th_1 = ('Đúng. Tổng số đợt bão và lũ lụt là $54 + 76 = 130$, chiếm $\\dfrac{130}{150} \\cdot 100\\%% \\approx %s\\%% > 85\\%%$.' % pct_bl_str) if '\\True' in th_da_1 else ('Sai. Bão và lũ lụt có $130$ trên $150$ đợt, chiếm khoảng $%s\\%%$ (lớn hơn $85\\%%$).' % pct_bl_str)
+        loigiai_th_1 = ('Đúng. Tổng số đợt bão và lũ lụt là $54 + 76 = 130$, chiếm $\\dfrac{130}{150} \\cdot 100\\% \\approx %s\\% > 85\\%$.' % pct_bl_str) if '\\True' in th_da_1 else ('Sai. Bão và lũ lụt có $130$ trên $150$ đợt, chiếm khoảng $%s\\%$ (lớn hơn $85\\%$).' % pct_bl_str)
         loigiai_vd_1 = ('Đúng. Tỉ số tần số giữa bão và hạn hán là $\\dfrac{76}{8} = 9,5$.') if '\\True' in vd_da_1 else ('Sai. Ta có $\\dfrac{76}{8} = 9,5$, vậy tần số của bão gấp $9,5$ lần hạn hán.')
         loigiai_vdc_1 = ('Đúng. Giai đoạn $2000$–$2024$ gồm $25$ năm, trung bình mỗi năm có $\\dfrac{150}{25} = 6$ (đợt).') if '\\True' in vdc_da_1 else ('Sai. Chia tổng số $150$ đợt cho $25$ năm ta được trung bình $\\dfrac{150}{25} = 6$ đợt mỗi năm.')
         

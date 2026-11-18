@@ -151,8 +151,8 @@ Số lượt bệnh nhân & $42$ & $28$ & $35$ & $65$ & $50$ \\\\
         list_nb_da_1 = [nb_da_1_d, nb_da_1_s]
         
         ######################################################################## Mệnh đề b ############################################################################
-        th_da_1_d = '\\True ' + ('Khung giờ cao điểm nhất là $16\\text{h}$–$18\\text{h}$ với tần số chiếm gần $30\\%%$ tổng số lượt khám')
-        th_da_1_s = ('Khung giờ cao điểm nhất là $18\\text{h}$–$20\\text{h}$ với tần số chiếm $25\\%%$ tổng số lượt khám')
+        th_da_1_d = '\\True ' + ('Khung giờ cao điểm nhất là $16\\text{h}$–$18\\text{h}$ với tần số chiếm gần $30\\%$ tổng số lượt khám')
+        th_da_1_s = ('Khung giờ cao điểm nhất là $18\\text{h}$–$20\\text{h}$ với tần số chiếm $25\\%$ tổng số lượt khám')
         list_th_da_1 = [th_da_1_d, th_da_1_s]
         
         ######################################################################## Mệnh đề c ############################################################################
@@ -179,7 +179,7 @@ Số lượt bệnh nhân & $42$ & $28$ & $35$ & $65$ & $50$ \\\\
                 break
         
         loigiai_nb_1 = ('Đúng. Tổng số lượt bệnh nhân là $42 + 28 + 35 + 65 + 50 = 220$ (lượt).') if '\\True' in nb_da_1 else ('Sai. Cộng tần số của cả $5$ khung giờ ta được $42 + 28 + 35 + 65 + 50 = 220$ (lượt).')
-        loigiai_th_1 = ('Đúng. Khung giờ $16\\text{h}$–$18\\text{h}$ có tần số cao nhất ($65$ lượt), chiếm $\\dfrac{65}{220} \\cdot 100\\%% \\approx 29,5\\%%$.') if '\\True' in th_da_1 else ('Sai. Khung giờ $16\\text{h}$–$18\\text{h}$ mới có tần số cao nhất ($65$ lượt), chiếm khoảng $29,5\\%%$.')
+        loigiai_th_1 = ('Đúng. Khung giờ $16\\text{h}$–$18\\text{h}$ có tần số cao nhất ($65$ lượt), chiếm $\\dfrac{65}{220} \\cdot 100\\% \\approx 29,5\\%$.') if '\\True' in th_da_1 else ('Sai. Khung giờ $16\\text{h}$–$18\\text{h}$ mới có tần số cao nhất ($65$ lượt), chiếm khoảng $29,5\\%$.')
         loigiai_vd_1 = ('Đúng. Buổi sáng có $42 + 28 = 70$ lượt, nhiều hơn buổi tối ($50$ lượt) là $70 - 50 = 20$ (lượt).') if '\\True' in vd_da_1 else ('Sai. Tổng số lượt khám buổi sáng là $42 + 28 = 70$ lượt, nhiều hơn buổi tối $70 - 50 = 20$ lượt.')
         loigiai_vdc_1 = ('Đúng. Hai khung giờ $16\\text{h}$–$18\\text{h}$ ($65$ lượt) và $18\\text{h}$–$20\\text{h}$ ($50$ lượt) có tần số cao nhất nên cần tăng cường nhân lực.') if '\\True' in vdc_da_1 else ('Sai. Khung giờ $10\\text{h}$–$12\\text{h}$ có tần số thấp nhất ($28$ lượt), đông nhất là từ $16\\text{h}$ đến $20\\text{h}$.')
         

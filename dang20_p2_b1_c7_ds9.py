@@ -179,8 +179,8 @@ def bt_dang20_p2_b1_c7_ds9(self):
         list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
         
         ######################################################################## Mệnh đề d ############################################################################
-        vdc_da_1_d = '\\True ' + ('Số học sinh có nhà cách trường dưới $3\\text{ km}$ chiếm $40\\%%$ sĩ số cả lớp')
-        vdc_da_1_s = ('Số học sinh có nhà cách trường dưới $3\\text{ km}$ chiếm $35\\%%$ sĩ số cả lớp')
+        vdc_da_1_d = '\\True ' + ('Số học sinh có nhà cách trường dưới $3\\text{ km}$ chiếm $40\\%$ sĩ số cả lớp')
+        vdc_da_1_s = ('Số học sinh có nhà cách trường dưới $3\\text{ km}$ chiếm $35\\%$ sĩ số cả lớp')
         list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
         
         def count_true_answers(answers):
@@ -199,7 +199,7 @@ def bt_dang20_p2_b1_c7_ds9(self):
         loigiai_nb_1 = ('Đúng. Sĩ số lớp $9E$ bằng cỡ mẫu: $5 + 11 + 14 + 7 + 3 = 40$ (học sinh).') if '\\True' in nb_da_1 else ('Sai. Cộng tần số tại $5$ mốc quãng đường ta được $5 + 11 + 14 + 7 + 3 = 40$ (học sinh).')
         loigiai_th_1 = ('Đúng. Giá trị $3\\text{ km}$ có tần số lớn nhất ($14$ học sinh) nên phổ biến nhất.') if '\\True' in th_da_1 else ('Sai. Đỉnh cao nhất của đa giác tần số nằm tại hoành độ $3\\text{ km}$ với tần số là $14$.')
         loigiai_vd_1 = ('Đúng. Học sinh có nhà cách trường từ $4\\text{ km}$ trở lên gồm mức $4\\text{ km}$ ($7$ học sinh) và $5\\text{ km}$ ($3$ học sinh), tổng là $7 + 3 = 10$ (học sinh).') if '\\True' in vd_da_1 else ('Sai. Cần tính cả học sinh cách trường $4\\text{ km}$ và $5\\text{ km}$: $7 + 3 = 10$ (học sinh).')
-        loigiai_vdc_1 = ('Đúng. Số học sinh có nhà cách trường dưới $3\\text{ km}$ gồm mức $1\\text{ km}$ ($5$) và $2\\text{ km}$ ($11$), tổng là $16$ học sinh, chiếm $\\dfrac{16}{40} \\cdot 100\\%% = 40\\%%$.') if '\\True' in vdc_da_1 else ('Sai. Có $5 + 11 = 16$ học sinh có nhà cách trường dưới $3\\text{ km}$, chiếm $\\dfrac{16}{40} \\cdot 100\\%% = 40\\%%$.')
+        loigiai_vdc_1 = ('Đúng. Số học sinh có nhà cách trường dưới $3\\text{ km}$ gồm mức $1\\text{ km}$ ($5$) và $2\\text{ km}$ ($11$), tổng là $16$ học sinh, chiếm $\\dfrac{16}{40} \\cdot 100\\% = 40\\%$.') if '\\True' in vdc_da_1 else ('Sai. Có $5 + 11 = 16$ học sinh có nhà cách trường dưới $3\\text{ km}$, chiếm $\\dfrac{16}{40} \\cdot 100\\% = 40\\%$.')
         
         list_nb_1 = [nb_da_1]
         list_nb_2 = [loigiai_nb_1]

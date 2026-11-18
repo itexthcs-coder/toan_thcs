@@ -167,8 +167,8 @@ Tần số & $7$ & $8$ & $7$ & $3$ \\\\
         list_th_da_1 = [th_da_1_d, th_da_1_s]
         
         ######################################################################## Mệnh đề c ############################################################################
-        vd_da_1_d = '\\True ' + ('Tỉ lệ sản phẩm hoàn thành nhanh nhất ($18$ giây) ở dây chuyền $B$ cao hơn ở dây chuyền $A$ là $12\\%%$')
-        vd_da_1_s = ('Tỉ lệ sản phẩm hoàn thành nhanh nhất ($18$ giây) ở dây chuyền $B$ cao hơn ở dây chuyền $A$ là $3\\%%$')
+        vd_da_1_d = '\\True ' + ('Tỉ lệ sản phẩm hoàn thành nhanh nhất ($18$ giây) ở dây chuyền $B$ cao hơn ở dây chuyền $A$ là $12\\%$')
+        vd_da_1_s = ('Tỉ lệ sản phẩm hoàn thành nhanh nhất ($18$ giây) ở dây chuyền $B$ cao hơn ở dây chuyền $A$ là $3\\%$')
         list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
         
         ######################################################################## Mệnh đề d ############################################################################
@@ -191,7 +191,7 @@ Tần số & $7$ & $8$ & $7$ & $3$ \\\\
         
         loigiai_nb_1 = ('Đúng. Tổng tần số ở dây chuyền $A$ là $4 + 12 + 6 + 3 = 25$ và ở dây chuyền $B$ là $7 + 8 + 7 + 3 = 25$.') if '\\True' in nb_da_1 else ('Sai. Cả hai bảng tần số đều có tổng tần số bằng $25$ sản phẩm.')
         loigiai_th_1 = ('Đúng. Tại mốc $19$ giây, dây chuyền $A$ có tần số $12$, cao hơn dây chuyền $B$ (tần số $8$).') if '\\True' in th_da_1 else ('Sai. Tần số ở mốc $19$ giây của dây chuyền $A$ là $12$, lớn hơn của dây chuyền $B$ ($8$).')
-        loigiai_vd_1 = ('Đúng. Tỉ lệ ở dây chuyền $B$ là $\\dfrac{7}{25} = 28\\%%$, ở dây chuyền $A$ là $\\dfrac{4}{25} = 16\\%%$, chênh lệch $28\\%% - 16\\%% = 12\\%%$.') if '\\True' in vd_da_1 else ('Sai. Chênh lệch là $3$ sản phẩm trên tổng số $25$ sản phẩm, tương ứng với $\\dfrac{3}{25} \\cdot 100\\%% = 12\\%%$.')
+        loigiai_vd_1 = ('Đúng. Tỉ lệ ở dây chuyền $B$ là $\\dfrac{7}{25} = 28\\%$, ở dây chuyền $A$ là $\\dfrac{4}{25} = 16\\%$, chênh lệch $28\\% - 16\\% = 12\\%$.') if '\\True' in vd_da_1 else ('Sai. Chênh lệch là $3$ sản phẩm trên tổng số $25$ sản phẩm, tương ứng với $\\dfrac{3}{25} \\cdot 100\\% = 12\\%$.')
         loigiai_vdc_1 = ('Đúng. Số sản phẩm hoàn thành trong $18$ hoặc $19$ giây ở dây chuyền $A$ là $4 + 12 = 16$, nhiều hơn dây chuyền $B$ ($7 + 8 = 15$).') if '\\True' in vdc_da_1 else ('Sai. Dây chuyền $A$ có $4 + 12 = 16$ sản phẩm đạt yêu cầu, nhiều hơn dây chuyền $B$ ($7 + 8 = 15$ sản phẩm).')
         
         list_nb_1 = [nb_da_1]

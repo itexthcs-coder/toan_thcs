@@ -182,8 +182,8 @@ def bt_dang18_p2_b1_c7_ds9(self):
         list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
         
         ######################################################################## Mệnh đề d ############################################################################
-        vdc_da_1_d = '\\True ' + ('Tỉ lệ máy tính không mắc lỗi chiếm $%s\\%%$ tổng số máy trong phòng' % pct_0)
-        vdc_da_1_s = ('Tỉ lệ máy tính không mắc lỗi chiếm $%s\\%%$ tổng số máy trong phòng' % (pct_0 + 5))
+        vdc_da_1_d = '\\True ' + ('Tỉ lệ máy tính không mắc lỗi chiếm $%s\\%$ tổng số máy trong phòng' % pct_0)
+        vdc_da_1_s = ('Tỉ lệ máy tính không mắc lỗi chiếm $%s\\%$ tổng số máy trong phòng' % (pct_0 + 5))
         list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
         
         def count_true_answers(answers):
@@ -202,7 +202,7 @@ def bt_dang18_p2_b1_c7_ds9(self):
         loigiai_nb_1 = ('Đúng. Vì có $40$ máy tính nên tổng tần số hai cột còn lại là $40 - (%s + %s) = %s$.' % (f1, f2, tong_03)) if '\\True' in nb_da_1 else ('Sai. Tổng tần số của hai cột bị che khuất là $40 - %s - %s = %s$.' % (f1, f2, tong_03))
         loigiai_th_1 = ('Đúng. Gọi số máy có $3$ lỗi là $x$ thì số máy có $0$ lỗi là $3x$. Ta có $3x + x = %s \\Leftrightarrow 4x = %s \\Leftrightarrow x = %s$.' % (tong_03, tong_03, f3)) if '\\True' in th_da_1 else ('Sai. Từ $3x + x = %s$, ta tìm được số máy có $3$ lỗi là $x = %s$ máy.' % (tong_03, f3))
         loigiai_vd_1 = ('Đúng. Số máy tính có $0$ lỗi là $3 \\cdot %s = %s$ (máy).' % (f3, f0)) if '\\True' in vd_da_1 else ('Sai. Cột $0$ lỗi cao gấp $3$ lần cột $3$ lỗi nên có $3 \\cdot %s = %s$ (máy).' % (f3, f0))
-        loigiai_vdc_1 = ('Đúng. Tỉ lệ máy tính có $0$ lỗi là $\\dfrac{%s}{40} \\cdot 100\\%% = %s\\%%$.' % (f0, pct_0)) if '\\True' in vdc_da_1 else ('Sai. Có $%s$ trên $40$ máy không mắc lỗi, chiếm $\\dfrac{%s}{40} \\cdot 100\\%% = %s\\%%$.' % (f0, f0, pct_0))
+        loigiai_vdc_1 = ('Đúng. Tỉ lệ máy tính có $0$ lỗi là $\\dfrac{%s}{40} \\cdot 100\\% = %s\\%$.' % (f0, pct_0)) if '\\True' in vdc_da_1 else ('Sai. Có $%s$ trên $40$ máy không mắc lỗi, chiếm $\\dfrac{%s}{40} \\cdot 100\\% = %s\\%$.' % (f0, f0, pct_0))
         
         list_nb_1 = [nb_da_1]
         list_nb_2 = [loigiai_nb_1]
