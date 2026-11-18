@@ -161,8 +161,8 @@ b) Nhận xét về tổng các tần số tương đối sau khi làm tròn và
         loigiai = ('''\\begin{enumEX}[a)]{1}
 \\item Tính tần số tương đối của từng nhóm (cỡ mẫu $n = 35$) và làm tròn đến hàng phần mười:
 \\begin{itemize}
-\\item $f_1 = \\dfrac{3}{35} \\cdot 100\\%% \\approx 8,6\\%%$; \quad $f_2 = \\dfrac{9}{35} \\cdot 100\\%% \\approx 25,7\\%%$;
-\\item $f_3 = \\dfrac{16}{35} \\cdot 100\\%% \\approx 45,7\\%%$; \quad $f_4 = \\dfrac{7}{35} \\cdot 100\\%% = 20,0\\%%$.
+\\item $f_1 = \\dfrac{3}{35} \\cdot 100\\%% \\approx 8,6\\%%$; \\quad $f_2 = \\dfrac{9}{35} \\cdot 100\\%% \\approx 25,7\\%%$;
+\\item $f_3 = \\dfrac{16}{35} \\cdot 100\\%% \\approx 45,7\\%%$; \\quad $f_4 = \\dfrac{7}{35} \\cdot 100\\%% = 20,0\\%%$.
 \\end{itemize}
 Ta có bảng tần số tương đối ghép nhóm:
 \\begin{center}
