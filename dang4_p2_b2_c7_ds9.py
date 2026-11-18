@@ -167,13 +167,13 @@ def bt_dang4_p2_b2_c7_ds9(self):
     vd_da_1_d = '\\True Trên biểu đồ hình quạt tròn, số đo cung biểu diễn tỉ lệ thời gian học môn Ngữ văn là $72^\\circ$'
     vd_da_1_s = 'Trên biểu đồ hình quạt tròn, số đo cung biểu diễn tỉ lệ thời gian học môn Ngữ văn là $90^\\circ$'
     list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
-    loigiai_vd_1 = ('Số đo cung biểu diễn môn Ngữ văn ($20\\%%$) là $360^\\circ \\cdot 20\\%% = 72^\\circ$.')
+    loigiai_vd_1 = ('Số đo cung biểu diễn môn Ngữ văn ($20\\%$) là $360^\\circ \\cdot 20\\% = 72^\\circ$.')
     list_vd_2 = [loigiai_vd_1]
 
-    vdc_da_1_d = '\\True Tổng thời gian Minh học Toán và Tiếng Anh chiếm $60\\%%$ tổng thời gian tự học'
-    vdc_da_1_s = 'Tổng thời gian Minh học Toán và Tiếng Anh chiếm $50\\%%$ tổng thời gian tự học'
+    vdc_da_1_d = '\\True Tổng thời gian Minh học Toán và Tiếng Anh chiếm $60\\%$ tổng thời gian tự học'
+    vdc_da_1_s = 'Tổng thời gian Minh học Toán và Tiếng Anh chiếm $50\\%$ tổng thời gian tự học'
     list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
-    loigiai_vdc_1 = ('Tổng tỉ lệ thời gian học Toán và Tiếng Anh là $35\\%% + 25\\%% = 60\\%%$.')
+    loigiai_vdc_1 = ('Tổng tỉ lệ thời gian học Toán và Tiếng Anh là $35\\% + 25\\% = 60\\%$.')
     list_vdc_2 = [loigiai_vdc_1]
     def count_true_answers(answers):
         return sum('\\True' in ans for ans in answers)

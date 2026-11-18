@@ -130,22 +130,22 @@ def bt_dang12_p2_b2_c7_ds9(self):
 
     noidungcauhoi = ('Trong một hộp kín có $20$ viên bi cùng kích thước gồm ba màu: Trắng, Đen và Xanh. Bạn An thực hiện $%s$ lần lấy ngẫu nhiên $1$ viên bi, ghi lại màu rồi trả lại vào hộp và trộn đều. Kết quả thu được: $%s$ lần bi Trắng, $%s$ lần bi Đen và $%s$ lần bi Xanh. Xét tính đúng sai của các khẳng định sau:' % (n_lan, m_trang, m_den, m_xanh))
 
-    nb_da_1_d = '\\True Tần số tương đối xuất hiện bi Trắng, bi Đen, bi Xanh lần lượt là $45\\%%$, $35\\%%$ và $20\\%%$'
-    nb_da_1_s = 'Tần số tương đối xuất hiện bi Trắng, bi Đen, bi Xanh lần lượt là $40\\%%$, $35\\%%$ và $25\\%%$'
+    nb_da_1_d = '\\True Tần số tương đối xuất hiện bi Trắng, bi Đen, bi Xanh lần lượt là $45\\%$, $35\\%$ và $20\\%$'
+    nb_da_1_s = 'Tần số tương đối xuất hiện bi Trắng, bi Đen, bi Xanh lần lượt là $40\\%$, $35\\%$ và $25\\%$'
     list_nb_da_1 = [nb_da_1_d, nb_da_1_s]
     loigiai_nb_1 = ('Các tần số tương đối lần lượt là $\\frac{%s}{%s} \\cdot 100\\%% = 45\\%%$, $\\frac{%s}{%s} \\cdot 100\\%% = 35\\%%$ và $\\frac{%s}{%s} \\cdot 100\\%% = 20\\%%$.' % (m_trang, n_lan, m_den, n_lan, m_xanh, n_lan))
     list_nb_2 = [loigiai_nb_1]
 
-    th_da_1_d = '\\True Xác suất ước lượng để lấy được viên bi không phải màu Xanh là $80\\%%$'
-    th_da_1_s = 'Xác suất ước lượng để lấy được viên bi không phải màu Xanh là $20\\%%$'
+    th_da_1_d = '\\True Xác suất ước lượng để lấy được viên bi không phải màu Xanh là $80\\%$'
+    th_da_1_s = 'Xác suất ước lượng để lấy được viên bi không phải màu Xanh là $20\\%$'
     list_th_da_1 = [th_da_1_d, th_da_1_s]
-    loigiai_th_1 = ('Xác suất ước lượng lấy được bi không phải màu Xanh (tức màu Trắng hoặc Đen) là $45\\%% + 35\\%% = 80\\%%$.')
+    loigiai_th_1 = ('Xác suất ước lượng lấy được bi không phải màu Xanh (tức màu Trắng hoặc Đen) là $45\\% + 35\\% = 80\\%$.')
     list_th_2 = [loigiai_th_1]
 
     vd_da_1_d = '\\True Dựa vào kết quả thực nghiệm, ước lượng trong hộp có khoảng $9$ viên bi Trắng, $7$ viên bi Đen và $4$ viên bi Xanh'
     vd_da_1_s = 'Dựa vào kết quả thực nghiệm, ước lượng trong hộp có khoảng $10$ viên bi Trắng, $6$ viên bi Đen và $4$ viên bi Xanh'
     list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
-    loigiai_vd_1 = ('Ước lượng số bi mỗi loại trong $20$ viên bi: Trắng có $20 \\cdot 45\\%% = 9$ viên; Đen có $20 \\cdot 35\\%% = 7$ viên; Xanh có $20 \\cdot 20\\%% = 4$ viên.')
+    loigiai_vd_1 = ('Ước lượng số bi mỗi loại trong $20$ viên bi: Trắng có $20 \\cdot 45\\% = 9$ viên; Đen có $20 \\cdot 35\\% = 7$ viên; Xanh có $20 \\cdot 20\\% = 4$ viên.')
     list_vd_2 = [loigiai_vd_1]
 
     vdc_da_1_d = '\\True Tần số tương đối của bi Trắng là cơ sở để ước lượng xác suất lấy được bi Trắng trong một lần thử'

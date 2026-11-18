@@ -124,12 +124,12 @@ from mpl_toolkits.mplot3d import Axes3D
 
 
 def bt_dang13_p2_b2_c7_ds9(self):
-    noidungcauhoi = ('Kết quả xếp loại học lực học kì I của lớp 9A gồm $40$ học sinh có bảng tần số tương đối: Tốt ($25\\%%$), Khá ($50\\%%$), Đạt ($20\\%%$), Chưa đạt ($5\\%%$). Sang đầu học kì II, lớp nhận thêm $10$ học sinh chuyển đến, trong đó có $5$ bạn xếp loại Tốt, $3$ bạn xếp loại Khá và $2$ bạn xếp loại Đạt. Xét tính đúng sai của các khẳng định sau:')
+    noidungcauhoi = ('Kết quả xếp loại học lực học kì I của lớp 9A gồm $40$ học sinh có bảng tần số tương đối: Tốt ($25\\%$), Khá ($50\\%$), Đạt ($20\\%$), Chưa đạt ($5\\%$). Sang đầu học kì II, lớp nhận thêm $10$ học sinh chuyển đến, trong đó có $5$ bạn xếp loại Tốt, $3$ bạn xếp loại Khá và $2$ bạn xếp loại Đạt. Xét tính đúng sai của các khẳng định sau:')
 
     nb_da_1_d = '\\True Ở học kì I, lớp 9A có $10$ học sinh xếp loại Tốt và $2$ học sinh xếp loại Chưa đạt'
     nb_da_1_s = 'Ở học kì I, lớp 9A có $12$ học sinh xếp loại Tốt và $2$ học sinh xếp loại Chưa đạt'
     list_nb_da_1 = [nb_da_1_d, nb_da_1_s]
-    loigiai_nb_1 = ('Ở học kì I, số học sinh loại Tốt là $40 \\cdot 25\\%% = 10$ em; số học sinh loại Chưa đạt là $40 \\cdot 5\\%% = 2$ em.')
+    loigiai_nb_1 = ('Ở học kì I, số học sinh loại Tốt là $40 \\cdot 25\\% = 10$ em; số học sinh loại Chưa đạt là $40 \\cdot 5\\% = 2$ em.')
     list_nb_2 = [loigiai_nb_1]
 
     th_da_1_d = '\\True Sau khi nhận thêm học sinh mới, tổng số học sinh của lớp 9A là $50$ em và có $15$ em xếp loại Tốt'
@@ -138,16 +138,16 @@ def bt_dang13_p2_b2_c7_ds9(self):
     loigiai_th_1 = ('Tổng số học sinh mới của lớp là $40 + 10 = 50$ em, trong đó số học sinh loại Tốt là $10 + 5 = 15$ em.')
     list_th_2 = [loigiai_th_1]
 
-    vd_da_1_d = '\\True Tần số tương đối của học sinh xếp loại Tốt sau khi nhận thêm học sinh mới tăng lên thành $30\\%%$'
-    vd_da_1_s = 'Tần số tương đối của học sinh xếp loại Tốt sau khi nhận thêm học sinh mới vẫn giữ nguyên là $25\\%%$'
+    vd_da_1_d = '\\True Tần số tương đối của học sinh xếp loại Tốt sau khi nhận thêm học sinh mới tăng lên thành $30\\%$'
+    vd_da_1_s = 'Tần số tương đối của học sinh xếp loại Tốt sau khi nhận thêm học sinh mới vẫn giữ nguyên là $25\\%$'
     list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
-    loigiai_vd_1 = ('Tần số tương đối mới của loại Tốt là $\\frac{15}{50} \\cdot 100\\%% = 30\\%%$ (tăng $5\\%%$ so với học kì I).')
+    loigiai_vd_1 = ('Tần số tương đối mới của loại Tốt là $\\frac{15}{50} \\cdot 100\\% = 30\\%$ (tăng $5\\%$ so với học kì I).')
     list_vd_2 = [loigiai_vd_1]
 
-    vdc_da_1_d = '\\True Tần số tương đối của học sinh xếp loại Chưa đạt giảm xuống còn $4\\%%$'
-    vdc_da_1_s = 'Tần số tương đối của học sinh xếp loại Chưa đạt vẫn giữ nguyên là $5\\%%$'
+    vdc_da_1_d = '\\True Tần số tương đối của học sinh xếp loại Chưa đạt giảm xuống còn $4\\%$'
+    vdc_da_1_s = 'Tần số tương đối của học sinh xếp loại Chưa đạt vẫn giữ nguyên là $5\\%$'
     list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
-    loigiai_vdc_1 = ('Số học sinh Chưa đạt vẫn là $2$ em trên tổng số $50$ học sinh nên tần số tương đối giảm xuống còn $\\frac{2}{50} \\cdot 100\\%% = 4\\%%$.')
+    loigiai_vdc_1 = ('Số học sinh Chưa đạt vẫn là $2$ em trên tổng số $50$ học sinh nên tần số tương đối giảm xuống còn $\\frac{2}{50} \\cdot 100\\% = 4\\%$.')
     list_vdc_2 = [loigiai_vdc_1]
     def count_true_answers(answers):
         return sum('\\True' in ans for ans in answers)

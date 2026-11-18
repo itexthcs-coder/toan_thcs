@@ -154,16 +154,16 @@ def bt_dang5_p2_b2_c7_ds9(self):
     loigiai_nb_1 = ('Tổng số biểu tượng là $6 + 8 + 4 + 2 = 20$ biểu tượng, tương ứng với $20 \\cdot %s = %s$ học sinh.' % (don_vi, tong))
     list_nb_2 = [loigiai_nb_1]
 
-    th_da_1_d = '\\True Tần số tương đối của số học sinh chọn CLB Bóng rổ là $30\\%%$'
-    th_da_1_s = 'Tần số tương đối của số học sinh chọn CLB Bóng rổ là $25\\%%$'
+    th_da_1_d = '\\True Tần số tương đối của số học sinh chọn CLB Bóng rổ là $30\\%$'
+    th_da_1_s = 'Tần số tương đối của số học sinh chọn CLB Bóng rổ là $25\\%$'
     list_th_da_1 = [th_da_1_d, th_da_1_s]
-    loigiai_th_1 = ('Số học sinh chọn CLB Bóng rổ là $%s$, chiếm $\\frac{%s}{%s} \\cdot 100\\%% = 30\\%%$.' % (m1, m1, tong))
+    loigiai_th_1 = ('Số học sinh chọn CLB Bóng rổ là $%s$, chiếm $\\frac{%s}{%s} \\cdot 100\\% = 30\\%$.' % (m1, m1, tong))
     list_th_2 = [loigiai_th_1]
 
-    vd_da_1_d = '\\True Tần số tương đối của số học sinh chọn CLB Mỹ thuật là $10\\%%$'
-    vd_da_1_s = 'Tần số tương đối của số học sinh chọn CLB Mỹ thuật là $2\\%%$'
+    vd_da_1_d = '\\True Tần số tương đối của số học sinh chọn CLB Mỹ thuật là $10\\%$'
+    vd_da_1_s = 'Tần số tương đối của số học sinh chọn CLB Mỹ thuật là $2\\%$'
     list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
-    loigiai_vd_1 = ('Số học sinh chọn CLB Mỹ thuật là $%s$, chiếm $\\frac{%s}{%s} \\cdot 100\\%% = 10\\%%$.' % (m4, m4, tong))
+    loigiai_vd_1 = ('Số học sinh chọn CLB Mỹ thuật là $%s$, chiếm $\\frac{%s}{%s} \\cdot 100\\% = 10\\%$.' % (m4, m4, tong))
     list_vd_2 = [loigiai_vd_1]
 
     vdc_da_1_d = '\\True Nếu vẽ biểu đồ hình quạt tròn thì góc ở tâm của hình quạt biểu diễn CLB Nhảy hiện đại bằng $144^\\circ$'

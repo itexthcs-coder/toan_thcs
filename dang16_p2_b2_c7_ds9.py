@@ -142,8 +142,8 @@ def bt_dang16_p2_b2_c7_ds9(self):
 
     noidungcauhoi = ('Thống kê tình hình thời tiết tại một khu nghỉ dưỡng trong $%s$ ngày hè cho kết quả trong bảng sau:%sBan tổ chức dự định chọn $1$ ngày tại đây để tổ chức sự kiện ngoài trời (chỉ thuận lợi khi trời Nắng đẹp hoặc Mây mù). Xét tính đúng sai của các khẳng định sau:' % (n, bang))
 
-    nb_da_1_d = '\\True Tần số tương đối của ngày Nắng đẹp là $55\\%%$'
-    nb_da_1_s = 'Tần số tương đối của ngày Nắng đẹp là $45\\%%$'
+    nb_da_1_d = '\\True Tần số tương đối của ngày Nắng đẹp là $55\\%$'
+    nb_da_1_s = 'Tần số tương đối của ngày Nắng đẹp là $45\\%$'
     list_nb_da_1 = [nb_da_1_d, nb_da_1_s]
     loigiai_nb_1 = ('Tần số tương đối của ngày Nắng đẹp là $\\frac{%s}{%s} \\cdot 100\\%% = 55\\%%$.' % (m1, n))
     list_nb_2 = [loigiai_nb_1]
@@ -154,16 +154,16 @@ def bt_dang16_p2_b2_c7_ds9(self):
     loigiai_th_1 = ('Ngày Mưa rào chiếm $\\frac{%s}{%s} \\cdot 100\\%% = 20\\%%$ nên góc ở tâm tương ứng là $360^\\circ \\cdot 20\\%% = 72^\\circ$.' % (m3, n))
     list_th_2 = [loigiai_th_1]
 
-    vd_da_1_d = '\\True Xác suất ước lượng để ngày diễn ra sự kiện có thời tiết thuận lợi là $80\\%%$'
-    vd_da_1_s = 'Xác suất ước lượng để ngày diễn ra sự kiện có thời tiết thuận lợi là $75\\%%$'
+    vd_da_1_d = '\\True Xác suất ước lượng để ngày diễn ra sự kiện có thời tiết thuận lợi là $80\\%$'
+    vd_da_1_s = 'Xác suất ước lượng để ngày diễn ra sự kiện có thời tiết thuận lợi là $75\\%$'
     list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
-    loigiai_vd_1 = ('Thời tiết thuận lợi gồm Nắng đẹp ($55\\%%$) và Mây mù ($25\\%%$), có tổng tần số tương đối là $55\\%% + 25\\%% = 80\\%%$.')
+    loigiai_vd_1 = ('Thời tiết thuận lợi gồm Nắng đẹp ($55\\%$) và Mây mù ($25\\%$), có tổng tần số tương đối là $55\\% + 25\\% = 80\\%$.')
     list_vd_2 = [loigiai_vd_1]
 
     vdc_da_1_d = '\\True Khả năng trời mây mù cao hơn khả năng trời mưa rào'
     vdc_da_1_s = 'Khả năng sự kiện bị ảnh hưởng bởi mưa rào cao hơn khả năng trời mây mù'
     list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
-    loigiai_vdc_1 = ('Xác suất ước lượng trời Mây mù là $25\\%%$, cao hơn xác suất trời Mưa rào ($20\\%%$).')
+    loigiai_vdc_1 = ('Xác suất ước lượng trời Mây mù là $25\\%$, cao hơn xác suất trời Mưa rào ($20\\%$).')
     list_vdc_2 = [loigiai_vdc_1]
     def count_true_answers(answers):
         return sum('\\True' in ans for ans in answers)

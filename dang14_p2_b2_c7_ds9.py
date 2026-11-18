@@ -146,25 +146,25 @@ def bt_dang14_p2_b2_c7_ds9(self):
     nb_da_1_d = '\\True Tỉ trọng doanh thu Bán lẻ của Chi nhánh A cao hơn của Chi nhánh B'
     nb_da_1_s = 'Tỉ trọng doanh thu Bán sỉ của Chi nhánh A cao hơn của Chi nhánh B'
     list_nb_da_1 = [nb_da_1_d, nb_da_1_s]
-    loigiai_nb_1 = ('Tỉ trọng doanh thu Bán lẻ của Chi nhánh A là $60\\%%$, cao hơn Chi nhánh B ($45\\%%$).')
+    loigiai_nb_1 = ('Tỉ trọng doanh thu Bán lẻ của Chi nhánh A là $60\\%$, cao hơn Chi nhánh B ($45\\%$).')
     list_nb_2 = [loigiai_nb_1]
 
     th_da_1_d = '\\True Doanh thu Bán lẻ thực tế của Chi nhánh A nhỏ hơn doanh thu Bán lẻ thực tế của Chi nhánh B'
     th_da_1_s = 'Doanh thu Bán lẻ thực tế của Chi nhánh A lớn hơn doanh thu Bán lẻ thực tế của Chi nhánh B'
     list_th_da_1 = [th_da_1_d, th_da_1_s]
-    loigiai_th_1 = ('Doanh thu Bán lẻ của Chi nhánh A là $400 \\cdot 60\\%% = 240$ triệu đồng; của Chi nhánh B là $600 \\cdot 45\\%% = 270$ triệu đồng. Vì $240 < 270$ nên Chi nhánh A nhỏ hơn Chi nhánh B.')
+    loigiai_th_1 = ('Doanh thu Bán lẻ của Chi nhánh A là $400 \\cdot 60\\% = 240$ triệu đồng; của Chi nhánh B là $600 \\cdot 45\\% = 270$ triệu đồng. Vì $240 < 270$ nên Chi nhánh A nhỏ hơn Chi nhánh B.')
     list_th_2 = [loigiai_th_1]
 
     vd_da_1_d = '\\True Doanh thu Bán sỉ của Chi nhánh B nhiều hơn doanh thu Bán sỉ của Chi nhánh A là $170$ triệu đồng'
     vd_da_1_s = 'Doanh thu Bán sỉ của Chi nhánh B nhiều hơn doanh thu Bán sỉ của Chi nhánh A là $150$ triệu đồng'
     list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
-    loigiai_vd_1 = ('Doanh thu Bán sỉ của Chi nhánh B là $600 \\cdot 55\\%% = 330$ triệu đồng; của Chi nhánh A là $400 \\cdot 40\\%% = 160$ triệu đồng. Chênh lệch là $330 - 160 = 170$ triệu đồng.')
+    loigiai_vd_1 = ('Doanh thu Bán sỉ của Chi nhánh B là $600 \\cdot 55\\% = 330$ triệu đồng; của Chi nhánh A là $400 \\cdot 40\\% = 160$ triệu đồng. Chênh lệch là $330 - 160 = 170$ triệu đồng.')
     list_vd_2 = [loigiai_vd_1]
 
-    vdc_da_1_d = '\\True Tính chung cả hai chi nhánh, tần số tương đối của doanh thu Bán lẻ là $51\\%%$'
-    vdc_da_1_s = 'Tính chung cả hai chi nhánh, tần số tương đối của doanh thu Bán lẻ là $52,5\\%%$'
+    vdc_da_1_d = '\\True Tính chung cả hai chi nhánh, tần số tương đối của doanh thu Bán lẻ là $51\\%$'
+    vdc_da_1_s = 'Tính chung cả hai chi nhánh, tần số tương đối của doanh thu Bán lẻ là $52,5\\%$'
     list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
-    loigiai_vdc_1 = ('Tổng doanh thu Bán lẻ cả hai chi nhánh là $240 + 270 = 510$ triệu đồng trên tổng doanh thu $400 + 600 = 1000$ triệu đồng, chiếm tỉ lệ $\\frac{510}{1000} \\cdot 100\\%% = 51\\%%$.')
+    loigiai_vdc_1 = ('Tổng doanh thu Bán lẻ cả hai chi nhánh là $240 + 270 = 510$ triệu đồng trên tổng doanh thu $400 + 600 = 1000$ triệu đồng, chiếm tỉ lệ $\\frac{510}{1000} \\cdot 100\\% = 51\\%$.')
     list_vdc_2 = [loigiai_vdc_1]
     def count_true_answers(answers):
         return sum('\\True' in ans for ans in answers)

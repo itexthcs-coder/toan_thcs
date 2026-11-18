@@ -164,7 +164,7 @@ def bt_dang10_p2_b2_c7_ds9(self):
     vdc_da_1_d = '\\True Biểu đồ cột là loại biểu đồ thích hợp để biểu diễn bảng thống kê trên'
     vdc_da_1_s = 'Chỉ có thể dùng biểu đồ đoạn thẳng để biểu diễn bảng thống kê trên'
     list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
-    loigiai_vdc_1 = ('Đối với bảng số liệu khảo sát cho phép chọn nhiều phương án (tổng khác $100\\%%$), ta dùng biểu đồ cột để biểu diễn trực quan.')
+    loigiai_vdc_1 = ('Đối với bảng số liệu khảo sát cho phép chọn nhiều phương án (tổng khác $100\\%$), ta dùng biểu đồ cột để biểu diễn trực quan.')
     list_vdc_2 = [loigiai_vdc_1]
     def count_true_answers(answers):
         return sum('\\True' in ans for ans in answers)

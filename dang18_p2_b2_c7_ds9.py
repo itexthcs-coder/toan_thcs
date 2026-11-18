@@ -149,25 +149,25 @@ def bt_dang18_p2_b2_c7_ds9(self):
     noidungcauhoi = ('Một xã có tổng diện tích đất tự nhiên là $%s\\text{ ha}$, được phân bổ thành 3 loại đất như bảng sau:%sKhi lập bảng tần số tương đối, các tỉ lệ phần trăm được làm tròn đến hàng phần mười. Xét tính đúng sai của các khẳng định sau:' % (d_tong, bang))
 
     nb_da_1_d = '\\True Tần số tương đối của Đất phi nông nghiệp là $%s\\%%$' % (f_pnn)
-    nb_da_1_s = 'Tần số tương đối của Đất phi nông nghiệp là $15\\%%$'
+    nb_da_1_s = 'Tần số tương đối của Đất phi nông nghiệp là $15\\%$'
     list_nb_da_1 = [nb_da_1_d, nb_da_1_s]
     loigiai_nb_1 = ('Tần số tương đối của Đất phi nông nghiệp là $\\frac{%s}{%s} \\cdot 100\\%% = %s\\%%$.' % (d_pnn, d_tong, f_pnn))
     list_nb_2 = [loigiai_nb_1]
 
     th_da_1_d = '\\True Tần số tương đối của Đất nông nghiệp sau khi làm tròn đến hàng phần mười là $%s\\%%$' % (f_nn)
-    th_da_1_s = 'Tần số tương đối của Đất nông nghiệp sau khi làm tròn đến hàng phần mười là $61,6\\%%$'
+    th_da_1_s = 'Tần số tương đối của Đất nông nghiệp sau khi làm tròn đến hàng phần mười là $61,6\\%$'
     list_th_da_1 = [th_da_1_d, th_da_1_s]
     loigiai_th_1 = ('Ta có $\\frac{%s}{%s} \\cdot 100\\%% = 61,666...\\%% \\approx %s\\%%$.' % (d_nn, d_tong, f_nn))
     list_th_2 = [loigiai_th_1]
 
     vd_da_1_d = '\\True Tần số tương đối của Đất lâm nghiệp sau khi làm tròn đến hàng phần mười là $%s\\%%$' % (f_ln)
-    vd_da_1_s = 'Tần số tương đối của Đất lâm nghiệp sau khi làm tròn đến hàng phần mười là $25,9\\%%$'
+    vd_da_1_s = 'Tần số tương đối của Đất lâm nghiệp sau khi làm tròn đến hàng phần mười là $25,9\\%$'
     list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
     loigiai_vd_1 = ('Ta có $\\frac{%s}{%s} \\cdot 100\\%% = 25,833...\\%% \\approx %s\\%%$.' % (d_ln, d_tong, f_ln))
     list_vd_2 = [loigiai_vd_1]
 
-    vdc_da_1_d = '\\True Tổng các tần số tương đối sau khi làm tròn vẫn bằng đúng $100\\%%$'
-    vdc_da_1_s = 'Tổng các tần số tương đối sau khi làm tròn bị sai lệch so với $100\\%%$'
+    vdc_da_1_d = '\\True Tổng các tần số tương đối sau khi làm tròn vẫn bằng đúng $100\\%$'
+    vdc_da_1_s = 'Tổng các tần số tương đối sau khi làm tròn bị sai lệch so với $100\\%$'
     list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
     loigiai_vdc_1 = ('Tổng ba tần số tương đối sau khi làm tròn là $%s\\%% + %s\\%% + %s\\%% = 100,0\\%% = 100\\%%$.' % (f_nn, f_ln, f_pnn))
     list_vdc_2 = [loigiai_vdc_1]

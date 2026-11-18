@@ -132,10 +132,10 @@ def bt_dang15_p2_b2_c7_ds9(self):
 
     noidungcauhoi = ('Một lô hàng gồm các sản phẩm được phân thành 3 loại: Loại I, Loại II và Loại III. Biết tỉ lệ sản phẩm Loại I chiếm $55\\%%$, sản phẩm Loại II chiếm $30\\%%$ và có $%s$ sản phẩm Loại III. Xét tính đúng sai của các khẳng định sau:' % (m3))
 
-    nb_da_1_d = '\\True Sản phẩm Loại III chiếm $15\\%%$ tổng số sản phẩm của lô hàng'
-    nb_da_1_s = 'Sản phẩm Loại III chiếm $25\\%%$ tổng số sản phẩm của lô hàng'
+    nb_da_1_d = '\\True Sản phẩm Loại III chiếm $15\\%$ tổng số sản phẩm của lô hàng'
+    nb_da_1_s = 'Sản phẩm Loại III chiếm $25\\%$ tổng số sản phẩm của lô hàng'
     list_nb_da_1 = [nb_da_1_d, nb_da_1_s]
-    loigiai_nb_1 = ('Tỉ lệ sản phẩm Loại III là $100\\%% - (55\\%% + 30\\%%) = 15\\%%$.')
+    loigiai_nb_1 = ('Tỉ lệ sản phẩm Loại III là $100\\% - (55\\% + 30\\%) = 15\\%$.')
     list_nb_2 = [loigiai_nb_1]
 
     th_da_1_d = '\\True Tổng số sản phẩm của lô hàng là $%s$ sản phẩm' % (n)
@@ -150,10 +150,10 @@ def bt_dang15_p2_b2_c7_ds9(self):
     loigiai_vd_1 = ('Số sản phẩm Loại I là $%s \\cdot 55\\%% = %s$; Loại II là $%s \\cdot 30\\%% = %s$. Chênh lệch là $%s - %s = %s$ (sản phẩm).' % (n, m1, n, m2, m1, m2, hieu_12))
     list_vd_2 = [loigiai_vd_1]
 
-    vdc_da_1_d = '\\True Chọn ngẫu nhiên $1$ sản phẩm từ lô hàng, xác suất ước lượng để lấy được sản phẩm đạt chuẩn (Loại I hoặc Loại II) là $85\\%%$'
-    vdc_da_1_s = 'Chọn ngẫu nhiên $1$ sản phẩm từ lô hàng, xác suất ước lượng để lấy được sản phẩm đạt chuẩn (Loại I hoặc Loại II) là $75\\%%$'
+    vdc_da_1_d = '\\True Chọn ngẫu nhiên $1$ sản phẩm từ lô hàng, xác suất ước lượng để lấy được sản phẩm đạt chuẩn (Loại I hoặc Loại II) là $85\\%$'
+    vdc_da_1_s = 'Chọn ngẫu nhiên $1$ sản phẩm từ lô hàng, xác suất ước lượng để lấy được sản phẩm đạt chuẩn (Loại I hoặc Loại II) là $75\\%$'
     list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
-    loigiai_vdc_1 = ('Tỉ lệ sản phẩm Loại I hoặc Loại II là $55\\%% + 30\\%% = 85\\%%$ nên xác suất ước lượng là $85\\%%$.')
+    loigiai_vdc_1 = ('Tỉ lệ sản phẩm Loại I hoặc Loại II là $55\\% + 30\\% = 85\\%$ nên xác suất ước lượng là $85\\%$.')
     list_vdc_2 = [loigiai_vdc_1]
     def count_true_answers(answers):
         return sum('\\True' in ans for ans in answers)

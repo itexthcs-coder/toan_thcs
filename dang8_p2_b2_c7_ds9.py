@@ -153,22 +153,22 @@ def bt_dang8_p2_b2_c7_ds9(self):
     loigiai_nb_1 = ('Tổng số học sinh làm bài kiểm tra là $n = 12 + 15 + 9 + 4 = 40$ (học sinh).')
     list_nb_2 = [loigiai_nb_1]
 
-    th_da_1_d = '\\True Tần số tương đối của học sinh không mắc lỗi chính tả nào ($0$ lỗi) là $30\\%%$'
-    th_da_1_s = 'Tần số tương đối của học sinh không mắc lỗi chính tả nào ($0$ lỗi) là $12\\%%$'
+    th_da_1_d = '\\True Tần số tương đối của học sinh không mắc lỗi chính tả nào ($0$ lỗi) là $30\\%$'
+    th_da_1_s = 'Tần số tương đối của học sinh không mắc lỗi chính tả nào ($0$ lỗi) là $12\\%$'
     list_th_da_1 = [th_da_1_d, th_da_1_s]
-    loigiai_th_1 = ('Có $12$ học sinh mắc $0$ lỗi nên tần số tương đối là $\\frac{12}{40} \\cdot 100\\%% = 30\\%%$.')
+    loigiai_th_1 = ('Có $12$ học sinh mắc $0$ lỗi nên tần số tương đối là $\\frac{12}{40} \\cdot 100\\% = 30\\%$.')
     list_th_2 = [loigiai_th_1]
 
-    vd_da_1_d = '\\True Tần số tương đối của học sinh mắc $1$ lỗi chính tả là $37,5\\%%$'
-    vd_da_1_s = 'Tần số tương đối của học sinh mắc $1$ lỗi chính tả là $35\\%%$'
+    vd_da_1_d = '\\True Tần số tương đối của học sinh mắc $1$ lỗi chính tả là $37,5\\%$'
+    vd_da_1_s = 'Tần số tương đối của học sinh mắc $1$ lỗi chính tả là $35\\%$'
     list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
-    loigiai_vd_1 = ('Có $15$ học sinh mắc $1$ lỗi nên tần số tương đối là $\\frac{15}{40} \\cdot 100\\%% = 37,5\\%%$.')
+    loigiai_vd_1 = ('Có $15$ học sinh mắc $1$ lỗi nên tần số tương đối là $\\frac{15}{40} \\cdot 100\\% = 37,5\\%$.')
     list_vd_2 = [loigiai_vd_1]
 
-    vdc_da_1_d = '\\True Có $10\\%%$ số học sinh của lớp mắc nhiều hơn $2$ lỗi chính tả'
-    vdc_da_1_s = 'Có $25\\%%$ số học sinh của lớp mắc nhiều hơn $2$ lỗi chính tả'
+    vdc_da_1_d = '\\True Có $10\\%$ số học sinh của lớp mắc nhiều hơn $2$ lỗi chính tả'
+    vdc_da_1_s = 'Có $25\\%$ số học sinh của lớp mắc nhiều hơn $2$ lỗi chính tả'
     list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
-    loigiai_vdc_1 = ('Học sinh mắc nhiều hơn $2$ lỗi là nhóm mắc $3$ lỗi, gồm $4$ học sinh, chiếm $\\frac{4}{40} \\cdot 100\\%% = 10\\%%$.')
+    loigiai_vdc_1 = ('Học sinh mắc nhiều hơn $2$ lỗi là nhóm mắc $3$ lỗi, gồm $4$ học sinh, chiếm $\\frac{4}{40} \\cdot 100\\% = 10\\%$.')
     list_vdc_2 = [loigiai_vdc_1]
     def count_true_answers(answers):
         return sum('\\True' in ans for ans in answers)

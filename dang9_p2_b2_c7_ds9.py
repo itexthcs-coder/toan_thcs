@@ -149,10 +149,10 @@ def bt_dang9_p2_b2_c7_ds9(self):
 
     noidungcauhoi = ('Biểu đồ hình quạt tròn dưới đây biểu diễn tỉ lệ ứng viên nộp hồ sơ vào 3 vị trí của một công ty công nghệ:%sBiết số ứng viên nộp vào vị trí Lập trình viên nhiều hơn vị trí Thiết kế đồ họa là $%s$ người. Xét tính đúng sai của các khẳng định sau:' % (hinh_quat, hieu_nguoi))
 
-    nb_da_1_d = '\\True Tỉ lệ ứng viên vị trí Lập trình viên hơn vị trí Thiết kế đồ họa là $30\\%%$'
-    nb_da_1_s = 'Tỉ lệ ứng viên vị trí Lập trình viên hơn vị trí Thiết kế đồ họa là $20\\%%$'
+    nb_da_1_d = '\\True Tỉ lệ ứng viên vị trí Lập trình viên hơn vị trí Thiết kế đồ họa là $30\\%$'
+    nb_da_1_s = 'Tỉ lệ ứng viên vị trí Lập trình viên hơn vị trí Thiết kế đồ họa là $20\\%$'
     list_nb_da_1 = [nb_da_1_d, nb_da_1_s]
-    loigiai_nb_1 = ('Chênh lệch tỉ lệ phần trăm giữa vị trí Lập trình viên và Thiết kế đồ họa là $50\\%% - 20\\%% = 30\\%%$.')
+    loigiai_nb_1 = ('Chênh lệch tỉ lệ phần trăm giữa vị trí Lập trình viên và Thiết kế đồ họa là $50\\% - 20\\% = 30\\%$.')
     list_nb_2 = [loigiai_nb_1]
 
     th_da_1_d = '\\True Tổng số ứng viên đã nộp hồ sơ vào công ty là $%s$ người' % (tong_n)

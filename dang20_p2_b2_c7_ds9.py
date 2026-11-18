@@ -129,22 +129,22 @@ def bt_dang20_p2_b2_c7_ds9(self):
 
     noidungcauhoi = ('Trước khi cải tiến máy móc, kiểm tra $250$ sản phẩm thấy có $30$ sản phẩm lỗi. Sau khi cải tiến máy móc, kiểm tra $400$ sản phẩm thấy có $28$ sản phẩm lỗi. Xét tính đúng sai của các khẳng định sau:')
 
-    nb_da_1_d = '\\True Tần số tương đối của sản phẩm lỗi trước khi cải tiến là $12\\%%$'
-    nb_da_1_s = 'Tần số tương đối của sản phẩm lỗi trước khi cải tiến là $15\\%%$'
+    nb_da_1_d = '\\True Tần số tương đối của sản phẩm lỗi trước khi cải tiến là $12\\%$'
+    nb_da_1_s = 'Tần số tương đối của sản phẩm lỗi trước khi cải tiến là $15\\%$'
     list_nb_da_1 = [nb_da_1_d, nb_da_1_s]
-    loigiai_nb_1 = ('Tần số tương đối của sản phẩm lỗi trước khi cải tiến là $\\frac{30}{250} \\cdot 100\\%% = 12\\%%$.')
+    loigiai_nb_1 = ('Tần số tương đối của sản phẩm lỗi trước khi cải tiến là $\\frac{30}{250} \\cdot 100\\% = 12\\%$.')
     list_nb_2 = [loigiai_nb_1]
 
-    th_da_1_d = '\\True Tần số tương đối của sản phẩm lỗi sau khi cải tiến là $7\\%%$'
-    th_da_1_s = 'Tần số tương đối của sản phẩm lỗi sau khi cải tiến là $8\\%%$'
+    th_da_1_d = '\\True Tần số tương đối của sản phẩm lỗi sau khi cải tiến là $7\\%$'
+    th_da_1_s = 'Tần số tương đối của sản phẩm lỗi sau khi cải tiến là $8\\%$'
     list_th_da_1 = [th_da_1_d, th_da_1_s]
-    loigiai_th_1 = ('Tần số tương đối của sản phẩm lỗi sau khi cải tiến là $\\frac{28}{400} \\cdot 100\\%% = 7\\%%$.')
+    loigiai_th_1 = ('Tần số tương đối của sản phẩm lỗi sau khi cải tiến là $\\frac{28}{400} \\cdot 100\\% = 7\\%$.')
     list_th_2 = [loigiai_th_1]
 
-    vd_da_1_d = '\\True Nhờ cải tiến máy móc, xác suất ước lượng xuất hiện sản phẩm lỗi đã giảm đi $5\\%%$'
-    vd_da_1_s = 'Nhờ cải tiến máy móc, xác suất ước lượng xuất hiện sản phẩm lỗi đã giảm đi $2\\%%$'
+    vd_da_1_d = '\\True Nhờ cải tiến máy móc, xác suất ước lượng xuất hiện sản phẩm lỗi đã giảm đi $5\\%$'
+    vd_da_1_s = 'Nhờ cải tiến máy móc, xác suất ước lượng xuất hiện sản phẩm lỗi đã giảm đi $2\\%$'
     list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
-    loigiai_vd_1 = ('Xác suất ước lượng sản phẩm lỗi giảm từ $12\\%%$ xuống $7\\%%$, tức giảm $12\\%% - 7\\%% = 5\\%%$.')
+    loigiai_vd_1 = ('Xác suất ước lượng sản phẩm lỗi giảm từ $12\\%$ xuống $7\\%$, tức giảm $12\\% - 7\\% = 5\\%$.')
     list_vd_2 = [loigiai_vd_1]
 
     vdc_da_1_d = '\\True Nếu sản xuất $%s$ sản phẩm theo quy trình mới thì ước lượng có khoảng $%s$ sản phẩm không bị lỗi' % (sp_du_toan, sp_dat_chuan)

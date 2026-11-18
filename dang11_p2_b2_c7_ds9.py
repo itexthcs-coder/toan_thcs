@@ -136,7 +136,7 @@ def bt_dang11_p2_b2_c7_ds9(self):
         '\\hline\n'
         'Mặt xuất hiện & $1$ chấm & $2$ chấm & $3$ chấm & $4$ chấm & $5$ chấm & $6$ chấm \\\\ \n'
         '\\hline\n'
-        'Tần số tương đối & $15\\%%$ & $12\\%%$ & $18\\%%$ & $14\\%%$ & $16\\%%$ & $25\\%%$ \\\\ \n'
+        'Tần số tương đối & $15\\%$ & $12\\%$ & $18\\%$ & $14\\%$ & $16\\%$ & $25\\%$ \\\\ \n'
         '\\hline\n'
         '\\end{tabular}\n'
         '\\end{center}'
@@ -150,8 +150,8 @@ def bt_dang11_p2_b2_c7_ds9(self):
     loigiai_nb_1 = ('Số lần xuất hiện mặt $6$ chấm là $%s \\cdot 25\\%% = %s$ (lần).' % (n_gieo, m6))
     list_nb_2 = [loigiai_nb_1]
 
-    th_da_1_d = '\\True Xác suất ước lượng để gieo được mặt có số chấm là số chẵn bằng $%s\\%%$' % (p_chan)
-    th_da_1_s = 'Xác suất ước lượng để gieo được mặt có số chấm là số chẵn bằng $50\\%%$'
+    th_da_1_d = '\\True Xác suất ước lượng để gieo được mặt có số chấm là số chẵn bằng $%s\\%$' % (p_chan)
+    th_da_1_s = 'Xác suất ước lượng để gieo được mặt có số chấm là số chẵn bằng $50\\%$'
     list_th_da_1 = [th_da_1_d, th_da_1_s]
     loigiai_th_1 = ('Các mặt có số chấm chẵn gồm $2, 4, 6$ chấm, có tổng tần số tương đối là $12\\%% + 14\\%% + 25\\%% = %s\\%%$.' % (p_chan))
     list_th_2 = [loigiai_th_1]
@@ -165,7 +165,7 @@ def bt_dang11_p2_b2_c7_ds9(self):
     vdc_da_1_d = '\\True Có cơ sở để nghi ngờ con xúc xắc này không cân đối vì mặt $6$ chấm xuất hiện với tỉ lệ cao hơn hẳn các mặt còn lại'
     vdc_da_1_s = 'Mặt $1$ chấm xuất hiện với tần số tương đối nhỏ nhất trong $6$ mặt'
     list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
-    loigiai_vdc_1 = ('Mặt $6$ chấm chiếm tới $25\\%%$ (vượt trội so với mức trung bình $16,7\\%%$ của xúc xắc cân đối), còn mặt nhỏ nhất là mặt $2$ chấm ($12\\%%$).')
+    loigiai_vdc_1 = ('Mặt $6$ chấm chiếm tới $25\\%$ (vượt trội so với mức trung bình $16,7\\%$ của xúc xắc cân đối), còn mặt nhỏ nhất là mặt $2$ chấm ($12\\%$).')
     list_vdc_2 = [loigiai_vdc_1]
     def count_true_answers(answers):
         return sum('\\True' in ans for ans in answers)

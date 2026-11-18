@@ -129,10 +129,10 @@ def bt_dang17_p2_b2_c7_ds9(self):
 
     noidungcauhoi = ('Trên biểu đồ hình quạt tròn biểu diễn thói quen đọc sách của $%s$ học sinh khối 9 gồm 3 nhóm: Đọc sách giấy, Đọc sách điện tử, Không đọc sách. Biết góc ở tâm của nhóm ``Đọc sách giấy'' lớn hơn nhóm ``Đọc sách điện tử'' là $72^\\circ$, và nhóm ``Không đọc sách'' có góc ở tâm là $72^\\circ$. Xét tính đúng sai của các khẳng định sau:' % (n))
 
-    nb_da_1_d = '\\True Nhóm ``Không đọc sách'' chiếm $20\\%%$ tổng số học sinh được khảo sát'
-    nb_da_1_s = 'Nhóm ``Không đọc sách'' chiếm $25\\%%$ tổng số học sinh được khảo sát'
+    nb_da_1_d = '\\True Nhóm ``Không đọc sách'' chiếm $20\\%$ tổng số học sinh được khảo sát'
+    nb_da_1_s = 'Nhóm ``Không đọc sách'' chiếm $25\\%$ tổng số học sinh được khảo sát'
     list_nb_da_1 = [nb_da_1_d, nb_da_1_s]
-    loigiai_nb_1 = ('Tỉ lệ của nhóm ``Không đọc sách'' là $\\frac{72^\\circ}{360^\\circ} \\cdot 100\\%% = 20\\%%$.')
+    loigiai_nb_1 = ('Tỉ lệ của nhóm ``Không đọc sách'' là $\\frac{72^\\circ}{360^\\circ} \\cdot 100\\% = 20\\%$.')
     list_nb_2 = [loigiai_nb_1]
 
     th_da_1_d = '\\True Tổng số đo góc ở tâm của hai nhóm ``Đọc sách giấy'' và ``Đọc sách điện tử'' là $288^\\circ$'
@@ -141,10 +141,10 @@ def bt_dang17_p2_b2_c7_ds9(self):
     loigiai_th_1 = ('Tổng số đo góc ở tâm của hai nhóm đọc sách là $360^\\circ - 72^\\circ = 288^\\circ$.')
     list_th_2 = [loigiai_th_1]
 
-    vd_da_1_d = '\\True Tần số tương đối của nhóm ``Đọc sách giấy'' là $50\\%%$'
-    vd_da_1_s = 'Tần số tương đối của nhóm ``Đọc sách giấy'' là $45\\%%$'
+    vd_da_1_d = '\\True Tần số tương đối của nhóm ``Đọc sách giấy'' là $50\\%$'
+    vd_da_1_s = 'Tần số tương đối của nhóm ``Đọc sách giấy'' là $45\\%$'
     list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
-    loigiai_vd_1 = ('Số đo góc ở tâm của nhóm ``Đọc sách giấy'' là $\\frac{288^\\circ + 72^\\circ}{2} = 180^\\circ$, tương ứng tần số tương đối là $\\frac{180^\\circ}{360^\\circ} \\cdot 100\\%% = 50\\%%$.')
+    loigiai_vd_1 = ('Số đo góc ở tâm của nhóm ``Đọc sách giấy'' là $\\frac{288^\\circ + 72^\\circ}{2} = 180^\\circ$, tương ứng tần số tương đối là $\\frac{180^\\circ}{360^\\circ} \\cdot 100\\% = 50\\%$.')
     list_vd_2 = [loigiai_vd_1]
 
     vdc_da_1_d = '\\True Số học sinh đọc sách điện tử là $%s$ học sinh' % (m_dt)

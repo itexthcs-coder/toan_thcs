@@ -138,16 +138,16 @@ def bt_dang19_p2_b2_c7_ds9(self):
 
     noidungcauhoi = ('Điểm thi thử môn Toán của học sinh lớp 9E được thống kê như bảng sau:%sBiết số học sinh đạt điểm $8$ chiếm tỉ lệ $20\\%%$ tổng số học sinh của lớp. Xét tính đúng sai của các khẳng định sau:' % (bang))
 
-    nb_da_1_d = '\\True Tổng số học sinh đạt các mức điểm $6, 7, 9, 10$ chiếm $80\\%%$ tổng số học sinh của lớp'
-    nb_da_1_s = 'Tổng số học sinh đạt các mức điểm $6, 7, 9, 10$ chiếm $75\\%%$ tổng số học sinh của lớp'
+    nb_da_1_d = '\\True Tổng số học sinh đạt các mức điểm $6, 7, 9, 10$ chiếm $80\\%$ tổng số học sinh của lớp'
+    nb_da_1_s = 'Tổng số học sinh đạt các mức điểm $6, 7, 9, 10$ chiếm $75\\%$ tổng số học sinh của lớp'
     list_nb_da_1 = [nb_da_1_d, nb_da_1_s]
-    loigiai_nb_1 = ('Vì học sinh đạt điểm $8$ chiếm $20\\%%$ nên tổng số học sinh đạt các mức điểm còn lại chiếm $100\\%% - 20\\%% = 80\\%%$.')
+    loigiai_nb_1 = ('Vì học sinh đạt điểm $8$ chiếm $20\\%$ nên tổng số học sinh đạt các mức điểm còn lại chiếm $100\\% - 20\\% = 80\\%$.')
     list_nb_2 = [loigiai_nb_1]
 
     th_da_1_d = '\\True Lớp 9E có tất cả $40$ học sinh dự thi'
     th_da_1_s = 'Lớp 9E có tất cả $36$ học sinh dự thi'
     list_th_da_1 = [th_da_1_d, th_da_1_s]
-    loigiai_th_1 = ('Tổng số học sinh đạt các điểm $6, 7, 9, 10$ là $4 + 10 + 12 + 6 = 32$ (em), ứng với $80\\%%$ sĩ số. Vậy lớp 9E có $n = 32 : 80\\%% = 40$ (học sinh).')
+    loigiai_th_1 = ('Tổng số học sinh đạt các điểm $6, 7, 9, 10$ là $4 + 10 + 12 + 6 = 32$ (em), ứng với $80\\%$ sĩ số. Vậy lớp 9E có $n = 32 : 80\\% = 40$ (học sinh).')
     list_th_2 = [loigiai_th_1]
 
     vd_da_1_d = '\\True Có $8$ học sinh đạt điểm $8$'
@@ -156,10 +156,10 @@ def bt_dang19_p2_b2_c7_ds9(self):
     loigiai_vd_1 = ('Số học sinh đạt điểm $8$ là $40 - 32 = 8$ (học sinh).')
     list_vd_2 = [loigiai_vd_1]
 
-    vdc_da_1_d = '\\True Tỉ lệ học sinh đạt từ $8$ điểm trở lên của lớp 9E là $65\\%%$'
-    vdc_da_1_s = 'Tỉ lệ học sinh đạt từ $8$ điểm trở lên của lớp 9E là $60\\%%$'
+    vdc_da_1_d = '\\True Tỉ lệ học sinh đạt từ $8$ điểm trở lên của lớp 9E là $65\\%$'
+    vdc_da_1_s = 'Tỉ lệ học sinh đạt từ $8$ điểm trở lên của lớp 9E là $60\\%$'
     list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
-    loigiai_vdc_1 = ('Số học sinh đạt từ $8$ điểm trở lên gồm điểm $8, 9, 10$, có $8 + 12 + 6 = 26$ (em), chiếm $\\frac{26}{40} \\cdot 100\\%% = 65\\%%$.')
+    loigiai_vdc_1 = ('Số học sinh đạt từ $8$ điểm trở lên gồm điểm $8, 9, 10$, có $8 + 12 + 6 = 26$ (em), chiếm $\\frac{26}{40} \\cdot 100\\% = 65\\%$.')
     list_vdc_2 = [loigiai_vdc_1]
     def count_true_answers(answers):
         return sum('\\True' in ans for ans in answers)
