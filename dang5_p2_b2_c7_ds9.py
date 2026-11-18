@@ -163,7 +163,7 @@ def bt_dang5_p2_b2_c7_ds9(self):
     vd_da_1_d = '\\True Tần số tương đối của số học sinh chọn CLB Mỹ thuật là $10\\%$'
     vd_da_1_s = 'Tần số tương đối của số học sinh chọn CLB Mỹ thuật là $2\\%$'
     list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
-    loigiai_vd_1 = ('Số học sinh chọn CLB Mỹ thuật là $%s$, chiếm $\\frac{%s}{%s} \\cdot 100\\% = 10\\%$.' % (m4, m4, tong))
+    loigiai_vd_1 = ('Số học sinh chọn CLB Mỹ thuật là $%s$, chiếm $\\frac{%s}{%s} \\cdot 100\\%% = 10\\%%$.' % (m4, m4, tong))
     list_vd_2 = [loigiai_vd_1]
 
     vdc_da_1_d = '\\True Nếu vẽ biểu đồ hình quạt tròn thì góc ở tâm của hình quạt biểu diễn CLB Nhảy hiện đại bằng $144^\\circ$'
