@@ -125,7 +125,7 @@ from PyQt5.QtCore import Qt
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
 from matplotlib.figure import Figure
 from mpl_toolkits.mplot3d import Axes3D  # Cần cho 3D
-
+from decimal import Decimal, ROUND_HALF_UP
 
 def bt_dang19_p3_b1_c7_ds9(self):
     # Khai báo biến
@@ -140,43 +140,43 @@ def bt_dang19_p3_b1_c7_ds9(self):
         kq_str = str(kq).replace('.', ',')
         # Nội dung câu hỏi
         noidungcauhoi = ('''Kiểm tra khối lượng gói bánh (chuẩn $200\\text{ g}$) trên hai ca sản xuất sáng và chiều, mỗi ca lấy mẫu $40$ gói, thu được hai bảng tần số:
-\\begin{center}
-\\textbf{Ca sáng:} \\quad
-\\begin{tabular}{|c|c|c|c|c|}
-\\hline
-Khối lượng ($\\text{g}$) & $198$ & $199$ & $200$ & $201$ \\\\
-\\hline
-Tần số & $4$ & $8$ & $22$ & $6$ \\\\
-\\hline
-\\end{tabular}
-\\end{center}
-\\begin{center}
-\\textbf{Ca chiều:} \\quad
-\\begin{tabular}{|c|c|c|c|c|}
-\\hline
-Khối lượng ($\\text{g}$) & $198$ & $199$ & $200$ & $201$ \\\\
-\\hline
-Tần số & $6$ & $11$ & $16$ & $7$ \\\\
-\\hline
-\\end{tabular}
-\\end{center}
-Nếu gói bánh đạt chuẩn là gói có khối lượng từ $200\\text{ g}$ trở lên thì tỉ lệ gói bánh đạt chuẩn của Ca sáng cao hơn Ca chiều bao nhiêu phần trăm?''')
+    \\begin{center}
+    \\textbf{Ca sáng:} \\quad
+    \\begin{tabular}{|c|c|c|c|c|}
+    \\hline
+    Khối lượng ($\\text{g}$) & $198$ & $199$ & $200$ & $201$ \\\\
+    \\hline
+    Tần số & $4$ & $8$ & $22$ & $6$ \\\\
+    \\hline
+    \\end{tabular}
+    \\end{center}
+    \\begin{center}
+    \\textbf{Ca chiều:} \\quad
+    \\begin{tabular}{|c|c|c|c|c|}
+    \\hline
+    Khối lượng ($\\text{g}$) & $198$ & $199$ & $200$ & $201$ \\\\
+    \\hline
+    Tần số & $6$ & $11$ & $16$ & $7$ \\\\
+    \\hline
+    \\end{tabular}
+    \\end{center}
+    Nếu gói bánh đạt chuẩn là gói có khối lượng từ $200\\text{ g}$ trở lên thì tỉ lệ gói bánh đạt chuẩn của Ca sáng cao hơn Ca chiều bao nhiêu phần trăm?''')
         
         # Nội dung lời giải
-        loigiai = ('''- Số gói bánh đạt chuẩn (từ $200\\text{ g}$ trở lên) ở Ca sáng là $22 + 6 = 28$ (gói), chiếm tỉ lệ $\\dfrac{28}{40} \\cdot 100\\%% = 70\\%%$.\\\\
-- Số gói bánh đạt chuẩn ở Ca chiều là $16 + 7 = 23$ (gói), chiếm tỉ lệ $\\dfrac{23}{40} \\cdot 100\\%% = 57,5\\%%$.\\\\
-Tỉ lệ gói bánh đạt chuẩn của Ca sáng cao hơn Ca chiều là: $70\\%% - 57,5\\%% = 12,5\\%%$.\\\\
-Vậy kết quả là $12,5$.''')
+        loigiai = ('''- Số gói bánh đạt chuẩn (từ $200\\text{ g}$ trở lên) ở Ca sáng là $22 + 6 = 28$ (gói), chiếm tỉ lệ $\\dfrac{28}{40} \\cdot 100\\% = 70\\%$.\\\\
+    - Số gói bánh đạt chuẩn ở Ca chiều là $16 + 7 = 23$ (gói), chiếm tỉ lệ $\\dfrac{23}{40} \\cdot 100\\% = 57,5\\%$.\\\\
+    Tỉ lệ gói bánh đạt chuẩn của Ca sáng cao hơn Ca chiều là: $70\\% - 57,5\\% = 12,5\\%$.\\\\
+    Vậy kết quả là $12,5$.''')
         
         # Đáp án
         dapan = '\\shortans[0]{$%s$}\n' % (str(kq_str))
         
         # Xuất câu hỏi
         content = ('\\begin{minipage}{\\textwidth} \n' +
-                   '\\begin{ex}\n' +
-                   str(noidungcauhoi) + '\n' +
-                   str(dapan) +
-                   '\\loigiai{ \n' +
-                   str(loigiai) + '}\n' +
-                   '\\end{ex}\n \\end{minipage} \n\n')
+                '\\begin{ex}\n' +
+                str(noidungcauhoi) + '\n' +
+                str(dapan) +
+                '\\loigiai{ \n' +
+                str(loigiai) + '}\n' +
+                '\\end{ex}\n \\end{minipage} \n\n')
         return content
