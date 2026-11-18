@@ -54,6 +54,9 @@ import base64
 from datetime import datetime, timedelta
 from PyQt5.QtWidgets import (QApplication, QDialog, QVBoxLayout, QLabel, QLineEdit, QPushButton, QMessageBox)
 from sympy import symbols, solve, Lt
+#from PyQt5.QtWebEngineWidgets import QWebEngineView
+#from PyQt5.QtCore import QUrl
+#from sympy import latex
 import re
 import pyperclip
 import warnings
@@ -83,20 +86,21 @@ import subprocess
 import hashlib
 import time
 from datetime import datetime, timedelta
+# Bổ sung các widget và core cho Splash Screen
 from PyQt5.QtWidgets import (
-    QApplication, QMainWindow, Widget, QDialog, QLabel, QLineEdit, 
+    QApplication, QMainWindow, QWidget, QDialog, QLabel, QLineEdit, 
     QPushButton, QComboBox, QCheckBox, QTextEdit, QVBoxLayout, 
     QHBoxLayout, QGridLayout, QMessageBox, QColorDialog,
-    QSplashScreen, QProgressBar
+    QSplashScreen, QProgressBar  # <-- BỔ SUNG 2 CÁI NÀY
 )
-from PyQt5.QtCore import Qt, QSettings, QThread, pyqtSignal
+from PyQt5.QtCore import Qt, QSettings, QThread, pyqtSignal  # <-- BỔ SUNG QThread, pyqtSignal
 from PyQt5.QtGui import QIcon, QPixmap, QFont
 from PyQt5.QtGui import QFont, QBrush, QColor
 from PyQt5.QtWidgets import (
     QApplication, QMainWindow, QWidget, QVBoxLayout, QHBoxLayout,
     QSplitter, QTreeWidget, QTreeWidgetItem, QTextEdit, QLabel, 
     QSpacerItem, QSizePolicy, QStackedWidget, QPushButton, QCheckBox, QSpinBox,
-    QScrollArea
+    QScrollArea  # <-- Thêm mục này vào đây
 )
 from PyQt5.QtWidgets import QCheckBox
 from PyQt5.QtGui import QPainter, QColor, QPen
@@ -120,7 +124,7 @@ from PyQt5.QtWidgets import (
 from PyQt5.QtCore import Qt
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
 from matplotlib.figure import Figure
-from mpl_toolkits.mplot3d import Axes3D
+from mpl_toolkits.mplot3d import Axes3D  # Cần cho 3D
 
 
 def bt_dang3_p4_b1_c7_ds9(self):
