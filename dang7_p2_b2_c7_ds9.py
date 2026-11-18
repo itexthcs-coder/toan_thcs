@@ -156,7 +156,7 @@ def bt_dang7_p2_b2_c7_ds9(self):
     loigiai_th_1 = ('Thay $x = 2y$ vào $x + y = %s$ ta được $3y = %s \\Rightarrow y = %s$, suy ra $x = 2 \\cdot %s = %s$. Vậy rác nhựa chiếm $%s\\%%$.' % (tong_xy, tong_xy, y_val, y_val, x_val, x_val))
     list_th_2 = [loigiai_th_1]
 
-    vd_da_1_d = '\\True Tần số tương đối của giấy và bìa là $%s\\%$' % (y_val)
+    vd_da_1_d = '\\True Tần số tương đối của giấy và bìa là $%s\\%%$' % (y_val)
     vd_da_1_s = 'Tần số tương đối của giấy và bìa là $18\\%$'
     list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
     loigiai_vd_1 = ('Theo kết quả giải hệ trên, tần số tương đối của giấy và bìa là $y = %s\\%%$.' % (y_val))
