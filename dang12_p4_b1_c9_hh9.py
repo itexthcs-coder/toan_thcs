@@ -161,23 +161,23 @@ def bt_dang12_p4_b1_c9_hh9(self):
         )
 
         noidungcauhoi = (
-            'Cho tam giác $ABC$ nhọn có $BC = %s\\text{ cm}$, các đường cao $BE$ và $CF$ cắt nhau tại $H$. Gọi $M$ là trung điểm của cạnh $BC$ như hình vẽ.\\'
-            'a) Chứng minh bốn điểm $B, F, E, C$ cùng nằm trên đường tròn tâm $M$ đường kính $BC$ và tính bán kính đường tròn đó.\\'
-            'b) Chứng minh $\\widehat{AEF} = \\widehat{ABC}$ và $\\triangle AEF \\backsim \\triangle ABC$.\\'
+            'Cho tam giác $ABC$ nhọn có $BC = %s\\text{ cm}$, các đường cao $BE$ và $CF$ cắt nhau tại $H$. Gọi $M$ là trung điểm của cạnh $BC$ như hình vẽ.\\\\'
+            'a) Chứng minh bốn điểm $B, F, E, C$ cùng nằm trên đường tròn tâm $M$ đường kính $BC$ và tính bán kính đường tròn đó.\\\\'
+            'b) Chứng minh $\\widehat{AEF} = \\widehat{ABC}$ và $\\triangle AEF \\backsim \\triangle ABC$.\\\\'
             'c) Chứng minh bốn điểm $A, F, H, E$ cùng nằm trên một đường tròn và xác định tâm của đường tròn đó.\n%s'
             % (BC, hinh_ve)
         )
 
         loigiai = (
             '\\begin{enumEX}[a)]{1}\n'
-            '\\item Xét $\\triangle BFC$ vuông tại $F$ có $FM$ là đường trung tuyến ứng với cạnh huyền $BC$ nên $MF = MB = MC = \\dfrac{BC}{2} = %s\\text{ cm}$.\\'
-            'Tương tự, $\\triangle BEC$ vuông tại $E$ có $EM$ là đường trung tuyến ứng với cạnh huyền $BC$ nên $ME = MB = MC = %s\\text{ cm}$.\\'
+            '\\item Xét $\\triangle BFC$ vuông tại $F$ có $FM$ là đường trung tuyến ứng với cạnh huyền $BC$ nên $MF = MB = MC = \\dfrac{BC}{2} = %s\\text{ cm}$.\\\\'
+            'Tương tự, $\\triangle BEC$ vuông tại $E$ có $EM$ là đường trung tuyến ứng với cạnh huyền $BC$ nên $ME = MB = MC = %s\\text{ cm}$.\\\\'
             'Suy ra $MB = MC = ME = MF = %s\\text{ cm}$, do đó bốn điểm $B, F, E, C$ cùng nằm trên đường tròn tâm $M$ đường kính $BC$ bán kính $%s\\text{ cm}$.\n'
-            '\\item Xét đường tròn $(M)$, hai góc nội tiếp $\\widehat{EBC}$ và $\\widehat{EFC}$ cùng chắn cung nhỏ $EC$ nên $\\widehat{EBC} = \\widehat{EFC}$.\\'
-            'Ta có $\\widehat{AEF} + \\widehat{FEC} = 180^\\circ$ (kề bù) và $\\widehat{ABC} + \\widehat{FEC} = (90^\\circ - \\widehat{FCB}) + (90^\\circ + \\widehat{EFC}) = 180^\\circ$, suy ra $\\widehat{AEF} = \\widehat{ABC}$.\\'
+            '\\item Xét đường tròn $(M)$, hai góc nội tiếp $\\widehat{EBC}$ và $\\widehat{EFC}$ cùng chắn cung nhỏ $EC$ nên $\\widehat{EBC} = \\widehat{EFC}$.\\\\'
+            'Ta có $\\widehat{AEF} + \\widehat{FEC} = 180^\\circ$ (kề bù) và $\\widehat{ABC} + \\widehat{FEC} = (90^\\circ - \\widehat{FCB}) + (90^\\circ + \\widehat{EFC}) = 180^\\circ$, suy ra $\\widehat{AEF} = \\widehat{ABC}$.\\\\'
             'Xét $\\triangle AEF$ và $\\triangle ABC$ có $\\widehat{A}$ chung và $\\widehat{AEF} = \\widehat{ABC}$ nên $\\triangle AEF \\backsim \\triangle ABC$ (g.g).\n'
-            '\\item Gọi $I$ là trung điểm của đoạn thẳng $AH$. Xét $\\triangle AFH$ vuông tại $F$ có $FI$ là đường trung tuyến ứng với cạnh huyền $AH$ nên $IF = IA = IH$.\\'
-            'Tương tự, $\\triangle AEH$ vuông tại $E$ có $EI$ là đường trung tuyến ứng với cạnh huyền $AH$ nên $IE = IA = IH$.\\'
+            '\\item Gọi $I$ là trung điểm của đoạn thẳng $AH$. Xét $\\triangle AFH$ vuông tại $F$ có $FI$ là đường trung tuyến ứng với cạnh huyền $AH$ nên $IF = IA = IH$.\\\\'
+            'Tương tự, $\\triangle AEH$ vuông tại $E$ có $EI$ là đường trung tuyến ứng với cạnh huyền $AH$ nên $IE = IA = IH$.\\\\'
             'Vậy $IA = IF = IH = IE$, do đó bốn điểm $A, F, H, E$ cùng nằm trên đường tròn tâm $I$ (trung điểm của $AH$) đường kính $AH$.\n'
             '\\end{enumEX}'
             % (BC // 2, BC // 2, BC // 2, BC // 2)

@@ -160,9 +160,9 @@ def bt_dang11_p4_b1_c9_hh9(self):
         )
 
         noidungcauhoi = (
-            'Cho đường tròn $(O; %s\\text{ cm})$ đường kính $AB$. Vẽ dây cung $CD \\perp AB$ tại điểm $H$ nằm giữa $O$ và $A$. Lấy điểm $M$ thuộc cung nhỏ $BC$ ($M$ khác $B, C$), dây $AM$ cắt $CD$ tại $E$ như hình vẽ.\\'
-            'a) Chứng minh $\\widehat{AMB} = 90^\\circ$ và $\\triangle AHE \\backsim \\triangle AMB$.\\'
-            'b) Chứng minh $AE \\cdot AM = AH \\cdot AB = AC^2$.\\'
+            'Cho đường tròn $(O; %s\\text{ cm})$ đường kính $AB$. Vẽ dây cung $CD \\perp AB$ tại điểm $H$ nằm giữa $O$ và $A$. Lấy điểm $M$ thuộc cung nhỏ $BC$ ($M$ khác $B, C$), dây $AM$ cắt $CD$ tại $E$ như hình vẽ.\\\\'
+            'a) Chứng minh $\\widehat{AMB} = 90^\\circ$ và $\\triangle AHE \\backsim \\triangle AMB$.\\\\'
+            'b) Chứng minh $AE \\cdot AM = AH \\cdot AB = AC^2$.\\\\'
             'c) Chứng minh $\\widehat{ACE} = \\widehat{AMC}$ và tia $CB$ là tia phân giác của góc $\\widehat{DCM}$.\n%s'
             % (R, hinh_ve)
         )
@@ -170,9 +170,9 @@ def bt_dang11_p4_b1_c9_hh9(self):
         loigiai = (
             '\\begin{enumEX}[a)]{1}\n'
             '\\item Trong đường tròn $(O)$, góc nội tiếp $\\widehat{AMB}$ chắn nửa đường tròn đường kính $AB$ nên $\\widehat{AMB} = 90^\\circ$. Xét $\\triangle AHE$ và $\\triangle AMB$ có $\\widehat{AHE} = \\widehat{AMB} = 90^\\circ$ và $\\widehat{A}$ chung nên $\\triangle AHE \\backsim \\triangle AMB$ (g.g).\n'
-            '\\item Từ $\\triangle AHE \\backsim \\triangle AMB$, ta suy ra $\\dfrac{AH}{AM} = \\dfrac{AE}{AB} \\Rightarrow AE \\cdot AM = AH \\cdot AB$.\\'
+            '\\item Từ $\\triangle AHE \\backsim \\triangle AMB$, ta suy ra $\\dfrac{AH}{AM} = \\dfrac{AE}{AB} \\Rightarrow AE \\cdot AM = AH \\cdot AB$.\\\\'
             'Mặt khác, $\\widehat{ACB} = 90^\\circ$ (góc nội tiếp chắn nửa đường tròn đường kính $AB$) nên $\\triangle ABC$ vuông tại $C$ có đường cao $CH$, suy ra $AC^2 = AH \\cdot AB$. Vậy $AE \\cdot AM = AH \\cdot AB = AC^2$.\n'
-            '\\item Vì $AB \\perp CD$ tại $H$ nên $AB$ là đường trung trực của $CD$, suy ra $AC = AD$ và $BC = BD$. Trong đường tròn $(O)$, hai dây cung bằng nhau căng hai cung bằng nhau nên $\\text{sđ}\\overparen{AC} = \\text{sđ}\\overparen{AD}$ và $\\text{sđ}\\overparen{BC} = \\text{sđ}\\overparen{BD}$.\\'
+            '\\item Vì $AB \\perp CD$ tại $H$ nên $AB$ là đường trung trực của $CD$, suy ra $AC = AD$ và $BC = BD$. Trong đường tròn $(O)$, hai dây cung bằng nhau căng hai cung bằng nhau nên $\\text{sđ}\\overparen{AC} = \\text{sđ}\\overparen{AD}$ và $\\text{sđ}\\overparen{BC} = \\text{sđ}\\overparen{BD}$.\\\\'
             'Do đó $\\widehat{ACE} = \\widehat{ACD} = \\widehat{AMC}$ (hai góc nội tiếp chắn hai cung bằng nhau $AD$ và $AC$), và $\\widehat{DCB} = \\widehat{MCB}$ (hai góc nội tiếp chắn hai cung bằng nhau $BD$ và $BC$), suy ra tia $CB$ là tia phân giác của góc $\\widehat{DCM}$.\n'
             '\\end{enumEX}'
             

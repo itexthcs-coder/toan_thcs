@@ -158,9 +158,9 @@ def bt_dang10_p4_b1_c9_hh9(self):
         )
 
         noidungcauhoi = (
-            'Cho tam giác $ABC$ ($AB < AC$) nội tiếp đường tròn $(O; %s\\text{ cm})$. Tia phân giác trong của góc $\\widehat{BAC}$ cắt đường tròn $(O)$ tại $M$, tia phân giác ngoài của góc $\\widehat{BAC}$ cắt đường tròn $(O)$ tại $N$ như hình vẽ.\\'
-            'a) Chứng minh $MN$ là đường kính của đường tròn $(O)$.\\'
-            'b) Chứng minh $MN$ là đường trung trực của đoạn thẳng $BC$.\\'
+            'Cho tam giác $ABC$ ($AB < AC$) nội tiếp đường tròn $(O; %s\\text{ cm})$. Tia phân giác trong của góc $\\widehat{BAC}$ cắt đường tròn $(O)$ tại $M$, tia phân giác ngoài của góc $\\widehat{BAC}$ cắt đường tròn $(O)$ tại $N$ như hình vẽ.\\\\'
+            'a) Chứng minh $MN$ là đường kính của đường tròn $(O)$.\\\\'
+            'b) Chứng minh $MN$ là đường trung trực của đoạn thẳng $BC$.\\\\'
             'c) Gọi $I$ là giao điểm của $AM$ và $BC$. Chứng minh $MB^2 = MI \\cdot MA$.\n%s'
             % (R, hinh_ve)
         )

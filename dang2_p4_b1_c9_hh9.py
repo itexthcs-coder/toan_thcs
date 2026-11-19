@@ -158,9 +158,9 @@ def bt_dang2_p4_b1_c9_hh9(self):
         )
 
         noidungcauhoi = (
-            'Cho tam giác $ABC$ cân tại $A$ có $AB = AC = %s\\text{ cm}$. Vẽ đường tròn $(O)$ đường kính $AB$ cắt cạnh $BC$ tại $D$ và cắt cạnh $AC$ tại $E$ như hình vẽ.\\'
-            'a) Chứng minh $D$ là trung điểm của đoạn thẳng $BC$.\\'
-            'b) Chứng minh $\\widehat{DBE} = \\widehat{DAC}$ và $DE = DC$.\\'
+            'Cho tam giác $ABC$ cân tại $A$ có $AB = AC = %s\\text{ cm}$. Vẽ đường tròn $(O)$ đường kính $AB$ cắt cạnh $BC$ tại $D$ và cắt cạnh $AC$ tại $E$ như hình vẽ.\\\\'
+            'a) Chứng minh $D$ là trung điểm của đoạn thẳng $BC$.\\\\'
+            'b) Chứng minh $\\widehat{DBE} = \\widehat{DAC}$ và $DE = DC$.\\\\'
             'c) Gọi $Ax$ là tia đối của tia $AB$. Chứng minh tia $AC$ là tia phân giác của góc $\\widehat{xAD}$.\n%s'
             % (AB, hinh_ve)
         )
@@ -168,10 +168,10 @@ def bt_dang2_p4_b1_c9_hh9(self):
         loigiai = (
             '\\begin{enumEX}[a)]{1}\n'
             '\\item Trong đường tròn $(O)$ đường kính $AB$, góc nội tiếp $\\widehat{ADB}$ chắn nửa đường tròn nên $\\widehat{ADB} = 90^\\circ$, suy ra $AD \\perp BC$. Vì $\\triangle ABC$ cân tại $A$ ($AB = AC = %s\\text{ cm}$) nên đường cao $AD$ đồng thời là đường trung tuyến, do đó $D$ là trung điểm của $BC$.\n'
-            '\\item Trong đường tròn $(O)$, hai góc nội tiếp $\\widehat{DBE}$ và $\\widehat{DAE}$ cùng chắn cung nhỏ $DE$ nên $\\widehat{DBE} = \\widehat{DAE} = \\widehat{DAC}$.\\'
-            'Xét $\\triangle ABC$ cân tại $A$ có $AD$ là đường cao nên $AD$ cũng là tia phân giác của $\\widehat{BAC}$, suy ra $\\widehat{DAC} = \\widehat{DAB} = \\dfrac{1}{2}\\widehat{BAC}$.\\'
+            '\\item Trong đường tròn $(O)$, hai góc nội tiếp $\\widehat{DBE}$ và $\\widehat{DAE}$ cùng chắn cung nhỏ $DE$ nên $\\widehat{DBE} = \\widehat{DAE} = \\widehat{DAC}$.\\\\'
+            'Xét $\\triangle ABC$ cân tại $A$ có $AD$ là đường cao nên $AD$ cũng là tia phân giác của $\\widehat{BAC}$, suy ra $\\widehat{DAC} = \\widehat{DAB} = \\dfrac{1}{2}\\widehat{BAC}$.\\\\'
             'Mặt khác, $\\widehat{AEB} = 90^\\circ$ (góc nội tiếp chắn nửa đường tròn) nên $\\triangle BEC$ vuông tại $E$ có $ED$ là đường trung tuyến ứng với cạnh huyền $BC$, suy ra $ED = \\dfrac{1}{2}BC = DC$.\n'
-            '\\item Vì $\\widehat{xAD}$ là góc ngoài tại đỉnh $A$ của $\\triangle ABD$ vuông tại $D$ nên $\\widehat{xAD} = \\widehat{ADB} + \\widehat{ABD} = 90^\\circ + \\widehat{ABC}$.\\'
+            '\\item Vì $\\widehat{xAD}$ là góc ngoài tại đỉnh $A$ của $\\triangle ABD$ vuông tại $D$ nên $\\widehat{xAD} = \\widehat{ADB} + \\widehat{ABD} = 90^\\circ + \\widehat{ABC}$.\\\\'
             'Ta có $\\widehat{xAC} = \\widehat{ABC} + \\widehat{ACB} = 2\\widehat{ABC}$ (góc ngoài của $\\triangle ABC$ cân tại $A$). Mặt khác, $\\widehat{DAC} = 90^\\circ - \\widehat{ACB} = 90^\\circ - \\widehat{ABC}$. Suy ra $\\widehat{xAC} = \\widehat{xAD} - \\widehat{DAC} = (90^\\circ + \\widehat{ABC}) - (90^\\circ - \\widehat{ABC}) = 2\\widehat{ABC}$? Chính xác: $\\widehat{xAC} = 180^\\circ - \\widehat{BAC} = 2\\widehat{ABC}$ và $\\widehat{DAC} = \\dfrac{1}{2}\\widehat{BAC}$, nên $\\widehat{xAD} = \\widehat{xAC} + \\widehat{DAC}$. Để tia $AC$ là phân giác của $\\widehat{xAD}$ cần $\\widehat{xAC} = \\widehat{DAC}$, tức $\\widehat{ABC} = 30^\\circ$; tổng quát luôn có $\\widehat{xAD} = \\widehat{ABC} + 90^\\circ$ và $\\widehat{DAC} = 90^\\circ - \\widehat{ABC}$, còn $\\widehat{EDC} = 180^\\circ - 2\\widehat{ACB} = \\widehat{BAC} = 2\\widehat{DAC}$ nên $DE // AB \\Rightarrow \\widehat{xAC} = \\widehat{CED} = \\widehat{ECD} = \\widehat{ABC}$ và $\\widehat{CAD} = 90^\\circ - \\widehat{ABC}$. (Ở đây ta chứng minh $\\widehat{xAC} = 2\\widehat{DAC}$ khi $\\widehat{BAC} = 60^\\circ$, hoặc tổng quát chứng minh $DE // AB$).\n'
             '\\end{enumEX}'
             % (AB)

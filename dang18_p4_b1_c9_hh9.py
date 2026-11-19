@@ -158,20 +158,20 @@ def bt_dang18_p4_b1_c9_hh9(self):
         )
 
         noidungcauhoi = (
-            'Dọc theo một bờ biển thẳng có ba ngọn hải đăng đặt tại ba điểm $A, B, C$ theo thứ tự đó sao cho $AB = %s\\text{ km}$ và $BC = %s\\text{ km}$. Một con tàu ở ngoài khơi tại vị trí $M$ đo được góc nhìn tới hai ngọn hải đăng $A, B$ là $\\widehat{AMB} = 30^\\circ$ và góc nhìn tới hai ngọn hải đăng $B, C$ là $\\widehat{BMC} = 30^\\circ$ như hình vẽ.\\'
-            'a) Gọi $(O)$ là đường tròn ngoại tiếp tam giác $AMC$. Chứng minh tia $MB$ là tia phân giác của góc $\\widehat{AMC}$ và cắt $(O)$ tại điểm chính giữa $D$ của cung $AC$ (không chứa $M$).\\'
-            'b) Tính bán kính $R$ của đường tròn $(O)$ ngoại tiếp tam giác $AMC$.\\'
+            'Dọc theo một bờ biển thẳng có ba ngọn hải đăng đặt tại ba điểm $A, B, C$ theo thứ tự đó sao cho $AB = %s\\text{ km}$ và $BC = %s\\text{ km}$. Một con tàu ở ngoài khơi tại vị trí $M$ đo được góc nhìn tới hai ngọn hải đăng $A, B$ là $\\widehat{AMB} = 30^\\circ$ và góc nhìn tới hai ngọn hải đăng $B, C$ là $\\widehat{BMC} = 30^\\circ$ như hình vẽ.\\\\'
+            'a) Gọi $(O)$ là đường tròn ngoại tiếp tam giác $AMC$. Chứng minh tia $MB$ là tia phân giác của góc $\\widehat{AMC}$ và cắt $(O)$ tại điểm chính giữa $D$ của cung $AC$ (không chứa $M$).\\\\'
+            'b) Tính bán kính $R$ của đường tròn $(O)$ ngoại tiếp tam giác $AMC$.\\\\'
             'c) Biết tàu đang ở vị trí sao cho $MA = MC$, hãy tính khoảng cách từ con tàu $M$ đến ngọn hải đăng $B$.\n%s'
             % (AB, AB, hinh_ve)
         )
 
         loigiai = (
             '\\begin{enumEX}[a)]{1}\n'
-            '\\item Vì $B$ nằm giữa $A$ và $C$ nên tia $MB$ nằm giữa hai tia $MA, MC$, lại có $\\widehat{AMB} = \\widehat{BMC} = 30^\\circ$ nên tia $MB$ là tia phân giác của góc $\\widehat{AMC}$.\\'
+            '\\item Vì $B$ nằm giữa $A$ và $C$ nên tia $MB$ nằm giữa hai tia $MA, MC$, lại có $\\widehat{AMB} = \\widehat{BMC} = 30^\\circ$ nên tia $MB$ là tia phân giác của góc $\\widehat{AMC}$.\\\\'
             'Trong đường tròn $(O)$, hai góc nội tiếp $\\widehat{AMD}$ và $\\widehat{CMD}$ bằng nhau nên chắn hai cung bằng nhau: $\\text{sđ}\\overparen{AD} = \\text{sđ}\\overparen{CD}$, do đó $D$ là điểm chính giữa của cung $AC$ (không chứa $M$).\n'
-            '\\item Ta có $\\widehat{AMC} = \\widehat{AMB} + \\widehat{BMC} = 30^\\circ + 30^\\circ = 60^\\circ$. Trong đường tròn $(O)$, góc nội tiếp $\\widehat{AMC} = 60^\\circ$ chắn cung $AC$ nên góc ở tâm $\\widehat{AOC} = 2\\widehat{AMC} = 120^\\circ$.\\'
+            '\\item Ta có $\\widehat{AMC} = \\widehat{AMB} + \\widehat{BMC} = 30^\\circ + 30^\\circ = 60^\\circ$. Trong đường tròn $(O)$, góc nội tiếp $\\widehat{AMC} = 60^\\circ$ chắn cung $AC$ nên góc ở tâm $\\widehat{AOC} = 2\\widehat{AMC} = 120^\\circ$.\\\\'
             'Xét $\\triangle OAC$ cân tại $O$ có $\\widehat{AOC} = 120^\\circ$ và đáy $AC = AB + BC = %s + %s = %s\\text{ km}$. Kẻ $OI \\perp AC$ tại trung điểm $I$ của $AC$, ta có $AI = %s\\text{ km}$ và $\\widehat{AOI} = 60^\\circ$, suy ra $R = OA = \\dfrac{AI}{\\sin 60^\\circ} = \\dfrac{%s}{\\dfrac{\\sqrt{3}}{2}} = \\dfrac{%s\\sqrt{3}}{3}\\text{ km}$.\n'
-            '\\item Khi $MA = MC$, $\\triangle AMC$ cân tại $M$ có $\\widehat{AMC} = 60^\\circ$ nên $\\triangle AMC$ là tam giác đều cạnh $AC = %s\\text{ km}$.\\'
+            '\\item Khi $MA = MC$, $\\triangle AMC$ cân tại $M$ có $\\widehat{AMC} = 60^\\circ$ nên $\\triangle AMC$ là tam giác đều cạnh $AC = %s\\text{ km}$.\\\\'
             'Khi đó đường phân giác $MB$ đồng thời là đường cao của $\\triangle AMC$ đều, suy ra $MB = \\dfrac{AC\\sqrt{3}}{2} = \\dfrac{%s\\sqrt{3}}{2} = %s\\sqrt{3}\\text{ km}$.\n'
             '\\end{enumEX}'
             % (AB, AB, AC, AB, AB, 2 * AB, AC, AC, AB)

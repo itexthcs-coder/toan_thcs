@@ -157,20 +157,20 @@ def bt_dang15_p4_b1_c9_hh9(self):
         )
 
         noidungcauhoi = (
-            'Cho đường tròn $(O; %s\\text{ cm})$ và hai dây cung bằng nhau $AB$ và $CD$ cắt nhau tại điểm $I$ nằm bên trong đường tròn (theo thứ tự các điểm $A, B, D, C$ trên đường tròn và $IA < IB$) như hình vẽ.\\'
-            'a) Chứng minh $\\text{sđ}\\overparen{AC} = \\text{sđ}\\overparen{BD}$.\\'
-            'b) Chứng minh $IA = ID$ và $IB = IC$.\\'
+            'Cho đường tròn $(O; %s\\text{ cm})$ và hai dây cung bằng nhau $AB$ và $CD$ cắt nhau tại điểm $I$ nằm bên trong đường tròn (theo thứ tự các điểm $A, B, D, C$ trên đường tròn và $IA < IB$) như hình vẽ.\\\\'
+            'a) Chứng minh $\\text{sđ}\\overparen{AC} = \\text{sđ}\\overparen{BD}$.\\\\'
+            'b) Chứng minh $IA = ID$ và $IB = IC$.\\\\'
             'c) Chứng minh $AD // BC$ và đường thẳng $OI$ là đường trung trực của đoạn thẳng $AD$.\n%s'
             % (R, hinh_ve)
         )
 
         loigiai = (
             '\\begin{enumEX}[a)]{1}\n'
-            '\\item Trong đường tròn $(O; %s\\text{ cm})$, hai dây cung bằng nhau $AB = CD$ căng hai cung nhỏ bằng nhau nên $\\text{sđ}\\overparen{AB} = \\text{sđ}\\overparen{CD}$.\\'
+            '\\item Trong đường tròn $(O; %s\\text{ cm})$, hai dây cung bằng nhau $AB = CD$ căng hai cung nhỏ bằng nhau nên $\\text{sđ}\\overparen{AB} = \\text{sđ}\\overparen{CD}$.\\\\'
             'Trừ cả hai vế cho $\\text{sđ}\\overparen{CB}$, ta được $\\text{sđ}\\overparen{AB} - \\text{sđ}\\overparen{CB} = \\text{sđ}\\overparen{CD} - \\text{sđ}\\overparen{CB} \\Rightarrow \\text{sđ}\\overparen{AC} = \\text{sđ}\\overparen{BD}$.\n'
-            '\\item Hai góc nội tiếp $\\widehat{ABC}$ và $\\widehat{DCB}$ lần lượt chắn hai cung bằng nhau $AC$ và $BD$ nên $\\widehat{IBC} = \\widehat{ICB}$, suy ra $\\triangle IBC$ cân tại $I$ và $IB = IC$.\\'
+            '\\item Hai góc nội tiếp $\\widehat{ABC}$ và $\\widehat{DCB}$ lần lượt chắn hai cung bằng nhau $AC$ và $BD$ nên $\\widehat{IBC} = \\widehat{ICB}$, suy ra $\\triangle IBC$ cân tại $I$ và $IB = IC$.\\\\'
             'Mặt khác, $AB = CD$ nên $AB - IB = CD - IC \\Rightarrow IA = ID$.\n'
-            '\\item Hai góc nội tiếp $\\widehat{ADC}$ và $\\widehat{DAB}$ lần lượt chắn hai cung bằng nhau $AC$ và $BD$ nên $\\widehat{ADC} = \\widehat{DAB}$, mà hai góc này ở vị trí so le trong nên $AD // BC$.\\'
+            '\\item Hai góc nội tiếp $\\widehat{ADC}$ và $\\widehat{DAB}$ lần lượt chắn hai cung bằng nhau $AC$ và $BD$ nên $\\widehat{ADC} = \\widehat{DAB}$, mà hai góc này ở vị trí so le trong nên $AD // BC$.\\\\'
             'Vì $IA = ID$ và $OA = OD = %s\\text{ cm}$ nên $OI$ là đường trung trực của đoạn thẳng $AD$.\n'
             '\\end{enumEX}'
             % (R, R)

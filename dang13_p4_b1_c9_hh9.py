@@ -155,21 +155,21 @@ def bt_dang13_p4_b1_c9_hh9(self):
         )
 
         noidungcauhoi = (
-            'Cho nửa đường tròn $(O; %s\\text{ cm})$ đường kính $AB$. Lấy điểm $C$ di động trên nửa đường tròn ($C$ khác $A, B$). Kẻ $CH \\perp AB$ tại $H$ như hình vẽ.\\'
-            'a) Chứng minh $\\widehat{ACB} = 90^\\circ$ và $CH^2 = HA \\cdot HB$.\\'
-            'b) Tìm vị trí của điểm $C$ trên nửa đường tròn để độ dài đoạn thẳng $CH$ đạt giá trị lớn nhất và tính giá trị lớn nhất đó.\\'
+            'Cho nửa đường tròn $(O; %s\\text{ cm})$ đường kính $AB$. Lấy điểm $C$ di động trên nửa đường tròn ($C$ khác $A, B$). Kẻ $CH \\perp AB$ tại $H$ như hình vẽ.\\\\'
+            'a) Chứng minh $\\widehat{ACB} = 90^\\circ$ và $CH^2 = HA \\cdot HB$.\\\\'
+            'b) Tìm vị trí của điểm $C$ trên nửa đường tròn để độ dài đoạn thẳng $CH$ đạt giá trị lớn nhất và tính giá trị lớn nhất đó.\\\\'
             'c) Tìm vị trí của điểm $C$ trên nửa đường tròn để chu vi tam giác $ABC$ đạt giá trị lớn nhất.\n%s'
             % (R, hinh_ve)
         )
 
         loigiai = (
             '\\begin{enumEX}[a)]{1}\n'
-            '\\item Trong nửa đường tròn $(O; %s\\text{ cm})$ đường kính $AB$, góc nội tiếp $\\widehat{ACB}$ chắn nửa đường tròn nên $\\widehat{ACB} = 90^\\circ$.\\'
+            '\\item Trong nửa đường tròn $(O; %s\\text{ cm})$ đường kính $AB$, góc nội tiếp $\\widehat{ACB}$ chắn nửa đường tròn nên $\\widehat{ACB} = 90^\\circ$.\\\\'
             'Xét hai tam giác vuông $\\triangle CHA$ và $\\triangle BHC$ có $\\widehat{HCA} = \\widehat{HBC}$ (cùng phụ với $\\widehat{HAC}$) nên $\\triangle CHA \\backsim \\triangle BHC$ (g.g), suy ra $\\dfrac{CH}{HB} = \\dfrac{HA}{CH} \\Rightarrow CH^2 = HA \\cdot HB$.\n'
-            '\\item Xét $\\triangle OCH$ vuông tại $H$ (hoặc $H \\equiv O$), ta luôn có $CH \\le OC = %s\\text{ cm}$.\\'
+            '\\item Xét $\\triangle OCH$ vuông tại $H$ (hoặc $H \\equiv O$), ta luôn có $CH \\le OC = %s\\text{ cm}$.\\\\'
             'Dấu ``=\" xảy ra khi và chỉ khi $H \\equiv O$, tức là $OC \\perp AB$ hay $C$ là điểm chính giữa của nửa đường tròn. Vậy $CH$ đạt giá trị lớn nhất bằng $%s\\text{ cm}$.\n'
-            '\\item Chu vi $\\triangle ABC$ là $P = AB + AC + BC = %s + AC + BC$. Do đó $P$ lớn nhất khi $AC + BC$ lớn nhất.\\'
-            'Áp dụng bất đẳng thức $(AC - BC)^2 \\ge 0$, ta có $(AC + BC)^2 \\le 2(AC^2 + BC^2) = 2AB^2 = 2 \\cdot %s^2 = %s \\Rightarrow AC + BC \\le %s\\sqrt{2}\\text{ cm}$.\\'
+            '\\item Chu vi $\\triangle ABC$ là $P = AB + AC + BC = %s + AC + BC$. Do đó $P$ lớn nhất khi $AC + BC$ lớn nhất.\\\\'
+            'Áp dụng bất đẳng thức $(AC - BC)^2 \\ge 0$, ta có $(AC + BC)^2 \\le 2(AC^2 + BC^2) = 2AB^2 = 2 \\cdot %s^2 = %s \\Rightarrow AC + BC \\le %s\\sqrt{2}\\text{ cm}$.\\\\'
             'Dấu ``=\" xảy ra khi $AC = BC$, tức là $C$ là điểm chính giữa của nửa đường tròn $(O)$. Vậy chu vi $\\triangle ABC$ đạt giá trị lớn nhất bằng $(%s + %s\\sqrt{2})\\text{ cm}$ khi $C$ nằm chính giữa nửa đường tròn.\n'
             '\\end{enumEX}'
             % (R, R, R, 2 * R, 2 * R, 2 * (2 * R) * (2 * R), 2 * R, 2 * R, 2 * R)

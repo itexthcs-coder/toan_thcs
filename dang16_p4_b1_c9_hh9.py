@@ -157,18 +157,18 @@ def bt_dang16_p4_b1_c9_hh9(self):
         )
 
         noidungcauhoi = (
-            'Trong một nhà hát có mặt bằng hình tròn tâm $O$, bán kính $R = %s\\text{ m}$, sân khấu được bố trí dọc theo dây cung $AB$ có độ dài $AB = %s\\text{ m}$. Khán giả ngồi ở khu vực cung lớn $AB$ để theo dõi vở diễn như hình vẽ.\\'
-            'a) Tính góc nhìn $\\widehat{ACB}$ từ một ghế ngồi $C$ sát tường bao trên cung lớn $AB$ tới hai mép sân khấu $A$ và $B$.\\'
-            'b) Một khán giả khác ngồi tại vị trí $D$ ở bên trong hội trường (nằm trong miền giới hạn bởi dây $AB$ và cung lớn $AB$). Hãy so sánh góc nhìn $\\widehat{ADB}$ của khán giả này với góc nhìn $\\widehat{ACB}$ ở câu a) và giải thích bằng kiến thức hình học.\\'
+            'Trong một nhà hát có mặt bằng hình tròn tâm $O$, bán kính $R = %s\\text{ m}$, sân khấu được bố trí dọc theo dây cung $AB$ có độ dài $AB = %s\\text{ m}$. Khán giả ngồi ở khu vực cung lớn $AB$ để theo dõi vở diễn như hình vẽ.\\\\'
+            'a) Tính góc nhìn $\\widehat{ACB}$ từ một ghế ngồi $C$ sát tường bao trên cung lớn $AB$ tới hai mép sân khấu $A$ và $B$.\\\\'
+            'b) Một khán giả khác ngồi tại vị trí $D$ ở bên trong hội trường (nằm trong miền giới hạn bởi dây $AB$ và cung lớn $AB$). Hãy so sánh góc nhìn $\\widehat{ADB}$ của khán giả này với góc nhìn $\\widehat{ACB}$ ở câu a) và giải thích bằng kiến thức hình học.\\\\'
             'c) Nếu ban tổ chức mở rộng chiều ngang sân khấu thành dây cung $A\'B\'$ đi qua tâm $O$ (đường kính của nhà hát) thì góc nhìn từ mọi ghế ngồi trên nửa đường tròn đối diện tới hai mép sân khấu mới bằng bao nhiêu độ?\n%s'
             % (R, R, hinh_ve)
         )
 
         loigiai = (
             '\\begin{enumEX}[a)]{1}\n'
-            '\\item Xét $\\triangle OAB$ có $OA = OB = AB = %s\\text{ m}$ nên $\\triangle OAB$ là tam giác đều, suy ra góc ở tâm $\\widehat{AOB} = 60^\\circ$.\\'
+            '\\item Xét $\\triangle OAB$ có $OA = OB = AB = %s\\text{ m}$ nên $\\triangle OAB$ là tam giác đều, suy ra góc ở tâm $\\widehat{AOB} = 60^\\circ$.\\\\'
             'Trong đường tròn $(O)$, góc nội tiếp $\\widehat{ACB}$ và góc ở tâm $\\widehat{AOB}$ cùng chắn cung nhỏ $AB$ nên $\\widehat{ACB} = \\dfrac{1}{2}\\widehat{AOB} = \\dfrac{60^\\circ}{2} = 30^\\circ$.\n'
-            '\\item Kéo dài $AD$ cắt cung lớn $AB$ tại điểm $K$. Vì hai góc nội tiếp $\\widehat{AKB}$ và $\\widehat{ACB}$ cùng chắn cung nhỏ $AB$ nên $\\widehat{AKB} = \\widehat{ACB} = 30^\\circ$.\\'
+            '\\item Kéo dài $AD$ cắt cung lớn $AB$ tại điểm $K$. Vì hai góc nội tiếp $\\widehat{AKB}$ và $\\widehat{ACB}$ cùng chắn cung nhỏ $AB$ nên $\\widehat{AKB} = \\widehat{ACB} = 30^\\circ$.\\\\'
             'Xét $\\triangle DKB$, góc $\\widehat{ADB}$ là góc ngoài tại đỉnh $D$ nên $\\widehat{ADB} = \\widehat{AKB} + \\widehat{KBD} > \\widehat{AKB} = 30^\\circ$. Vậy góc nhìn $\\widehat{ADB}$ lớn hơn góc nhìn $\\widehat{ACB}$.\n'
             '\\item Khi sân khấu mới $A\'B\'$ là đường kính của đường tròn $(O)$, mọi góc nhìn từ các ghế ngồi trên nửa đường tròn đối diện đều là góc nội tiếp chắn nửa đường tròn nên đều có số đo bằng $90^\\circ$.\n'
             '\\end{enumEX}'

@@ -160,9 +160,9 @@ def bt_dang9_p4_b1_c9_hh9(self):
         )
 
         noidungcauhoi = (
-            'Cho hai đường tròn $(O; %s\\text{ cm})$ và $(O\'; %s\\text{ cm})$ tiếp xúc ngoài tại điểm $A$. Vẽ đường kính $AB$ của $(O)$ và đường kính $AC$ của $(O\')$. Một đường thẳng $d$ đi qua $A$ cắt $(O)$ tại $D$ (khác $A$) và cắt $(O\')$ tại $E$ (khác $A$) như hình vẽ.\\'
-            'a) Chứng minh $\\widehat{ADB} = \\widehat{AEC} = 90^\\circ$.\\'
-            'b) Chứng minh $BD // CE$.\\'
+            'Cho hai đường tròn $(O; %s\\text{ cm})$ và $(O\'; %s\\text{ cm})$ tiếp xúc ngoài tại điểm $A$. Vẽ đường kính $AB$ của $(O)$ và đường kính $AC$ của $(O\')$. Một đường thẳng $d$ đi qua $A$ cắt $(O)$ tại $D$ (khác $A$) và cắt $(O\')$ tại $E$ (khác $A$) như hình vẽ.\\\\'
+            'a) Chứng minh $\\widehat{ADB} = \\widehat{AEC} = 90^\\circ$.\\\\'
+            'b) Chứng minh $BD // CE$.\\\\'
             'c) Chứng minh tỉ số $\\dfrac{AD}{AE}$ không đổi khi đường thẳng $d$ quay quanh $A$.\n%s'
             % (R, r, hinh_ve)
         )
@@ -170,9 +170,9 @@ def bt_dang9_p4_b1_c9_hh9(self):
         loigiai = (
             '\\begin{enumEX}[a)]{1}\n'
             '\\item Trong đường tròn $(O)$, góc nội tiếp $\\widehat{ADB}$ chắn nửa đường tròn đường kính $AB$ nên $\\widehat{ADB} = 90^\\circ$. Trong đường tròn $(O\')$, góc nội tiếp $\\widehat{AEC}$ chắn nửa đường tròn đường kính $AC$ nên $\\widehat{AEC} = 90^\\circ$.\n'
-            '\\item Vì hai đường tròn $(O)$ và $(O\')$ tiếp xúc ngoài tại $A$ nên ba điểm $O, A, O\'$ thẳng hàng, suy ra $B, A, C$ thẳng hàng.\\'
+            '\\item Vì hai đường tròn $(O)$ và $(O\')$ tiếp xúc ngoài tại $A$ nên ba điểm $O, A, O\'$ thẳng hàng, suy ra $B, A, C$ thẳng hàng.\\\\'
             'Ta có $BD \\perp DE$ (do $\\widehat{ADB} = 90^\\circ$) và $CE \\perp DE$ (do $\\widehat{AEC} = 90^\\circ$), suy ra $BD // CE$.\n'
-            '\\item Xét hai tam giác vuông $\\triangle ADB$ và $\\triangle AEC$ có $\\widehat{DAB} = \\widehat{EAC}$ (hai góc đối đỉnh) nên $\\triangle ADB \\backsim \\triangle AEC$ (g.g).\\'
+            '\\item Xét hai tam giác vuông $\\triangle ADB$ và $\\triangle AEC$ có $\\widehat{DAB} = \\widehat{EAC}$ (hai góc đối đỉnh) nên $\\triangle ADB \\backsim \\triangle AEC$ (g.g).\\\\'
             'Suy ra $\\dfrac{AD}{AE} = \\dfrac{AB}{AC} = \\dfrac{2R}{2r} = \\dfrac{%s}{%s}$ không đổi khi đường thẳng $d$ quay quanh $A$.\n'
             '\\end{enumEX}'
             % (R, r)

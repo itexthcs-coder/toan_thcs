@@ -162,9 +162,9 @@ def bt_dang6_p4_b1_c9_hh9(self):
         )
 
         noidungcauhoi = (
-            'Cho tam giác $ABC$ nhọn ($AB < AC$) nội tiếp đường tròn $(O; %s\\text{ cm})$. Hai đường cao $BE$ và $CF$ cắt nhau tại trực tâm $H$. Vẽ đường kính $AD$ của đường tròn $(O)$ như hình vẽ.\\'
-            'a) Chứng minh $\\widehat{ABD} = \\widehat{ACD} = 90^\\circ$.\\'
-            'b) Chứng minh tứ giác $BHCD$ là hình bình hành.\\'
+            'Cho tam giác $ABC$ nhọn ($AB < AC$) nội tiếp đường tròn $(O; %s\\text{ cm})$. Hai đường cao $BE$ và $CF$ cắt nhau tại trực tâm $H$. Vẽ đường kính $AD$ của đường tròn $(O)$ như hình vẽ.\\\\'
+            'a) Chứng minh $\\widehat{ABD} = \\widehat{ACD} = 90^\\circ$.\\\\'
+            'b) Chứng minh tứ giác $BHCD$ là hình bình hành.\\\\'
             'c) Gọi $M$ là trung điểm của cạnh $BC$. Chứng minh ba điểm $H, M, D$ thẳng hàng và $AH = 2OM$.\n%s'
             % (R, hinh_ve)
         )
@@ -172,10 +172,10 @@ def bt_dang6_p4_b1_c9_hh9(self):
         loigiai = (
             '\\begin{enumEX}[a)]{1}\n'
             '\\item Trong đường tròn $(O; %s\\text{ cm})$, các góc nội tiếp $\\widehat{ABD}$ và $\\widehat{ACD}$ cùng chắn nửa đường tròn đường kính $AD$ nên $\\widehat{ABD} = \\widehat{ACD} = 90^\\circ$.\n'
-            '\\item Ta có $BH \\perp AC$ (do $BE$ là đường cao) và $CD \\perp AC$ (do $\\widehat{ACD} = 90^\\circ$) nên $BH // CD$.\\'
-            'Tương tự, $CH \\perp AB$ (do $CF$ là đường cao) và $BD \\perp AB$ (do $\\widehat{ABD} = 90^\\circ$) nên $CH // BD$.\\'
+            '\\item Ta có $BH \\perp AC$ (do $BE$ là đường cao) và $CD \\perp AC$ (do $\\widehat{ACD} = 90^\\circ$) nên $BH // CD$.\\\\'
+            'Tương tự, $CH \\perp AB$ (do $CF$ là đường cao) và $BD \\perp AB$ (do $\\widehat{ABD} = 90^\\circ$) nên $CH // BD$.\\\\'
             'Tứ giác $BHCD$ có các cặp cạnh đối song song nên $BHCD$ là hình bình hành.\n'
-            '\\item Vì $BHCD$ là hình bình hành nên hai đường chéo $BC$ và $HD$ cắt nhau tại trung điểm của mỗi đường. Mà $M$ là trung điểm của $BC$ nên $M$ cũng là trung điểm của $HD$, suy ra ba điểm $H, M, D$ thẳng hàng.\\'
+            '\\item Vì $BHCD$ là hình bình hành nên hai đường chéo $BC$ và $HD$ cắt nhau tại trung điểm của mỗi đường. Mà $M$ là trung điểm của $BC$ nên $M$ cũng là trung điểm của $HD$, suy ra ba điểm $H, M, D$ thẳng hàng.\\\\'
             'Xét $\\triangle AHD$ có $O$ là trung điểm của $AD$ và $M$ là trung điểm của $HD$ nên $OM$ là đường trung bình của $\\triangle AHD$, suy ra $AH = 2OM$.\n'
             '\\end{enumEX}'
             % (R)

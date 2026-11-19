@@ -159,18 +159,18 @@ def bt_dang14_p4_b1_c9_hh9(self):
         )
 
         noidungcauhoi = (
-            'Cho đường tròn $(O; %s\\text{ cm})$ và dây cung $BC = %s\\sqrt{3}\\text{ cm}$. Lấy điểm $A$ di động trên cung lớn $BC$ ($A$ khác $B, C$). Gọi $H$ là trực tâm của tam giác $ABC$ như hình vẽ.\\'
-            'a) Tính số đo góc ở tâm $\\widehat{BOC}$ và góc nội tiếp $\\widehat{BAC}$.\\'
-            'b) Tính số đo góc $\\widehat{BHC}$.\\'
+            'Cho đường tròn $(O; %s\\text{ cm})$ và dây cung $BC = %s\\sqrt{3}\\text{ cm}$. Lấy điểm $A$ di động trên cung lớn $BC$ ($A$ khác $B, C$). Gọi $H$ là trực tâm của tam giác $ABC$ như hình vẽ.\\\\'
+            'a) Tính số đo góc ở tâm $\\widehat{BOC}$ và góc nội tiếp $\\widehat{BAC}$.\\\\'
+            'b) Tính số đo góc $\\widehat{BHC}$.\\\\'
             'c) Gọi $D$ là điểm đối xứng với $H$ qua đường thẳng $BC$. Chứng minh điểm $D$ luôn nằm trên đường tròn $(O)$.\n%s'
             % (R, R, hinh_ve)
         )
 
         loigiai = (
             '\\begin{enumEX}[a)]{1}\n'
-            '\\item Kẻ $OI \\perp BC$ tại trung điểm $I$ của $BC$, ta có $BI = \\dfrac{BC}{2} = \\dfrac{%s\\sqrt{3}}{2}\\text{ cm}$. Trong $\\triangle OBI$ vuông tại $I$, $\\sin \\widehat{BOI} = \\dfrac{BI}{OB} = \\dfrac{\\sqrt{3}}{2} \\Rightarrow \\widehat{BOI} = 60^\\circ$, suy ra $\\widehat{BOC} = 2\\widehat{BOI} = 120^\\circ$.\\'
+            '\\item Kẻ $OI \\perp BC$ tại trung điểm $I$ của $BC$, ta có $BI = \\dfrac{BC}{2} = \\dfrac{%s\\sqrt{3}}{2}\\text{ cm}$. Trong $\\triangle OBI$ vuông tại $I$, $\\sin \\widehat{BOI} = \\dfrac{BI}{OB} = \\dfrac{\\sqrt{3}}{2} \\Rightarrow \\widehat{BOI} = 60^\\circ$, suy ra $\\widehat{BOC} = 2\\widehat{BOI} = 120^\\circ$.\\\\'
             'Trong đường tròn $(O)$, góc nội tiếp $\\widehat{BAC}$ và góc ở tâm $\\widehat{BOC}$ cùng chắn cung nhỏ $BC$ nên $\\widehat{BAC} = \\dfrac{1}{2}\\widehat{BOC} = 60^\\circ$.\n'
-            '\\item Gọi $BE, CF$ là hai đường cao của $\\triangle ABC$ cắt nhau tại $H$. Xét tứ giác $AEHF$ có $\\widehat{AEH} = \\widehat{AFH} = 90^\\circ$ và $\\widehat{EAF} = 60^\\circ$ nên $\\widehat{EHF} = 360^\\circ - 90^\\circ - 90^\\circ - 60^\\circ = 120^\\circ$.\\'
+            '\\item Gọi $BE, CF$ là hai đường cao của $\\triangle ABC$ cắt nhau tại $H$. Xét tứ giác $AEHF$ có $\\widehat{AEH} = \\widehat{AFH} = 90^\\circ$ và $\\widehat{EAF} = 60^\\circ$ nên $\\widehat{EHF} = 360^\\circ - 90^\\circ - 90^\\circ - 60^\\circ = 120^\\circ$.\\\\'
             'Vì $\\widehat{BHC}$ đối đỉnh với $\\widehat{EHF}$ nên $\\widehat{BHC} = 120^\\circ$.\n'
             '\\item Vì $D$ đối xứng với $H$ qua $BC$ nên $\\widehat{BDC} = \\widehat{BHC} = 120^\\circ$. Mặt khác, số đo cung lớn $BC$ bằng $360^\\circ - 120^\\circ = 240^\\circ$, do đó mọi điểm $M$ nằm trên cung nhỏ $BC$ đều có góc nội tiếp $\\widehat{BMC} = \\dfrac{240^\\circ}{2} = 120^\\circ$. Vì $D$ và $A$ nằm khác phía đối với $BC$ và $\\widehat{BDC} = 120^\\circ$ nên điểm $D$ luôn nằm trên cung nhỏ $BC$ của đường tròn $(O)$.\n'
             '\\end{enumEX}'

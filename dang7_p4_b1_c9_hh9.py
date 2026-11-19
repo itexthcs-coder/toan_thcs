@@ -160,20 +160,20 @@ def bt_dang7_p4_b1_c9_hh9(self):
         )
 
         noidungcauhoi = (
-            'Cho đường tròn $(O; %s\\text{ cm})$ và dây cung $AB$ không đi qua tâm. Gọi $M$ là điểm chính giữa của cung nhỏ $AB$. Qua $M$ vẽ hai dây cung $MC$ và $MD$ cắt dây $AB$ lần lượt tại $E$ và $F$ ($E$ nằm giữa $A$ và $F$) như hình vẽ.\\'
-            'a) Chứng minh $\\widehat{MCA} = \\widehat{MAB}$ và $\\triangle MEA \\backsim \\triangle MAC$.\\'
-            'b) Chứng minh $MA^2 = ME \\cdot MC = MF \\cdot MD$.\\'
+            'Cho đường tròn $(O; %s\\text{ cm})$ và dây cung $AB$ không đi qua tâm. Gọi $M$ là điểm chính giữa của cung nhỏ $AB$. Qua $M$ vẽ hai dây cung $MC$ và $MD$ cắt dây $AB$ lần lượt tại $E$ và $F$ ($E$ nằm giữa $A$ và $F$) như hình vẽ.\\\\'
+            'a) Chứng minh $\\widehat{MCA} = \\widehat{MAB}$ và $\\triangle MEA \\backsim \\triangle MAC$.\\\\'
+            'b) Chứng minh $MA^2 = ME \\cdot MC = MF \\cdot MD$.\\\\'
             'c) Chứng minh $\\widehat{EFD} + \\widehat{ECD} = 180^\\circ$.\n%s'
             % (R, hinh_ve)
         )
 
         loigiai = (
             '\\begin{enumEX}[a)]{1}\n'
-            '\\item Vì $M$ là điểm chính giữa cung nhỏ $AB$ của đường tròn $(O; %s\\text{ cm})$ nên $\\text{sđ}\\overparen{MA} = \\text{sđ}\\overparen{MB}$. Hai góc nội tiếp $\\widehat{MCA}$ và $\\widehat{MAB}$ lần lượt chắn hai cung bằng nhau $MA$ và $MB$ nên $\\widehat{MCA} = \\widehat{MAB}$.\\'
+            '\\item Vì $M$ là điểm chính giữa cung nhỏ $AB$ của đường tròn $(O; %s\\text{ cm})$ nên $\\text{sđ}\\overparen{MA} = \\text{sđ}\\overparen{MB}$. Hai góc nội tiếp $\\widehat{MCA}$ và $\\widehat{MAB}$ lần lượt chắn hai cung bằng nhau $MA$ và $MB$ nên $\\widehat{MCA} = \\widehat{MAB}$.\\\\'
             'Xét $\\triangle MEA$ và $\\triangle MAC$ có $\\widehat{AME}$ chung và $\\widehat{MAE} = \\widehat{MCA}$ nên $\\triangle MEA \\backsim \\triangle MAC$ (g.g).\n'
-            '\\item Từ $\\triangle MEA \\backsim \\triangle MAC$, ta suy ra $\\dfrac{ME}{MA} = \\dfrac{MA}{MC} \\Rightarrow MA^2 = ME \\cdot MC$.\\'
+            '\\item Từ $\\triangle MEA \\backsim \\triangle MAC$, ta suy ra $\\dfrac{ME}{MA} = \\dfrac{MA}{MC} \\Rightarrow MA^2 = ME \\cdot MC$.\\\\'
             'Chứng minh hoàn toàn tương tự, ta có $\\triangle MFA \\backsim \\triangle MAD$ (g.g), suy ra $MA^2 = MF \\cdot MD$. Vậy $MA^2 = ME \\cdot MC = MF \\cdot MD$.\n'
-            '\\item Từ $ME \\cdot MC = MF \\cdot MD \\Rightarrow \\dfrac{ME}{MD} = \\dfrac{MF}{MC}$. Xét $\\triangle MEF$ và $\\triangle MDC$ có $\\widehat{EMF}$ chung và $\\dfrac{ME}{MD} = \\dfrac{MF}{MC}$ nên $\\triangle MEF \\backsim \\triangle MDC$ (c.g.c), suy ra $\\widehat{MFE} = \\widehat{MCD}$.\\'
+            '\\item Từ $ME \\cdot MC = MF \\cdot MD \\Rightarrow \\dfrac{ME}{MD} = \\dfrac{MF}{MC}$. Xét $\\triangle MEF$ và $\\triangle MDC$ có $\\widehat{EMF}$ chung và $\\dfrac{ME}{MD} = \\dfrac{MF}{MC}$ nên $\\triangle MEF \\backsim \\triangle MDC$ (c.g.c), suy ra $\\widehat{MFE} = \\widehat{MCD}$.\\\\'
             'Vì $\\widehat{MFE} + \\widehat{EFD} = 180^\\circ$ (hai góc kề bù) và $\\widehat{MFE} = \\widehat{MCD} = \\widehat{ECD}$ nên $\\widehat{EFD} + \\widehat{ECD} = 180^\\circ$.\n'
             '\\end{enumEX}'
             % (R)

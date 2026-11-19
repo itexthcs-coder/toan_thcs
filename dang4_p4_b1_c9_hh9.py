@@ -160,20 +160,20 @@ def bt_dang4_p4_b1_c9_hh9(self):
         )
 
         noidungcauhoi = (
-            'Cho đường tròn $(O; %s\\text{ cm})$ đường kính $AB$. Lấy điểm $C$ nằm trên đường tròn $(O)$ ($CA < CB$) và điểm $D$ nằm trên đoạn thẳng $OB$ ($D$ khác $O, B$). Đường thẳng qua $D$ vuông góc với $AB$ cắt $BC$ tại $E$ và cắt đường thẳng $AC$ tại $F$ như hình vẽ.\\'
-            'a) Chứng minh $\\widehat{ACB} = 90^\\circ$ và $\\triangle BDE \\backsim \\triangle BCA$.\\'
-            'b) Chứng minh $BD \\cdot BA = BE \\cdot BC$.\\'
+            'Cho đường tròn $(O; %s\\text{ cm})$ đường kính $AB$. Lấy điểm $C$ nằm trên đường tròn $(O)$ ($CA < CB$) và điểm $D$ nằm trên đoạn thẳng $OB$ ($D$ khác $O, B$). Đường thẳng qua $D$ vuông góc với $AB$ cắt $BC$ tại $E$ và cắt đường thẳng $AC$ tại $F$ như hình vẽ.\\\\'
+            'a) Chứng minh $\\widehat{ACB} = 90^\\circ$ và $\\triangle BDE \\backsim \\triangle BCA$.\\\\'
+            'b) Chứng minh $BD \\cdot BA = BE \\cdot BC$.\\\\'
             'c) Đường thẳng $BF$ cắt đường tròn $(O)$ tại điểm thứ hai là $M$. Chứng minh ba điểm $A, E, M$ thẳng hàng.\n%s'
             % (R, hinh_ve)
         )
 
         loigiai = (
             '\\begin{enumEX}[a)]{1}\n'
-            '\\item Trong đường tròn $(O; %s\\text{ cm})$, góc nội tiếp $\\widehat{ACB}$ chắn nửa đường tròn đường kính $AB$ nên $\\widehat{ACB} = 90^\\circ$.\\'
+            '\\item Trong đường tròn $(O; %s\\text{ cm})$, góc nội tiếp $\\widehat{ACB}$ chắn nửa đường tròn đường kính $AB$ nên $\\widehat{ACB} = 90^\\circ$.\\\\'
             'Xét $\\triangle BDE$ và $\\triangle BCA$ có $\\widehat{BDE} = \\widehat{BCA} = 90^\\circ$ và $\\widehat{B}$ chung nên $\\triangle BDE \\backsim \\triangle BCA$ (g.g).\n'
             '\\item Từ $\\triangle BDE \\backsim \\triangle BCA$, ta suy ra $\\dfrac{BD}{BC} = \\dfrac{BE}{BA} \\Rightarrow BD \\cdot BA = BE \\cdot BC$.\n'
-            '\\item Xét $\\triangle FAB$ có $BC \\perp AF$ (do $\\widehat{ACB} = 90^\\circ$) và $FD \\perp AB$ (giả thiết). Hai đường cao $BC$ và $FD$ cắt nhau tại $E$ nên $E$ là trực tâm của $\\triangle FAB$, suy ra $AE \\perp BF$.\\'
-            'Mặt khác, trong đường tròn $(O)$, góc nội tiếp $\\widehat{AMB}$ chắn nửa đường tròn đường kính $AB$ nên $\\widehat{AMB} = 90^\\circ$, hay $AM \\perp BF$.\\'
+            '\\item Xét $\\triangle FAB$ có $BC \\perp AF$ (do $\\widehat{ACB} = 90^\\circ$) và $FD \\perp AB$ (giả thiết). Hai đường cao $BC$ và $FD$ cắt nhau tại $E$ nên $E$ là trực tâm của $\\triangle FAB$, suy ra $AE \\perp BF$.\\\\'
+            'Mặt khác, trong đường tròn $(O)$, góc nội tiếp $\\widehat{AMB}$ chắn nửa đường tròn đường kính $AB$ nên $\\widehat{AMB} = 90^\\circ$, hay $AM \\perp BF$.\\\\'
             'Qua điểm $A$ nằm ngoài đường thẳng $BF$, có hai đường thẳng $AE$ và $AM$ cùng vuông góc với $BF$ nên ba điểm $A, E, M$ thẳng hàng.\n'
             '\\end{enumEX}'
             % (R)

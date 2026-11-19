@@ -158,20 +158,20 @@ def bt_dang5_p4_b1_c9_hh9(self):
         )
 
         noidungcauhoi = (
-            'Từ điểm $M$ nằm bên ngoài đường tròn $(O; %s\\text{ cm})$, vẽ hai tiếp tuyến $MA, MB$ với đường tròn ($A, B$ là hai tiếp điểm) và một cát tuyến $MCD$ không đi qua tâm $O$ ($C$ nằm giữa $M$ và $D$). Gọi $H$ là giao điểm của $OM$ và $AB$ như hình vẽ.\\'
-            'a) Chứng minh $OM \\perp AB$ tại $H$ và $MA^2 = MH \\cdot MO$.\\'
-            'b) Chứng minh $\\triangle MAC \\backsim \\triangle MDA$ và $MA^2 = MC \\cdot MD$.\\'
+            'Từ điểm $M$ nằm bên ngoài đường tròn $(O; %s\\text{ cm})$, vẽ hai tiếp tuyến $MA, MB$ với đường tròn ($A, B$ là hai tiếp điểm) và một cát tuyến $MCD$ không đi qua tâm $O$ ($C$ nằm giữa $M$ và $D$). Gọi $H$ là giao điểm của $OM$ và $AB$ như hình vẽ.\\\\'
+            'a) Chứng minh $OM \\perp AB$ tại $H$ và $MA^2 = MH \\cdot MO$.\\\\'
+            'b) Chứng minh $\\triangle MAC \\backsim \\triangle MDA$ và $MA^2 = MC \\cdot MD$.\\\\'
             'c) Chứng minh $\\widehat{MHC} = \\widehat{MDO}$.\n%s'
             % (R, hinh_ve)
         )
 
         loigiai = (
             '\\begin{enumEX}[a)]{1}\n'
-            '\\item Theo tính chất hai tiếp tuyến cắt nhau, ta có $MA = MB$, lại có $OA = OB = %s\\text{ cm}$ nên $OM$ là đường trung trực của đoạn thẳng $AB$, suy ra $OM \\perp AB$ tại $H$.\\'
+            '\\item Theo tính chất hai tiếp tuyến cắt nhau, ta có $MA = MB$, lại có $OA = OB = %s\\text{ cm}$ nên $OM$ là đường trung trực của đoạn thẳng $AB$, suy ra $OM \\perp AB$ tại $H$.\\\\'
             'Xét $\\triangle MHA$ và $\\triangle MAO$ vuông lần lượt tại $H$ và $A$ có $\\widehat{M}$ chung nên $\\triangle MHA \\backsim \\triangle MAO$ (g.g), suy ra $\\dfrac{MH}{MA} = \\dfrac{MA}{MO} \\Rightarrow MA^2 = MH \\cdot MO$.\n'
-            '\\item Trong đường tròn $(O)$, góc tạo bởi tia tiếp tuyến và dây cung $\\widehat{MAC}$ và góc nội tiếp $\\widehat{MDA}$ cùng chắn cung nhỏ $AC$ nên $\\widehat{MAC} = \\widehat{MDA}$.\\'
+            '\\item Trong đường tròn $(O)$, góc tạo bởi tia tiếp tuyến và dây cung $\\widehat{MAC}$ và góc nội tiếp $\\widehat{MDA}$ cùng chắn cung nhỏ $AC$ nên $\\widehat{MAC} = \\widehat{MDA}$.\\\\'
             'Xét $\\triangle MAC$ và $\\triangle MDA$ có $\\widehat{M}$ chung và $\\widehat{MAC} = \\widehat{MDA}$ nên $\\triangle MAC \\backsim \\triangle MDA$ (g.g), suy ra $\\dfrac{MA}{MD} = \\dfrac{MC}{MA} \\Rightarrow MA^2 = MC \\cdot MD$.\n'
-            '\\item Từ câu a) và câu b), ta có $MH \\cdot MO = MC \\cdot MD \\Rightarrow \\dfrac{MH}{MD} = \\dfrac{MC}{MO}$.\\'
+            '\\item Từ câu a) và câu b), ta có $MH \\cdot MO = MC \\cdot MD \\Rightarrow \\dfrac{MH}{MD} = \\dfrac{MC}{MO}$.\\\\'
             'Xét $\\triangle MHC$ và $\\triangle MDO$ có $\\widehat{M}$ chung và $\\dfrac{MH}{MD} = \\dfrac{MC}{MO}$ nên $\\triangle MHC \\backsim \\triangle MDO$ (c.g.c), suy ra $\\widehat{MHC} = \\widehat{MDO}$.\n'
             '\\end{enumEX}'
             % (R)

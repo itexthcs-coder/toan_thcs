@@ -162,9 +162,9 @@ def bt_dang3_p4_b1_c9_hh9(self):
         )
 
         noidungcauhoi = (
-            'Cho đường tròn $(O; %s\\text{ cm})$ đường kính $AB$. Gọi $I$ là trung điểm của đoạn thẳng $OA$. Qua $I$ kẻ dây cung $CD \\perp AB$ tại $I$. Lấy điểm $M$ nằm trên cung nhỏ $BC$ ($M$ khác $B, C$), dây $AM$ cắt $CD$ tại $K$ như hình vẽ.\\'
-            'a) Chứng minh tam giác $ACD$ là tam giác đều.\\'
-            'b) Chứng minh $\\triangle AIK \\backsim \\triangle AMB$ và tính tích $AK \\cdot AM$.\\'
+            'Cho đường tròn $(O; %s\\text{ cm})$ đường kính $AB$. Gọi $I$ là trung điểm của đoạn thẳng $OA$. Qua $I$ kẻ dây cung $CD \\perp AB$ tại $I$. Lấy điểm $M$ nằm trên cung nhỏ $BC$ ($M$ khác $B, C$), dây $AM$ cắt $CD$ tại $K$ như hình vẽ.\\\\'
+            'a) Chứng minh tam giác $ACD$ là tam giác đều.\\\\'
+            'b) Chứng minh $\\triangle AIK \\backsim \\triangle AMB$ và tính tích $AK \\cdot AM$.\\\\'
             'c) Tia $BM$ cắt đường thẳng $CD$ tại $P$. Chứng minh $IC^2 = IK \\cdot IP$.\n%s'
             % (R, hinh_ve)
         )
@@ -172,9 +172,9 @@ def bt_dang3_p4_b1_c9_hh9(self):
         loigiai = (
             '\\begin{enumEX}[a)]{1}\n'
             '\\item Vì $CD \\perp AB$ tại trung điểm $I$ của $OA$ nên $CD$ là đường trung trực của $OA$, suy ra $CA = CO$. Mà $OA = OC = %s\\text{ cm}$ nên $\\triangle OAC$ đều, do đó $\\widehat{CAO} = 60^\\circ$. Tương tự $\\triangle OAD$ đều nên $\\widehat{DAO} = 60^\\circ$, suy ra $\\widehat{CAD} = 120^\\circ$? Chính xác hơn: $AC = AD$ (do $AB$ là đường trung trực của $CD$) và $\\widehat{CAD} = 60^\\circ$ nếu $I$ là trung điểm $OB$, còn ở đây $\\widehat{CAO} = 60^\\circ \\Rightarrow \\widehat{CAB} = 60^\\circ$ và $AC = AD$ nên $\\triangle ACD$ cân tại $A$ có $\\widehat{CAD} = 120^\\circ$? Không, $\\widehat{CAD} = \\widehat{CAI} + \\widehat{DAI} = 60^\\circ + 60^\\circ = 120^\\circ$ khi $\\triangle OAC$ đều, còn $\\triangle CBD$ mới là tam giác đều vì $\\widehat{CBA} = 30^\\circ \\Rightarrow \\widehat{CBD} = 60^\\circ$. Vậy $\\triangle CBD$ là tam giác đều (và $\\triangle OAC, \\triangle OAD$ đều).\n'
-            '\\item Trong đường tròn $(O)$, góc nội tiếp $\\widehat{AMB}$ chắn nửa đường tròn đường kính $AB$ nên $\\widehat{AMB} = 90^\\circ$. Xét $\\triangle AIK$ và $\\triangle AMB$ có $\\widehat{AIK} = \\widehat{AMB} = 90^\\circ$ và $\\widehat{A}$ chung nên $\\triangle AIK \\backsim \\triangle AMB$ (g.g).\\'
+            '\\item Trong đường tròn $(O)$, góc nội tiếp $\\widehat{AMB}$ chắn nửa đường tròn đường kính $AB$ nên $\\widehat{AMB} = 90^\\circ$. Xét $\\triangle AIK$ và $\\triangle AMB$ có $\\widehat{AIK} = \\widehat{AMB} = 90^\\circ$ và $\\widehat{A}$ chung nên $\\triangle AIK \\backsim \\triangle AMB$ (g.g).\\\\'
             'Suy ra $\\dfrac{AI}{AM} = \\dfrac{AK}{AB} \\Rightarrow AK \\cdot AM = AI \\cdot AB = \\dfrac{%s}{2} \\cdot (2 \\cdot %s) = %s^2 = %s\\text{ cm}^2$.\n'
-            '\\item Xét $\\triangle AIK$ và $\\triangle PIB$ có $\\widehat{AIK} = \\widehat{PIB} = 90^\\circ$ và $\\widehat{AKI} = \\widehat{PBI}$ (cùng phụ với $\\widehat{IAB}$) nên $\\triangle AIK \\backsim \\triangle PIB$ (g.g), suy ra $IK \\cdot IP = IA \\cdot IB$.\\'
+            '\\item Xét $\\triangle AIK$ và $\\triangle PIB$ có $\\widehat{AIK} = \\widehat{PIB} = 90^\\circ$ và $\\widehat{AKI} = \\widehat{PBI}$ (cùng phụ với $\\widehat{IAB}$) nên $\\triangle AIK \\backsim \\triangle PIB$ (g.g), suy ra $IK \\cdot IP = IA \\cdot IB$.\\\\'
             'Mặt khác, $\\widehat{ACB} = 90^\\circ$ (góc nội tiếp chắn nửa đường tròn) nên trong $\\triangle ABC$ vuông tại $C$ có đường cao $CI$, ta có $IC^2 = IA \\cdot IB$. Vậy $IC^2 = IK \\cdot IP$.\n'
             '\\end{enumEX}'
             % (R, R, R, R, R * R)

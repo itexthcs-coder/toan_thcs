@@ -162,9 +162,9 @@ def bt_dang1_p4_b1_c9_hh9(self):
         )
 
         noidungcauhoi = (
-            'Cho đường tròn $(O; %s\\text{ cm})$ có hai đường kính $AB$ và $CD$ vuông góc với nhau. Lấy điểm $M$ bất kỳ nằm trên cung nhỏ $AC$ ($M$ khác $A, C$). Kẻ $MH \\perp AB$ tại $H$ và $MK \\perp CD$ tại $K$ như hình vẽ.\\'
-            'a) Chứng minh tứ giác $OHMK$ là hình chữ nhật.\\'
-            'b) Tia $MH$ cắt đường tròn $(O)$ tại điểm thứ hai là $N$. Chứng minh $\\widehat{CMN} = \\widehat{CBN}$ và tam giác $OBN$ cân.\\'
+            'Cho đường tròn $(O; %s\\text{ cm})$ có hai đường kính $AB$ và $CD$ vuông góc với nhau. Lấy điểm $M$ bất kỳ nằm trên cung nhỏ $AC$ ($M$ khác $A, C$). Kẻ $MH \\perp AB$ tại $H$ và $MK \\perp CD$ tại $K$ như hình vẽ.\\\\'
+            'a) Chứng minh tứ giác $OHMK$ là hình chữ nhật.\\\\'
+            'b) Tia $MH$ cắt đường tròn $(O)$ tại điểm thứ hai là $N$. Chứng minh $\\widehat{CMN} = \\widehat{CBN}$ và tam giác $OBN$ cân.\\\\'
             'c) Chứng minh đường thẳng $HK$ luôn song song với một đường thẳng cố định khi $M$ di chuyển trên cung nhỏ $AC$.\n%s'
             % (R, hinh_ve)
         )
@@ -173,8 +173,8 @@ def bt_dang1_p4_b1_c9_hh9(self):
             '\\begin{enumEX}[a)]{1}\n'
             '\\item Vì $AB \\perp CD$ tại $O$, $MH \\perp AB$ tại $H$ và $MK \\perp CD$ tại $K$ nên $\\widehat{HOK} = \\widehat{MHO} = \\widehat{MKO} = 90^\\circ$. Do đó tứ giác $OHMK$ là hình chữ nhật.\n'
             '\\item Trong đường tròn $(O; %s\\text{ cm})$, hai góc nội tiếp $\\widehat{CMN}$ và $\\widehat{CBN}$ cùng chắn cung $CN$ nên $\\widehat{CMN} = \\widehat{CBN}$. Mặt khác, xét $\\triangle OBN$ có $OB = ON = %s\\text{ cm}$ (cùng là bán kính của $(O)$) nên $\\triangle OBN$ cân tại $O$.\n'
-            '\\item Gọi $I$ là giao điểm của $OM$ và $HK$. Vì $OHMK$ là hình chữ nhật nên $IH = IO$, suy ra $\\triangle IOH$ cân tại $I \\Rightarrow \\widehat{OHK} = \\widehat{HOM}$.\\'
-            'Lại có $MK // AB$ (cùng vuông góc với $CD$) nên $\\widehat{HOM} = \\widehat{KMO}$ (so le trong). Mà $\\triangle OMC$ cân tại $O$ có $OK \\perp MC$ nên $OK$ cũng là tia phân giác của $\\widehat{MOC}$, hay $\\widehat{KMO} = \\widehat{KMC} = \\widehat{CMN} = \\widehat{CBN}$.\\'
+            '\\item Gọi $I$ là giao điểm của $OM$ và $HK$. Vì $OHMK$ là hình chữ nhật nên $IH = IO$, suy ra $\\triangle IOH$ cân tại $I \\Rightarrow \\widehat{OHK} = \\widehat{HOM}$.\\\\'
+            'Lại có $MK // AB$ (cùng vuông góc với $CD$) nên $\\widehat{HOM} = \\widehat{KMO}$ (so le trong). Mà $\\triangle OMC$ cân tại $O$ có $OK \\perp MC$ nên $OK$ cũng là tia phân giác của $\\widehat{MOC}$, hay $\\widehat{KMO} = \\widehat{KMC} = \\widehat{CMN} = \\widehat{CBN}$.\\\\'
             'Suy ra $\\widehat{OHK} = \\widehat{CBN}$. Vì $\\triangle OBN$ cân tại $O$ nên $\\widehat{CBN} = \\widehat{ONB}$, mà $\\widehat{ONB} = \\widehat{HNB}$ và $MN // CD$ nên $\\widehat{OHK} = \\widehat{HCB} = 45^\\circ$ (do $\\triangle OBC$ vuông cân tại $O$). Do đó $\\widehat{OHK} = \\widehat{OBC} = 45^\\circ$ ở vị trí đồng vị, suy ra $HK // BC$ cố định.\n'
             '\\end{enumEX}'
             % (R, R)

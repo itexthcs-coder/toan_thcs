@@ -158,19 +158,19 @@ def bt_dang17_p4_b1_c9_hh9(self):
         )
 
         noidungcauhoi = (
-            'Tại một nút giao thông hình vòng xuyến có đường bao ngoài là đường tròn $(O; %s\\text{ m})$, người ta đặt hai cột đèn tín hiệu tại $A$ và $B$ trên vòng xuyến sao cho khoảng cách giữa hai cột đèn là $AB = %s\\sqrt{2}\\text{ m}$. Một camera giám sát đặt tại điểm $M$ trên cung lớn $AB$ của vòng xuyến để quan sát đoạn đường giữa hai cột đèn như hình vẽ.\\'
-            'a) Tính số đo góc ở tâm $\\widehat{AOB}$ và góc quan sát $\\widehat{AMB}$ của camera.\\'
-            'b) Tính khoảng cách từ tâm $O$ của vòng xuyến đến đoạn thẳng nối hai cột đèn $AB$ (làm tròn đến hàng phần trăm).\\'
+            'Tại một nút giao thông hình vòng xuyến có đường bao ngoài là đường tròn $(O; %s\\text{ m})$, người ta đặt hai cột đèn tín hiệu tại $A$ và $B$ trên vòng xuyến sao cho khoảng cách giữa hai cột đèn là $AB = %s\\sqrt{2}\\text{ m}$. Một camera giám sát đặt tại điểm $M$ trên cung lớn $AB$ của vòng xuyến để quan sát đoạn đường giữa hai cột đèn như hình vẽ.\\\\'
+            'a) Tính số đo góc ở tâm $\\widehat{AOB}$ và góc quan sát $\\widehat{AMB}$ của camera.\\\\'
+            'b) Tính khoảng cách từ tâm $O$ của vòng xuyến đến đoạn thẳng nối hai cột đèn $AB$ (làm tròn đến hàng phần trăm).\\\\'
             'c) Lắp thêm một camera phụ tại điểm $N$ trên vòng xuyến sao cho đường thẳng $MN$ đi qua tâm $O$ và vuông góc với $AB$ ($N$ thuộc cung nhỏ $AB$). Tính diện tích tứ giác $AMBN$.\n%s'
             % (R, R, hinh_ve)
         )
 
         loigiai = (
             '\\begin{enumEX}[a)]{1}\n'
-            '\\item Xét $\\triangle OAB$ có $OA^2 + OB^2 = %s^2 + %s^2 = %s = (%s\\sqrt{2})^2 = AB^2$. Theo định lí Pythagore đảo, $\\triangle OAB$ vuông tại $O$, suy ra góc ở tâm $\\widehat{AOB} = 90^\\circ$.\\'
+            '\\item Xét $\\triangle OAB$ có $OA^2 + OB^2 = %s^2 + %s^2 = %s = (%s\\sqrt{2})^2 = AB^2$. Theo định lí Pythagore đảo, $\\triangle OAB$ vuông tại $O$, suy ra góc ở tâm $\\widehat{AOB} = 90^\\circ$.\\\\'
             'Góc nội tiếp $\\widehat{AMB}$ và góc ở tâm $\\widehat{AOB}$ cùng chắn cung nhỏ $AB$ nên $\\widehat{AMB} = \\dfrac{1}{2}\\widehat{AOB} = 45^\\circ$.\n'
             '\\item Gọi $H$ là giao điểm của $MN$ và $AB$. Vì $MN \\perp AB$ tại $H$ và $\\triangle OAB$ vuông cân tại $O$ nên đường cao $OH = \\dfrac{OA}{\\sqrt{2}} = \\dfrac{%s}{\\sqrt{2}} \\approx %s\\text{ m}$.\n'
-            '\\item Vì $MN$ là đường kính của $(O; %s\\text{ m})$ nên $MN = 2 \\cdot %s = %s\\text{ m}$ và $MN \\perp AB$.\\'
+            '\\item Vì $MN$ là đường kính của $(O; %s\\text{ m})$ nên $MN = 2 \\cdot %s = %s\\text{ m}$ và $MN \\perp AB$.\\\\'
             'Diện tích tứ giác $AMBN$ có hai đường chéo vuông góc là $S_{AMBN} = \\dfrac{1}{2} \\cdot MN \\cdot AB = \\dfrac{1}{2} \\cdot %s \\cdot %s\\sqrt{2} = %s\\sqrt{2}\\text{ m}^2$.\n'
             '\\end{enumEX}'
             % (R, R, 2 * R * R, R, R, kq_OH, R, R, 2 * R, 2 * R, R, R * R)

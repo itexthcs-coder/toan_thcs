@@ -160,9 +160,9 @@ def bt_dang8_p4_b1_c9_hh9(self):
         )
 
         noidungcauhoi = (
-            'Cho hai đường tròn $(O; %s\\text{ cm})$ và $(O\'; %s\\text{ cm})$ tiếp xúc trong tại điểm $A$. Một cát tuyến qua $A$ cắt $(O\')$ tại $B$ và cắt $(O)$ tại $C$ ($B$ nằm giữa $A$ và $C$). Một cát tuyến thứ hai qua $A$ cắt $(O\')$ tại $D$ và cắt $(O)$ tại $E$ ($D$ nằm giữa $A$ và $E$) như hình vẽ.\\'
-            'a) Chứng minh $\\triangle O\'AB$ và $\\triangle OAC$ là các tam giác cân.\\'
-            'b) Chứng minh $O\'B // OC$ và suy ra $BD // CE$.\\'
+            'Cho hai đường tròn $(O; %s\\text{ cm})$ và $(O\'; %s\\text{ cm})$ tiếp xúc trong tại điểm $A$. Một cát tuyến qua $A$ cắt $(O\')$ tại $B$ và cắt $(O)$ tại $C$ ($B$ nằm giữa $A$ và $C$). Một cát tuyến thứ hai qua $A$ cắt $(O\')$ tại $D$ và cắt $(O)$ tại $E$ ($D$ nằm giữa $A$ và $E$) như hình vẽ.\\\\'
+            'a) Chứng minh $\\triangle O\'AB$ và $\\triangle OAC$ là các tam giác cân.\\\\'
+            'b) Chứng minh $O\'B // OC$ và suy ra $BD // CE$.\\\\'
             'c) Tính tỉ số $\\dfrac{BD}{CE}$.\n%s'
             % (R, r, hinh_ve)
         )
@@ -170,8 +170,8 @@ def bt_dang8_p4_b1_c9_hh9(self):
         loigiai = (
             '\\begin{enumEX}[a)]{1}\n'
             '\\item Trong đường tròn $(O\'; %s\\text{ cm})$, ta có $O\'A = O\'B = %s\\text{ cm}$ nên $\\triangle O\'AB$ cân tại $O\'$. Trong đường tròn $(O; %s\\text{ cm})$, ta có $OA = OC = %s\\text{ cm}$ nên $\\triangle OAC$ cân tại $O$.\n'
-            '\\item Vì hai đường tròn $(O)$ và $(O\')$ tiếp xúc trong tại $A$ nên ba điểm $A, O\', O$ thẳng hàng.\\'
-            'Do $\\triangle O\'AB$ cân tại $O\'$ nên $\\widehat{O\'BA} = \\widehat{O\'AB}$, và $\\triangle OAC$ cân tại $O$ nên $\\widehat{OCA} = \\widehat{OAC}$. Suy ra $\\widehat{O\'BA} = \\widehat{OCA}$ (cùng bằng $\\widehat{OAC}$), mà hai góc này ở vị trí đồng vị nên $O\'B // OC$.\\'
+            '\\item Vì hai đường tròn $(O)$ và $(O\')$ tiếp xúc trong tại $A$ nên ba điểm $A, O\', O$ thẳng hàng.\\\\'
+            'Do $\\triangle O\'AB$ cân tại $O\'$ nên $\\widehat{O\'BA} = \\widehat{O\'AB}$, và $\\triangle OAC$ cân tại $O$ nên $\\widehat{OCA} = \\widehat{OAC}$. Suy ra $\\widehat{O\'BA} = \\widehat{OCA}$ (cùng bằng $\\widehat{OAC}$), mà hai góc này ở vị trí đồng vị nên $O\'B // OC$.\\\\'
             'Theo định lí Thalès trong $\\triangle OAC$, ta có $\\dfrac{AB}{AC} = \\dfrac{AO\'}{AO} = \\dfrac{%s}{%s} = \\dfrac{1}{2}$. Chứng minh tương tự với cát tuyến $ADE$, ta cũng có $O\'D // OE$ và $\\dfrac{AD}{AE} = \\dfrac{AO\'}{AO} = \\dfrac{1}{2}$. Suy ra $\\dfrac{AB}{AC} = \\dfrac{AD}{AE}$, theo định lí Thalès đảo ta được $BD // CE$.\n'
             '\\item Vì $BD // CE$ nên theo hệ quả định lí Thalès trong $\\triangle ACE$, ta có $\\dfrac{BD}{CE} = \\dfrac{AB}{AC} = \\dfrac{1}{2}$.\n'
             '\\end{enumEX}'
@@ -180,7 +180,7 @@ def bt_dang8_p4_b1_c9_hh9(self):
 
     # Xuất câu hỏi với lời giải
     content = ('\\begin{minipage}{\\textwidth} \n'
-               '\\begin{ex}\n' + str(noidungcauhoi) +
-               '\\loigiai{ \n' + str(loigiai) + '}\n'
-               '\\end{ex}\n \\end{minipage} \n\n')
+            '\\begin{ex}\n' + str(noidungcauhoi) +
+            '\\loigiai{ \n' + str(loigiai) + '}\n'
+            '\\end{ex}\n \\end{minipage} \n\n')
     return content

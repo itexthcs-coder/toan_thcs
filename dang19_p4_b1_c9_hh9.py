@@ -156,18 +156,18 @@ def bt_dang19_p4_b1_c9_hh9(self):
         )
 
         noidungcauhoi = (
-            'Một người thợ cơ khí cần cắt một tấm kim loại hình tam giác $ABC$ nội tiếp trong một phôi thép hình tròn tâm $O$, bán kính $R = %s\\text{ cm}$ sao cho cạnh $BC$ đi qua tâm $O$ và góc $\\widehat{ABC} = 60^\\circ$ như hình vẽ.\\'
-            'a) Chứng minh tam giác $ABC$ là tam giác vuông và tính độ dài các cạnh $AB, AC$.\\'
-            'b) Kẻ đường cao $AH$ của tam giác $ABC$. Tính độ dài đoạn thẳng $AH$ và diện tích tấm kim loại $ABC$.\\'
+            'Một người thợ cơ khí cần cắt một tấm kim loại hình tam giác $ABC$ nội tiếp trong một phôi thép hình tròn tâm $O$, bán kính $R = %s\\text{ cm}$ sao cho cạnh $BC$ đi qua tâm $O$ và góc $\\widehat{ABC} = 60^\\circ$ như hình vẽ.\\\\'
+            'a) Chứng minh tam giác $ABC$ là tam giác vuông và tính độ dài các cạnh $AB, AC$.\\\\'
+            'b) Kẻ đường cao $AH$ của tam giác $ABC$. Tính độ dài đoạn thẳng $AH$ và diện tích tấm kim loại $ABC$.\\\\'
             'c) Tính bán kính $r$ của đường tròn nội tiếp tam giác $ABC$.\n%s'
             % (R, hinh_ve)
         )
 
         loigiai = (
             '\\begin{enumEX}[a)]{1}\n'
-            '\\item Vì $BC$ đi qua tâm $O$ của đường tròn $(O; %s\\text{ cm})$ nên $BC$ là đường kính và $BC = 2R = %s\\text{ cm}$. Góc nội tiếp $\\widehat{BAC}$ chắn nửa đường tròn đường kính $BC$ nên $\\widehat{BAC} = 90^\\circ$, do đó $\\triangle ABC$ vuông tại $A$.\\'
+            '\\item Vì $BC$ đi qua tâm $O$ của đường tròn $(O; %s\\text{ cm})$ nên $BC$ là đường kính và $BC = 2R = %s\\text{ cm}$. Góc nội tiếp $\\widehat{BAC}$ chắn nửa đường tròn đường kính $BC$ nên $\\widehat{BAC} = 90^\\circ$, do đó $\\triangle ABC$ vuông tại $A$.\\\\'
             'Xét $\\triangle ABC$ vuông tại $A$ có $\\widehat{ABC} = 60^\\circ$, ta có $AB = BC \\cdot \\cos 60^\\circ = %s \\cdot \\dfrac{1}{2} = %s\\text{ cm}$ và $AC = BC \\cdot \\sin 60^\\circ = %s \\cdot \\dfrac{\\sqrt{3}}{2} = %s\\sqrt{3}\\text{ cm}$.\n'
-            '\\item Trong $\\triangle ABC$ vuông tại $A$ có đường cao $AH$, ta có $AH = \\dfrac{AB \\cdot AC}{BC} = \\dfrac{%s \\cdot %s\\sqrt{3}}{%s} = %s\\sqrt{3}\\text{ cm}$.\\'
+            '\\item Trong $\\triangle ABC$ vuông tại $A$ có đường cao $AH$, ta có $AH = \\dfrac{AB \\cdot AC}{BC} = \\dfrac{%s \\cdot %s\\sqrt{3}}{%s} = %s\\sqrt{3}\\text{ cm}$.\\\\'
             'Diện tích tấm kim loại $ABC$ là $S_{ABC} = \\dfrac{1}{2} \\cdot AB \\cdot AC = \\dfrac{1}{2} \\cdot %s \\cdot %s\\sqrt{3} = %s\\sqrt{3}\\text{ cm}^2$.\n'
             '\\item Bán kính đường tròn nội tiếp $\\triangle ABC$ vuông tại $A$ là $r = \\dfrac{AB + AC - BC}{2} = \\dfrac{%s + %s\\sqrt{3} - %s}{2} = \\dfrac{%s\\sqrt{3} - %s}{2}\\text{ cm}$.\n'
             '\\end{enumEX}'
