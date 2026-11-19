@@ -129,6 +129,7 @@ from mpl_toolkits.mplot3d import Axes3D
 
 
 def bt_dang9_p2_b3_c5_hh9(self):
+    # Khai báo biến
     R_val = random.choice([3, 4, 5, 7])
     AB_val = R_val * sqrt(2)
     l_a1b1 = Rational(90, 180) * R_val * pi
@@ -170,16 +171,16 @@ def bt_dang9_p2_b3_c5_hh9(self):
     loigiai_th_1 = (r'''Hai đường chéo $AA'$ và $BB'$ cắt nhau tại trung điểm $O$ của mỗi đường và có độ dài bằng nhau ($AA' = BB' = 2R$) nên $ABA'B'$ là hình chữ nhật.''' )
     list_th_2 = [loigiai_th_1]
 
-    vd_da_1_d = '\\\\True Số đo cung nhỏ $\\\\overset\\frown{AB\'}$ bằng $90^\\\\circ$'
-    vd_da_1_s = 'Số đo cung nhỏ $\\\\overset\\frown{AB\'}$ bằng $60^\\\\circ$'
+    vd_da_1_d = '\\True Số đo cung nhỏ $\\overset\\frown{AB\'}$ bằng $90^\\circ$'
+    vd_da_1_s = 'Số đo cung nhỏ $\\overset\\frown{AB\'}$ bằng $60^\\circ$'
     list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
     vd_da_1 = random.choice(list_vd_da_1)
     list_vd_1 = [vd_da_1]
     loigiai_vd_1 = (r'''Xét $\triangle OAB$ có $OA^2 + OB^2 = %d^2 + %d^2 = %d = AB^2$, suy ra $\widehat{AOB} = 90^\circ$. Do đó $\widehat{AOB'} = 180^\circ - 90^\circ = 90^\circ$, vậy $\text{sđ}\overset\\frown{AB'} = 90^\circ$.''' % (R_val, R_val, 2*(R_val**2)))
     list_vd_2 = [loigiai_vd_1]
 
-    vdc_da_1_d = '\\\\True Độ dài cung nhỏ $\\\\overset\\frown{A\'B\'}$ bằng $%s\\\\text{ cm}$' % latex(l_a1b1)
-    vdc_da_1_s = 'Độ dài cung nhỏ $\\\\overset\\frown{A\'B\'}$ bằng $%s\\\\text{ cm}$' % latex(2 * l_a1b1)
+    vdc_da_1_d = '\\True Độ dài cung nhỏ $\\overset\\frown{A\'B\'}$ bằng $%s\\text{ cm}$' % latex(l_a1b1)
+    vdc_da_1_s = 'Độ dài cung nhỏ $\\overset\\frown{A\'B\'}$ bằng $%s\\text{ cm}$' % latex(2 * l_a1b1)
     list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
     vdc_da_1 = random.choice(list_vdc_da_1)
     list_vdc_1 = [vdc_da_1]
@@ -220,19 +221,19 @@ def bt_dang9_p2_b3_c5_hh9(self):
     shuffled_answers_vdc, shuffled_solutions_vdc = zip(*combined_vdc)
 
     content = ('\\begin{minipage}{\\textwidth} \n' +
-               '\\begin{ex}\n' +
-               str(noidungcauhoi) + '\n' +
-               '\\choiceTFn \n' +
-               '{' + str(shuffled_answers_nb[0]) + '}\n' +
-               '{' + str(shuffled_answers_th[0]) + '}\n' +
-               '{' + str(shuffled_answers_vd[0]) + '}\n' +
-               '{' + str(shuffled_answers_vdc[0]) + '}\n' +
-               '\\loigiai{ \n' +
-               '\\begin{enumEX}[a)]{1} \n' +
-               '\\item ' + str(shuffled_solutions_nb[0]) + '\n' +
-               '\\item ' + str(shuffled_solutions_th[0]) + '\n' +
-               '\\item ' + str(shuffled_solutions_vd[0]) + '\n' +
-               '\\item ' + str(shuffled_solutions_vdc[0]) + '\n' +
-               '\\end{enumEX}} \n' +
-               '\\end{ex}\n \\end{minipage}\n\n')
+            '\\begin{ex}\n' +
+            str(noidungcauhoi) + '\n' +
+            '\\choiceTFn \n' +
+            '{' + str(shuffled_answers_nb[0]) + '}\n' +
+            '{' + str(shuffled_answers_th[0]) + '}\n' +
+            '{' + str(shuffled_answers_vd[0]) + '}\n' +
+            '{' + str(shuffled_answers_vdc[0]) + '}\n' +
+            '\\loigiai{ \n' +
+            '\\begin{enumEX}[a)]{1} \n' +
+            '\\item ' + str(shuffled_solutions_nb[0]) + '\n' +
+            '\\item ' + str(shuffled_solutions_th[0]) + '\n' +
+            '\\item ' + str(shuffled_solutions_vd[0]) + '\n' +
+            '\\item ' + str(shuffled_solutions_vdc[0]) + '\n' +
+            '\\end{enumEX}} \n' +
+            '\\end{ex}\n \\end{minipage}\n\n')
     return content
