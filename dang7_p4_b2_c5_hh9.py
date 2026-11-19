@@ -140,9 +140,9 @@ def bt_dang7_p4_b2_c5_hh9(self):
         sd_ac_nho = 2 * goc_mon
         sd_ac_lon = 360 - sd_ac_nho
 
-        noidungcauhoi = ('''Cho ba điểm $A, B, C$ phân biệt cùng thuộc đường tròn $(O)$ sao cho điểm $B$ nằm trên cung nhỏ $\\overparen{AC}$. Gọi $M$ là điểm chính giữa của cung nhỏ $\\overparen{AB}$ và $N$ là điểm chính giữa của cung nhỏ $\\overparen{BC}$ (như hình vẽ).\\\\
-                         a) Chứng minh rằng $\\text{sđ}\\overparen{MBN} = \\dfrac{1}{2}\\text{sđ}\\overparen{AC}_{\\text{nhỏ}}$.\\\\
-                         b) Biết $\\widehat{MON} = %s^\\circ$, hãy tính số đo của cung lớn $\\overparen{AC}$.
+        noidungcauhoi = ('''Cho ba điểm $A, B, C$ phân biệt cùng thuộc đường tròn $(O)$ sao cho điểm $B$ nằm trên cung nhỏ $\\overset\\frown{AC}$. Gọi $M$ là điểm chính giữa của cung nhỏ $\\overset\\frown{AB}$ và $N$ là điểm chính giữa của cung nhỏ $\\overset\\frown{BC}$ (như hình vẽ).\\\\
+                         a) Chứng minh rằng $\\text{sđ}\\overset\\frown{MBN} = \\dfrac{1}{2}\\text{sđ}\\overset\\frown{AC}_{\\text{nhỏ}}$.\\\\
+                         b) Biết $\\widehat{MON} = %s^\\circ$, hãy tính số đo của cung lớn $\\overset\\frown{AC}$.
                          \\begin{center}
                          \\begin{tikzpicture}[scale=1, font=\\footnotesize, line join=round, line cap=round, >=stealth]
                          \\coordinate (O) at (0,0);
@@ -164,13 +164,13 @@ def bt_dang7_p4_b2_c5_hh9(self):
                          % (goc_mon))
 
         loigiai = ('''\\begin{enumEX}[a)]{1}
-                        \\item Vì $M$ là điểm chính giữa của cung nhỏ $\\overparen{AB}$ nên $\\text{sđ}\\overparen{MB} = \\dfrac{1}{2}\\text{sđ}\\overparen{AB}$.\\\\
-                        Tương tự, vì $N$ là điểm chính giữa của cung nhỏ $\\overparen{BC}$ nên $\\text{sđ}\\overparen{BN} = \\dfrac{1}{2}\\text{sđ}\\overparen{BC}$.\\\\
-                        Do điểm $B$ nằm trên cung nhỏ $\\overparen{MBN}$ và cũng nằm trên cung nhỏ $\\overparen{AC}$, áp dụng tính chất cộng số đo cung ta có:\\\\
-                        $\\text{sđ}\\overparen{MBN} = \\text{sđ}\\overparen{MB} + \\text{sđ}\\overparen{BN} = \\dfrac{1}{2}\\left(\\text{sđ}\\overparen{AB} + \\text{sđ}\\overparen{BC}\\right) = \\dfrac{1}{2}\\text{sđ}\\overparen{AC}_{\\text{nhỏ}}$.
-                        \\item Vì góc ở tâm $\\widehat{MON} = %s^\\circ$ chắn cung nhỏ $\\overparen{MBN}$ nên $\\text{sđ}\\overparen{MBN} = %s^\\circ$.\\\\
-                        Theo câu a), ta có $\\text{sđ}\\overparen{AC}_{\\text{nhỏ}} = 2 \\cdot \\text{sđ}\\overparen{MBN} = 2 \\cdot %s^\\circ = %s^\\circ$.\\\\
-                        Vậy số đo của cung lớn $\\overparen{AC}$ là $\\text{sđ}\\overparen{AC}_{\\text{lớn}} = 360^\\circ - %s^\\circ = %s^\\circ$.
+                        \\item Vì $M$ là điểm chính giữa của cung nhỏ $\\overset\\frown{AB}$ nên $\\text{sđ}\\overset\\frown{MB} = \\dfrac{1}{2}\\text{sđ}\\overset\\frown{AB}$.\\\\
+                        Tương tự, vì $N$ là điểm chính giữa của cung nhỏ $\\overset\\frown{BC}$ nên $\\text{sđ}\\overset\\frown{BN} = \\dfrac{1}{2}\\text{sđ}\\overset\\frown{BC}$.\\\\
+                        Do điểm $B$ nằm trên cung nhỏ $\\overset\\frown{MBN}$ và cũng nằm trên cung nhỏ $\\overset\\frown{AC}$, áp dụng tính chất cộng số đo cung ta có:\\\\
+                        $\\text{sđ}\\overset\\frown{MBN} = \\text{sđ}\\overset\\frown{MB} + \\text{sđ}\\overset\\frown{BN} = \\dfrac{1}{2}\\left(\\text{sđ}\\overset\\frown{AB} + \\text{sđ}\\overset\\frown{BC}\\right) = \\dfrac{1}{2}\\text{sđ}\\overset\\frown{AC}_{\\text{nhỏ}}$.
+                        \\item Vì góc ở tâm $\\widehat{MON} = %s^\\circ$ chắn cung nhỏ $\\overset\\frown{MBN}$ nên $\\text{sđ}\\overset\\frown{MBN} = %s^\\circ$.\\\\
+                        Theo câu a), ta có $\\text{sđ}\\overset\\frown{AC}_{\\text{nhỏ}} = 2 \\cdot \\text{sđ}\\overset\\frown{MBN} = 2 \\cdot %s^\\circ = %s^\\circ$.\\\\
+                        Vậy số đo của cung lớn $\\overset\\frown{AC}$ là $\\text{sđ}\\overset\\frown{AC}_{\\text{lớn}} = 360^\\circ - %s^\\circ = %s^\\circ$.
                         \\end{enumEX}'''
                    % (goc_mon, goc_mon, goc_mon, sd_ac_nho, sd_ac_nho, sd_ac_lon))
 

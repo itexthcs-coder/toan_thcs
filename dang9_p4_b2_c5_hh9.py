@@ -142,8 +142,8 @@ def bt_dang9_p4_b2_c5_hh9(self):
         OH_val = R - AH
 
         noidungcauhoi = ('''Cho đường tròn $(O)$ có đường kính $AB$ và điểm $C$ nằm trên đường tròn ($C$ khác $A, B$). Qua $C$ kẻ dây cung $CD$ vuông góc với đường kính $AB$ tại $H$ (như hình vẽ).\\\\
-                         a) Chứng minh rằng $\\text{sđ}\\overparen{AC}_{\\text{nhỏ}} = \\text{sđ}\\overparen{AD}_{\\text{nhỏ}}$ và $\\text{sđ}\\overparen{BC}_{\\text{nhỏ}} = \\text{sđ}\\overparen{BD}_{\\text{nhỏ}}$.\\\\
-                         b) Biết $AB = %s\\text{ cm}$ và $AH = %s\\text{ cm}$. Tính số đo của cung lớn $\\overparen{CD}$.
+                         a) Chứng minh rằng $\\text{sđ}\\overset\\frown{AC}_{\\text{nhỏ}} = \\text{sđ}\\overset\\frown{AD}_{\\text{nhỏ}}$ và $\\text{sđ}\\overset\\frown{BC}_{\\text{nhỏ}} = \\text{sđ}\\overset\\frown{BD}_{\\text{nhỏ}}$.\\\\
+                         b) Biết $AB = %s\\text{ cm}$ và $AH = %s\\text{ cm}$. Tính số đo của cung lớn $\\overset\\frown{CD}$.
                          \\begin{center}
                          \\begin{tikzpicture}[scale=1, font=\\footnotesize, line join=round, line cap=round, >=stealth]
                          \\coordinate (O) at (0,0);
@@ -166,13 +166,13 @@ def bt_dang9_p4_b2_c5_hh9(self):
 
         loigiai = ('''\\begin{enumEX}[a)]{1}
                         \\item Tam giác $OCD$ cân tại $O$ ($OC = OD$) có đường cao $OH$ đồng thời là đường phân giác của góc $\\widehat{COD}$, suy ra $\\widehat{AOC} = \\widehat{AOD}$.\\\\
-                        Vì hai góc ở tâm này lần lượt chắn hai cung nhỏ $\\overparen{AC}$ và $\\overparen{AD}$ nên $\\text{sđ}\\overparen{AC}_{\\text{nhỏ}} = \\text{sđ}\\overparen{AD}_{\\text{nhỏ}}$.\\\\
-                        Mặt khác, $\\widehat{BOC} = 180^\\circ - \\widehat{AOC} = 180^\\circ - \\widehat{AOD} = \\widehat{BOD}$, suy ra $\\text{sđ}\\overparen{BC}_{\\text{nhỏ}} = \\text{sđ}\\overparen{BD}_{\\text{nhỏ}}$.
+                        Vì hai góc ở tâm này lần lượt chắn hai cung nhỏ $\\overset\\frown{AC}$ và $\\overset\\frown{AD}$ nên $\\text{sđ}\\overset\\frown{AC}_{\\text{nhỏ}} = \\text{sđ}\\overset\\frown{AD}_{\\text{nhỏ}}$.\\\\
+                        Mặt khác, $\\widehat{BOC} = 180^\\circ - \\widehat{AOC} = 180^\\circ - \\widehat{AOD} = \\widehat{BOD}$, suy ra $\\text{sđ}\\overset\\frown{BC}_{\\text{nhỏ}} = \\text{sđ}\\overset\\frown{BD}_{\\text{nhỏ}}$.
                         \\item Bán kính đường tròn $(O)$ là $R = \\dfrac{AB}{2} = \\dfrac{%s}{2} = %s\\text{ cm}$.\\\\
                         Vì $AH = %s\\text{ cm} < R$ nên $H$ nằm giữa $O$ và $A$, do đó $OH = OA - AH = %s - %s = %s\\text{ cm}$.\\\\
                         Xét tam giác $OHC$ vuông tại $H$, ta có $\\cos \\widehat{COH} = \\dfrac{OH}{OC} = \\dfrac{%s}{%s} = \\dfrac{1}{2} \\Rightarrow \\widehat{COH} = 60^\\circ$.\\\\
-                        Suy ra $\\widehat{COD} = 2\\widehat{COH} = 120^\\circ$, nên $\\text{sđ}\\overparen{CD}_{\\text{nhỏ}} = 120^\\circ$.\\\\
-                        Vậy số đo của cung lớn $\\overparen{CD}$ là $\\text{sđ}\\overparen{CD}_{\\text{lớn}} = 360^\\circ - 120^\\circ = 240^\\circ$.
+                        Suy ra $\\widehat{COD} = 2\\widehat{COH} = 120^\\circ$, nên $\\text{sđ}\\overset\\frown{CD}_{\\text{nhỏ}} = 120^\\circ$.\\\\
+                        Vậy số đo của cung lớn $\\overset\\frown{CD}$ là $\\text{sđ}\\overset\\frown{CD}_{\\text{lớn}} = 360^\\circ - 120^\\circ = 240^\\circ$.
                         \\end{enumEX}'''
                    % (AB, R, AH, R, AH, OH_val, OH_val, R))
 

@@ -139,11 +139,11 @@ def bt_dang19_p1_b2_c5_hh9(self):
 
         if loai_cung == 'nhỏ':
             kq = 120
-            buoc_cuoi = ('Vì góc ở tâm $\\widehat{%s%s%s} = 120^\\circ$ chắn cung nhỏ $\\overparen{%s%s}$ nên số đo của cung nhỏ $\\overparen{%s%s}$ bằng $120^\\circ$.'
+            buoc_cuoi = ('Vì góc ở tâm $\\widehat{%s%s%s} = 120^\\circ$ chắn cung nhỏ $\\overset\\frown{%s%s}$ nên số đo của cung nhỏ $\\overset\\frown{%s%s}$ bằng $120^\\circ$.'
                          % (d1, tam, d2, d1, d2, d1, d2))
         else:
             kq = 240
-            buoc_cuoi = ('Vì góc ở tâm $\\widehat{%s%s%s} = 120^\\circ$ chắn cung nhỏ $\\overparen{%s%s}$ nên $\\text{sđ}\\overparen{%s%s}_{\\text{nhỏ}} = 120^\\circ$.\\\\ Suy ra số đo của cung lớn $\\overparen{%s%s}$ là $360^\\circ - 120^\\circ = 240^\\circ$.'
+            buoc_cuoi = ('Vì góc ở tâm $\\widehat{%s%s%s} = 120^\\circ$ chắn cung nhỏ $\\overset\\frown{%s%s}$ nên $\\text{sđ}\\overset\\frown{%s%s}_{\\text{nhỏ}} = 120^\\circ$.\\\\ Suy ra số đo của cung lớn $\\overset\\frown{%s%s}$ là $360^\\circ - 120^\\circ = 240^\\circ$.'
                          % (d1, tam, d2, d1, d2, d1, d2, d1, d2))
 
         # Các đáp án trắc nghiệm
@@ -163,7 +163,7 @@ def bt_dang19_p1_b2_c5_hh9(self):
         das3 = random.choice(s)
 
         # Câu hỏi
-        noidungcauhoi = ('''Cho điểm $%s$ nằm trên đường tròn $(%s)$. Đường trung trực của đoạn thẳng $%s%s$ cắt đường tròn $(%s)$ tại hai điểm $%s$ và $%s$ (như hình vẽ). Số đo của cung %s $\\overparen{%s%s}$ bằng bao nhiêu?
+        noidungcauhoi = ('''Cho điểm $%s$ nằm trên đường tròn $(%s)$. Đường trung trực của đoạn thẳng $%s%s$ cắt đường tròn $(%s)$ tại hai điểm $%s$ và $%s$ (như hình vẽ). Số đo của cung %s $\\overset\\frown{%s%s}$ bằng bao nhiêu?
         \\begin{center}
         \\begin{tikzpicture}[scale=1, font=\\footnotesize, line join=round, line cap=round, >=stealth]
         \\coordinate (O) at (0,0);

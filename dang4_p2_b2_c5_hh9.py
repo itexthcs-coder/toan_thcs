@@ -151,16 +151,16 @@ def bt_dang4_p2_b2_c5_hh9(self):
     loigiai_nb_1 = ('''Vì tam giác $ABC$ vuông cân tại $A$ và $%s$ là trung điểm của $BC$ nên đường trung tuyến $A%s$ đồng thời là đường cao, tức là $A%s \\perp BC$.''' % (tam, tam, tam))
     list_nb_2 = [loigiai_nb_1]
 
-    th_da_1_d = '\\True Số đo của hai cung nhỏ $\\overparen{AB}$ và $\\overparen{AC}$ bằng nhau và cùng bằng $90^\\circ$'
-    th_da_1_s = 'Số đo của hai cung nhỏ $\\overparen{AB}$ và $\\overparen{AC}$ bằng nhau và cùng bằng $45^\\circ$'
+    th_da_1_d = '\\True Số đo của hai cung nhỏ $\\overset\\frown{AB}$ và $\\overset\\frown{AC}$ bằng nhau và cùng bằng $90^\\circ$'
+    th_da_1_s = 'Số đo của hai cung nhỏ $\\overset\\frown{AB}$ và $\\overset\\frown{AC}$ bằng nhau và cùng bằng $45^\\circ$'
     list_th_da_1 = [th_da_1_d, th_da_1_s]
-    loigiai_th_1 = ('''Do $A%s \\perp BC$ nên $\\widehat{A%sB} = \\widehat{A%sC} = 90^\\circ$. Hai góc ở tâm này lần lượt chắn hai cung nhỏ $\\overparen{AB}$ và $\\overparen{AC}$ nên $\\text{sđ}\\overparen{AB} = \\text{sđ}\\overparen{AC} = 90^\\circ$.''' % (tam, tam, tam))
+    loigiai_th_1 = ('''Do $A%s \\perp BC$ nên $\\widehat{A%sB} = \\widehat{A%sC} = 90^\\circ$. Hai góc ở tâm này lần lượt chắn hai cung nhỏ $\\overset\\frown{AB}$ và $\\overset\\frown{AC}$ nên $\\text{sđ}\\overset\\frown{AB} = \\text{sđ}\\overset\\frown{AC} = 90^\\circ$.''' % (tam, tam, tam))
     list_th_2 = [loigiai_th_1]
 
-    vd_da_1_d = '\\True Số đo của cung lớn $\\overparen{ACB}$ bằng $270^\\circ$'
-    vd_da_1_s = 'Số đo của cung lớn $\\overparen{ACB}$ bằng $180^\\circ$'
+    vd_da_1_d = '\\True Số đo của cung lớn $\\overset\\frown{ACB}$ bằng $270^\\circ$'
+    vd_da_1_s = 'Số đo của cung lớn $\\overset\\frown{ACB}$ bằng $180^\\circ$'
     list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
-    loigiai_vd_1 = ('''Cung lớn $\\overparen{ACB}$ có chung hai mút $A, B$ với cung nhỏ $\\overparen{AB}$ nên $\\text{sđ}\\overparen{ACB} = 360^\\circ - \\text{sđ}\\overparen{AB} = 360^\\circ - 90^\\circ = 270^\\circ$.''')
+    loigiai_vd_1 = ('''Cung lớn $\\overset\\frown{ACB}$ có chung hai mút $A, B$ với cung nhỏ $\\overset\\frown{AB}$ nên $\\text{sđ}\\overset\\frown{ACB} = 360^\\circ - \\text{sđ}\\overset\\frown{AB} = 360^\\circ - 90^\\circ = 270^\\circ$.''')
     list_vd_2 = [loigiai_vd_1]
 
     vdc_da_1_d = '\\True Có hai nửa đường tròn chung hai mút $B$ và $C$, mỗi nửa đường tròn có số đo bằng $180^\\circ$'

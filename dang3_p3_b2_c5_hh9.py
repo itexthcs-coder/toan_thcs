@@ -141,7 +141,7 @@ def bt_dang3_p3_b2_c5_hh9(self):
         kq_str = str(kq).replace('.', ',')
 
         # Nội dung câu hỏi
-        noidungcauhoi = ('''Tâm $O$ của một đường tròn cách dây $AB$ của nó một khoảng bằng $%s\\text{ cm}$. Biết rằng cung nhỏ $\\overparen{AB}$ có số đo bằng $%s^\\circ$ (như hình vẽ). Tính bán kính của đường tròn $(O)$ (đơn vị: $\\text{cm}$, làm tròn kết quả đến hàng phần mười).
+        noidungcauhoi = ('''Tâm $O$ của một đường tròn cách dây $AB$ của nó một khoảng bằng $%s\\text{ cm}$. Biết rằng cung nhỏ $\\overset\\frown{AB}$ có số đo bằng $%s^\\circ$ (như hình vẽ). Tính bán kính của đường tròn $(O)$ (đơn vị: $\\text{cm}$, làm tròn kết quả đến hàng phần mười).
         \\begin{center}
         \\begin{tikzpicture}[scale=1, font=\\footnotesize, line join=round, line cap=round, >=stealth]
         \\coordinate (O) at (0,0);
@@ -160,7 +160,7 @@ def bt_dang3_p3_b2_c5_hh9(self):
 
         # Nội dung lời giải
         loigiai = ('''Kẻ $OH \\perp AB$ tại $H$, khi đó $OH = %s\\text{ cm}$.\\\\
-        Vì cung nhỏ $\\overparen{AB}$ có số đo bằng $%s^\\circ$ nên góc ở tâm $\\widehat{AOB} = %s^\\circ$.\\\\
+        Vì cung nhỏ $\\overset\\frown{AB}$ có số đo bằng $%s^\\circ$ nên góc ở tâm $\\widehat{AOB} = %s^\\circ$.\\\\
         Tam giác $OAB$ cân tại $O$ có đường cao $OH$ đồng thời là đường phân giác nên $\\widehat{AOH} = \\dfrac{\\widehat{AOB}}{2} = \\dfrac{%s^\\circ}{2} = %s^\\circ$.\\\\
         Xét tam giác $OHA$ vuông tại $H$, ta có:\\\\
         $\\cos \\widehat{AOH} = \\dfrac{OH}{OA} \\Rightarrow R = OA = \\dfrac{OH}{\\cos %s^\\circ} = \\dfrac{%s}{\\cos %s^\\circ} \\approx %s\\text{ cm}$.'''

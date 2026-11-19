@@ -171,7 +171,7 @@ def bt_dang12_p2_b2_c5_hh9(self):
     vdc_da_1_d = '\\True Khoảng cách từ điểm chính giữa $M$ của cung tre đến sợi dây cung $AB$ bằng $%s\\text{ cm}$' % (nua_R)
     vdc_da_1_s = 'Khoảng cách từ điểm chính giữa $M$ của cung tre đến sợi dây cung $AB$ bằng $%s\\text{ cm}$' % (R)
     list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
-    loigiai_vdc_1 = ('''Vì $M$ là điểm chính giữa cung nhỏ $\\overparen{AB}$ nên $O, H, M$ thẳng hàng và $OM = R = %s\\text{ cm}$. \\\\ Khoảng cách từ $M$ đến dây $AB$ là $MH = OM - OH = %s - %s = %s\\text{ cm}$.''' % (R, R, nua_R, nua_R))
+    loigiai_vdc_1 = ('''Vì $M$ là điểm chính giữa cung nhỏ $\\overset\\frown{AB}$ nên $O, H, M$ thẳng hàng và $OM = R = %s\\text{ cm}$. \\\\ Khoảng cách từ $M$ đến dây $AB$ là $MH = OM - OH = %s - %s = %s\\text{ cm}$.''' % (R, R, nua_R, nua_R))
     list_vdc_2 = [loigiai_vdc_1]
 
     def count_true_answers(answers):

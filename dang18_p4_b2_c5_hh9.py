@@ -144,7 +144,7 @@ def bt_dang18_p4_b2_c5_hh9(self):
         AB_round = str(Decimal(str(AB_val)).quantize(Decimal('0.1'), rounding=ROUND_HALF_UP)).replace('.', ',')
 
         noidungcauhoi = ('''Một tang trống cuốn cáp điện có mặt cắt ngang hình tròn tâm $O$, bán kính $R = %s\\text{ cm}$. Khi tang trống quay được một góc ở tâm bằng $%s^\\circ$, một điểm $A$ trên vành ngoài của tang trống di chuyển đến vị trí $B$ (như hình vẽ).\\\\
-                         a) Tính số đo cung nhỏ $\\overparen{AB}$ tạo bởi vị trí đầu và vị trí cuối của điểm $A$.\\\\
+                         a) Tính số đo cung nhỏ $\\overset\\frown{AB}$ tạo bởi vị trí đầu và vị trí cuối của điểm $A$.\\\\
                          b) Tính khoảng cách thẳng giữa hai điểm $A$ và $B$ (làm tròn đến hàng phần mười của $\\text{cm}$).
                          \\begin{center}
                          \\begin{tikzpicture}[scale=1, font=\\footnotesize, line join=round, line cap=round, >=stealth]
@@ -164,9 +164,9 @@ def bt_dang18_p4_b2_c5_hh9(self):
                          % (R, goc_quay))
 
         loigiai = ('''\\begin{enumEX}[a)]{1}
-                        \\item Vì tang trống quay được một góc ở tâm bằng $%s^\\circ > 180^\\circ$ nên điểm $A$ vạch nên cung lớn $\\overparen{AB}$ có số đo bằng $%s^\\circ$.\\\\
-                        Suy ra số đo của cung nhỏ $\\overparen{AB}$ là $\\text{sđ}\\overparen{AB}_{\\text{nhỏ}} = 360^\\circ - %s^\\circ = %s^\\circ$.
-                        \\item Vì $\\text{sđ}\\overparen{AB}_{\\text{nhỏ}} = %s^\\circ$ nên góc ở tâm $\\widehat{AOB} = %s^\\circ$.\\\\
+                        \\item Vì tang trống quay được một góc ở tâm bằng $%s^\\circ > 180^\\circ$ nên điểm $A$ vạch nên cung lớn $\\overset\\frown{AB}$ có số đo bằng $%s^\\circ$.\\\\
+                        Suy ra số đo của cung nhỏ $\\overset\\frown{AB}$ là $\\text{sđ}\\overset\\frown{AB}_{\\text{nhỏ}} = 360^\\circ - %s^\\circ = %s^\\circ$.
+                        \\item Vì $\\text{sđ}\\overset\\frown{AB}_{\\text{nhỏ}} = %s^\\circ$ nên góc ở tâm $\\widehat{AOB} = %s^\\circ$.\\\\
                         Kẻ $OH \\perp AB$ tại $H$, khi đó $AB = 2AH$ và $\\widehat{AOH} = \\dfrac{\\widehat{AOB}}{2} = \\dfrac{%s^\\circ}{2} = %s^\\circ$.\\\\
                         Trong tam giác $OHA$ vuông tại $H$, ta có $AH = OA \\cdot \\sin %s^\\circ = %s \\cdot \\sin %s^\\circ$.\\\\
                         Vậy khoảng cách thẳng giữa hai điểm $A$ và $B$ là $AB = 2AH = 2 \\cdot %s \\cdot \\sin %s^\\circ \\approx %s\\text{ cm}$.

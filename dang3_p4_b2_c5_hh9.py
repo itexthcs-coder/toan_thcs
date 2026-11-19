@@ -143,7 +143,7 @@ def bt_dang3_p4_b2_c5_hh9(self):
 
         noidungcauhoi = ('''Cho đường tròn $(O)$ và hai dây cung $AB, AC$ bằng nhau sao cho tâm $O$ nằm bên trong góc $\\widehat{BAC}$ và $\\widehat{BAC} = %s^\\circ$ (như hình vẽ).\\\\
                          a) Chứng minh rằng tia $AO$ là tia phân giác của góc $\\widehat{BAC}$.\\\\
-                         b) Tính số đo của các cung nhỏ $\\overparen{AB}$, $\\overparen{AC}$ và $\\overparen{BC}$.
+                         b) Tính số đo của các cung nhỏ $\\overset\\frown{AB}$, $\\overset\\frown{AC}$ và $\\overset\\frown{BC}$.
                          \\begin{center}
                          \\begin{tikzpicture}[scale=1, font=\\footnotesize, line join=round, line cap=round, >=stealth]
                          \\coordinate (O) at (0,0);
@@ -170,8 +170,8 @@ def bt_dang3_p4_b2_c5_hh9(self):
                         \\item Vì $AO$ là tia phân giác của $\\widehat{BAC} = %s^\\circ$ nên $\\widehat{OAB} = \\widehat{OAC} = \\dfrac{%s^\\circ}{2} = %s^\\circ$.\\\\
                         Tam giác $OAB$ cân tại $O$ ($OA = OB$) nên $\\widehat{OBA} = \\widehat{OAB} = %s^\\circ$.\\\\
                         Suy ra $\\widehat{AOB} = 180^\\circ - (\\widehat{OAB} + \\widehat{OBA}) = 180^\\circ - 2 \\cdot %s^\\circ = %s^\\circ$.\\\\
-                        Do đó $\\text{sđ}\\overparen{AB}_{\\text{nhỏ}} = \\widehat{AOB} = %s^\\circ$ và $\\text{sđ}\\overparen{AC}_{\\text{nhỏ}} = \\widehat{AOC} = %s^\\circ$.\\\\
-                        Ta có $\\widehat{BOC} = 360^\\circ - (\\widehat{AOB} + \\widehat{AOC}) = 360^\\circ - (%s^\\circ + %s^\\circ) = %s^\\circ$, suy ra $\\text{sđ}\\overparen{BC}_{\\text{nhỏ}} = %s^\\circ$.
+                        Do đó $\\text{sđ}\\overset\\frown{AB}_{\\text{nhỏ}} = \\widehat{AOB} = %s^\\circ$ và $\\text{sđ}\\overset\\frown{AC}_{\\text{nhỏ}} = \\widehat{AOC} = %s^\\circ$.\\\\
+                        Ta có $\\widehat{BOC} = 360^\\circ - (\\widehat{AOB} + \\widehat{AOC}) = 360^\\circ - (%s^\\circ + %s^\\circ) = %s^\\circ$, suy ra $\\text{sđ}\\overset\\frown{BC}_{\\text{nhỏ}} = %s^\\circ$.
                         \\end{enumEX}'''
                    % (goc_bac, goc_bac, nua_bac, nua_bac, nua_bac, sd_ab, sd_ab, sd_ab, sd_ab, sd_ab, sd_bc, sd_bc))
 

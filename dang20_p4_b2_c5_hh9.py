@@ -139,7 +139,7 @@ def bt_dang20_p4_b2_c5_hh9(self):
         R = random.choice([4, 6, 8, 10, 12])
         nua_R = R // 2
 
-        noidungcauhoi = ('''Một chiếc bánh tét khi cắt khoanh tạo thành mặt cắt hình tròn tâm $O$, bán kính $R = %s\\text{ cm}$. Người ta dùng hai sợi lạt căng thẳng đặt song song nhau trên mặt khoanh bánh để chia bánh, tạo thành hai dây cung $AB$ và $CD$ sao cho $\\text{sđ}\\overparen{AB}_{\\text{nhỏ}} = 60^\\circ$ và $\\text{sđ}\\overparen{CD}_{\\text{nhỏ}} = 120^\\circ$ (như hình vẽ).\\\\
+        noidungcauhoi = ('''Một chiếc bánh tét khi cắt khoanh tạo thành mặt cắt hình tròn tâm $O$, bán kính $R = %s\\text{ cm}$. Người ta dùng hai sợi lạt căng thẳng đặt song song nhau trên mặt khoanh bánh để chia bánh, tạo thành hai dây cung $AB$ và $CD$ sao cho $\\text{sđ}\\overset\\frown{AB}_{\\text{nhỏ}} = 60^\\circ$ và $\\text{sđ}\\overset\\frown{CD}_{\\text{nhỏ}} = 120^\\circ$ (như hình vẽ).\\\\
                          a) Tính độ dài của hai dây cung $AB$ và $CD$.\\\\
                          b) Tính khoảng cách giữa hai sợi lạt trong hai trường hợp: hai sợi lạt nằm cùng một phía đối với tâm $O$ và hai sợi lạt nằm về hai phía đối với tâm $O$.
                          \\begin{center}
@@ -166,8 +166,8 @@ def bt_dang20_p4_b2_c5_hh9(self):
                          % (R))
 
         loigiai = ('''\\begin{enumEX}[a)]{1}
-                        \\item Vì $\\text{sđ}\\overparen{AB}_{\\text{nhỏ}} = 60^\\circ$ nên $\\widehat{AOB} = 60^\\circ$. Tam giác $OAB$ có $OA = OB = %s\\text{ cm}$ và $\\widehat{AOB} = 60^\\circ$ nên là tam giác đều, suy ra $AB = %s\\text{ cm}$.\\\\
-                        Kẻ $OK \\perp CD$ tại $K$. Vì $\\text{sđ}\\overparen{CD}_{\\text{nhỏ}} = 120^\\circ$ nên $\\widehat{COD} = 120^\\circ \\Rightarrow \\widehat{COK} = 60^\\circ$.\\\\
+                        \\item Vì $\\text{sđ}\\overset\\frown{AB}_{\\text{nhỏ}} = 60^\\circ$ nên $\\widehat{AOB} = 60^\\circ$. Tam giác $OAB$ có $OA = OB = %s\\text{ cm}$ và $\\widehat{AOB} = 60^\\circ$ nên là tam giác đều, suy ra $AB = %s\\text{ cm}$.\\\\
+                        Kẻ $OK \\perp CD$ tại $K$. Vì $\\text{sđ}\\overset\\frown{CD}_{\\text{nhỏ}} = 120^\\circ$ nên $\\widehat{COD} = 120^\\circ \\Rightarrow \\widehat{COK} = 60^\\circ$.\\\\
                         Trong tam giác $OKC$ vuông tại $K$, ta có $CK = OC \\cdot \\sin 60^\\circ = %s \\cdot \\dfrac{\\sqrt{3}}{2} = %s\\sqrt{3}\\text{ cm}$.\\\\
                         Vậy $CD = 2CK = %s\\sqrt{3}\\text{ cm}$.
                         \\item Kẻ $OH \\perp AB$ tại $H$. Trong tam giác đều $OAB$ cạnh $%s\\text{ cm}$, đường cao $OH = %s\\sqrt{3}\\text{ cm}$.\\\\

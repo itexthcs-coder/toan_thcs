@@ -161,16 +161,16 @@ def bt_dang9_p2_b2_c5_hh9(self):
     loigiai_th_1 = ('''Theo quan hệ giữa đường vuông góc và đường xiên kẻ từ $M$ đến đường thẳng $AB$, ta luôn có $MH \\le MO = R = %s\\text{ cm}$.''' % (R))
     list_th_2 = [loigiai_th_1]
 
-    vd_da_1_d = '\\True Khi $MH = %s\\text{ cm}$ thì số đo cung nhỏ $\\overparen{AM}$ bằng $90^\\circ$' % (R)
-    vd_da_1_s = 'Khi $MH = %s\\text{ cm}$ thì số đo cung nhỏ $\\overparen{AM}$ bằng $180^\\circ$' % (R)
+    vd_da_1_d = '\\True Khi $MH = %s\\text{ cm}$ thì số đo cung nhỏ $\\overset\\frown{AM}$ bằng $90^\\circ$' % (R)
+    vd_da_1_s = 'Khi $MH = %s\\text{ cm}$ thì số đo cung nhỏ $\\overset\\frown{AM}$ bằng $180^\\circ$' % (R)
     list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
-    loigiai_vd_1 = ('''Khi $MH = %s\\text{ cm} = MO$ thì chân đường vuông góc $H$ trùng với tâm $O$, suy ra $MO \\perp AB$. \\\\ Do đó $\\widehat{AOM} = 90^\\circ$, nên số đo cung nhỏ $\\overparen{AM}$ bằng $90^\\circ$.''' % (R))
+    loigiai_vd_1 = ('''Khi $MH = %s\\text{ cm} = MO$ thì chân đường vuông góc $H$ trùng với tâm $O$, suy ra $MO \\perp AB$. \\\\ Do đó $\\widehat{AOM} = 90^\\circ$, nên số đo cung nhỏ $\\overset\\frown{AM}$ bằng $90^\\circ$.''' % (R))
     list_vd_2 = [loigiai_vd_1]
 
-    vdc_da_1_d = '\\True Nếu số đo cung nhỏ $\\overparen{AM}$ bằng $60^\\circ$ thì khoảng cách $MH$ bằng $\\dfrac{%s\\sqrt{3}}{2}\\text{ cm}$' % (R)
-    vdc_da_1_s = 'Nếu số đo cung nhỏ $\\overparen{AM}$ bằng $60^\\circ$ thì khoảng cách $MH$ bằng $\\dfrac{%s}{2}\\text{ cm}$' % (R)
+    vdc_da_1_d = '\\True Nếu số đo cung nhỏ $\\overset\\frown{AM}$ bằng $60^\\circ$ thì khoảng cách $MH$ bằng $\\dfrac{%s\\sqrt{3}}{2}\\text{ cm}$' % (R)
+    vdc_da_1_s = 'Nếu số đo cung nhỏ $\\overset\\frown{AM}$ bằng $60^\\circ$ thì khoảng cách $MH$ bằng $\\dfrac{%s}{2}\\text{ cm}$' % (R)
     list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
-    loigiai_vdc_1 = ('''Khi $\\text{sđ}\\overparen{AM} = 60^\\circ$ thì $\\widehat{MOH} = 60^\\circ$. \\\\ Trong tam giác $MHO$ vuông tại $H$, ta có $MH = MO \\cdot \\sin 60^\\circ = %s \\cdot \\dfrac{\\sqrt{3}}{2} = \\dfrac{%s\\sqrt{3}}{2}\\text{ cm}$.''' % (R, R))
+    loigiai_vdc_1 = ('''Khi $\\text{sđ}\\overset\\frown{AM} = 60^\\circ$ thì $\\widehat{MOH} = 60^\\circ$. \\\\ Trong tam giác $MHO$ vuông tại $H$, ta có $MH = MO \\cdot \\sin 60^\\circ = %s \\cdot \\dfrac{\\sqrt{3}}{2} = \\dfrac{%s\\sqrt{3}}{2}\\text{ cm}$.''' % (R, R))
     list_vdc_2 = [loigiai_vdc_1]
 
     def count_true_answers(answers):

@@ -134,7 +134,7 @@ def bt_dang13_p2_b2_c5_hh9(self):
     OH = 3 * k
     chieu_cao = R - OH
 
-    noidungcauhoi = ('''Một cây cầu đi bộ có nhịp vòm dạng một cung tròn $\\overparen{AB}$ thuộc đường tròn tâm $O$, bán kính $R = %s\\text{ m}$. Mặt sàn cầu nằm ngang đóng vai trò là dây cung $AB$ dài $%s\\text{ m}$ (như hình vẽ).
+    noidungcauhoi = ('''Một cây cầu đi bộ có nhịp vòm dạng một cung tròn $\\overset\\frown{AB}$ thuộc đường tròn tâm $O$, bán kính $R = %s\\text{ m}$. Mặt sàn cầu nằm ngang đóng vai trò là dây cung $AB$ dài $%s\\text{ m}$ (như hình vẽ).
     \\begin{center}
     \\begin{tikzpicture}[scale=1, font=\\footnotesize, line join=round, line cap=round, >=stealth]
     \\coordinate (O) at (0,0);
@@ -162,7 +162,7 @@ def bt_dang13_p2_b2_c5_hh9(self):
     th_da_1_d = '\\True Chiều cao thông thủy lớn nhất từ mặt sàn cầu $AB$ lên đến đỉnh vòm cung là $%s\\text{ m}$' % (chieu_cao)
     th_da_1_s = 'Chiều cao thông thủy lớn nhất từ mặt sàn cầu $AB$ lên đến đỉnh vòm cung là $%s\\text{ m}$' % (OH)
     list_th_da_1 = [th_da_1_d, th_da_1_s]
-    loigiai_th_1 = ('''Đỉnh vòm cung là điểm chính giữa $M$ của cung nhỏ $\\overparen{AB}$. \\\\ Chiều cao thông thủy lớn nhất từ mặt sàn cầu lên đỉnh vòm là $MH = OM - OH = %s - %s = %s\\text{ m}$.''' % (R, OH, chieu_cao))
+    loigiai_th_1 = ('''Đỉnh vòm cung là điểm chính giữa $M$ của cung nhỏ $\\overset\\frown{AB}$. \\\\ Chiều cao thông thủy lớn nhất từ mặt sàn cầu lên đỉnh vòm là $MH = OM - OH = %s - %s = %s\\text{ m}$.''' % (R, OH, chieu_cao))
     list_th_2 = [loigiai_th_1]
 
     vd_da_1_d = '\\True Nếu gọi $\\widehat{AOB} = 2\\alpha$ thì $\\sin \\alpha = 0,8$'
@@ -171,10 +171,10 @@ def bt_dang13_p2_b2_c5_hh9(self):
     loigiai_vd_1 = ('''Trong tam giác $OHA$ vuông tại $H$, ta có $\\widehat{AOH} = \\alpha$ và $\\sin \\alpha = \\dfrac{AH}{OA} = \\dfrac{%s}{%s} = 0,8$.''' % (nua_AB, R))
     list_vd_2 = [loigiai_vd_1]
 
-    vdc_da_1_d = '\\True Số đo của cung tròn $\\overparen{AB}$ tạo nên vòm cầu lớn hơn $90^\\circ$'
-    vdc_da_1_s = 'Số đo của cung tròn $\\overparen{AB}$ tạo nên vòm cầu nhỏ hơn $90^\\circ$'
+    vdc_da_1_d = '\\True Số đo của cung tròn $\\overset\\frown{AB}$ tạo nên vòm cầu lớn hơn $90^\\circ$'
+    vdc_da_1_s = 'Số đo của cung tròn $\\overset\\frown{AB}$ tạo nên vòm cầu nhỏ hơn $90^\\circ$'
     list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
-    loigiai_vdc_1 = ('''Vì $\\sin \\alpha = 0,8 > \\dfrac{\\sqrt{2}}{2} = \\sin 45^\\circ$ nên $\\alpha > 45^\\circ$. \\\\ Suy ra số đo cung nhỏ $\\overparen{AB}$ bằng $\\widehat{AOB} = 2\\alpha > 90^\\circ$.''')
+    loigiai_vdc_1 = ('''Vì $\\sin \\alpha = 0,8 > \\dfrac{\\sqrt{2}}{2} = \\sin 45^\\circ$ nên $\\alpha > 45^\\circ$. \\\\ Suy ra số đo cung nhỏ $\\overset\\frown{AB}$ bằng $\\widehat{AOB} = 2\\alpha > 90^\\circ$.''')
     list_vdc_2 = [loigiai_vdc_1]
 
     def count_true_answers(answers):

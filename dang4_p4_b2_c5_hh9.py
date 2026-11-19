@@ -141,7 +141,7 @@ def bt_dang4_p4_b2_c5_hh9(self):
 
         noidungcauhoi = ('''Cho hình thang cân $ABCD$ ($AB // CD$) có đáy lớn $CD = %s\\text{ cm}$, cạnh bên $AD = BC = %s\\text{ cm}$ và góc ở đáy $\\widehat{ADC} = 60^\\circ$ (như hình vẽ).\\\\
                          a) Gọi $O$ là trung điểm của cạnh đáy $CD$. Chứng minh rằng bốn điểm $A, B, C, D$ cùng nằm trên đường tròn tâm $O$ và xác định bán kính của đường tròn đó.\\\\
-                         b) Tính số đo của các cung nhỏ $\\overparen{AD}$, $\\overparen{AB}$ và $\\overparen{BC}$ của đường tròn $(O)$.
+                         b) Tính số đo của các cung nhỏ $\\overset\\frown{AD}$, $\\overset\\frown{AB}$ và $\\overset\\frown{BC}$ của đường tròn $(O)$.
                          \\begin{center}
                          \\begin{tikzpicture}[scale=1, font=\\footnotesize, line join=round, line cap=round, >=stealth]
                          \\coordinate (O) at (0,0);
@@ -167,9 +167,9 @@ def bt_dang4_p4_b2_c5_hh9(self):
                         Xét tam giác $OBC$ có $OC = BC = %s\\text{ cm}$ và $\\widehat{BCO} = 60^\\circ$ nên tam giác $OBC$ là tam giác đều, suy ra $OB = OC = %s\\text{ cm}$.\\\\
                         Vậy $OA = OB = OC = OD = %s\\text{ cm}$, do đó bốn điểm $A, B, C, D$ cùng nằm trên đường tròn tâm $O$ bán kính $R = %s\\text{ cm}$.
                         \\item Vì các tam giác $OAD$ và $OBC$ đều nên $\\widehat{AOD} = 60^\\circ$ và $\\widehat{BOC} = 60^\\circ$.\\\\
-                        Suy ra $\\text{sđ}\\overparen{AD}_{\\text{nhỏ}} = \\widehat{AOD} = 60^\\circ$ và $\\text{sđ}\\overparen{BC}_{\\text{nhỏ}} = \\widehat{BOC} = 60^\\circ$.\\\\
+                        Suy ra $\\text{sđ}\\overset\\frown{AD}_{\\text{nhỏ}} = \\widehat{AOD} = 60^\\circ$ và $\\text{sđ}\\overset\\frown{BC}_{\\text{nhỏ}} = \\widehat{BOC} = 60^\\circ$.\\\\
                         Vì $D, O, C$ thẳng hàng nên $\\widehat{AOB} = 180^\\circ - (\\widehat{AOD} + \\widehat{BOC}) = 180^\\circ - (60^\\circ + 60^\\circ) = 60^\\circ$.\\\\
-                        Vậy $\\text{sđ}\\overparen{AB}_{\\text{nhỏ}} = \\widehat{AOB} = 60^\\circ$.
+                        Vậy $\\text{sđ}\\overset\\frown{AB}_{\\text{nhỏ}} = \\widehat{AOB} = 60^\\circ$.
                         \\end{enumEX}'''
                    % (CD, R, R, R, R, R, R, R))
 

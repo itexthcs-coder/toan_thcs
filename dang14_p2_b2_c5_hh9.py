@@ -152,7 +152,7 @@ def bt_dang14_p2_b2_c5_hh9(self):
     nb_da_1_d = '\\True Phần mép giấy ngoài cùng của quạt là một cung nhỏ có số đo bằng $%s^\\circ$' % (goc_mo)
     nb_da_1_s = 'Phần mép giấy ngoài cùng của quạt là một cung lớn có số đo bằng $%s^\\circ$' % (goc_mo)
     list_nb_da_1 = [nb_da_1_d, nb_da_1_s]
-    loigiai_nb_1 = ('''Vì góc ở tâm $\\widehat{AOB} = %s^\\circ < 180^\\circ$ nên cung bị chắn $\\overparen{AB}$ là cung nhỏ có số đo bằng $%s^\\circ$.''' % (goc_mo, goc_mo))
+    loigiai_nb_1 = ('''Vì góc ở tâm $\\widehat{AOB} = %s^\\circ < 180^\\circ$ nên cung bị chắn $\\overset\\frown{AB}$ là cung nhỏ có số đo bằng $%s^\\circ$.''' % (goc_mo, goc_mo))
     list_nb_2 = [loigiai_nb_1]
 
     th_da_1_d = '\\True Khoảng cách thẳng nối hai đầu mút $A$ và $B$ của hai nan quạt ngoài cùng luôn nhỏ hơn $%s\\text{ cm}$' % (dk)
@@ -161,10 +161,10 @@ def bt_dang14_p2_b2_c5_hh9(self):
     loigiai_th_1 = ('''Khi $\\widehat{AOB} = %s^\\circ < 180^\\circ$ thì $AB$ là dây cung không đi qua tâm của đường tròn $(O; %s\\text{ cm})$ nên $AB < 2R = %s\\text{ cm}$.''' % (goc_mo, R, dk))
     list_th_2 = [loigiai_th_1]
 
-    vd_da_1_d = '\\True Nếu khép bớt quạt lại để góc $\\widehat{AOB}$ giảm đi $%s^\\circ$ thì cung lớn $\\overparen{AB}$ của đường tròn $(O; %s\\text{ cm})$ có số đo bằng $%s^\\circ$' % (goc_giam, R, cung_lon_moi)
-    vd_da_1_s = 'Nếu khép bớt quạt lại để góc $\\widehat{AOB}$ giảm đi $%s^\\circ$ thì cung lớn $\\overparen{AB}$ của đường tròn $(O; %s\\text{ cm})$ có số đo bằng $%s^\\circ$' % (goc_giam, R, goc_moi)
+    vd_da_1_d = '\\True Nếu khép bớt quạt lại để góc $\\widehat{AOB}$ giảm đi $%s^\\circ$ thì cung lớn $\\overset\\frown{AB}$ của đường tròn $(O; %s\\text{ cm})$ có số đo bằng $%s^\\circ$' % (goc_giam, R, cung_lon_moi)
+    vd_da_1_s = 'Nếu khép bớt quạt lại để góc $\\widehat{AOB}$ giảm đi $%s^\\circ$ thì cung lớn $\\overset\\frown{AB}$ của đường tròn $(O; %s\\text{ cm})$ có số đo bằng $%s^\\circ$' % (goc_giam, R, goc_moi)
     list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
-    loigiai_vd_1 = ('''Khi góc $\\widehat{AOB}$ giảm đi $%s^\\circ$, góc ở tâm mới bằng $%s^\\circ - %s^\\circ = %s^\\circ$. \\\\ Khi đó cung lớn $\\overparen{AB}$ có số đo bằng $360^\\circ - %s^\\circ = %s^\\circ$.''' % (goc_giam, goc_mo, goc_giam, goc_moi, goc_moi, cung_lon_moi))
+    loigiai_vd_1 = ('''Khi góc $\\widehat{AOB}$ giảm đi $%s^\\circ$, góc ở tâm mới bằng $%s^\\circ - %s^\\circ = %s^\\circ$. \\\\ Khi đó cung lớn $\\overset\\frown{AB}$ có số đo bằng $360^\\circ - %s^\\circ = %s^\\circ$.''' % (goc_giam, goc_mo, goc_giam, goc_moi, goc_moi, cung_lon_moi))
     list_vd_2 = [loigiai_vd_1]
 
     vdc_da_1_d = '\\True Khi mở quạt tạo góc $\\widehat{AOB} = 180^\\circ$ thì phần mép quạt tạo thành một nửa đường tròn có số đo $180^\\circ$'

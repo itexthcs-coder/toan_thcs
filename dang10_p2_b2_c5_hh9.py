@@ -131,7 +131,7 @@ def bt_dang10_p2_b2_c5_hh9(self):
     goc_day = (180 - goc_cod) // 2
     cung_lon_cd = 360 - goc_cod
 
-    noidungcauhoi = ('''Cho đường tròn $(O)$ có đường kính $AB$ và dây $CD$ không đi qua tâm sao cho $CD // AB$ và $\\text{sđ}\\overparen{CD}_{\\text{nhỏ}} = %s^\\circ$ (như hình vẽ).
+    noidungcauhoi = ('''Cho đường tròn $(O)$ có đường kính $AB$ và dây $CD$ không đi qua tâm sao cho $CD // AB$ và $\\text{sđ}\\overset\\frown{CD}_{\\text{nhỏ}} = %s^\\circ$ (như hình vẽ).
     \\begin{center}
     \\begin{tikzpicture}[scale=1, font=\\footnotesize, line join=round, line cap=round, >=stealth]
     \\coordinate (O) at (0,0);
@@ -152,7 +152,7 @@ def bt_dang10_p2_b2_c5_hh9(self):
     nb_da_1_d = '\\True Góc ở tâm $\\widehat{COD}$ có số đo bằng $%s^\\circ$' % (goc_cod)
     nb_da_1_s = 'Góc ở tâm $\\widehat{COD}$ có số đo bằng $%s^\\circ$' % (180 - goc_cod)
     list_nb_da_1 = [nb_da_1_d, nb_da_1_s]
-    loigiai_nb_1 = ('''Vì góc ở tâm $\\widehat{COD}$ chắn cung nhỏ $\\overparen{CD}$ có số đo bằng $%s^\\circ$ nên $\\widehat{COD} = %s^\\circ$.''' % (goc_cod, goc_cod))
+    loigiai_nb_1 = ('''Vì góc ở tâm $\\widehat{COD}$ chắn cung nhỏ $\\overset\\frown{CD}$ có số đo bằng $%s^\\circ$ nên $\\widehat{COD} = %s^\\circ$.''' % (goc_cod, goc_cod))
     list_nb_2 = [loigiai_nb_1]
 
     th_da_1_d = '\\True Hai góc ở tâm $\\widehat{AOC}$ và $\\widehat{BOD}$ có số đo bằng nhau và cùng bằng $%s^\\circ$' % (goc_day)
@@ -161,16 +161,16 @@ def bt_dang10_p2_b2_c5_hh9(self):
     loigiai_th_1 = ('''Tam giác $OCD$ cân tại $O$ có $\\widehat{COD} = %s^\\circ$ nên $\\widehat{OCD} = \\widehat{ODC} = \\dfrac{180^\\circ - %s^\\circ}{2} = %s^\\circ$. \\\\ Vì $CD // AB$ nên $\\widehat{AOC} = \\widehat{OCD} = %s^\\circ$ và $\\widehat{BOD} = \\widehat{ODC} = %s^\\circ$ (so le trong).''' % (goc_cod, goc_cod, goc_day, goc_day, goc_day))
     list_th_2 = [loigiai_th_1]
 
-    vd_da_1_d = '\\True Hai cung nhỏ $\\overparen{AC}$ và $\\overparen{BD}$ bằng nhau'
-    vd_da_1_s = 'Số đo cung nhỏ $\\overparen{AC}$ gấp đôi số đo cung nhỏ $\\overparen{BD}$'
+    vd_da_1_d = '\\True Hai cung nhỏ $\\overset\\frown{AC}$ và $\\overset\\frown{BD}$ bằng nhau'
+    vd_da_1_s = 'Số đo cung nhỏ $\\overset\\frown{AC}$ gấp đôi số đo cung nhỏ $\\overset\\frown{BD}$'
     list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
-    loigiai_vd_1 = ('''Ta có $\\text{sđ}\\overparen{AC} = \\widehat{AOC} = %s^\\circ$ và $\\text{sđ}\\overparen{BD} = \\widehat{BOD} = %s^\\circ$. \\\\ Trên cùng đường tròn $(O)$, hai cung nhỏ $\\overparen{AC}$ và $\\overparen{BD}$ có cùng số đo nên bằng nhau.''' % (goc_day, goc_day))
+    loigiai_vd_1 = ('''Ta có $\\text{sđ}\\overset\\frown{AC} = \\widehat{AOC} = %s^\\circ$ và $\\text{sđ}\\overset\\frown{BD} = \\widehat{BOD} = %s^\\circ$. \\\\ Trên cùng đường tròn $(O)$, hai cung nhỏ $\\overset\\frown{AC}$ và $\\overset\\frown{BD}$ có cùng số đo nên bằng nhau.''' % (goc_day, goc_day))
     list_vd_2 = [loigiai_vd_1]
 
-    vdc_da_1_d = '\\True Số đo của cung lớn $\\overparen{CD}$ bằng $%s^\\circ$' % (cung_lon_cd)
-    vdc_da_1_s = 'Số đo của cung lớn $\\overparen{CD}$ bằng $%s^\\circ$' % (180 + goc_cod)
+    vdc_da_1_d = '\\True Số đo của cung lớn $\\overset\\frown{CD}$ bằng $%s^\\circ$' % (cung_lon_cd)
+    vdc_da_1_s = 'Số đo của cung lớn $\\overset\\frown{CD}$ bằng $%s^\\circ$' % (180 + goc_cod)
     list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
-    loigiai_vdc_1 = ('''Số đo cung lớn $\\overparen{CD}$ là $\\text{sđ}\\overparen{CD}_{\\text{lớn}} = 360^\\circ - \\text{sđ}\\overparen{CD}_{\\text{nhỏ}} = 360^\\circ - %s^\\circ = %s^\\circ$.''' % (goc_cod, cung_lon_cd))
+    loigiai_vdc_1 = ('''Số đo cung lớn $\\overset\\frown{CD}$ là $\\text{sđ}\\overset\\frown{CD}_{\\text{lớn}} = 360^\\circ - \\text{sđ}\\overset\\frown{CD}_{\\text{nhỏ}} = 360^\\circ - %s^\\circ = %s^\\circ$.''' % (goc_cod, cung_lon_cd))
     list_vdc_2 = [loigiai_vdc_1]
 
     def count_true_answers(answers):

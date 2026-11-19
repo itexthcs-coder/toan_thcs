@@ -138,9 +138,9 @@ def bt_dang13_p4_b2_c5_hh9(self):
     if dang == '1':
         bk = random.choice(['R', 'r'])
 
-        noidungcauhoi = ('''Trong một mô hình quan sát thiên văn phẳng, mặt đĩa Trăng tròn được xem là một đường tròn tâm $O$ bán kính $%s$. Ranh giới phân chia phần được chiếu sáng và phần tối trên đĩa Trăng nối hai điểm cực $A, B$ (với $AB$ là đường kính của đường tròn $(O)$) là một cung tròn $\\overparen{AOB}$ đi qua tâm $O$ của đĩa Trăng (như hình vẽ).\\\\
-                         a) Gọi $O'$ là tâm của đường tròn chứa cung $\\overparen{AOB}$. Chứng minh rằng $OO' = %s$.\\\\
-                         b) Tính bán kính $%s'$ của đường tròn chứa cung $\\overparen{AOB}$ theo $%s$ và tính số đo của cung $\\overparen{AOB}$ trên đường tròn $(O')$.
+        noidungcauhoi = ('''Trong một mô hình quan sát thiên văn phẳng, mặt đĩa Trăng tròn được xem là một đường tròn tâm $O$ bán kính $%s$. Ranh giới phân chia phần được chiếu sáng và phần tối trên đĩa Trăng nối hai điểm cực $A, B$ (với $AB$ là đường kính của đường tròn $(O)$) là một cung tròn $\\overset\\frown{AOB}$ đi qua tâm $O$ của đĩa Trăng (như hình vẽ).\\\\
+                         a) Gọi $O'$ là tâm của đường tròn chứa cung $\\overset\\frown{AOB}$. Chứng minh rằng $OO' = %s$.\\\\
+                         b) Tính bán kính $%s'$ của đường tròn chứa cung $\\overset\\frown{AOB}$ theo $%s$ và tính số đo của cung $\\overset\\frown{AOB}$ trên đường tròn $(O')$.
                          \\begin{center}
                          \\begin{tikzpicture}[scale=1, font=\\footnotesize, line join=round, line cap=round, >=stealth]
                          \\coordinate (O) at (0,0);
@@ -169,7 +169,7 @@ def bt_dang13_p4_b2_c5_hh9(self):
                         $%s' = O'A = \\sqrt{OO'^2 + OA^2} = \\sqrt{%s^2 + %s^2} = %s\\sqrt{2}$.\\\\
                         Vì tam giác $O'OA$ vuông cân tại $O$ nên $\\widehat{AO'O} = 45^\\circ$. Tương tự $\\widehat{BO'O} = 45^\\circ$.\\\\
                         Suy ra góc ở tâm $\\widehat{AO'B} = \\widehat{AO'O} + \\widehat{BO'O} = 45^\\circ + 45^\\circ = 90^\\circ$.\\\\
-                        Vậy số đo của cung $\\overparen{AOB}$ trên đường tròn $(O')$ bằng $90^\\circ$.
+                        Vậy số đo của cung $\\overset\\frown{AOB}$ trên đường tròn $(O')$ bằng $90^\\circ$.
                         \\end{enumEX}'''
                    % (bk, bk, bk, bk, bk, bk, bk, bk, bk))
 

@@ -144,7 +144,7 @@ def bt_dang17_p3_b2_c5_hh9(self):
         kq_str = str(R)
 
         # Nội dung câu hỏi
-        noidungcauhoi = ('''Một đoạn đường ray xe lửa uốn cong theo một cung tròn $\\overparen{AB}$ tâm $O$ (như hình vẽ). Biết khoảng cách thẳng nối hai đầu đoạn cong là dây cung $AB = %s\\text{ m}$ và điểm chính giữa $M$ của cung nhỏ $\\overparen{AB}$ cách dây cung $AB$ một khoảng bằng $%s\\text{ m}$. Tính bán kính đường cong của đoạn đường ray đó (đơn vị: $\\text{m}$).
+        noidungcauhoi = ('''Một đoạn đường ray xe lửa uốn cong theo một cung tròn $\\overset\\frown{AB}$ tâm $O$ (như hình vẽ). Biết khoảng cách thẳng nối hai đầu đoạn cong là dây cung $AB = %s\\text{ m}$ và điểm chính giữa $M$ của cung nhỏ $\\overset\\frown{AB}$ cách dây cung $AB$ một khoảng bằng $%s\\text{ m}$. Tính bán kính đường cong của đoạn đường ray đó (đơn vị: $\\text{m}$).
         \\begin{center}
         \\begin{tikzpicture}[scale=1, font=\\footnotesize, line join=round, line cap=round, >=stealth]
         \\coordinate (O) at (0,0);

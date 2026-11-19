@@ -139,7 +139,7 @@ def bt_dang12_p3_b2_c5_hh9(self):
         kq_str = str(dk)
 
         # Nội dung câu hỏi
-        noidungcauhoi = ('''Một nhà khảo cổ tìm được một mảnh vỡ của một chiếc đĩa gốm cổ hình tròn. Ông đo được một dây cung $AB = %s\\text{ cm}$ trên mảnh vỡ và khoảng cách từ điểm chính giữa $M$ của cung nhỏ $\\overparen{AB}$ đến dây $AB$ bằng $%s\\text{ cm}$ (như hình vẽ). Tính đường kính của chiếc đĩa gốm cổ ban đầu (đơn vị: $\\text{cm}$).
+        noidungcauhoi = ('''Một nhà khảo cổ tìm được một mảnh vỡ của một chiếc đĩa gốm cổ hình tròn. Ông đo được một dây cung $AB = %s\\text{ cm}$ trên mảnh vỡ và khoảng cách từ điểm chính giữa $M$ của cung nhỏ $\\overset\\frown{AB}$ đến dây $AB$ bằng $%s\\text{ cm}$ (như hình vẽ). Tính đường kính của chiếc đĩa gốm cổ ban đầu (đơn vị: $\\text{cm}$).
         \\begin{center}
         \\begin{tikzpicture}[scale=1, font=\\footnotesize, line join=round, line cap=round, >=stealth]
         \\coordinate (O) at (0,0);
@@ -161,7 +161,7 @@ def bt_dang12_p3_b2_c5_hh9(self):
 
         # Nội dung lời giải
         loigiai = ('''Gọi $O$ là tâm và $R\\text{ (cm)}$ là bán kính của chiếc đĩa ban đầu.\\\\
-        Vì $M$ là điểm chính giữa cung nhỏ $\\overparen{AB}$ nên $OM \\perp AB$ tại trung điểm $H$ của $AB$.\\\\
+        Vì $M$ là điểm chính giữa cung nhỏ $\\overset\\frown{AB}$ nên $OM \\perp AB$ tại trung điểm $H$ của $AB$.\\\\
         Ta có $AH = \\dfrac{AB}{2} = \\dfrac{%s}{2} = %s\\text{ cm}$, $MH = %s\\text{ cm}$ và $OH = OM - MH = R - %s\\text{ (cm)}$.\\\\
         Áp dụng định lí Pythagore trong tam giác $OHA$ vuông tại $H$, ta có:\\\\
         $(R - %s)^2 + %s^2 = R^2 \\Leftrightarrow R^2 - %sR + %s + %s = R^2 \\Leftrightarrow %sR = %s \\Leftrightarrow R = %s\\text{ cm}$.\\\\

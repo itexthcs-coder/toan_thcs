@@ -140,7 +140,7 @@ def bt_dang7_p3_b2_c5_hh9(self):
         kq_str = str(sd_ad)
 
         # Nội dung câu hỏi
-        noidungcauhoi = ('''Cho bốn điểm $A, B, C, D$ nằm theo thứ tự đó trên đường tròn $(O)$ sao cho $\\text{sđ}\\overparen{AB} = %s^\\circ$, $\\text{sđ}\\overparen{BC} = %s^\\circ$ và $\\text{sđ}\\overparen{CD} = %s^\\circ$ (như hình vẽ). Tính số đo của cung nhỏ $\\overparen{AD}$ (đơn vị: độ).
+        noidungcauhoi = ('''Cho bốn điểm $A, B, C, D$ nằm theo thứ tự đó trên đường tròn $(O)$ sao cho $\\text{sđ}\\overset\\frown{AB} = %s^\\circ$, $\\text{sđ}\\overset\\frown{BC} = %s^\\circ$ và $\\text{sđ}\\overset\\frown{CD} = %s^\\circ$ (như hình vẽ). Tính số đo của cung nhỏ $\\overset\\frown{AD}$ (đơn vị: độ).
         \\begin{center}
         \\begin{tikzpicture}[scale=1, font=\\footnotesize, line join=round, line cap=round, >=stealth]
         \\coordinate (O) at (0,0);
@@ -159,10 +159,10 @@ def bt_dang7_p3_b2_c5_hh9(self):
         \\end{center}''' % (sd_ab, sd_bc, sd_cd))
 
         # Nội dung lời giải
-        loigiai = ('''Áp dụng tính chất cộng số đo cung, ta có số đo của cung lớn $\\overparen{ABCD}$ bằng:\\\\
-        $\\text{sđ}\\overparen{ABCD} = \\text{sđ}\\overparen{AB} + \\text{sđ}\\overparen{BC} + \\text{sđ}\\overparen{CD} = %s^\\circ + %s^\\circ + %s^\\circ = %s^\\circ$.\\\\
-        Vì cung nhỏ $\\overparen{AD}$ và cung lớn $\\overparen{ABCD}$ có chung hai mút $A, D$ nên:\\\\
-        $\\text{sđ}\\overparen{AD}_{\\text{nhỏ}} = 360^\\circ - \\text{sđ}\\overparen{ABCD} = 360^\\circ - %s^\\circ = %s^\\circ$.'''
+        loigiai = ('''Áp dụng tính chất cộng số đo cung, ta có số đo của cung lớn $\\overset\\frown{ABCD}$ bằng:\\\\
+        $\\text{sđ}\\overset\\frown{ABCD} = \\text{sđ}\\overset\\frown{AB} + \\text{sđ}\\overset\\frown{BC} + \\text{sđ}\\overset\\frown{CD} = %s^\\circ + %s^\\circ + %s^\\circ = %s^\\circ$.\\\\
+        Vì cung nhỏ $\\overset\\frown{AD}$ và cung lớn $\\overset\\frown{ABCD}$ có chung hai mút $A, D$ nên:\\\\
+        $\\text{sđ}\\overset\\frown{AD}_{\\text{nhỏ}} = 360^\\circ - \\text{sđ}\\overset\\frown{ABCD} = 360^\\circ - %s^\\circ = %s^\\circ$.'''
                    % (sd_ab, sd_bc, sd_cd, tong_3, tong_3, sd_ad))
 
         #Đáp án

@@ -140,7 +140,7 @@ def bt_dang14_p4_b2_c5_hh9(self):
         nua_R = R // 2
         OH_approx = str(Decimal(float(nua_R * math.sqrt(3))).quantize(Decimal('0.01'), rounding=ROUND_HALF_UP)).replace('.', ',')
 
-        noidungcauhoi = ('''Một sân vận động có phần khúc cua ở hai đầu là hai nửa đường tròn bằng nhau bán kính $R = %s\\text{ m}$. Ở một đầu cua nửa đường tròn đường kính $AB$ tâm $O$, người ta căng một sợi dây thẳng nối điểm $A$ với điểm $M$ nằm trên nửa đường tròn sao cho $\\text{sđ}\\overparen{AM} = 60^\\circ$ (như hình vẽ).\\\\
+        noidungcauhoi = ('''Một sân vận động có phần khúc cua ở hai đầu là hai nửa đường tròn bằng nhau bán kính $R = %s\\text{ m}$. Ở một đầu cua nửa đường tròn đường kính $AB$ tâm $O$, người ta căng một sợi dây thẳng nối điểm $A$ với điểm $M$ nằm trên nửa đường tròn sao cho $\\text{sđ}\\overset\\frown{AM} = 60^\\circ$ (như hình vẽ).\\\\
                          a) Tính độ dài sợi dây thẳng $AM$.\\\\
                          b) Tính khoảng cách từ tâm $O$ đến sợi dây thẳng $AM$ (làm tròn đến hàng phần trăm).
                          \\begin{center}
@@ -163,7 +163,7 @@ def bt_dang14_p4_b2_c5_hh9(self):
                          % (R))
 
         loigiai = ('''\\begin{enumEX}[a)]{1}
-                        \\item Vì góc ở tâm $\\widehat{AOM}$ chắn cung nhỏ $\\overparen{AM}$ có số đo bằng $60^\\circ$ nên $\\widehat{AOM} = 60^\\circ$.\\\\
+                        \\item Vì góc ở tâm $\\widehat{AOM}$ chắn cung nhỏ $\\overset\\frown{AM}$ có số đo bằng $60^\\circ$ nên $\\widehat{AOM} = 60^\\circ$.\\\\
                         Xét tam giác $OAM$ có $OA = OM = R = %s\\text{ m}$ và $\\widehat{AOM} = 60^\\circ$ nên tam giác $OAM$ là tam giác đều.\\\\
                         Vậy độ dài sợi dây thẳng $AM = OA = %s\\text{ m}$.
                         \\item Kẻ $OH \\perp AM$ tại $H$, khi đó $H$ là trung điểm của $AM$ nên $AH = \\dfrac{AM}{2} = \\dfrac{%s}{2} = %s\\text{ m}$.\\\\

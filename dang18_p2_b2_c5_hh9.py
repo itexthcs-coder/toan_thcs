@@ -168,7 +168,7 @@ def bt_dang18_p2_b2_c5_hh9(self):
     vdc_da_1_d = '\\True Phần mép bàn cong nhỏ giới hạn bởi hai đầu thanh nẹp là một cung tròn có số đo bằng $90^\\circ$'
     vdc_da_1_s = 'Phần mép bàn cong nhỏ giới hạn bởi hai đầu thanh nẹp là một cung tròn có số đo bằng $270^\\circ$'
     list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
-    loigiai_vdc_1 = ('''Góc ở tâm $\\widehat{AOB} = 90^\\circ$ chắn cung nhỏ $\\overparen{AB}$ nên phần mép bàn cong nhỏ giới hạn bởi hai đầu thanh nẹp có số đo bằng $90^\\circ$ (còn $270^\\circ$ là số đo cung lớn).''')
+    loigiai_vdc_1 = ('''Góc ở tâm $\\widehat{AOB} = 90^\\circ$ chắn cung nhỏ $\\overset\\frown{AB}$ nên phần mép bàn cong nhỏ giới hạn bởi hai đầu thanh nẹp có số đo bằng $90^\\circ$ (còn $270^\\circ$ là số đo cung lớn).''')
     list_vdc_2 = [loigiai_vdc_1]
 
     def count_true_answers(answers):

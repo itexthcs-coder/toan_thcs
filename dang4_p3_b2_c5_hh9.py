@@ -143,7 +143,7 @@ def bt_dang4_p3_b2_c5_hh9(self):
         AB = 2 * AH
 
         # Nội dung câu hỏi
-        noidungcauhoi = ('''Cho đường tròn $(O; %s\\text{ cm})$ và dây cung $AB = %s\\text{ cm}$. Gọi $2\\alpha$ là số đo góc ở tâm chắn cung nhỏ $\\overparen{AB}$ với $0^\\circ < \\alpha < 90^\\circ$ (như hình vẽ). Tính giá trị của $\\tan \\alpha$ (viết kết quả dưới dạng số thập phân).
+        noidungcauhoi = ('''Cho đường tròn $(O; %s\\text{ cm})$ và dây cung $AB = %s\\text{ cm}$. Gọi $2\\alpha$ là số đo góc ở tâm chắn cung nhỏ $\\overset\\frown{AB}$ với $0^\\circ < \\alpha < 90^\\circ$ (như hình vẽ). Tính giá trị của $\\tan \\alpha$ (viết kết quả dưới dạng số thập phân).
         \\begin{center}
         \\begin{tikzpicture}[scale=1, font=\\footnotesize, line join=round, line cap=round, >=stealth]
         \\coordinate (O) at (0,0);

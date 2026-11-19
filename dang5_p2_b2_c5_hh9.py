@@ -153,16 +153,16 @@ def bt_dang5_p2_b2_c5_hh9(self):
     loigiai_nb_1 = ('''Vì $A$ và $B$ nằm trên đường trung trực của đoạn thẳng $OC$ nên $AC = AO = %s\\text{ cm}$ và $BC = BO = %s\\text{ cm}$. \\\\ Mặt khác $OC = %s\\text{ cm}$ nên $OA = OC = AC$ và $OB = OC = BC$, suy ra hai tam giác $OAC$ và $OBC$ là các tam giác đều.''' % (R, R, R))
     list_nb_2 = [loigiai_nb_1]
 
-    th_da_1_d = '\\True Số đo của cung nhỏ $\\overparen{ACB}$ bằng $120^\\circ$'
-    th_da_1_s = 'Số đo của cung nhỏ $\\overparen{ACB}$ bằng $60^\\circ$'
+    th_da_1_d = '\\True Số đo của cung nhỏ $\\overset\\frown{ACB}$ bằng $120^\\circ$'
+    th_da_1_s = 'Số đo của cung nhỏ $\\overset\\frown{ACB}$ bằng $60^\\circ$'
     list_th_da_1 = [th_da_1_d, th_da_1_s]
-    loigiai_th_1 = ('''Do hai tam giác $OAC$ và $OBC$ đều nên $\\widehat{AOC} = 60^\\circ$ và $\\widehat{BOC} = 60^\\circ$. \\\\ Suy ra $\\widehat{AOB} = \\widehat{AOC} + \\widehat{BOC} = 60^\\circ + 60^\\circ = 120^\\circ$, do đó $\\text{sđ}\\overparen{ACB} = 120^\\circ$.''')
+    loigiai_th_1 = ('''Do hai tam giác $OAC$ và $OBC$ đều nên $\\widehat{AOC} = 60^\\circ$ và $\\widehat{BOC} = 60^\\circ$. \\\\ Suy ra $\\widehat{AOB} = \\widehat{AOC} + \\widehat{BOC} = 60^\\circ + 60^\\circ = 120^\\circ$, do đó $\\text{sđ}\\overset\\frown{ACB} = 120^\\circ$.''')
     list_th_2 = [loigiai_th_1]
 
-    vd_da_1_d = '\\True Số đo của cung lớn $\\overparen{ABC}$ bằng $240^\\circ$'
-    vd_da_1_s = 'Số đo của cung lớn $\\overparen{ABC}$ bằng $300^\\circ$'
+    vd_da_1_d = '\\True Số đo của cung lớn $\\overset\\frown{ABC}$ bằng $240^\\circ$'
+    vd_da_1_s = 'Số đo của cung lớn $\\overset\\frown{ABC}$ bằng $300^\\circ$'
     list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
-    loigiai_vd_1 = ('''Cung lớn $\\overparen{ABC}$ có chung hai mút $A, B$ với cung nhỏ $\\overparen{ACB}$ nên $\\text{sđ}\\overparen{ABC} = 360^\\circ - 120^\\circ = 240^\\circ$.''')
+    loigiai_vd_1 = ('''Cung lớn $\\overset\\frown{ABC}$ có chung hai mút $A, B$ với cung nhỏ $\\overset\\frown{ACB}$ nên $\\text{sđ}\\overset\\frown{ABC} = 360^\\circ - 120^\\circ = 240^\\circ$.''')
     list_vd_2 = [loigiai_vd_1]
 
     vdc_da_1_d = '\\True Độ dài dây cung $AB$ bằng $%s\\sqrt{3}\\text{ cm}$' % (R)

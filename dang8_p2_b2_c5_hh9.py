@@ -136,7 +136,7 @@ def bt_dang8_p2_b2_c5_hh9(self):
     sd_ad_nho = 360 - sd_abcd
     sd_bd_lon = sd_bc + sd_cd
 
-    noidungcauhoi = ('''Trên đường tròn $(O; %s\\text{ cm})$ lấy bốn điểm $A, B, C, D$ theo thứ tự đó sao cho $\\text{sđ}\\overparen{AB} = %s^\\circ$, $\\text{sđ}\\overparen{BC} = %s^\\circ$ và $\\text{sđ}\\overparen{CD} = %s^\\circ$ (như hình vẽ).
+    noidungcauhoi = ('''Trên đường tròn $(O; %s\\text{ cm})$ lấy bốn điểm $A, B, C, D$ theo thứ tự đó sao cho $\\text{sđ}\\overset\\frown{AB} = %s^\\circ$, $\\text{sđ}\\overset\\frown{BC} = %s^\\circ$ và $\\text{sđ}\\overset\\frown{CD} = %s^\\circ$ (như hình vẽ).
     \\begin{center}
     \\begin{tikzpicture}[scale=1, font=\\footnotesize, line join=round, line cap=round, >=stealth]
     \\coordinate (O) at (0,0);
@@ -154,28 +154,28 @@ def bt_dang8_p2_b2_c5_hh9(self):
     \\end{tikzpicture}
     \\end{center}''' % (R, sd_ab, sd_bc, sd_cd))
 
-    nb_da_1_d = '\\True Số đo của cung nhỏ $\\overparen{AC}$ bằng $%s^\\circ$' % (sd_ac)
-    nb_da_1_s = 'Số đo của cung nhỏ $\\overparen{AC}$ bằng $%s^\\circ$' % (sd_bc - sd_ab)
+    nb_da_1_d = '\\True Số đo của cung nhỏ $\\overset\\frown{AC}$ bằng $%s^\\circ$' % (sd_ac)
+    nb_da_1_s = 'Số đo của cung nhỏ $\\overset\\frown{AC}$ bằng $%s^\\circ$' % (sd_bc - sd_ab)
     list_nb_da_1 = [nb_da_1_d, nb_da_1_s]
-    loigiai_nb_1 = ('''Vì điểm $B$ nằm trên cung nhỏ $\\overparen{AC}$ nên $\\text{sđ}\\overparen{AC} = \\text{sđ}\\overparen{AB} + \\text{sđ}\\overparen{BC} = %s^\\circ + %s^\\circ = %s^\\circ$.''' % (sd_ab, sd_bc, sd_ac))
+    loigiai_nb_1 = ('''Vì điểm $B$ nằm trên cung nhỏ $\\overset\\frown{AC}$ nên $\\text{sđ}\\overset\\frown{AC} = \\text{sđ}\\overset\\frown{AB} + \\text{sđ}\\overset\\frown{BC} = %s^\\circ + %s^\\circ = %s^\\circ$.''' % (sd_ab, sd_bc, sd_ac))
     list_nb_2 = [loigiai_nb_1]
 
-    th_da_1_d = '\\True Số đo của cung nhỏ $\\overparen{AD}$ bằng $%s^\\circ$ nên đoạn thẳng $AD$ không phải là đường kính' % (sd_ad_nho)
+    th_da_1_d = '\\True Số đo của cung nhỏ $\\overset\\frown{AD}$ bằng $%s^\\circ$ nên đoạn thẳng $AD$ không phải là đường kính' % (sd_ad_nho)
     th_da_1_s = 'Đoạn thẳng $AD$ là một đường kính của đường tròn $(O)$'
     list_th_da_1 = [th_da_1_d, th_da_1_s]
-    loigiai_th_1 = ('''Ta có $\\text{sđ}\\overparen{ABCD} = %s^\\circ + %s^\\circ + %s^\\circ = %s^\\circ$. \\\\ Suy ra số đo cung nhỏ $\\overparen{AD}$ là $360^\\circ - %s^\\circ = %s^\\circ \\neq 180^\\circ$, do đó $AD$ không là đường kính của $(O)$.''' % (sd_ab, sd_bc, sd_cd, sd_abcd, sd_abcd, sd_ad_nho))
+    loigiai_th_1 = ('''Ta có $\\text{sđ}\\overset\\frown{ABCD} = %s^\\circ + %s^\\circ + %s^\\circ = %s^\\circ$. \\\\ Suy ra số đo cung nhỏ $\\overset\\frown{AD}$ là $360^\\circ - %s^\\circ = %s^\\circ \\neq 180^\\circ$, do đó $AD$ không là đường kính của $(O)$.''' % (sd_ab, sd_bc, sd_cd, sd_abcd, sd_abcd, sd_ad_nho))
     list_th_2 = [loigiai_th_1]
 
     vd_da_1_d = '\\True Độ dài dây cung $AC$ bằng $%s\\sqrt{3}\\text{ cm}$' % (R)
     vd_da_1_s = 'Độ dài dây cung $AC$ bằng $%s\\text{ cm}$' % (R)
     list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
-    loigiai_vd_1 = ('''Vì $\\text{sđ}\\overparen{AC}_{\\text{nhỏ}} = 120^\\circ$ nên $\\widehat{AOC} = 120^\\circ$. Kẻ $OH \\perp AC$ tại $H$, ta có $\\widehat{AOH} = 60^\\circ$. \\\\ Suy ra $AH = OA \\cdot \\sin 60^\\circ = %s \\cdot \\dfrac{\\sqrt{3}}{2}$, nên $AC = 2AH = %s\\sqrt{3}\\text{ cm}$.''' % (R, R))
+    loigiai_vd_1 = ('''Vì $\\text{sđ}\\overset\\frown{AC}_{\\text{nhỏ}} = 120^\\circ$ nên $\\widehat{AOC} = 120^\\circ$. Kẻ $OH \\perp AC$ tại $H$, ta có $\\widehat{AOH} = 60^\\circ$. \\\\ Suy ra $AH = OA \\cdot \\sin 60^\\circ = %s \\cdot \\dfrac{\\sqrt{3}}{2}$, nên $AC = 2AH = %s\\sqrt{3}\\text{ cm}$.''' % (R, R))
     list_vd_2 = [loigiai_vd_1]
 
-    vdc_da_1_d = '\\True Số đo của cung lớn $\\overparen{BD}$ bằng $%s^\\circ$' % (sd_bd_lon)
-    vdc_da_1_s = 'Số đo của cung lớn $\\overparen{BD}$ bằng $%s^\\circ$' % (360 - sd_bd_lon)
+    vdc_da_1_d = '\\True Số đo của cung lớn $\\overset\\frown{BD}$ bằng $%s^\\circ$' % (sd_bd_lon)
+    vdc_da_1_s = 'Số đo của cung lớn $\\overset\\frown{BD}$ bằng $%s^\\circ$' % (360 - sd_bd_lon)
     list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
-    loigiai_vdc_1 = ('''Cung $\\overparen{BCD}$ có số đo là $\\text{sđ}\\overparen{BC} + \\text{sđ}\\overparen{CD} = %s^\\circ + %s^\\circ = %s^\\circ > 180^\\circ$ nên chính là cung lớn $\\overparen{BD}$ có số đo bằng $%s^\\circ$.''' % (sd_bc, sd_cd, sd_bd_lon, sd_bd_lon))
+    loigiai_vdc_1 = ('''Cung $\\overset\\frown{BCD}$ có số đo là $\\text{sđ}\\overset\\frown{BC} + \\text{sđ}\\overset\\frown{CD} = %s^\\circ + %s^\\circ = %s^\\circ > 180^\\circ$ nên chính là cung lớn $\\overset\\frown{BD}$ có số đo bằng $%s^\\circ$.''' % (sd_bc, sd_cd, sd_bd_lon, sd_bd_lon))
     list_vdc_2 = [loigiai_vdc_1]
 
     def count_true_answers(answers):

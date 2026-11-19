@@ -142,7 +142,7 @@ def bt_dang5_p4_b2_c5_hh9(self):
 
         noidungcauhoi = ('''Cho đường tròn $(O; R)$ và dây cung $AB$ không đi qua tâm sao cho góc ở tâm $\\widehat{AOB} = 2\\alpha$ với $0^\\circ < \\alpha < 90^\\circ$ (như hình vẽ).\\\\
                          a) Chứng minh rằng độ dài dây cung $AB$ được tính theo công thức $AB = 2R\\sin \\alpha$.\\\\
-                         b) Chứng minh rằng diện tích tam giác $OAB$ bằng $R^2 \\sin \\alpha \\cos \\alpha$. Áp dụng tính diện tích tam giác $OAB$ khi $R = %s\\text{ cm}$ và $\\text{sđ}\\overparen{AB}_{\\text{nhỏ}} = 120^\\circ$.
+                         b) Chứng minh rằng diện tích tam giác $OAB$ bằng $R^2 \\sin \\alpha \\cos \\alpha$. Áp dụng tính diện tích tam giác $OAB$ khi $R = %s\\text{ cm}$ và $\\text{sđ}\\overset\\frown{AB}_{\\text{nhỏ}} = 120^\\circ$.
                          \\begin{center}
                          \\begin{tikzpicture}[scale=1, font=\\footnotesize, line join=round, line cap=round, >=stealth]
                          \\coordinate (O) at (0,0);
@@ -167,7 +167,7 @@ def bt_dang5_p4_b2_c5_hh9(self):
                         Vậy $AB = 2AH = 2R\\sin \\alpha$.
                         \\item Trong tam giác $OHA$ vuông tại $H$, ta có $OH = OA \\cdot \\cos \\widehat{AOH} = R\\cos \\alpha$.\\\\
                         Diện tích tam giác $OAB$ là $S_{OAB} = \\dfrac{1}{2} OH \\cdot AB = \\dfrac{1}{2} (R\\cos \\alpha)(2R\\sin \\alpha) = R^2 \\sin \\alpha \\cos \\alpha$.\\\\
-                        Áp dụng khi $R = %s\\text{ cm}$ và $\\text{sđ}\\overparen{AB}_{\\text{nhỏ}} = 120^\\circ \\Rightarrow \\widehat{AOB} = 120^\\circ \\Rightarrow \\alpha = 60^\\circ$:\\\\
+                        Áp dụng khi $R = %s\\text{ cm}$ và $\\text{sđ}\\overset\\frown{AB}_{\\text{nhỏ}} = 120^\\circ \\Rightarrow \\widehat{AOB} = 120^\\circ \\Rightarrow \\alpha = 60^\\circ$:\\\\
                         $S_{OAB} = %s^2 \\cdot \\sin 60^\\circ \\cdot \\cos 60^\\circ = %s \\cdot \\dfrac{\\sqrt{3}}{2} \\cdot \\dfrac{1}{2} = %s\\sqrt{3}\\text{ cm}^2$.
                         \\end{enumEX}'''
                    % (R, R, R_binh, dien_tich))

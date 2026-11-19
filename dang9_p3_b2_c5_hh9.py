@@ -137,7 +137,7 @@ def bt_dang9_p3_b2_c5_hh9(self):
         kq_str = str(cung_nho)
 
         # Nội dung câu hỏi
-        noidungcauhoi = ('''Hai điểm $A, B$ nằm trên đường tròn $(O)$ chia đường tròn thành hai cung sao cho số đo của cung lớn gấp $%s$ lần số đo của cung nhỏ (như hình vẽ). Tính số đo của cung nhỏ $\\overparen{AB}$ (đơn vị: độ).
+        noidungcauhoi = ('''Hai điểm $A, B$ nằm trên đường tròn $(O)$ chia đường tròn thành hai cung sao cho số đo của cung lớn gấp $%s$ lần số đo của cung nhỏ (như hình vẽ). Tính số đo của cung nhỏ $\\overset\\frown{AB}$ (đơn vị: độ).
         \\begin{center}
         \\begin{tikzpicture}[scale=1, font=\\footnotesize, line join=round, line cap=round, >=stealth]
         \\coordinate (O) at (0,0);
@@ -152,11 +152,11 @@ def bt_dang9_p3_b2_c5_hh9(self):
         \\end{center}''' % (k))
 
         # Nội dung lời giải
-        loigiai = ('''Gọi số đo của cung nhỏ $\\overparen{AB}$ là $x^\\circ$ ($0 < x < 180$).\\\\
-        Vì số đo cung lớn gấp $%s$ lần số đo cung nhỏ nên số đo cung lớn $\\overparen{AB}$ là $%sx^\\circ$.\\\\
+        loigiai = ('''Gọi số đo của cung nhỏ $\\overset\\frown{AB}$ là $x^\\circ$ ($0 < x < 180$).\\\\
+        Vì số đo cung lớn gấp $%s$ lần số đo cung nhỏ nên số đo cung lớn $\\overset\\frown{AB}$ là $%sx^\\circ$.\\\\
         Mặt khác, tổng số đo của cung nhỏ và cung lớn có chung hai mút $A, B$ bằng $360^\\circ$ nên ta có phương trình:\\\\
         $x + %sx = 360 \\Leftrightarrow %sx = 360 \\Leftrightarrow x = \\dfrac{360}{%s} = %s$.\\\\
-        Vậy số đo của cung nhỏ $\\overparen{AB}$ bằng $%s^\\circ$.'''
+        Vậy số đo của cung nhỏ $\\overset\\frown{AB}$ bằng $%s^\\circ$.'''
                    % (k, k, k, k + 1, k + 1, cung_nho, cung_nho))
 
         #Đáp án

@@ -132,7 +132,7 @@ def bt_dang16_p2_b2_c5_hh9(self):
     AB = 2 * a
     dk = 2 * R
 
-    noidungcauhoi = ('''Một nhà khảo cổ tìm được một mảnh vỡ của một chiếc đĩa gốm cổ hình tròn. Để tìm lại kích thước của chiếc đĩa ban đầu, ông đo được một dây cung $AB = %s\\text{ cm}$ nằm trọn trên mảnh vỡ và đo khoảng cách từ điểm chính giữa $M$ của cung nhỏ $\\overparen{AB}$ đến dây cung $AB$ bằng $%s\\text{ cm}$ (như hình vẽ).
+    noidungcauhoi = ('''Một nhà khảo cổ tìm được một mảnh vỡ của một chiếc đĩa gốm cổ hình tròn. Để tìm lại kích thước của chiếc đĩa ban đầu, ông đo được một dây cung $AB = %s\\text{ cm}$ nằm trọn trên mảnh vỡ và đo khoảng cách từ điểm chính giữa $M$ của cung nhỏ $\\overset\\frown{AB}$ đến dây cung $AB$ bằng $%s\\text{ cm}$ (như hình vẽ).
     \\begin{center}
     \\begin{tikzpicture}[scale=1, font=\\footnotesize, line join=round, line cap=round, >=stealth]
     \\coordinate (O) at (0,0);
@@ -152,10 +152,10 @@ def bt_dang16_p2_b2_c5_hh9(self):
     \\end{tikzpicture}
     \\end{center}''' % (AB, h))
 
-    nb_da_1_d = '\\True Đường thẳng nối tâm $O$ của đĩa với điểm chính giữa $M$ của cung nhỏ $\\overparen{AB}$ vuông góc với dây $AB$ tại trung điểm $H$ của $AB$'
-    nb_da_1_s = 'Đường thẳng nối tâm $O$ của đĩa với điểm chính giữa $M$ của cung nhỏ $\\overparen{AB}$ song song với dây $AB$'
+    nb_da_1_d = '\\True Đường thẳng nối tâm $O$ của đĩa với điểm chính giữa $M$ của cung nhỏ $\\overset\\frown{AB}$ vuông góc với dây $AB$ tại trung điểm $H$ của $AB$'
+    nb_da_1_s = 'Đường thẳng nối tâm $O$ của đĩa với điểm chính giữa $M$ của cung nhỏ $\\overset\\frown{AB}$ song song với dây $AB$'
     list_nb_da_1 = [nb_da_1_d, nb_da_1_s]
-    loigiai_nb_1 = ('''Vì $M$ là điểm chính giữa cung nhỏ $\\overparen{AB}$ và $OA = OB = R$ nên $OM$ là đường trung trực của dây $AB$, do đó $OM \\perp AB$ tại trung điểm $H$ của $AB$.''')
+    loigiai_nb_1 = ('''Vì $M$ là điểm chính giữa cung nhỏ $\\overset\\frown{AB}$ và $OA = OB = R$ nên $OM$ là đường trung trực của dây $AB$, do đó $OM \\perp AB$ tại trung điểm $H$ của $AB$.''')
     list_nb_2 = [loigiai_nb_1]
 
     th_da_1_d = '\\True Độ dài đoạn thẳng $AH$ bằng $%s\\text{ cm}$' % (a)

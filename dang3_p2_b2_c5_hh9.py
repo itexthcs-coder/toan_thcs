@@ -153,22 +153,22 @@ def bt_dang3_p2_b2_c5_hh9(self):
     loigiai_nb_1 = ('''Các góc ở tâm có đỉnh là tâm $O$ và hai cạnh đi qua hai trong ba điểm $A, B, C$ gồm $3$ góc là $\\widehat{AOB}$, $\\widehat{AOC}$ và góc bẹt $\\widehat{BOC}$.''')
     list_nb_2 = [loigiai_nb_1]
 
-    th_da_1_d = '\\True Số đo của cung nhỏ $\\overparen{AB}$ bằng $%s^\\circ$' % (goc_aob)
-    th_da_1_s = 'Số đo của cung nhỏ $\\overparen{AB}$ bằng $%s^\\circ$' % (goc_aoc)
+    th_da_1_d = '\\True Số đo của cung nhỏ $\\overset\\frown{AB}$ bằng $%s^\\circ$' % (goc_aob)
+    th_da_1_s = 'Số đo của cung nhỏ $\\overset\\frown{AB}$ bằng $%s^\\circ$' % (goc_aoc)
     list_th_da_1 = [th_da_1_d, th_da_1_s]
-    loigiai_th_1 = ('''Vì góc ở tâm $\\widehat{AOB} = %s^\\circ$ chắn cung nhỏ $\\overparen{AB}$ nên số đo cung nhỏ $\\overparen{AB}$ bằng $\\widehat{AOB} = %s^\\circ$.''' % (goc_aob, goc_aob))
+    loigiai_th_1 = ('''Vì góc ở tâm $\\widehat{AOB} = %s^\\circ$ chắn cung nhỏ $\\overset\\frown{AB}$ nên số đo cung nhỏ $\\overset\\frown{AB}$ bằng $\\widehat{AOB} = %s^\\circ$.''' % (goc_aob, goc_aob))
     list_th_2 = [loigiai_th_1]
 
-    vd_da_1_d = '\\True Số đo của cung nhỏ $\\overparen{AC}$ bằng $%s^\\circ$' % (goc_aoc)
-    vd_da_1_s = 'Số đo của cung nhỏ $\\overparen{AC}$ bằng $%s^\\circ$' % (goc_aob)
+    vd_da_1_d = '\\True Số đo của cung nhỏ $\\overset\\frown{AC}$ bằng $%s^\\circ$' % (goc_aoc)
+    vd_da_1_s = 'Số đo của cung nhỏ $\\overset\\frown{AC}$ bằng $%s^\\circ$' % (goc_aob)
     list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
-    loigiai_vd_1 = ('''Vì $BC$ là đường kính nên $\\widehat{AOB}$ và $\\widehat{AOC}$ là hai góc kề bù, suy ra $\\widehat{AOC} = 180^\\circ - \\widehat{AOB} = 180^\\circ - %s^\\circ = %s^\\circ$. \\\\ Do đó số đo cung nhỏ $\\overparen{AC}$ bằng $\\widehat{AOC} = %s^\\circ$.''' % (goc_aob, goc_aoc, goc_aoc))
+    loigiai_vd_1 = ('''Vì $BC$ là đường kính nên $\\widehat{AOB}$ và $\\widehat{AOC}$ là hai góc kề bù, suy ra $\\widehat{AOC} = 180^\\circ - \\widehat{AOB} = 180^\\circ - %s^\\circ = %s^\\circ$. \\\\ Do đó số đo cung nhỏ $\\overset\\frown{AC}$ bằng $\\widehat{AOC} = %s^\\circ$.''' % (goc_aob, goc_aoc, goc_aoc))
     list_vd_2 = [loigiai_vd_1]
 
-    vdc_da_1_d = '\\True Số đo của cung lớn $\\overparen{AB}$ bằng $%s^\\circ$' % (cung_lon_ab)
-    vdc_da_1_s = 'Số đo của cung lớn $\\overparen{AB}$ bằng $%s^\\circ$' % (180 + goc_aob)
+    vdc_da_1_d = '\\True Số đo của cung lớn $\\overset\\frown{AB}$ bằng $%s^\\circ$' % (cung_lon_ab)
+    vdc_da_1_s = 'Số đo của cung lớn $\\overset\\frown{AB}$ bằng $%s^\\circ$' % (180 + goc_aob)
     list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
-    loigiai_vdc_1 = ('''Số đo cung lớn $\\overparen{AB}$ có chung hai mút $A, B$ với cung nhỏ $\\overparen{AB}$ là $\\text{sđ}\\overparen{AB}_{\\text{lớn}} = 360^\\circ - \\text{sđ}\\overparen{AB}_{\\text{nhỏ}} = 360^\\circ - %s^\\circ = %s^\\circ$.''' % (goc_aob, cung_lon_ab))
+    loigiai_vdc_1 = ('''Số đo cung lớn $\\overset\\frown{AB}$ có chung hai mút $A, B$ với cung nhỏ $\\overset\\frown{AB}$ là $\\text{sđ}\\overset\\frown{AB}_{\\text{lớn}} = 360^\\circ - \\text{sđ}\\overset\\frown{AB}_{\\text{nhỏ}} = 360^\\circ - %s^\\circ = %s^\\circ$.''' % (goc_aob, cung_lon_ab))
     list_vdc_2 = [loigiai_vdc_1]
 
     def count_true_answers(answers):

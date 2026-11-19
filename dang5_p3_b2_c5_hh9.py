@@ -138,7 +138,7 @@ def bt_dang5_p3_b2_c5_hh9(self):
         kq_str = '240'
 
         # Nội dung câu hỏi
-        noidungcauhoi = ('''Cho điểm $%s$ nằm trên đường tròn $(%s)$. Đường trung trực của đoạn thẳng $%s%s$ cắt đường tròn $(%s)$ tại hai điểm phân biệt $%s$ và $%s$ (như hình vẽ). Tính số đo của cung lớn $\\overparen{%s%s}$ (đơn vị: độ).
+        noidungcauhoi = ('''Cho điểm $%s$ nằm trên đường tròn $(%s)$. Đường trung trực của đoạn thẳng $%s%s$ cắt đường tròn $(%s)$ tại hai điểm phân biệt $%s$ và $%s$ (như hình vẽ). Tính số đo của cung lớn $\\overset\\frown{%s%s}$ (đơn vị: độ).
         \\begin{center}
         \\begin{tikzpicture}[scale=1, font=\\footnotesize, line join=round, line cap=round, >=stealth]
         \\coordinate (O) at (0,0);
@@ -160,7 +160,7 @@ def bt_dang5_p3_b2_c5_hh9(self):
         Mặt khác, $%s%s = %s%s = %s%s$ (cùng bằng bán kính đường tròn $(%s)$).\\\\
         Suy ra $%s%s = %s%s = %s%s$ và $%s%s = %s%s = %s%s$, do đó hai tam giác $%s%s%s$ và $%s%s%s$ là các tam giác đều.\\\\
         Suy ra $\\widehat{%s%s%s} = 60^\\circ$ và $\\widehat{%s%s%s} = 60^\\circ$, dẫn đến $\\widehat{%s%s%s} = 60^\\circ + 60^\\circ = 120^\\circ$.\\\\
-        Do đó số đo cung nhỏ $\\overparen{%s%s}$ bằng $120^\\circ$, vậy số đo cung lớn $\\overparen{%s%s}$ bằng $360^\\circ - 120^\\circ = 240^\\circ$.'''
+        Do đó số đo cung nhỏ $\\overset\\frown{%s%s}$ bằng $120^\\circ$, vậy số đo cung lớn $\\overset\\frown{%s%s}$ bằng $360^\\circ - 120^\\circ = 240^\\circ$.'''
                    % (d1, d2, tam, d_giua, d1, tam, d1, d_giua, d2, tam, d2, d_giua,
                       tam, d1, tam, d2, tam, d_giua, tam,
                       tam, d1, d1, d_giua, tam, d_giua, tam, d2, d2, d_giua, tam, d_giua, tam, d1, d_giua, tam, d2, d_giua,

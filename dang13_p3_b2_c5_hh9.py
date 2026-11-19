@@ -162,7 +162,7 @@ def bt_dang13_p3_b2_c5_hh9(self):
         loigiai = ('''Gọi $H$ là trung điểm của dây cung $AB$, ta có $OH \\perp AB$ và $AH = \\dfrac{AB}{2} = \\dfrac{%s}{2} = %s\\text{ m}$.\\\\
         Áp dụng định lí Pythagore trong tam giác $OHA$ vuông tại $H$, ta có:\\\\
         $OH = \\sqrt{OA^2 - AH^2} = \\sqrt{%s^2 - %s^2} = %s\\text{ m}$.\\\\
-        Điểm cao nhất $M$ của vòm cổng là điểm chính giữa cung nhỏ $\\overparen{AB}$ nên $O, H, M$ thẳng hàng và $OM = R = %s\\text{ m}$.\\\\
+        Điểm cao nhất $M$ của vòm cổng là điểm chính giữa cung nhỏ $\\overset\\frown{AB}$ nên $O, H, M$ thẳng hàng và $OM = R = %s\\text{ m}$.\\\\
         Vậy chiều cao từ thanh dầm ngang lên đến đỉnh vòm là $MH = OM - OH = %s - %s = %s\\text{ m}$.'''
                    % (AB, AH, R, AH, OH, R, R, OH, chieu_cao))
 

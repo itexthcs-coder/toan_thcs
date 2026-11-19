@@ -149,9 +149,9 @@ def bt_dang19_p4_b2_c5_hh9(self):
         R_1tp = str(Decimal(str(R_val)).quantize(Decimal('0.1'), rounding=ROUND_HALF_UP)).replace('.', ',')
         MH_round = str(Decimal(str(MH_val)).quantize(Decimal('0.1'), rounding=ROUND_HALF_UP)).replace('.', ',')
 
-        noidungcauhoi = ('''Khi thiết kế một đoạn đường cao tốc uốn cong theo một cung tròn $\\overparen{AB}$ tâm $O$, các kĩ sư đo được góc ở tâm chắn cung $\\overparen{AB}$ bằng $%s^\\circ$ và chiều dài đường chim bay (dây cung $AB$) nối hai đầu đoạn cong bằng $%s\\text{ m}$ (như hình vẽ).\\\\
+        noidungcauhoi = ('''Khi thiết kế một đoạn đường cao tốc uốn cong theo một cung tròn $\\overset\\frown{AB}$ tâm $O$, các kĩ sư đo được góc ở tâm chắn cung $\\overset\\frown{AB}$ bằng $%s^\\circ$ và chiều dài đường chim bay (dây cung $AB$) nối hai đầu đoạn cong bằng $%s\\text{ m}$ (như hình vẽ).\\\\
                          a) Tính bán kính $R$ của cung tròn đoạn đường cao tốc đó (làm tròn kết quả đến hàng đơn vị của mét).\\\\
-                         b) Tính khoảng cách từ điểm chính giữa $M$ của cung nhỏ $\\overparen{AB}$ đến đường chim bay $AB$ (làm tròn kết quả đến hàng phần mười của mét).
+                         b) Tính khoảng cách từ điểm chính giữa $M$ của cung nhỏ $\\overset\\frown{AB}$ đến đường chim bay $AB$ (làm tròn kết quả đến hàng phần mười của mét).
                          \\begin{center}
                          \\begin{tikzpicture}[scale=1, font=\\footnotesize, line join=round, line cap=round, >=stealth]
                          \\coordinate (O) at (0,0);
@@ -177,7 +177,7 @@ def bt_dang19_p4_b2_c5_hh9(self):
                         Xét tam giác $OHA$ vuông tại $H$, ta có:\\\\
                         $\\sin \\widehat{AOH} = \\dfrac{AH}{OA} \\Rightarrow R = OA = \\dfrac{AH}{\\sin %s^\\circ} = \\dfrac{%s}{\\sin %s^\\circ} \\approx %s\\text{ m}$.
                         \\item Trong tam giác $OHA$ vuông tại $H$, ta có $OH = OA \\cdot \\cos %s^\\circ = \\dfrac{%s}{\\sin %s^\\circ} \\cdot \\cos %s^\\circ \\approx %s\\text{ m}$.\\\\
-                        Vì $M$ là điểm chính giữa cung nhỏ $\\overparen{AB}$ nên $O, H, M$ thẳng hàng và $OM = R \\approx %s\\text{ m}$.\\\\
+                        Vì $M$ là điểm chính giữa cung nhỏ $\\overset\\frown{AB}$ nên $O, H, M$ thẳng hàng và $OM = R \\approx %s\\text{ m}$.\\\\
                         Vậy khoảng cách từ điểm chính giữa $M$ đến đường chim bay $AB$ là $MH = OM - OH \\approx %s - %s = %s\\text{ m}$.
                         \\end{enumEX}'''
                    % (AB, nua_AB, goc_aob, nua_goc, nua_goc, nua_AB, nua_goc, R_round,

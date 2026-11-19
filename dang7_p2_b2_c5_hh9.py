@@ -133,7 +133,7 @@ def bt_dang7_p2_b2_c5_hh9(self):
     R_val = kc / math.cos(math.radians(nua_goc))
     R_round = str(Decimal(str(R_val)).quantize(Decimal('0.1'), rounding=ROUND_HALF_UP)).replace('.', ',')
 
-    noidungcauhoi = ('''Tâm $O$ của một đường tròn cách dây $AB$ của nó một khoảng bằng $%s\\text{ cm}$. Biết rằng cung nhỏ $\\overparen{AB}$ có số đo bằng $%s^\\circ$ (như hình vẽ).
+    noidungcauhoi = ('''Tâm $O$ của một đường tròn cách dây $AB$ của nó một khoảng bằng $%s\\text{ cm}$. Biết rằng cung nhỏ $\\overset\\frown{AB}$ có số đo bằng $%s^\\circ$ (như hình vẽ).
     \\begin{center}
     \\begin{tikzpicture}[scale=1, font=\\footnotesize, line join=round, line cap=round, >=stealth]
     \\coordinate (O) at (0,0);
@@ -153,7 +153,7 @@ def bt_dang7_p2_b2_c5_hh9(self):
     nb_da_1_d = '\\True Góc ở tâm $\\widehat{AOB}$ có số đo bằng $%s^\\circ$' % (goc_cung)
     nb_da_1_s = 'Góc ở tâm $\\widehat{AOB}$ có số đo bằng $%s^\\circ$' % (360 - goc_cung)
     list_nb_da_1 = [nb_da_1_d, nb_da_1_s]
-    loigiai_nb_1 = ('''Vì góc ở tâm $\\widehat{AOB}$ chắn cung nhỏ $\\overparen{AB}$ có số đo bằng $%s^\\circ$ nên $\\widehat{AOB} = %s^\\circ$.''' % (goc_cung, goc_cung))
+    loigiai_nb_1 = ('''Vì góc ở tâm $\\widehat{AOB}$ chắn cung nhỏ $\\overset\\frown{AB}$ có số đo bằng $%s^\\circ$ nên $\\widehat{AOB} = %s^\\circ$.''' % (goc_cung, goc_cung))
     list_nb_2 = [loigiai_nb_1]
 
     th_da_1_d = '\\True Gọi $H$ là hình chiếu của $O$ trên $AB$, ta có $\\widehat{AOH} = %s^\\circ$' % (nua_goc)

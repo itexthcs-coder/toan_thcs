@@ -143,7 +143,7 @@ def bt_dang15_p4_b2_c5_hh9(self):
         tong_dai_str = str(tong_dai).replace('.', ',')
 
         noidungcauhoi = ('''Một ô cửa sổ kính màu hình tròn tâm $O$, bán kính $R = %s\\text{ m}$ được chia thành $6$ cánh hoa đối xứng đều nhau bởi $6$ bán kính $OA_1, OA_2, OA_3, OA_4, OA_5, OA_6$ (như hình vẽ).\\\\
-                         a) Tính số đo của mỗi cung nhỏ $\\overparen{A_1A_2}$ trên vành cửa sổ.\\\\
+                         a) Tính số đo của mỗi cung nhỏ $\\overset\\frown{A_1A_2}$ trên vành cửa sổ.\\\\
                          b) Người thợ uốn một khung thép lục giác đều $A_1A_2A_3A_4A_5A_6$ nội tiếp trong vành cửa sổ. Tính tổng chiều dài thanh thép cần dùng để làm khung lục giác đều này.
                          \\begin{center}
                          \\begin{tikzpicture}[scale=1, font=\\footnotesize, line join=round, line cap=round, >=stealth]
@@ -166,7 +166,7 @@ def bt_dang15_p4_b2_c5_hh9(self):
                          % (R_str))
 
         loigiai = ('''\\begin{enumEX}[a)]{1}
-                        \\item Vì vành cửa sổ hình tròn $360^\\circ$ được chia thành $6$ cung nhỏ bằng nhau nên số đo của mỗi cung nhỏ $\\overparen{A_1A_2}$ bằng $\\dfrac{360^\\circ}{6} = 60^\\circ$.
+                        \\item Vì vành cửa sổ hình tròn $360^\\circ$ được chia thành $6$ cung nhỏ bằng nhau nên số đo của mỗi cung nhỏ $\\overset\\frown{A_1A_2}$ bằng $\\dfrac{360^\\circ}{6} = 60^\\circ$.
                         \\item Với mỗi cạnh $A_iA_{i+1}$ của lục giác đều, tam giác $OA_iA_{i+1}$ có $OA_i = OA_{i+1} = R = %s\\text{ m}$ và góc ở tâm $\\widehat{A_iOA_{i+1}} = 60^\\circ$ nên là tam giác đều.\\\\
                         Suy ra độ dài mỗi cạnh của khung lục giác đều bằng $R = %s\\text{ m}$.\\\\
                         Vậy tổng chiều dài thanh thép cần dùng để làm khung lục giác đều gồm $6$ cạnh là $6 \\cdot %s = %s\\text{ m}$.
