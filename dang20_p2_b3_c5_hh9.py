@@ -124,10 +124,6 @@ from mpl_toolkits.mplot3d import Axes3D
 
 
 
-
-
-
-
 def bt_dang20_p2_b3_c5_hh9(self):
     R_m = Rational(8, 10)
     day_ab = R_m * sqrt(2)
@@ -146,7 +142,7 @@ def bt_dang20_p2_b3_c5_hh9(self):
         \draw[dashed] (0,0) -- (135:2.2cm);
         \fill (0,0) circle (1.5pt) node[below] {$O$};
     \end{tikzpicture}
-    \end{center}"""())
+    \end{center}""")
 
     noidungcauhoi = (r"""Một ô thoáng cửa sổ phía trên có dạng hình viên phân được giới hạn bởi một cung tròn có số đo $90^\circ$ của đường tròn bán kính $R = 0,8\text{ m}$ và một thanh ngang (dây căng cung đó, như hình vẽ). Xét tính đúng sai của các khẳng định sau:
     %s""" % hinh_ve)
