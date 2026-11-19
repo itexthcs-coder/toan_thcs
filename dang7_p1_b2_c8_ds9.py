@@ -140,13 +140,13 @@ def bt_dang7_p1_b2_c8_ds9(self):
         ])
         t1, k1, t2, k2, t3, k3 = bo_ba
 
-        du = ['$\{%s%s%s; %s%s%s\\}$' % (k1, k2, k3, k3, k2, k1)]
+        du = ['$\\{%s%s%s; %s%s%s\\}$' % (k1, k2, k3, k3, k2, k1)]
         da = random.choice(du)
         s = [
-            '$\{%s%s%s; %s%s%s\\}$' % (k2, k1, k3, k2, k3, k1),
-            '$\{%s%s%s; %s%s%s\\}$' % (k1, k3, k2, k3, k1, k2),
-            '$\{%s%s%s; %s%s%s\\}$' % (k1, k2, k3, k2, k1, k3),
-            '$\{%s%s%s; %s%s%s; %s%s%s\\}$' % (k1, k2, k3, k3, k2, k1, k2, k1, k3)
+            '$\\{%s%s%s; %s%s%s\\}$' % (k2, k1, k3, k2, k3, k1),
+            '$\\{%s%s%s; %s%s%s\\}$' % (k1, k3, k2, k3, k1, k2),
+            '$\\{%s%s%s; %s%s%s\\}$' % (k1, k2, k3, k2, k1, k3),
+            '$\\{%s%s%s; %s%s%s; %s%s%s\\}$' % (k1, k2, k3, k3, k2, k1, k2, k1, k3)
         ]
         das1 = random.choice(s)
         s.remove(das1)

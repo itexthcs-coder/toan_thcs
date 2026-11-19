@@ -140,13 +140,13 @@ def bt_dang5_p1_b2_c8_ds9(self):
         ])
         nuoc_1, kh_n1, nuoc_2, kh_n2, banh_1, kh_b1, banh_2, kh_b2 = bo_mon
 
-        du = ['$\Omega = \\{(%s, %s); (%s, %s); (%s, %s); (%s, %s)\\}$' % (kh_n1, kh_b1, kh_n1, kh_b2, kh_n2, kh_b1, kh_n2, kh_b2)]
+        du = ['$\\Omega = \\{(%s, %s); (%s, %s); (%s, %s); (%s, %s)\\}$' % (kh_n1, kh_b1, kh_n1, kh_b2, kh_n2, kh_b1, kh_n2, kh_b2)]
         da = random.choice(du)
         s = [
-            '$\Omega = \\{%s; %s; %s; %s\\}$' % (kh_n1, kh_n2, kh_b1, kh_b2),
-            '$\Omega = \\{(%s, %s); (%s, %s)\\}$' % (kh_n1, kh_n2, kh_b1, kh_b2),
-            '$\Omega = \\{(%s, %s); (%s, %s)\\}$' % (kh_n1, kh_b1, kh_n2, kh_b2),
-            '$\Omega = \\{(%s, %s); (%s, %s); (%s, %s)\\}$' % (kh_n1, kh_b1, kh_n1, kh_b2, kh_n2, kh_b1)
+            '$\\Omega = \\{%s; %s; %s; %s\\}$' % (kh_n1, kh_n2, kh_b1, kh_b2),
+            '$\\Omega = \\{(%s, %s); (%s, %s)\\}$' % (kh_n1, kh_n2, kh_b1, kh_b2),
+            '$\\Omega = \\{(%s, %s); (%s, %s)\\}$' % (kh_n1, kh_b1, kh_n2, kh_b2),
+            '$\\Omega = \\{(%s, %s); (%s, %s); (%s, %s)\\}$' % (kh_n1, kh_b1, kh_n1, kh_b2, kh_n2, kh_b1)
         ]
         das1 = random.choice(s)
         s.remove(das1)
