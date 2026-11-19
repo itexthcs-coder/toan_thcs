@@ -137,13 +137,13 @@ def bt_dang8_p1_b2_c5_hh9(self):
         d1, d_giua, d2 = bo_diem[0], bo_diem[1], bo_diem[2]
 
         # Các đáp án trắc nghiệm
-        du = ['$\\text{sđ}\\overparen{%s%s%s} = \\text{sđ}\\overparen{%s%s} + \\text{sđ}\\overparen{%s%s}$' % (d1, d_giua, d2, d1, d_giua, d_giua, d2)]
+        du = ['$\\text{sđ}\\overset\\frown{%s%s%s} = \\text{sđ}\\overset\\frown{%s%s} + \\text{sđ}\\overset\\frown{%s%s}$' % (d1, d_giua, d2, d1, d_giua, d_giua, d2)]
         da = random.choice(du)
         s = [
-            '$\\text{sđ}\\overparen{%s%s} = \\text{sđ}\\overparen{%s%s%s} + \\text{sđ}\\overparen{%s%s}$' % (d1, d_giua, d1, d_giua, d2, d_giua, d2),
-            '$\\text{sđ}\\overparen{%s%s} = \\text{sđ}\\overparen{%s%s%s} + \\text{sđ}\\overparen{%s%s}$' % (d_giua, d2, d1, d_giua, d2, d1, d_giua),
-            '$\\text{sđ}\\overparen{%s%s%s} + \\text{sđ}\\overparen{%s%s} + \\text{sđ}\\overparen{%s%s} = 180^\\circ$' % (d1, d_giua, d2, d1, d_giua, d_giua, d2),
-            '$\\text{sđ}\\overparen{%s%s%s} = \\text{sđ}\\overparen{%s%s} - \\text{sđ}\\overparen{%s%s}$' % (d1, d_giua, d2, d1, d_giua, d_giua, d2)
+            '$\\text{sđ}\\overset\\frown{%s%s} = \\text{sđ}\\overset\\frown{%s%s%s} + \\text{sđ}\\overset\\frown{%s%s}$' % (d1, d_giua, d1, d_giua, d2, d_giua, d2),
+            '$\\text{sđ}\\overset\\frown{%s%s} = \\text{sđ}\\overset\\frown{%s%s%s} + \\text{sđ}\\overset\\frown{%s%s}$' % (d_giua, d2, d1, d_giua, d2, d1, d_giua),
+            '$\\text{sđ}\\overset\\frown{%s%s%s} + \\text{sđ}\\overset\\frown{%s%s} + \\text{sđ}\\overset\\frown{%s%s} = 180^\\circ$' % (d1, d_giua, d2, d1, d_giua, d_giua, d2),
+            '$\\text{sđ}\\overset\\frown{%s%s%s} = \\text{sđ}\\overset\\frown{%s%s} - \\text{sđ}\\overset\\frown{%s%s}$' % (d1, d_giua, d2, d1, d_giua, d_giua, d2)
         ]
 
         das1 = random.choice(s)
@@ -153,7 +153,7 @@ def bt_dang8_p1_b2_c5_hh9(self):
         das3 = random.choice(s)
 
         # Câu hỏi
-        noidungcauhoi = ('''Cho điểm $%s$ nằm trên cung $\\overparen{%s%s%s}$ của đường tròn $(%s)$ như hình vẽ. Đẳng thức nào sau đây đúng?
+        noidungcauhoi = ('''Cho điểm $%s$ nằm trên cung $\\overset\\frown{%s%s%s}$ của đường tròn $(%s)$ như hình vẽ. Đẳng thức nào sau đây đúng?
         \\begin{center}
         \\begin{tikzpicture}[scale=1, font=\\footnotesize, line join=round, line cap=round, >=stealth]
         \\coordinate (O) at (0,0);
@@ -181,7 +181,7 @@ def bt_dang8_p1_b2_c5_hh9(self):
         random.shuffle(list_1)
 
         # Nội dung lời giải
-        loigiai = ('''Theo nhận xét về cộng số đo cung: Nếu $%s$ là một điểm thuộc cung $\\overparen{%s%s%s}$ thì $\\text{sđ}\\overparen{%s%s%s} = \\text{sđ}\\overparen{%s%s} + \\text{sđ}\\overparen{%s%s}$.'''
+        loigiai = ('''Theo nhận xét về cộng số đo cung: Nếu $%s$ là một điểm thuộc cung $\\overset\\frown{%s%s%s}$ thì $\\text{sđ}\\overset\\frown{%s%s%s} = \\text{sđ}\\overset\\frown{%s%s} + \\text{sđ}\\overset\\frown{%s%s}$.'''
                    % (d_giua, d1, d_giua, d2, d1, d_giua, d2, d1, d_giua, d_giua, d2))
 
     # Xuất câu trắc nghiệm

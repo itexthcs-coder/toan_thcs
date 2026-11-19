@@ -151,7 +151,7 @@ def bt_dang7_p1_b2_c5_hh9(self):
         das3 = random.choice(s)
 
         # Câu hỏi
-        noidungcauhoi = ('''Trên cùng một đường tròn $(%s)$ (như hình vẽ), hai cung $\\overparen{AB}$ và $\\overparen{CD}$ được gọi là bằng nhau khi nào?
+        noidungcauhoi = ('''Trên cùng một đường tròn $(%s)$ (như hình vẽ), hai cung $\\overset\\frown{AB}$ và $\\overset\\frown{CD}$ được gọi là bằng nhau khi nào?
         \\begin{center}
         \\begin{tikzpicture}[scale=1, font=\\footnotesize, line join=round, line cap=round, >=stealth]
         \\coordinate (O) at (0,0);

@@ -137,10 +137,10 @@ def bt_dang4_p1_b2_c5_hh9(self):
         d1, d2 = diem[0], diem[1]
 
         # Các đáp án trắc nghiệm
-        du = ['Cung nhỏ $\\overparen{%s%s}$ bị chắn bởi góc ở tâm $\\widehat{%s%s%s}$' % (d1, d2, d1, tam, d2)]
+        du = ['Cung nhỏ $\\overset\\frown{%s%s}$ bị chắn bởi góc ở tâm $\\widehat{%s%s%s}$' % (d1, d2, d1, tam, d2)]
         da = random.choice(du)
         s = [
-            'Cung lớn $\\overparen{%s%s}$ bị chắn bởi góc ở tâm $\\widehat{%s%s%s}$' % (d1, d2, d1, tam, d2),
+            'Cung lớn $\\overset\\frown{%s%s}$ bị chắn bởi góc ở tâm $\\widehat{%s%s%s}$' % (d1, d2, d1, tam, d2),
             'Nửa đường tròn đường kính $%s%s$' % (d1, d2),
             'Dây cung $%s%s$ của đường tròn $(%s)$' % (d1, d2, tam),
             'Cung cả đường tròn tâm $%s$' % (tam)
@@ -179,7 +179,7 @@ def bt_dang4_p1_b2_c5_hh9(self):
         random.shuffle(list_1)
 
         # Nội dung lời giải
-        loigiai = ('''Khi góc ở tâm $\\widehat{%s%s%s}$ không bẹt thì cung nằm trong góc $\\widehat{%s%s%s}$ gọi là cung nhỏ $\\overparen{%s%s}$ và ta nói cung $\\overparen{%s%s}$ bị chắn bởi góc ở tâm $\\widehat{%s%s%s}$.'''
+        loigiai = ('''Khi góc ở tâm $\\widehat{%s%s%s}$ không bẹt thì cung nằm trong góc $\\widehat{%s%s%s}$ gọi là cung nhỏ $\\overset\\frown{%s%s}$ và ta nói cung $\\overset\\frown{%s%s}$ bị chắn bởi góc ở tâm $\\widehat{%s%s%s}$.'''
                    % (d1, tam, d2, d1, tam, d2, d1, d2, d1, d2, d1, tam, d2))
 
     # Xuất câu trắc nghiệm

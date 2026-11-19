@@ -158,7 +158,7 @@ def bt_dang16_p1_b2_c5_hh9(self):
         das3 = random.choice(s)
 
         # Câu hỏi
-        noidungcauhoi = ('''Cho ba điểm $%s, %s, %s$ thuộc đường tròn $(%s)$ sao cho điểm $%s$ nằm trên cung nhỏ $\\overparen{%s%s}$ (như hình vẽ). Biết $\\text{sđ}\\overparen{%s%s} = %s^\\circ$ và $\\text{sđ}\\overparen{%s%s} = %s^\\circ$. Số đo của cung lớn $\\overparen{%s%s}$ bằng bao nhiêu?
+        noidungcauhoi = ('''Cho ba điểm $%s, %s, %s$ thuộc đường tròn $(%s)$ sao cho điểm $%s$ nằm trên cung nhỏ $\\overset\\frown{%s%s}$ (như hình vẽ). Biết $\\text{sđ}\\overset\\frown{%s%s} = %s^\\circ$ và $\\text{sđ}\\overset\\frown{%s%s} = %s^\\circ$. Số đo của cung lớn $\\overset\\frown{%s%s}$ bằng bao nhiêu?
         \\begin{center}
         \\begin{tikzpicture}[scale=1, font=\\footnotesize, line join=round, line cap=round, >=stealth]
         \\coordinate (O) at (0,0);
@@ -186,10 +186,10 @@ def bt_dang16_p1_b2_c5_hh9(self):
         random.shuffle(list_1)
 
         # Nội dung lời giải
-        loigiai = ('''Vì điểm $%s$ nằm trên cung nhỏ $\\overparen{%s%s}$ nên theo tính chất cộng số đo cung, ta có:\\\\
-        $\\text{sđ}\\overparen{%s%s}_{\\text{nhỏ}} = \\text{sđ}\\overparen{%s%s} + \\text{sđ}\\overparen{%s%s} = %s^\\circ + %s^\\circ = %s^\\circ$.\\\\
-        Vậy số đo của cung lớn $\\overparen{%s%s}$ là:\\\\
-        $\\text{sđ}\\overparen{%s%s}_{\\text{lớn}} = 360^\\circ - \\text{sđ}\\overparen{%s%s}_{\\text{nhỏ}} = 360^\\circ - %s^\\circ = %s^\\circ$.'''
+        loigiai = ('''Vì điểm $%s$ nằm trên cung nhỏ $\\overset\\frown{%s%s}$ nên theo tính chất cộng số đo cung, ta có:\\\\
+        $\\text{sđ}\\overset\\frown{%s%s}_{\\text{nhỏ}} = \\text{sđ}\\overset\\frown{%s%s} + \\text{sđ}\\overset\\frown{%s%s} = %s^\\circ + %s^\\circ = %s^\\circ$.\\\\
+        Vậy số đo của cung lớn $\\overset\\frown{%s%s}$ là:\\\\
+        $\\text{sđ}\\overset\\frown{%s%s}_{\\text{lớn}} = 360^\\circ - \\text{sđ}\\overset\\frown{%s%s}_{\\text{nhỏ}} = 360^\\circ - %s^\\circ = %s^\\circ$.'''
                    % (d2, d1, d3, d1, d3, d1, d2, d2, d3, sd1, sd2, sd_nho, d1, d3, d1, d3, d1, d3, sd_nho, sd_lon))
 
     # Xuất câu trắc nghiệm

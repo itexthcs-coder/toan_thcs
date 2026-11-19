@@ -157,7 +157,7 @@ def bt_dang11_p1_b2_c5_hh9(self):
         das3 = random.choice(s)
 
         # Câu hỏi
-        noidungcauhoi = ('''Cho hai điểm $%s, %s$ thuộc đường tròn $(%s)$ sao cho góc ở tâm $\\widehat{%s%s%s} = %s^\\circ$ (như hình vẽ). Số đo của cung lớn $\\overparen{%s%s}$ bằng bao nhiêu?
+        noidungcauhoi = ('''Cho hai điểm $%s, %s$ thuộc đường tròn $(%s)$ sao cho góc ở tâm $\\widehat{%s%s%s} = %s^\\circ$ (như hình vẽ). Số đo của cung lớn $\\overset\\frown{%s%s}$ bằng bao nhiêu?
         \\begin{center}
         \\begin{tikzpicture}[scale=1, font=\\footnotesize, line join=round, line cap=round, >=stealth]
         \\coordinate (O) at (0,0);
@@ -183,9 +183,9 @@ def bt_dang11_p1_b2_c5_hh9(self):
         random.shuffle(list_1)
 
         # Nội dung lời giải
-        loigiai = ('''Vì góc ở tâm $\\widehat{%s%s%s} = %s^\\circ$ chắn cung nhỏ $\\overparen{%s%s}$ nên số đo của cung nhỏ $\\overparen{%s%s}$ bằng $%s^\\circ$.\\\\
-        Số đo của cung lớn $\\overparen{%s%s}$ có chung hai mút $%s, %s$ với cung nhỏ $\\overparen{%s%s}$ là:\\\\
-        $\\text{sđ}\\overparen{%s%s}_{\\text{lớn}} = 360^\\circ - \\text{sđ}\\overparen{%s%s}_{\\text{nhỏ}} = 360^\\circ - %s^\\circ = %s^\\circ$.'''
+        loigiai = ('''Vì góc ở tâm $\\widehat{%s%s%s} = %s^\\circ$ chắn cung nhỏ $\\overset\\frown{%s%s}$ nên số đo của cung nhỏ $\\overset\\frown{%s%s}$ bằng $%s^\\circ$.\\\\
+        Số đo của cung lớn $\\overset\\frown{%s%s}$ có chung hai mút $%s, %s$ với cung nhỏ $\\overset\\frown{%s%s}$ là:\\\\
+        $\\text{sđ}\\overset\\frown{%s%s}_{\\text{lớn}} = 360^\\circ - \\text{sđ}\\overset\\frown{%s%s}_{\\text{nhỏ}} = 360^\\circ - %s^\\circ = %s^\\circ$.'''
                    % (d1, tam, d2, goc, d1, d2, d1, d2, goc, d1, d2, d1, d2, d1, d2, d1, d2, d1, d2, goc, cung_lon))
 
     # Xuất câu trắc nghiệm

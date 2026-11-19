@@ -156,7 +156,7 @@ def bt_dang9_p1_b2_c5_hh9(self):
         das3 = random.choice(s)
 
         # Câu hỏi
-        noidungcauhoi = ('''Cho đường tròn $(%s)$ và hai điểm $%s, %s$ nằm trên đường tròn sao cho $\\widehat{%s%s%s} = %s^\\circ$ (như hình vẽ). Số đo của cung nhỏ $\\overparen{%s%s}$ bằng bao nhiêu?
+        noidungcauhoi = ('''Cho đường tròn $(%s)$ và hai điểm $%s, %s$ nằm trên đường tròn sao cho $\\widehat{%s%s%s} = %s^\\circ$ (như hình vẽ). Số đo của cung nhỏ $\\overset\\frown{%s%s}$ bằng bao nhiêu?
         \\begin{center}
         \\begin{tikzpicture}[scale=1, font=\\footnotesize, line join=round, line cap=round, >=stealth]
         \\coordinate (O) at (0,0);
@@ -182,8 +182,8 @@ def bt_dang9_p1_b2_c5_hh9(self):
         random.shuffle(list_1)
 
         # Nội dung lời giải
-        loigiai = ('''Vì góc ở tâm $\\widehat{%s%s%s} = %s^\\circ$ ($0^\\circ < %s^\\circ < 180^\\circ$) chắn cung nhỏ $\\overparen{%s%s}$ nên số đo của cung nhỏ $\\overparen{%s%s}$ bằng số đo của góc ở tâm chắn cung đó.\\\\
-        Do đó $\\text{sđ}\\overparen{%s%s} = \\widehat{%s%s%s} = %s^\\circ$.'''
+        loigiai = ('''Vì góc ở tâm $\\widehat{%s%s%s} = %s^\\circ$ ($0^\\circ < %s^\\circ < 180^\\circ$) chắn cung nhỏ $\\overset\\frown{%s%s}$ nên số đo của cung nhỏ $\\overset\\frown{%s%s}$ bằng số đo của góc ở tâm chắn cung đó.\\\\
+        Do đó $\\text{sđ}\\overset\\frown{%s%s} = \\widehat{%s%s%s} = %s^\\circ$.'''
                    % (d1, tam, d2, goc, goc, d1, d2, d1, d2, d1, d2, d1, tam, d2, goc))
 
     # Xuất câu trắc nghiệm

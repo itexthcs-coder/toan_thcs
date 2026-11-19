@@ -154,7 +154,7 @@ def bt_dang14_p1_b2_c5_hh9(self):
         das3 = random.choice(s)
 
         # Câu hỏi
-        noidungcauhoi = ('''Trên đường tròn $(%s; %s\\text{ cm})$, lấy hai điểm $%s$ và $%s$ sao cho dây $%s%s = %s\\text{ cm}$ (như hình vẽ). Khi đó số đo cung lớn $\\overparen{%s%s}$ bằng bao nhiêu?
+        noidungcauhoi = ('''Trên đường tròn $(%s; %s\\text{ cm})$, lấy hai điểm $%s$ và $%s$ sao cho dây $%s%s = %s\\text{ cm}$ (như hình vẽ). Khi đó số đo cung lớn $\\overset\\frown{%s%s}$ bằng bao nhiêu?
         \\begin{center}
         \\begin{tikzpicture}[scale=1, font=\\footnotesize, line join=round, line cap=round, >=stealth]
         \\coordinate (O) at (0,0);
@@ -182,8 +182,8 @@ def bt_dang14_p1_b2_c5_hh9(self):
         # Nội dung lời giải
         loigiai = ('''Ta có $%s%s = %s%s = %s\\text{ cm}$ (bán kính đường tròn $(%s)$) và $%s%s = %s\\text{ cm}$ nên $%s%s = %s%s = %s%s$.\\\\
         Suy ra tam giác $%s%s%s$ là tam giác đều, do đó $\\widehat{%s%s%s} = 60^\\circ$.\\\\
-        Vì góc ở tâm $\\widehat{%s%s%s} = 60^\\circ$ chắn cung nhỏ $\\overparen{%s%s}$ nên $\\text{sđ}\\overparen{%s%s}_{\\text{nhỏ}} = 60^\\circ$.\\\\
-        Vậy số đo cung lớn $\\overparen{%s%s}$ là $\\text{sđ}\\overparen{%s%s}_{\\text{lớn}} = 360^\\circ - 60^\\circ = 300^\\circ$.'''
+        Vì góc ở tâm $\\widehat{%s%s%s} = 60^\\circ$ chắn cung nhỏ $\\overset\\frown{%s%s}$ nên $\\text{sđ}\\overset\\frown{%s%s}_{\\text{nhỏ}} = 60^\\circ$.\\\\
+        Vậy số đo cung lớn $\\overset\\frown{%s%s}$ là $\\text{sđ}\\overset\\frown{%s%s}_{\\text{lớn}} = 360^\\circ - 60^\\circ = 300^\\circ$.'''
                    % (tam, d1, tam, d2, R, tam, d1, d2, R, tam, d1, tam, d2, d1, d2,
                       tam, d1, d2, d1, tam, d2,
                       d1, tam, d2, d1, d2, d1, d2,

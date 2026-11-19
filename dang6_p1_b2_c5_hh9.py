@@ -160,7 +160,7 @@ def bt_dang6_p1_b2_c5_hh9(self):
         das3 = random.choice(s)
 
         # Câu hỏi
-        noidungcauhoi = ('''Cho hai điểm $A, B$ phân biệt trên đường tròn $(O)$ sao cho dây $AB$ không đi qua tâm (như hình vẽ). Số đo của %s $\\overparen{AB}$ luôn thỏa mãn điều kiện nào sau đây?
+        noidungcauhoi = ('''Cho hai điểm $A, B$ phân biệt trên đường tròn $(O)$ sao cho dây $AB$ không đi qua tâm (như hình vẽ). Số đo của %s $\\overset\\frown{AB}$ luôn thỏa mãn điều kiện nào sau đây?
         \\begin{center}
         \\begin{tikzpicture}[scale=1, font=\\footnotesize, line join=round, line cap=round, >=stealth]
         \\coordinate (O) at (0,0);

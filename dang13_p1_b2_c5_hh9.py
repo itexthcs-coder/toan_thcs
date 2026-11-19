@@ -157,7 +157,7 @@ def bt_dang13_p1_b2_c5_hh9(self):
         das3 = random.choice(s)
 
         # Câu hỏi
-        noidungcauhoi = ('''Cho đường tròn $(%s)$ và dây $%s%s$ (không đi qua tâm) sao cho $\\widehat{%s%s%s} = %s^\\circ$ (như hình vẽ). Số đo của cung nhỏ $\\overparen{%s%s}$ bằng bao nhiêu?
+        noidungcauhoi = ('''Cho đường tròn $(%s)$ và dây $%s%s$ (không đi qua tâm) sao cho $\\widehat{%s%s%s} = %s^\\circ$ (như hình vẽ). Số đo của cung nhỏ $\\overset\\frown{%s%s}$ bằng bao nhiêu?
         \\begin{center}
         \\begin{tikzpicture}[scale=1, font=\\footnotesize, line join=round, line cap=round, >=stealth]
         \\coordinate (O) at (0,0);
@@ -187,7 +187,7 @@ def bt_dang13_p1_b2_c5_hh9(self):
         Suy ra $\\widehat{%s%s%s} = \\widehat{%s%s%s} = %s^\\circ$.\\\\
         Áp dụng định lí tổng ba góc trong tam giác $%s%s%s$, ta có:\\\\
         $\\widehat{%s%s%s} = 180^\\circ - (\\widehat{%s%s%s} + \\widehat{%s%s%s}) = 180^\\circ - 2 \\cdot %s^\\circ = %s^\\circ$.\\\\
-        Vì góc ở tâm $\\widehat{%s%s%s} = %s^\\circ$ chắn cung nhỏ $\\overparen{%s%s}$ nên $\\text{sđ}\\overparen{%s%s} = %s^\\circ$.'''
+        Vì góc ở tâm $\\widehat{%s%s%s} = %s^\\circ$ chắn cung nhỏ $\\overset\\frown{%s%s}$ nên $\\text{sđ}\\overset\\frown{%s%s} = %s^\\circ$.'''
                    % (tam, d1, d2, tam, d1, tam, d2, tam, tam, d1, d2, tam,
                       tam, d2, d1, tam, d1, d2, goc_day,
                       tam, d1, d2,
