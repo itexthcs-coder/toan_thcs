@@ -165,7 +165,7 @@ def bt_dang9_p3_b1_c9_hh9(self):
         )
 
         loigiai = (
-            'Trong đường tròn $(O)$, góc nội tiếp $\\widehat{ADC}$ chắn cung nhỏ $AC$ nên $\\widehat{ADC} = \\dfrac{1}{2}\\text{sđ}\\overparen{AC} = \\dfrac{1}{2} \\cdot %s^\\circ = %s^\\circ$.\\\\'
+            'Trong đường tròn $(O)$, góc nội tiếp $\\widehat{ADC}$ chắn cung nhỏ $AC$ nên $\\widehat{ADC} = \\dfrac{1}{2}\\text{sđ}\\overset\\frown{AC} = \\dfrac{1}{2} \\cdot %s^\\circ = %s^\\circ$.\\\\'
             'Xét $\\triangle SAD$, góc $\\widehat{BAD}$ là góc ngoài tại đỉnh $A$ nên:\\\\'
             '$\\widehat{BAD} = \\widehat{BSD} + \\widehat{SDA} = %s^\\circ + %s^\\circ = %s^\\circ$.'
             % (cung_AC, goc_ADC, goc_S, goc_ADC, kq_str)
@@ -176,7 +176,7 @@ def bt_dang9_p3_b1_c9_hh9(self):
 
     # Xuất câu hỏi với đáp án và lời giải
     content = ('\\begin{minipage}{\\textwidth} \n'
-               '\\begin{ex}\n' + str(noidungcauhoi) + str(dapan) +
-               '\\loigiai{ \n' + str(loigiai) + '}\n'
-               '\\end{ex}\n \\end{minipage} \n\n')
+            '\\begin{ex}\n' + str(noidungcauhoi) + str(dapan) +
+            '\\loigiai{ \n' + str(loigiai) + '}\n'
+            '\\end{ex}\n \\end{minipage} \n\n')
     return content

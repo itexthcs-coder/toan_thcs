@@ -160,13 +160,13 @@ def bt_dang13_p3_b1_c9_hh9(self):
         )
 
         noidungcauhoi = (
-            'Cho nửa đường tròn $(O)$ đường kính $AB = %s\\text{ cm}$. Lấy hai điểm $C, D$ nằm trên nửa đường tròn (theo thứ tự $A, C, D, B$) sao cho $\\text{sđ}\\overparen{AC} = \\text{sđ}\\overparen{BD} = 60^\\circ$ như hình vẽ. Tính diện tích tứ giác $ABCD$ (tính theo đơn vị $\\text{cm}^2$, làm tròn kết quả đến hàng phần mười).\n%s'
+            'Cho nửa đường tròn $(O)$ đường kính $AB = %s\\text{ cm}$. Lấy hai điểm $C, D$ nằm trên nửa đường tròn (theo thứ tự $A, C, D, B$) sao cho $\\text{sđ}\\overset\\frown{AC} = \\text{sđ}\\overset\\frown{BD} = 60^\\circ$ như hình vẽ. Tính diện tích tứ giác $ABCD$ (tính theo đơn vị $\\text{cm}^2$, làm tròn kết quả đến hàng phần mười).\n%s'
             % (AB, hinh_ve)
         )
 
         loigiai = (
-            'Nửa đường tròn có số đo $180^\\circ$ nên $\\text{sđ}\\overparen{CD} = 180^\\circ - 60^\\circ - 60^\\circ = 60^\\circ$.\\\\'
-            'Ta có $\\widehat{ABC} = \\dfrac{1}{2}\\text{sđ}\\overparen{AC} = 30^\\circ$ và $\\widehat{BCD} = \\dfrac{1}{2}(\\text{sđ}\\overparen{BD} + \\text{sđ}\\overparen{AB}) = 150^\\circ$, suy ra $CD // AB$ và $AC = BD$ nên $ABCD$ là hình thang cân.\\\\'
+            'Nửa đường tròn có số đo $180^\\circ$ nên $\\text{sđ}\\overset\\frown{CD} = 180^\\circ - 60^\\circ - 60^\\circ = 60^\\circ$.\\\\'
+            'Ta có $\\widehat{ABC} = \\dfrac{1}{2}\\text{sđ}\\overset\\frown{AC} = 30^\\circ$ và $\\widehat{BCD} = \\dfrac{1}{2}(\\text{sđ}\\overset\\frown{BD} + \\text{sđ}\\overset\\frown{AB}) = 150^\\circ$, suy ra $CD // AB$ và $AC = BD$ nên $ABCD$ là hình thang cân.\\\\'
             'Do $\\widehat{COD} = 60^\\circ$ và $OC = OD = %s\\text{ cm}$ nên $\\triangle OCD$ đều, suy ra $CD = %s\\text{ cm}$ và chiều cao $CH = %s \\cdot \\sin 60^\\circ = %s\\sqrt{3}\\text{ cm}$.\\\\'
             'Diện tích hình thang cân $ABCD$ là $S_{ABCD} = \\dfrac{(AB + CD) \\cdot CH}{2} = \\dfrac{(%s + %s) \\cdot %s\\sqrt{3}}{2} \\approx %s\\text{ cm}^2$.'
             % (R, R, R, R // 2, AB, R, R // 2, kq_str)
