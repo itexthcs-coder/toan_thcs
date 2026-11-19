@@ -165,19 +165,19 @@ def bt_dang5_p2_b1_c9_hh9(self):
     th_da_1_d = '\\True Hai cung nhỏ $AC$ và $BD$ có số đo bằng nhau và cùng bằng $%s^\\circ$' % (sd_cung)
     th_da_1_s = 'Hai cung nhỏ $AC$ và $BD$ có tổng số đo bằng $%s^\\circ$' % (sd_cung)
     list_th_da_1 = [th_da_1_d, th_da_1_s]
-    loigiai_th_1 = 'Trong đường tròn $(O)$, góc nội tiếp $\\widehat{ABC} = %s^\\circ$ chắn cung nhỏ $AC$ nên $\\text{sđ}\\overparen{AC} = 2\\widehat{ABC} = %s^\\circ$; góc nội tiếp $\\widehat{BCD} = %s^\\circ$ chắn cung nhỏ $BD$ nên $\\text{sđ}\\overparen{BD} = 2\\widehat{BCD} = %s^\\circ$.' % (goc_ABC, sd_cung, goc_ABC, sd_cung)
+    loigiai_th_1 = 'Trong đường tròn $(O)$, góc nội tiếp $\\widehat{ABC} = %s^\\circ$ chắn cung nhỏ $AC$ nên $\\text{sđ}\\overset\\frown{AC} = 2\\widehat{ABC} = %s^\\circ$; góc nội tiếp $\\widehat{BCD} = %s^\\circ$ chắn cung nhỏ $BD$ nên $\\text{sđ}\\overset\\frown{BD} = 2\\widehat{BCD} = %s^\\circ$.' % (goc_ABC, sd_cung, goc_ABC, sd_cung)
     list_th_2 = [loigiai_th_1]
 
     vd_da_1_d = '\\True Độ dài hai dây cung $AC$ và $BD$ bằng nhau'
     vd_da_1_s = 'Độ dài dây cung $AC$ lớn hơn độ dài dây cung $BD$'
     list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
-    loigiai_vd_1 = 'Trong một đường tròn, hai cung bằng nhau căng hai dây bằng nhau. Vì $\\text{sđ}\\overparen{AC} = \\text{sđ}\\overparen{BD} = %s^\\circ$ nên $AC = BD$.' % (sd_cung)
+    loigiai_vd_1 = 'Trong một đường tròn, hai cung bằng nhau căng hai dây bằng nhau. Vì $\\text{sđ}\\overset\\frown{AC} = \\text{sđ}\\overset\\frown{BD} = %s^\\circ$ nên $AC = BD$.' % (sd_cung)
     list_vd_2 = [loigiai_vd_1]
 
     vdc_da_1_d = '\\True Nếu $CD$ là đường kính của $(O)$ thì số đo cung nhỏ $AB$ bằng $%s^\\circ$' % (cung_AB)
     vdc_da_1_s = 'Nếu $CD$ là đường kính của $(O)$ thì số đo cung nhỏ $AB$ bằng $%s^\\circ$' % (sd_cung)
     list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
-    loigiai_vdc_1 = 'Nếu $CD$ là đường kính của $(O)$ thì nửa đường tròn có số đo $180^\\circ$. Suy ra $\\text{sđ}\\overparen{AB} = 180^\\circ - (\\text{sđ}\\overparen{AC} + \\text{sđ}\\overparen{BD}) = 180^\\circ - (%s^\\circ + %s^\\circ) = %s^\\circ$.' % (sd_cung, sd_cung, cung_AB)
+    loigiai_vdc_1 = 'Nếu $CD$ là đường kính của $(O)$ thì nửa đường tròn có số đo $180^\\circ$. Suy ra $\\text{sđ}\\overset\\frown{AB} = 180^\\circ - (\\text{sđ}\\overset\\frown{AC} + \\text{sđ}\\overset\\frown{BD}) = 180^\\circ - (%s^\\circ + %s^\\circ) = %s^\\circ$.' % (sd_cung, sd_cung, cung_AB)
     list_vdc_2 = [loigiai_vdc_1]
 
     def count_true_answers(answers):

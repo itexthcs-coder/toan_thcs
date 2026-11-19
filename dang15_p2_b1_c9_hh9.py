@@ -160,26 +160,26 @@ def bt_dang15_p2_b1_c9_hh9(self):
     )
 
     noidungcauhoi = (
-        'Cho ba điểm $A, B, C$ nằm trên đường tròn $(O)$ sao cho $\\text{sđ}\\overparen{AB} : \\text{sđ}\\overparen{BC} : \\text{sđ}\\overparen{CA} = %s : %s : %s$ (các cung đều là cung nhỏ) như hình vẽ.\n%s'
+        'Cho ba điểm $A, B, C$ nằm trên đường tròn $(O)$ sao cho $\\text{sđ}\\overset\\frown{AB} : \\text{sđ}\\overset\\frown{BC} : \\text{sđ}\\overset\\frown{CA} = %s : %s : %s$ (các cung đều là cung nhỏ) như hình vẽ.\n%s'
         % (a_r, b_r, c_r, hinh_ve)
     )
 
     nb_da_1_d = '\\True Số đo cung nhỏ $AB$ bằng $%s^\\circ$' % (cung_AB)
     nb_da_1_s = 'Số đo cung nhỏ $AB$ bằng $%s^\\circ$' % (cung_AB // 2)
     list_nb_da_1 = [nb_da_1_d, nb_da_1_s]
-    loigiai_nb_1 = 'Vì tổng số đo ba cung nhỏ $AB, BC, CA$ bằng $360^\\circ$ nên $\\text{sđ}\\overparen{AB} = \\dfrac{%s}{%s + %s + %s} \\cdot 360^\\circ = %s^\\circ$.' % (a_r, a_r, b_r, c_r, cung_AB)
+    loigiai_nb_1 = 'Vì tổng số đo ba cung nhỏ $AB, BC, CA$ bằng $360^\\circ$ nên $\\text{sđ}\\overset\\frown{AB} = \\dfrac{%s}{%s + %s + %s} \\cdot 360^\\circ = %s^\\circ$.' % (a_r, a_r, b_r, c_r, cung_AB)
     list_nb_2 = [loigiai_nb_1]
 
     th_da_1_d = '\\True Số đo góc nội tiếp $\\widehat{ABC}$ bằng $%s^\\circ$' % (goc_B)
     th_da_1_s = 'Số đo góc nội tiếp $\\widehat{ABC}$ bằng $%s^\\circ$' % (cung_CA)
     list_th_da_1 = [th_da_1_d, th_da_1_s]
-    loigiai_th_1 = 'Ta có $\\text{sđ}\\overparen{CA} = \\dfrac{%s}{%s} \\cdot 360^\\circ = %s^\\circ$. Góc nội tiếp $\\widehat{ABC}$ chắn cung nhỏ $CA$ nên $\\widehat{ABC} = \\dfrac{1}{2}\\text{sđ}\\overparen{CA} = %s^\\circ$.' % (c_r, tong_r, cung_CA, goc_B)
+    loigiai_th_1 = 'Ta có $\\text{sđ}\\overset\\frown{CA} = \\dfrac{%s}{%s} \\cdot 360^\\circ = %s^\\circ$. Góc nội tiếp $\\widehat{ABC}$ chắn cung nhỏ $CA$ nên $\\widehat{ABC} = \\dfrac{1}{2}\\text{sđ}\\overset\\frown{CA} = %s^\\circ$.' % (c_r, tong_r, cung_CA, goc_B)
     list_th_2 = [loigiai_th_1]
 
     vd_da_1_d = '\\True Góc lớn nhất của tam giác $ABC$ có số đo bằng $%s^\\circ$' % (goc_B)
     vd_da_1_s = 'Góc lớn nhất của tam giác $ABC$ có số đo bằng $%s^\\circ$' % (goc_B + 10)
     list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
-    loigiai_vd_1 = 'Tương tự, ta tính được $\\widehat{ACB} = \\dfrac{1}{2}\\text{sđ}\\overparen{AB} = %s^\\circ$ và $\\widehat{BAC} = \\dfrac{1}{2}\\text{sđ}\\overparen{BC} = %s^\\circ$. Vậy góc lớn nhất của $\\triangle ABC$ là $\\widehat{ABC} = %s^\\circ$.' % (goc_C, goc_A, goc_B)
+    loigiai_vd_1 = 'Tương tự, ta tính được $\\widehat{ACB} = \\dfrac{1}{2}\\text{sđ}\\overset\\frown{AB} = %s^\\circ$ và $\\widehat{BAC} = \\dfrac{1}{2}\\text{sđ}\\overset\\frown{BC} = %s^\\circ$. Vậy góc lớn nhất của $\\triangle ABC$ là $\\widehat{ABC} = %s^\\circ$.' % (goc_C, goc_A, goc_B)
     list_vd_2 = [loigiai_vd_1]
 
     vdc_da_1_d = '\\True Tam giác $ABC$ là tam giác %s' % (loai_tg)

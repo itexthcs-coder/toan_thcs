@@ -157,16 +157,16 @@ def bt_dang9_p2_b1_c9_hh9(self):
         % (goc_BAC, hinh_ve)
     )
 
-    nb_da_1_d = '\\True Điểm $M$ là điểm chính giữa của cung nhỏ $BC$ và $\\text{sđ}\\overparen{BM} = \\text{sđ}\\overparen{CM} = %s^\\circ$' % (goc_BAC)
-    nb_da_1_s = 'Điểm $M$ là điểm chính giữa của cung nhỏ $BC$ và $\\text{sđ}\\overparen{BM} = %s^\\circ$' % (goc_BAM)
+    nb_da_1_d = '\\True Điểm $M$ là điểm chính giữa của cung nhỏ $BC$ và $\\text{sđ}\\overset\\frown{BM} = \\text{sđ}\\overset\\frown{CM} = %s^\\circ$' % (goc_BAC)
+    nb_da_1_s = 'Điểm $M$ là điểm chính giữa của cung nhỏ $BC$ và $\\text{sđ}\\overset\\frown{BM} = %s^\\circ$' % (goc_BAM)
     list_nb_da_1 = [nb_da_1_d, nb_da_1_s]
-    loigiai_nb_1 = 'Vì $AM$ là tia phân giác của $\\widehat{BAC}$ nên $\\widehat{BAM} = \\widehat{CAM} = \\dfrac{%s^\\circ}{2} = %s^\\circ$. Hai góc nội tiếp bằng nhau chắn hai cung bằng nhau nên $\\text{sđ}\\overparen{BM} = \\text{sđ}\\overparen{CM} = 2 \\cdot %s^\\circ = %s^\\circ$, do đó $M$ là điểm chính giữa cung nhỏ $BC$.' % (goc_BAC, goc_BAM, goc_BAM, goc_BAC)
+    loigiai_nb_1 = 'Vì $AM$ là tia phân giác của $\\widehat{BAC}$ nên $\\widehat{BAM} = \\widehat{CAM} = \\dfrac{%s^\\circ}{2} = %s^\\circ$. Hai góc nội tiếp bằng nhau chắn hai cung bằng nhau nên $\\text{sđ}\\overset\\frown{BM} = \\text{sđ}\\overset\\frown{CM} = 2 \\cdot %s^\\circ = %s^\\circ$, do đó $M$ là điểm chính giữa cung nhỏ $BC$.' % (goc_BAC, goc_BAM, goc_BAM, goc_BAC)
     list_nb_2 = [loigiai_nb_1]
 
     th_da_1_d = '\\True Đường thẳng $OM$ vuông góc với dây cung $BC$'
     th_da_1_s = 'Đường thẳng $OM$ song song với dây cung $BC$'
     list_th_da_1 = [th_da_1_d, th_da_1_s]
-    loigiai_th_1 = 'Vì $\\text{sđ}\\overparen{BM} = \\text{sđ}\\overparen{CM}$ nên dây $MB = MC$, lại có $OB = OC$ (bán kính) nên $OM$ là đường trung trực của $BC$, suy ra $OM \\perp BC$.'
+    loigiai_th_1 = 'Vì $\\text{sđ}\\overset\\frown{BM} = \\text{sđ}\\overset\\frown{CM}$ nên dây $MB = MC$, lại có $OB = OC$ (bán kính) nên $OM$ là đường trung trực của $BC$, suy ra $OM \\perp BC$.'
     list_th_2 = [loigiai_th_1]
 
     vd_da_1_d = '\\True Tam giác $ABD$ đồng dạng với tam giác $AMC$'

@@ -191,7 +191,7 @@ def bt_dang4_p1_b1_c9_hh9(self):
 
         loigiai = (
             'Theo định lí về số đo góc nội tiếp: Trong một đường tròn, số đo của góc nội tiếp bằng nửa số đo của cung bị chắn.\\\\'
-            'Cụ thể, với góc nội tiếp $\\widehat{%s%s%s}$ chắn cung $%s%s$ (không chứa $%s$), ta có $\\widehat{%s%s%s} = \\dfrac{1}{2} \\text{sđ}\\overparen{%s%s}$.'
+            'Cụ thể, với góc nội tiếp $\\widehat{%s%s%s}$ chắn cung $%s%s$ (không chứa $%s$), ta có $\\widehat{%s%s%s} = \\dfrac{1}{2} \\text{sđ}\\overset\\frown{%s%s}$.'
             % (A, C, B, A, B, C, A, C, B, A, B)
         )
 

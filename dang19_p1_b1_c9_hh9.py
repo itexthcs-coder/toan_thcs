@@ -195,7 +195,7 @@ def bt_dang19_p1_b1_c9_hh9(self):
         random.shuffle(list_1)
 
         loigiai = (
-            'Vì $%s$ nằm chính giữa cung nhỏ $%s%s$ nên $\\text{sđ}\\overparen{%s%s} = \\text{sđ}\\overparen{%s%s}$.\\\\'
+            'Vì $%s$ nằm chính giữa cung nhỏ $%s%s$ nên $\\text{sđ}\\overset\\frown{%s%s} = \\text{sđ}\\overset\\frown{%s%s}$.\\\\'
             'Trong đường tròn $(%s)$, hai góc nội tiếp $\\widehat{%s%s%s}$ và $\\widehat{%s%s%s}$ lần lượt chắn hai cung bằng nhau $%s%s$ và $%s%s$ nên $\\widehat{%s%s%s} = \\widehat{%s%s%s} = %s^\\circ$.\\\\'
             'Vậy $\\widehat{%s%s%s} = \\widehat{%s%s%s} + \\widehat{%s%s%s} = %s^\\circ + %s^\\circ = %s^\\circ$.'
             % (M, A, B, A, M, M, B, O, A, C, M, M, C, B, A, M, M, B, M, C, B, A, C, M, goc_ACM, A, C, B, A, C, M, M, C, B, goc_ACM, goc_ACM, goc_ACB)

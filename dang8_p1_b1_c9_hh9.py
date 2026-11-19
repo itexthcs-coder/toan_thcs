@@ -194,7 +194,7 @@ def bt_dang8_p1_b1_c9_hh9(self):
         loigiai = (
             'Trong đường tròn $(%s)$, $\\widehat{%s%s%s}$ là góc nội tiếp chắn cung nhỏ $%s%s$.\\\\'
             'Áp dụng định lí về số đo góc nội tiếp, ta có:\\\\'
-            '$\\widehat{%s%s%s} = \\dfrac{1}{2} \\text{sđ}\\overparen{%s%s} = \\dfrac{1}{2} \\cdot %s^\\circ = %s^\\circ$.'
+            '$\\widehat{%s%s%s} = \\dfrac{1}{2} \\text{sđ}\\overset\\frown{%s%s} = \\dfrac{1}{2} \\cdot %s^\\circ = %s^\\circ$.'
             % (O, A, B, C, A, C, A, B, C, A, C, sd_cung, goc_nt)
         )
 

@@ -164,13 +164,13 @@ def bt_dang13_p2_b1_c9_hh9(self):
     th_da_1_d = '\\True Số đo cung nhỏ $AB$ bằng $60^\\circ$'
     th_da_1_s = 'Số đo cung nhỏ $AB$ bằng $90^\\circ$'
     list_th_da_1 = [th_da_1_d, th_da_1_s]
-    loigiai_th_1 = 'Ta có $\\text{sđ}\\overparen{AD} = 2\\widehat{ACD} = 60^\\circ$ và $\\text{sđ}\\overparen{BC} = 2\\widehat{BDC} = 60^\\circ$. Vì $CD$ là đường kính nên $\\text{sđ}\\overparen{AB} = 180^\\circ - 60^\\circ - 60^\\circ = 60^\\circ$.'
+    loigiai_th_1 = 'Ta có $\\text{sđ}\\overset\\frown{AD} = 2\\widehat{ACD} = 60^\\circ$ và $\\text{sđ}\\overset\\frown{BC} = 2\\widehat{BDC} = 60^\\circ$. Vì $CD$ là đường kính nên $\\text{sđ}\\overset\\frown{AB} = 180^\\circ - 60^\\circ - 60^\\circ = 60^\\circ$.'
     list_th_2 = [loigiai_th_1]
 
     vd_da_1_d = '\\True Tứ giác $ABCO$ là hình thoi có cạnh bằng $%s\\text{ cm}$' % (R)
     vd_da_1_s = 'Tứ giác $ABCO$ là hình vuông có cạnh bằng $%s\\text{ cm}$' % (R)
     list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
-    loigiai_vd_1 = 'Ta có $\\widehat{AOB} = \\text{sđ}\\overparen{AB} = 60^\\circ$ và $\\widehat{BOC} = \\text{sđ}\\overparen{BC} = 60^\\circ$, lại có $OA = OB = OC = %s\\text{ cm}$ nên $\\triangle OAB$ và $\\triangle OBC$ là hai tam giác đều cạnh $%s\\text{ cm}$. Suy ra $AB = BC = CO = OA = %s\\text{ cm}$, do đó $ABCO$ là hình thoi.' % (R, R, R)
+    loigiai_vd_1 = 'Ta có $\\widehat{AOB} = \\text{sđ}\\overset\\frown{AB} = 60^\\circ$ và $\\widehat{BOC} = \\text{sđ}\\overset\\frown{BC} = 60^\\circ$, lại có $OA = OB = OC = %s\\text{ cm}$ nên $\\triangle OAB$ và $\\triangle OBC$ là hai tam giác đều cạnh $%s\\text{ cm}$. Suy ra $AB = BC = CO = OA = %s\\text{ cm}$, do đó $ABCO$ là hình thoi.' % (R, R, R)
     list_vd_2 = [loigiai_vd_1]
 
     vdc_da_1_d = '\\True Diện tích tam giác $ACD$ bằng $%s\\sqrt{3}\\text{ cm}^2$' % (R2)

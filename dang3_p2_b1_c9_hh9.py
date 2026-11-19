@@ -163,7 +163,7 @@ def bt_dang3_p2_b1_c9_hh9(self):
     th_da_1_d = '\\True Số đo cung lớn $AB$ bằng $270^\\circ$'
     th_da_1_s = 'Số đo cung lớn $AB$ bằng $90^\\circ$'
     list_th_da_1 = [th_da_1_d, th_da_1_s]
-    loigiai_th_1 = 'Góc ở tâm $\\widehat{AOB} = 90^\\circ$ chắn cung nhỏ $AB$ nên $\\text{sđ}\\overparen{AB}_{\\text{nhỏ}} = 90^\\circ$. Suy ra số đo cung lớn $AB$ là $360^\\circ - 90^\\circ = 270^\\circ$.'
+    loigiai_th_1 = 'Góc ở tâm $\\widehat{AOB} = 90^\\circ$ chắn cung nhỏ $AB$ nên $\\text{sđ}\\overset\\frown{AB}_{\\text{nhỏ}} = 90^\\circ$. Suy ra số đo cung lớn $AB$ là $360^\\circ - 90^\\circ = 270^\\circ$.'
     list_th_2 = [loigiai_th_1]
 
     vd_da_1_d = '\\True Góc nội tiếp $\\widehat{ACB}$ có số đo bằng $45^\\circ$'

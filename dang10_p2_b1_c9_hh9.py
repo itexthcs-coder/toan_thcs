@@ -166,7 +166,7 @@ def bt_dang10_p2_b1_c9_hh9(self):
     th_da_1_d = '\\True Số đo cung nhỏ $BC$ bằng $%s^\\circ$' % (sd_BC)
     th_da_1_s = 'Số đo cung nhỏ $BC$ bằng $%s^\\circ$' % (goc_BAC)
     list_th_da_1 = [th_da_1_d, th_da_1_s]
-    loigiai_th_1 = 'Trong đường tròn $(O)$, góc nội tiếp $\\widehat{BAC} = %s^\\circ$ chắn cung nhỏ $BC$ nên $\\text{sđ}\\overparen{BC} = 2\\widehat{BAC} = 2 \\cdot %s^\\circ = %s^\\circ$.' % (goc_BAC, goc_BAC, sd_BC)
+    loigiai_th_1 = 'Trong đường tròn $(O)$, góc nội tiếp $\\widehat{BAC} = %s^\\circ$ chắn cung nhỏ $BC$ nên $\\text{sđ}\\overset\\frown{BC} = 2\\widehat{BAC} = 2 \\cdot %s^\\circ = %s^\\circ$.' % (goc_BAC, goc_BAC, sd_BC)
     list_th_2 = [loigiai_th_1]
 
     vd_da_1_d = '\\True Đường thẳng $AD$ là đường trung trực của đoạn thẳng $BC$'

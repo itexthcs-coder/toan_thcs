@@ -195,10 +195,10 @@ def bt_dang13_p1_b1_c9_hh9(self):
         random.shuffle(list_1)
 
         loigiai = (
-            'Góc ở tâm $\\widehat{%s%s%s} = %s^\\circ$ chắn cung nhỏ $%s%s$ nên $\\text{sđ}\\overparen{%s%s}_{\\text{nhỏ}} = %s^\\circ$.\\\\'
-            'Suy ra số đo cung lớn $%s%s$ là $\\text{sđ}\\overparen{%s%s}_{\\text{lớn}} = 360^\\circ - %s^\\circ = %s^\\circ$.\\\\'
+            'Góc ở tâm $\\widehat{%s%s%s} = %s^\\circ$ chắn cung nhỏ $%s%s$ nên $\\text{sđ}\\overset\\frown{%s%s}_{\\text{nhỏ}} = %s^\\circ$.\\\\'
+            'Suy ra số đo cung lớn $%s%s$ là $\\text{sđ}\\overset\\frown{%s%s}_{\\text{lớn}} = 360^\\circ - %s^\\circ = %s^\\circ$.\\\\'
             'Vì $%s$ nằm trên cung nhỏ $%s%s$ nên góc nội tiếp $\\widehat{%s%s%s}$ chắn cung lớn $%s%s$.\\\\'
-            'Vậy $\\widehat{%s%s%s} = \\dfrac{1}{2} \\text{sđ}\\overparen{%s%s}_{\\text{lớn}} = \\dfrac{1}{2} \\cdot %s^\\circ = %s^\\circ$.'
+            'Vậy $\\widehat{%s%s%s} = \\dfrac{1}{2} \\text{sđ}\\overset\\frown{%s%s}_{\\text{lớn}} = \\dfrac{1}{2} \\cdot %s^\\circ = %s^\\circ$.'
             % (A, O, B, goc_tam, A, B, A, B, cung_nho, A, B, A, B, cung_nho, cung_lon, M, A, B, A, M, B, A, B, A, M, B, A, B, cung_lon, goc_nt)
         )
 

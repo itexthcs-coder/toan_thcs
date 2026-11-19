@@ -152,7 +152,7 @@ def bt_dang2_p2_b1_c9_hh9(self):
     )
 
     noidungcauhoi = (
-        'Cho bốn điểm $A, B, C, D$ cùng nằm trên đường tròn $(O)$ theo thứ tự đó sao cho $\\text{sđ}\\overparen{AB} = %s^\\circ$, $\\text{sđ}\\overparen{BC} = %s^\\circ$ và $AD$ là đường kính của đường tròn $(O)$ như hình vẽ.\n%s'
+        'Cho bốn điểm $A, B, C, D$ cùng nằm trên đường tròn $(O)$ theo thứ tự đó sao cho $\\text{sđ}\\overset\\frown{AB} = %s^\\circ$, $\\text{sđ}\\overset\\frown{BC} = %s^\\circ$ và $AD$ là đường kính của đường tròn $(O)$ như hình vẽ.\n%s'
         % (sd_cung, sd_cung, hinh_ve)
     )
 

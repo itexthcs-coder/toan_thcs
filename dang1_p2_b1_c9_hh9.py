@@ -162,13 +162,13 @@ def bt_dang1_p2_b1_c9_hh9(self):
     th_da_1_d = '\\True Số đo của cung nhỏ $AB$ bằng $60^\\circ$'
     th_da_1_s = 'Số đo của cung nhỏ $AB$ bằng $30^\\circ$'
     list_th_da_1 = [th_da_1_d, th_da_1_s]
-    loigiai_th_1 = 'Trong đường tròn $(O)$, góc nội tiếp $\\widehat{ACB} = 30^\\circ$ chắn cung nhỏ $AB$ nên $\\text{sđ}\\overparen{AB} = 2\\widehat{ACB} = 2 \\cdot 30^\\circ = 60^\\circ$.'
+    loigiai_th_1 = 'Trong đường tròn $(O)$, góc nội tiếp $\\widehat{ACB} = 30^\\circ$ chắn cung nhỏ $AB$ nên $\\text{sđ}\\overset\\frown{AB} = 2\\widehat{ACB} = 2 \\cdot 30^\\circ = 60^\\circ$.'
     list_th_2 = [loigiai_th_1]
 
     vd_da_1_d = '\\True Tam giác $OAB$ là tam giác đều có cạnh bằng $%s\\text{ cm}$' % (R)
     vd_da_1_s = 'Tam giác $OAB$ là tam giác vuông cân tại $O$'
     list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
-    loigiai_vd_1 = 'Ta có $OA = OB = \\dfrac{BC}{2} = %s\\text{ cm}$ và góc ở tâm $\\widehat{AOB} = \\text{sđ}\\overparen{AB} = 60^\\circ$ nên $\\triangle OAB$ là tam giác đều có cạnh bằng $%s\\text{ cm}$.' % (R, R)
+    loigiai_vd_1 = 'Ta có $OA = OB = \\dfrac{BC}{2} = %s\\text{ cm}$ và góc ở tâm $\\widehat{AOB} = \\text{sđ}\\overset\\frown{AB} = 60^\\circ$ nên $\\triangle OAB$ là tam giác đều có cạnh bằng $%s\\text{ cm}$.' % (R, R)
     list_vd_2 = [loigiai_vd_1]
 
     vdc_da_1_d = '\\True Độ dài dây cung $AC$ bằng $%s\\sqrt{3}\\text{ cm}$' % (R)

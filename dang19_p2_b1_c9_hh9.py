@@ -157,7 +157,7 @@ def bt_dang19_p2_b1_c9_hh9(self):
     )
 
     noidungcauhoi = (
-        'Một vòm cầu trang trí có dạng nửa đường tròn tâm $O$, đường kính $MN = %s\\text{ m}$. Trên vòm cầu người ta gắn hai điểm neo cáp treo $P$ và $Q$ (theo thứ tự $M, P, Q, N$) sao cho $\\text{sđ}\\overparen{MP} = %s^\\circ$ và $\\text{sđ}\\overparen{NQ} = %s^\\circ$. Hai thanh giằng chéo $MQ$ và $NP$ cắt nhau tại điểm $I$ như hình vẽ.\n%s'
+        'Một vòm cầu trang trí có dạng nửa đường tròn tâm $O$, đường kính $MN = %s\\text{ m}$. Trên vòm cầu người ta gắn hai điểm neo cáp treo $P$ và $Q$ (theo thứ tự $M, P, Q, N$) sao cho $\\text{sđ}\\overset\\frown{MP} = %s^\\circ$ và $\\text{sđ}\\overset\\frown{NQ} = %s^\\circ$. Hai thanh giằng chéo $MQ$ và $NP$ cắt nhau tại điểm $I$ như hình vẽ.\n%s'
         % (MN, cung_MP, cung_NQ, hinh_ve)
     )
 
@@ -170,19 +170,19 @@ def bt_dang19_p2_b1_c9_hh9(self):
     th_da_1_d = '\\True Số đo cung $PQ$ ở đỉnh vòm bằng $%s^\\circ$' % (cung_PQ)
     th_da_1_s = 'Số đo cung $PQ$ ở đỉnh vòm bằng $%s^\\circ$' % (180 - cung_PQ)
     list_th_da_1 = [th_da_1_d, th_da_1_s]
-    loigiai_th_1 = 'Nửa đường tròn có số đo bằng $180^\\circ$ nên $\\text{sđ}\\overparen{PQ} = 180^\\circ - (\\text{sđ}\\overparen{MP} + \\text{sđ}\\overparen{NQ}) = 180^\\circ - (%s^\\circ + %s^\\circ) = %s^\\circ$.' % (cung_MP, cung_NQ, cung_PQ)
+    loigiai_th_1 = 'Nửa đường tròn có số đo bằng $180^\\circ$ nên $\\text{sđ}\\overset\\frown{PQ} = 180^\\circ - (\\text{sđ}\\overset\\frown{MP} + \\text{sđ}\\overset\\frown{NQ}) = 180^\\circ - (%s^\\circ + %s^\\circ) = %s^\\circ$.' % (cung_MP, cung_NQ, cung_PQ)
     list_th_2 = [loigiai_th_1]
 
     vd_da_1_d = '\\True Góc $\\widehat{PMQ}$ tạo bởi hai dây cáp $MP$ và $MQ$ bằng $%s^\\circ$' % (goc_PMQ)
     vd_da_1_s = 'Góc $\\widehat{PMQ}$ tạo bởi hai dây cáp $MP$ và $MQ$ bằng $%s^\\circ$' % (cung_PQ)
     list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
-    loigiai_vd_1 = 'Góc nội tiếp $\\widehat{PMQ}$ chắn cung $PQ$ nên $\\widehat{PMQ} = \\dfrac{1}{2}\\text{sđ}\\overparen{PQ} = \\dfrac{1}{2} \\cdot %s^\\circ = %s^\\circ$.' % (cung_PQ, goc_PMQ)
+    loigiai_vd_1 = 'Góc nội tiếp $\\widehat{PMQ}$ chắn cung $PQ$ nên $\\widehat{PMQ} = \\dfrac{1}{2}\\text{sđ}\\overset\\frown{PQ} = \\dfrac{1}{2} \\cdot %s^\\circ = %s^\\circ$.' % (cung_PQ, goc_PMQ)
     list_vd_2 = [loigiai_vd_1]
 
     vdc_da_1_d = '\\True Góc $\\widehat{MIP}$ tạo bởi hai thanh giằng chéo tại điểm giao $I$ có số đo bằng $%s^\\circ$' % (goc_MIP)
     vdc_da_1_s = 'Góc $\\widehat{MIP}$ tạo bởi hai thanh giằng chéo tại điểm giao $I$ có số đo bằng $%s^\\circ$' % (180 - goc_MIP)
     list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
-    loigiai_vdc_1 = 'Xét $\\triangle IMN$, góc $\\widehat{MIP}$ là góc ngoài tại đỉnh $I$ nên $\\widehat{MIP} = \\widehat{IMN} + \\widehat{INM} = \\dfrac{1}{2}\\text{sđ}\\overparen{NQ} + \\dfrac{1}{2}\\text{sđ}\\overparen{MP} = \\dfrac{%s^\\circ + %s^\\circ}{2} = %s^\\circ$.' % (cung_NQ, cung_MP, goc_MIP)
+    loigiai_vdc_1 = 'Xét $\\triangle IMN$, góc $\\widehat{MIP}$ là góc ngoài tại đỉnh $I$ nên $\\widehat{MIP} = \\widehat{IMN} + \\widehat{INM} = \\dfrac{1}{2}\\text{sđ}\\overset\\frown{NQ} + \\dfrac{1}{2}\\text{sđ}\\overset\\frown{MP} = \\dfrac{%s^\\circ + %s^\\circ}{2} = %s^\\circ$.' % (cung_NQ, cung_MP, goc_MIP)
     list_vdc_2 = [loigiai_vdc_1]
 
     def count_true_answers(answers):
