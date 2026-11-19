@@ -162,7 +162,7 @@ def bt_dang3_p3_b4_c5_hh9(self):
 Vì $MA, MB$ là hai tiếp tuyến của đường tròn $(O)$ cắt nhau tại $M$ nên theo tính chất hai tiếp tuyến cắt nhau, $MO$ là tia phân giác của $\\widehat{AMB}$. \\\\
 Suy ra $\\widehat{AMO} = \\dfrac{1}{2}\\widehat{AMB} = \\dfrac{60^\\circ}{2} = 30^\\circ$. \\\\
 Vì $MA$ là tiếp tuyến của $(O)$ tại $A$ nên $OA \\perp MA$ tại $A$, do đó tam giác $OAM$ vuông tại $A$. \\\\
-Trong tam giác vuông $OAM$, ta có: $\\sin \\widehat{AMO} = \\dfrac{OA}{MO} \\Rightarrow MO = \\dfrac{OA}{\\sin 30^\\circ} = \\dfrac{%s}{0,5} = %s\\text{ (cm)}.'''
+Trong tam giác vuông $OAM$, ta có: $\\sin \\widehat{AMO} = \\dfrac{OA}{MO} \\Rightarrow MO = \\dfrac{OA}{\\sin 30^\\circ} = \\dfrac{%s}{0,5} = %s\\text{ (cm)}$.'''
                    %(hinhve, str(r), str(mo)))
         
         # Đáp án

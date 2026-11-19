@@ -165,7 +165,7 @@ def bt_dang2_p3_b4_c5_hh9(self):
 Vì đường tròn $(I)$ tiếp xúc với tia $Ox$ tại $A$ và tia $Oy$ tại $B$ nên $IA \\perp Ox$ tại $A$ và $IB \\perp Oy$ tại $B$. \\\\
 Xét tứ giác $OAIB$ có $\\widehat{AOB} = \\widehat{OAI} = \\widehat{OBI} = 90^\\circ$ nên $OAIB$ là hình chữ nhật. \\\\
 Mặt khác, $IA = IB = R$ nên tứ giác $OAIB$ là hình vuông cạnh $R$. \\\\
-Diện tích hình vuông $OAIB$ là $S = R^2 = %s \\Rightarrow R = \\sqrt{%s} = %s\\text{ (cm)}.'''
+Diện tích hình vuông $OAIB$ là $S = R^2 = %s \\Rightarrow R = \\sqrt{%s} = %s\\text{ (cm)}$.'''
                    %(hinhve, str(s), str(s), str(r)))
         
         # Đáp án
