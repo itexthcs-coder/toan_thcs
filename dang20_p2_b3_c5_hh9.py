@@ -147,7 +147,7 @@ def bt_dang20_p2_b3_c5_hh9(self):
     noidungcauhoi = (r"""Một ô thoáng cửa sổ phía trên có dạng hình viên phân được giới hạn bởi một cung tròn có số đo $90^\circ$ của đường tròn bán kính $R = 0,8\text{ m}$ và một thanh ngang (dây căng cung đó, như hình vẽ). Xét tính đúng sai của các khẳng định sau:
     %s""" % hinh_ve)
 
-    nb_da_1_d = '\\True Chiều dài thanh ngang (dây cung) của ô thoáng bằng $0,8\\sqrt{2}\text{ m}$'
+    nb_da_1_d = '\\True Chiều dài thanh ngang (dây cung) của ô thoáng bằng $0,8\\sqrt{2}\\text{ m}$'
     nb_da_1_s = 'Chiều dài thanh ngang (dây cung) của ô thoáng bằng $1,6\text{ m}$'
     list_nb_da_1 = [nb_da_1_d, nb_da_1_s]
     nb_da_1 = random.choice(list_nb_da_1)
@@ -156,23 +156,23 @@ def bt_dang20_p2_b3_c5_hh9(self):
     list_nb_2 = [loigiai_nb_1]
 
     th_da_1_d = '\\True Chiều dài phần khung uốn cong (cung tròn $90^\\circ$) của ô thoáng bằng $0,4\\pi\text{ m}$'
-    th_da_1_s = 'Chiều dài phần khung uốn cong (cung tròn $90^\circ$) của ô thoáng bằng $0,8\pi\text{ m}$'
+    th_da_1_s = 'Chiều dài phần khung uốn cong (cung tròn $90^\\circ$) của ô thoáng bằng $0,8\\pi\\text{ m}$'
     list_th_da_1 = [th_da_1_d, th_da_1_s]
     th_da_1 = random.choice(list_th_da_1)
     list_th_1 = [th_da_1]
     loigiai_th_1 = (r"""Độ dài cung tròn $90^\circ$ bán kính $0,8\text{ m}$ là $l = \dfrac{90}{180}\pi \cdot 0,8 = 0,4\pi\text{ (m)}$.""" )
     list_th_2 = [loigiai_th_1]
 
-    vd_da_1_d = '\\True Diện tích phần kính cần lắp cho ô thoáng (hình viên phân) bằng $0,16\\pi - 0,32\text{ (m}^2\text{)}$'
-    vd_da_1_s = 'Diện tích phần kính cần lắp cho ô thoáng (hình viên phân) bằng $0,16\pi - 0,64\text{ (m}^2\text{)}$'
+    vd_da_1_d = '\\True Diện tích phần kính cần lắp cho ô thoáng (hình viên phân) bằng $0,16\\pi - 0,32\text{ (m}^2\\text{)}$'
+    vd_da_1_s = 'Diện tích phần kính cần lắp cho ô thoáng (hình viên phân) bằng $0,16\\pi - 0,64\\text{ (m}^2\\text{)}$'
     list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
     vd_da_1 = random.choice(list_vd_da_1)
     list_vd_1 = [vd_da_1]
     loigiai_vd_1 = (r"""Diện tích hình viên phân là $S = \dfrac{1}{4}\pi \cdot 0,8^2 - \dfrac{1}{2} \cdot 0,8^2 = 0,16\pi - 0,32\text{ (m}^2\text{)}$.""" )
     list_vd_2 = [loigiai_vd_1]
 
-    vdc_da_1_d = '\\True Nếu lấy $\\pi \\approx 3,14$ thì diện tích phần kính của ô thoáng (làm tròn đến hàng phần trăm) là $%.2f\text{ m}^2$' % S_kinh_tron
-    vdc_da_1_s = 'Nếu lấy $\\pi \\approx 3,14$ thì diện tích phần kính của ô thoáng (làm tròn đến hàng phần trăm) là $%.2f\text{ m}^2$' % (S_kinh_tron + 0.14)
+    vdc_da_1_d = '\\True Nếu lấy $\\pi \\approx 3,14$ thì diện tích phần kính của ô thoáng (làm tròn đến hàng phần trăm) là $%.2f\\text{ m}^2$' % S_kinh_tron
+    vdc_da_1_s = 'Nếu lấy $\\pi \\approx 3,14$ thì diện tích phần kính của ô thoáng (làm tròn đến hàng phần trăm) là $%.2f\\text{ m}^2$' % (S_kinh_tron + 0.14)
     list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
     vdc_da_1 = random.choice(list_vdc_da_1)
     list_vdc_1 = [vdc_da_1]
