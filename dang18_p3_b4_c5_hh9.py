@@ -163,7 +163,7 @@ def bt_dang18_p3_b4_c5_hh9(self):
                          %(str(r), str(chu_vi)))
         
         # Nội dung lời giải
-        loigiai = ('''%s \\\\
+        loigiai = ('''%s 
 Vì ba cạnh $BC, CA, AB$ của tam giác $ABC$ đều tiếp xúc với đường tròn $(O; r)$ nên khoảng cách từ tâm $O$ đến mỗi cạnh đều bằng bán kính $r = %s\\text{ cm}$. \\\\
 Nối $O$ với ba đỉnh $A, B, C$, ta chia tam giác $ABC$ thành ba tam giác nhỏ $OBC, OCA, OAB$ có các đường cao tương ứng đều bằng $r = %s\\text{ cm}$. \\\\
 Diện tích tam giác $ABC$ là: \\\\

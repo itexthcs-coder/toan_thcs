@@ -173,7 +173,7 @@ def bt_dang15_p3_b4_c5_hh9(self):
                          %(r_str, d_str))
         
         # Nội dung lời giải
-        loigiai = ('''%s \\\\
+        loigiai = ('''%s 
 Mô hình hóa cổng vòm là nửa đường tròn tâm $O$ bán kính $R = %s\\text{ m}$, thanh xà ngang là dây cung $AB$ song song với đường kính đáy và cách $O$ một khoảng $OH = %s\\text{ m}$ ($OH \\perp AB$). \\\\
 Xét tam giác $OAH$ vuông tại $H$, áp dụng định lí Pythagore ta có: \\\\
 $AH = \\sqrt{OA^2 - OH^2} = \\sqrt{(%s)^2 - (%s)^2} = %s\\text{ (m)}$. \\\\

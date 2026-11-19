@@ -164,7 +164,7 @@ def bt_dang17_p3_b4_c5_hh9(self):
                          %(str(r)))
         
         # Nội dung lời giải
-        loigiai = ('''%s \\\\
+        loigiai = ('''%s 
 Gọi $(O_1; %s\\text{ cm})$ và $(O_2; %s\\text{ cm})$ là hai đường tròn mặt cắt của hai ống nước. Vì hai ống tiếp xúc ngoài với nhau nên khoảng cách hai tâm là: $O_1O_2 = 2R = 2 \\cdot %s = %s\\text{ (cm)}$. \\\\
 Gọi $AB$ và $CD$ là hai đoạn dây thẳng tiếp xúc chung với cả hai đường tròn tại $A, B, C, D$. \\\\
 Vì $AB$ là tiếp tuyến chung của $(O_1)$ và $(O_2)$ nên $O_1A \\perp AB$ và $O_2B \\perp AB$. Lại có $O_1A = O_2B = R$ nên tứ giác $O_1ABO_2$ là hình chữ nhật, suy ra $AB = O_1O_2 = %s\\text{ cm}$. \\\\

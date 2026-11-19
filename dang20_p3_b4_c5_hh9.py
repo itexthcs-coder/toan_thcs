@@ -155,7 +155,7 @@ def bt_dang20_p3_b4_c5_hh9(self):
                          %(str(d_songsong), str(duong_kinh)))
         
         # Nội dung lời giải
-        loigiai = ('''%s \\\\
+        loigiai = ('''%s 
 Bán kính của chiếc vòng tròn là $R = \\dfrac{%s}{2} = %s\\text{ (cm)}$. \\\\
 Xét một dải nằm giữa hai đường thẳng song song kề nhau $a_1$ và $a_2$ có khoảng cách là $%s\\text{ cm}$. \\\\
 Gọi $d_1, d_2$ lần lượt là khoảng cách từ tâm $O$ của chiếc vòng đến $a_1$ và $a_2$, ta luôn có $d_1 + d_2 \\ge %s\\text{ cm}$. \\\\

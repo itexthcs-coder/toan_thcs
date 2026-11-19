@@ -163,7 +163,7 @@ def bt_dang12_p3_b4_c5_hh9(self):
                          %(str(r), str(r)))
         
         # Nội dung lời giải
-        loigiai = ('''%s \\\\
+        loigiai = ('''%s 
 Gọi $A, B$ lần lượt là tiếp điểm của đường tròn $(O)$ với hai cạnh $Mx, My$ của rãnh chữ V. \\\\
 Vì $Mx, My$ là hai tiếp tuyến của $(O)$ cắt nhau tại $M$ nên theo tính chất hai tiếp tuyến cắt nhau, $MO$ là tia phân giác của $\\widehat{xMy}$. \\\\
 Suy ra $\\widehat{AMO} = \\dfrac{1}{2}\\widehat{xMy} = \\dfrac{60^\\circ}{2} = 30^\\circ$. \\\\

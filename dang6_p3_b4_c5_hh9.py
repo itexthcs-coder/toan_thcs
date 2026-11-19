@@ -167,7 +167,7 @@ def bt_dang6_p3_b4_c5_hh9(self):
                          %(str(ab), str(cd)))
         
         # Nội dung lời giải
-        loigiai = ('''%s \\\\
+        loigiai = ('''%s 
 Áp dụng tính chất hai tiếp tuyến cắt nhau tại bốn đỉnh $A, B, C, D$ của hình thang ngoại tiếp đường tròn, ta có tổng hai cạnh đối bằng nhau: \\\\
 $AD + BC = AB + CD = %s + %s = %s\\text{ (cm)} \\Rightarrow AD = %s - BC$. \\\\
 Kẻ $BH \\perp CD$ tại $H$. Tứ giác $ABHD$ có ba góc vuông nên là hình chữ nhật, suy ra $BH = AD = %s - BC$ và $DH = AB = %s\\text{ cm}$. \\\\

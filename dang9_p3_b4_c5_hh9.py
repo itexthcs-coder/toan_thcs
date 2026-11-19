@@ -161,7 +161,7 @@ def bt_dang9_p3_b4_c5_hh9(self):
                          %(latex(a_expr)))
         
         # Nội dung lời giải
-        loigiai = ('''%s \\\\
+        loigiai = ('''%s
 Gọi $H$ là trung điểm của $BC$, suy ra $AH$ là đường cao đồng thời là đường trung tuyến của tam giác đều $ABC$. \\\\
 Ta có $BH = \\dfrac{BC}{2} = \\dfrac{%s}{2} = %s\\text{ (cm)}$. \\\\
 Áp dụng định lí Pythagore vào tam giác $ABH$ vuông tại $H$: \\\\

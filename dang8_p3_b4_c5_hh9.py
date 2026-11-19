@@ -165,7 +165,7 @@ def bt_dang8_p3_b4_c5_hh9(self):
                          %(str(r), str(om)))
         
         # Nội dung lời giải
-        loigiai = ('''%s \\\\
+        loigiai = ('''%s 
 Trong tam giác $OAM$ vuông tại $A$ ($OA \\perp MA$), ta có: \\\\
 $\\cos \\widehat{AOM} = \\dfrac{OA}{OM} = \\dfrac{%s}{%s} = \\dfrac{1}{2} \\Rightarrow \\widehat{AOM} = 60^\\circ$. \\\\
 Theo tính chất hai tiếp tuyến cắt nhau tại $M$, $OM$ là tia phân giác của $\\widehat{AOB}$ nên $\\widehat{AOB} = 2\\widehat{AOM} = 120^\\circ$. \\\\

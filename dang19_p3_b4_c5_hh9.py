@@ -166,7 +166,7 @@ def bt_dang19_p3_b4_c5_hh9(self):
                          %(str(r)))
         
         # Nội dung lời giải
-        loigiai = ('''%s \\\\
+        loigiai = ('''%s 
 Gọi $A, B$ lần lượt là tiếp điểm của vùng tưới hình tròn $(O; %s\\text{ m})$ với hai bờ tường $Mx, My$. \\\\
 Tứ giác $MAOB$ có $\\widehat{AMB} = \\widehat{MAO} = \\widehat{MBO} = 90^\\circ$ và $OA = OB = R = %s\\text{ m}$ nên $MAOB$ là hình vuông cạnh $%s\\text{ m}$. \\\\
 Đường chéo hình vuông $MAOB$ là $OM = R\\sqrt{2} = %s\\sqrt{2}\\text{ (m)}$. \\\\

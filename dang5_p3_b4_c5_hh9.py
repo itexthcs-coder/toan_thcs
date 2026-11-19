@@ -161,7 +161,7 @@ def bt_dang5_p3_b4_c5_hh9(self):
                          %(str(r), latex(ab_expr)))
         
         # Nội dung lời giải
-        loigiai = ('''%s \\\\
+        loigiai = ('''%s 
 Gọi $H$ là giao điểm của $OM$ và $AB$. \\\\
 Vì $MA, MB$ là hai tiếp tuyến cắt nhau của $(O)$ nên $OM$ là tia phân giác của $\\widehat{AOB}$. Trong tam giác cân $OAB$ ($OA = OB = %s\\text{ cm}$), đường phân giác $OM$ đồng thời là đường trung trực của $AB$. \\\\
 Suy ra $OM \\perp AB$ tại $H$ và $AH = \\dfrac{AB}{2} = \\dfrac{%s}{2} = %s\\text{ (cm)}$. \\\\

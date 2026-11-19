@@ -165,7 +165,7 @@ def bt_dang13_p3_b4_c5_hh9(self):
                          %(r_str, hm_str))
         
         # Nội dung lời giải
-        loigiai = ('''%s \\\\
+        loigiai = ('''%s
 Gọi $O$ là tâm trục bánh xe lu, $H$ là điểm tiếp xúc giữa bánh xe và mặt đường, $M$ là vị trí viên đá trên mặt đường. \\\\
 Vì mặt đường tiếp xúc với bánh xe tại $H$ nên mặt đường là tiếp tuyến của đường tròn $(O; R)$ tại $H$, suy ra $OH \\perp HM$ tại $H$ với $OH = %s\\text{ m}$ và $HM = %s\\text{ m}$. \\\\
 Áp dụng định lí Pythagore vào tam giác $OHM$ vuông tại $H$, ta có: \\\\

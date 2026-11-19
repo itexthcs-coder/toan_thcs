@@ -163,7 +163,7 @@ def bt_dang10_p3_b4_c5_hh9(self):
                          %(str(r), str(ab)))
         
         # Nội dung lời giải
-        loigiai = ('''%s \\\\
+        loigiai = ('''%s
 Gọi $H$ là giao điểm của $OM$ và $AB$. \\\\
 Theo tính chất hai tiếp tuyến cắt nhau, $OM$ là đường trung trực của đoạn thẳng $AB$, suy ra $OM \\perp AB$ tại $H$ và $AH = \\dfrac{AB}{2} = \\dfrac{%s}{2} = %s\\text{ (cm)}$. \\\\
 Áp dụng định lí Pythagore vào tam giác $OAH$ vuông tại $H$, ta có: \\\\

@@ -163,7 +163,7 @@ def bt_dang11_p3_b4_c5_hh9(self):
                          %(str(r), str(d)))
         
         # Nội dung lời giải
-        loigiai = ('''%s \\\\
+        loigiai = ('''%s 
 Gọi $H$ là chân đường vuông góc hạ từ $O$ xuống đường thẳng $AB$, ta có $OH = %s\\text{ km}$. \\\\
 Vì $OH = %s\\text{ km} < R = %s\\text{ km}$ nên đường thẳng $AB$ cắt đường tròn $(O; R)$ tại hai điểm phân biệt $M$ và $N$. Quãng đường tàu đi trong vùng chiếu sáng chính là độ dài dây cung $MN$. \\\\
 Xét tam giác $OMH$ vuông tại $H$, áp dụng định lí Pythagore ta có: \\\\

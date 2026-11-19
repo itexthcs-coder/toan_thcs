@@ -157,7 +157,7 @@ def bt_dang4_p3_b4_c5_hh9(self):
                          %(str(ab), str(ac)))
         
         # Nội dung lời giải
-        loigiai = ('''%s \\\\
+        loigiai = ('''%s 
 Vì tam giác $ABC$ vuông tại $A$ nên $BA \\perp AC$ tại $A$. Do đó khoảng cách từ điểm $B$ đến đường thẳng $AC$ chính là độ dài đoạn thẳng $AB = %s\\text{ cm}$. \\\\
 Vì đường tròn $(B; R)$ tiếp xúc với đường thẳng $AC$ nên $R = AB = %s\\text{ cm}$. \\\\
 Xét đường tròn $(C; R)$ và đường thẳng $AB$: vì $CA \\perp AB$ tại $A$ nên khoảng cách từ tâm $C$ đến đường thẳng $AB$ là $d = AC = %s\\text{ cm}$. \\\\

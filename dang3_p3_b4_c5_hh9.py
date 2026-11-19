@@ -158,7 +158,7 @@ def bt_dang3_p3_b4_c5_hh9(self):
                          %(str(r)))
         
         # Nội dung lời giải
-        loigiai = ('''%s \\\\
+        loigiai = ('''%s 
 Vì $MA, MB$ là hai tiếp tuyến của đường tròn $(O)$ cắt nhau tại $M$ nên theo tính chất hai tiếp tuyến cắt nhau, $MO$ là tia phân giác của $\\widehat{AMB}$. \\\\
 Suy ra $\\widehat{AMO} = \\dfrac{1}{2}\\widehat{AMB} = \\dfrac{60^\\circ}{2} = 30^\\circ$. \\\\
 Vì $MA$ là tiếp tuyến của $(O)$ tại $A$ nên $OA \\perp MA$ tại $A$, do đó tam giác $OAM$ vuông tại $A$. \\\\

@@ -160,7 +160,7 @@ def bt_dang14_p3_b4_c5_hh9(self):
                          %(str(r), str(h)))
         
         # Nội dung lời giải
-        loigiai = ('''%s \\\\
+        loigiai = ('''%s 
 Gọi $O$ là tâm Trái Đất, $M$ là vị trí vệ tinh và $A$ là tiếp điểm của tia tín hiệu với mặt đất. \\\\
 Khoảng cách từ vệ tinh $M$ đến tâm Trái Đất $O$ là: $OM = R + h = %s + %s = %s\\text{ (km)}$. \\\\
 Vì $MA$ là tiếp tuyến của đường tròn $(O; R)$ tại $A$ nên $OA \\perp MA$ tại $A$, do đó tam giác $OAM$ vuông tại $A$. \\\\

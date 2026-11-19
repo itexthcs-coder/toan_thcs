@@ -160,7 +160,7 @@ def bt_dang7_p3_b4_c5_hh9(self):
                          %(str(r), str(om)))
         
         # Nội dung lời giải
-        loigiai = ('''%s \\\\
+        loigiai = ('''%s 
 Vì $MA, MB$ là hai tiếp tuyến của $(O)$ tại $A$ và $B$ nên $OA \\perp MA$ tại $A$ và $OB \\perp MB$ tại $B$. \\\\
 Xét tam giác $OAM$ vuông tại $A$, áp dụng định lí Pythagore ta có: \\\\
 $MA = \\sqrt{OM^2 - OA^2} = \\sqrt{%s^2 - %s^2} = \\sqrt{%s - %s} = %s\\text{ (cm)}$. \\\\

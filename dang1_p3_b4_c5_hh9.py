@@ -159,7 +159,7 @@ def bt_dang1_p3_b4_c5_hh9(self):
                          %(str(x_i), str(y_i)))
         
         # Nội dung lời giải
-        loigiai = ('''%s \\\\
+        loigiai = ('''%s
 Khoảng cách từ tâm $I(%s; %s)$ đến trục hoành $Ox$ là $d = |%s| = %s$. \\\\
 Để đường tròn $(I; R)$ cắt trục hoành $Ox$ tại hai điểm phân biệt thì $d < R \\Leftrightarrow R > %s$. \\\\
 Vì $R$ là số nguyên nên giá trị nguyên nhỏ nhất của $R$ là $%s$.'''

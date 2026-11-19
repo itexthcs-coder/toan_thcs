@@ -161,7 +161,7 @@ def bt_dang16_p3_b4_c5_hh9(self):
                          %(r_str, d_str))
         
         # Nội dung lời giải
-        loigiai = ('''%s \\\\
+        loigiai = ('''%s 
 Gọi $O$ là tâm của quả bi cái, $H$ là hình chiếu vuông góc của $O$ trên đường thẳng mép băng bàn và $K$ là giao điểm của đoạn thẳng $OH$ với đường tròn $(O; r)$. \\\\
 Ta có $OH = d = %s\\text{ cm}$ và $OK = r = %s\\text{ cm}$. \\\\
 Vì $d = %s\\text{ cm} > r = %s\\text{ cm}$ nên đường tròn bi cái không giao với mép băng bàn. \\\\
