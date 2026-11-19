@@ -168,7 +168,7 @@ def bt_dang18_p4_b1_c9_hh9(self):
         loigiai = (
             '\\begin{enumEX}[a)]{1}\n'
             '\\item Vì $B$ nằm giữa $A$ và $C$ nên tia $MB$ nằm giữa hai tia $MA, MC$, lại có $\\widehat{AMB} = \\widehat{BMC} = 30^\\circ$ nên tia $MB$ là tia phân giác của góc $\\widehat{AMC}$.\\\\'
-            'Trong đường tròn $(O)$, hai góc nội tiếp $\\widehat{AMD}$ và $\\widehat{CMD}$ bằng nhau nên chắn hai cung bằng nhau: $\\text{sđ}\\overparen{AD} = \\text{sđ}\\overparen{CD}$, do đó $D$ là điểm chính giữa của cung $AC$ (không chứa $M$).\n'
+            'Trong đường tròn $(O)$, hai góc nội tiếp $\\widehat{AMD}$ và $\\widehat{CMD}$ bằng nhau nên chắn hai cung bằng nhau: $\\text{sđ}\\overset\\frown{AD} = \\text{sđ}\\overset\\frown{CD}$, do đó $D$ là điểm chính giữa của cung $AC$ (không chứa $M$).\n'
             '\\item Ta có $\\widehat{AMC} = \\widehat{AMB} + \\widehat{BMC} = 30^\\circ + 30^\\circ = 60^\\circ$. Trong đường tròn $(O)$, góc nội tiếp $\\widehat{AMC} = 60^\\circ$ chắn cung $AC$ nên góc ở tâm $\\widehat{AOC} = 2\\widehat{AMC} = 120^\\circ$.\\\\'
             'Xét $\\triangle OAC$ cân tại $O$ có $\\widehat{AOC} = 120^\\circ$ và đáy $AC = AB + BC = %s + %s = %s\\text{ km}$. Kẻ $OI \\perp AC$ tại trung điểm $I$ của $AC$, ta có $AI = %s\\text{ km}$ và $\\widehat{AOI} = 60^\\circ$, suy ra $R = OA = \\dfrac{AI}{\\sin 60^\\circ} = \\dfrac{%s}{\\dfrac{\\sqrt{3}}{2}} = \\dfrac{%s\\sqrt{3}}{3}\\text{ km}$.\n'
             '\\item Khi $MA = MC$, $\\triangle AMC$ cân tại $M$ có $\\widehat{AMC} = 60^\\circ$ nên $\\triangle AMC$ là tam giác đều cạnh $AC = %s\\text{ km}$.\\\\'
@@ -179,7 +179,7 @@ def bt_dang18_p4_b1_c9_hh9(self):
 
     # Xuất câu hỏi với lời giải
     content = ('\\begin{minipage}{\\textwidth} \n'
-               '\\begin{ex}\n' + str(noidungcauhoi) +
-               '\\loigiai{ \n' + str(loigiai) + '}\n'
-               '\\end{ex}\n \\end{minipage} \n\n')
+            '\\begin{ex}\n' + str(noidungcauhoi) +
+            '\\loigiai{ \n' + str(loigiai) + '}\n'
+            '\\end{ex}\n \\end{minipage} \n\n')
     return content

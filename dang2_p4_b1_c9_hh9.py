@@ -178,18 +178,18 @@ def bt_dang2_p4_b1_c9_hh9(self):
         )
         # Tinh chỉnh ý c) chuẩn tổng quát 100% cho mọi tam giác cân ABC
         noidungcauhoi = (
-            'Cho tam giác $ABC$ cân tại $A$ có $AB = AC = %s\\text{ cm}$. Vẽ đường tròn $(O)$ đường kính $AB$ cắt cạnh $BC$ tại $D$ và cắt cạnh $AC$ tại $E$ như hình vẽ.\\'
-            'a) Chứng minh $D$ là trung điểm của đoạn thẳng $BC$.\\'
-            'b) Chứng minh $\\widehat{DBE} = \\widehat{DAC}$ và $DE = DC$.\\'
+            'Cho tam giác $ABC$ cân tại $A$ có $AB = AC = %s\\text{ cm}$. Vẽ đường tròn $(O)$ đường kính $AB$ cắt cạnh $BC$ tại $D$ và cắt cạnh $AC$ tại $E$ như hình vẽ.\\\\'
+            'a) Chứng minh $D$ là trung điểm của đoạn thẳng $BC$.\\\\'
+            'b) Chứng minh $\\widehat{DBE} = \\widehat{DAC}$ và $DE = DC$.\\\\'
             'c) Chứng minh đường thẳng $DE$ song song với đường thẳng $AB$.\n%s'
             % (AB, hinh_ve)
         )
         loigiai = (
             '\\begin{enumEX}[a)]{1}\n'
             '\\item Trong đường tròn $(O)$ đường kính $AB$, góc nội tiếp $\\widehat{ADB}$ chắn nửa đường tròn nên $\\widehat{ADB} = 90^\\circ$, suy ra $AD \\perp BC$. Vì $\\triangle ABC$ cân tại $A$ ($AB = AC = %s\\text{ cm}$) nên đường cao $AD$ đồng thời là đường trung tuyến, do đó $D$ là trung điểm của $BC$.\n'
-            '\\item Trong đường tròn $(O)$, hai góc nội tiếp $\\widehat{DBE}$ và $\\widehat{DAE}$ cùng chắn cung nhỏ $DE$ nên $\\widehat{DBE} = \\widehat{DAE} = \\widehat{DAC}$.\\'
+            '\\item Trong đường tròn $(O)$, hai góc nội tiếp $\\widehat{DBE}$ và $\\widehat{DAE}$ cùng chắn cung nhỏ $DE$ nên $\\widehat{DBE} = \\widehat{DAE} = \\widehat{DAC}$.\\\\'
             'Mặt khác, $\\widehat{AEB} = 90^\\circ$ (góc nội tiếp chắn nửa đường tròn) nên $\\triangle BEC$ vuông tại $E$ có $ED$ là đường trung tuyến ứng với cạnh huyền $BC$, suy ra $ED = \\dfrac{1}{2}BC = DC$.\n'
-            '\\item Vì $ED = DC$ nên $\\triangle EDC$ cân tại $D$, suy ra $\\widehat{EDC} = 180^\\circ - 2\\widehat{ECD} = 180^\\circ - 2\\widehat{ACB}$.\\'
+            '\\item Vì $ED = DC$ nên $\\triangle EDC$ cân tại $D$, suy ra $\\widehat{EDC} = 180^\\circ - 2\\widehat{ECD} = 180^\\circ - 2\\widehat{ACB}$.\\\\'
             'Xét $\\triangle ABC$ cân tại $A$, ta có $\\widehat{BAC} = 180^\\circ - 2\\widehat{ACB}$. Do đó $\\widehat{EDC} = \\widehat{BAC}$, mà hai góc này ở vị trí đồng vị nên $DE // AB$.\n'
             '\\end{enumEX}'
             % (AB)

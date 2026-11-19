@@ -128,37 +128,38 @@ from mpl_toolkits.mplot3d import Axes3D  # Cần cho 3D
 
 
 def bt_dang15_p4_b1_c9_hh9(self):
-    # Khai báo biến
     lisdang = ['1']
     dang = random.choice(lisdang)
     if dang == '1':
         R = random.randint(5, 14)
 
+        # Đã sửa đổi tọa độ để A, C, B, D cắt nhau thực sự bên trong đường tròn và IA < IB
         hinh_ve = (
             '\\begin{center}\n'
             '\\begin{tikzpicture}[scale=1, font=\\footnotesize, line join=round, line cap=round, >=stealth]\n'
             '\\coordinate (O) at (0,0);\n'
-            '\\coordinate (A) at (150:2);\n'
-            '\\coordinate (B) at (30:2);\n'
+            '\\coordinate (A) at (110:2);\n'
+            '\\coordinate (B) at (320:2);\n'
             '\\coordinate (C) at (220:2);\n'
-            '\\coordinate (D) at (-40:2);\n'
+            '\\coordinate (D) at (70:2);\n'
             '\\coordinate (I) at (intersection of A--B and C--D);\n'
             '\\draw[line width=1pt] (O) circle (2cm);\n'
             '\\draw[line width=1pt] (A)--(B) (C)--(D) (A)--(C) (B)--(D) (B)--(C) (A)--(D);\n'
             '\\draw[line width=1pt, dashed] (O)--(I);\n'
             '\\fill (O) circle (1pt) node[right] {$O$};\n'
             '\\fill (A) circle (1pt) node[above left] {$A$};\n'
-            '\\fill (B) circle (1pt) node[above right] {$B$};\n'
+            '\\fill (B) circle (1pt) node[below right] {$B$};\n'
             '\\fill (C) circle (1pt) node[below left] {$C$};\n'
-            '\\fill (D) circle (1pt) node[below right] {$D$};\n'
-            '\\fill (I) circle (1pt) node[left] {$I$};\n'
+            '\\fill (D) circle (1pt) node[above right] {$D$};\n'
+            '\\fill (I) circle (1pt) node[below] {$I$};\n'
             '\\end{tikzpicture}\n'
             '\\end{center}'
         )
 
+        # Đã sửa lại thứ tự điểm trên đường tròn thành A, C, B, D
         noidungcauhoi = (
-            'Cho đường tròn $(O; %s\\text{ cm})$ và hai dây cung bằng nhau $AB$ và $CD$ cắt nhau tại điểm $I$ nằm bên trong đường tròn (theo thứ tự các điểm $A, B, D, C$ trên đường tròn và $IA < IB$) như hình vẽ.\\\\'
-            'a) Chứng minh $\\text{sđ}\\overparen{AC} = \\text{sđ}\\overparen{BD}$.\\\\'
+            'Cho đường tròn $(O; %s\\text{ cm})$ và hai dây cung bằng nhau $AB$ và $CD$ cắt nhau tại điểm $I$ nằm bên trong đường tròn (theo thứ tự các điểm $A, C, B, D$ trên đường tròn và $IA < IB$) như hình vẽ.\\\\'
+            'a) Chứng minh $\\text{sđ}\\overset\\frown{AC} = \\text{sđ}\\overset\\frown{BD}$.\\\\'
             'b) Chứng minh $IA = ID$ và $IB = IC$.\\\\'
             'c) Chứng minh $AD // BC$ và đường thẳng $OI$ là đường trung trực của đoạn thẳng $AD$.\n%s'
             % (R, hinh_ve)
@@ -166,11 +167,11 @@ def bt_dang15_p4_b1_c9_hh9(self):
 
         loigiai = (
             '\\begin{enumEX}[a)]{1}\n'
-            '\\item Trong đường tròn $(O; %s\\text{ cm})$, hai dây cung bằng nhau $AB = CD$ căng hai cung nhỏ bằng nhau nên $\\text{sđ}\\overparen{AB} = \\text{sđ}\\overparen{CD}$.\\\\'
-            'Trừ cả hai vế cho $\\text{sđ}\\overparen{CB}$, ta được $\\text{sđ}\\overparen{AB} - \\text{sđ}\\overparen{CB} = \\text{sđ}\\overparen{CD} - \\text{sđ}\\overparen{CB} \\Rightarrow \\text{sđ}\\overparen{AC} = \\text{sđ}\\overparen{BD}$.\n'
+            '\\item Trong đường tròn $(O; %s\\text{ cm})$, hai dây cung bằng nhau $AB = CD$ căng hai cung nhỏ bằng nhau nên $\\text{sđ}\\overset\\frown{AB} = \\text{sđ}\\overset\\frown{CD}$.\\\\'
+            'Trừ cả hai vế cho $\\text{sđ}\\overset\\frown{CB}$, ta được $\\text{sđ}\\overset\\frown{AB} - \\text{sđ}\\overset\\frown{CB} = \\text{sđ}\\overset\\frown{CD} - \\text{sđ}\\overset\\frown{CB} \\Rightarrow \\text{sđ}\\overset\\frown{AC} = \\text{sđ}\\overset\\frown{BD}$.\n'
             '\\item Hai góc nội tiếp $\\widehat{ABC}$ và $\\widehat{DCB}$ lần lượt chắn hai cung bằng nhau $AC$ và $BD$ nên $\\widehat{IBC} = \\widehat{ICB}$, suy ra $\\triangle IBC$ cân tại $I$ và $IB = IC$.\\\\'
             'Mặt khác, $AB = CD$ nên $AB - IB = CD - IC \\Rightarrow IA = ID$.\n'
-            '\\item Hai góc nội tiếp $\\widehat{ADC}$ và $\\widehat{DAB}$ lần lượt chắn hai cung bằng nhau $AC$ và $BD$ nên $\\widehat{ADC} = \\widehat{DAB}$, mà hai góc này ở vị trí so le trong nên $AD // BC$.\\\\'
+            '\\item Hai góc nội tiếp $\\widehat{CAD}$ và $\\widehat{ACB}$ lần lượt chắn hai cung bằng nhau $CD$ và $AB$ nên $\\widehat{CAD} = \\widehat{ACB}$, mà hai góc này ở vị trí so le trong nên $AD // BC$.\\\\'
             'Vì $IA = ID$ và $OA = OD = %s\\text{ cm}$ nên $OI$ là đường trung trực của đoạn thẳng $AD$.\n'
             '\\end{enumEX}'
             % (R, R)
@@ -178,7 +179,7 @@ def bt_dang15_p4_b1_c9_hh9(self):
 
     # Xuất câu hỏi với lời giải
     content = ('\\begin{minipage}{\\textwidth} \n'
-               '\\begin{ex}\n' + str(noidungcauhoi) +
-               '\\loigiai{ \n' + str(loigiai) + '}\n'
-               '\\end{ex}\n \\end{minipage} \n\n')
+            '\\begin{ex}\n' + str(noidungcauhoi) +
+            '\\loigiai{ \n' + str(loigiai) + '}\n'
+            '\\end{ex}\n \\end{minipage} \n\n')
     return content

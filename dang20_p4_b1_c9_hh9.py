@@ -162,7 +162,7 @@ def bt_dang20_p4_b1_c9_hh9(self):
         )
 
         noidungcauhoi = (
-            'Một cây cầu đi bộ có vòm đỡ phía trên dạng nửa đường tròn tâm $O$, đường kính $AB = %s\\text{ m}$ nằm ngang mặt cầu. Để tăng độ cứng cho vòm, kỹ sư bố trí hai điểm neo $C$ và $D$ trên vòm (theo thứ tự $A, C, D, B$) sao cho $\\text{sđ}\\overparen{AC} = 60^\\circ$ và $\\text{sđ}\\overparen{BD} = 30^\\circ$. Hai thanh giằng thẳng nối $AD$ và $BC$ cắt nhau tại điểm $K$ như hình vẽ.\\\\'
+            'Một cây cầu đi bộ có vòm đỡ phía trên dạng nửa đường tròn tâm $O$, đường kính $AB = %s\\text{ m}$ nằm ngang mặt cầu. Để tăng độ cứng cho vòm, kỹ sư bố trí hai điểm neo $C$ và $D$ trên vòm (theo thứ tự $A, C, D, B$) sao cho $\\text{sđ}\\overset\\frown{AC} = 60^\\circ$ và $\\text{sđ}\\overset\\frown{BD} = 30^\\circ$. Hai thanh giằng thẳng nối $AD$ và $BC$ cắt nhau tại điểm $K$ như hình vẽ.\\\\'
             'a) Tính số đo các góc nội tiếp $\\widehat{ABC}$ và $\\widehat{BAD}$.\\\\'
             'b) Tính góc nhọn tạo bởi hai thanh giằng $AD$ và $BC$ tại điểm giao $K$.\\\\'
             'c) Tính chiều cao từ mặt cầu $AB$ lên tới điểm neo $C$ (làm tròn kết quả đến hàng phần trăm của mét).\n%s'
@@ -171,10 +171,10 @@ def bt_dang20_p4_b1_c9_hh9(self):
 
         loigiai = (
             '\\begin{enumEX}[a)]{1}\n'
-            '\\item Trong nửa đường tròn $(O)$ đường kính $AB$, góc nội tiếp $\\widehat{ABC}$ chắn cung $AC$ nên $\\widehat{ABC} = \\dfrac{1}{2}\\text{sđ}\\overparen{AC} = \\dfrac{60^\\circ}{2} = 30^\\circ$.\\\\'
-            'Góc nội tiếp $\\widehat{BAD}$ chắn cung $BD$ nên $\\widehat{BAD} = \\dfrac{1}{2}\\text{sđ}\\overparen{BD} = \\dfrac{30^\\circ}{2} = 15^\\circ$.\n'
+            '\\item Trong nửa đường tròn $(O)$ đường kính $AB$, góc nội tiếp $\\widehat{ABC}$ chắn cung $AC$ nên $\\widehat{ABC} = \\dfrac{1}{2}\\text{sđ}\\overset\\frown{AC} = \\dfrac{60^\\circ}{2} = 30^\\circ$.\\\\'
+            'Góc nội tiếp $\\widehat{BAD}$ chắn cung $BD$ nên $\\widehat{BAD} = \\dfrac{1}{2}\\text{sđ}\\overset\\frown{BD} = \\dfrac{30^\\circ}{2} = 15^\\circ$.\n'
             '\\item Xét $\\triangle KAB$, góc $\\widehat{CKA}$ (hoặc $\\widehat{BKD}$) là góc ngoài tại đỉnh $K$ nên $\\widehat{CKA} = \\widehat{KAB} + \\widehat{KBA} = 15^\\circ + 30^\\circ = 45^\\circ$. Vậy góc nhọn tạo bởi hai thanh giằng $AD$ và $BC$ tại $K$ bằng $45^\\circ$.\n'
-            '\\item Bán kính của vòm cầu là $R = \\dfrac{AB}{2} = %s\\text{ m}$. Kẻ $CH \\perp AB$ tại $H$. Vì $\\text{sđ}\\overparen{AC} = 60^\\circ$ nên góc ở tâm $\\widehat{AOC} = 60^\\circ$.\\\\'
+            '\\item Bán kính của vòm cầu là $R = \\dfrac{AB}{2} = %s\\text{ m}$. Kẻ $CH \\perp AB$ tại $H$. Vì $\\text{sđ}\\overset\\frown{AC} = 60^\\circ$ nên góc ở tâm $\\widehat{AOC} = 60^\\circ$.\\\\'
             'Xét $\\triangle OCH$ vuông tại $H$ có $OC = %s\\text{ m}$ và $\\widehat{COH} = 60^\\circ$, ta có $CH = OC \\cdot \\sin 60^\\circ = %s \\cdot \\dfrac{\\sqrt{3}}{2} \\approx %s\\text{ m}$.\n'
             '\\end{enumEX}'
             % (R, R, R, kq_CH)
@@ -182,7 +182,7 @@ def bt_dang20_p4_b1_c9_hh9(self):
 
     # Xuất câu hỏi với lời giải
     content = ('\\begin{minipage}{\\textwidth} \n'
-               '\\begin{ex}\n' + str(noidungcauhoi) +
-               '\\loigiai{ \n' + str(loigiai) + '}\n'
-               '\\end{ex}\n \\end{minipage} \n\n')
+            '\\begin{ex}\n' + str(noidungcauhoi) +
+            '\\loigiai{ \n' + str(loigiai) + '}\n'
+            '\\end{ex}\n \\end{minipage} \n\n')
     return content

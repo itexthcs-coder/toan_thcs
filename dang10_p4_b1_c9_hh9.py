@@ -168,7 +168,7 @@ def bt_dang10_p4_b1_c9_hh9(self):
         loigiai = (
             '\\begin{enumEX}[a)]{1}\n'
             '\\item Vì $AM$ và $AN$ lần lượt là tia phân giác trong và tia phân giác ngoài của góc $\\widehat{BAC}$ nên $AM \\perp AN$, suy ra $\\widehat{MAN} = 90^\\circ$. Trong đường tròn $(O)$, góc nội tiếp $\\widehat{MAN} = 90^\\circ$ chắn cung $MN$ nên cung $MN$ là nửa đường tròn, do đó $MN$ là đường kính của đường tròn $(O)$.\n'
-            '\\item Vì $AM$ là tia phân giác của $\\widehat{BAC}$ nên $\\widehat{BAM} = \\widehat{CAM}$, suy ra hai cung bị chắn bằng nhau: $\\text{sđ}\\overparen{MB} = \\text{sđ}\\overparen{MC}$, do đó dây $MB = MC$. Lại có $OB = OC = %s\\text{ cm}$ nên $OM$ hay $MN$ là đường trung trực của đoạn thẳng $BC$.\n'
+            '\\item Vì $AM$ là tia phân giác của $\\widehat{BAC}$ nên $\\widehat{BAM} = \\widehat{CAM}$, suy ra hai cung bị chắn bằng nhau: $\\text{sđ}\\overset\\frown{MB} = \\text{sđ}\\overset\\frown{MC}$, do đó dây $MB = MC$. Lại có $OB = OC = %s\\text{ cm}$ nên $OM$ hay $MN$ là đường trung trực của đoạn thẳng $BC$.\n'
             '\\item Xét $\\triangle MBI$ và $\\triangle MAB$ có $\\widehat{AMB}$ chung và $\\widehat{MBI} = \\widehat{MBC} = \\widehat{MAC} = \\widehat{MAB}$ (hai góc nội tiếp cùng chắn cung $MC$ và giả thiết phân giác). Suy ra $\\triangle MBI \\backsim \\triangle MAB$ (g.g), do đó $\\dfrac{MB}{MA} = \\dfrac{MI}{MB} \\Rightarrow MB^2 = MI \\cdot MA$.\n'
             '\\end{enumEX}'
             % (R)
@@ -176,7 +176,7 @@ def bt_dang10_p4_b1_c9_hh9(self):
 
     # Xuất câu hỏi với lời giải
     content = ('\\begin{minipage}{\\textwidth} \n'
-               '\\begin{ex}\n' + str(noidungcauhoi) +
-               '\\loigiai{ \n' + str(loigiai) + '}\n'
-               '\\end{ex}\n \\end{minipage} \n\n')
+            '\\begin{ex}\n' + str(noidungcauhoi) +
+            '\\loigiai{ \n' + str(loigiai) + '}\n'
+            '\\end{ex}\n \\end{minipage} \n\n')
     return content

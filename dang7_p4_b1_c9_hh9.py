@@ -169,7 +169,7 @@ def bt_dang7_p4_b1_c9_hh9(self):
 
         loigiai = (
             '\\begin{enumEX}[a)]{1}\n'
-            '\\item Vì $M$ là điểm chính giữa cung nhỏ $AB$ của đường tròn $(O; %s\\text{ cm})$ nên $\\text{sđ}\\overparen{MA} = \\text{sđ}\\overparen{MB}$. Hai góc nội tiếp $\\widehat{MCA}$ và $\\widehat{MAB}$ lần lượt chắn hai cung bằng nhau $MA$ và $MB$ nên $\\widehat{MCA} = \\widehat{MAB}$.\\\\'
+            '\\item Vì $M$ là điểm chính giữa cung nhỏ $AB$ của đường tròn $(O; %s\\text{ cm})$ nên $\\text{sđ}\\overset\\frown{MA} = \\text{sđ}\\overset\\frown{MB}$. Hai góc nội tiếp $\\widehat{MCA}$ và $\\widehat{MAB}$ lần lượt chắn hai cung bằng nhau $MA$ và $MB$ nên $\\widehat{MCA} = \\widehat{MAB}$.\\\\'
             'Xét $\\triangle MEA$ và $\\triangle MAC$ có $\\widehat{AME}$ chung và $\\widehat{MAE} = \\widehat{MCA}$ nên $\\triangle MEA \\backsim \\triangle MAC$ (g.g).\n'
             '\\item Từ $\\triangle MEA \\backsim \\triangle MAC$, ta suy ra $\\dfrac{ME}{MA} = \\dfrac{MA}{MC} \\Rightarrow MA^2 = ME \\cdot MC$.\\\\'
             'Chứng minh hoàn toàn tương tự, ta có $\\triangle MFA \\backsim \\triangle MAD$ (g.g), suy ra $MA^2 = MF \\cdot MD$. Vậy $MA^2 = ME \\cdot MC = MF \\cdot MD$.\n'
