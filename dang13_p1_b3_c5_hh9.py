@@ -173,7 +173,7 @@ def bt_dang13_p1_b3_c5_hh9(self):
         \\end{center}''' % (goc_nho, goc_nho, goc_nho, goc_nho, goc_nho//2, goc_nho))
     
         # Câu hỏi
-        noidungcauhoi = ('''Cho hai điểm $A, B$ nằm trên đường tròn $(O; %d\\text{ cm})$ sao cho $\\widehat{AOB} = %d^\\circ$ (như hình vẽ). Độ dài cung lớn $\\overparen{AmB}$ bằng
+        noidungcauhoi = ('''Cho hai điểm $A, B$ nằm trên đường tròn $(O; %d\\text{ cm})$ sao cho $\\widehat{AOB} = %d^\\circ$ (như hình vẽ). Độ dài cung lớn $\\overset\\frown{AmB}$ bằng
         %s''' % (R_val, goc_nho, hinh_ve))
     
         # Các đáp án
@@ -187,9 +187,9 @@ def bt_dang13_p1_b3_c5_hh9(self):
         random.shuffle(list_1)
     
         # Nội dung lời giải
-        loigiai = ('''Số đo cung nhỏ $\\overparen{AB}$ là $\\text{sđ}\\overparen{AB} = \\widehat{AOB} = %d^\\circ$.\\\\
-                    Số đo cung lớn $\\overparen{AmB}$ là: $\\text{sđ}\\overparen{AmB} = 360^\\circ - %d^\\circ = %d^\\circ$.\\\\
-                    Độ dài cung lớn $\\overparen{AmB}$ là:
+        loigiai = ('''Số đo cung nhỏ $\\overset\\frown{AB}$ là $\\text{sđ}\\overset\\frown{AB} = \\widehat{AOB} = %d^\\circ$.\\\\
+                    Số đo cung lớn $\\overset\\frown{AmB}$ là: $\\text{sđ}\\overset\\frown{AmB} = 360^\\circ - %d^\\circ = %d^\\circ$.\\\\
+                    Độ dài cung lớn $\\overset\\frown{AmB}$ là:
                     \\begin{align*}
                     l = \\dfrac{%d}{180}\\pi \\cdot %d = %s\\text{ (cm)}.
                     \\end{align*}''' % (goc_nho, goc_nho, goc_lon, goc_lon, R_val, latex(l_lon)))

@@ -170,7 +170,7 @@ def bt_dang15_p1_b3_c5_hh9(self):
         \\end{center}''')
     
         # Câu hỏi
-        noidungcauhoi = ('''Cho ba điểm $A, B, C$ thuộc đường tròn $(O; %d\\text{ cm})$ sao cho tam giác $ABC$ đều (như hình vẽ). Độ dài mỗi cung nhỏ $\\overparen{AB}, \\overparen{BC}, \\overparen{CA}$ bằng
+        noidungcauhoi = ('''Cho ba điểm $A, B, C$ thuộc đường tròn $(O; %d\\text{ cm})$ sao cho tam giác $ABC$ đều (như hình vẽ). Độ dài mỗi cung nhỏ $\\overset\\frown{AB}, \\overset\\frown{BC}, \\overset\\frown{CA}$ bằng
         %s''' % (R_val, hinh_ve))
     
         # Các đáp án
@@ -184,7 +184,7 @@ def bt_dang15_p1_b3_c5_hh9(self):
         random.shuffle(list_1)
     
         # Nội dung lời giải
-        loigiai = ('''Vì tam giác $ABC$ đều nội tiếp đường tròn $(O)$ nên ba cung nhỏ $\\overparen{AB}, \\overparen{BC}, \\overparen{CA}$ bằng nhau và mỗi cung có số đo bằng $\\dfrac{360^\\circ}{3} = 120^\\circ$.\\\\
+        loigiai = ('''Vì tam giác $ABC$ đều nội tiếp đường tròn $(O)$ nên ba cung nhỏ $\\overset\\frown{AB}, \\overset\\frown{BC}, \\overset\\frown{CA}$ bằng nhau và mỗi cung có số đo bằng $\\dfrac{360^\\circ}{3} = 120^\\circ$.\\\\
                     Độ dài mỗi cung nhỏ đó là:
                     \\begin{align*}
                     l = \\dfrac{120}{180}\\pi \\cdot %d = %s\\text{ (cm)}.

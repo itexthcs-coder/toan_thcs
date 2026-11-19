@@ -184,7 +184,7 @@ def bt_dang20_p1_b3_c5_hh9(self):
         \\end{center}''')
     
         # Câu hỏi
-        noidungcauhoi = ('''Cho đường tròn $(O; %s\\text{ cm})$ và dây $AB$ có khoảng cách từ tâm $O$ đến $AB$ bằng $%s\\text{ cm}$ (như hình vẽ). Số đo cung nhỏ $\\overparen{AB}$ bằng
+        noidungcauhoi = ('''Cho đường tròn $(O; %s\\text{ cm})$ và dây $AB$ có khoảng cách từ tâm $O$ đến $AB$ bằng $%s\\text{ cm}$ (như hình vẽ). Số đo cung nhỏ $\\overset\\frown{AB}$ bằng
         %s''' % (latex(R_val), OH_str, hinh_ve))
     
         # Các đáp án
@@ -203,7 +203,7 @@ def bt_dang20_p1_b3_c5_hh9(self):
                     \\begin{align*}
                     \\cos \\widehat{AOH} = \\dfrac{OH}{OA} = \\dfrac{%s}{%s} \\implies \\widehat{AOH} = %d^\\circ.
                     \\end{align*}
-                    Suy ra $\\widehat{AOB} = 2\\widehat{AOH} = %d^\\circ$. Vậy số đo cung nhỏ $\\overparen{AB}$ bằng $%d^\\circ$.''' % (OH_str, OH_str, latex(R_val), goc_nua, goc_ans, goc_ans))
+                    Suy ra $\\widehat{AOB} = 2\\widehat{AOH} = %d^\\circ$. Vậy số đo cung nhỏ $\\overset\\frown{AB}$ bằng $%d^\\circ$.''' % (OH_str, OH_str, latex(R_val), goc_nua, goc_ans, goc_ans))
 
     # Xuất câu trắc nghiệm
     content = ('\\begin{minipage}{\\textwidth} \n' +
