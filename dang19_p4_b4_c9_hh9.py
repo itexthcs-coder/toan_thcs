@@ -154,10 +154,10 @@ def bt_dang19_p4_b4_c9_hh9(self):
         noidungcauhoi = ('''Trong một xưởng cơ khí, người ta tiện một thanh thép hình trụ tròn đặc có đường kính đáy $%s\\text{ mm}$ và chiều cao phần đầu ốc $%s\\text{ mm}$ để tạo thành đầu một chiếc đinh ốc có dạng hình lăng trụ đứng đáy là lục giác đều lớn nhất có thể (tiết diện đáy minh họa như hình vẽ). Tính thể tích phần thép bị tiện bỏ đi (lấy $\\pi \\approx 3,14$ và $\\sqrt{3} \\approx 1,73$, làm tròn kết quả đến hàng đơn vị theo $\\text{mm}^3$). %s'''
                          % (d_tru, h_oc, hinh_tikz))
 
-        loigiai = ('''Bán kính đáy của thanh thép hình trụ là $R = \\frac{%s}{2} = %s\\text{ (mm)}$. \\
+        loigiai = ('''Bán kính đáy của thanh thép hình trụ là $R = \\frac{%s}{2} = %s\\text{ (mm)}$. \\\\
 Diện tích đáy của thanh thép hình trụ tròn là:
 $$S_{\\text{tròn}} = \\pi R^2 \\approx 3,14 \\cdot %s^2 = %s\\text{ (mm}^2\\text{)}.$$
-Để đầu đinh ốc có tiết diện lục giác đều lớn nhất thì lục giác đều đáy phải nội tiếp đường tròn đáy của hình trụ, do đó độ dài mỗi cạnh của lục giác đều bằng bán kính $R = %s\\text{ mm}$. \\
+Để đầu đinh ốc có tiết diện lục giác đều lớn nhất thì lục giác đều đáy phải nội tiếp đường tròn đáy của hình trụ, do đó độ dài mỗi cạnh của lục giác đều bằng bán kính $R = %s\\text{ mm}$. \\\\
 Diện tích đáy hình lục giác đều của đầu đinh ốc là:
 $$S_{\\text{lục giác}} = 6 \\cdot \\frac{%s^2\\sqrt{3}}{4} = %s\\sqrt{3} \\approx %s \\cdot 1,73 = %s\\text{ (mm}^2\\text{)}.$$
 Diện tích phần đáy bị tiện bỏ đi là:

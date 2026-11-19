@@ -153,12 +153,12 @@ def bt_dang9_p4_b4_c9_hh9(self):
         noidungcauhoi = ('''Cho lục giác đều $ABCDEF$ nội tiếp đường tròn $(O)$ (như hình vẽ). Kẻ các đường chéo chính $AD, BE, CF$ cắt nhau tại $O$ và kẻ đường chéo $AC$. Chứng minh rằng $AC \\perp CD$ và tính tỉ số diện tích của tam giác $ACD$ với lục giác đều $ABCDEF$. %s'''
                          % (hinh_tikz))
 
-        loigiai = ('''Lục giác đều $ABCDEF$ nội tiếp đường tròn $(O)$ có sáu cung nhỏ $AB, BC, CD, DE, EF, FA$ bằng nhau, mỗi cung có số đo bằng $60^\\circ$. \\
-Ta có $\\text{sđ}\\wideparen{ABCD} = 3 \\cdot 60^\\circ = 180^\\circ$ nên $AD$ là đường kính của đường tròn $(O)$. \\
-Xét $\\triangle ACD$ nội tiếp đường tròn $(O)$ có cạnh $AD$ là đường kính nên $\\triangle ACD$ vuông tại $C$, suy ra $AC \\perp CD$. \\
-Mặt khác, ta có $S_{\\triangle ACD} = S_{\\triangle OAC} + S_{\\triangle OCD}$. \\
-Do $OA = OD$ (cùng bằng bán kính $R$) và hai tam giác $\\triangle OAC, \\triangle OCD$ có chung đường cao hạ từ $C$ xuống $AD$ nên $S_{\\triangle OAC} = S_{\\triangle OCD}$. \\
-Vì $\\triangle OCD$ là một trong $6$ tam giác đều bằng nhau tạo nên lục giác đều $ABCDEF$ nên $S_{\\triangle OCD} = \\frac{1}{6} S_{ABCDEF}$. \\
+        loigiai = ('''Lục giác đều $ABCDEF$ nội tiếp đường tròn $(O)$ có sáu cung nhỏ $AB, BC, CD, DE, EF, FA$ bằng nhau, mỗi cung có số đo bằng $60^\\circ$. \\\\
+Ta có $\\text{sđ}\\wideparen{ABCD} = 3 \\cdot 60^\\circ = 180^\\circ$ nên $AD$ là đường kính của đường tròn $(O)$. \\\\
+Xét $\\triangle ACD$ nội tiếp đường tròn $(O)$ có cạnh $AD$ là đường kính nên $\\triangle ACD$ vuông tại $C$, suy ra $AC \\perp CD$. \\\\
+Mặt khác, ta có $S_{\\triangle ACD} = S_{\\triangle OAC} + S_{\\triangle OCD}$. \\\\
+Do $OA = OD$ (cùng bằng bán kính $R$) và hai tam giác $\\triangle OAC, \\triangle OCD$ có chung đường cao hạ từ $C$ xuống $AD$ nên $S_{\\triangle OAC} = S_{\\triangle OCD}$. \\\\
+Vì $\\triangle OCD$ là một trong $6$ tam giác đều bằng nhau tạo nên lục giác đều $ABCDEF$ nên $S_{\\triangle OCD} = \\frac{1}{6} S_{ABCDEF}$. \\\\
 Vậy $S_{\\triangle ACD} = 2 \\cdot \\frac{1}{6} S_{ABCDEF} = \\frac{1}{3} S_{ABCDEF}$, hay tỉ số diện tích của $\\triangle ACD$ với lục giác đều $ABCDEF$ bằng $\\frac{1}{3}$.''')
 
     content = ('\\begin{minipage}{\\textwidth} \n'

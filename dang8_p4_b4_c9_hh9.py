@@ -152,20 +152,20 @@ def bt_dang8_p4_b4_c9_hh9(self):
 \\end{tikzpicture}
 \\end{center}'''
 
-        noidungcauhoi = ('''Cho lục giác đều $ABCDEF$ nội tiếp đường tròn $(O)$ bán kính $R$ (như hình vẽ). \\
-a) Chứng minh rằng tam giác $BDF$ là tam giác đều và tính độ dài cạnh của tam giác $BDF$ theo $R$. \\
+        noidungcauhoi = ('''Cho lục giác đều $ABCDEF$ nội tiếp đường tròn $(O)$ bán kính $R$ (như hình vẽ). \\\\
+a) Chứng minh rằng tam giác $BDF$ là tam giác đều và tính độ dài cạnh của tam giác $BDF$ theo $R$. \\\\
 b) Chỉ ra tất cả các phép quay %s tâm $O$ với góc quay $\\alpha^\\circ$ ($0^\\circ < \\alpha^\\circ \\le 360^\\circ$) giữ nguyên tam giác $BDF$. %s'''
                          % (chieu, hinh_tikz))
 
         loigiai = ('''\\begin{enumEX}[a)]{1}
-\item Lục giác đều $ABCDEF$ có các cạnh bằng nhau và các góc trong đều bằng $120^\\circ$. \\
+\\item Lục giác đều $ABCDEF$ có các cạnh bằng nhau và các góc trong đều bằng $120^\\circ$. \\\\
 Xét ba tam giác $\\triangle BCD$, $\\triangle DEF$ và $\\triangle FAB$ có:
 $$BC = CD = DE = EF = FA = AB \\quad \\text{và} \\quad \\widehat{BCD} = \\widehat{DEF} = \\widehat{FAB} = 120^\\circ.$$
-Do đó $\\triangle BCD = \\triangle DEF = \\triangle FAB$ (c.g.c), suy ra $BD = DF = FB$. Vậy $\\triangle BDF$ là tam giác đều. \\
+Do đó $\\triangle BCD = \\triangle DEF = \\triangle FAB$ (c.g.c), suy ra $BD = DF = FB$. Vậy $\\triangle BDF$ là tam giác đều. \\\\
 Vì $\\triangle BDF$ là tam giác đều nội tiếp đường tròn $(O; R)$ nên $\\widehat{BOD} = 120^\\circ$ và $OB = OD = R$. Kẻ đường cao $OH$ của $\\triangle OBD$, ta có:
 $$BD = 2BH = 2 OB \\cdot \\sin 60^\\circ = 2R \\cdot \\frac{\\sqrt{3}}{2} = R\\sqrt{3}.$$
-\item Vì $\\triangle BDF$ là tam giác đều nội tiếp đường tròn $(O)$ nên các phép quay %s tâm $O$ với góc quay $\\alpha^\\circ$ ($0^\\circ < \\alpha^\\circ \\le 360^\\circ$) giữ nguyên tam giác $BDF$ gồm $3$ phép quay với các góc quay lần lượt là $120^\\circ$, $240^\\circ$ và $360^\\circ$.
-\end{enumEX}'''
+\\item Vì $\\triangle BDF$ là tam giác đều nội tiếp đường tròn $(O)$ nên các phép quay %s tâm $O$ với góc quay $\\alpha^\\circ$ ($0^\\circ < \\alpha^\\circ \\le 360^\\circ$) giữ nguyên tam giác $BDF$ gồm $3$ phép quay với các góc quay lần lượt là $120^\\circ$, $240^\\circ$ và $360^\\circ$.
+\\end{enumEX}'''
                    % (chieu))
 
     content = ('\\begin{minipage}{\\textwidth} \n'

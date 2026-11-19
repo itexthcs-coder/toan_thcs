@@ -166,14 +166,14 @@ def bt_dang12_p4_b4_c9_hh9(self):
         noidungcauhoi = ('''Cho tứ giác $ABCD$ nội tiếp đường tròn $(O)$ sao cho các tia $AB$ và $DC$ cắt nhau tại $E$, các tia $AD$ và $BC$ cắt nhau tại $F$ (như hình vẽ). Biết rằng $\\widehat{BEC} = %s^\\circ$ và $\\widehat{DFC} = %s^\\circ$. Tính số đo bốn góc trong của tứ giác $ABCD$. %s'''
                          % (bec, dfc, hinh_tikz))
 
-        loigiai = ('''Xét $\\triangle EAD$ có góc ngoài tại đỉnh $D$ là $\\widehat{EDC} = \\widehat{BAD} + \\widehat{BEC} = \\widehat{BAD} + %s^\\circ$. \\
+        loigiai = ('''Xét $\\triangle EAD$ có góc ngoài tại đỉnh $D$ là $\\widehat{EDC} = \\widehat{BAD} + \\widehat{BEC} = \\widehat{BAD} + %s^\\circ$. \\\\
 Xét $\\triangle FDC$ có góc ngoài tại đỉnh $C$ là:
 $$\\widehat{BCD} = \\widehat{EDC} + \\widehat{DFC} = \\widehat{BAD} + %s^\\circ + %s^\\circ = \\widehat{BAD} + %s^\\circ.$$
 Vì tứ giác $ABCD$ nội tiếp đường tròn $(O)$ nên tổng hai góc đối diện bằng $180^\\circ$:
 $$\\widehat{BAD} + \\widehat{BCD} = 180^\\circ \\Rightarrow 2\\widehat{BAD} + %s^\\circ = 180^\\circ \\Rightarrow \\widehat{BAD} = %s^\\circ.$$
-Suy ra $\\widehat{BCD} = 180^\\circ - %s^\\circ = %s^\\circ$. \\
-Mặt khác, $\\widehat{ADC} = 180^\\circ - \\widehat{EDC} = 180^\\circ - (%s^\\circ + %s^\\circ) = %s^\\circ$. \\
-Do đó $\\widehat{ABC} = 180^\\circ - \\widehat{ADC} = 180^\\circ - %s^\\circ = %s^\\circ$. \\
+Suy ra $\\widehat{BCD} = 180^\\circ - %s^\\circ = %s^\\circ$. \\\\
+Mặt khác, $\\widehat{ADC} = 180^\\circ - \\widehat{EDC} = 180^\\circ - (%s^\\circ + %s^\\circ) = %s^\\circ$. \\\\
+Do đó $\\widehat{ABC} = 180^\\circ - \\widehat{ADC} = 180^\\circ - %s^\\circ = %s^\\circ$. \\\\
 Vậy số đo bốn góc trong của tứ giác $ABCD$ là $\\widehat{BAD} = %s^\\circ$, $\\widehat{ABC} = %s^\\circ$, $\\widehat{BCD} = %s^\\circ$, $\\widehat{ADC} = %s^\\circ$.'''
                    % (bec, bec, dfc, tong_ef, tong_ef, bad, bad, bcd, bad, bec, adc, adc, abc, bad, abc, bcd, adc))
 

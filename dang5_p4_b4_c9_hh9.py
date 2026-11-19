@@ -162,16 +162,16 @@ def bt_dang5_p4_b4_c9_hh9(self):
                          % (canh_lon_str, canh_nho_str, hinh_tikz))
 
         loigiai = ('''\\begin{enumEX}[a)]{1}
-\item Chứng minh $MNPQEF$ là lục giác đều: \\
-Xét $\\triangle ABC$ có $\\frac{AM}{AB} = \\frac{AF}{AC} = \\frac{1}{3}$, theo định lí Thalès đảo suy ra $MF // BC$ và $\\frac{MF}{BC} = \\frac{1}{3} \\Rightarrow MF = \\frac{1}{3}BC = %s$. \\
-Chứng minh tương tự, ta được $NP = QE = %s$. Vậy lục giác lồi $MNPQEF$ có tất cả $6$ cạnh bằng nhau và đều bằng $%s$. \\
-Mặt khác, tam giác $AMF$ có $AM = MF = FA = %s$ nên $\\triangle AMF$ đều, suy ra $\\widehat{AMF} = 60^\\circ \\Rightarrow \\widehat{FMN} = 180^\\circ - 60^\\circ = 120^\\circ$. \\
-Tương tự các góc trong tại các đỉnh $N, P, Q, E, F$ của lục giác $MNPQEF$ đều bằng $120^\\circ$. \\
+\\item Chứng minh $MNPQEF$ là lục giác đều: \\\\
+Xét $\\triangle ABC$ có $\\frac{AM}{AB} = \\frac{AF}{AC} = \\frac{1}{3}$, theo định lí Thalès đảo suy ra $MF // BC$ và $\\frac{MF}{BC} = \\frac{1}{3} \\Rightarrow MF = \\frac{1}{3}BC = %s$. \\\\
+Chứng minh tương tự, ta được $NP = QE = %s$. Vậy lục giác lồi $MNPQEF$ có tất cả $6$ cạnh bằng nhau và đều bằng $%s$. \\\\
+Mặt khác, tam giác $AMF$ có $AM = MF = FA = %s$ nên $\\triangle AMF$ đều, suy ra $\\widehat{AMF} = 60^\\circ \\Rightarrow \\widehat{FMN} = 180^\\circ - 60^\\circ = 120^\\circ$. \\\\
+Tương tự các góc trong tại các đỉnh $N, P, Q, E, F$ của lục giác $MNPQEF$ đều bằng $120^\\circ$. \\\\
 Vậy $MNPQEF$ là một lục giác đều.
-\item Tính diện tích lục giác đều $MNPQEF$: \\
+\\item Tính diện tích lục giác đều $MNPQEF$: \\\\
 Lục giác đều $MNPQEF$ có cạnh bằng $%s$ gồm $6$ tam giác đều có cạnh bằng $%s$, do đó diện tích của lục giác đều $MNPQEF$ là:
 $$S_{MNPQEF} = 6 \\cdot \\frac{(%s)^2\\sqrt{3}}{4} = %s a^2.$$'''
-                   % (canh_nho_str, canh_nho_str, canh_nho_str, canh_nho_str, canh_nho_str, canh_nho_str, canh_nho_str, latex(dt_kq))) + '\end{enumEX}'
+                   % (canh_nho_str, canh_nho_str, canh_nho_str, canh_nho_str, canh_nho_str, canh_nho_str, canh_nho_str, latex(dt_kq))) + '\\end{enumEX}'
 
     content = ('\\begin{minipage}{\\textwidth} \n'
                '\\begin{ex}\n' + str(noidungcauhoi) + '\n'

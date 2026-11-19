@@ -156,19 +156,19 @@ def bt_dang10_p4_b4_c9_hh9(self):
 \\end{tikzpicture}
 \\end{center}'''
 
-        noidungcauhoi = ('''Cho đường tròn $(O; %s\\text{ cm})$ và điểm $A$ nằm trên đường tròn $(O)$ (như hình vẽ). \\
-a) Nêu cách xác định các đỉnh $B, C, D$ của hình vuông $ABCD$ nội tiếp $(O)$ bằng các phép quay thuận chiều tâm $O$. \\
+        noidungcauhoi = ('''Cho đường tròn $(O; %s\\text{ cm})$ và điểm $A$ nằm trên đường tròn $(O)$ (như hình vẽ). \\\\
+a) Nêu cách xác định các đỉnh $B, C, D$ của hình vuông $ABCD$ nội tiếp $(O)$ bằng các phép quay thuận chiều tâm $O$. \\\\
 b) Từ hình vuông $ABCD$, tiếp tục sử dụng một phép quay tâm $O$ để xác định bốn điểm $M, N, P, Q$ sao cho $AMBNCPDQ$ là một bát giác đều. Giải thích vì sao $AMBNCPDQ$ là bát giác đều. %s'''
                          % (r, hinh_tikz))
 
         loigiai = ('''\\begin{enumEX}[a)]{1}
-\item Vì bốn đỉnh của hình vuông chia đường tròn $(O)$ thành $4$ cung nhỏ bằng nhau, mỗi cung có số đo bằng $\\frac{360^\\circ}{4} = 90^\\circ$ nên ta xác định các đỉnh $B, C, D$ như sau: \\
-- Điểm $B$ là ảnh của điểm $A$ qua phép quay thuận chiều $90^\\circ$ tâm $O$. \\
-- Điểm $C$ là ảnh của điểm $A$ qua phép quay thuận chiều $180^\\circ$ tâm $O$. \\
+\\item Vì bốn đỉnh của hình vuông chia đường tròn $(O)$ thành $4$ cung nhỏ bằng nhau, mỗi cung có số đo bằng $\\frac{360^\\circ}{4} = 90^\\circ$ nên ta xác định các đỉnh $B, C, D$ như sau: \\\\
+- Điểm $B$ là ảnh của điểm $A$ qua phép quay thuận chiều $90^\\circ$ tâm $O$. \\\\
+- Điểm $C$ là ảnh của điểm $A$ qua phép quay thuận chiều $180^\\circ$ tâm $O$. \\\\
 - Điểm $D$ là ảnh của điểm $A$ qua phép quay thuận chiều $270^\\circ$ tâm $O$.
-\item Thực hiện phép quay thuận chiều $45^\\circ$ tâm $O$ biến các điểm $A, B, C, D$ lần lượt thành các điểm $M, N, P, Q$. \\
+\\item Thực hiện phép quay thuận chiều $45^\\circ$ tâm $O$ biến các điểm $A, B, C, D$ lần lượt thành các điểm $M, N, P, Q$. \\\\
 Giải thích: Khi đó tám điểm $A, M, B, N, C, P, D, Q$ cùng nằm trên đường tròn $(O)$ theo thứ tự thuận chiều kim đồng hồ và chia đường tròn thành $8$ cung nhỏ bằng nhau, mỗi cung có số đo bằng $45^\\circ$. Do đó đa giác lồi $AMBNCPDQ$ có $8$ cạnh bằng nhau (căng các cung bằng nhau) và $8$ góc trong bằng nhau (mỗi góc bằng $180^\\circ - 45^\\circ = 135^\\circ$), nên $AMBNCPDQ$ là một bát giác đều.
-\end{enumEX}''')
+\\end{enumEX}''')
 
     content = ('\\begin{minipage}{\\textwidth} \n'
                '\\begin{ex}\n' + str(noidungcauhoi) + '\n'

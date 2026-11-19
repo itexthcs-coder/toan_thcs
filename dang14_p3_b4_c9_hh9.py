@@ -128,8 +128,8 @@ def bt_dang14_p3_b4_c9_hh9(self):
     dang = random.choice(lisdang)
     if dang == '1':
         cau_hoi_goc = [
-            ("\widehat{AIB}", "108"),
-            ("\widehat{AID}", "72")
+            ("\\widehat{AIB}", "108"),
+            ("\\widehat{AID}", "72")
         ]
         ten_goc, dap_so = random.choice(cau_hoi_goc)
         kq_str = dap_so
@@ -157,13 +157,13 @@ def bt_dang14_p3_b4_c9_hh9(self):
                          % (ten_goc, hinh_tikz))
 
         if dap_so == "108":
-            loigiai = ('''Ngũ giác đều $ABCDE$ có các cạnh bằng nhau và các góc trong đều bằng $108^\\circ$. \\
-Xét $\\triangle ABC$ cân tại $B$ có $\\widehat{ABC} = 108^\\circ$, suy ra $\\widehat{BAC} = \\frac{180^\\circ - 108^\\circ}{2} = 36^\\circ$. \\
-Tương tự, $\\triangle BCD$ cân tại $C$ có $\\widehat{BCD} = 108^\\circ$, suy ra $\\widehat{CBD} = 36^\\circ$. \\
+            loigiai = ('''Ngũ giác đều $ABCDE$ có các cạnh bằng nhau và các góc trong đều bằng $108^\\circ$. \\\\
+Xét $\\triangle ABC$ cân tại $B$ có $\\widehat{ABC} = 108^\\circ$, suy ra $\\widehat{BAC} = \\frac{180^\\circ - 108^\\circ}{2} = 36^\\circ$. \\\\
+Tương tự, $\\triangle BCD$ cân tại $C$ có $\\widehat{BCD} = 108^\\circ$, suy ra $\\widehat{CBD} = 36^\\circ$. \\\\
 Xét $\\triangle IAB$, ta có $\\widehat{AIB} = 180^\\circ - (\\widehat{IAB} + \\widehat{IBA}) = 180^\\circ - (36^\\circ + 36^\\circ) = 108^\\circ$.''')
         else:
-            loigiai = ('''Ngũ giác đều $ABCDE$ có các cạnh bằng nhau và các góc trong đều bằng $108^\\circ$. \\
-Tam giác $ABC$ cân tại $B$ có $\\widehat{ABC} = 108^\\circ \\Rightarrow \\widehat{BAC} = 36^\\circ$. Tương tự $\\widehat{CBD} = 36^\\circ$. \\
+            loigiai = ('''Ngũ giác đều $ABCDE$ có các cạnh bằng nhau và các góc trong đều bằng $108^\\circ$. \\\\
+Tam giác $ABC$ cân tại $B$ có $\\widehat{ABC} = 108^\\circ \\Rightarrow \\widehat{BAC} = 36^\\circ$. Tương tự $\\widehat{CBD} = 36^\\circ$. \\\\
 Góc $\\widehat{AID}$ là góc ngoài tại đỉnh $I$ của $\\triangle IAB$ nên $\\widehat{AID} = \\widehat{IAB} + \\widehat{IBA} = 36^\\circ + 36^\\circ = 72^\\circ$.''')
 
         dapan = '\\shortans[0]{$%s$}\n' % (str(kq_str))

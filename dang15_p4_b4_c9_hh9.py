@@ -153,12 +153,12 @@ def bt_dang15_p4_b4_c9_hh9(self):
         noidungcauhoi = ('''Cho tam giác nhọn $ABC$ nội tiếp đường tròn tâm $O$ (như hình vẽ). Gọi $M, N, P$ lần lượt là trung điểm của các cạnh $BC, CA, AB$. Chứng minh rằng ba tứ giác $ANOP, BPOM, CMON$ đều là các tứ giác nội tiếp và xác định tâm của các đường tròn ngoại tiếp ba tứ giác đó. %s'''
                          % (hinh_tikz))
 
-        loigiai = ('''Xét đường tròn $(O)$ có các dây cung $BC, CA, AB$ không đi qua tâm $O$. \\
+        loigiai = ('''Xét đường tròn $(O)$ có các dây cung $BC, CA, AB$ không đi qua tâm $O$. \\\\
 Vì $M, N, P$ lần lượt là trung điểm của các dây cung $BC, CA, AB$ nên theo quan hệ vuông góc giữa đường kính và dây cung, ta có:
 $$OM \\perp BC, \\qquad ON \\perp CA, \\qquad OP \\perp AB.$$
-Suy ra $\\widehat{OMC} = \\widehat{OMB} = 90^\\circ$, $\\widehat{ONA} = \\widehat{ONC} = 90^\\circ$, $\\widehat{OPA} = \\widehat{OPB} = 90^\\circ$. \\
-- Xét tứ giác $ANOP$ có $\\widehat{OPA} + \\widehat{ONA} = 90^\\circ + 90^\\circ = 180^\\circ$, nên $ANOP$ là tứ giác nội tiếp đường tròn đường kính $OA$ (tâm là trung điểm của $OA$). \\
-- Xét tứ giác $BPOM$ có $\\widehat{OPB} + \\widehat{OMB} = 90^\\circ + 90^\\circ = 180^\\circ$, nên $BPOM$ là tứ giác nội tiếp đường tròn đường kính $OB$ (tâm là trung điểm của $OB$). \\
+Suy ra $\\widehat{OMC} = \\widehat{OMB} = 90^\\circ$, $\\widehat{ONA} = \\widehat{ONC} = 90^\\circ$, $\\widehat{OPA} = \\widehat{OPB} = 90^\\circ$. \\\\
+- Xét tứ giác $ANOP$ có $\\widehat{OPA} + \\widehat{ONA} = 90^\\circ + 90^\\circ = 180^\\circ$, nên $ANOP$ là tứ giác nội tiếp đường tròn đường kính $OA$ (tâm là trung điểm của $OA$). \\\\
+- Xét tứ giác $BPOM$ có $\\widehat{OPB} + \\widehat{OMB} = 90^\\circ + 90^\\circ = 180^\\circ$, nên $BPOM$ là tứ giác nội tiếp đường tròn đường kính $OB$ (tâm là trung điểm của $OB$). \\\\
 - Xét tứ giác $CMON$ có $\\widehat{OMC} + \\widehat{ONC} = 90^\\circ + 90^\\circ = 180^\\circ$, nên $CMON$ là tứ giác nội tiếp đường tròn đường kính $OC$ (tâm là trung điểm của $OC$).''')
 
     content = ('\\begin{minipage}{\\textwidth} \n'

@@ -155,13 +155,13 @@ def bt_dang3_p4_b4_c9_hh9(self):
         noidungcauhoi = ('''Cho lục giác đều $ABCDEF$ nội tiếp đường tròn $(O)$ bán kính $R = %s\\text{ cm}$ (như hình vẽ). Kẻ hai tam giác đều $ACE$ và $BDF$. Gọi $M, N, P, Q, R, S$ lần lượt là giao điểm của các cặp đường chéo $(AC, BF)$, $(AC, BD)$, $(CE, BD)$, $(CE, DF)$, $(EA, DF)$ và $(EA, BF)$. Chứng minh rằng $MNPQRS$ là một lục giác đều. %s'''
                          % (r, hinh_tikz))
 
-        loigiai = ('''Lục giác đều $ABCDEF$ nội tiếp đường tròn $(O)$ chia đường tròn thành $6$ cung nhỏ bằng nhau, mỗi cung có số đo bằng $\\frac{360^\\circ}{6} = 60^\\circ$. \\
-Xét $\\triangle ABM$, ta có các góc nội tiếp $\\widehat{BAM} = \\widehat{BAC} = \\frac{1}{2}\\text{sđ}\\wideparen{BC} = 30^\\circ$ và $\\widehat{ABM} = \\widehat{ABF} = \\frac{1}{2}\\text{sđ}\\wideparen{AF} = 30^\\circ$. \\
-Do đó $\\triangle ABM$ cân tại $M$ và $\\widehat{AMB} = 180^\\circ - 30^\\circ - 30^\\circ = 120^\\circ$. \\
-Suy ra góc trong $\\widehat{SMN}$ của đa giác $MNPQRS$ (đối đỉnh với $\\widehat{AMB}$) cũng bằng $120^\\circ$. \\
-Chứng minh hoàn toàn tương tự cho các tam giác cân bằng nhau $\\triangle ABM = \\triangle BCN = \\triangle CDP = \\triangle DEQ = \\triangle EFR = \\triangle FAS$ (g.c.g), ta có: \\
-- Các góc trong tại các đỉnh $M, N, P, Q, R, S$ của đa giác $MNPQRS$ đều bằng $120^\\circ$. \\
-- Các đoạn thẳng $AM = MB = BN = NC = CP = PD = DQ = QE = ER = RF = FS = SA$. \\
+        loigiai = ('''Lục giác đều $ABCDEF$ nội tiếp đường tròn $(O)$ chia đường tròn thành $6$ cung nhỏ bằng nhau, mỗi cung có số đo bằng $\\frac{360^\\circ}{6} = 60^\\circ$. \\\\
+Xét $\\triangle ABM$, ta có các góc nội tiếp $\\widehat{BAM} = \\widehat{BAC} = \\frac{1}{2}\\text{sđ}\\wideparen{BC} = 30^\\circ$ và $\\widehat{ABM} = \\widehat{ABF} = \\frac{1}{2}\\text{sđ}\\wideparen{AF} = 30^\\circ$. \\\\
+Do đó $\\triangle ABM$ cân tại $M$ và $\\widehat{AMB} = 180^\\circ - 30^\\circ - 30^\\circ = 120^\\circ$. \\\\
+Suy ra góc trong $\\widehat{SMN}$ của đa giác $MNPQRS$ (đối đỉnh với $\\widehat{AMB}$) cũng bằng $120^\\circ$. \\\\
+Chứng minh hoàn toàn tương tự cho các tam giác cân bằng nhau $\\triangle ABM = \\triangle BCN = \\triangle CDP = \\triangle DEQ = \\triangle EFR = \\triangle FAS$ (g.c.g), ta có: \\\\
+- Các góc trong tại các đỉnh $M, N, P, Q, R, S$ của đa giác $MNPQRS$ đều bằng $120^\\circ$. \\\\
+- Các đoạn thẳng $AM = MB = BN = NC = CP = PD = DQ = QE = ER = RF = FS = SA$. \\\\
 Mà $AC = AM + MN + NC$ và các cạnh của hai tam giác đều $ACE, BDF$ đều bằng nhau ($AC = CE = EA = BD = DF = FB$), nên ta suy ra:
 $$MN = NP = PQ = QR = RS = SM.$$
 Vậy đa giác lồi $MNPQRS$ có tất cả các cạnh bằng nhau và các góc bằng nhau nên là một lục giác đều.''')

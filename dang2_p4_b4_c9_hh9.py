@@ -159,12 +159,12 @@ def bt_dang2_p4_b4_c9_hh9(self):
         noidungcauhoi = ('''Cho tam giác đều $%s$ nội tiếp đường tròn tâm $O$ theo thứ tự ngược chiều kim đồng hồ (như hình vẽ). Phép quay ngược chiều $60^\\circ$ tâm $O$ biến các điểm $%s, %s, %s$ lần lượt thành các điểm $%s, %s, %s$. Chứng minh rằng đa giác $%s$ là một lục giác đều. %s'''
                          % (ten_tg, a, b, c, d, e, f, ten_lg, hinh_tikz))
 
-        loigiai = ('''Vì tam giác đều $%s$ nội tiếp đường tròn $(O)$ theo thứ tự ngược chiều kim đồng hồ nên ba cung nhỏ $%s%s, %s%s, %s%s$ đều có số đo bằng $\\frac{360^\\circ}{3} = 120^\\circ$. \\
-Phép quay ngược chiều $60^\\circ$ tâm $O$ biến các điểm $%s, %s, %s$ lần lượt thành $%s, %s, %s$ nên các điểm $%s, %s, %s$ cùng nằm trên đường tròn $(O)$ và lần lượt là điểm chính giữa của các cung nhỏ $%s%s, %s%s, %s%s$. \\
-Khi đó sáu điểm $%s, %s, %s, %s, %s, %s$ chia đường tròn $(O)$ thành $6$ cung nhỏ bằng nhau, mỗi cung có số đo bằng $60^\\circ$. \\
+        loigiai = ('''Vì tam giác đều $%s$ nội tiếp đường tròn $(O)$ theo thứ tự ngược chiều kim đồng hồ nên ba cung nhỏ $%s%s, %s%s, %s%s$ đều có số đo bằng $\\frac{360^\\circ}{3} = 120^\\circ$. \\\\
+Phép quay ngược chiều $60^\\circ$ tâm $O$ biến các điểm $%s, %s, %s$ lần lượt thành $%s, %s, %s$ nên các điểm $%s, %s, %s$ cùng nằm trên đường tròn $(O)$ và lần lượt là điểm chính giữa của các cung nhỏ $%s%s, %s%s, %s%s$. \\\\
+Khi đó sáu điểm $%s, %s, %s, %s, %s, %s$ chia đường tròn $(O)$ thành $6$ cung nhỏ bằng nhau, mỗi cung có số đo bằng $60^\\circ$. \\\\
 Suy ra sáu cạnh của đa giác lồi $%s$ bằng nhau:
 $$%s%s = %s%s = %s%s = %s%s = %s%s = %s%s.$$
-Mặt khác, mỗi góc trong của đa giác $%s$ là góc nội tiếp chắn $4$ cung nhỏ liên tiếp của $(O)$ nên đều có số đo bằng $\\frac{4 \\cdot 60^\\circ}{2} = 120^\\circ$. \\
+Mặt khác, mỗi góc trong của đa giác $%s$ là góc nội tiếp chắn $4$ cung nhỏ liên tiếp của $(O)$ nên đều có số đo bằng $\\frac{4 \\cdot 60^\\circ}{2} = 120^\\circ$. \\\\
 Vậy đa giác $%s$ là một lục giác đều.'''
                    % (ten_tg, a, b, b, c, c, a,
                       a, b, c, d, e, f, d, e, f, a, b, b, c, c, a,

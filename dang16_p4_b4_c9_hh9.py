@@ -150,11 +150,11 @@ def bt_dang16_p4_b4_c9_hh9(self):
         noidungcauhoi = ('''Một nghệ nhân mộc làm một chiếc khay đựng bánh kẹo bằng gỗ có dạng hình lục giác đều cạnh $%s\\text{ cm}$ (như hình vẽ). Lòng khay được chia thành $7$ ngăn gồm một ngăn hình lục giác đều nhỏ ở chính giữa cạnh $x\\text{ cm}$ ($0 < x < %s$) và $6$ ngăn xung quanh là các hình thang cân bằng nhau. Hỏi độ dài cạnh $x$ của ngăn lục giác đều nhỏ phải bằng bao nhiêu centimét để diện tích ngăn lục giác đều nhỏ bằng $\\frac{1}{%s}$ diện tích của mỗi ngăn hình thang cân? %s'''
                          % (canh_lon, canh_lon, k_mau, hinh_tikz))
 
-        loigiai = ('''Gọi $S_1$ là diện tích của mỗi ngăn hình thang cân và $S_2$ là diện tích của ngăn hình lục giác đều nhỏ ở chính giữa. \\
-Theo đề bài, $S_2 = \\frac{1}{%s} S_1 \\Rightarrow S_1 = %s S_2$. \\
+        loigiai = ('''Gọi $S_1$ là diện tích của mỗi ngăn hình thang cân và $S_2$ là diện tích của ngăn hình lục giác đều nhỏ ở chính giữa. \\\\
+Theo đề bài, $S_2 = \\frac{1}{%s} S_1 \\Rightarrow S_1 = %s S_2$. \\\\
 Vì khay lục giác đều lớn được chia thành $1$ ngăn lục giác đều nhỏ và $6$ ngăn hình thang cân bằng nhau nên diện tích toàn bộ khay lục giác đều lớn là:
 $$S = S_2 + 6 S_1 = S_2 + 6 \\cdot %s S_2 = %s S_2.$$
-Mặt khác, diện tích của lục giác đều lớn cạnh $%s\\text{ cm}$ là $S = 6 \\cdot \\frac{%s^2\\sqrt{3}}{4} = \\frac{3 \\cdot %s^2\\sqrt{3}}{2}\\text{ (cm}^2\\text{)}$, và diện tích của lục giác đều nhỏ cạnh $x\\text{ cm}$ là $S_2 = 6 \\cdot \\frac{x^2\\sqrt{3}}{4} = \\frac{3x^2\\sqrt{3}}{2}\\text{ (cm}^2\\text{)}$. \\
+Mặt khác, diện tích của lục giác đều lớn cạnh $%s\\text{ cm}$ là $S = 6 \\cdot \\frac{%s^2\\sqrt{3}}{4} = \\frac{3 \\cdot %s^2\\sqrt{3}}{2}\\text{ (cm}^2\\text{)}$, và diện tích của lục giác đều nhỏ cạnh $x\\text{ cm}$ là $S_2 = 6 \\cdot \\frac{x^2\\sqrt{3}}{4} = \\frac{3x^2\\sqrt{3}}{2}\\text{ (cm}^2\\text{)}$. \\\\
 Từ $S = %s S_2$ suy ra:
 $$\\frac{3 \\cdot %s^2\\sqrt{3}}{2} = %s \\cdot \\frac{3x^2\\sqrt{3}}{2} \\Leftrightarrow x^2 = \\frac{%s^2}{%s} \\Leftrightarrow x = \\frac{%s}{\\sqrt{%s}} = %s\\text{ (cm) (vì } x > 0\\text{)}.$$
 Vậy độ dài cạnh của ngăn lục giác đều nhỏ phải bằng $%s\\text{ cm}$.'''

@@ -152,23 +152,23 @@ def bt_dang14_p4_b4_c9_hh9(self):
 \\end{tikzpicture}
 \\end{center}'''
 
-        noidungcauhoi = ('''Cho tam giác nhọn $ABC$ có hai đường cao $BE$ và $CF$ cắt nhau tại $H$ (như hình vẽ). Gọi $M$ là trung điểm của cạnh $BC$ và $I$ là trung điểm của đoạn thẳng $AH$. \\
-a) Chứng minh rằng bốn điểm $A, E, H, F$ cùng nằm trên đường tròn tâm $I$. \\
+        noidungcauhoi = ('''Cho tam giác nhọn $ABC$ có hai đường cao $BE$ và $CF$ cắt nhau tại $H$ (như hình vẽ). Gọi $M$ là trung điểm của cạnh $BC$ và $I$ là trung điểm của đoạn thẳng $AH$. \\\\
+a) Chứng minh rằng bốn điểm $A, E, H, F$ cùng nằm trên đường tròn tâm $I$. \\\\
 b) Chứng minh rằng $ME$ và $MF$ là hai tiếp tuyến của đường tròn $(I)$. %s'''
                          % (hinh_tikz))
 
         loigiai = ('''\\begin{enumEX}[a)]{1}
-\item Tam giác $AEH$ vuông tại $E$ có $EI$ là đường trung tuyến ứng với cạnh huyền $AH$ nên $IA = IH = IE = \\frac{1}{2}AH$. \\
-Tam giác $AFH$ vuông tại $F$ có $FI$ là đường trung tuyến ứng với cạnh huyền $AH$ nên $IA = IH = IF = \\frac{1}{2}AH$. \\
+\\item Tam giác $AEH$ vuông tại $E$ có $EI$ là đường trung tuyến ứng với cạnh huyền $AH$ nên $IA = IH = IE = \\frac{1}{2}AH$. \\\\
+Tam giác $AFH$ vuông tại $F$ có $FI$ là đường trung tuyến ứng với cạnh huyền $AH$ nên $IA = IH = IF = \\frac{1}{2}AH$. \\\\
 Suy ra $IA = IE = IH = IF$, vậy bốn điểm $A, E, H, F$ cùng nằm trên đường tròn tâm $I$ đường kính $AH$.
-\item Tam giác $BEC$ vuông tại $E$ có $EM$ là đường trung tuyến ứng với cạnh huyền $BC$ nên $ME = MC = \\frac{1}{2}BC$, suy ra $\\triangle MEC$ cân tại $M \\Rightarrow \\widehat{MEC} = \\widehat{MCE}$. \\
-Mặt khác, $\\triangle IEH$ cân tại $I$ ($IE = IH$) nên $\\widehat{IEH} = \\widehat{IHE}$. \\
-Lại có $\\widehat{IHE} = \\widehat{BHC}$ (đối đỉnh), mà trong tam giác vuông $BFC$ thì $\\widehat{BHC}$ phụ với $\\widehat{FBC}$, còn trong tam giác vuông $BEC$ thì $\\widehat{MCE}$ cũng phụ với $\\widehat{FBC}$ nên $\\widehat{BHC} = \\widehat{MCE}$. \\
-Từ đó suy ra $\\widehat{IEH} = \\widehat{MEC}$. \\
-Ta có $\\widehat{IEM} = \\widehat{IEH} + \\widehat{HEM} = \\widehat{MEC} + \\widehat{HEM} = \\widehat{BEC} = 90^\\circ$. \\
-Do đó $ME \\perp IE$ tại $E$ thuộc đường tròn $(I)$, nên $ME$ là tiếp tuyến của đường tròn $(I)$. \\
+\\item Tam giác $BEC$ vuông tại $E$ có $EM$ là đường trung tuyến ứng với cạnh huyền $BC$ nên $ME = MC = \\frac{1}{2}BC$, suy ra $\\triangle MEC$ cân tại $M \\Rightarrow \\widehat{MEC} = \\widehat{MCE}$. \\\\
+Mặt khác, $\\triangle IEH$ cân tại $I$ ($IE = IH$) nên $\\widehat{IEH} = \\widehat{IHE}$. \\\\
+Lại có $\\widehat{IHE} = \\widehat{BHC}$ (đối đỉnh), mà trong tam giác vuông $BFC$ thì $\\widehat{BHC}$ phụ với $\\widehat{FBC}$, còn trong tam giác vuông $BEC$ thì $\\widehat{MCE}$ cũng phụ với $\\widehat{FBC}$ nên $\\widehat{BHC} = \\widehat{MCE}$. \\\\
+Từ đó suy ra $\\widehat{IEH} = \\widehat{MEC}$. \\\\
+Ta có $\\widehat{IEM} = \\widehat{IEH} + \\widehat{HEM} = \\widehat{MEC} + \\widehat{HEM} = \\widehat{BEC} = 90^\\circ$. \\\\
+Do đó $ME \\perp IE$ tại $E$ thuộc đường tròn $(I)$, nên $ME$ là tiếp tuyến của đường tròn $(I)$. \\\\
 Chứng minh hoàn toàn tương tự ta được $MF \\perp IF$ tại $F$, nên $MF$ cũng là tiếp tuyến của đường tròn $(I)$.
-\end{enumEX}''')
+\\end{enumEX}''')
 
     content = ('\\begin{minipage}{\\textwidth} \n'
                '\\begin{ex}\n' + str(noidungcauhoi) + '\n'

@@ -150,20 +150,20 @@ def bt_dang13_p4_b4_c9_hh9(self):
 \\end{tikzpicture}
 \\end{center}'''
 
-        noidungcauhoi = ('''Cho tam giác nhọn $ABC$ ($AB < AC$) có ba đường cao $AD, BE, CF$ cắt nhau tại trực tâm $H$ (như hình vẽ). \\
-a) Chứng minh rằng các tứ giác $BFEC$ và $AEHF$ là các tứ giác nội tiếp. \\
+        noidungcauhoi = ('''Cho tam giác nhọn $ABC$ ($AB < AC$) có ba đường cao $AD, BE, CF$ cắt nhau tại trực tâm $H$ (như hình vẽ). \\\\
+a) Chứng minh rằng các tứ giác $BFEC$ và $AEHF$ là các tứ giác nội tiếp. \\\\
 b) Giả sử $\\widehat{BAC} = 60^\\circ$, hãy tính số đo góc $\\widehat{EHF}$ và chứng minh $EF = \\frac{1}{2}BC$. %s'''
                          % (hinh_tikz))
 
         loigiai = ('''\\begin{enumEX}[a)]{1}
-\item Vì $BE, CF$ là các đường cao của $\\triangle ABC$ nên $\\widehat{BFC} = \\widehat{BEC} = 90^\\circ$. \\
-Hai đỉnh $E, F$ cùng nhìn cạnh $BC$ dưới một góc vuông nên $E, F$ cùng nằm trên đường tròn đường kính $BC$. Vậy tứ giác $BFEC$ nội tiếp đường tròn đường kính $BC$. \\
+\\item Vì $BE, CF$ là các đường cao của $\\triangle ABC$ nên $\\widehat{BFC} = \\widehat{BEC} = 90^\\circ$. \\\\
+Hai đỉnh $E, F$ cùng nhìn cạnh $BC$ dưới một góc vuông nên $E, F$ cùng nằm trên đường tròn đường kính $BC$. Vậy tứ giác $BFEC$ nội tiếp đường tròn đường kính $BC$. \\\\
 Xét tứ giác $AEHF$ có $\\widehat{AFH} + \\widehat{AEH} = 90^\\circ + 90^\\circ = 180^\\circ$. Vì tổng hai góc đối nhau bằng $180^\\circ$ nên tứ giác $AEHF$ nội tiếp đường tròn đường kính $AH$.
-\item Khi $\\widehat{BAC} = 60^\\circ$, vì tứ giác $AEHF$ nội tiếp nên $\\widehat{EHF} = 180^\\circ - \\widehat{EAF} = 180^\\circ - 60^\\circ = 120^\\circ$. \\
-Xét tam giác vuông $ABE$ vuông tại $E$ có $\\widehat{BAE} = 60^\\circ$ nên $AE = AB \\cdot \\cos 60^\\circ = \\frac{1}{2}AB$. \\
-Xét $\\triangle AEF$ và $\\triangle ABC$ có $\\widehat{EAF} = \\widehat{BAC} = 60^\\circ$ và $\\frac{AE}{AB} = \\frac{AF}{AC} = \\cos 60^\\circ = \\frac{1}{2}$, nên $\\triangle AEF \\backsim \\triangle ABC$ (c.g.c) theo tỉ số đồng dạng $\\frac{1}{2}$. \\
+\\item Khi $\\widehat{BAC} = 60^\\circ$, vì tứ giác $AEHF$ nội tiếp nên $\\widehat{EHF} = 180^\\circ - \\widehat{EAF} = 180^\\circ - 60^\\circ = 120^\\circ$. \\\\
+Xét tam giác vuông $ABE$ vuông tại $E$ có $\\widehat{BAE} = 60^\\circ$ nên $AE = AB \\cdot \\cos 60^\\circ = \\frac{1}{2}AB$. \\\\
+Xét $\\triangle AEF$ và $\\triangle ABC$ có $\\widehat{EAF} = \\widehat{BAC} = 60^\\circ$ và $\\frac{AE}{AB} = \\frac{AF}{AC} = \\cos 60^\\circ = \\frac{1}{2}$, nên $\\triangle AEF \\backsim \\triangle ABC$ (c.g.c) theo tỉ số đồng dạng $\\frac{1}{2}$. \\\\
 Vậy $EF = \\frac{1}{2}BC$.
-\end{enumEX}''')
+\\end{enumEX}''')
 
     content = ('\\begin{minipage}{\\textwidth} \n'
                '\\begin{ex}\n' + str(noidungcauhoi) + '\n'

@@ -156,20 +156,20 @@ def bt_dang20_p4_b4_c9_hh9(self):
 \\end{tikzpicture}
 \\end{center}'''
 
-        noidungcauhoi = ('''Trên một dây chuyền đóng gói tự động có một mâm xoay hình tròn tâm $O$, trên mép mâm gắn $6$ khay chứa sản phẩm đặt tại các đỉnh $A, B, C, D, E, F$ của một lục giác đều nội tiếp $(O)$ theo thứ tự thuận chiều kim đồng hồ (như hình vẽ). Robot gắp sản phẩm được đặt cố định tại vị trí tương ứng với đỉnh $A$. \\
-a) Liệt kê tất cả các góc quay thuận chiều $\\alpha^\\circ$ ($0^\\circ < \\alpha^\\circ \\le 360^\\circ$) của mâm xoay quanh tâm $O$ để sau khi quay, tại vị trí robot luôn có đúng một khay sản phẩm dừng lại. \\
+        noidungcauhoi = ('''Trên một dây chuyền đóng gói tự động có một mâm xoay hình tròn tâm $O$, trên mép mâm gắn $6$ khay chứa sản phẩm đặt tại các đỉnh $A, B, C, D, E, F$ của một lục giác đều nội tiếp $(O)$ theo thứ tự thuận chiều kim đồng hồ (như hình vẽ). Robot gắp sản phẩm được đặt cố định tại vị trí tương ứng với đỉnh $A$. \\\\
+a) Liệt kê tất cả các góc quay thuận chiều $\\alpha^\\circ$ ($0^\\circ < \\alpha^\\circ \\le 360^\\circ$) của mâm xoay quanh tâm $O$ để sau khi quay, tại vị trí robot luôn có đúng một khay sản phẩm dừng lại. \\\\
 b) Nếu mâm xoay thực hiện liên tiếp $%s$ bước quay thuận chiều kim đồng hồ, mỗi bước quay một góc $%s^\\circ$, thì khay ban đầu ở vị trí $B$ sẽ dừng lại ở vị trí của khay nào? Giải thích. %s'''
                          % (so_buoc, goc_moi_buoc, hinh_tikz))
 
         loigiai = ('''\\begin{enumEX}[a)]{1}
-\item Vì $6$ khay sản phẩm tạo thành các đỉnh của lục giác đều $ABCDEF$ nội tiếp đường tròn $(O)$ nên mỗi cung nhỏ giữa hai khay liên tiếp có số đo bằng $\\frac{360^\\circ}{6} = 60^\\circ$. \\
+\\item Vì $6$ khay sản phẩm tạo thành các đỉnh của lục giác đều $ABCDEF$ nội tiếp đường tròn $(O)$ nên mỗi cung nhỏ giữa hai khay liên tiếp có số đo bằng $\\frac{360^\\circ}{6} = 60^\\circ$. \\\\
 Để tại vị trí robot luôn có một khay sản phẩm dừng lại thì phép quay thuận chiều tâm $O$ phải giữ nguyên lục giác đều $ABCDEF$. Do đó các góc quay thuận chiều $\\alpha^\\circ$ ($0^\\circ < \\alpha^\\circ \\le 360^\\circ$) thỏa mãn gồm $6$ góc:
 $$60^\\circ; \\; 120^\\circ; \\; 180^\\circ; \\; 240^\\circ; \\; 300^\\circ; \\; 360^\\circ.$$
-\item Sau $%s$ bước quay thuận chiều kim đồng hồ, mỗi bước $%s^\\circ$, tổng góc quay mà mâm xoay đã thực hiện theo chiều kim đồng hồ là:
+\\item Sau $%s$ bước quay thuận chiều kim đồng hồ, mỗi bước $%s^\\circ$, tổng góc quay mà mâm xoay đã thực hiện theo chiều kim đồng hồ là:
 $$%s \\cdot %s^\\circ = %s^\\circ.$$
-Vì mỗi cung nhỏ giữa hai đỉnh liên tiếp của lục giác đều bằng $60^\\circ$ nên góc quay $%s^\\circ$ tương ứng với việc di chuyển thuận chiều kim đồng hồ qua $\\frac{%s^\\circ}{60^\\circ} = %s$ khoảng khay. \\
+Vì mỗi cung nhỏ giữa hai đỉnh liên tiếp của lục giác đều bằng $60^\\circ$ nên góc quay $%s^\\circ$ tương ứng với việc di chuyển thuận chiều kim đồng hồ qua $\\frac{%s^\\circ}{60^\\circ} = %s$ khoảng khay. \\\\
 Bắt đầu từ vị trí $B$, đi thuận chiều kim đồng hồ theo thứ tự $A, B, C, D, E, F$ qua $%s$ khoảng khay, khay ban đầu ở vị trí $B$ sẽ dừng lại ở vị trí của khay $%s$.
-\end{enumEX}'''
+\\end{enumEX}'''
                    % (so_buoc, goc_moi_buoc, so_buoc, goc_moi_buoc, tong_goc, tong_goc, tong_goc, tong_goc // 60, tong_goc // 60, vi_tri_dung))
 
     content = ('\\begin{minipage}{\\textwidth} \n'

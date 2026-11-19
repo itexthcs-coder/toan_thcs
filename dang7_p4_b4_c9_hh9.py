@@ -157,15 +157,15 @@ def bt_dang7_p4_b4_c9_hh9(self):
         noidungcauhoi = ('''Cho bát giác đều $ABCDEFGH$ nội tiếp đường tròn tâm $O$ (như hình vẽ). Chứng minh rằng tứ giác $ABDE$ là hình thang cân nội tiếp đường tròn $(O)$ và tính số đo các góc trong của tứ giác $ABDE$. %s'''
                          % (hinh_tikz))
 
-        loigiai = ('''Bát giác đều $ABCDEFGH$ nội tiếp đường tròn $(O)$ chia đường tròn thành $8$ cung nhỏ bằng nhau, mỗi cung có số đo bằng $\\frac{360^\\circ}{8} = 45^\\circ$. \\
-Do bốn đỉnh $A, B, D, E$ cùng nằm trên đường tròn $(O)$ nên $ABDE$ là tứ giác nội tiếp đường tròn $(O)$. \\
-Ta có $\\text{sđ}\\wideparen{AE} = 4 \\cdot 45^\\circ = 180^\\circ$ nên $AE$ là đường kính của đường tròn $(O)$. \\
+        loigiai = ('''Bát giác đều $ABCDEFGH$ nội tiếp đường tròn $(O)$ chia đường tròn thành $8$ cung nhỏ bằng nhau, mỗi cung có số đo bằng $\\frac{360^\\circ}{8} = 45^\\circ$. \\\\
+Do bốn đỉnh $A, B, D, E$ cùng nằm trên đường tròn $(O)$ nên $ABDE$ là tứ giác nội tiếp đường tròn $(O)$. \\\\
+Ta có $\\text{sđ}\\wideparen{AE} = 4 \\cdot 45^\\circ = 180^\\circ$ nên $AE$ là đường kính của đường tròn $(O)$. \\\\
 Xét góc nội tiếp $\\widehat{ABD}$ chắn cung nhỏ $AD$ ($3$ cung nhỏ) và góc nội tiếp $\\widehat{BAE}$ chắn cung nhỏ $BE$ ($3$ cung nhỏ):
 $$\\widehat{ABD} = \\frac{1}{2}\\text{sđ}\\wideparen{AD} = \\frac{3 \\cdot 45^\\circ}{2} = 67,5^\\circ; \\qquad \\widehat{BAE} = \\frac{1}{2}\\text{sđ}\\wideparen{BE} = \\frac{3 \\cdot 45^\\circ}{2} = 67,5^\\circ.$$
-Mặt khác, $\\widehat{BDE}$ là góc nội tiếp chắn cung nhỏ $BAE$ ($3$ cung nhỏ) nên $\\widehat{BDE} = 67,5^\\circ$. \\
-Ta thấy hai góc trong cùng phía $\\widehat{ABD} + \\widehat{BDE} = 67,5^\\circ + 67,5^\\circ = 135^\\circ$ (chưa bằng $180^\\circ$), còn $\\widehat{DAE} = \\frac{1}{2}\\text{sđ}\\wideparen{DE} = 22,5^\\circ$ và $\\widehat{ADB} = \\frac{1}{2}\\text{sđ}\\wideparen{AB} = 22,5^\\circ$. \\
-Vì $\\widehat{DAE} = \\widehat{ADB} = 22,5^\\circ$ ở vị trí so le trong nên $BD // AE$. \\
-Do đó tứ giác $ABDE$ là hình thang. Lại có hai góc kề đáy lớn bằng nhau ($\\widehat{BAE} = \\widehat{AED} = 67,5^\\circ$) nên $ABDE$ là hình thang cân. \\
+Mặt khác, $\\widehat{BDE}$ là góc nội tiếp chắn cung nhỏ $BAE$ ($3$ cung nhỏ) nên $\\widehat{BDE} = 67,5^\\circ$. \\\\
+Ta thấy hai góc trong cùng phía $\\widehat{ABD} + \\widehat{BDE} = 67,5^\\circ + 67,5^\\circ = 135^\\circ$ (chưa bằng $180^\\circ$), còn $\\widehat{DAE} = \\frac{1}{2}\\text{sđ}\\wideparen{DE} = 22,5^\\circ$ và $\\widehat{ADB} = \\frac{1}{2}\\text{sđ}\\wideparen{AB} = 22,5^\\circ$. \\\\
+Vì $\\widehat{DAE} = \\widehat{ADB} = 22,5^\\circ$ ở vị trí so le trong nên $BD // AE$. \\\\
+Do đó tứ giác $ABDE$ là hình thang. Lại có hai góc kề đáy lớn bằng nhau ($\\widehat{BAE} = \\widehat{AED} = 67,5^\\circ$) nên $ABDE$ là hình thang cân. \\\\
 Các góc trong của tứ giác $ABDE$ là:
 $$\\widehat{BAE} = \\widehat{AED} = 67,5^\\circ; \\qquad \\widehat{ABD} = \\widehat{BDE} = 180^\\circ - 67,5^\\circ = 112,5^\\circ.$$''')
 

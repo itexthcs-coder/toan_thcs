@@ -155,9 +155,9 @@ def bt_dang11_p4_b4_c9_hh9(self):
         noidungcauhoi = ('''Cho hình vuông $ABCD$ nội tiếp đường tròn $(O)$ và ngoại tiếp đường tròn $(I)$ (như hình vẽ). Biết rằng hiệu diện tích giữa hình tròn $(O)$ và hình tròn $(I)$ bằng $%s\\pi\\text{ cm}^2$. Tính độ dài cạnh của hình vuông $ABCD$ và chu vi của lục giác đều nội tiếp đường tròn $(O)$. %s'''
                          % (hieu_dt, hinh_tikz))
 
-        loigiai = ('''Gọi $a$ ($a > 0$) là độ dài cạnh của hình vuông $ABCD$. \\
-Bán kính đường tròn nội tiếp $(I)$ của hình vuông $ABCD$ là $r = \\frac{a}{2}$. \\
-Đường chéo hình vuông bằng $a\\sqrt{2}$ nên bán kính đường tròn ngoại tiếp $(O)$ của hình vuông $ABCD$ là $R = \\frac{a\\sqrt{2}}{2}$. \\
+        loigiai = ('''Gọi $a$ ($a > 0$) là độ dài cạnh của hình vuông $ABCD$. \\\\
+Bán kính đường tròn nội tiếp $(I)$ của hình vuông $ABCD$ là $r = \\frac{a}{2}$. \\\\
+Đường chéo hình vuông bằng $a\\sqrt{2}$ nên bán kính đường tròn ngoại tiếp $(O)$ của hình vuông $ABCD$ là $R = \\frac{a\\sqrt{2}}{2}$. \\\\
 Theo đề bài, hiệu diện tích giữa hình tròn $(O)$ và hình tròn $(I)$ bằng $%s\\pi\\text{ cm}^2$ nên ta có:
 $$\\pi R^2 - \\pi r^2 = %s\\pi \\Leftrightarrow \\left(\\frac{a\\sqrt{2}}{2}\\right)^2 - \\left(\\frac{a}{2}\\right)^2 = %s \\Leftrightarrow \\frac{2a^2}{4} - \\frac{a^2}{4} = %s \\Leftrightarrow \\frac{a^2}{4} = %s \\Leftrightarrow a^2 = %s \\Leftrightarrow a = %s\\text{ (cm)}.$$
 Khi đó bán kính đường tròn $(O)$ là $R = \\frac{%s\\sqrt{2}}{2} = %s\\text{ cm}$. \\

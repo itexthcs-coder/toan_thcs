@@ -159,12 +159,12 @@ def bt_dang6_p4_b4_c9_hh9(self):
         noidungcauhoi = ('''Cho hình thoi $ABCD$ có $\\widehat{A} = 60^\\circ$ và độ dài cạnh bằng $%s$ ($a > 0$). Gọi $M, N, P, Q$ lần lượt là trung điểm của các cạnh $AB, BC, CD, DA$ (như hình vẽ). Chứng minh rằng lục giác $MBNPDQ$ là một lục giác đều và tính bán kính đường tròn ngoại tiếp lục giác đều đó theo $a$. %s'''
                          % (canh_lon_str, hinh_tikz))
 
-        loigiai = ('''Hình thoi $ABCD$ có $AB = AD = %s$ và $\\widehat{A} = 60^\\circ$ nên $\\triangle ABD$ là tam giác đều cạnh $%s$, suy ra $BD = %s$. \\
-Vì $M, Q$ lần lượt là trung điểm của $AB, AD$ nên $MQ$ là đường trung bình của $\\triangle ABD$, do đó $MQ = \\frac{1}{2}BD = %s$. Tương tự $NP = \\frac{1}{2}BD = %s$. \\
-Mặt khác $MB = BN = PD = DQ = \\frac{%s}{2} = %s$, nên lục giác lồi $MBNPDQ$ có $6$ cạnh bằng nhau và đều bằng $%s$. \\
-Xét $\\triangle AMQ$ có $AM = AQ = %s$ và $\\widehat{A} = 60^\\circ$ nên $\\triangle AMQ$ đều, suy ra $\\widehat{AMQ} = \\widehat{AQM} = 60^\\circ$. \\
-Từ đó $\\widehat{QMB} = 180^\\circ - 60^\\circ = 120^\\circ$ và $\\widehat{DQM} = 180^\\circ - 60^\\circ = 120^\\circ$. Tương tự $\\widehat{BNP} = \\widehat{DPN} = 120^\\circ$. \\
-Lại có $\\widehat{B} = \\widehat{D} = 180^\\circ - \\widehat{A} = 120^\\circ$. Vậy $6$ góc trong của lục giác $MBNPDQ$ đều bằng $120^\\circ$, do đó $MBNPDQ$ là một lục giác đều. \\
+        loigiai = ('''Hình thoi $ABCD$ có $AB = AD = %s$ và $\\widehat{A} = 60^\\circ$ nên $\\triangle ABD$ là tam giác đều cạnh $%s$, suy ra $BD = %s$. \\\\
+Vì $M, Q$ lần lượt là trung điểm của $AB, AD$ nên $MQ$ là đường trung bình của $\\triangle ABD$, do đó $MQ = \\frac{1}{2}BD = %s$. Tương tự $NP = \\frac{1}{2}BD = %s$. \\\\
+Mặt khác $MB = BN = PD = DQ = \\frac{%s}{2} = %s$, nên lục giác lồi $MBNPDQ$ có $6$ cạnh bằng nhau và đều bằng $%s$. \\\\
+Xét $\\triangle AMQ$ có $AM = AQ = %s$ và $\\widehat{A} = 60^\\circ$ nên $\\triangle AMQ$ đều, suy ra $\\widehat{AMQ} = \\widehat{AQM} = 60^\\circ$. \\\\
+Từ đó $\\widehat{QMB} = 180^\\circ - 60^\\circ = 120^\\circ$ và $\\widehat{DQM} = 180^\\circ - 60^\\circ = 120^\\circ$. Tương tự $\\widehat{BNP} = \\widehat{DPN} = 120^\\circ$. \\\\
+Lại có $\\widehat{B} = \\widehat{D} = 180^\\circ - \\widehat{A} = 120^\\circ$. Vậy $6$ góc trong của lục giác $MBNPDQ$ đều bằng $120^\\circ$, do đó $MBNPDQ$ là một lục giác đều. \\\\
 Vì bán kính đường tròn ngoại tiếp lục giác đều bằng độ dài cạnh của nó nên bán kính cần tìm là $R = %s$.'''
                    % (canh_lon_str, canh_lon_str, canh_lon_str, canh_nho_str, canh_nho_str, canh_lon_str, canh_nho_str, canh_nho_str, canh_nho_str, canh_nho_str))
 

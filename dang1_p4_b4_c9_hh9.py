@@ -163,12 +163,12 @@ def bt_dang1_p4_b4_c9_hh9(self):
         noidungcauhoi = ('''Biết rằng bốn đỉnh $%s, %s, %s, %s$ của một hình vuông cùng nằm trên một đường tròn tâm $O$ theo thứ tự ngược chiều quay của kim đồng hồ. Phép quay thuận chiều $45^\\circ$ tâm $O$ biến các điểm $%s, %s, %s, %s$ lần lượt thành các điểm $%s, %s, %s, %s$ (như hình vẽ). Chứng minh rằng đa giác $%s$ là một bát giác đều. %s'''
                          % (a, b, c, d, a, b, c, d, e, f, g, h, ten_bg, hinh_tikz))
 
-        loigiai = ('''Vì $%s%s%s%s$ là hình vuông nội tiếp đường tròn $(O)$ theo thứ tự ngược chiều kim đồng hồ nên các đỉnh $%s, %s, %s, %s$ nằm trên $(O)$ theo thứ tự thuận chiều kim đồng hồ và bốn cung nhỏ $%s%s, %s%s, %s%s, %s%s$ đều có số đo bằng $\\frac{360^\\circ}{4} = 90^\\circ$. \\
-Phép quay thuận chiều $45^\\circ$ tâm $O$ biến các điểm $%s, %s, %s, %s$ lần lượt thành $%s, %s, %s, %s$ nên các điểm $%s, %s, %s, %s$ cũng thuộc đường tròn $(O)$ và lần lượt là điểm chính giữa của các cung nhỏ $%s%s, %s%s, %s%s, %s%s$. \\
-Do đó, tám điểm $%s, %s, %s, %s, %s, %s, %s, %s$ chia đường tròn $(O)$ thành $8$ cung nhỏ bằng nhau, mỗi cung có số đo bằng $45^\\circ$. \\
+        loigiai = ('''Vì $%s%s%s%s$ là hình vuông nội tiếp đường tròn $(O)$ theo thứ tự ngược chiều kim đồng hồ nên các đỉnh $%s, %s, %s, %s$ nằm trên $(O)$ theo thứ tự thuận chiều kim đồng hồ và bốn cung nhỏ $%s%s, %s%s, %s%s, %s%s$ đều có số đo bằng $\\frac{360^\\circ}{4} = 90^\\circ$. \\\\
+Phép quay thuận chiều $45^\\circ$ tâm $O$ biến các điểm $%s, %s, %s, %s$ lần lượt thành $%s, %s, %s, %s$ nên các điểm $%s, %s, %s, %s$ cũng thuộc đường tròn $(O)$ và lần lượt là điểm chính giữa của các cung nhỏ $%s%s, %s%s, %s%s, %s%s$. \\\\
+Do đó, tám điểm $%s, %s, %s, %s, %s, %s, %s, %s$ chia đường tròn $(O)$ thành $8$ cung nhỏ bằng nhau, mỗi cung có số đo bằng $45^\\circ$. \\\\
 Suy ra tám cạnh của đa giác lồi $%s$ là các dây căng các cung bằng nhau nên bằng nhau:
 $$%s%s = %s%s = %s%s = %s%s = %s%s = %s%s = %s%s = %s%s.$$
-Mặt khác, mỗi góc trong của đa giác $%s$ là góc nội tiếp chắn $6$ cung nhỏ liên tiếp của $(O)$ nên đều có số đo bằng $\\frac{6 \\cdot 45^\\circ}{2} = 135^\\circ$. \\
+Mặt khác, mỗi góc trong của đa giác $%s$ là góc nội tiếp chắn $6$ cung nhỏ liên tiếp của $(O)$ nên đều có số đo bằng $\\frac{6 \\cdot 45^\\circ}{2} = 135^\\circ$. \\\\
 Vậy đa giác $%s$ có tất cả các cạnh bằng nhau và các góc bằng nhau nên $%s$ là một bát giác đều.'''
                    % (a, b, c, d, a, d, c, b, a, d, d, c, c, b, b, a,
                       a, b, c, d, e, f, g, h, e, f, g, h, a, d, b, a, c, b, d, c,

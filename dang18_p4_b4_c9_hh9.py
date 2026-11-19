@@ -160,20 +160,20 @@ def bt_dang18_p4_b4_c9_hh9(self):
 \\end{tikzpicture}
 \\end{center}'''
 
-        noidungcauhoi = ('''Một vòng quay mặt trời trong khu vui chơi có $%s$ cabin gắn cách đều nhau trên vành tròn tâm $O$ bán kính $%s\\text{ m}$, tạo thành các đỉnh của một đa giác đều $%s$ cạnh (như hình vẽ). \\
-a) Hỏi vòng quay phải quay thuận chiều kim đồng hồ quanh tâm $O$ ít nhất bao nhiêu độ để cabin đang ở vị trí thấp nhất di chuyển đến vị trí cách vị trí cao nhất đúng $%s$ khoảng cabin (tính theo chiều ngược kim đồng hồ so với vị trí cao nhất)? \\
+        noidungcauhoi = ('''Một vòng quay mặt trời trong khu vui chơi có $%s$ cabin gắn cách đều nhau trên vành tròn tâm $O$ bán kính $%s\\text{ m}$, tạo thành các đỉnh của một đa giác đều $%s$ cạnh (như hình vẽ). \\\\
+a) Hỏi vòng quay phải quay thuận chiều kim đồng hồ quanh tâm $O$ ít nhất bao nhiêu độ để cabin đang ở vị trí thấp nhất di chuyển đến vị trí cách vị trí cao nhất đúng $%s$ khoảng cabin (tính theo chiều ngược kim đồng hồ so với vị trí cao nhất)? \\\\
 b) Tính độ dài cung tròn mà cabin đó đã di chuyển được trong quá trình trên (lấy $\\pi \\approx 3,14$). %s'''
                          % (so_cabin, r_vong, so_cabin, khoang_cach_dinh, hinh_tikz))
 
         loigiai = ('''\\begin{enumEX}[a)]{1}
-\item Vì $%s$ cabin gắn cách đều nhau trên đường tròn $(O)$ nên hai cabin liên tiếp bất kì tạo với tâm $O$ một góc ở tâm bằng $\\frac{360^\\circ}{%s} = %s^\\circ$. \\
-Vị trí thấp nhất và vị trí cao nhất đối xứng nhau qua tâm $O$ nên cách nhau $\\frac{%s}{2} = %s$ khoảng cabin. \\
-Khi cabin đi thuận chiều kim đồng hồ từ vị trí thấp nhất đến vị trí cách vị trí cao nhất $%s$ khoảng cabin (chưa vượt qua vị trí cao nhất), số khoảng cabin mà nó đã di chuyển là $%s - %s = %s$ khoảng. \\
+\\item Vì $%s$ cabin gắn cách đều nhau trên đường tròn $(O)$ nên hai cabin liên tiếp bất kì tạo với tâm $O$ một góc ở tâm bằng $\\frac{360^\\circ}{%s} = %s^\\circ$. \\\\
+Vị trí thấp nhất và vị trí cao nhất đối xứng nhau qua tâm $O$ nên cách nhau $\\frac{%s}{2} = %s$ khoảng cabin. \\\\
+Khi cabin đi thuận chiều kim đồng hồ từ vị trí thấp nhất đến vị trí cách vị trí cao nhất $%s$ khoảng cabin (chưa vượt qua vị trí cao nhất), số khoảng cabin mà nó đã di chuyển là $%s - %s = %s$ khoảng. \\\\
 Vậy góc quay thuận chiều kim đồng hồ nhỏ nhất cần tìm là:
 $$\\alpha = %s \\cdot %s^\\circ = %s^\\circ.$$
-\item Độ dài cung tròn bán kính $R = %s\\text{ m}$ có số đo $%s^\\circ$ mà cabin đã di chuyển được là:
+\\item Độ dài cung tròn bán kính $R = %s\\text{ m}$ có số đo $%s^\\circ$ mà cabin đã di chuyển được là:
 $$l = \\frac{\\pi R \\alpha}{180} \\approx \\frac{3,14 \\cdot %s \\cdot %s}{180} = %s\\text{ (m)}.$$
-\end{enumEX}'''
+\\end{enumEX}'''
                    % (so_cabin, so_cabin, goc_moi_khoang, so_cabin, nua_vong_khoang, khoang_cach_dinh, nua_vong_khoang, khoang_cach_dinh, so_khoang_quay, so_khoang_quay, goc_moi_khoang, goc_quay, r_vong, goc_quay, r_vong, goc_quay, kq_str))
 
     content = ('\\begin{minipage}{\\textwidth} \n'

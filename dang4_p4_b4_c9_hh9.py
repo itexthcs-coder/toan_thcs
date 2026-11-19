@@ -160,13 +160,13 @@ def bt_dang4_p4_b4_c9_hh9(self):
         noidungcauhoi = ('''Cho ngũ giác đều $ABCDE$ có cạnh bằng $%s\\text{ cm}$ nội tiếp đường tròn $(O)$ (như hình vẽ). Các đường chéo $AC, BD, CE, DA, EB$ cắt nhau tạo thành ngũ giác $MNPQK$ ở miền trong của ngũ giác $ABCDE$ (trong đó $M$ là giao điểm của $BE$ và $AC$, $N$ là giao điểm của $AC$ và $BD$, $P$ là giao điểm của $BD$ và $CE$, $Q$ là giao điểm của $CE$ và $DA$, $K$ là giao điểm của $DA$ và $EB$). Chứng minh rằng $MNPQK$ là một ngũ giác đều. %s'''
                          % (a_canh, hinh_tikz))
 
-        loigiai = ('''Ngũ giác đều $ABCDE$ nội tiếp đường tròn $(O)$ chia đường tròn thành $5$ cung nhỏ bằng nhau, mỗi cung có số đo bằng $\\frac{360^\\circ}{5} = 72^\\circ$. \\
-Xét $\\triangle ABN$, ta có $\\widehat{BAN} = \\widehat{BAC} = \\frac{1}{2}\\text{sđ}\\wideparen{BC} = 36^\\circ$ và $\\widehat{ABN} = \\widehat{ABD} = \\frac{1}{2}\\text{sđ}\\wideparen{AD} = 36^\\circ$. \\
-Suy ra $\\triangle ABN$ cân tại $N$ và $\\widehat{ANB} = 180^\\circ - 36^\\circ - 36^\\circ = 108^\\circ$. \\
-Do đó góc trong $\\widehat{MNP}$ của ngũ giác $MNPQK$ (đối đỉnh với $\\widehat{ANB}$) bằng $108^\\circ$. \\
-Chứng minh tương tự cho năm tam giác cân bằng nhau $\\triangle ABN = \\triangle BCP = \\triangle CDQ = \\triangle DEK = \\triangle EAM$ (g.c.g), ta suy ra: \\
-- Năm góc trong tại các đỉnh $M, N, P, Q, K$ của ngũ giác lồi $MNPQK$ đều bằng $108^\\circ$. \\
-- Các đoạn thẳng $AN = NB = BP = PC = CQ = QD = DK = KE = EM = MA$. \\
+        loigiai = ('''Ngũ giác đều $ABCDE$ nội tiếp đường tròn $(O)$ chia đường tròn thành $5$ cung nhỏ bằng nhau, mỗi cung có số đo bằng $\\frac{360^\\circ}{5} = 72^\\circ$. \\\\
+Xét $\\triangle ABN$, ta có $\\widehat{BAN} = \\widehat{BAC} = \\frac{1}{2}\\text{sđ}\\wideparen{BC} = 36^\\circ$ và $\\widehat{ABN} = \\widehat{ABD} = \\frac{1}{2}\\text{sđ}\\wideparen{AD} = 36^\\circ$. \\\\
+Suy ra $\\triangle ABN$ cân tại $N$ và $\\widehat{ANB} = 180^\\circ - 36^\\circ - 36^\\circ = 108^\\circ$. \\\\
+Do đó góc trong $\\widehat{MNP}$ của ngũ giác $MNPQK$ (đối đỉnh với $\\widehat{ANB}$) bằng $108^\\circ$. \\\\
+Chứng minh tương tự cho năm tam giác cân bằng nhau $\\triangle ABN = \\triangle BCP = \\triangle CDQ = \\triangle DEK = \\triangle EAM$ (g.c.g), ta suy ra: \\\\
+- Năm góc trong tại các đỉnh $M, N, P, Q, K$ của ngũ giác lồi $MNPQK$ đều bằng $108^\\circ$. \\\\
+- Các đoạn thẳng $AN = NB = BP = PC = CQ = QD = DK = KE = EM = MA$. \\\\
 Mặt khác, năm đường chéo của ngũ giác đều bằng nhau ($AC = BD = CE = DA = EB$) và $AC = AM + MN + NC$, suy ra:
 $$MN = NP = PQ = QK = KM.$$
 Vậy $MNPQK$ là một ngũ giác đều.''')

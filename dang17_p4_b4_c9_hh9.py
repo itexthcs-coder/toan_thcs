@@ -157,13 +157,13 @@ def bt_dang17_p4_b4_c9_hh9(self):
         noidungcauhoi = ('''Bạn %s muốn cắt một hình ngôi sao năm cánh đều có phần lõi bên trong là một ngũ giác đều $ABCDE$ (như hình vẽ). Để cắt nhanh và cân đối, bạn %s gấp đôi tờ giấy theo trục đối xứng đi qua một đỉnh cánh sao $P$, vẽ một nửa hình ngôi sao rồi dùng kéo cắt thẳng theo nét vẽ. Hãy tính số đo góc nhọn tạo bởi lưỡi kéo và nếp gấp đôi tờ giấy lúc đầu, giải thích rõ các bước suy luận hình học. %s'''
                          % (ten_hs, ten_hs, hinh_tikz))
 
-        loigiai = ('''Ngũ giác đều $ABCDE$ có $5$ cạnh bằng nhau nội tiếp một đường tròn nên góc ở tâm chắn mỗi cạnh bằng $\\frac{360^\\circ}{5} = 72^\\circ$. \\
-Suy ra số đo mỗi góc trong của ngũ giác đều $ABCDE$ bằng $180^\\circ - 72^\\circ = 108^\\circ$. \\
+        loigiai = ('''Ngũ giác đều $ABCDE$ có $5$ cạnh bằng nhau nội tiếp một đường tròn nên góc ở tâm chắn mỗi cạnh bằng $\\frac{360^\\circ}{5} = 72^\\circ$. \\\\
+Suy ra số đo mỗi góc trong của ngũ giác đều $ABCDE$ bằng $180^\\circ - 72^\\circ = 108^\\circ$. \\\\
 Xét tam giác cánh sao $PAB$ cân tại $P$ (do tính đối xứng của ngôi sao năm cánh đều). Hai góc ở đáy $\\widehat{PAB}$ và $\\widehat{PBA}$ lần lượt kề bù với hai góc trong $\\widehat{EAB} = 108^\\circ$ và $\\widehat{CBA} = 108^\\circ$ của ngũ giác đều $ABCDE$, nên:
 $$\\widehat{PAB} = \\widehat{PBA} = 180^\\circ - 108^\\circ = 72^\\circ.$$
 Trong tam giác $PAB$, tổng ba góc bằng $180^\\circ$ nên số đo góc nhọn ở đỉnh cánh sao $P$ là:
 $$\\widehat{APB} = 180^\\circ - (\\widehat{PAB} + \\widehat{PBA}) = 180^\\circ - 2 \\cdot 72^\\circ = 36^\\circ.$$
-Vì nếp gấp đôi tờ giấy là trục đối xứng của ngôi sao đi qua đỉnh $P$ nên nếp gấp là tia phân giác của góc $\\widehat{APB}$. \\
+Vì nếp gấp đôi tờ giấy là trục đối xứng của ngôi sao đi qua đỉnh $P$ nên nếp gấp là tia phân giác của góc $\\widehat{APB}$. \\\\
 Vậy góc nhọn tạo bởi lưỡi kéo (cắt theo cạnh $PA$ hoặc $PB$) và nếp gấp đôi tờ giấy lúc đầu bằng:
 $$\\frac{\\widehat{APB}}{2} = \\frac{36^\\circ}{2} = 18^\\circ.$$''')
 
