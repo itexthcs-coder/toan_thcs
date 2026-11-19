@@ -177,7 +177,7 @@ $$\\widehat{%(E)sI%(F)s} = 360^\\circ - 90^\\circ - 90^\\circ - \\widehat{%(B)s%
 Xét đường tròn $(I)$, góc nội tiếp $\\widehat{%(E)s%(D)s%(F)s}$ và góc ở tâm $\\widehat{%(E)sI%(F)s}$ cùng chắn cung nhỏ $%(E)s%(F)s$ nên:
 $$\\widehat{%(E)s%(D)s%(F)s} = \\frac{1}{2}\\widehat{%(E)sI%(F)s} = \\frac{180^\\circ - \\widehat{%(B)s%(A)s%(C)s}}{2} = 90^\\circ - \\frac{\\widehat{%(B)s%(A)s%(C)s}}{2}.$$
 \\item Chứng minh tương tự câu a), ta cũng có:
-$$\\widehat{%(D)s%(E)s%(F)s} = 90^\\circ - \\frac{\\widehat{%(A)s%(B)s%(C)s}}{2} \\quad \\text{và} \\quad \widehat{%(D)s%(F)s%(E)s} = 90^\\circ - \\frac{\\widehat{%(A)s%(C)s%(B)s}}{2}.$$
+$$\\widehat{%(D)s%(E)s%(F)s} = 90^\\circ - \\frac{\\widehat{%(A)s%(B)s%(C)s}}{2} \\quad \\text{và} \\quad \\widehat{%(D)s%(F)s%(E)s} = 90^\\circ - \\frac{\\widehat{%(A)s%(C)s%(B)s}}{2}.$$
 Vì ba góc $\\widehat{%(B)s%(A)s%(C)s}, \\widehat{%(A)s%(B)s%(C)s}, \\widehat{%(A)s%(C)s%(B)s}$ của tam giác $%(A)s%(B)s%(C)s$ đều lớn hơn $0^\\circ$ nên cả ba góc $\\widehat{%(E)s%(D)s%(F)s}, \\widehat{%(D)s%(E)s%(F)s}, \\widehat{%(D)s%(F)s%(E)s}$ đều nhỏ hơn $90^\\circ$.\\\\
 Vậy tam giác $%(D)s%(E)s%(F)s$ luôn là một tam giác nhọn với mọi tam giác $%(A)s%(B)s%(C)s$.
 \\end{enumEX}''' % {'A': A, 'B': B, 'C': C, 'D': D, 'E': E, 'F': F})

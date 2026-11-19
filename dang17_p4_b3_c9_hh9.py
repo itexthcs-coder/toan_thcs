@@ -1,0 +1,182 @@
+import sys
+from PyQt5.QtWidgets import QApplication, QColorDialog, QMainWindow, QSplitter, QTreeWidget, QSpacerItem, QSizePolicy, QTreeWidgetItem, QCheckBox, QFileDialog, QVBoxLayout, QTextEdit, QPushButton, QWidget, QLabel, QLineEdit, QDialog, QAction, QMessageBox, QScrollBar, QHeaderView, QMenu, QGridLayout
+from sympy import *
+from sympy.abc import x
+import sympy as sp
+from sympy import symbols,sqrt,evaluate,Subs,latex, Rational, expand, simplify, integrate
+import random
+import math
+from sympy import Rational
+from fractions import Fraction as frac
+from random import randint
+from PyQt5.QtGui import QTextCursor
+from PyQt5.QtGui import QFont
+import hashlib
+import uuid
+import os
+from sympy import symbols, Eq, solve
+import numpy as np
+from PyQt5.QtGui import QIcon
+from math import factorial
+from PyQt5.QtCore import Qt
+from PyQt5.QtGui import QTextDocument
+from subprocess import run, CalledProcessError
+import shutil
+from PyQt5.QtWidgets import QProgressBar
+from docx import Document
+from PyQt5 import QtGui
+import re
+import pandas as pd
+from PyQt5.QtGui import QPixmap
+import subprocess
+import platform
+import json
+from decimal import Decimal, ROUND_HALF_UP
+from PyQt5.QtWidgets import QComboBox, QPushButton, QVBoxLayout, QWidget
+from PyQt5.QtWidgets import QApplication, QWidget, QVBoxLayout, QSpinBox, QTreeWidget, QTreeWidgetItem, QCheckBox, QTextEdit, QPushButton, QHBoxLayout
+from random import randint, choice, shuffle
+from sympy import latex
+from fractions import Fraction
+from collections import Counter
+from random import sample
+import shutil
+import sys
+from PyQt5.QtWidgets import QApplication, QMainWindow, QTableWidget, QTableWidgetItem, QVBoxLayout, QWidget
+from PyQt5.QtCore import Qt
+import qrcode
+import json
+import glob
+import os
+import platform
+import subprocess
+import hashlib
+import base64
+from datetime import datetime, timedelta
+from PyQt5.QtWidgets import (QApplication, QDialog, QVBoxLayout, QLabel, QLineEdit, QPushButton, QMessageBox)
+from sympy import symbols, solve, Lt
+#from PyQt5.QtWebEngineWidgets import QWebEngineView
+#from PyQt5.QtCore import QUrl
+#from sympy import latex
+import re
+import pyperclip
+import warnings
+warnings.filterwarnings("ignore", category=FutureWarning)
+
+import google.generativeai as genai
+from sympy.abc import x, y, z, t
+import sys
+import os
+from PyQt5.QtWidgets import (
+    QApplication, QWidget, QVBoxLayout, QPushButton, QLabel, QFileDialog, QMessageBox
+)
+from pdf2image import convert_from_path
+from math import degrees
+import openpyxl
+from openpyxl import Workbook
+from openpyxl.styles import Alignment, Font
+from openpyxl.utils import get_column_letter
+from sympy import simplify, collect
+from itertools import combinations
+import itertools
+from PyQt5.QtCore import QSettings
+import sys
+import os
+import platform
+import subprocess
+import hashlib
+import time
+from datetime import datetime, timedelta
+# Bổ sung các widget và core cho Splash Screen
+from PyQt5.QtWidgets import (
+    QApplication, QMainWindow, QWidget, QDialog, QLabel, QLineEdit, 
+    QPushButton, QComboBox, QCheckBox, QTextEdit, QVBoxLayout, 
+    QHBoxLayout, QGridLayout, QMessageBox, QColorDialog,
+    QSplashScreen, QProgressBar  # <-- BỔ SUNG 2 CÁI NÀY
+)
+from PyQt5.QtCore import Qt, QSettings, QThread, pyqtSignal  # <-- BỔ SUNG QThread, pyqtSignal
+from PyQt5.QtGui import QIcon, QPixmap, QFont
+from PyQt5.QtGui import QFont, QBrush, QColor
+from PyQt5.QtWidgets import (
+    QApplication, QMainWindow, QWidget, QVBoxLayout, QHBoxLayout,
+    QSplitter, QTreeWidget, QTreeWidgetItem, QTextEdit, QLabel, 
+    QSpacerItem, QSizePolicy, QStackedWidget, QPushButton, QCheckBox, QSpinBox,
+    QScrollArea  # <-- Thêm mục này vào đây
+)
+from PyQt5.QtWidgets import QCheckBox
+from PyQt5.QtGui import QPainter, QColor, QPen
+from PyQt5.QtCore import Qt, QPropertyAnimation, pyqtProperty
+from functools import wraps
+import re
+import uuid
+import json, base64
+from datetime import datetime
+from nacl.signing import VerifyKey
+from nacl.encoding import HexEncoder
+from nacl.exceptions import BadSignatureError
+### CÔNG CỤ
+import sys
+import numpy as np
+from PyQt5.QtWidgets import (
+    QApplication, QMainWindow, QPushButton, QDialog, 
+    QVBoxLayout, QHBoxLayout, QTabWidget, QWidget, 
+    QLabel, QSlider, QDoubleSpinBox, QGroupBox
+)
+from PyQt5.QtCore import Qt
+from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
+from matplotlib.figure import Figure
+from mpl_toolkits.mplot3d import Axes3D  # Cần cho 3D
+
+
+def bt_dang17_p4_b3_c9_hh9(self):
+    lisdang = ['1']
+    dang = random.choice(lisdang)
+    if dang == '1':
+        k = random.choice([1, 2])
+        r_val = 5 * k
+        ab = 6 * k
+        bc = 8 * k
+        ac = 10 * k
+        dt_hcn = ab * bc
+        dt_tron = Decimal(str(3.14 * (r_val**2))).quantize(Decimal('0.01'), rounding=ROUND_HALF_UP)
+        dt_tham = dt_tron - Decimal(str(dt_hcn))
+
+        hinhve = ('''\\begin{center}
+\\begin{tikzpicture}[scale=1, font=\\footnotesize, line join=round, line cap=round, >=stealth]
+\\coordinate (O) at (0,0);
+\\coordinate (A) at (-1.5,1);
+\\coordinate (B) at (-1.5,-1);
+\\coordinate (C) at (1.5,-1);
+\\coordinate (D) at (1.5,1);
+\\draw[line width=1pt] (O) circle (1.8028);
+\\draw[line width=1pt] (A)--(B)--(C)--(D)--cycle;
+\\fill (O) circle (1pt) node[below] {$O$};
+\\fill (A) circle (1pt) node[above left] {$A$};
+\\fill (B) circle (1pt) node[below left] {$B$};
+\\fill (C) circle (1pt) node[below right] {$C$};
+\\fill (D) circle (1pt) node[above right] {$D$};
+\\end{tikzpicture}
+\\end{center}''')
+
+        noidungcauhoi = ('''Một phòng triển lãm nghệ thuật có mặt sàn hình tròn bán kính $R = %s\\text{ m}$. Kiến trúc sư muốn lát một khu vực trưng bày trung tâm có dạng hình chữ nhật $ABCD$ nội tiếp đường tròn mặt sàn sao cho tỉ số giữa chiều rộng $AB$ và chiều dài $BC$ là $\\dfrac{3}{4}$. Phần diện tích mặt sàn hình tròn còn lại nằm ngoài hình chữ nhật được trải thảm xanh. \\\\
+a) Tính chiều rộng và chiều dài của khu vực trưng bày hình chữ nhật $ABCD$. \\\\
+b) Tính diện tích phần mặt sàn được trải thảm xanh (lấy $\\pi \\approx 3,14$, đơn vị: $\\text{m}^2$).%s''' % (r_val, hinhve))
+
+        loigiai = ('''\\begin{enumEX}[a)]{1}
+\\item Vì hình chữ nhật $ABCD$ nội tiếp đường tròn bán kính $R = %s\\text{ m}$ nên độ dài đường chéo $AC = 2R = %s\\text{ (m)}$.\\\\
+Đặt chiều rộng $AB = 3x$ và chiều dài $BC = 4x$ ($x > 0$).\\\\
+Áp dụng định lí Pythagore cho tam giác $ABC$ vuông tại $B$, ta có:\\\\
+$(3x)^2 + (4x)^2 = %s^2 \\Leftrightarrow 25x^2 = %s \\Leftrightarrow x = %s$.\\\\
+Vậy chiều rộng $AB = %s\\text{ m}$ và chiều dài $BC = %s\\text{ m}$.
+\\item Diện tích khu vực trưng bày hình chữ nhật $ABCD$ là $S_{ABCD} = %s \\cdot %s = %s\\text{ (m}^2)$.\\\\
+Diện tích mặt sàn hình tròn là $S_{\\text{tròn}} = \\pi R^2 \\approx 3,14 \\cdot %s^2 = %s\\text{ (m}^2)$.\\\\
+Vậy diện tích phần mặt sàn được trải thảm xanh là $S_{\\text{thảm}} = %s - %s = %s\\text{ (m}^2)$.
+\\end{enumEX}''' % (r_val, ac, ac, ac**2, k, ab, bc, ab, bc, dt_hcn, r_val, str(dt_tron).replace('.', ','), str(dt_tron).replace('.', ','), dt_hcn, str(dt_tham).replace('.', ',')))
+
+    # Xuất câu hỏi và lời giải
+    content = ('\\begin{minipage}{\\textwidth} \n' +
+               '\\begin{ex}\n' +
+               str(noidungcauhoi) +
+               '\\loigiai{ \n' +
+               str(loigiai) + '}\n' +
+               '\\end{ex}\n \\end{minipage} \n\n')
+    return content
