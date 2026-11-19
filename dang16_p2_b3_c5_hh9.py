@@ -151,7 +151,7 @@ def bt_dang16_p2_b3_c5_hh9(self):
     \end{tikzpicture}
     \end{center}""")
 
-    noidungcauhoi = (r"""Một chiếc guồng nước (cọn nước) bằng tre có dạng hình tròn đặt thẳng đứng dưới dòng suối. Ngấn nước ngăn cách giữa phần trên và phần dưới mặt nước được biểu thị bởi một dây cung $AB = %d\text{ m}$ và điểm ngập sâu nhất của guồng nước dưới mặt nước là $HC = %d\text{ m}$ (với $H$ là trung điểm $AB$ và $C$ là điểm chính giữa cung nhỏ $\overparen{AB}$, như hình vẽ). Xét tính đúng sai của các khẳng định sau:
+    noidungcauhoi = (r"""Một chiếc guồng nước (cọn nước) bằng tre có dạng hình tròn đặt thẳng đứng dưới dòng suối. Ngấn nước ngăn cách giữa phần trên và phần dưới mặt nước được biểu thị bởi một dây cung $AB = %d\text{ m}$ và điểm ngập sâu nhất của guồng nước dưới mặt nước là $HC = %d\text{ m}$ (với $H$ là trung điểm $AB$ và $C$ là điểm chính giữa cung nhỏ $\overset\\frown{AB}$, như hình vẽ). Xét tính đúng sai của các khẳng định sau:
     %s""" % (ab_val, hc_val, hinh_ve))
 
     nb_da_1_d = '\\True Gọi $O$ là tâm của guồng nước, bán kính $R$ thì ba điểm $O, H, C$ thẳng hàng và $OH = R - %d\\text{ (m)}$' % hc_val
@@ -159,7 +159,7 @@ def bt_dang16_p2_b3_c5_hh9(self):
     list_nb_da_1 = [nb_da_1_d, nb_da_1_s]
     nb_da_1 = random.choice(list_nb_da_1)
     list_nb_1 = [nb_da_1]
-    loigiai_nb_1 = (r"""Vì $C$ là điểm chính giữa cung $\overparen{AB}$ và $H$ là trung điểm dây $AB$ nên $OC \perp AB$ tại $H$, suy ra $O, H, C$ thẳng hàng và $OH = OC - HC = R - %d\text{ (m)}$.""" % hc_val)
+    loigiai_nb_1 = (r"""Vì $C$ là điểm chính giữa cung $\overset\\frown{AB}$ và $H$ là trung điểm dây $AB$ nên $OC \perp AB$ tại $H$, suy ra $O, H, C$ thẳng hàng và $OH = OC - HC = R - %d\text{ (m)}$.""" % hc_val)
     list_nb_2 = [loigiai_nb_1]
 
     th_da_1_d = '\\True Áp dụng định lí Pythagore cho tam giác vuông $OHA$, ta có phương trình $(R - %d)^2 + %d^2 = R^2$' % (hc_val, ha_val)

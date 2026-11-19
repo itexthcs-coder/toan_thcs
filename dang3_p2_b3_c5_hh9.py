@@ -135,7 +135,7 @@ def bt_dang3_p2_b3_c5_hh9(self):
     Sq_val = Rational(n_val, 360) * (R_val**2) * pi
     ti_so = Rational(n_val, 360)
 
-    noidungcauhoi = ('''Cho hình quạt tròn $OAB$ có bán kính $R = %d\\text{ cm}$ và độ dài cung $\\overparen{AB}$ bằng $%s\\text{ cm}$. Xét tính đúng sai của các khẳng định sau:''' % (R_val, latex(l_val)))
+    noidungcauhoi = ('''Cho hình quạt tròn $OAB$ có bán kính $R = %d\\text{ cm}$ và độ dài cung $\\overset\\frown{AB}$ bằng $%s\\text{ cm}$. Xét tính đúng sai của các khẳng định sau:''' % (R_val, latex(l_val)))
 
     nb_da_1_d = '\\True Diện tích của hình quạt tròn $OAB$ bằng $%s\\text{ cm}^2$' % latex(Sq_val)
     nb_da_1_s = 'Diện tích của hình quạt tròn $OAB$ bằng $%s\\text{ cm}^2$' % latex(2 * Sq_val)
@@ -145,12 +145,12 @@ def bt_dang3_p2_b3_c5_hh9(self):
     loigiai_nb_1 = ('''Diện tích hình quạt tròn $OAB$ là $S_q = \\dfrac{l \\cdot R}{2} = \\dfrac{%s \\cdot %d}{2} = %s\\text{ (cm}^2\\text{)}$.''' % (latex(l_val), R_val, latex(Sq_val)))
     list_nb_2 = [loigiai_nb_1]
 
-    th_da_1_d = '\\True Số đo của cung $\\overparen{AB}$ là $%d^\\circ$' % n_val
-    th_da_1_s = 'Số đo của cung $\\overparen{AB}$ là $%d^\\circ$' % (n_val // 2)
+    th_da_1_d = '\\True Số đo của cung $\\overset\\frown{AB}$ là $%d^\\circ$' % n_val
+    th_da_1_s = 'Số đo của cung $\\overset\\frown{AB}$ là $%d^\\circ$' % (n_val // 2)
     list_th_da_1 = [th_da_1_d, th_da_1_s]
     th_da_1 = random.choice(list_th_da_1)
     list_th_1 = [th_da_1]
-    loigiai_th_1 = ('''Từ công thức $l = \\dfrac{n}{180}\\pi R$, suy ra $n = \\dfrac{180 \\cdot %s}{\\pi \\cdot %d} = %d$. Vậy cung $\\overparen{AB}$ có số đo $%d^\\circ$.''' % (latex(l_val), R_val, n_val, n_val))
+    loigiai_th_1 = ('''Từ công thức $l = \\dfrac{n}{180}\\pi R$, suy ra $n = \\dfrac{180 \\cdot %s}{\\pi \\cdot %d} = %d$. Vậy cung $\\overset\\frown{AB}$ có số đo $%d^\\circ$.''' % (latex(l_val), R_val, n_val, n_val))
     list_th_2 = [loigiai_th_1]
 
     vd_da_1_d = '\\True Tỉ số giữa diện tích hình quạt tròn $OAB$ và diện tích hình tròn $(O; %d\\text{ cm})$ bằng $%s$' % (R_val, latex(ti_so))

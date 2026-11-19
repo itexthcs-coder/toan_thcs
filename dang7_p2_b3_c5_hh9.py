@@ -168,28 +168,28 @@ def bt_dang7_p2_b3_c5_hh9(self):
     loigiai_nb_1 = (r"""Các tam giác $BKC$ và $BHC$ vuông tại $K$ và $H$ có chung cạnh huyền $BC$ nên trung tuyến $OK = OH = OB = OC = \dfrac{BC}{2} = %d\text{ (cm)}$. Vậy $B, K, H, C$ cùng thuộc $(O; %d\text{ cm})$.""" % (R_val, R_val))
     list_nb_2 = [loigiai_nb_1]
 
-    th_da_1_d = '\\True Hai cung nhỏ $\\overparen{BK}$ và $\\overparen{CH}$ của đường tròn $(O)$ bằng nhau'
-    th_da_1_s = 'Cung nhỏ $\\overparen{BK}$ lớn hơn cung nhỏ $\\overparen{CH}$'
+    th_da_1_d = '\\True Hai cung nhỏ $\\overset\\frown{BK}$ và $\\overset\\frown{CH}$ của đường tròn $(O)$ bằng nhau'
+    th_da_1_s = 'Cung nhỏ $\\overset\\frown{BK}$ lớn hơn cung nhỏ $\\overset\\frown{CH}$'
     list_th_da_1 = [th_da_1_d, th_da_1_s]
     th_da_1 = random.choice(list_th_da_1)
     list_th_1 = [th_da_1]
-    loigiai_th_1 = (r"""Do $\triangle ABC$ cân tại $A$ nên hai đường cao $BH = CK$, suy ra $\triangle BHC = \triangle CKB$ (cạnh huyền - cạnh góc vuông), do đó dây $BK = CH$ nên hai cung nhỏ $\overparen{BK}$ và $\overparen{CH}$ bằng nhau.""" )
+    loigiai_th_1 = (r"""Do $\triangle ABC$ cân tại $A$ nên hai đường cao $BH = CK$, suy ra $\triangle BHC = \triangle CKB$ (cạnh huyền - cạnh góc vuông), do đó dây $BK = CH$ nên hai cung nhỏ $\overset\\frown{BK}$ và $\overset\\frown{CH}$ bằng nhau.""" )
     list_th_2 = [loigiai_th_1]
 
-    vd_da_1_d = '\\True Số đo của cung nhỏ $\\overparen{KH}$ bằng $%d^\\circ$' % goc_KH
-    vd_da_1_s = 'Số đo của cung nhỏ $\\overparen{KH}$ bằng $%d^\\circ$' % (180 - goc_A)
+    vd_da_1_d = '\\True Số đo của cung nhỏ $\\overset\\frown{KH}$ bằng $%d^\\circ$' % goc_KH
+    vd_da_1_s = 'Số đo của cung nhỏ $\\overset\\frown{KH}$ bằng $%d^\\circ$' % (180 - goc_A)
     list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
     vd_da_1 = random.choice(list_vd_da_1)
     list_vd_1 = [vd_da_1]
-    loigiai_vd_1 = (r"""Ba tam giác cân $ABC, OBK, OCH$ có các góc ở đáy bằng nhau nên $\widehat{BOK} = \widehat{HOC} = \widehat{BAC} = %d^\circ$. \\ Suy ra $\widehat{KOH} = 180^\circ - 2 \cdot %d^\circ = %d^\circ$, vậy $\text{sđ}\overparen{KH} = %d^\circ$.""" % (goc_A, goc_A, goc_KH, goc_KH))
+    loigiai_vd_1 = (r"""Ba tam giác cân $ABC, OBK, OCH$ có các góc ở đáy bằng nhau nên $\widehat{BOK} = \widehat{HOC} = \widehat{BAC} = %d^\circ$. \\ Suy ra $\widehat{KOH} = 180^\circ - 2 \cdot %d^\circ = %d^\circ$, vậy $\text{sđ}\overset\\frown{KH} = %d^\circ$.""" % (goc_A, goc_A, goc_KH, goc_KH))
     list_vd_2 = [loigiai_vd_1]
 
-    vdc_da_1_d = '\\True Độ dài cung nhỏ $\\overparen{KH}$ bằng $%s\\text{ cm}$' % latex(l_KH)
-    vdc_da_1_s = 'Độ dài cung nhỏ $\\overparen{KH}$ bằng $%s\\text{ cm}$' % latex(2 * l_KH)
+    vdc_da_1_d = '\\True Độ dài cung nhỏ $\\overset\\frown{KH}$ bằng $%s\\text{ cm}$' % latex(l_KH)
+    vdc_da_1_s = 'Độ dài cung nhỏ $\\overset\\frown{KH}$ bằng $%s\\text{ cm}$' % latex(2 * l_KH)
     list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
     vdc_da_1 = random.choice(list_vdc_da_1)
     list_vdc_1 = [vdc_da_1]
-    loigiai_vdc_1 = (r"""Độ dài cung nhỏ $\overparen{KH}$ là $l = \dfrac{%d}{180}\pi \cdot %d = %s\text{ (cm)}$.""" % (goc_KH, R_val, latex(l_KH)))
+    loigiai_vdc_1 = (r"""Độ dài cung nhỏ $\overset\\frown{KH}$ là $l = \dfrac{%d}{180}\pi \cdot %d = %s\text{ (cm)}$.""" % (goc_KH, R_val, latex(l_KH)))
     list_vdc_2 = [loigiai_vdc_1]
 
     def count_true_answers(answers):

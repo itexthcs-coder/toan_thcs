@@ -171,20 +171,20 @@ def bt_dang6_p2_b3_c5_hh9(self):
     loigiai_th_1 = (r"""Vì $OC = OD = CD = %d\text{ cm}$ nên $\triangle OCD$ đều, suy ra $\widehat{COD} = 60^\circ$.""" % R_val)
     list_th_2 = [loigiai_th_1]
 
-    vd_da_1_d = '\\True Độ dài cung nhỏ $\\overparen{CD}$ bằng $%s\\text{ cm}$' % latex(l_nho)
-    vd_da_1_s = 'Độ dài cung nhỏ $\\overparen{CD}$ bằng $%s\\text{ cm}$' % latex(2 * l_nho)
+    vd_da_1_d = '\\True Độ dài cung nhỏ $\\overset\\frown{CD}$ bằng $%s\\text{ cm}$' % latex(l_nho)
+    vd_da_1_s = 'Độ dài cung nhỏ $\\overset\\frown{CD}$ bằng $%s\\text{ cm}$' % latex(2 * l_nho)
     list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
     vd_da_1 = random.choice(list_vd_da_1)
     list_vd_1 = [vd_da_1]
-    loigiai_vd_1 = (r"""Độ dài cung nhỏ $\overparen{CD}$ là $l = \dfrac{60}{180}\pi \cdot %d = %s\text{ (cm)}$.""" % (R_val, latex(l_nho)))
+    loigiai_vd_1 = (r"""Độ dài cung nhỏ $\overset\\frown{CD}$ là $l = \dfrac{60}{180}\pi \cdot %d = %s\text{ (cm)}$.""" % (R_val, latex(l_nho)))
     list_vd_2 = [loigiai_vd_1]
 
-    vdc_da_1_d = '\\True Diện tích hình quạt tròn ứng với cung lớn $\\overparen{CD}$ bằng $%s\\text{ cm}^2$' % latex(Sq_lon)
-    vdc_da_1_s = 'Diện tích hình quạt tròn ứng với cung lớn $\\overparen{CD}$ bằng $%s\\text{ cm}^2$' % latex(Rational(60, 360)*(R_val**2)*pi)
+    vdc_da_1_d = '\\True Diện tích hình quạt tròn ứng với cung lớn $\\overset\\frown{CD}$ bằng $%s\\text{ cm}^2$' % latex(Sq_lon)
+    vdc_da_1_s = 'Diện tích hình quạt tròn ứng với cung lớn $\\overset\\frown{CD}$ bằng $%s\\text{ cm}^2$' % latex(Rational(60, 360)*(R_val**2)*pi)
     list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
     vdc_da_1 = random.choice(list_vdc_da_1)
     list_vdc_1 = [vdc_da_1]
-    loigiai_vdc_1 = (r"""Số đo cung lớn $\overparen{CD}$ là $360^\circ - 60^\circ = 300^\circ$. \\ Diện tích hình quạt tròn tương ứng là $S_q = \dfrac{300}{360}\pi \cdot %d^2 = %s\text{ (cm}^2\text{)}$.""" % (R_val, latex(Sq_lon)))
+    loigiai_vdc_1 = (r"""Số đo cung lớn $\overset\\frown{CD}$ là $360^\circ - 60^\circ = 300^\circ$. \\ Diện tích hình quạt tròn tương ứng là $S_q = \dfrac{300}{360}\pi \cdot %d^2 = %s\text{ (cm}^2\text{)}$.""" % (R_val, latex(Sq_lon)))
     list_vdc_2 = [loigiai_vdc_1]
 
     def count_true_answers(answers):

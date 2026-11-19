@@ -166,24 +166,24 @@ def bt_dang8_p2_b3_c5_hh9(self):
     loigiai_nb_1 = (r"""Bán kính của nửa đường tròn là $R = \dfrac{BC}{2} = \dfrac{%s}{2} = %s\text{ (cm)}$.""" % (latex(BC_val), latex(R_val)))
     list_nb_2 = [loigiai_nb_1]
 
-    th_da_1_d = '\\True Ba cung nhỏ $\\overparen{BD}, \\overparen{DE}, \\overparen{EC}$ bằng nhau và mỗi cung có số đo bằng $60^\\circ$'
-    th_da_1_s = 'Cung nhỏ $\\overparen{DE}$ có số đo bằng $90^\\circ$'
+    th_da_1_d = '\\True Ba cung nhỏ $\\overset\\frown{BD}, \\overset\\frown{DE}, \\overset\\frown{EC}$ bằng nhau và mỗi cung có số đo bằng $60^\\circ$'
+    th_da_1_s = 'Cung nhỏ $\\overset\\frown{DE}$ có số đo bằng $90^\\circ$'
     list_th_da_1 = [th_da_1_d, th_da_1_s]
     th_da_1 = random.choice(list_th_da_1)
     list_th_1 = [th_da_1]
-    loigiai_th_1 = (r"""Các tam giác $OBD$ và $OCE$ cân có góc ở đáy bằng $60^\circ$ nên là các tam giác đều, suy ra $\widehat{BOD} = \widehat{COE} = 60^\circ \implies \widehat{DOE} = 60^\circ$. Vậy ba cung nhỏ $\overparen{BD}, \overparen{DE}, \overparen{EC}$ bằng nhau và đều có số đo $60^\circ$.""" )
+    loigiai_th_1 = (r"""Các tam giác $OBD$ và $OCE$ cân có góc ở đáy bằng $60^\circ$ nên là các tam giác đều, suy ra $\widehat{BOD} = \widehat{COE} = 60^\circ \implies \widehat{DOE} = 60^\circ$. Vậy ba cung nhỏ $\overset\\frown{BD}, \overset\\frown{DE}, \overset\\frown{EC}$ bằng nhau và đều có số đo $60^\circ$.""" )
     list_th_2 = [loigiai_th_1]
 
-    vd_da_1_d = '\\True Tổng độ dài hai cung nhỏ $\\overparen{BD}$ và $\\overparen{EC}$ bằng $%s\\text{ cm}$' % latex(tong_l)
-    vd_da_1_s = 'Tổng độ dài hai cung nhỏ $\\overparen{BD}$ và $\\overparen{EC}$ bằng $%s\\text{ cm}$' % latex(tong_l / 2)
+    vd_da_1_d = '\\True Tổng độ dài hai cung nhỏ $\\overset\\frown{BD}$ và $\\overset\\frown{EC}$ bằng $%s\\text{ cm}$' % latex(tong_l)
+    vd_da_1_s = 'Tổng độ dài hai cung nhỏ $\\overset\\frown{BD}$ và $\\overset\\frown{EC}$ bằng $%s\\text{ cm}$' % latex(tong_l / 2)
     list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
     vd_da_1 = random.choice(list_vd_da_1)
     list_vd_1 = [vd_da_1]
-    loigiai_vd_1 = (r"""Tổng số đo hai cung $\overparen{BD}$ và $\overparen{EC}$ là $120^\circ$, do đó tổng độ dài của chúng là $l = \dfrac{120}{180}\pi \cdot %s = %s\text{ (cm)}$.""" % (latex(R_val), latex(tong_l)))
+    loigiai_vd_1 = (r"""Tổng số đo hai cung $\overset\\frown{BD}$ và $\overset\\frown{EC}$ là $120^\circ$, do đó tổng độ dài của chúng là $l = \dfrac{120}{180}\pi \cdot %s = %s\text{ (cm)}$.""" % (latex(R_val), latex(tong_l)))
     list_vd_2 = [loigiai_vd_1]
 
-    vdc_da_1_d = '\\True Diện tích hình viên phân giới hạn bởi dây $DE$ và cung nhỏ $\\overparen{DE}$ bằng $%s\\text{ (cm}^2\\text{)}$' % latex(Svp_de)
-    vdc_da_1_s = 'Diện tích hình viên phân giới hạn bởi dây $DE$ và cung nhỏ $\\overparen{DE}$ bằng $%s\\text{ (cm}^2\\text{)}$' % latex(Sq_de)
+    vdc_da_1_d = '\\True Diện tích hình viên phân giới hạn bởi dây $DE$ và cung nhỏ $\\overset\\frown{DE}$ bằng $%s\\text{ (cm}^2\\text{)}$' % latex(Svp_de)
+    vdc_da_1_s = 'Diện tích hình viên phân giới hạn bởi dây $DE$ và cung nhỏ $\\overset\\frown{DE}$ bằng $%s\\text{ (cm}^2\\text{)}$' % latex(Sq_de)
     list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
     vdc_da_1 = random.choice(list_vdc_da_1)
     list_vdc_1 = [vdc_da_1]

@@ -150,39 +150,39 @@ def bt_dang2_p2_b3_c5_hh9(self):
     \\end{tikzpicture}
     \\end{center}''')
 
-    noidungcauhoi = ('''Cho đường tròn $(O; %d\\text{ cm})$ và ba điểm $M, N, P$ thuộc đường tròn sao cho tam giác $MNP$ cân tại $M$ và số đo cung nhỏ $\\overparen{NP}$ bằng $%d^\\circ$ (như hình vẽ). Xét tính đúng sai của các khẳng định sau:
+    noidungcauhoi = ('''Cho đường tròn $(O; %d\\text{ cm})$ và ba điểm $M, N, P$ thuộc đường tròn sao cho tam giác $MNP$ cân tại $M$ và số đo cung nhỏ $\\overset\\frown{NP}$ bằng $%d^\\circ$ (như hình vẽ). Xét tính đúng sai của các khẳng định sau:
     %s''' % (R_val, sd_np, hinh_ve))
 
-    nb_da_1_d = '\\True Hai cung nhỏ $\\overparen{MN}$ và $\\overparen{MP}$ bằng nhau'
-    nb_da_1_s = 'Cung nhỏ $\\overparen{MN}$ lớn hơn cung nhỏ $\\overparen{MP}$'
+    nb_da_1_d = '\\True Hai cung nhỏ $\\overset\\frown{MN}$ và $\\overset\\frown{MP}$ bằng nhau'
+    nb_da_1_s = 'Cung nhỏ $\\overset\\frown{MN}$ lớn hơn cung nhỏ $\\overset\\frown{MP}$'
     list_nb_da_1 = [nb_da_1_d, nb_da_1_s]
     nb_da_1 = random.choice(list_nb_da_1)
     list_nb_1 = [nb_da_1]
-    loigiai_nb_1 = ('''Vì tam giác $MNP$ cân tại $M$ nên hai dây $MN = MP$, suy ra hai cung nhỏ $\\overparen{MN}$ và $\\overparen{MP}$ bằng nhau.''')
+    loigiai_nb_1 = ('''Vì tam giác $MNP$ cân tại $M$ nên hai dây $MN = MP$, suy ra hai cung nhỏ $\\overset\\frown{MN}$ và $\\overset\\frown{MP}$ bằng nhau.''')
     list_nb_2 = [loigiai_nb_1]
 
-    th_da_1_d = '\\True Số đo của mỗi cung nhỏ $\\overparen{MN}$ và $\\overparen{MP}$ bằng $%d^\\circ$' % sd_mn
-    th_da_1_s = 'Số đo của mỗi cung nhỏ $\\overparen{MN}$ và $\\overparen{MP}$ bằng $%d^\\circ$' % (180 - sd_np)
+    th_da_1_d = '\\True Số đo của mỗi cung nhỏ $\\overset\\frown{MN}$ và $\\overset\\frown{MP}$ bằng $%d^\\circ$' % sd_mn
+    th_da_1_s = 'Số đo của mỗi cung nhỏ $\\overset\\frown{MN}$ và $\\overset\\frown{MP}$ bằng $%d^\\circ$' % (180 - sd_np)
     list_th_da_1 = [th_da_1_d, th_da_1_s]
     th_da_1 = random.choice(list_th_da_1)
     list_th_1 = [th_da_1]
-    loigiai_th_1 = ('''Ta có $\\text{sđ}\\overparen{MN} + \\text{sđ}\\overparen{MP} + \\text{sđ}\\overparen{NP} = 360^\\circ$ mà $\\overparen{MN} = \\overparen{MP}$ nên $\\text{sđ}\\overparen{MN} = \\text{sđ}\\overparen{MP} = \\dfrac{360^\\circ - %d^\\circ}{2} = %d^\\circ$.''' % (sd_np, sd_mn))
+    loigiai_th_1 = ('''Ta có $\\text{sđ}\\overset\\frown{MN} + \\text{sđ}\\overset\\frown{MP} + \\text{sđ}\\overset\\frown{NP} = 360^\\circ$ mà $\\overset\\frown{MN} = \\overset\\frown{MP}$ nên $\\text{sđ}\\overset\\frown{MN} = \\text{sđ}\\overset\\frown{MP} = \\dfrac{360^\\circ - %d^\\circ}{2} = %d^\\circ$.''' % (sd_np, sd_mn))
     list_th_2 = [loigiai_th_1]
 
-    vd_da_1_d = '\\True Độ dài cung nhỏ $\\overparen{NP}$ bằng $%s\\text{ cm}$' % latex(l_np)
-    vd_da_1_s = 'Độ dài cung nhỏ $\\overparen{NP}$ bằng $%s\\text{ cm}$' % latex(l_np + pi)
+    vd_da_1_d = '\\True Độ dài cung nhỏ $\\overset\\frown{NP}$ bằng $%s\\text{ cm}$' % latex(l_np)
+    vd_da_1_s = 'Độ dài cung nhỏ $\\overset\\frown{NP}$ bằng $%s\\text{ cm}$' % latex(l_np + pi)
     list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
     vd_da_1 = random.choice(list_vd_da_1)
     list_vd_1 = [vd_da_1]
-    loigiai_vd_1 = ('''Độ dài cung nhỏ $\\overparen{NP}$ là $l_{\\overparen{NP}} = \\dfrac{%d}{180}\\pi \\cdot %d = %s\\text{ (cm)}$.''' % (sd_np, R_val, latex(l_np)))
+    loigiai_vd_1 = ('''Độ dài cung nhỏ $\\overset\\frown{NP}$ là $l_{\\overset\\frown{NP}} = \\dfrac{%d}{180}\\pi \\cdot %d = %s\\text{ (cm)}$.''' % (sd_np, R_val, latex(l_np)))
     list_vd_2 = [loigiai_vd_1]
 
-    vdc_da_1_d = '\\True Tổng độ dài hai cung nhỏ $\\overparen{MN}$ và $\\overparen{MP}$ bằng $%s\\text{ cm}$' % latex(tong_l)
-    vdc_da_1_s = 'Tổng độ dài hai cung nhỏ $\\overparen{MN}$ và $\\overparen{MP}$ bằng $%s\\text{ cm}$' % latex(tong_l // 2)
+    vdc_da_1_d = '\\True Tổng độ dài hai cung nhỏ $\\overset\\frown{MN}$ và $\\overset\\frown{MP}$ bằng $%s\\text{ cm}$' % latex(tong_l)
+    vdc_da_1_s = 'Tổng độ dài hai cung nhỏ $\\overset\\frown{MN}$ và $\\overset\\frown{MP}$ bằng $%s\\text{ cm}$' % latex(tong_l // 2)
     list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
     vdc_da_1 = random.choice(list_vdc_da_1)
     list_vdc_1 = [vdc_da_1]
-    loigiai_vdc_1 = ('''Tổng số đo hai cung $\\overparen{MN}$ và $\\overparen{MP}$ là $2 \\cdot %d^\\circ = %d^\\circ$. \\\\ Tổng độ dài hai cung nhỏ đó là $l = \\dfrac{%d}{180}\\pi \\cdot %d = %s\\text{ (cm)}$.''' % (sd_mn, 2*sd_mn, 2*sd_mn, R_val, latex(tong_l)))
+    loigiai_vdc_1 = ('''Tổng số đo hai cung $\\overset\\frown{MN}$ và $\\overset\\frown{MP}$ là $2 \\cdot %d^\\circ = %d^\\circ$. \\\\ Tổng độ dài hai cung nhỏ đó là $l = \\dfrac{%d}{180}\\pi \\cdot %d = %s\\text{ (cm)}$.''' % (sd_mn, 2*sd_mn, 2*sd_mn, R_val, latex(tong_l)))
     list_vdc_2 = [loigiai_vdc_1]
 
     def count_true_answers(answers):

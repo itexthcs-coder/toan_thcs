@@ -170,20 +170,20 @@ def bt_dang9_p2_b3_c5_hh9(self):
     loigiai_th_1 = (r'''Hai đường chéo $AA'$ và $BB'$ cắt nhau tại trung điểm $O$ của mỗi đường và có độ dài bằng nhau ($AA' = BB' = 2R$) nên $ABA'B'$ là hình chữ nhật.''' )
     list_th_2 = [loigiai_th_1]
 
-    vd_da_1_d = '\\\\True Số đo cung nhỏ $\\\\overparen{AB\'}$ bằng $90^\\\\circ$'
-    vd_da_1_s = 'Số đo cung nhỏ $\\\\overparen{AB\'}$ bằng $60^\\\\circ$'
+    vd_da_1_d = '\\\\True Số đo cung nhỏ $\\\\overset\\frown{AB\'}$ bằng $90^\\\\circ$'
+    vd_da_1_s = 'Số đo cung nhỏ $\\\\overset\\frown{AB\'}$ bằng $60^\\\\circ$'
     list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
     vd_da_1 = random.choice(list_vd_da_1)
     list_vd_1 = [vd_da_1]
-    loigiai_vd_1 = (r'''Xét $\triangle OAB$ có $OA^2 + OB^2 = %d^2 + %d^2 = %d = AB^2$, suy ra $\widehat{AOB} = 90^\circ$. Do đó $\widehat{AOB'} = 180^\circ - 90^\circ = 90^\circ$, vậy $\text{sđ}\overparen{AB'} = 90^\circ$.''' % (R_val, R_val, 2*(R_val**2)))
+    loigiai_vd_1 = (r'''Xét $\triangle OAB$ có $OA^2 + OB^2 = %d^2 + %d^2 = %d = AB^2$, suy ra $\widehat{AOB} = 90^\circ$. Do đó $\widehat{AOB'} = 180^\circ - 90^\circ = 90^\circ$, vậy $\text{sđ}\overset\\frown{AB'} = 90^\circ$.''' % (R_val, R_val, 2*(R_val**2)))
     list_vd_2 = [loigiai_vd_1]
 
-    vdc_da_1_d = '\\\\True Độ dài cung nhỏ $\\\\overparen{A\'B\'}$ bằng $%s\\\\text{ cm}$' % latex(l_a1b1)
-    vdc_da_1_s = 'Độ dài cung nhỏ $\\\\overparen{A\'B\'}$ bằng $%s\\\\text{ cm}$' % latex(2 * l_a1b1)
+    vdc_da_1_d = '\\\\True Độ dài cung nhỏ $\\\\overset\\frown{A\'B\'}$ bằng $%s\\\\text{ cm}$' % latex(l_a1b1)
+    vdc_da_1_s = 'Độ dài cung nhỏ $\\\\overset\\frown{A\'B\'}$ bằng $%s\\\\text{ cm}$' % latex(2 * l_a1b1)
     list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
     vdc_da_1 = random.choice(list_vdc_da_1)
     list_vdc_1 = [vdc_da_1]
-    loigiai_vdc_1 = (r'''Ta có $\widehat{A'OB'} = \widehat{AOB} = 90^\circ$ (hai góc đối đỉnh). \\ Độ dài cung nhỏ $\overparen{A'B'}$ là $l = \dfrac{90}{180}\pi \cdot %d = %s\text{ (cm)}$.''' % (R_val, latex(l_a1b1)))
+    loigiai_vdc_1 = (r'''Ta có $\widehat{A'OB'} = \widehat{AOB} = 90^\circ$ (hai góc đối đỉnh). \\ Độ dài cung nhỏ $\overset\\frown{A'B'}$ là $l = \dfrac{90}{180}\pi \cdot %d = %s\text{ (cm)}$.''' % (R_val, latex(l_a1b1)))
     list_vdc_2 = [loigiai_vdc_1]
 
     def count_true_answers(answers):

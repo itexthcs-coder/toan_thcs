@@ -148,16 +148,16 @@ def bt_dang5_p2_b3_c5_hh9(self):
     noidungcauhoi = (r"""Cho đường tròn $(O; %d\text{ cm})$ và dây cung $AB = %d\text{ cm}$ (như hình vẽ). Xét tính đúng sai của các khẳng định sau:
     %s""" % (R_val, R_val, hinh_ve))
 
-    nb_da_1_d = '\\True Tam giác $OAB$ là tam giác đều nên số đo cung nhỏ $\\overparen{AB}$ bằng $60^\\circ$'
-    nb_da_1_s = 'Tam giác $OAB$ là tam giác vuông cân nên số đo cung nhỏ $\\overparen{AB}$ bằng $90^\\circ$'
+    nb_da_1_d = '\\True Tam giác $OAB$ là tam giác đều nên số đo cung nhỏ $\\overset\\frown{AB}$ bằng $60^\\circ$'
+    nb_da_1_s = 'Tam giác $OAB$ là tam giác vuông cân nên số đo cung nhỏ $\\overset\\frown{AB}$ bằng $90^\\circ$'
     list_nb_da_1 = [nb_da_1_d, nb_da_1_s]
     nb_da_1 = random.choice(list_nb_da_1)
     list_nb_1 = [nb_da_1]
-    loigiai_nb_1 = (r"""Vì $OA = OB = AB = %d\text{ cm}$ nên $\triangle OAB$ đều, suy ra $\widehat{AOB} = 60^\circ$, do đó $\text{sđ}\overparen{AB} = 60^\circ$.""" % R_val)
+    loigiai_nb_1 = (r"""Vì $OA = OB = AB = %d\text{ cm}$ nên $\triangle OAB$ đều, suy ra $\widehat{AOB} = 60^\circ$, do đó $\text{sđ}\overset\\frown{AB} = 60^\circ$.""" % R_val)
     list_nb_2 = [loigiai_nb_1]
 
-    th_da_1_d = '\\True Diện tích hình quạt tròn $OAB$ ứng với cung nhỏ $\\overparen{AB}$ bằng $%s\\text{ cm}^2$' % latex(Sq_val)
-    th_da_1_s = 'Diện tích hình quạt tròn $OAB$ ứng với cung nhỏ $\\overparen{AB}$ bằng $%s\\text{ cm}^2$' % latex(2 * Sq_val)
+    th_da_1_d = '\\True Diện tích hình quạt tròn $OAB$ ứng với cung nhỏ $\\overset\\frown{AB}$ bằng $%s\\text{ cm}^2$' % latex(Sq_val)
+    th_da_1_s = 'Diện tích hình quạt tròn $OAB$ ứng với cung nhỏ $\\overset\\frown{AB}$ bằng $%s\\text{ cm}^2$' % latex(2 * Sq_val)
     list_th_da_1 = [th_da_1_d, th_da_1_s]
     th_da_1 = random.choice(list_th_da_1)
     list_th_1 = [th_da_1]
@@ -172,8 +172,8 @@ def bt_dang5_p2_b3_c5_hh9(self):
     loigiai_vd_1 = (r"""Tam giác $OAB$ đều cạnh %d\text{ cm} có diện tích là $S_{\triangle OAB} = \dfrac{%d^2\sqrt{3}}{4} = %s\text{ (cm}^2\text{)}$.""" % (R_val, R_val, latex(St_val)))
     list_vd_2 = [loigiai_vd_1]
 
-    vdc_da_1_d = '\\True Diện tích hình viên phân giới hạn bởi cung nhỏ $\\overparen{AB}$ và dây $AB$ bằng $%s\\text{ (cm}^2\\text{)}$' % latex(Svp_val)
-    vdc_da_1_s = 'Diện tích hình viên phân giới hạn bởi cung nhỏ $\\overparen{AB}$ và dây $AB$ bằng $%s\\text{ (cm}^2\\text{)}$' % latex(Sq_val + St_val)
+    vdc_da_1_d = '\\True Diện tích hình viên phân giới hạn bởi cung nhỏ $\\overset\\frown{AB}$ và dây $AB$ bằng $%s\\text{ (cm}^2\\text{)}$' % latex(Svp_val)
+    vdc_da_1_s = 'Diện tích hình viên phân giới hạn bởi cung nhỏ $\\overset\\frown{AB}$ và dây $AB$ bằng $%s\\text{ (cm}^2\\text{)}$' % latex(Sq_val + St_val)
     list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
     vdc_da_1 = random.choice(list_vdc_da_1)
     list_vdc_1 = [vdc_da_1]

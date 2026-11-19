@@ -157,16 +157,16 @@ def bt_dang10_p2_b3_c5_hh9(self):
     noidungcauhoi = (r"""Cho hình vuông $ABCD$ cạnh $a = %d\text{ cm}$. Vẽ hai cung tròn tâm $A$ và tâm $C$ cùng có bán kính bằng $%d\text{ cm}$ nằm bên trong hình vuông, hai cung này cắt nhau tại $B$ và $D$ tạo thành một phần giao nhau ở giữa (phần tô màu như hình vẽ). Xét tính đúng sai của các khẳng định sau:
     %s""" % (a_val, a_val, hinh_ve))
 
-    nb_da_1_d = '\\True Diện tích của một hình quạt tròn tâm $A$, bán kính $AB = %d\\text{ cm}$, cung $\\overparen{BD}$ bằng $%s\\text{ cm}^2$' % (a_val, latex(Sq_val))
-    nb_da_1_s = 'Diện tích của một hình quạt tròn tâm $A$, bán kính $AB = %d\\text{ cm}$, cung $\\overparen{BD}$ bằng $%s\\text{ cm}^2$' % (a_val, latex(2 * Sq_val))
+    nb_da_1_d = '\\True Diện tích của một hình quạt tròn tâm $A$, bán kính $AB = %d\\text{ cm}$, cung $\\overset\\frown{BD}$ bằng $%s\\text{ cm}^2$' % (a_val, latex(Sq_val))
+    nb_da_1_s = 'Diện tích của một hình quạt tròn tâm $A$, bán kính $AB = %d\\text{ cm}$, cung $\\overset\\frown{BD}$ bằng $%s\\text{ cm}^2$' % (a_val, latex(2 * Sq_val))
     list_nb_da_1 = [nb_da_1_d, nb_da_1_s]
     nb_da_1 = random.choice(list_nb_da_1)
     list_nb_1 = [nb_da_1]
     loigiai_nb_1 = (r"""Hình quạt tròn $ABD$ ứng với cung $90^\circ$, bán kính %d\text{ cm} có diện tích $S_q = \dfrac{90}{360}\pi \cdot %d^2 = %s\text{ (cm}^2\text{)}$.""" % (a_val, a_val, latex(Sq_val)))
     list_nb_2 = [loigiai_nb_1]
 
-    th_da_1_d = '\\True Diện tích hình viên phân giới hạn bởi cung nhỏ $\\overparen{BD}$ (tâm $A$) và dây $BD$ bằng $%s\\text{ (cm}^2\\text{)}$' % latex(Svp_val)
-    th_da_1_s = 'Diện tích hình viên phân giới hạn bởi cung nhỏ $\\overparen{BD}$ (tâm $A$) và dây $BD$ bằng $%s\\text{ (cm}^2\\text{)}$' % latex(Sq_val + St_val)
+    th_da_1_d = '\\True Diện tích hình viên phân giới hạn bởi cung nhỏ $\\overset\\frown{BD}$ (tâm $A$) và dây $BD$ bằng $%s\\text{ (cm}^2\\text{)}$' % latex(Svp_val)
+    th_da_1_s = 'Diện tích hình viên phân giới hạn bởi cung nhỏ $\\overset\\frown{BD}$ (tâm $A$) và dây $BD$ bằng $%s\\text{ (cm}^2\\text{)}$' % latex(Sq_val + St_val)
     list_th_da_1 = [th_da_1_d, th_da_1_s]
     th_da_1 = random.choice(list_th_da_1)
     list_th_1 = [th_da_1]

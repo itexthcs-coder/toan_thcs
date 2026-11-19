@@ -152,36 +152,36 @@ def bt_dang1_p2_b3_c5_hh9(self):
     noidungcauhoi = ('''Cho đường tròn $(O; %d\\text{ cm})$ và hai điểm $A, B$ nằm trên đường tròn sao cho góc ở tâm $\\widehat{AOB} = %d^\\circ$ (như hình vẽ). Xét tính đúng sai của các khẳng định sau:
     %s''' % (R_val, goc_nho, hinh_ve))
 
-    nb_da_1_d = '\\True Số đo cung lớn $\\overparen{AB}$ bằng $%d^\\circ$' % goc_lon
-    nb_da_1_s = 'Số đo cung lớn $\\overparen{AB}$ bằng $%d^\\circ$' % (180 - goc_nho)
+    nb_da_1_d = '\\True Số đo cung lớn $\\overset\\frown{AB}$ bằng $%d^\\circ$' % goc_lon
+    nb_da_1_s = 'Số đo cung lớn $\\overset\\frown{AB}$ bằng $%d^\\circ$' % (180 - goc_nho)
     list_nb_da_1 = [nb_da_1_d, nb_da_1_s]
     nb_da_1 = random.choice(list_nb_da_1)
     list_nb_1 = [nb_da_1]
-    loigiai_nb_1 = ('''Số đo cung nhỏ $\\overparen{AB}$ bằng $\\widehat{AOB} = %d^\\circ$. Suy ra số đo cung lớn $\\overparen{AB}$ là $360^\\circ - %d^\\circ = %d^\\circ$.''' % (goc_nho, goc_nho, goc_lon))
+    loigiai_nb_1 = ('''Số đo cung nhỏ $\\overset\\frown{AB}$ bằng $\\widehat{AOB} = %d^\\circ$. Suy ra số đo cung lớn $\\overset\\frown{AB}$ là $360^\\circ - %d^\\circ = %d^\\circ$.''' % (goc_nho, goc_nho, goc_lon))
     list_nb_2 = [loigiai_nb_1]
 
-    th_da_1_d = '\\True Độ dài cung nhỏ $\\overparen{AB}$ bằng $%s\\text{ cm}$' % latex(l_nho)
-    th_da_1_s = 'Độ dài cung nhỏ $\\overparen{AB}$ bằng $%s\\text{ cm}$' % latex(l_nho + pi)
+    th_da_1_d = '\\True Độ dài cung nhỏ $\\overset\\frown{AB}$ bằng $%s\\text{ cm}$' % latex(l_nho)
+    th_da_1_s = 'Độ dài cung nhỏ $\\overset\\frown{AB}$ bằng $%s\\text{ cm}$' % latex(l_nho + pi)
     list_th_da_1 = [th_da_1_d, th_da_1_s]
     th_da_1 = random.choice(list_th_da_1)
     list_th_1 = [th_da_1]
-    loigiai_th_1 = ('''Độ dài cung nhỏ $\\overparen{AB}$ là $l_1 = \\dfrac{%d}{180}\\pi \\cdot %d = %s\\text{ (cm)}$.''' % (goc_nho, R_val, latex(l_nho)))
+    loigiai_th_1 = ('''Độ dài cung nhỏ $\\overset\\frown{AB}$ là $l_1 = \\dfrac{%d}{180}\\pi \\cdot %d = %s\\text{ (cm)}$.''' % (goc_nho, R_val, latex(l_nho)))
     list_th_2 = [loigiai_th_1]
 
-    vd_da_1_d = '\\True Tỉ số giữa độ dài cung nhỏ $\\overparen{AB}$ và độ dài cả đường tròn $(O; %d\\text{ cm})$ bằng $%s$' % (R_val, latex(ti_so))
-    vd_da_1_s = 'Tỉ số giữa độ dài cung nhỏ $\\overparen{AB}$ và độ dài cả đường tròn $(O; %d\\text{ cm})$ bằng $%s$' % (R_val, latex(Rational(goc_nho, 180)))
+    vd_da_1_d = '\\True Tỉ số giữa độ dài cung nhỏ $\\overset\\frown{AB}$ và độ dài cả đường tròn $(O; %d\\text{ cm})$ bằng $%s$' % (R_val, latex(ti_so))
+    vd_da_1_s = 'Tỉ số giữa độ dài cung nhỏ $\\overset\\frown{AB}$ và độ dài cả đường tròn $(O; %d\\text{ cm})$ bằng $%s$' % (R_val, latex(Rational(goc_nho, 180)))
     list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
     vd_da_1 = random.choice(list_vd_da_1)
     list_vd_1 = [vd_da_1]
-    loigiai_vd_1 = ('''Tỉ số giữa độ dài cung nhỏ $\\overparen{AB}$ và độ dài cả đường tròn là $\\dfrac{l_1}{C} = \\dfrac{%d}{360} = %s$.''' % (goc_nho, latex(ti_so)))
+    loigiai_vd_1 = ('''Tỉ số giữa độ dài cung nhỏ $\\overset\\frown{AB}$ và độ dài cả đường tròn là $\\dfrac{l_1}{C} = \\dfrac{%d}{360} = %s$.''' % (goc_nho, latex(ti_so)))
     list_vd_2 = [loigiai_vd_1]
 
-    vdc_da_1_d = '\\True Hiệu độ dài giữa cung lớn $\\overparen{AB}$ và cung nhỏ $\\overparen{AB}$ bằng $%s\\text{ cm}$' % latex(hieu_l)
-    vdc_da_1_s = 'Hiệu độ dài giữa cung lớn $\\overparen{AB}$ và cung nhỏ $\\overparen{AB}$ bằng $%s\\text{ cm}$' % latex(hieu_l + pi)
+    vdc_da_1_d = '\\True Hiệu độ dài giữa cung lớn $\\overset\\frown{AB}$ và cung nhỏ $\\overset\\frown{AB}$ bằng $%s\\text{ cm}$' % latex(hieu_l)
+    vdc_da_1_s = 'Hiệu độ dài giữa cung lớn $\\overset\\frown{AB}$ và cung nhỏ $\\overset\\frown{AB}$ bằng $%s\\text{ cm}$' % latex(hieu_l + pi)
     list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
     vdc_da_1 = random.choice(list_vdc_da_1)
     list_vdc_1 = [vdc_da_1]
-    loigiai_vdc_1 = ('''Độ dài cung lớn $\\overparen{AB}$ là $l_2 = \\dfrac{%d}{180}\\pi \\cdot %d = %s\\text{ (cm)}$. \\\\ Hiệu độ dài hai cung là $l_2 - l_1 = %s - %s = %s\\text{ (cm)}$.''' % (goc_lon, R_val, latex(l_lon), latex(l_lon), latex(l_nho), latex(hieu_l)))
+    loigiai_vdc_1 = ('''Độ dài cung lớn $\\overset\\frown{AB}$ là $l_2 = \\dfrac{%d}{180}\\pi \\cdot %d = %s\\text{ (cm)}$. \\\\ Hiệu độ dài hai cung là $l_2 - l_1 = %s - %s = %s\\text{ (cm)}$.''' % (goc_lon, R_val, latex(l_lon), latex(l_lon), latex(l_nho), latex(hieu_l)))
     list_vdc_2 = [loigiai_vdc_1]
 
     def count_true_answers(answers):
