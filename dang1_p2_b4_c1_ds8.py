@@ -140,7 +140,7 @@ def bt_dang1_p2_b4_c1_ds8(self):
     y0 = random.choice([1, 2])
     val = P.subs({x: x0, y: y0})
 
-    noidungcauhoi = ('''Cho đơn thức $M = %s$ và đa thức $N = %s$. Xét đa thức tích $P = M \cdot N$.''' % (latex(M), latex(N)))
+    noidungcauhoi = ('''Cho đơn thức $M = %s$ và đa thức $N = %s$. Xét đa thức tích $P = M \\cdot N$.''' % (latex(M), latex(N)))
 
     nb_da_1_d = '\\True Bậc của đơn thức $M$ là $2$'
     nb_da_1_s = 'Bậc của đơn thức $M$ là $1$'
@@ -150,7 +150,7 @@ def bt_dang1_p2_b4_c1_ds8(self):
     th_da_1_d = '\\True Hạng tử có chứa $x^3y$ trong dạng thu gọn của $P$ là $%s$' % latex(a * b * x**3 * y)
     th_da_1_s = 'Hạng tử có chứa $x^3y$ trong dạng thu gọn của $P$ là $%s$' % latex(-a * b * x**3 * y)
     list_th_da_1 = [th_da_1_d, th_da_1_s]
-    list_th_2 = ['Ta có $(%s) \cdot (%s) = %s$.' % (latex(M), latex(b * x**2), latex(a * b * x**3 * y))]
+    list_th_2 = ['Ta có $(%s) \\cdot (%s) = %s$.' % (latex(M), latex(b * x**2), latex(a * b * x**3 * y))]
 
     vd_da_1_d = '\\True Đa thức thu gọn của $P$ là $%s$' % latex(P)
     vd_da_1_s = 'Đa thức thu gọn của $P$ là $%s$' % latex(expand(M * (b * x**2 + c * x * y + d * y**2)))
@@ -160,7 +160,7 @@ def bt_dang1_p2_b4_c1_ds8(self):
     vdc_da_1_d = '\\True Giá trị của $P$ tại $x = %s, y = %s$ bằng $%s$' % (x0, y0, latex(val))
     vdc_da_1_s = 'Giá trị của $P$ tại $x = %s, y = %s$ bằng $%s$' % (x0, y0, latex(val + 4))
     list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
-    list_vdc_2 = ['Thay $x = %s, y = %s$ vào $P$, ta được $P = (%s) \cdot (%s) = %s$.' % (x0, y0, latex(M.subs({x: x0, y: y0})), latex(N.subs({x: x0, y: y0})), latex(val))]
+    list_vdc_2 = ['Thay $x = %s, y = %s$ vào $P$, ta được $P = (%s) \\cdot (%s) = %s$.' % (x0, y0, latex(M.subs({x: x0, y: y0})), latex(N.subs({x: x0, y: y0})), latex(val))]
 
     def count_true_answers(answers):
         return sum('\\True' in ans for ans in answers)

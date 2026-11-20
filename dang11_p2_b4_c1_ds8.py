@@ -139,23 +139,23 @@ def bt_dang11_p2_b4_c1_ds8(self):
 
     noidungcauhoi = ('''Cho ba đa thức $A = x$, $B = x + %s$ và $C = x - %s$.''' % (a, b))
 
-    nb_da_1_d = '\\True Tích $A \cdot B$ bằng $%s$' % latex(expand(A * B))
-    nb_da_1_s = 'Tích $A \cdot B$ bằng $%s$' % latex(x**2 + a)
+    nb_da_1_d = '\\True Tích $A \\cdot B$ bằng $%s$' % latex(expand(A * B))
+    nb_da_1_s = 'Tích $A \\cdot B$ bằng $%s$' % latex(x**2 + a)
     list_nb_da_1 = [nb_da_1_d, nb_da_1_s]
-    list_nb_2 = ['Ta có $A \cdot B = x(x + %s) = %s$.' % (a, latex(expand(A * B)))]
+    list_nb_2 = ['Ta có $A \\cdot B = x(x + %s) = %s$.' % (a, latex(expand(A * B)))]
 
-    th_da_1_d = '\\True Tích $B \cdot C$ bằng $%s$' % latex(BC)
-    th_da_1_s = 'Tích $B \cdot C$ bằng $%s$' % latex(x**2 + (a + b) * x - a * b)
+    th_da_1_d = '\\True Tích $B \\cdot C$ bằng $%s$' % latex(BC)
+    th_da_1_s = 'Tích $B \\cdot C$ bằng $%s$' % latex(x**2 + (a + b) * x - a * b)
     list_th_da_1 = [th_da_1_d, th_da_1_s]
-    list_th_2 = ['Ta có $B \cdot C = (x + %s)(x - %s) = %s$.' % (a, b, latex(BC))]
+    list_th_2 = ['Ta có $B \\cdot C = (x + %s)(x - %s) = %s$.' % (a, b, latex(BC))]
 
-    vd_da_1_d = '\\True Tích của cả ba đa thức $A \cdot B \cdot C$ là $%s$' % latex(ABC)
-    vd_da_1_s = 'Tích của cả ba đa thức $A \cdot B \cdot C$ là $%s$' % latex(ABC + a * b)
+    vd_da_1_d = '\\True Tích của cả ba đa thức $A \\cdot B \\cdot C$ là $%s$' % latex(ABC)
+    vd_da_1_s = 'Tích của cả ba đa thức $A \\cdot B \\cdot C$ là $%s$' % latex(ABC + a * b)
     list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
-    list_vd_2 = ['Sử dụng tính chất kết hợp: $A \cdot B \cdot C = x(%s) = %s$.' % (latex(BC), latex(ABC))]
+    list_vd_2 = ['Sử dụng tính chất kết hợp: $A \\cdot B \\cdot C = x(%s) = %s$.' % (latex(BC), latex(ABC))]
 
-    vdc_da_1_d = '\\True Có đúng $3$ giá trị nguyên của $x$ để tích $A \cdot B \cdot C = 0$'
-    vdc_da_1_s = 'Chỉ có $2$ giá trị nguyên của $x$ để tích $A \cdot B \cdot C = 0$'
+    vdc_da_1_d = '\\True Có đúng $3$ giá trị nguyên của $x$ để tích $A \\cdot B \\cdot C = 0$'
+    vdc_da_1_s = 'Chỉ có $2$ giá trị nguyên của $x$ để tích $A \\cdot B \\cdot C = 0$'
     list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
     list_vdc_2 = ['Ta có $x(x + %s)(x - %s) = 0$ khi $x = 0$, $x = -%s$ hoặc $x = %s$ (gồm $3$ giá trị nguyên phân biệt).' % (a, b, a, b)]
 

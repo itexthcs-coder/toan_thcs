@@ -157,7 +157,7 @@ def bt_dang19_p2_b4_c1_ds8(self):
     vdc_da_1_d = '\\True Khi cắt bốn góc hình vuông cạnh $x = 2$ cm thì thể tích chiếc hộp là $%s$ $\text{cm}^3$' % V_val
     vdc_da_1_s = 'Khi cắt bốn góc hình vuông cạnh $x = 2$ cm thì thể tích chiếc hộp là $%s$ $\text{cm}^3$' % (V_val + 100)
     list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
-    list_vdc_2 = ['Với $x = 2$, kích thước hộp là $%s$ cm, $%s$ cm và $2$ cm, nên $V = %s \cdot %s \cdot 2 = %s$ ($\text{cm}^3$).' % (L - 4, W - 4, L - 4, W - 4, V_val)]
+    list_vdc_2 = ['Với $x = 2$, kích thước hộp là $%s$ cm, $%s$ cm và $2$ cm, nên $V = %s \\cdot %s \\cdot 2 = %s$ ($\text{cm}^3$).' % (L - 4, W - 4, L - 4, W - 4, V_val)]
 
     def count_true_answers(answers):
         return sum('\\True' in ans for ans in answers)

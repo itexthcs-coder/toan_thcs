@@ -140,7 +140,7 @@ def bt_dang2_p2_b4_c1_ds8(self):
     hs_x = -a * d - b * c
     hs_td = b * d
 
-    noidungcauhoi = ('''Cho hai đa thức $A = %s$ và $B = %s$. Gọi $C = A \cdot B$ là đa thức tích đã thu gọn.''' % (latex(A), latex(B)))
+    noidungcauhoi = ('''Cho hai đa thức $A = %s$ và $B = %s$. Gọi $C = A \\cdot B$ là đa thức tích đã thu gọn.''' % (latex(A), latex(B)))
 
     nb_da_1_d = '\\True Bậc của đa thức $C$ là $3$'
     nb_da_1_s = 'Bậc của đa thức $C$ là $2$'
@@ -150,12 +150,12 @@ def bt_dang2_p2_b4_c1_ds8(self):
     th_da_1_d = '\\True Hệ số tự do của đa thức $C$ là $%s$' % hs_td
     th_da_1_s = 'Hệ số tự do của đa thức $C$ là $%s$' % (-hs_td)
     list_th_da_1 = [th_da_1_d, th_da_1_s]
-    list_th_2 = ['Hệ số tự do của $C$ là tích của hai hệ số tự do: $(-%s) \cdot (-%s) = %s$.' % (b, d, hs_td)]
+    list_th_2 = ['Hệ số tự do của $C$ là tích của hai hệ số tự do: $(-%s) \\cdot (-%s) = %s$.' % (b, d, hs_td)]
 
     vd_da_1_d = '\\True Hệ số của $x^2$ trong đa thức $C$ là $%s$' % hs_x2
     vd_da_1_s = 'Hệ số của $x^2$ trong đa thức $C$ là $%s$' % (a * c + b)
     list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
-    list_vd_2 = ['Các hạng tử chứa $x^2$ khi nhân là $%sx \cdot %sx + (-%s) \cdot x^2 = %sx^2$, nên hệ số của $x^2$ là $%s$.' % (a, c, b, hs_x2, hs_x2)]
+    list_vd_2 = ['Các hạng tử chứa $x^2$ khi nhân là $%sx \\cdot %sx + (-%s) \\cdot x^2 = %sx^2$, nên hệ số của $x^2$ là $%s$.' % (a, c, b, hs_x2, hs_x2)]
 
     vdc_da_1_d = '\\True Tổng tất cả các hệ số của đa thức $C$ bằng $%s$' % (a + hs_x2 + hs_x + hs_td)
     vdc_da_1_s = 'Tổng tất cả các hệ số của đa thức $C$ bằng $%s$' % (a + hs_x2 + hs_x - hs_td)

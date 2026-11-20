@@ -140,7 +140,7 @@ def bt_dang4_p2_b4_c1_ds8(self):
     nb_da_1_d = '\\True Khai triển $%s(x + %s)$ ta được $%s$' % (a, b, latex(a * x**2 + a * b * x))
     nb_da_1_s = 'Khai triển $%s(x + %s)$ ta được $%s$' % (a, b, latex(a * x**2 + b))
     list_nb_da_1 = [nb_da_1_d, nb_da_1_s]
-    list_nb_2 = ['Nhân đơn thức với từng hạng tử: $%s \cdot x + %s \cdot %s = %s$.' % (a, a, b, latex(a * x**2 + a * b * x))]
+    list_nb_2 = ['Nhân đơn thức với từng hạng tử: $%s \\cdot x + %s \\cdot %s = %s$.' % (a, a, b, latex(a * x**2 + a * b * x))]
 
     th_da_1_d = '\\True Sau khi rút gọn vế trái, đẳng thức trở thành $%sx = %s$' % (a * b, rhs)
     th_da_1_s = 'Sau khi rút gọn vế trái, đẳng thức trở thành $%sx = %s$' % (b, rhs)
@@ -150,12 +150,12 @@ def bt_dang4_p2_b4_c1_ds8(self):
     vd_da_1_d = '\\True Giá trị của $x$ thỏa mãn đẳng thức là $x = %s$' % c
     vd_da_1_s = 'Giá trị của $x$ thỏa mãn đẳng thức là $x = %s$' % (c + 1)
     list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
-    list_vd_2 = ['Từ $%sx = %s$ suy ra $x = \dfrac{%s}{%s} = %s$.' % (a * b, rhs, rhs, a * b, c)]
+    list_vd_2 = ['Từ $%sx = %s$ suy ra $x = \\dfrac{%s}{%s} = %s$.' % (a * b, rhs, rhs, a * b, c)]
 
     vdc_da_1_d = '\\True Với giá trị $x$ tìm được, biểu thức $Q = x^2 - %sx$ có giá trị bằng $%s$' % (c, 0)
     vdc_da_1_s = 'Với giá trị $x$ tìm được, biểu thức $Q = x^2 - %sx$ có giá trị bằng $%s$' % (c, c)
     list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
-    list_vdc_2 = ['Với $x = %s$, ta có $Q = %s^2 - %s \cdot %s = 0$.' % (c, c, c, c)]
+    list_vdc_2 = ['Với $x = %s$, ta có $Q = %s^2 - %s \\cdot %s = 0$.' % (c, c, c, c)]
 
     def count_true_answers(answers):
         return sum('\\True' in ans for ans in answers)

@@ -155,7 +155,7 @@ def bt_dang10_p2_b4_c1_ds8(self):
     vdc_da_1_d = '\\True Khi $k = 1$ và $m = 1$, giá trị của biểu thức $Q$ bằng $0$'
     vdc_da_1_s = 'Khi $k = 1$ và $m = 1$, giá trị của biểu thức $Q$ bằng $%s$' % he_so
     list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
-    list_vdc_2 = ['Thay $k = 1, m = 1$ vào $Q = %s(km - 1)$, ta được $Q = %s(1 \cdot 1 - 1) = 0$.' % (he_so, he_so)]
+    list_vdc_2 = ['Thay $k = 1, m = 1$ vào $Q = %s(km - 1)$, ta được $Q = %s(1 \\cdot 1 - 1) = 0$.' % (he_so, he_so)]
 
     def count_true_answers(answers):
         return sum('\\True' in ans for ans in answers)

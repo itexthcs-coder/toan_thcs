@@ -144,7 +144,7 @@ def bt_dang12_p2_b4_c1_ds8(self):
     nb_da_1_d = '\\True Hạng tử có bậc cao nhất đối với biến $x$ trong cả $A$ và $B$ đều là $4x^3$'
     nb_da_1_s = 'Hạng tử có bậc cao nhất đối với biến $x$ trong $A$ là $2x^3$'
     list_nb_da_1 = [nb_da_1_d, nb_da_1_s]
-    list_nb_2 = ['Ta có $2x \cdot 2x^2 = 4x^3$ nên hạng tử chứa lũy thừa bậc cao nhất của $x$ là $4x^3$.']
+    list_nb_2 = ['Ta có $2x \\cdot 2x^2 = 4x^3$ nên hạng tử chứa lũy thừa bậc cao nhất của $x$ là $4x^3$.']
 
     th_da_1_d = '\\True Khai triển biểu thức $A$ ta được đa thức thu gọn là $%s$' % latex(chung)
     th_da_1_s = 'Khai triển biểu thức $A$ ta được đa thức thu gọn là $%s$' % latex(4 * x**3 - k**3 * y**3)

@@ -159,7 +159,7 @@ def bt_dang18_p2_b4_c1_ds8(self):
     vdc_da_1_d = '\\True Khi tăng giá $2$ lần ($x = 2$), doanh thu mỗi ngày của cửa hàng là $%s$ nghìn đồng' % R_val
     vdc_da_1_s = 'Khi tăng giá $2$ lần ($x = 2$), doanh thu mỗi ngày của cửa hàng là $%s$ nghìn đồng' % R0
     list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
-    list_vdc_2 = ['Thay $x = 2$ vào biểu thức doanh thu, ta được $(%s + %s \cdot 2)(%s - %s \cdot 2) = %s$ (nghìn đồng).' % (p0, dp, q0, dq, R_val)]
+    list_vdc_2 = ['Thay $x = 2$ vào biểu thức doanh thu, ta được $(%s + %s \\cdot 2)(%s - %s \\cdot 2) = %s$ (nghìn đồng).' % (p0, dp, q0, dq, R_val)]
 
     def count_true_answers(answers):
         return sum('\\True' in ans for ans in answers)

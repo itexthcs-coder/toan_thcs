@@ -147,16 +147,16 @@ def bt_dang8_p2_b4_c1_ds8(self):
     list_th_da_1 = [th_da_1_d, th_da_1_s]
     list_th_2 = ['Ta có $-%s(%s) = %s$.' % (latex(b * y), latex(B), latex(expand(-b * y * B)))]
 
-    vd_da_1_d = '\\True Tích $A \cdot B$ sau khi thu gọn là $%s$' % latex(P)
-    vd_da_1_s = 'Tích $A \cdot B$ sau khi thu gọn là $%s$' % latex((a**3) * x**3 + (b**3) * y**3)
+    vd_da_1_d = '\\True Tích $A \\cdot B$ sau khi thu gọn là $%s$' % latex(P)
+    vd_da_1_s = 'Tích $A \\cdot B$ sau khi thu gọn là $%s$' % latex((a**3) * x**3 + (b**3) * y**3)
     list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
-    list_vd_2 = ['Cộng hai kết quả trên và triệt tiêu các hạng tử đồng dạng đối nhau ta được $A \cdot B = %s$.' % latex(P)]
+    list_vd_2 = ['Cộng hai kết quả trên và triệt tiêu các hạng tử đồng dạng đối nhau ta được $A \\cdot B = %s$.' % latex(P)]
 
     val_p = P.subs({x: 1, y: 1})
-    vdc_da_1_d = '\\True Giá trị của tích $A \cdot B$ tại $x = 1, y = 1$ bằng $%s$' % val_p
-    vdc_da_1_s = 'Giá trị của tích $A \cdot B$ tại $x = 1, y = 1$ bằng $%s$' % (a**3 + b**3)
+    vdc_da_1_d = '\\True Giá trị của tích $A \\cdot B$ tại $x = 1, y = 1$ bằng $%s$' % val_p
+    vdc_da_1_s = 'Giá trị của tích $A \\cdot B$ tại $x = 1, y = 1$ bằng $%s$' % (a**3 + b**3)
     list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
-    list_vdc_2 = ['Tại $x = 1, y = 1$, ta có $A \cdot B = %s^3 \cdot 1^3 - %s^3 \cdot 1^3 = %s$.' % (a, b, val_p)]
+    list_vdc_2 = ['Tại $x = 1, y = 1$, ta có $A \\cdot B = %s^3 \\cdot 1^3 - %s^3 \\cdot 1^3 = %s$.' % (a, b, val_p)]
 
     def count_true_answers(answers):
         return sum('\\True' in ans for ans in answers)

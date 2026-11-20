@@ -136,17 +136,17 @@ def bt_dang13_p2_b4_c1_ds8(self):
     N = b * x + c * y - 1
     P = expand(M * N)
 
-    noidungcauhoi = ('''Cho đa thức $M = %s$ và đa thức $N = %s$. Xét đa thức tích $P = M \cdot N$.''' % (latex(M), latex(N)))
+    noidungcauhoi = ('''Cho đa thức $M = %s$ và đa thức $N = %s$. Xét đa thức tích $P = M \\cdot N$.''' % (latex(M), latex(N)))
 
     nb_da_1_d = '\\True Trước khi thu gọn, phép nhân $M$ với $N$ tạo ra $6$ tích đơn thức'
     nb_da_1_s = 'Trước khi thu gọn, phép nhân $M$ với $N$ tạo ra $5$ tích đơn thức'
     list_nb_da_1 = [nb_da_1_d, nb_da_1_s]
-    list_nb_2 = ['Đa thức $M$ có $2$ hạng tử, đa thức $N$ có $3$ hạng tử nên khi nhân từng hạng tử sẽ có $2 \cdot 3 = 6$ tích đơn thức.']
+    list_nb_2 = ['Đa thức $M$ có $2$ hạng tử, đa thức $N$ có $3$ hạng tử nên khi nhân từng hạng tử sẽ có $2 \\cdot 3 = 6$ tích đơn thức.']
 
     th_da_1_d = '\\True Hạng tử chứa $xy$ trong đa thức thu gọn $P$ là $%s$' % latex((c - a * b) * x * y)
     th_da_1_s = 'Hạng tử chứa $xy$ trong đa thức thu gọn $P$ là $%s$' % latex((c + a * b) * x * y)
     list_th_da_1 = [th_da_1_d, th_da_1_s]
-    list_th_2 = ['Các hạng tử chứa $xy$ là $x \cdot (%sy) + (-%sy) \cdot (%sx) = %s$.' % (c, a, b, latex((c - a * b) * x * y))]
+    list_th_2 = ['Các hạng tử chứa $xy$ là $x \\cdot (%sy) + (-%sy) \\cdot (%sx) = %s$.' % (c, a, b, latex((c - a * b) * x * y))]
 
     vd_da_1_d = '\\True Đa thức thu gọn của $P$ là $%s$' % latex(P)
     vd_da_1_s = 'Đa thức thu gọn của $P$ là $%s$' % latex(expand((x + a * y) * N))
@@ -157,7 +157,7 @@ def bt_dang13_p2_b4_c1_ds8(self):
     vdc_da_1_d = '\\True Tại $x = %s, y = 1$, giá trị của $P$ bằng $0$' % a
     vdc_da_1_s = 'Tại $x = %s, y = 1$, giá trị của $P$ bằng $%s$' % (a, b * a + c - 1)
     list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
-    list_vdc_2 = ['Tại $x = %s, y = 1$, ta có $M = %s - %s \cdot 1 = 0$, suy ra $P = M \cdot N = 0$.' % (a, a, a)]
+    list_vdc_2 = ['Tại $x = %s, y = 1$, ta có $M = %s - %s \\cdot 1 = 0$, suy ra $P = M \\cdot N = 0$.' % (a, a, a)]
 
     def count_true_answers(answers):
         return sum('\\True' in ans for ans in answers)

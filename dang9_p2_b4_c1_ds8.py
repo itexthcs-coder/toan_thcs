@@ -140,22 +140,22 @@ def bt_dang9_p2_b4_c1_ds8(self):
     nb_da_1_d = '\\True Tích của hai số $A$ và $B$ được biểu thị bởi đa thức $%s$' % latex(P)
     nb_da_1_s = 'Tích của hai số $A$ và $B$ được biểu thị bởi đa thức $%s$' % latex(4 * n**2 + 3)
     list_nb_da_1 = [nb_da_1_d, nb_da_1_s]
-    list_nb_2 = ['Ta có $A \cdot B = (2n + 1)(2n + 3) = 4n^2 + 6n + 2n + 3 = %s$.' % latex(P)]
+    list_nb_2 = ['Ta có $A \\cdot B = (2n + 1)(2n + 3) = 4n^2 + 6n + 2n + 3 = %s$.' % latex(P)]
 
-    th_da_1_d = '\\True Biểu thức $A \cdot B + 1$ rút gọn thành $%s$' % latex(P_plus1)
-    th_da_1_s = 'Biểu thức $A \cdot B + 1$ rút gọn thành $%s$' % latex(4 * n**2 + 8 * n + 2)
+    th_da_1_d = '\\True Biểu thức $A \\cdot B + 1$ rút gọn thành $%s$' % latex(P_plus1)
+    th_da_1_s = 'Biểu thức $A \\cdot B + 1$ rút gọn thành $%s$' % latex(4 * n**2 + 8 * n + 2)
     list_th_da_1 = [th_da_1_d, th_da_1_s]
-    list_th_2 = ['Ta có $A \cdot B + 1 = (%s) + 1 = %s$.' % (latex(P), latex(P_plus1))]
+    list_th_2 = ['Ta có $A \\cdot B + 1 = (%s) + 1 = %s$.' % (latex(P), latex(P_plus1))]
 
-    vd_da_1_d = '\\True Với mọi số tự nhiên $n$, giá trị của $A \cdot B + 1$ luôn chia hết cho $4$'
-    vd_da_1_s = 'Với mọi số tự nhiên $n$, giá trị của $A \cdot B$ luôn chia hết cho $2$'
+    vd_da_1_d = '\\True Với mọi số tự nhiên $n$, giá trị của $A \\cdot B + 1$ luôn chia hết cho $4$'
+    vd_da_1_s = 'Với mọi số tự nhiên $n$, giá trị của $A \\cdot B$ luôn chia hết cho $2$'
     list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
-    list_vd_2 = ['Ta có $A \cdot B + 1 = 4n^2 + 8n + 4 = 4(n^2 + 2n + 1)$ nên luôn chia hết cho $4$.' ]
+    list_vd_2 = ['Ta có $A \\cdot B + 1 = 4n^2 + 8n + 4 = 4(n^2 + 2n + 1)$ nên luôn chia hết cho $4$.' ]
 
     vdc_da_1_d = '\\True Tích của hai số lẻ liên tiếp cộng thêm $1$ luôn bằng bình phương của số chẵn nằm giữa hai số đó'
     vdc_da_1_s = 'Tích của hai số lẻ liên tiếp cộng thêm $1$ luôn là một số lẻ'
     list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
-    list_vdc_2 = ['Số chẵn nằm giữa $2n + 1$ và $2n + 3$ là $2n + 2$. Ta có $(2n + 2)^2 = 4n^2 + 8n + 4 = A \cdot B + 1$.']
+    list_vdc_2 = ['Số chẵn nằm giữa $2n + 1$ và $2n + 3$ là $2n + 2$. Ta có $(2n + 2)^2 = 4n^2 + 8n + 4 = A \\cdot B + 1$.']
 
     def count_true_answers(answers):
         return sum('\\True' in ans for ans in answers)

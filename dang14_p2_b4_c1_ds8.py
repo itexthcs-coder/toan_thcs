@@ -152,12 +152,12 @@ def bt_dang14_p2_b4_c1_ds8(self):
     vd_da_1_d = '\\True Giá trị của biểu thức $P$ tại $x = %s$ là $%s$' % (x0, val)
     vd_da_1_s = 'Giá trị của biểu thức $P$ tại $x = %s$ là $%s$' % (x0, b * (x0 + a))
     list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
-    list_vd_2 = ['Thay $x = %s$ vào biểu thức rút gọn $P = %s$, ta được $P = %s \cdot (%s - %s) = %s$.' % (x0, latex(expand(P_rutgon)), b, x0, a, val)]
+    list_vd_2 = ['Thay $x = %s$ vào biểu thức rút gọn $P = %s$, ta được $P = %s \\cdot (%s - %s) = %s$.' % (x0, latex(expand(P_rutgon)), b, x0, a, val)]
 
     vdc_da_1_d = '\\True Giá trị của biểu thức $P$ luôn chia hết cho $%s$ với mọi số nguyên $x$' % b
     vdc_da_1_s = 'Giá trị của biểu thức $P$ luôn là số dương với mọi số nguyên $x$'
     list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
-    list_vdc_2 = ['Vì $P = %s(x - %s)$ nên với mọi $x \in \mathbb{Z}$, $P$ luôn chia hết cho $%s$.' % (b, a, b)]
+    list_vdc_2 = ['Vì $P = %s(x - %s)$ nên với mọi $x \\in \\mathbb{Z}$, $P$ luôn chia hết cho $%s$.' % (b, a, b)]
 
     def count_true_answers(answers):
         return sum('\\True' in ans for ans in answers)

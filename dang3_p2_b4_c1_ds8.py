@@ -158,7 +158,7 @@ def bt_dang3_p2_b4_c1_ds8(self):
     vdc_da_1_d = '\\True Khi $x = %s$ thì biểu thức $P$ nhận giá trị bằng $%s$' % (c + 2, val_p)
     vdc_da_1_s = 'Khi $x = %s$ thì biểu thức $P$ nhận giá trị bằng $%s$' % (c + 2, -val_p)
     list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
-    list_vdc_2 = ['Thay $x = %s$ vào biểu thức rút gọn $P = %s$, ta được $P = %s \cdot (%s - %s) = %s$.' % (c + 2, latex(P), b, c + 2, c, val_p)]
+    list_vdc_2 = ['Thay $x = %s$ vào biểu thức rút gọn $P = %s$, ta được $P = %s \\cdot (%s - %s) = %s$.' % (c + 2, latex(P), b, c + 2, c, val_p)]
 
     def count_true_answers(answers):
         return sum('\\True' in ans for ans in answers)
