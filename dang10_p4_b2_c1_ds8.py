@@ -133,13 +133,13 @@ def bt_dang10_p4_b2_c1_ds8(self):
     if dang == '1':
         k = randint(2, 6)
         
-        noidungcauhoi = ('''Cho $x + y = 1$. Tính giá trị của đa thức $K = %s\left[x^3 + y^3 + 3xy(x^2 + y^2) + 6x^2y^2(x + y)\right]$.'''
+        noidungcauhoi = ('''Cho $x + y = 1$. Tính giá trị của đa thức $K = %s\\left[x^3 + y^3 + 3xy(x^2 + y^2) + 6x^2y^2(x + y)\\right]$.'''
                          % k)
         
         loigiai = ('''Ta rút gọn biểu thức trong ngoặc:
 \\begin{align*}
 M &= x^3 + y^3 + 3xy(x^2 + y^2) + 6x^2y^2(x + y) \\\\
-  &= (x + y)(x^2 - xy + y^2) + 3xy\left[(x + y)^2 - 2xy\right] + 6x^2y^2(x + y).
+  &= (x + y)(x^2 - xy + y^2) + 3xy\\left[(x + y)^2 - 2xy\\right] + 6x^2y^2(x + y).
 \\end{align*}
 Thay $x + y = 1$ vào biểu thức trên, ta được:
 \\begin{align*}
