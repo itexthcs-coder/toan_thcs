@@ -136,7 +136,7 @@ def bt_dang7_p2_b4_c1_ds8(self):
     N = k * x**2 - a * x * y + b * y**2
     P = expand(M * N)
 
-    noidungcauhoi = ('''Cho biểu thức $P = \\dfrac{1}{2}xy\left(%s\\right)$.''' % latex(N))
+    noidungcauhoi = ('''Cho biểu thức $P = \\dfrac{1}{2}xy\\left(%s\\right)$.''' % latex(N))
 
     nb_da_1_d = '\\True Số hạng tử của đa thức $%s$ là $3$' % latex(N)
     nb_da_1_s = 'Số hạng tử của đa thức $%s$ là $2$' % latex(N)

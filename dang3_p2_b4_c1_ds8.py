@@ -152,7 +152,7 @@ def bt_dang3_p2_b4_c1_ds8(self):
     vd_da_1_d = '\\True Giá trị của $x$ để $P = 0$ là $x = %s$' % x_nghiem
     vd_da_1_s = 'Giá trị của $x$ để $P = 0$ là $x = %s$' % (-x_nghiem)
     list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
-    list_vd_2 = ['Ta có $P = 0 \Leftrightarrow %s = 0 \Leftrightarrow x = %s$.' % (latex(P), x_nghiem)]
+    list_vd_2 = ['Ta có $P = 0 \\Leftrightarrow %s = 0 \\Leftrightarrow x = %s$.' % (latex(P), x_nghiem)]
 
     val_p = P.subs(x, c + 2)
     vdc_da_1_d = '\\True Khi $x = %s$ thì biểu thức $P$ nhận giá trị bằng $%s$' % (c + 2, val_p)
