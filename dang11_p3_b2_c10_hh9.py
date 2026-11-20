@@ -130,10 +130,12 @@ def bt_dang11_p3_b2_c10_hh9(self):
 
     noidungcauhoi = ('''Cắt một khối cầu đặc có bán kính $R = %s\\text{ cm}$ theo một mặt phẳng đi qua tâm thành hai nửa hình cầu bằng nhau. Tổng diện tích toàn bộ bề mặt của hai nửa hình cầu tăng thêm bao nhiêu lần $\\pi\\text{ cm}^2$ so với diện tích mặt cầu ban đầu?''' % (R))
 
-    loigiai = ('''Diện tích mặt cầu ban đầu là: $S_1 = 4\\pi R^2 = 4\\pi \\cdot %s^2 = %s\\pi\\text{ (cm}^2\\text{)}$.\\\nKhi cắt khối cầu qua tâm thành hai nửa hình cầu, bề mặt của mỗi nửa hình cầu gồm một nửa mặt cầu ($2\\pi R^2$) và một mặt cắt hình tròn lớn ($\\pi R^2$), nên có diện tích là $3\\pi R^2$.\\\nTổng diện tích bề mặt của hai nửa hình cầu là:
+    loigiai = ('''Diện tích mặt cầu ban đầu là: $S_1 = 4\\pi R^2 = 4\\pi \\cdot %s^2 = %s\\pi\\text{ (cm}^2\\text{)}$.\\
+Khi cắt khối cầu qua tâm thành hai nửa hình cầu, bề mặt của mỗi nửa hình cầu gồm một nửa mặt cầu ($2\\pi R^2$) và một mặt cắt hình tròn lớn ($\\pi R^2$), nên có diện tích là $3\\pi R^2$.\\
+Tổng diện tích bề mặt của hai nửa hình cầu là:
 $$S_2 = 2 \\cdot 3\\pi R^2 = 6\\pi R^2 = 6\\pi \\cdot %s^2 = %s\\pi\\text{ (cm}^2\\text{)}.$$
 Vậy phần diện tích tăng thêm là: $S_2 - S_1 = %s\\pi - %s\\pi = %s\\pi\\text{ (cm}^2\\text{)}$. Đáp án cần điền là $%s$.'''
-               % (R, R, 4 * (R**2), R, 6 * (R**2), 6 * (R**2), 4 * (R**2), S_tang, S_tang))
+               % (R, 4 * (R**2), R, 6 * (R**2), 6 * (R**2), 4 * (R**2), S_tang))
 
     # Đáp án
     dapan = '\\shortans[0]{$%s$}\n' % (str(kq_str))
