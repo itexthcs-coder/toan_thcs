@@ -146,7 +146,7 @@ def bt_dang16_p1_b1_c2_ds8(self):
              '$\\left(y + %s\\right)^2$' % (latex(ps)),
              '$\\left(y - %s\\right)^2$' % (latex(hai_ps)),
              '$\\left(%sy - 1\\right)^2$' % (latex(ps)),
-             '$\\left(y - %s\\right)\\left(y + %s\right)$' % (latex(ps), latex(ps)),
+             '$\\left(y - %s\\right)\\left(y + %s\\right)$' % (latex(ps), latex(ps)),
              '$\\left(y + %s\\right)^2$' % (latex(ps_binh))]
         
         das1 = random.choice(s)
