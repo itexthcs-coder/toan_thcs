@@ -136,14 +136,14 @@ def bt_dang3_p1_b3_c5_hh9(self):
         goc = random.choice([60, 75, 90, 110])
     
         # Các đáp án trắc nghiệm
-        du = ['một cung tròn và hai bán kính đi qua hai đầu mút của cung đó.']
+        du = ['một cung tròn và hai bán kính đi qua hai đầu mút của cung đó']
         da = random.choice(du)
     
         s = [
-            'một cung tròn và dây căng cung đó.',
-            'hai đường tròn có cùng tâm và bán kính khác nhau.',
-            'hai dây cung song song của đường tròn.',
-            'một đường kính và một dây cung bất kì của đường tròn.'
+            'một cung tròn và dây căng cung đó',
+            'hai đường tròn có cùng tâm và bán kính khác nhau',
+            'hai dây cung song song của đường tròn',
+            'một đường kính và một dây cung bất kì của đường tròn'
         ]
     
         das1 = random.choice(s)

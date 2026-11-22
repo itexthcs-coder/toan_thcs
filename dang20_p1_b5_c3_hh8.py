@@ -176,7 +176,7 @@ def bt_dang20_p1_b5_c3_hh8(self):
         das3 = random.choice(s)
 
         # Câu hỏi
-        noidungcauhoi = ('''Cho tam giác $%s%s%s$ vuông tại $%s$, $%s$ là trung điểm của $%s%s$. Hạ $%s%s \\perp %s%s$ ($%s \in %s%s$). Lấy điểm $%s$ sao cho $%s$ là trung điểm của $%s%s$. Để tứ giác $%s%s%s%s$ là hình vuông thì tam giác $%s%s%s$ cần thêm điều kiện gì?%s'''
+        noidungcauhoi = ('''Cho tam giác $%s%s%s$ vuông tại $%s$, $%s$ là trung điểm của $%s%s$. Hạ $%s%s \\perp %s%s$ ($%s \\in %s%s$). Lấy điểm $%s$ sao cho $%s$ là trung điểm của $%s%s$. Để tứ giác $%s%s%s%s$ là hình vuông thì tam giác $%s%s%s$ cần thêm điều kiện gì?%s'''
                          % (A, B, C, A, M, B, C, M, P, A, C, P, A, C, Q, P, M, Q, A, M, C, Q, A, B, C, hinh_ve))
 
         # Các đáp án

@@ -183,7 +183,7 @@ def bt_dang18_p1_b5_c3_hh8(self):
         das3 = random.choice(s)
 
         # Câu hỏi
-        noidungcauhoi = ('''Cho hai góc kề bù $\\widehat{x%sy}$ và $\\widehat{x'%sy}$. Gọi $%su, %sv$ lần lượt là tia phân giác của $\\widehat{x%sy}$ và $\\widehat{x'%sy}$. Lấy điểm $%s$ khác $%s$ trên tia $%sy$; kẻ $%s%s \\perp %su$ ($%s \in %su$) và $%s%s \\perp %sv$ ($%s \in %sv$). Tứ giác $%s%s%s%s$ là hình gì?%s'''
+        noidungcauhoi = ('''Cho hai góc kề bù $\\widehat{x%sy}$ và $\\widehat{x'%sy}$. Gọi $%su, %sv$ lần lượt là tia phân giác của $\\widehat{x%sy}$ và $\\widehat{x'%sy}$. Lấy điểm $%s$ khác $%s$ trên tia $%sy$; kẻ $%s%s \\perp %su$ ($%s \\in %su$) và $%s%s \\perp %sv$ ($%s \\in %sv$). Tứ giác $%s%s%s%s$ là hình gì?%s'''
                          % (O, O, O, O, O, O, A, O, O, A, B, O, B, O, A, C, O, C, O, O, B, A, C, hinh_ve))
 
         # Các đáp án
