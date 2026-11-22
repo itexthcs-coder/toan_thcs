@@ -150,7 +150,7 @@ def bt_dang20_p3_b2_c4_hh9(self):
 
 
         # Nội dung câu hỏi
-        noidungcauhoi = ('''Vào trưa ngày Hạ chí, tia sáng Mặt Trời chiếu thẳng đứng xuống đáy giếng tại thành phố Syene ($S$), trong khi tại thành phố Alexandria ($A$) cách đó $%s\\text{ km}$, một tháp thẳng đứng $AH$ cao $%s\\text{ m}$ có bóng trên mặt đất $AB$ dài $%s\\text{ m}$ (như hình vẽ). Dựa vào số liệu trên và lấy $\\pi \\approx 3,14$, hãy ước lượng bán kính của Trái Đất theo đơn vị kilômét (làm tròn kết quả đến hàng đơn vị).''' % (kc_km, thap_m, bong_str))
+        noidungcauhoi = ('''Vào trưa ngày Hạ chí, tia sáng Mặt Trời chiếu thẳng đứng xuống đáy giếng tại thành phố Syene ($S$), trong khi tại thành phố Alexandria ($A$) cách đó $%s\\text{ km}$, một tháp thẳng đứng $AH$ cao $%s\\text{ m}$ có bóng trên mặt đất $AB$ dài $%s\\text{ m}$. Dựa vào số liệu trên và lấy $\\pi \\approx 3,14$, hãy ước lượng bán kính của Trái Đất theo đơn vị kilômét (làm tròn kết quả đến hàng đơn vị).''' % (kc_km, thap_m, bong_str))
 
         # Nội dung lời giải
         loigiai = ('''Xét tam giác $HAB$ vuông tại $A$, ta có $\\tan \\widehat{AHB} = \\dfrac{AB}{AH} = \\dfrac{%s}{%s} = 0,124 \\Rightarrow \\widehat{AHB} \\approx %s^\\circ$.\\\\
