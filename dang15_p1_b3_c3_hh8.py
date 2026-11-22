@@ -134,13 +134,13 @@ def bt_dang15_p1_b3_c3_hh8(self):
     if dang == '1':
         ab = randint(4, 15)
         
-        du = ['$A'B' = %s$ cm và $A'B' // AB$' % (ab)]
+        du = ['$A\'B\' = %s$ cm và $A\'B\' // AB$' % (ab)]
         da = random.choice(du)
         s = [
-            '$A'B' = %s$ cm và $A'B' \\perp AB$' % (ab),
-            '$A'B' = %s$ cm và $A'B' // AB$' % (2 * ab),
-            '$A'B' = %s$ cm và $A'B' // AB$' % (ab + 2),
-            '$A'B' = %s$ cm và $AA' = BB'$' % (ab)
+            '$A\'B\' = %s$ cm và $A\'B\' \\perp AB$' % (ab),
+            '$A\'B\' = %s$ cm và $A\'B\' // AB$' % (2 * ab),
+            '$A\'B\' = %s$ cm và $A\'B\' // AB$' % (ab + 2),
+            '$A\'B\' = %s$ cm và $AA\' = BB\'$' % (ab)
         ]
         das1 = random.choice(s)
         s.remove(das1)
@@ -164,7 +164,7 @@ def bt_dang15_p1_b3_c3_hh8(self):
 \\end{tikzpicture}
 \\end{center}'''
         
-        noidungcauhoi = ('''Cho đoạn thẳng $AB = %s$ cm và điểm $O$ không nằm trên đường thẳng $AB$. Gọi $A', B'$ là các điểm sao cho $O$ là trung điểm của $AA'$ và $BB'$ (như hình vẽ). Khẳng định nào sau đây là đúng?
+        noidungcauhoi = ('''Cho đoạn thẳng $AB = %s$ cm và điểm $O$ không nằm trên đường thẳng $AB$. Gọi $A\', B\'$ là các điểm sao cho $O$ là trung điểm của $AA\'$ và $BB\'$ (như hình vẽ). Khẳng định nào sau đây là đúng?
 %s''' % (ab, hinh_ve))
         
         da_d = ('\\True ' + str(da))
@@ -175,9 +175,9 @@ def bt_dang15_p1_b3_c3_hh8(self):
         list_1 = [da_d, da_s1, da_s2, da_s3]
         random.shuffle(list_1)
         
-        loigiai = ('''Xét tứ giác $ABA'B'$ có hai đường chéo $AA'$ và $BB'$ cắt nhau tại trung điểm $O$ của mỗi đường.\\\\
-Theo dấu hiệu nhận biết (Định lí 3b), tứ giác $ABA'B'$ là hình bình hành.\\\\
-Suy ra hai cạnh đối $A'B'$ và $AB$ song song và bằng nhau, tức là $A'B' = AB = %s$ cm và $A'B' // AB$.'''
+        loigiai = ('''Xét tứ giác $ABA\'B\'$ có hai đường chéo $AA\'$ và $BB\'$ cắt nhau tại trung điểm $O$ của mỗi đường.\\\\
+Theo dấu hiệu nhận biết (Định lí 3b), tứ giác $ABA\'B\'$ là hình bình hành.\\\\
+Suy ra hai cạnh đối $A\'B\'$ và $AB$ song song và bằng nhau, tức là $A\'B\' = AB = %s$ cm và $A\'B\' // AB$.'''
                    % (ab))
     
     # Xuất câu trắc nghiệm

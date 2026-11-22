@@ -164,11 +164,11 @@ def bt_dang6_p2_b3_c3_hh8(self):
         loigiai_th_1_d = ('''Tứ giác $ABCD$ (với $A, D$ nằm cùng phía đối với $BC$) có một cặp cạnh đối song song và bằng nhau ($AB // CD$ và $AB = CD$) nên theo Định lí 2b, $ABCD$ là hình bình hành.''')
         loigiai_th_1_s = ('''Mệnh đề sai vì tứ giác $ABCD$ có $AB // CD$ và $AB = CD$ nên là hình bình hành.''')
         
-        vd_da_1_d = '\\True Nếu lấy điểm $D' \\in d$ sao cho $CD' = %s$ cm nhưng $A$ và $D'$ nằm khác phía đối với $BC$ thì tứ giác $ABCD'$ không là hình bình hành' % (ab)
-        vd_da_1_s = 'Nếu lấy điểm $D' \\in d$ sao cho $CD' = %s$ cm nhưng $A$ và $D'$ nằm khác phía đối với $BC$ thì tứ giác $ABCD'$ vẫn là hình bình hành' % (ab)
+        vd_da_1_d = '\\True Nếu lấy điểm $D\' \\in d$ sao cho $CD\' = %s$ cm nhưng $A$ và $D\'$ nằm khác phía đối với $BC$ thì tứ giác $ABCD\'$ không là hình bình hành' % (ab)
+        vd_da_1_s = 'Nếu lấy điểm $D\' \\in d$ sao cho $CD\' = %s$ cm nhưng $A$ và $D\'$ nằm khác phía đối với $BC$ thì tứ giác $ABCD\'$ vẫn là hình bình hành' % (ab)
         list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
-        loigiai_vd_1_d = ('''Khi $A$ và $D'$ nằm khác phía đối với $BC$ thì hai đoạn thẳng $AC$ và $BD'$ cắt nhau nên hình $ABCD'$ là tứ giác tự cắt (tứ giác lõm), không phải là hình bình hành.''')
-        loigiai_vd_1_s = ('''Mệnh đề sai vì khi $A$ và $D'$ nằm khác phía đối với $BC$ thì hai cạnh $AC$ và $BD'$ cắt nhau nên $ABCD'$ không phải là hình bình hành.''')
+        loigiai_vd_1_d = ('''Khi $A$ và $D\'$ nằm khác phía đối với $BC$ thì hai đoạn thẳng $AC$ và $BD\'$ cắt nhau nên hình $ABCD\'$ là tứ giác tự cắt (tứ giác lõm), không phải là hình bình hành.''')
+        loigiai_vd_1_s = ('''Mệnh đề sai vì khi $A$ và $D\'$ nằm khác phía đối với $BC$ thì hai cạnh $AC$ và $BD\'$ cắt nhau nên $ABCD\'$ không phải là hình bình hành.''')
         
         vdc_da_1_d = '\\True Với mỗi vị trí điểm $C$ trên đường thẳng $d$, ta luôn xác định được duy nhất một điểm $D$ thỏa mãn đề bài'
         vdc_da_1_s = 'Với mỗi vị trí điểm $C$ trên đường thẳng $d$, ta xác định được hai điểm $D$ thỏa mãn đề bài'

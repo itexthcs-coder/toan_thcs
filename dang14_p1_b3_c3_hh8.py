@@ -132,7 +132,7 @@ def bt_dang14_p1_b3_c3_hh8(self):
     dang = random.choice(lisdang)
     
     if dang == '1':
-        du = ['$\widehat{A} + \\widehat{D} = 180^\\circ$']
+        du = ['$\\widehat{A} + \\widehat{D} = 180^\\circ$']
         da = random.choice(du)
         s = [
             '$AB = CD$',

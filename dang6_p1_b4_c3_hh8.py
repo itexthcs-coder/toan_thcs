@@ -138,11 +138,11 @@ def bt_dang6_p1_b4_c3_hh8(self):
         goc_chon = random.choice([dA, dB, dC, dD])
         
         # Các đáp án trắc nghiệm
-        du = ['$\widehat{%s} = 90^\\circ$' % (goc_chon)]
+        du = ['$\\widehat{%s} = 90^\\circ$' % (goc_chon)]
         da = random.choice(du)
         s = ['$%s%s = %s%s$' % (dA, dB, dB, dC),
              '$%s%s \\perp %s%s$' % (dA, dC, dB, dD),
-             '$\widehat{%s} = \widehat{%s}$' % (dA, dC),
+             '$\\widehat{%s} = \\widehat{%s}$' % (dA, dC),
              '$%s%s // %s%s$' % (dA, dB, dC, dD)]
         
         das1 = random.choice(s)
@@ -167,7 +167,7 @@ def bt_dang6_p1_b4_c3_hh8(self):
         
         # Nội dung lời giải
         loigiai = ('''Theo Định lí 2 (dấu hiệu nhận biết hình chữ nhật): Hình bình hành có một góc vuông là hình chữ nhật.\\\\
-Do đó hình bình hành $%s%s%s%s$ có thêm điều kiện $\widehat{%s} = 90^\\circ$ sẽ trở thành hình chữ nhật.'''
+Do đó hình bình hành $%s%s%s%s$ có thêm điều kiện $\\widehat{%s} = 90^\\circ$ sẽ trở thành hình chữ nhật.'''
                    % (dA, dB, dC, dD, goc_chon))
     
     # Xuất câu trắc nghiệm
