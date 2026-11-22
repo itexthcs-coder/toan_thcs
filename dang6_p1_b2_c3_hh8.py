@@ -143,13 +143,13 @@ def bt_dang6_p1_b2_c3_hh8(self):
         day1, day2 = d1 + d2, d3 + d4
     
         # Các đáp án trắc nghiệm
-        du = ['$\widehat{%s} = \widehat{%s}$' % (d1, d2)]
+        du = ['$\\widehat{%s} = \\widehat{%s}$' % (d1, d2)]
         da = random.choice(du)
         s = [
-            '$\widehat{%s} + \widehat{%s} = 180^\\circ$' % (d1, d2),
-            '$\widehat{%s} = \widehat{%s}$' % (d1, d3),
-            '$\widehat{%s} = \widehat{%s}$' % (d2, d4),
-            '$\widehat{%s} + \widehat{%s} = 90^\\circ$' % (d1, d2)
+            '$\\widehat{%s} + \\widehat{%s} = 180^\\circ$' % (d1, d2),
+            '$\\widehat{%s} = \\widehat{%s}$' % (d1, d3),
+            '$\\widehat{%s} = \\widehat{%s}$' % (d2, d4),
+            '$\\widehat{%s} + \\widehat{%s} = 90^\\circ$' % (d1, d2)
         ]
     
         das1 = random.choice(s)
