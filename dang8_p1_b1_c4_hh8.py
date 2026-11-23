@@ -157,7 +157,7 @@ def bt_dang8_p1_b1_c4_hh8(self):
         das3 = random.choice(s)
 
         # Câu hỏi
-        noidungcauhoi = ('''Cho $\Delta %s%s%s$, lấy điểm $%s \in %s%s$ và điểm $%s \in %s%s$. Điều kiện nào sau đây đủ để kết luận $%s%s // %s%s$?'''
+        noidungcauhoi = ('''Cho $\\Delta %s%s%s$, lấy điểm $%s \\in %s%s$ và điểm $%s \\in %s%s$. Điều kiện nào sau đây đủ để kết luận $%s%s // %s%s$?'''
                          % (A_t, B_t, C_t, D_t, A_t, B_t, E_t, A_t, C_t, D_t, E_t, B_t, C_t))
 
         # Các đáp án
@@ -171,8 +171,8 @@ def bt_dang8_p1_b1_c4_hh8(self):
         random.shuffle(list_1)
 
         # Nội dung lời giải
-        loigiai = ('''Theo định lí Thalès đảo: Nếu một đường thẳng cắt hai cạnh của một tam giác và định ra trên hai cạnh này những đoạn thẳng tương ứng tỉ lệ thì đường thẳng đó song song với cạnh còn lại của tam giác.\\
-Xét $\Delta %s%s%s$ có $%s \in %s%s$ và $%s \in %s%s$, để $%s%s // %s%s$ thì điều kiện tương ứng tỉ lệ đúng là %s.'''
+        loigiai = ('''Theo định lí Thalès đảo: Nếu một đường thẳng cắt hai cạnh của một tam giác và định ra trên hai cạnh này những đoạn thẳng tương ứng tỉ lệ thì đường thẳng đó song song với cạnh còn lại của tam giác.\\\\
+Xét $\\Delta %s%s%s$ có $%s \\in %s%s$ và $%s \\in %s%s$, để $%s%s // %s%s$ thì điều kiện tương ứng tỉ lệ đúng là %s.'''
                    % (A_t, B_t, C_t, D_t, A_t, B_t, E_t, A_t, C_t, D_t, E_t, B_t, C_t, da))
 
     # Xuất câu trắc nghiệm

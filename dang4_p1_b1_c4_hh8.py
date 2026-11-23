@@ -175,10 +175,10 @@ def bt_dang4_p1_b1_c4_hh8(self):
         random.shuffle(list_1)
 
         # Nội dung lời giải
-        loigiai = ('''Để hai đoạn thẳng $AB$, $CD$ tỉ lệ với hai đoạn thẳng $MN$, $PQ$ thì ta phải có tỉ lệ thức:\\
-$\dfrac{AB}{CD} = \dfrac{MN}{PQ}$.\\
-Thay $AB = %s\\text{ cm}$, $CD = %s\\text{ cm}$, $MN = %s\\text{ cm}$ vào tỉ lệ thức trên, ta được:\\
-$\dfrac{%s}{%s} = \dfrac{%s}{PQ} \Rightarrow PQ = \dfrac{%s \cdot %s}{%s} = %s\\text{ (cm)}$.\\
+        loigiai = ('''Để hai đoạn thẳng $AB$, $CD$ tỉ lệ với hai đoạn thẳng $MN$, $PQ$ thì ta phải có tỉ lệ thức:\\\\
+$\\dfrac{AB}{CD} = \\dfrac{MN}{PQ}$.\\\\
+Thay $AB = %s\\text{ cm}$, $CD = %s\\text{ cm}$, $MN = %s\\text{ cm}$ vào tỉ lệ thức trên, ta được:\\\\
+$\\dfrac{%s}{%s} = \\dfrac{%s}{PQ} \\Rightarrow PQ = \\dfrac{%s \\cdot %s}{%s} = %s\\text{ (cm)}$.\\\\
 Vậy độ dài đoạn thẳng $PQ$ bằng $%s\\text{ cm}$.'''
                    % (ab, cd, mn, ab, cd, mn, cd, mn, ab, pq, pq))
 

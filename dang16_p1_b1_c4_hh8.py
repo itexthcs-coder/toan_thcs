@@ -155,24 +155,24 @@ def bt_dang16_p1_b1_c4_hh8(self):
         das3 = random.choice(s)
 
         # Câu hỏi
-        noidungcauhoi = ('''Cho $\Delta ABC$ có $MN // BC$ ($M \in AB$, $N \in AC$) như hình vẽ bên dưới. Biết $AM = x$, $MB = %s$, $AN = %s$, $NC = x + %s$ (với $x > 0$ và các độ dài có cùng đơn vị đo). Giá trị của $x$ là
+        noidungcauhoi = ('''Cho $\\Delta ABC$ có $MN // BC$ ($M \\in AB$, $N \\in AC$) như hình vẽ bên dưới. Biết $AM = x$, $MB = %s$, $AN = %s$, $NC = x + %s$ (với $x > 0$ và các độ dài có cùng đơn vị đo). Giá trị của $x$ là
 \\begin{center}
 \\begin{tikzpicture}[scale=1, font=\\footnotesize, line join=round, line cap=round, >=stealth]
-\coordinate (A) at (1.5,3);
-\coordinate (B) at (0,0);
-\coordinate (C) at (4.5,0);
-\coordinate (M) at ($(A)!0.45!(B)$);
-\coordinate (N) at ($(A)!0.45!(C)$);
-\draw[line width=1pt] (A)--(B)--(C)--cycle (M)--(N);
+\\coordinate (A) at (1.5,3);
+\\coordinate (B) at (0,0);
+\\coordinate (C) at (4.5,0);
+\\coordinate (M) at ($(A)!0.45!(B)$);
+\\coordinate (N) at ($(A)!0.45!(C)$);
+\\draw[line width=1pt] (A)--(B)--(C)--cycle (M)--(N);
 \\fill (A) circle (1pt) node[above] {$A$};
 \\fill (B) circle (1pt) node[below left] {$B$};
 \\fill (C) circle (1pt) node[below right] {$C$};
 \\fill (M) circle (1pt) node[left] {$M$};
 \\fill (N) circle (1pt) node[right] {$N$};
-\path (A)--(M) node[midway, left] {$x$};
-\path (M)--(B) node[midway, left] {$%s$};
-\path (A)--(N) node[midway, right] {$%s$};
-\path (N)--(C) node[midway, right] {$x + %s$};
+\\path (A)--(M) node[midway, left] {$x$};
+\\path (M)--(B) node[midway, left] {$%s$};
+\\path (A)--(N) node[midway, right] {$%s$};
+\\path (N)--(C) node[midway, right] {$x + %s$};
 \\end{tikzpicture}
 \\end{center}'''
                          % (mb, an, d, mb, an, d))
@@ -188,12 +188,12 @@ def bt_dang16_p1_b1_c4_hh8(self):
         random.shuffle(list_1)
 
         # Nội dung lời giải
-        loigiai = ('''Xét $\Delta ABC$ có $MN // BC$ ($M \in AB$, $N \in AC$), theo định lí Thalès trong tam giác ta có:\\
-$\dfrac{AM}{MB} = \dfrac{AN}{NC}$.\\
-Thay số vào tỉ lệ thức trên, ta được:\\
-$\dfrac{x}{%s} = \dfrac{%s}{x + %s} \Rightarrow x(x + %s) = %s \cdot %s$\\
-$\Rightarrow x^2 + %s x - %s = 0 \Rightarrow (x - %s)(x + %s) = 0$.\\
-Vì $x > 0$ nên $x + %s > 0$, suy ra $x - %s = 0 \Rightarrow x = %s$.\\
+        loigiai = ('''Xét $\\Delta ABC$ có $MN // BC$ ($M \\in AB$, $N \\in AC$), theo định lí Thalès trong tam giác ta có:\\\\
+$\\dfrac{AM}{MB} = \\dfrac{AN}{NC}$.\\\\
+Thay số vào tỉ lệ thức trên, ta được:\\\\
+$\\dfrac{x}{%s} = \\dfrac{%s}{x + %s} \\Rightarrow x(x + %s) = %s \\cdot %s$\\\\
+$\\Rightarrow x^2 + %s x - %s = 0 \\Rightarrow (x - %s)(x + %s) = 0$.\\\\
+Vì $x > 0$ nên $x + %s > 0$, suy ra $x - %s = 0 \\Rightarrow x = %s$.\\\\
 Vậy $x = %s$.'''
                    % (mb, an, d, d, mb, an, d, tich, x_nghiem, x_nghiem + d, x_nghiem + d, x_nghiem, x_nghiem, x_nghiem))
 

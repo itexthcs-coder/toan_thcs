@@ -158,16 +158,16 @@ def bt_dang20_p1_b1_c4_hh8(self):
         das3 = random.choice(s)
 
         # Câu hỏi
-        noidungcauhoi = ('''Cho $\Delta ABC$ vuông tại $A$ có $AB = %s\\text{ cm}$, $AC = %s\\text{ cm}$, $BC = %s\\text{ cm}$. Trên cạnh $AB$ lấy điểm $M$ sao cho $AM = %s\\text{ cm}$, qua $M$ kẻ đường thẳng song song với $BC$ cắt $AC$ tại $N$ như hình vẽ bên dưới. Độ dài đoạn thẳng $NC$ là
+        noidungcauhoi = ('''Cho $\\Delta ABC$ vuông tại $A$ có $AB = %s\\text{ cm}$, $AC = %s\\text{ cm}$, $BC = %s\\text{ cm}$. Trên cạnh $AB$ lấy điểm $M$ sao cho $AM = %s\\text{ cm}$, qua $M$ kẻ đường thẳng song song với $BC$ cắt $AC$ tại $N$ như hình vẽ bên dưới. Độ dài đoạn thẳng $NC$ là
 \\begin{center}
 \\begin{tikzpicture}[scale=1, font=\\footnotesize, line join=round, line cap=round, >=stealth]
-\coordinate (A) at (0,0);
-\coordinate (B) at (0,2.8);
-\coordinate (C) at (3.8,0);
-\coordinate (M) at ($(A)!0.65!(B)$);
-\coordinate (N) at ($(A)!0.65!(C)$);
-\draw[line width=1pt] (A)--(B)--(C)--cycle (M)--(N);
-\draw[line width=1pt] (0,0.25)--(0.25,0.25)--(0.25,0);
+\\coordinate (A) at (0,0);
+\\coordinate (B) at (0,2.8);
+\\coordinate (C) at (3.8,0);
+\\coordinate (M) at ($(A)!0.65!(B)$);
+\\coordinate (N) at ($(A)!0.65!(C)$);
+\\draw[line width=1pt] (A)--(B)--(C)--cycle (M)--(N);
+\\draw[line width=1pt] (0,0.25)--(0.25,0.25)--(0.25,0);
 \\fill (A) circle (1pt) node[below left] {$A$};
 \\fill (B) circle (1pt) node[above left] {$B$};
 \\fill (C) circle (1pt) node[below right] {$C$};
@@ -188,11 +188,11 @@ def bt_dang20_p1_b1_c4_hh8(self):
         random.shuffle(list_1)
 
         # Nội dung lời giải
-        loigiai = ('''Ta có: $MB = AB - AM = %s - %s = %s\\text{ (cm)}$.\\
-Xét $\Delta ABC$ có $MN // BC$ ($M \in AB$, $N \in AC$), theo định lí Thalès trong tam giác ta có:\\
-$\dfrac{MB}{AB} = \dfrac{NC}{AC}$.\\
-Thay số vào tỉ lệ thức trên, ta được:\\
-$\dfrac{%s}{%s} = \dfrac{NC}{%s} \Rightarrow NC = \dfrac{%s \cdot %s}{%s} = %s\\text{ (cm)}$.\\
+        loigiai = ('''Ta có: $MB = AB - AM = %s - %s = %s\\text{ (cm)}$.\\\\
+Xét $\\Delta ABC$ có $MN // BC$ ($M \\in AB$, $N \\in AC$), theo định lí Thalès trong tam giác ta có:\\\\
+$\\dfrac{MB}{AB} = \\dfrac{NC}{AC}$.\\\\
+Thay số vào tỉ lệ thức trên, ta được:\\\\
+$\\dfrac{%s}{%s} = \\dfrac{NC}{%s} \\Rightarrow NC = \\dfrac{%s \\cdot %s}{%s} = %s\\text{ (cm)}$.\\\\
 Vậy độ dài đoạn thẳng $NC$ bằng $%s\\text{ cm}$.'''
                    % (ab, am, mb, mb, ab, ac, mb, ac, ab, latex(nc), latex(nc)))
 

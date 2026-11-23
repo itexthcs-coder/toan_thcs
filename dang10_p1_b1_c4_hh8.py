@@ -158,7 +158,7 @@ def bt_dang10_p1_b1_c4_hh8(self):
         das3 = random.choice(s)
 
         # Câu hỏi
-        noidungcauhoi = ('''Cho $\Delta PQR$ có $EF // QR$ ($E \in PQ$, $F \in PR$). Biết $\dfrac{PF}{FR} = %s$, tỉ số $\dfrac{PE}{PQ}$ bằng'''
+        noidungcauhoi = ('''Cho $\\Delta PQR$ có $EF // QR$ ($E \\in PQ$, $F \\in PR$). Biết $\\dfrac{PF}{FR} = %s$, tỉ số $\\dfrac{PE}{PQ}$ bằng'''
                          % (latex(ts_cho)))
 
         # Các đáp án
@@ -172,11 +172,11 @@ def bt_dang10_p1_b1_c4_hh8(self):
         random.shuffle(list_1)
 
         # Nội dung lời giải
-        loigiai = ('''Vì $\dfrac{PF}{FR} = %s$ nên ta coi $PF = %s k$ và $FR = %s k$ (với $k > 0$).\\
-Khi đó $PR = PF + FR = %s k + %s k = %s k$, suy ra $\dfrac{PF}{PR} = \dfrac{%s k}{%s k} = %s$.\\
-Xét $\Delta PQR$ có $EF // QR$ ($E \in PQ$, $F \in PR$), theo định lí Thalès trong tam giác ta có:\\
-$\dfrac{PE}{PQ} = \dfrac{PF}{PR} = %s$.\\
-Vậy tỉ số $\dfrac{PE}{PQ}$ bằng $%s$.'''
+        loigiai = ('''Vì $\\dfrac{PF}{FR} = %s$ nên ta coi $PF = %s k$ và $FR = %s k$ (với $k > 0$).\\\\
+Khi đó $PR = PF + FR = %s k + %s k = %s k$, suy ra $\\dfrac{PF}{PR} = \\dfrac{%s k}{%s k} = %s$.\\\\
+Xét $\\Delta PQR$ có $EF // QR$ ($E \\in PQ$, $F \\in PR$), theo định lí Thalès trong tam giác ta có:\\\\
+$\\dfrac{PE}{PQ} = \\dfrac{PF}{PR} = %s$.\\\\
+Vậy tỉ số $\\dfrac{PE}{PQ}$ bằng $%s$.'''
                    % (latex(ts_cho), a, b, a, b, a + b, a, a + b, latex(ts_dung), latex(ts_dung), latex(ts_dung)))
 
     # Xuất câu trắc nghiệm

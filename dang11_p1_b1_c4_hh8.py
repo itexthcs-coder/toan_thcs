@@ -157,7 +157,7 @@ def bt_dang11_p1_b1_c4_hh8(self):
         das3 = random.choice(s)
 
         # Câu hỏi
-        noidungcauhoi = ('''Cho đoạn thẳng $AB = %s\\text{ cm}$ và đoạn thẳng $CD = %s\\text{ m}$. Tỉ số $\dfrac{AB}{CD}$ là'''
+        noidungcauhoi = ('''Cho đoạn thẳng $AB = %s\\text{ cm}$ và đoạn thẳng $CD = %s\\text{ m}$. Tỉ số $\\dfrac{AB}{CD}$ là'''
                          % (ab, cd_m_str))
 
         # Các đáp án
@@ -171,10 +171,10 @@ def bt_dang11_p1_b1_c4_hh8(self):
         random.shuffle(list_1)
 
         # Nội dung lời giải
-        loigiai = ('''Đổi đơn vị: $CD = %s\\text{ m} = %s\\text{ cm}$.\\
-Tỉ số của hai đoạn thẳng $AB$ và $CD$ là:\\
-$\dfrac{AB}{CD} = \dfrac{%s}{%s} = %s$.\\
-Vậy tỉ số $\dfrac{AB}{CD}$ là $%s$.'''
+        loigiai = ('''Đổi đơn vị: $CD = %s\\text{ m} = %s\\text{ cm}$.\\\\
+Tỉ số của hai đoạn thẳng $AB$ và $CD$ là:\\\\
+$\\dfrac{AB}{CD} = \\dfrac{%s}{%s} = %s$.\\\\
+Vậy tỉ số $\\dfrac{AB}{CD}$ là $%s$.'''
                    % (cd_m_str, cd_cm, ab, cd_cm, latex(ts_dung), latex(ts_dung)))
 
     # Xuất câu trắc nghiệm

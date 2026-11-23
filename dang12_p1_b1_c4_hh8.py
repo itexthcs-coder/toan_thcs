@@ -163,15 +163,15 @@ def bt_dang12_p1_b1_c4_hh8(self):
         das3 = random.choice(s)
 
         # Câu hỏi
-        noidungcauhoi = ('''Cho $\Delta ABC$ có $DE // BC$ ($D \in AB$, $E \in AC$) như hình vẽ bên dưới. Biết $AD = %s\\text{ cm}$, $DB = %s\\text{ cm}$ và $AC = %s\\text{ cm}$. Độ dài đoạn thẳng $EC$ bằng
+        noidungcauhoi = ('''Cho $\\Delta ABC$ có $DE // BC$ ($D \\in AB$, $E \\in AC$) như hình vẽ bên dưới. Biết $AD = %s\\text{ cm}$, $DB = %s\\text{ cm}$ và $AC = %s\\text{ cm}$. Độ dài đoạn thẳng $EC$ bằng
 \\begin{center}
 \\begin{tikzpicture}[scale=1, font=\\footnotesize, line join=round, line cap=round, >=stealth]
-\coordinate (A) at (1.5,3);
-\coordinate (B) at (0,0);
-\coordinate (C) at (4.5,0);
-\coordinate (D) at ($(A)!0.55!(B)$);
-\coordinate (E) at ($(A)!0.55!(C)$);
-\draw[line width=1pt] (A)--(B)--(C)--cycle (D)--(E);
+\\coordinate (A) at (1.5,3);
+\\coordinate (B) at (0,0);
+\\coordinate (C) at (4.5,0);
+\\coordinate (D) at ($(A)!0.55!(B)$);
+\\coordinate (E) at ($(A)!0.55!(C)$);
+\\draw[line width=1pt] (A)--(B)--(C)--cycle (D)--(E);
 \\fill (A) circle (1pt) node[above] {$A$};
 \\fill (B) circle (1pt) node[below left] {$B$};
 \\fill (C) circle (1pt) node[below right] {$C$};
@@ -192,11 +192,11 @@ def bt_dang12_p1_b1_c4_hh8(self):
         random.shuffle(list_1)
 
         # Nội dung lời giải
-        loigiai = ('''Ta có: $AB = AD + DB = %s + %s = %s\\text{ (cm)}$.\\
-Xét $\Delta ABC$ có $DE // BC$ ($D \in AB$, $E \in AC$), theo định lí Thalès trong tam giác ta có:\\
-$\dfrac{DB}{AB} = \dfrac{EC}{AC}$.\\
-Thay số vào tỉ lệ thức trên, ta được:\\
-$\dfrac{%s}{%s} = \dfrac{EC}{%s} \Rightarrow EC = \dfrac{%s \cdot %s}{%s} = %s\\text{ (cm)}$.\\
+        loigiai = ('''Ta có: $AB = AD + DB = %s + %s = %s\\text{ (cm)}$.\\\\
+Xét $\\Delta ABC$ có $DE // BC$ ($D \in AB$, $E \in AC$), theo định lí Thalès trong tam giác ta có:\\\\
+$\\dfrac{DB}{AB} = \\dfrac{EC}{AC}$.\\\\
+Thay số vào tỉ lệ thức trên, ta được:\\\\
+$\\dfrac{%s}{%s} = \\dfrac{EC}{%s} \Rightarrow EC = \\dfrac{%s \\cdot %s}{%s} = %s\\text{ (cm)}$.\\\\
 Vậy độ dài đoạn thẳng $EC$ bằng $%s\\text{ cm}$.'''
                    % (ad, db, ab, db, ab, ac, db, ac, ab, ec, ec))
 

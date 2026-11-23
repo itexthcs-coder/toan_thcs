@@ -170,12 +170,12 @@ def bt_dang6_p1_b1_c4_hh8(self):
         noidungcauhoi = ('''Tính độ dài $x$ trong hình vẽ bên dưới (các số chỉ kích thước trên hình có cùng đơn vị đo), biết $MN // EF$.
 \\begin{center}
 \\begin{tikzpicture}[scale=1, font=\\footnotesize, line join=round, line cap=round, >=stealth]
-\coordinate (D) at (1.5,3);
-\coordinate (E) at (0,0);
-\coordinate (F) at (4.5,0);
-\coordinate (M) at ($(D)!0.4!(E)$);
-\coordinate (N) at ($(D)!0.4!(F)$);
-\draw[line width=1pt] (D)--(E)--(F)--cycle (M)--(N);
+\\coordinate (D) at (1.5,3);
+\\coordinate (E) at (0,0);
+\\coordinate (F) at (4.5,0);
+\\coordinate (M) at ($(D)!0.4!(E)$);
+\\coordinate (N) at ($(D)!0.4!(F)$);
+\\draw[line width=1pt] (D)--(E)--(F)--cycle (M)--(N);
 \\fill (D) circle (1pt) node[above] {$D$};
 \\fill (E) circle (1pt) node[below left] {$E$};
 \\fill (F) circle (1pt) node[below right] {$F$};
@@ -200,10 +200,10 @@ def bt_dang6_p1_b1_c4_hh8(self):
         random.shuffle(list_1)
 
         # Nội dung lời giải
-        loigiai = ('''Xét $\Delta DEF$ có $MN // EF$ ($M \in DE$, $N \in DF$), theo định lí Thalès trong tam giác ta có:\\
-$\dfrac{DM}{ME} = \dfrac{DN}{NF}$.\\
-Thay số vào tỉ lệ thức trên, ta được:\\
-$\dfrac{%s}{%s} = \dfrac{%s}{x} \Rightarrow x = \dfrac{%s \cdot %s}{%s} = %s$.\\
+        loigiai = ('''Xét $\\Delta DEF$ có $MN // EF$ ($M \\in DE$, $N \\in DF$), theo định lí Thalès trong tam giác ta có:\\\\
+$\\dfrac{DM}{ME} = \\dfrac{DN}{NF}$.\\\\
+Thay số vào tỉ lệ thức trên, ta được:\\\\
+$\\dfrac{%s}{%s} = \\dfrac{%s}{x} \\Rightarrow x = \\dfrac{%s \\cdot %s}{%s} = %s$.\\\\
 Vậy $x = %s$.'''
                    % (dm, me, dn, me, dn, dm, ans_str, ans_str))
 

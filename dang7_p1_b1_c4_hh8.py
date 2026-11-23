@@ -159,15 +159,15 @@ def bt_dang7_p1_b1_c4_hh8(self):
         das3 = random.choice(s)
 
         # Câu hỏi
-        noidungcauhoi = ('''Cho $\Delta MNP$ có $AB // NP$ ($A \in MN$, $B \in MP$) như hình vẽ bên dưới. Biết $MA = %s\\text{ cm}$, $MN = %s\\text{ cm}$, $MB = %s\\text{ cm}$. Độ dài đoạn thẳng $MP$ bằng
+        noidungcauhoi = ('''Cho $\\Delta MNP$ có $AB // NP$ ($A \\in MN$, $B \\in MP$) như hình vẽ bên dưới. Biết $MA = %s\\text{ cm}$, $MN = %s\\text{ cm}$, $MB = %s\\text{ cm}$. Độ dài đoạn thẳng $MP$ bằng
 \\begin{center}
 \\begin{tikzpicture}[scale=1, font=\\footnotesize, line join=round, line cap=round, >=stealth]
-\coordinate (M) at (1.5,3);
-\coordinate (N) at (0,0);
-\coordinate (P) at (4.5,0);
-\coordinate (A) at ($(M)!0.42!(N)$);
-\coordinate (B) at ($(M)!0.42!(P)$);
-\draw[line width=1pt] (M)--(N)--(P)--cycle (A)--(B);
+\\coordinate (M) at (1.5,3);
+\\coordinate (N) at (0,0);
+\\coordinate (P) at (4.5,0);
+\\coordinate (A) at ($(M)!0.42!(N)$);
+\\coordinate (B) at ($(M)!0.42!(P)$);
+\\draw[line width=1pt] (M)--(N)--(P)--cycle (A)--(B);
 \\fill (M) circle (1pt) node[above] {$M$};
 \\fill (N) circle (1pt) node[below left] {$N$};
 \\fill (P) circle (1pt) node[below right] {$P$};
@@ -188,10 +188,10 @@ def bt_dang7_p1_b1_c4_hh8(self):
         random.shuffle(list_1)
 
         # Nội dung lời giải
-        loigiai = ('''Xét $\Delta MNP$ có $AB // NP$ ($A \in MN$, $B \in MP$), theo định lí Thalès trong tam giác ta có:\\
-$\dfrac{MA}{MN} = \dfrac{MB}{MP}$.\\
-Thay $MA = %s\\text{ cm}$, $MN = %s\\text{ cm}$, $MB = %s\\text{ cm}$ vào tỉ lệ thức trên, ta được:\\
-$\dfrac{%s}{%s} = \dfrac{%s}{MP} \Rightarrow MP = \dfrac{%s \cdot %s}{%s} = %s\\text{ (cm)}$.\\
+        loigiai = ('''Xét $\\Delta MNP$ có $AB // NP$ ($A \\in MN$, $B \\in MP$), theo định lí Thalès trong tam giác ta có:\\\\
+$\\dfrac{MA}{MN} = \\dfrac{MB}{MP}$.\\\\
+Thay $MA = %s\\text{ cm}$, $MN = %s\\text{ cm}$, $MB = %s\\text{ cm}$ vào tỉ lệ thức trên, ta được:\\\\
+$\\dfrac{%s}{%s} = \\dfrac{%s}{MP} \\Rightarrow MP = \\dfrac{%s \\cdot %s}{%s} = %s\\text{ (cm)}$.\\\\
 Vậy độ dài đoạn thẳng $MP$ bằng $%s\\text{ cm}$.'''
                    % (ma, mn, mb, ma, mn, mb, mn, mb, ma, mp, mp))
 

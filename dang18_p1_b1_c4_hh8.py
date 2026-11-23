@@ -159,7 +159,7 @@ def bt_dang18_p1_b1_c4_hh8(self):
         das3 = random.choice(s)
 
         # Câu hỏi
-        noidungcauhoi = ('''Cho $\Delta ABC$ có $DE // BC$ ($D \in AB$, $E \in AC$). Biết $\dfrac{AD}{DB} = %s$ và $AC = %s\\text{ cm}$. Độ dài đoạn thẳng $AE$ là'''
+        noidungcauhoi = ('''Cho $\\Delta ABC$ có $DE // BC$ ($D \\in AB$, $E \\in AC$). Biết $\\dfrac{AD}{DB} = %s$ và $AC = %s\\text{ cm}$. Độ dài đoạn thẳng $AE$ là'''
                          % (latex(ts_cho), ac))
 
         # Các đáp án
@@ -173,11 +173,11 @@ def bt_dang18_p1_b1_c4_hh8(self):
         random.shuffle(list_1)
 
         # Nội dung lời giải
-        loigiai = ('''Xét $\Delta ABC$ có $DE // BC$ ($D \in AB$, $E \in AC$), theo định lí Thalès trong tam giác ta có:\\
-$\dfrac{AE}{EC} = \dfrac{AD}{DB} = %s$.\\
-Suy ra $\dfrac{AE}{AE + EC} = \dfrac{%s}{%s + %s} = %s$ hay $\dfrac{AE}{AC} = %s$.\\
-Thay $AC = %s\\text{ cm}$ vào hệ thức trên, ta được:\\
-$\dfrac{AE}{%s} = %s \Rightarrow AE = \dfrac{%s \cdot %s}{%s} = %s\\text{ (cm)}$.\\
+        loigiai = ('''Xét $\\Delta ABC$ có $DE // BC$ ($D \\in AB$, $E \\in AC$), theo định lí Thalès trong tam giác ta có:\\\\
+$\\dfrac{AE}{EC} = \\dfrac{AD}{DB} = %s$.\\\\
+Suy ra $\\dfrac{AE}{AE + EC} = \\dfrac{%s}{%s + %s} = %s$ hay $\\dfrac{AE}{AC} = %s$.\\\\
+Thay $AC = %s\\text{ cm}$ vào hệ thức trên, ta được:\\\\
+$\\dfrac{AE}{%s} = %s \\Rightarrow AE = \\dfrac{%s \\cdot %s}{%s} = %s\\text{ (cm)}$.\\\\
 Vậy độ dài đoạn thẳng $AE$ bằng $%s\\text{ cm}$.'''
                    % (latex(ts_cho), a, a, b, latex(ts_tp), latex(ts_tp), ac, ac, latex(ts_tp), ac, a, a + b, ae, ae))
 

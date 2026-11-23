@@ -165,14 +165,14 @@ def bt_dang17_p1_b1_c4_hh8(self):
         noidungcauhoi = ('''Quan sát hình vẽ bên dưới, khẳng định nào sau đây là đúng về các cặp đường thẳng song song?
 \\begin{center}
 \\begin{tikzpicture}[scale=1, font=\\footnotesize, line join=round, line cap=round, >=stealth]
-\coordinate (K) at (0,0);
-\coordinate (Q) at (5,0);
-\coordinate (H) at (1.2,3);
-\coordinate (F) at ($(H)!0.48!(K)$);
-\coordinate (M) at ($(H)!0.6!(Q)$);
-\coordinate (E) at ($(K)!0.6!(Q)$);
-\draw[line width=1pt] (H)--(K)--(Q)--cycle (E)--(M);
-\draw[line width=1pt, dashed] (F)--(M);
+\\coordinate (K) at (0,0);
+\\coordinate (Q) at (5,0);
+\\coordinate (H) at (1.2,3);
+\\coordinate (F) at ($(H)!0.48!(K)$);
+\\coordinate (M) at ($(H)!0.6!(Q)$);
+\\coordinate (E) at ($(K)!0.6!(Q)$);
+\\draw[line width=1pt] (H)--(K)--(Q)--cycle (E)--(M);
+\\draw[line width=1pt, dashed] (F)--(M);
 \\fill (H) circle (1pt) node[above] {$H$};
 \\fill (K) circle (1pt) node[below left] {$K$};
 \\fill (Q) circle (1pt) node[below right] {$Q$};
@@ -200,11 +200,11 @@ def bt_dang17_p1_b1_c4_hh8(self):
         random.shuffle(list_1)
 
         # Nội dung lời giải
-        loigiai = ('''Xét $\Delta QHK$, ta có:\\
-$\dfrac{QM}{MH} = \dfrac{%s}{%s} = %s$ và $\dfrac{QE}{EK} = \dfrac{%s}{%s} = %s$.\\
-Vì $\dfrac{QM}{MH} = \dfrac{QE}{EK} = %s$ nên $EM // HK$ (theo định lí Thalès đảo).\\
-Mặt khác, xét $\Delta HKQ$ có $\dfrac{HF}{FK} = \dfrac{%s}{%s} = %s$ và $\dfrac{HM}{MQ} = \dfrac{%s}{%s} = %s$.\\
-Vì $\dfrac{HF}{FK} \neq \dfrac{HM}{MQ}$ nên $MF$ không song song với $KQ$.\\
+        loigiai = ('''Xét $\\Delta QHK$, ta có:\\
+$\\dfrac{QM}{MH} = \\dfrac{%s}{%s} = %s$ và $\\dfrac{QE}{EK} = \\dfrac{%s}{%s} = %s$.\\\\
+Vì $\\dfrac{QM}{MH} = \\dfrac{QE}{EK} = %s$ nên $EM // HK$ (theo định lí Thalès đảo).\\\\
+Mặt khác, xét $\\Delta HKQ$ có $\\dfrac{HF}{FK} = \\dfrac{%s}{%s} = %s$ và $\\dfrac{HM}{MQ} = \\dfrac{%s}{%s} = %s$.\\\\
+Vì $\\dfrac{HF}{FK} \\neq \\dfrac{HM}{MQ}$ nên $MF$ không song song với $KQ$.\\\\
 Vậy $EM // HK$ và $MF$ không song song với $KQ$.'''
                    % (qm, mh, latex(ts_em), qe, ek, latex(ts_em), latex(ts_em),
                       fh, kf, latex(Rational(fh, kf)), mh, qm, latex(Rational(mh, qm))))

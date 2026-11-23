@@ -166,23 +166,23 @@ def bt_dang13_p1_b1_c4_hh8(self):
         noidungcauhoi = ('''Tìm độ dài $y$ trong hình vẽ bên dưới (các số chỉ kích thước trên hình có cùng đơn vị đo).
 \\begin{center}
 \\begin{tikzpicture}[scale=1, font=\\footnotesize, line join=round, line cap=round, >=stealth]
-\coordinate (H) at (0,0);
-\coordinate (P) at (0,3.2);
-\coordinate (Q) at (4,0);
-\coordinate (E) at (0,1.6);
-\coordinate (F) at (2,1.6);
-\draw[line width=1pt] (P)--(H)--(Q)--cycle (E)--(F);
-\draw[line width=1pt] (0,0.25)--(0.25,0.25)--(0.25,0);
-\draw[line width=1pt] (0,1.85)--(0.25,1.85)--(0.25,1.6);
-\draw[<->, line width=1pt] (-0.7,0)--(-0.7,3.2) node[midway, left] {$y$};
+\\coordinate (H) at (0,0);
+\\coordinate (P) at (0,3.2);
+\\coordinate (Q) at (4,0);
+\\coordinate (E) at (0,1.6);
+\\coordinate (F) at (2,1.6);
+\\draw[line width=1pt] (P)--(H)--(Q)--cycle (E)--(F);
+\\draw[line width=1pt] (0,0.25)--(0.25,0.25)--(0.25,0);
+\\draw[line width=1pt] (0,1.85)--(0.25,1.85)--(0.25,1.6);
+\\draw[<->, line width=1pt] (-0.7,0)--(-0.7,3.2) node[midway, left] {$y$};
 \\fill (P) circle (1pt) node[above] {$P$};
 \\fill (H) circle (1pt) node[below left] {$H$};
 \\fill (Q) circle (1pt) node[below right] {$Q$};
 \\fill (E) circle (1pt) node[left] {$E$};
 \\fill (F) circle (1pt) node[right] {$F$};
-\path (P)--(E) node[midway, left] {$%s$};
-\path (P)--(F) node[midway, right] {$%s$};
-\path (F)--(Q) node[midway, right] {$%s$};
+\\path (P)--(E) node[midway, left] {$%s$};
+\\path (P)--(F) node[midway, right] {$%s$};
+\\path (F)--(Q) node[midway, right] {$%s$};
 \\end{tikzpicture}
 \\end{center}'''
                          % (pe, pf, fq_str))
@@ -198,12 +198,12 @@ def bt_dang13_p1_b1_c4_hh8(self):
         random.shuffle(list_1)
 
         # Nội dung lời giải
-        loigiai = ('''Ta có $EF \perp PH$ và $HQ \perp PH$ nên $EF // HQ$ (từ vuông góc đến song song).\\
-Độ dài đoạn thẳng $PQ$ là: $PQ = PF + FQ = %s + %s = %s$.\\
-Xét $\Delta PHQ$ có $EF // HQ$ ($E \in PH$, $F \in PQ$), theo định lí Thalès trong tam giác ta có:\\
-$\dfrac{PE}{PH} = \dfrac{PF}{PQ}$.\\
-Thay số vào tỉ lệ thức trên, ta được:\\
-$\dfrac{%s}{y} = \dfrac{%s}{%s} \Rightarrow y = \dfrac{%s \cdot %s}{%s} = %s$.\\
+        loigiai = ('''Ta có $EF \\perp PH$ và $HQ \\perp PH$ nên $EF // HQ$ (từ vuông góc đến song song).\\\\
+Độ dài đoạn thẳng $PQ$ là: $PQ = PF + FQ = %s + %s = %s$.\\\\
+Xét $\\Delta PHQ$ có $EF // HQ$ ($E \\in PH$, $F \\in PQ$), theo định lí Thalès trong tam giác ta có:\\\\
+$\\dfrac{PE}{PH} = \\dfrac{PF}{PQ}$.\\\\
+Thay số vào tỉ lệ thức trên, ta được:\\\\
+$\\dfrac{%s}{y} = \\dfrac{%s}{%s} \\Rightarrow y = \\dfrac{%s \\cdot %s}{%s} = %s$.\\\\
 Vậy $y = %s$.'''
                    % (pf, fq_str, fmt_num(pq), pe, pf, fmt_num(pq), pe, fmt_num(pq), pf, y_str, y_str))
 

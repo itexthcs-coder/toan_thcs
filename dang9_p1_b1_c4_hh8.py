@@ -161,15 +161,15 @@ def bt_dang9_p1_b1_c4_hh8(self):
         das3 = random.choice(s)
 
         # Câu hỏi
-        noidungcauhoi = ('''Cho $\Delta ABC$ có $AB = %s\\text{ cm}$, $AC = %s\\text{ cm}$. Trên cạnh $AB$ lấy điểm $M$ sao cho $AM = %s\\text{ cm}$, trên cạnh $AC$ lấy điểm $N$ sao cho $AN = %s\\text{ cm}$ như hình vẽ bên dưới. Khi đó khẳng định nào sau đây đúng?
+        noidungcauhoi = ('''Cho $\\Delta ABC$ có $AB = %s\\text{ cm}$, $AC = %s\\text{ cm}$. Trên cạnh $AB$ lấy điểm $M$ sao cho $AM = %s\\text{ cm}$, trên cạnh $AC$ lấy điểm $N$ sao cho $AN = %s\\text{ cm}$ như hình vẽ bên dưới. Khi đó khẳng định nào sau đây đúng?
 \\begin{center}
 \\begin{tikzpicture}[scale=1, font=\\footnotesize, line join=round, line cap=round, >=stealth]
-\coordinate (A) at (1.5,3);
-\coordinate (B) at (0,0);
-\coordinate (C) at (4.5,0);
-\coordinate (M) at ($(A)!0.4!(B)$);
-\coordinate (N) at ($(A)!0.4!(C)$);
-\draw[line width=1pt] (A)--(B)--(C)--cycle (M)--(N);
+\\coordinate (A) at (1.5,3);
+\\coordinate (B) at (0,0);
+\\coordinate (C) at (4.5,0);
+\\coordinate (M) at ($(A)!0.4!(B)$);
+\\coordinate (N) at ($(A)!0.4!(C)$);
+\\draw[line width=1pt] (A)--(B)--(C)--cycle (M)--(N);
 \\fill (A) circle (1pt) node[above] {$A$};
 \\fill (B) circle (1pt) node[below left] {$B$};
 \\fill (C) circle (1pt) node[below right] {$C$};
@@ -190,9 +190,9 @@ def bt_dang9_p1_b1_c4_hh8(self):
         random.shuffle(list_1)
 
         # Nội dung lời giải
-        loigiai = ('''Xét $\Delta ABC$ có $M \in AB$, $N \in AC$, ta có:\\
-$\dfrac{AM}{AB} = \dfrac{%s}{%s} = %s$ và $\dfrac{AN}{AC} = \dfrac{%s}{%s} = %s$.\\
-Vì $\dfrac{AM}{AB} = \dfrac{AN}{AC} = %s$ nên $MN // BC$ (theo định lí Thalès đảo).\\
+        loigiai = ('''Xét $\\Delta ABC$ có $M \\in AB$, $N \\in AC$, ta có:\\\\
+$\\dfrac{AM}{AB} = \\dfrac{%s}{%s} = %s$ và $\\dfrac{AN}{AC} = \\dfrac{%s}{%s} = %s$.\\\\
+Vì $\\dfrac{AM}{AB} = \\dfrac{AN}{AC} = %s$ nên $MN // BC$ (theo định lí Thalès đảo).\\\\
 Vậy $MN // BC$.'''
                    % (am, ab, latex(ts), an, ac, latex(ts), latex(ts)))
 

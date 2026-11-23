@@ -151,17 +151,17 @@ def bt_dang19_p1_b1_c4_hh8(self):
         das3 = random.choice(s)
 
         # Câu hỏi
-        noidungcauhoi = ('''Cho $\Delta ABC$ có $G$ là trọng tâm. Đường thẳng đi qua $G$ và song song với $BC$ cắt cạnh $AB$ tại $M$ như hình vẽ bên dưới. Tỉ số $%s$ bằng
+        noidungcauhoi = ('''Cho $\\Delta ABC$ có $G$ là trọng tâm. Đường thẳng đi qua $G$ và song song với $BC$ cắt cạnh $AB$ tại $M$ như hình vẽ bên dưới. Tỉ số $%s$ bằng
 \\begin{center}
 \\begin{tikzpicture}[scale=1, font=\\footnotesize, line join=round, line cap=round, >=stealth]
-\coordinate (A) at (1.8,3.2);
-\coordinate (B) at (0,0);
-\coordinate (C) at (4.8,0);
-\coordinate (D) at ($(B)!0.5!(C)$);
-\coordinate (G) at ($(A)!0.6667!(D)$);
-\coordinate (M) at ($(A)!0.6667!(B)$);
-\draw[line width=1pt] (A)--(B)--(C)--cycle (M)--(G);
-\draw[line width=1pt, dashed] (A)--(D);
+\\coordinate (A) at (1.8,3.2);
+\\coordinate (B) at (0,0);
+\\coordinate (C) at (4.8,0);
+\\coordinate (D) at ($(B)!0.5!(C)$);
+\\coordinate (G) at ($(A)!0.6667!(D)$);
+\\coordinate (M) at ($(A)!0.6667!(B)$);
+\\draw[line width=1pt] (A)--(B)--(C)--cycle (M)--(G);
+\\draw[line width=1pt, dashed] (A)--(D);
 \\fill (A) circle (1pt) node[above] {$A$};
 \\fill (B) circle (1pt) node[below left] {$B$};
 \\fill (C) circle (1pt) node[below right] {$C$};
@@ -183,11 +183,11 @@ def bt_dang19_p1_b1_c4_hh8(self):
         random.shuffle(list_1)
 
         # Nội dung lời giải
-        loigiai = ('''Gọi $D$ là trung điểm của cạnh $BC$, khi đó $AD$ là đường trung tuyến của $\Delta ABC$.\\
-Vì $G$ là trọng tâm của $\Delta ABC$ nên theo tính chất trọng tâm của tam giác ta có:\\
-$\dfrac{AG}{AD} = \dfrac{2}{3}$, suy ra $\dfrac{GD}{AD} = \dfrac{1}{3}$ và $\dfrac{AG}{GD} = 2$.\\
-Xét $\Delta ABD$ có $MG // BD$ ($M \in AB$, $G \in AD$), theo định lí Thalès trong tam giác ta có:\\
-$\dfrac{AM}{AB} = \dfrac{AG}{AD} = \dfrac{2}{3}$; $\quad \dfrac{MB}{AB} = \dfrac{GD}{AD} = \dfrac{1}{3}$; $\quad \dfrac{AM}{MB} = \dfrac{AG}{GD} = 2$.\\
+        loigiai = ('''Gọi $D$ là trung điểm của cạnh $BC$, khi đó $AD$ là đường trung tuyến của $\\Delta ABC$.\\\\
+Vì $G$ là trọng tâm của $\\Delta ABC$ nên theo tính chất trọng tâm của tam giác ta có:\\\\
+$\\dfrac{AG}{AD} = \\dfrac{2}{3}$, suy ra $\\dfrac{GD}{AD} = \\dfrac{1}{3}$ và $\\dfrac{AG}{GD} = 2$.\\\\
+Xét $\\Delta ABD$ có $MG // BD$ ($M \\in AB$, $G \\in AD$), theo định lí Thalès trong tam giác ta có:\\\\
+$\\dfrac{AM}{AB} = \\dfrac{AG}{AD} = \\dfrac{2}{3}$; $\\quad \\dfrac{MB}{AB} = \\dfrac{GD}{AD} = \\dfrac{1}{3}$; $\\quad \\dfrac{AM}{MB} = \\dfrac{AG}{GD} = 2$.\\\\
 Vậy $%s = %s$.'''
                    % (ti_so_hoi, dap_an_dung))
 

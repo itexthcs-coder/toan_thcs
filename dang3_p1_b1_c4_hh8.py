@@ -142,13 +142,13 @@ def bt_dang3_p1_b1_c4_hh8(self):
         d1, d2, d3, d4 = random.choice(bo_diem)
 
         # Các đáp án trắc nghiệm
-        du = ['$\dfrac{%s}{%s} = \dfrac{%s}{%s}$' % (d1, d2, d3, d4),
-              '$\dfrac{%s}{%s} = \dfrac{%s}{%s}$' % (d1, d3, d2, d4)]
+        du = ['$\\dfrac{%s}{%s} = \\dfrac{%s}{%s}$' % (d1, d2, d3, d4),
+              '$\\dfrac{%s}{%s} = \\dfrac{%s}{%s}$' % (d1, d3, d2, d4)]
         da = random.choice(du)
-        s = ['$\dfrac{%s}{%s} = \dfrac{%s}{%s}$' % (d1, d3, d4, d2),
-             '$\dfrac{%s}{%s} = \dfrac{%s}{%s}$' % (d1, d2, d4, d3),
-             '$\dfrac{%s}{%s} = \dfrac{%s}{%s}$' % (d1, d4, d2, d3),
-             '$\dfrac{%s}{%s} = \dfrac{%s}{%s}$' % (d2, d1, d3, d4)]
+        s = ['$\\dfrac{%s}{%s} = \\dfrac{%s}{%s}$' % (d1, d3, d4, d2),
+             '$\\dfrac{%s}{%s} = \\dfrac{%s}{%s}$' % (d1, d2, d4, d3),
+             '$\\dfrac{%s}{%s} = \\dfrac{%s}{%s}$' % (d1, d4, d2, d3),
+             '$\\dfrac{%s}{%s} = \\dfrac{%s}{%s}$' % (d2, d1, d3, d4)]
         das1 = random.choice(s)
         s.remove(das1)
         das2 = random.choice(s)
@@ -170,8 +170,8 @@ def bt_dang3_p1_b1_c4_hh8(self):
         random.shuffle(list_1)
 
         # Nội dung lời giải
-        loigiai = ('''Theo định nghĩa hai đoạn thẳng tỉ lệ: Hai đoạn thẳng $%s$ và $%s$ gọi là tỉ lệ với hai đoạn thẳng $%s$ và $%s$ nếu có tỉ lệ thức:\\
-$\dfrac{%s}{%s} = \dfrac{%s}{%s}$ hay $\dfrac{%s}{%s} = \dfrac{%s}{%s}$.\\
+        loigiai = ('''Theo định nghĩa hai đoạn thẳng tỉ lệ: Hai đoạn thẳng $%s$ và $%s$ gọi là tỉ lệ với hai đoạn thẳng $%s$ và $%s$ nếu có tỉ lệ thức:\\\\
+$\\dfrac{%s}{%s} = \\dfrac{%s}{%s}$ hay $\\dfrac{%s}{%s} = \\dfrac{%s}{%s}$.\\\\
 Vậy đáp án đúng là %s.'''
                    % (d1, d2, d3, d4, d1, d2, d3, d4, d1, d3, d2, d4, da))
 

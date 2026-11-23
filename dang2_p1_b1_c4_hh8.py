@@ -171,10 +171,10 @@ def bt_dang2_p1_b1_c4_hh8(self):
         random.shuffle(list_1)
 
         # Nội dung lời giải
-        loigiai = ('''Theo đề bài, tỉ số của hai đoạn thẳng $MN$ và $PQ$ là $%s$ nên ta có:\\
-$\dfrac{MN}{PQ} = %s$.\\
-Thay $PQ = %s\\text{ cm}$ vào hệ thức trên, ta được:\\
-$\dfrac{MN}{%s} = %s \Rightarrow MN = \dfrac{%s \cdot %s}{%s} = %s\\text{ (cm)}$.\\
+        loigiai = ('''Theo đề bài, tỉ số của hai đoạn thẳng $MN$ và $PQ$ là $%s$ nên ta có:\\\\
+$\\dfrac{MN}{PQ} = %s$.\\\\
+Thay $PQ = %s\\text{ cm}$ vào hệ thức trên, ta được:\\\\
+$\\dfrac{MN}{%s} = %s \\Rightarrow MN = \\dfrac{%s \\cdot %s}{%s} = %s\\text{ (cm)}$.\\\\
 Vậy độ dài đoạn thẳng $MN$ bằng $%s\\text{ cm}$.'''
                    % (latex(ts), latex(ts), pq, pq, latex(ts), pq, a, b, mn, mn))
 

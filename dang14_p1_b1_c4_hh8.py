@@ -166,17 +166,17 @@ def bt_dang14_p1_b1_c4_hh8(self):
         noidungcauhoi = ('''Tìm độ dài $y$ trong hình vẽ bên dưới (các số chỉ kích thước trên hình có cùng đơn vị đo).
 \\begin{center}
 \\begin{tikzpicture}[scale=1, font=\\footnotesize, line join=round, line cap=round, >=stealth]
-\coordinate (A) at (2.8,3.2);
-\coordinate (B) at (0,0);
-\coordinate (C) at (4.5,0);
-\coordinate (M) at ($(A)!0.55!(B)$);
+\\coordinate (A) at (2.8,3.2);
+\\coordinate (B) at (0,0);
+\\coordinate (C) at (4.5,0);
+\\coordinate (M) at ($(A)!0.55!(B)$);
 \coordinate (N) at ($(A)!0.55!(C)$);
-\draw[line width=1pt] (A)--(B)--(C)--cycle (M)--(N);
-\draw[<->, line width=1pt] (3.3,3.2)--(5.0,0) node[midway, right] {$%s$};
-\draw[line width=1pt] (0.35,0) arc (0:49:0.35);
-\draw[line width=1pt] (0.43,0) arc (0:49:0.43);
-\draw[line width=1pt] ($(M)+(0.35,0)$) arc (0:49:0.35);
-\draw[line width=1pt] ($(M)+(0.43,0)$) arc (0:49:0.43);
+\\draw[line width=1pt] (A)--(B)--(C)--cycle (M)--(N);
+\\draw[<->, line width=1pt] (3.3,3.2)--(5.0,0) node[midway, right] {$%s$};
+\\draw[line width=1pt] (0.35,0) arc (0:49:0.35);
+\\draw[line width=1pt] (0.43,0) arc (0:49:0.43);
+\\draw[line width=1pt] ($(M)+(0.35,0)$) arc (0:49:0.35);
+\\draw[line width=1pt] ($(M)+(0.43,0)$) arc (0:49:0.43);
 \\fill (A) circle (1pt) node[above] {$A$};
 \\fill (B) circle (1pt) node[below left] {$B$};
 \\fill (C) circle (1pt) node[below right] {$C$};
@@ -200,12 +200,12 @@ def bt_dang14_p1_b1_c4_hh8(self):
         random.shuffle(list_1)
 
         # Nội dung lời giải
-        loigiai = ('''Ta có $\widehat{AMN} = \widehat{ABC}$ (theo kí hiệu trên hình vẽ), mà hai góc này ở vị trí đồng vị nên $MN // BC$.\\
-Độ dài đoạn thẳng $NC$ là: $NC = AC - AN = %s - %s = %s$.\\
-Xét $\Delta ABC$ có $MN // BC$ ($M \in AB$, $N \in AC$), theo định lí Thalès trong tam giác ta có:\\
-$\dfrac{AM}{MB} = \dfrac{AN}{NC}$.\\
-Thay số vào tỉ lệ thức trên, ta được:\\
-$\dfrac{y}{%s} = \dfrac{%s}{%s} \Rightarrow y = \dfrac{%s \cdot %s}{%s} = %s$.\\
+        loigiai = ('''Ta có $\\widehat{AMN} = \\widehat{ABC}$ (theo kí hiệu trên hình vẽ), mà hai góc này ở vị trí đồng vị nên $MN // BC$.\\\\
+Độ dài đoạn thẳng $NC$ là: $NC = AC - AN = %s - %s = %s$.\\\\
+Xét $\\Delta ABC$ có $MN // BC$ ($M \\in AB$, $N \\in AC$), theo định lí Thalès trong tam giác ta có:\\\\
+$\\dfrac{AM}{MB} = \\dfrac{AN}{NC}$.\\\\
+Thay số vào tỉ lệ thức trên, ta được:\\\\
+$\\dfrac{y}{%s} = \\dfrac{%s}{%s} \\Rightarrow y = \\dfrac{%s \\cdot %s}{%s} = %s$.\\\\
 Vậy $y = %s$.'''
                    % (ac, an, nc, mb, an, nc, mb, an, nc, am, am))
 

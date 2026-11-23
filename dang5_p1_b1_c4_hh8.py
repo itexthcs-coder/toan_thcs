@@ -142,14 +142,14 @@ def bt_dang5_p1_b1_c4_hh8(self):
         A_t, B_t, C_t, M_t, N_t = random.choice(bo_ten)
 
         # Các đáp án trắc nghiệm
-        du = ['$\dfrac{%s%s}{%s%s} = \dfrac{%s%s}{%s%s}$' % (A_t, M_t, M_t, B_t, N_t, C_t, A_t, N_t),
-              '$\dfrac{%s%s}{%s%s} = \dfrac{%s%s}{%s%s}$' % (A_t, M_t, A_t, B_t, N_t, C_t, A_t, C_t),
-              '$\dfrac{%s%s}{%s%s} = \dfrac{%s%s}{%s%s}$' % (M_t, B_t, A_t, B_t, A_t, N_t, A_t, C_t)]
+        du = ['$\\dfrac{%s%s}{%s%s} = \\dfrac{%s%s}{%s%s}$' % (A_t, M_t, M_t, B_t, N_t, C_t, A_t, N_t),
+              '$\\dfrac{%s%s}{%s%s} = \\dfrac{%s%s}{%s%s}$' % (A_t, M_t, A_t, B_t, N_t, C_t, A_t, C_t),
+              '$\\dfrac{%s%s}{%s%s} = \\dfrac{%s%s}{%s%s}$' % (M_t, B_t, A_t, B_t, A_t, N_t, A_t, C_t)]
         da = random.choice(du)
-        s = ['$\dfrac{%s%s}{%s%s} = \dfrac{%s%s}{%s%s}$' % (A_t, M_t, A_t, B_t, A_t, N_t, A_t, C_t),
-             '$\dfrac{%s%s}{%s%s} = \dfrac{%s%s}{%s%s}$' % (A_t, M_t, M_t, B_t, A_t, N_t, N_t, C_t),
-             '$\dfrac{%s%s}{%s%s} = \dfrac{%s%s}{%s%s}$' % (M_t, B_t, A_t, B_t, N_t, C_t, A_t, C_t),
-             '$\dfrac{%s%s}{%s%s} = \dfrac{%s%s}{%s%s}$' % (A_t, B_t, A_t, M_t, A_t, C_t, A_t, N_t)]
+        s = ['$\\dfrac{%s%s}{%s%s} = \\dfrac{%s%s}{%s%s}$' % (A_t, M_t, A_t, B_t, A_t, N_t, A_t, C_t),
+             '$\\dfrac{%s%s}{%s%s} = \\dfrac{%s%s}{%s%s}$' % (A_t, M_t, M_t, B_t, A_t, N_t, N_t, C_t),
+             '$\\dfrac{%s%s}{%s%s} = \\dfrac{%s%s}{%s%s}$' % (M_t, B_t, A_t, B_t, N_t, C_t, A_t, C_t),
+             '$\\dfrac{%s%s}{%s%s} = \\dfrac{%s%s}{%s%s}$' % (A_t, B_t, A_t, M_t, A_t, C_t, A_t, N_t)]
         das1 = random.choice(s)
         s.remove(das1)
         das2 = random.choice(s)
@@ -157,15 +157,15 @@ def bt_dang5_p1_b1_c4_hh8(self):
         das3 = random.choice(s)
 
         # Câu hỏi
-        noidungcauhoi = ('''Cho hình vẽ bên dưới, biết $\Delta %s%s%s$ có $%s%s // %s%s$ ($%s \in %s%s$, $%s \in %s%s$). Khẳng định nào sau đây là \\textbf{sai}?
+        noidungcauhoi = ('''Cho hình vẽ bên dưới, biết $\\Delta %s%s%s$ có $%s%s // %s%s$ ($%s \\in %s%s$, $%s \\in %s%s$). Khẳng định nào sau đây là \\textbf{sai}?
 \\begin{center}
 \\begin{tikzpicture}[scale=1, font=\\footnotesize, line join=round, line cap=round, >=stealth]
-\coordinate (A) at (1.5,3);
-\coordinate (B) at (0,0);
-\coordinate (C) at (4.5,0);
-\coordinate (M) at ($(A)!0.45!(B)$);
-\coordinate (N) at ($(A)!0.45!(C)$);
-\draw[line width=1pt] (A)--(B)--(C)--cycle (M)--(N);
+\\coordinate (A) at (1.5,3);
+\\coordinate (B) at (0,0);
+\\coordinate (C) at (4.5,0);
+\\coordinate (M) at ($(A)!0.45!(B)$);
+\\coordinate (N) at ($(A)!0.45!(C)$);
+\\draw[line width=1pt] (A)--(B)--(C)--cycle (M)--(N);
 \\fill (A) circle (1pt) node[above] {$%s$};
 \\fill (B) circle (1pt) node[below left] {$%s$};
 \\fill (C) circle (1pt) node[below right] {$%s$};
@@ -187,8 +187,8 @@ def bt_dang5_p1_b1_c4_hh8(self):
         random.shuffle(list_1)
 
         # Nội dung lời giải
-        loigiai = ('''Xét $\Delta %s%s%s$ có $%s%s // %s%s$ ($%s \in %s%s$, $%s \in %s%s$), theo định lí Thalès trong tam giác ta có các tỉ lệ thức đúng là:\\
-$\dfrac{%s%s}{%s%s} = \dfrac{%s%s}{%s%s}$; $\quad \dfrac{%s%s}{%s%s} = \dfrac{%s%s}{%s%s}$; $\quad \dfrac{%s%s}{%s%s} = \dfrac{%s%s}{%s%s}$.\\
+        loigiai = ('''Xét $\\Delta %s%s%s$ có $%s%s // %s%s$ ($%s \\in %s%s$, $%s \\in %s%s$), theo định lí Thalès trong tam giác ta có các tỉ lệ thức đúng là:\\\\
+$\\dfrac{%s%s}{%s%s} = \\dfrac{%s%s}{%s%s}$; $\\quad \\dfrac{%s%s}{%s%s} = \\dfrac{%s%s}{%s%s}$; $\\quad \\dfrac{%s%s}{%s%s} = \\dfrac{%s%s}{%s%s}$.\\\\
 Do đó khẳng định sai là %s.'''
                    % (A_t, B_t, C_t, M_t, N_t, B_t, C_t, M_t, A_t, B_t, N_t, A_t, C_t,
                       A_t, M_t, A_t, B_t, A_t, N_t, A_t, C_t,

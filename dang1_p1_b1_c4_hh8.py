@@ -176,8 +176,8 @@ def bt_dang1_p1_b1_c4_hh8(self):
         random.shuffle(list_1)
 
         # Nội dung lời giải
-        loigiai = ('''Vì hai đoạn thẳng $AB$ và $CD$ đã có cùng đơn vị đo là $\\text{cm}$ nên tỉ số của hai đoạn thẳng $AB$ và $CD$ là:\\
-$\dfrac{AB}{CD} = \dfrac{%s}{%s} = %s$.\\
+        loigiai = ('''Vì hai đoạn thẳng $AB$ và $CD$ đã có cùng đơn vị đo là $\\text{cm}$ nên tỉ số của hai đoạn thẳng $AB$ và $CD$ là:\\\\
+$\\dfrac{AB}{CD} = \\dfrac{%s}{%s} = %s$.\\\\
 Vậy tỉ số của hai đoạn thẳng $AB$ và $CD$ là $%s$.'''
                    % (ab, cd, latex(ts), latex(ts)))
 

@@ -161,17 +161,17 @@ def bt_dang15_p1_b1_c4_hh8(self):
         das3 = random.choice(s)
 
         # Câu hỏi
-        noidungcauhoi = ('''Cho hai đoạn thẳng $AC$ và $BD$ cắt nhau tại $O$ sao cho $\widehat{OAB} = \widehat{OCD}$ như hình vẽ bên dưới. Biết $OA = %s\\text{ cm}$, $OC = %s\\text{ cm}$ và $OB = %s\\text{ cm}$. Độ dài đoạn thẳng $OD$ bằng
+        noidungcauhoi = ('''Cho hai đoạn thẳng $AC$ và $BD$ cắt nhau tại $O$ sao cho $\\widehat{OAB} = \\widehat{OCD}$ như hình vẽ bên dưới. Biết $OA = %s\\text{ cm}$, $OC = %s\\text{ cm}$ và $OB = %s\\text{ cm}$. Độ dài đoạn thẳng $OD$ bằng
 \\begin{center}
 \\begin{tikzpicture}[scale=1, font=\\footnotesize, line join=round, line cap=round, >=stealth]
-\coordinate (O) at (2,1.6);
-\coordinate (A) at (0.6,3);
-\coordinate (B) at (3.2,3);
-\coordinate (C) at (3.8,0);
-\coordinate (D) at (0.4,0);
-\draw[line width=1pt] (A)--(B)--(D)--(C)--cycle;
-\draw[line width=1pt] ($(A)+(0.35,0)$) arc (0:-45:0.35);
-\draw[line width=1pt] ($(C)+(-0.35,0)$) arc (180:135:0.35);
+\\coordinate (O) at (2,1.6);
+\\coordinate (A) at (0.6,3);
+\\coordinate (B) at (3.2,3);
+\\coordinate (C) at (3.8,0);
+\\coordinate (D) at (0.4,0);
+\\draw[line width=1pt] (A)--(B)--(D)--(C)--cycle;
+\\draw[line width=1pt] ($(A)+(0.35,0)$) arc (0:-45:0.35);
+\\draw[line width=1pt] ($(C)+(-0.35,0)$) arc (180:135:0.35);
 \\fill (O) circle (1pt) node[right] {$O$};
 \\fill (A) circle (1pt) node[above left] {$A$};
 \\fill (B) circle (1pt) node[above right] {$B$};
@@ -192,12 +192,12 @@ def bt_dang15_p1_b1_c4_hh8(self):
         random.shuffle(list_1)
 
         # Nội dung lời giải
-        loigiai = ('''Ta có $\widehat{OAB} = \widehat{OCD}$, mà hai góc này ở vị trí so le trong nên $AB // CD$.\\
-Trên tia đối của tia $OC$ lấy điểm $A'$ sao cho $OA' = OA = %s\\text{ cm}$, trên tia đối của tia $OD$ lấy điểm $B'$ sao cho $OB' = OB = %s\\text{ cm}$, khi đó $A'B' // AB // CD$.\\
-Xét $\Delta OCD$ có $A'B' // CD$, theo định lí Thalès trong tam giác ta có:\\
-$\dfrac{OA'}{OC} = \dfrac{OB'}{OD}$ hay $\dfrac{OA}{OC} = \dfrac{OB}{OD}$.\\
-Thay số vào tỉ lệ thức trên, ta được:\\
-$\dfrac{%s}{%s} = \dfrac{%s}{OD} \Rightarrow OD = \dfrac{%s \cdot %s}{%s} = %s\\text{ (cm)}$.\\
+        loigiai = ('''Ta có $\\widehat{OAB} = \\widehat{OCD}$, mà hai góc này ở vị trí so le trong nên $AB // CD$.\\\\
+Trên tia đối của tia $OC$ lấy điểm $A'$ sao cho $OA' = OA = %s\\text{ cm}$, trên tia đối của tia $OD$ lấy điểm $B'$ sao cho $OB' = OB = %s\\text{ cm}$, khi đó $A'B' // AB // CD$.\\\\
+Xét $\\Delta OCD$ có $A'B' // CD$, theo định lí Thalès trong tam giác ta có:\\\\
+$\\dfrac{OA'}{OC} = \\dfrac{OB'}{OD}$ hay $\\dfrac{OA}{OC} = \\dfrac{OB}{OD}$.\\\\
+Thay số vào tỉ lệ thức trên, ta được:\\\\
+$\\dfrac{%s}{%s} = \\dfrac{%s}{OD} \\Rightarrow OD = \\dfrac{%s \\cdot %s}{%s} = %s\\text{ (cm)}$.\\\\
 Vậy độ dài đoạn thẳng $OD$ bằng $%s\\text{ cm}$.'''
                    % (oa, ob, oa, oc, ob, oc, ob, oa, od, od))
 
