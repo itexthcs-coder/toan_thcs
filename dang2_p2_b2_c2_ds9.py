@@ -137,26 +137,26 @@ def bt_dang2_p2_b2_c2_ds9(self):
     noidungcauhoi = '''Cho hai số thực $a, b$ thỏa mãn $a > b$. Xét tính đúng sai của các khẳng định sau:'''
     
     # Mệnh đề 1
-    nb_da_1_d = '\\True $%da > %db$.' % (c1, c1)
-    nb_da_1_s = '$%da < %db$.' % (c1, c1)
+    nb_da_1_d = '\\True $%da > %db$' % (c1, c1)
+    nb_da_1_s = '$%da < %db$' % (c1, c1)
     list_nb_da_1 = [nb_da_1_d, nb_da_1_s]
     loigiai_nb_1 = '''Nhân cả hai vế của bất đẳng thức $a > b$ với số dương $%d > 0$ ta được bất đẳng thức cùng chiều: $%da > %db$.''' % (c1, c1, c1)
     
     # Mệnh đề 2
-    th_da_1_d = '\\True $-%da < -%db$.' % (c2, c2)
-    th_da_1_s = '$-%da > -%db$.' % (c2, c2)
+    th_da_1_d = '\\True $-%da < -%db$' % (c2, c2)
+    th_da_1_s = '$-%da > -%db$' % (c2, c2)
     list_th_da_1 = [th_da_1_d, th_da_1_s]
     loigiai_th_1 = '''Nhân cả hai vế của bất đẳng thức $a > b$ với số âm $-%d < 0$ ta được bất đẳng thức ngược chiều: $-%da < -%db$.''' % (c2, c2, c2)
     
     # Mệnh đề 3
-    vd_da_1_d = '\\True $\\dfrac{a}{%d} > \\dfrac{b}{%d}$.' % (c3, c3)
-    vd_da_1_s = '$\\dfrac{a}{%d} < \\dfrac{b}{%d}$.' % (c3, c3)
+    vd_da_1_d = '\\True $\\dfrac{a}{%d} > \\dfrac{b}{%d}$' % (c3, c3)
+    vd_da_1_s = '$\\dfrac{a}{%d} < \\dfrac{b}{%d}$' % (c3, c3)
     list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
     loigiai_vd_1 = '''Nhân cả hai vế của $a > b$ với số dương $\\dfrac{1}{%d} > 0$ ta được bất đẳng thức cùng chiều: $\\dfrac{a}{%d} > \\dfrac{b}{%d}$.''' % (c3, c3, c3)
     
     # Mệnh đề 4
-    vdc_da_1_d = '\\True $-\\sqrt{%d}a < -\\sqrt{%d}b$.' % (c4, c4)
-    vdc_da_1_s = '$-\\sqrt{%d}a > -\\sqrt{%d}b$.' % (c4, c4)
+    vdc_da_1_d = '\\True $-\\sqrt{%d}a < -\\sqrt{%d}b$' % (c4, c4)
+    vdc_da_1_s = '$-\\sqrt{%d}a > -\\sqrt{%d}b$' % (c4, c4)
     list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
     loigiai_vdc_1 = '''Nhân cả hai vế của $a > b$ với số âm $-\\sqrt{%d} < 0$ ta được bất đẳng thức ngược chiều: $-\\sqrt{%d}a < -\\sqrt{%d}b$.''' % (c4, c4, c4)
     

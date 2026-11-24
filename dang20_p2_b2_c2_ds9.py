@@ -148,27 +148,27 @@ def bt_dang20_p2_b2_c2_ds9(self):
     Gọi $x$ ($x > %d$) là dung lượng dữ liệu (tính theo GB) mà một gia đình sử dụng trong tháng. Xét tính đúng sai của các khẳng định sau:''' % (fmt_t(phi_a), gb_free, gb_free + 1, fmt_t(don_gia_gb), fmt_t(phi_b), gb_free)
     
     # Mệnh đề 1
-    nb_da_1_d = '\\True Số tiền phải trả khi dùng Gói A là $%s + %s(x - %d)$ (đồng).' % (fmt_t(phi_a), fmt_t(don_gia_gb), gb_free)
-    nb_da_1_s = 'Số tiền phải trả khi dùng Gói A là $%s + %sx$ (đồng).' % (fmt_t(phi_a), fmt_t(don_gia_gb))
+    nb_da_1_d = '\\True Số tiền phải trả khi dùng Gói A là $%s + %s(x - %d)$ (đồng)'% (fmt_t(phi_a), fmt_t(don_gia_gb), gb_free)
+    nb_da_1_s = 'Số tiền phải trả khi dùng Gói A là $%s + %sx$ (đồng)'% (fmt_t(phi_a), fmt_t(don_gia_gb))
     list_nb_da_1 = [nb_da_1_d, nb_da_1_s]
     loigiai_nb_1 = '''Vì miễn phí $%d\\text{ GB}$ đầu tiên nên dung lượng vượt mức bị tính phí là $x - %d\\text{ (GB)}$. Do đó tổng tiền Gói A là $%s + %s(x - %d)$ (đồng).''' % (gb_free, gb_free, fmt_t(phi_a), fmt_t(don_gia_gb), gb_free)
     
     # Mệnh đề 2
     tien_thu = phi_a + don_gia_gb * (gb_thu - gb_free)
-    th_da_1_d = '\\True Nếu gia đình dùng $%d\\text{ GB}$ trong tháng thì dùng Gói A tiết kiệm hơn Gói B.' % gb_thu
-    th_da_1_s = 'Nếu gia đình dùng $%d\\text{ GB}$ trong tháng thì dùng Gói B tiết kiệm hơn Gói A.' % gb_thu
+    th_da_1_d = '\\True Nếu gia đình dùng $%d\\text{ GB}$ trong tháng thì dùng Gói A tiết kiệm hơn Gói B'% gb_thu
+    th_da_1_s = 'Nếu gia đình dùng $%d\\text{ GB}$ trong tháng thì dùng Gói B tiết kiệm hơn Gói A'% gb_thu
     list_th_da_1 = [th_da_1_d, th_da_1_s]
     loigiai_th_1 = '''Khi dùng $%d\\text{ GB}$, tiền Gói A là $%s + %s \\cdot (%d - %d) = %s$ đồng, ít hơn Gói B ($%s$ đồng) nên Gói A tiết kiệm hơn.''' % (gb_thu, fmt_t(phi_a), fmt_t(don_gia_gb), gb_thu, gb_free, fmt_t(tien_thu), fmt_t(phi_b))
     
     # Mệnh đề 3
-    vd_da_1_d = '\\True Gói A rẻ hơn Gói B khi và chỉ khi $%s + %s(x - %d) < %s$.' % (fmt_t(phi_a), fmt_t(don_gia_gb), gb_free, fmt_t(phi_b))
-    vd_da_1_s = 'Gói A rẻ hơn Gói B khi và chỉ khi $%s + %s(x - %d) > %s$.' % (fmt_t(phi_a), fmt_t(don_gia_gb), gb_free, fmt_t(phi_b))
+    vd_da_1_d = '\\True Gói A rẻ hơn Gói B khi và chỉ khi $%s + %s(x - %d) < %s$'% (fmt_t(phi_a), fmt_t(don_gia_gb), gb_free, fmt_t(phi_b))
+    vd_da_1_s = 'Gói A rẻ hơn Gói B khi và chỉ khi $%s + %s(x - %d) > %s$'% (fmt_t(phi_a), fmt_t(don_gia_gb), gb_free, fmt_t(phi_b))
     list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
     loigiai_vd_1 = '''Gói A rẻ hơn Gói B nghĩa là chi phí Gói A nhỏ hơn chi phí Gói B: $%s + %s(x - %d) < %s$.''' % (fmt_t(phi_a), fmt_t(don_gia_gb), gb_free, fmt_t(phi_b))
     
     # Mệnh đề 4
-    vdc_da_1_d = '\\True Nếu gia đình sử dụng từ $%d\\text{ GB}$ trở lên trong tháng thì chọn Gói B sẽ có lợi hơn (hoặc bằng giá Gói A).' % moc_hoa
-    vdc_da_1_s = 'Nếu gia đình sử dụng từ $%d\\text{ GB}$ trở lên trong tháng thì chọn Gói A vẫn rẻ hơn Gói B.' % moc_hoa
+    vdc_da_1_d = '\\True Nếu gia đình sử dụng từ $%d\\text{ GB}$ trở lên trong tháng thì chọn Gói B sẽ có lợi hơn (hoặc bằng giá Gói A)'% moc_hoa
+    vdc_da_1_s = 'Nếu gia đình sử dụng từ $%d\\text{ GB}$ trở lên trong tháng thì chọn Gói A vẫn rẻ hơn Gói B'% moc_hoa
     list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
     loigiai_vdc_1 = '''Ta có $%s + %s(x - %d) \\ge %s \\Leftrightarrow %s(x - %d) \\ge %s \\Leftrightarrow x - %d \\ge %d \\Leftrightarrow x \\ge %d$. Vậy từ $%d\\text{ GB}$ trở lên thì Gói B có lợi hơn hoặc bằng Gói A.''' % (fmt_t(phi_a), fmt_t(don_gia_gb), gb_free, fmt_t(phi_b), fmt_t(don_gia_gb), gb_free, fmt_t(phi_b - phi_a), gb_free, gb_vuot_hoa, moc_hoa, moc_hoa)
     

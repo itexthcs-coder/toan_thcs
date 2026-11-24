@@ -140,20 +140,20 @@ def bt_dang18_p2_b2_c2_ds9(self):
     noidungcauhoi = '''Để đạt danh hiệu Học sinh Giỏi môn Toán trong học kì I, điểm trung bình môn Toán (chưa xét làm tròn) phải đạt từ $8,0$ trở lên. Bạn An đã có $4$ cột điểm đánh giá thường xuyên lần lượt là $%d; %d; %d; %d$ (hệ số 1) và điểm đánh giá giữa kì là $%s$ (hệ số 2). Gọi $x$ ($0 \\le x \\le 10$) là điểm đánh giá cuối kì (hệ số 3) của bạn An. Biết điểm trung bình môn được tính bằng tổng điểm có hệ số chia cho tổng các hệ số ($1 + 1 + 1 + 1 + 2 + 3 = 9$). Xét tính đúng sai của các khẳng định sau:''' % (tx[0], tx[1], tx[2], tx[3], gk_str)
     
     # Mệnh đề 1
-    nb_da_1_d = '\\True Tổng điểm có hệ số của An trước khi thi cuối kì là $%d$.' % tong_hs
-    nb_da_1_s = 'Tổng điểm có hệ số của An trước khi thi cuối kì là $%d$.' % (tong_hs - 2)
+    nb_da_1_d = '\\True Tổng điểm có hệ số của An trước khi thi cuối kì là $%d$'% tong_hs
+    nb_da_1_s = 'Tổng điểm có hệ số của An trước khi thi cuối kì là $%d$'% (tong_hs - 2)
     list_nb_da_1 = [nb_da_1_d, nb_da_1_s]
     loigiai_nb_1 = '''Tổng điểm có hệ số trước khi thi cuối kì là: $%d + %d + %d + %d + %s \\cdot 2 = %d$.''' % (tx[0], tx[1], tx[2], tx[3], gk_str, tong_hs)
     
     # Mệnh đề 2
-    th_da_1_d = '\\True Để đạt điểm trung bình từ $8,0$ trở lên, điểm $x$ phải thỏa mãn $\\dfrac{%d + 3x}{9} \\ge 8,0$.' % tong_hs
-    th_da_1_s = 'Để đạt điểm trung bình từ $8,0$ trở lên, điểm $x$ phải thỏa mãn $\\dfrac{%d + 3x}{9} > 8,0$.' % tong_hs
+    th_da_1_d = '\\True Để đạt điểm trung bình từ $8,0$ trở lên, điểm $x$ phải thỏa mãn $\\dfrac{%d + 3x}{9} \\ge 8,0$'% tong_hs
+    th_da_1_s = 'Để đạt điểm trung bình từ $8,0$ trở lên, điểm $x$ phải thỏa mãn $\\dfrac{%d + 3x}{9} > 8,0$'% tong_hs
     list_th_da_1 = [th_da_1_d, th_da_1_s]
     loigiai_th_1 = '''Điểm trung bình môn là $\\dfrac{%d + 3x}{9}$. Yêu cầu đạt từ $8,0$ trở lên được biểu diễn bởi bất đẳng thức $\\dfrac{%d + 3x}{9} \\ge 8,0$.''' % (tong_hs, tong_hs)
     
     # Mệnh đề 3
-    vd_da_1_d = '\\True Từ bất đẳng thức ở ý b, suy ra $3x \\ge %d$.' % can_3x
-    vd_da_1_s = 'Từ bất đẳng thức ở ý b, suy ra $3x \\ge %d$.' % (can_3x - 2)
+    vd_da_1_d = '\\True Từ bất đẳng thức ở ý b, suy ra $3x \\ge %d$'% can_3x
+    vd_da_1_s = 'Từ bất đẳng thức ở ý b, suy ra $3x \\ge %d$'% (can_3x - 2)
     list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
     loigiai_vd_1 = '''Nhân cả hai vế của $\\dfrac{%d + 3x}{9} \\ge 8,0$ với $9 > 0$ được $%d + 3x \\ge 72$. Cộng hai vế với $-%d$ ta được $3x \\ge %d$.''' % (tong_hs, tong_hs, tong_hs, can_3x)
     
@@ -161,13 +161,13 @@ def bt_dang18_p2_b2_c2_ds9(self):
     min_x = round(can_3x / 3, 2)
     sai_x = round(min_x - 0.5, 1)
     if can_3x % 3 == 0:
-        vdc_da_1_d = '\\True Bạn An cần đạt ít nhất $%d$ điểm trong bài thi cuối kì để có điểm trung bình từ $8,0$ trở lên.' % (can_3x // 3)
-        vdc_da_1_s = 'Bạn An chỉ cần đạt $%s$ điểm trong bài thi cuối kì thì điểm trung bình đã đạt từ $8,0$ trở lên.' % str(sai_x).replace('.', ',')
+        vdc_da_1_d = '\\True Bạn An cần đạt ít nhất $%d$ điểm trong bài thi cuối kì để có điểm trung bình từ $8,0$ trở lên'% (can_3x // 3)
+        vdc_da_1_s = 'Bạn An chỉ cần đạt $%s$ điểm trong bài thi cuối kì thì điểm trung bình đã đạt từ $8,0$ trở lên'% str(sai_x).replace('.', ',')
         loigiai_vdc_1 = '''Nhân hai vế của $3x \\ge %d$ với $\\dfrac{1}{3} > 0$ ta được $x \\ge %d$. Vậy An cần đạt ít nhất $%d$ điểm.''' % (can_3x, can_3x // 3, can_3x // 3)
     else:
         diem_le = math.ceil(can_3x / 3 * 4) / 4
-        vdc_da_1_d = '\\True Nếu bài thi cuối kì được tính điểm lẻ đến $0,25$ thì An cần đạt ít nhất $%s$ điểm.' % str(diem_le).replace('.', ',')
-        vdc_da_1_s = 'Bạn An chỉ cần đạt $%s$ điểm trong bài thi cuối kì thì điểm trung bình đã đạt từ $8,0$ trở lên.' % str(sai_x).replace('.', ',')
+        vdc_da_1_d = '\\True Nếu bài thi cuối kì được tính điểm lẻ đến $0,25$ thì An cần đạt ít nhất $%s$ điểm'% str(diem_le).replace('.', ',')
+        vdc_da_1_s = 'Bạn An chỉ cần đạt $%s$ điểm trong bài thi cuối kì thì điểm trung bình đã đạt từ $8,0$ trở lên'% str(sai_x).replace('.', ',')
         loigiai_vdc_1 = '''Nhân hai vế của $3x \\ge %d$ với $\\dfrac{1}{3} > 0$ ta được $x \\ge \\dfrac{%d}{3} \\approx %s$. Nếu điểm lẻ đến $0,25$ thì An cần đạt ít nhất $%s$ điểm.''' % (can_3x, can_3x, str(min_x).replace('.', ','), str(diem_le).replace('.', ','))
     
     list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]

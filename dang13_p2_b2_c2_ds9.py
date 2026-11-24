@@ -137,26 +137,26 @@ def bt_dang13_p2_b2_c2_ds9(self):
     noidungcauhoi = '''Cho ba số thực $a, b, c$ thỏa mãn $a < b$ và $b < c$. Xét tính đúng sai của các khẳng định sau:'''
     
     # Mệnh đề 1
-    nb_da_1_d = '\\True $a < c$.'
-    nb_da_1_s = '$a > c$.'
+    nb_da_1_d = '\\True $a < c$'
+    nb_da_1_s = '$a > c$'
     list_nb_da_1 = [nb_da_1_d, nb_da_1_s]
     loigiai_nb_1 = '''Theo tính chất bắc cầu của bất đẳng thức: vì $a < b$ và $b < c$ nên $a < c$.'''
     
     # Mệnh đề 2
-    th_da_1_d = '\\True $a + %d < c + %d$.' % (c1, c1)
-    th_da_1_s = '$a + %d > c + %d$.' % (c1, c1)
+    th_da_1_d = '\\True $a + %d < c + %d$'% (c1, c1)
+    th_da_1_s = '$a + %d > c + %d$'% (c1, c1)
     list_th_da_1 = [th_da_1_d, th_da_1_s]
     loigiai_th_1 = '''Cộng cả hai vế của bất đẳng thức $a < c$ với $%d$ ta được $a + %d < c + %d$.''' % (c1, c1, c1)
     
     # Mệnh đề 3
-    vd_da_1_d = '\\True $-%da > -%dc$.' % (k2, k2)
-    vd_da_1_s = '$-%da < -%dc$.' % (k2, k2)
+    vd_da_1_d = '\\True $-%da > -%dc$'% (k2, k2)
+    vd_da_1_s = '$-%da < -%dc$'% (k2, k2)
     list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
     loigiai_vd_1 = '''Nhân cả hai vế của $a < c$ với số âm $-%d < 0$, đổi chiều bất đẳng thức ta được $-%da > -%dc$.''' % (k2, k2, k2)
     
     # Mệnh đề 4
-    vdc_da_1_d = '\\True $%da - %d < %dc - %d$.' % (k3, d3+2, k3, d3)
-    vdc_da_1_s = '$%da - %d > %dc - %d$.' % (k3, d3+2, k3, d3)
+    vdc_da_1_d = '\\True $%da - %d < %dc - %d$'% (k3, d3+2, k3, d3)
+    vdc_da_1_s = '$%da - %d > %dc - %d$'% (k3, d3+2, k3, d3)
     list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
     loigiai_vdc_1 = '''Ta có $a < c \\Rightarrow %da < %dc \\Rightarrow %da - %d < %dc - %d$. Mặt khác $-%d < -%d \\Rightarrow %dc - %d < %dc - %d$. Theo tính chất bắc cầu suy ra $%da - %d < %dc - %d$.''' % (k3, k3, k3, d3+2, k3, d3+2, d3+2, d3, k3, d3+2, k3, d3, k3, d3+2, k3, d3)
     

@@ -139,28 +139,28 @@ def bt_dang14_p2_b2_c2_ds9(self):
     noidungcauhoi = '''Cho số thực $x$ thỏa mãn $%d \\le x \\le %d$. Xét tính đúng sai của các khẳng định sau:''' % (a, b)
     
     # Mệnh đề 1
-    nb_da_1_d = '\\True $%d \\le %dx \\le %d$.' % (k1*a, k1, k1*b)
-    nb_da_1_s = '$%d \\le %dx \\le %d$.' % (k1*b, k1, k1*a)
+    nb_da_1_d = '\\True $%d \\le %dx \\le %d$'% (k1*a, k1, k1*b)
+    nb_da_1_s = '$%d \\le %dx \\le %d$'% (k1*b, k1, k1*a)
     list_nb_da_1 = [nb_da_1_d, nb_da_1_s]
     loigiai_nb_1 = '''Nhân cả hai vế của các bất đẳng thức $%d \\le x \\le %d$ với số dương $%d > 0$ ta được $%d \\le %dx \\le %d$.''' % (a, b, k1, k1*a, k1, k1*b)
     
     # Mệnh đề 2
-    th_da_1_d = '\\True $%d \\le %dx + %d \\le %d$.' % (k1*a + c2, k1, c2, k1*b + c2)
-    th_da_1_s = '$%d \\le %dx + %d \\le %d$.' % (k1*a - c2, k1, c2, k1*b - c2)
+    th_da_1_d = '\\True $%d \\le %dx + %d \\le %d$'% (k1*a + c2, k1, c2, k1*b + c2)
+    th_da_1_s = '$%d \\le %dx + %d \\le %d$'% (k1*a - c2, k1, c2, k1*b - c2)
     list_th_da_1 = [th_da_1_d, th_da_1_s]
     loigiai_th_1 = '''Cộng $%d$ vào các vế của $%d \\le %dx \\le %d$ ta được $%d \\le %dx + %d \\le %d$.''' % (c2, k1*a, k1, k1*b, k1*a + c2, k1, c2, k1*b + c2)
     
     # Mệnh đề 3
-    vd_da_1_d = '\\True $%d \\le -x \\le %d$.' % (-b, -a)
-    vd_da_1_s = '$%d \\le -x \\le %d$.' % (a, b)
+    vd_da_1_d = '\\True $%d \\le -x \\le %d$'% (-b, -a)
+    vd_da_1_s = '$%d \\le -x \\le %d$'% (a, b)
     list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
     loigiai_vd_1 = '''Nhân các vế của $%d \\le x \\le %d$ với số âm $-1 < 0$, đổi chiều bất đẳng thức ta được $%d \\ge -x \\ge %d$ hay $%d \\le -x \\le %d$.''' % (a, b, -a, -b, -b, -a)
     
     # Mệnh đề 4
     lo4 = c4 - k4*b
     hi4 = c4 - k4*a
-    vdc_da_1_d = '\\True $%d \\le %d - %dx \\le %d$.' % (lo4, c4, k4, hi4)
-    vdc_da_1_s = '$%d \\le %d - %dx \\le %d$.' % (hi4, c4, k4, lo4)
+    vdc_da_1_d = '\\True $%d \\le %d - %dx \\le %d$'% (lo4, c4, k4, hi4)
+    vdc_da_1_s = '$%d \\le %d - %dx \\le %d$'% (hi4, c4, k4, lo4)
     list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
     loigiai_vdc_1 = '''Nhân các vế của $%d \\le x \\le %d$ với $-%d < 0$ được $%d \\le -%dx \\le %d$. Cộng thêm $%d$ ta được $%d \\le %d - %dx \\le %d$.''' % (a, b, k4, -k4*b, k4, -k4*a, c4, lo4, c4, k4, hi4)
     

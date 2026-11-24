@@ -146,26 +146,26 @@ def bt_dang8_p2_b2_c2_ds9(self):
     noidungcauhoi = '''Biết $%s < \\sqrt{%d} < %s$. Xét tính đúng sai của các khẳng định sau:''' % (fmt(lo), n_can, fmt(hi))
     
     # Mệnh đề 1
-    nb_da_1_d = '\\True $\\sqrt{%d} + %d < %s$.' % (n_can, c1, fmt(tong_hi))
-    nb_da_1_s = '$\\sqrt{%d} + %d > %s$.' % (n_can, c1, fmt(tong_hi))
+    nb_da_1_d = '\\True $\\sqrt{%d} + %d < %s$'% (n_can, c1, fmt(tong_hi))
+    nb_da_1_s = '$\\sqrt{%d} + %d > %s$'% (n_can, c1, fmt(tong_hi))
     list_nb_da_1 = [nb_da_1_d, nb_da_1_s]
     loigiai_nb_1 = '''Cộng $%d$ vào hai vế của bất đẳng thức $\\sqrt{%d} < %s$ ta được $\\sqrt{%d} + %d < %s$.''' % (c1, n_can, fmt(hi), n_can, c1, fmt(tong_hi))
     
     # Mệnh đề 2
-    th_da_1_d = '\\True $2\\sqrt{%d} > %s$.' % (n_can, fmt(nhan2_lo))
-    th_da_1_s = '$2\\sqrt{%d} < %s$.' % (n_can, fmt(nhan2_lo))
+    th_da_1_d = '\\True $2\\sqrt{%d} > %s$'% (n_can, fmt(nhan2_lo))
+    th_da_1_s = '$2\\sqrt{%d} < %s$'% (n_can, fmt(nhan2_lo))
     list_th_da_1 = [th_da_1_d, th_da_1_s]
     loigiai_th_1 = '''Nhân cả hai vế của bất đẳng thức $\\sqrt{%d} > %s$ với số dương $2 > 0$ ta được $2\\sqrt{%d} > %s$.''' % (n_can, fmt(lo), n_can, fmt(nhan2_lo))
     
     # Mệnh đề 3
-    vd_da_1_d = '\\True $-\\sqrt{%d} < -%s$.' % (n_can, fmt(lo))
-    vd_da_1_s = '$-\\sqrt{%d} > -%s$.' % (n_can, fmt(lo))
+    vd_da_1_d = '\\True $-\\sqrt{%d} < -%s$'% (n_can, fmt(lo))
+    vd_da_1_s = '$-\\sqrt{%d} > -%s$'% (n_can, fmt(lo))
     list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
     loigiai_vd_1 = '''Nhân cả hai vế của bất đẳng thức $\\sqrt{%d} > %s$ với $-1 < 0$, đổi chiều bất đẳng thức ta được $-\\sqrt{%d} < -%s$.''' % (n_can, fmt(lo), n_can, fmt(lo))
     
     # Mệnh đề 4
-    vdc_da_1_d = '\\True $5 - 3\\sqrt{%d} > %s$.' % (n_can, fmt(tru3_hi))
-    vdc_da_1_s = '$5 - 3\\sqrt{%d} < %s$.' % (n_can, fmt(tru3_hi))
+    vdc_da_1_d = '\\True $5 - 3\\sqrt{%d} > %s$'% (n_can, fmt(tru3_hi))
+    vdc_da_1_s = '$5 - 3\\sqrt{%d} < %s$'% (n_can, fmt(tru3_hi))
     list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
     loigiai_vdc_1 = '''Nhân hai vế của $\\sqrt{%d} < %s$ với $-3 < 0$ được $-3\\sqrt{%d} > -%s$. Cộng hai vế với $5$ ta được $5 - 3\\sqrt{%d} > %s$.''' % (n_can, fmt(hi), n_can, fmt(round(3*hi, 2)), n_can, fmt(tru3_hi))
     

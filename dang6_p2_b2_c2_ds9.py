@@ -137,26 +137,26 @@ def bt_dang6_p2_b2_c2_ds9(self):
     noidungcauhoi = '''Xét tính đúng sai của các khẳng định về so sánh phân số sau:'''
     
     # Mệnh đề 1
-    nb_da_1_d = '\\True Vì $\\dfrac{%d}{%d} < 1$ và $1 < \\dfrac{%d}{%d}$ nên $\\dfrac{%d}{%d} < \\dfrac{%d}{%d}$.' % (n1-1, n1, n1+2, n1+1, n1-1, n1, n1+2, n1+1)
-    nb_da_1_s = 'Vì $\\dfrac{%d}{%d} < 1$ và $1 < \\dfrac{%d}{%d}$ nên $\\dfrac{%d}{%d} > \\dfrac{%d}{%d}$.' % (n1-1, n1, n1+2, n1+1, n1-1, n1, n1+2, n1+1)
+    nb_da_1_d = '\\True Vì $\\dfrac{%d}{%d} < 1$ và $1 < \\dfrac{%d}{%d}$ nên $\\dfrac{%d}{%d} < \\dfrac{%d}{%d}$' % (n1-1, n1, n1+2, n1+1, n1-1, n1, n1+2, n1+1)
+    nb_da_1_s = 'Vì $\\dfrac{%d}{%d} < 1$ và $1 < \\dfrac{%d}{%d}$ nên $\\dfrac{%d}{%d} > \\dfrac{%d}{%d}$' % (n1-1, n1, n1+2, n1+1, n1-1, n1, n1+2, n1+1)
     list_nb_da_1 = [nb_da_1_d, nb_da_1_s]
     loigiai_nb_1 = '''Theo tính chất bắc cầu: nếu $a < 1$ và $1 < b$ thì $a < b$. Do đó $\\dfrac{%d}{%d} < \\dfrac{%d}{%d}$.''' % (n1-1, n1, n1+2, n1+1)
     
     # Mệnh đề 2
-    th_da_1_d = '\\True Vì $-\\dfrac{%d}{%d} < -1$ và $-1 < -\\dfrac{%d}{%d}$ nên $-\\dfrac{%d}{%d} < -\\dfrac{%d}{%d}$.' % (n2+1, n2, n2-1, n2, n2+1, n2, n2-1, n2)
-    th_da_1_s = 'Vì $-\\dfrac{%d}{%d} < -1$ và $-1 < -\\dfrac{%d}{%d}$ nên $-\\dfrac{%d}{%d} > -\\dfrac{%d}{%d}$.' % (n2+1, n2, n2-1, n2, n2+1, n2, n2-1, n2)
+    th_da_1_d = '\\True Vì $-\\dfrac{%d}{%d} < -1$ và $-1 < -\\dfrac{%d}{%d}$ nên $-\\dfrac{%d}{%d} < -\\dfrac{%d}{%d}$' % (n2+1, n2, n2-1, n2, n2+1, n2, n2-1, n2)
+    th_da_1_s = 'Vì $-\\dfrac{%d}{%d} < -1$ và $-1 < -\\dfrac{%d}{%d}$ nên $-\\dfrac{%d}{%d} > -\\dfrac{%d}{%d}$' % (n2+1, n2, n2-1, n2, n2+1, n2, n2-1, n2)
     list_th_da_1 = [th_da_1_d, th_da_1_s]
     loigiai_th_1 = '''Theo tính chất bắc cầu: $-\\dfrac{%d}{%d} < -1 < -\\dfrac{%d}{%d} \\Rightarrow -\\dfrac{%d}{%d} < -\\dfrac{%d}{%d}$.''' % (n2+1, n2, n2-1, n2, n2+1, n2, n2-1, n2)
     
     # Mệnh đề 3
-    vd_da_1_d = '\\True $\\dfrac{%d}{%d} > \\dfrac{%d}{%d}$.' % (n3, n3-1, n3-1, n3)
-    vd_da_1_s = '$\\dfrac{%d}{%d} < \\dfrac{%d}{%d}$.' % (n3, n3-1, n3-1, n3)
+    vd_da_1_d = '\\True $\\dfrac{%d}{%d} > \\dfrac{%d}{%d}$' % (n3, n3-1, n3-1, n3)
+    vd_da_1_s = '$\\dfrac{%d}{%d} < \\dfrac{%d}{%d}$' % (n3, n3-1, n3-1, n3)
     list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
     loigiai_vd_1 = '''Ta có $\\dfrac{%d}{%d} = 1 + \\dfrac{1}{%d} > 1$ và $\\dfrac{%d}{%d} = 1 - \\dfrac{1}{%d} < 1$. Theo tính chất bắc cầu suy ra $\\dfrac{%d}{%d} > \\dfrac{%d}{%d}$.''' % (n3, n3-1, n3-1, n3-1, n3, n3, n3, n3-1, n3-1, n3)
     
     # Mệnh đề 4
-    vdc_da_1_d = '\\True $-\\dfrac{%d}{%d} > -\\dfrac{%d}{%d}$.' % (n4, n4+1, n4+1, n4)
-    vdc_da_1_s = '$-\\dfrac{%d}{%d} < -\\dfrac{%d}{%d}$.' % (n4, n4+1, n4+1, n4)
+    vdc_da_1_d = '\\True $-\\dfrac{%d}{%d} > -\\dfrac{%d}{%d}$' % (n4, n4+1, n4+1, n4)
+    vdc_da_1_s = '$-\\dfrac{%d}{%d} < -\\dfrac{%d}{%d}$' % (n4, n4+1, n4+1, n4)
     list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
     loigiai_vdc_1 = '''Ta có $-\\dfrac{%d}{%d} = -1 + \\dfrac{1}{%d} > -1$ và $-\\dfrac{%d}{%d} = -1 - \\dfrac{1}{%d} < -1$. Theo tính chất bắc cầu suy ra $-\\dfrac{%d}{%d} > -\\dfrac{%d}{%d}$.''' % (n4, n4+1, n4+1, n4+1, n4, n4, n4, n4+1, n4+1, n4)
     

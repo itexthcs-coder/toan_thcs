@@ -138,26 +138,26 @@ def bt_dang15_p2_b2_c2_ds9(self):
     noidungcauhoi = '''Xét tính đúng sai của các mệnh đề toán học sau với mọi số thực $a, b$:'''
     
     # Mệnh đề 1
-    nb_da_1_d = '\\True Nếu $a < b$ thì $a - b < 0$.'
-    nb_da_1_s = 'Nếu $a < b$ thì $a - b > 0$.'
+    nb_da_1_d = '\\True Nếu $a < b$ thì $a - b < 0$'
+    nb_da_1_s = 'Nếu $a < b$ thì $a - b > 0$'
     list_nb_da_1 = [nb_da_1_d, nb_da_1_s]
     loigiai_nb_1 = '''Cộng cả hai vế của bất đẳng thức $a < b$ với $-b$ ta được $a - b < 0$.'''
     
     # Mệnh đề 2
-    th_da_1_d = '\\True Nếu $a + %d > b + %d$ thì $a > b$.' % (c2, d2)
-    th_da_1_s = 'Nếu $a + %d > b + %d$ thì $a < b$.' % (c2, d2)
+    th_da_1_d = '\\True Nếu $a + %d > b + %d$ thì $a > b$'% (c2, d2)
+    th_da_1_s = 'Nếu $a + %d > b + %d$ thì $a < b$'% (c2, d2)
     list_th_da_1 = [th_da_1_d, th_da_1_s]
     loigiai_th_1 = '''Ta có $a + %d > b + %d > b + %d$ (do $%d > %d$). Theo tính chất bắc cầu suy ra $a + %d > b + %d \\Rightarrow a > b$.''' % (c2, d2, c2, d2, c2, c2, c2)
     
     # Mệnh đề 3
-    vd_da_1_d = '\\True Nếu $-%da + 1 \\le -%db - %d$ thì $a \\ge b + %d$.' % (k3, k3, vp3, m3)
-    vd_da_1_s = 'Nếu $-%da + 1 \\le -%db - %d$ thì $a \\le b + %d$.' % (k3, k3, vp3, m3)
+    vd_da_1_d = '\\True Nếu $-%da + 1 \\le -%db - %d$ thì $a \\ge b + %d$'% (k3, k3, vp3, m3)
+    vd_da_1_s = 'Nếu $-%da + 1 \\le -%db - %d$ thì $a \\le b + %d$'% (k3, k3, vp3, m3)
     list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
     loigiai_vd_1 = '''Cộng $-1$ vào hai vế được $-%da \\le -%db - %d$. Nhân hai vế với $-\\dfrac{1}{%d} < 0$, đổi chiều bất đẳng thức ta được $a \\ge b + %d$.''' % (k3, k3, k3*m3, k3, m3)
     
     # Mệnh đề 4
-    vdc_da_1_d = '\\True Nếu $a > b$ thì $a - c > b - c$ với mọi số thực $c$.'
-    vdc_da_1_s = 'Nếu $a > b$ và $c > d$ thì luôn suy ra $a - c > b - d$.'
+    vdc_da_1_d = '\\True Nếu $a > b$ thì $a - c > b - c$ với mọi số thực $c$'
+    vdc_da_1_s = 'Nếu $a > b$ và $c > d$ thì luôn suy ra $a - c > b - d$'
     list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
     if vdc_da_1_s in list_vdc_da_1:
         loigiai_vdc_1 = '''Mệnh đề ``Nếu $a > b$ và $c > d$ thì $a - c > b - d$'' là sai (ví dụ: $5 > 4$ và $3 > 1$ nhưng $5 - 3 = 2 < 4 - 1 = 3$). Còn nếu cộng cùng $-c$ vào hai vế của $a > b$ thì luôn được $a - c > b - c$.'''

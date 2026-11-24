@@ -141,14 +141,14 @@ def bt_dang7_p2_b2_c2_ds9(self):
     noidungcauhoi = '''Cho hai phân số $A = \\dfrac{%d}{%d}$ và $B = \\dfrac{%d}{%d}$. Xét tính đúng sai của các khẳng định sau:''' % (tu1, m1, tu2, m2)
     
     # Mệnh đề 1
-    nb_da_1_d = '\\True $A > %d$.' % k
-    nb_da_1_s = '$A < %d$.' % k
+    nb_da_1_d = '\\True $A > %d$' % k
+    nb_da_1_s = '$A < %d$' % k
     list_nb_da_1 = [nb_da_1_d, nb_da_1_s]
     loigiai_nb_1 = '''Ta có $A = \\dfrac{%d}{%d} = %d + \\dfrac{1}{%d} > %d$.''' % (tu1, m1, k, m1, k)
     
     # Mệnh đề 2
-    th_da_1_d = '\\True $B < %d$.' % k
-    th_da_1_s = '$B > %d$.' % k
+    th_da_1_d = '\\True $B < %d$'% k
+    th_da_1_s = '$B > %d$'% k
     list_th_da_1 = [th_da_1_d, th_da_1_s]
     loigiai_th_1 = '''Ta có $B = \\dfrac{%d}{%d} = %d - \\dfrac{1}{%d} < %d$.''' % (tu2, m2, k, m2, k)
     
@@ -159,8 +159,8 @@ def bt_dang7_p2_b2_c2_ds9(self):
     loigiai_vd_1 = '''Vì $A > %d$ và $%d > B$, theo tính chất bắc cầu của bất đẳng thức suy ra $A > B$.''' % (k, k)
     
     # Mệnh đề 4
-    vdc_da_1_d = '\\True $A - %d > B - %d$.' % (k, k)
-    vdc_da_1_s = '$A - %d < B - %d$.' % (k, k)
+    vdc_da_1_d = '\\True $A - %d > B - %d$'% (k, k)
+    vdc_da_1_s = '$A - %d < B - %d$'% (k, k)
     list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
     loigiai_vdc_1 = '''Cộng cả hai vế của bất đẳng thức $A > B$ với $-%d$ ta được bất đẳng thức cùng chiều: $A - %d > B - %d$.''' % (k, k, k)
     

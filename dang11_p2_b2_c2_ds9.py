@@ -137,26 +137,26 @@ def bt_dang11_p2_b2_c2_ds9(self):
     noidungcauhoi = '''Cho số thực $x$ bất kì. Xét tính đúng sai của các khẳng định sau:'''
     
     # Mệnh đề 1
-    nb_da_1_d = '\\True $x^2 \\ge 0$ với mọi số thực $x$.'
-    nb_da_1_s = '$x^2 > 0$ với mọi số thực $x$.'
+    nb_da_1_d = '\\True $x^2 \\ge 0$ với mọi số thực $x$'
+    nb_da_1_s = '$x^2 > 0$ với mọi số thực $x$'
     list_nb_da_1 = [nb_da_1_d, nb_da_1_s]
     loigiai_nb_1 = '''Bình phương của mọi số thực luôn không âm, tức là $x^2 \\ge 0$ với mọi số thực $x$ (dấu bằng xảy ra khi $x = 0$).'''
     
     # Mệnh đề 2
-    th_da_1_d = '\\True $x^2 + %d \\ge %d$ với mọi số thực $x$.' % (c1, c1)
-    th_da_1_s = '$x^2 + %d \\le %d$ với mọi số thực $x$.' % (c1, c1)
+    th_da_1_d = '\\True $x^2 + %d \\ge %d$ với mọi số thực $x$'% (c1, c1)
+    th_da_1_s = '$x^2 + %d \\le %d$ với mọi số thực $x$'% (c1, c1)
     list_th_da_1 = [th_da_1_d, th_da_1_s]
     loigiai_th_1 = '''Cộng cả hai vế của bất đẳng thức $x^2 \\ge 0$ với $%d$ ta được $x^2 + %d \\ge %d$ với mọi số thực $x$.''' % (c1, c1, c1)
     
     # Mệnh đề 3
-    vd_da_1_d = '\\True $-%dx^2 \\le 0$ với mọi số thực $x$.' % k2
-    vd_da_1_s = '$-%dx^2 \\ge 0$ với mọi số thực $x$.' % k2
+    vd_da_1_d = '\\True $-%dx^2 \\le 0$ với mọi số thực $x$'% k2
+    vd_da_1_s = '$-%dx^2 \\ge 0$ với mọi số thực $x$'% k2
     list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
     loigiai_vd_1 = '''Nhân cả hai vế của bất đẳng thức $x^2 \\ge 0$ với số âm $-%d < 0$, đổi chiều bất đẳng thức ta được $-%dx^2 \\le 0$ với mọi số thực $x$.''' % (k2, k2)
     
     # Mệnh đề 4
-    vdc_da_1_d = '\\True $-%dx^2 + %d \\le %d$ với mọi số thực $x$.' % (k3, c3, c3)
-    vdc_da_1_s = '$-%dx^2 + %d \\ge %d$ với mọi số thực $x$.' % (k3, c3, c3)
+    vdc_da_1_d = '\\True $-%dx^2 + %d \\le %d$ với mọi số thực $x$'% (k3, c3, c3)
+    vdc_da_1_s = '$-%dx^2 + %d \\ge %d$ với mọi số thực $x$'% (k3, c3, c3)
     list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
     loigiai_vdc_1 = '''Từ $x^2 \\ge 0$, nhân hai vế với $-%d < 0$ được $-%dx^2 \\le 0$. Cộng cả hai vế với $%d$ ta được $-%dx^2 + %d \\le %d$ với mọi số thực $x$.''' % (k3, k3, c3, k3, c3, c3)
     

@@ -137,26 +137,26 @@ def bt_dang1_p2_b2_c2_ds9(self):
     noidungcauhoi = '''Cho hai số thực $x, y$ thỏa mãn $x < y$. Xét tính đúng sai của các khẳng định sau:'''
     
     # Mệnh đề 1
-    nb_da_1_d = '\\True $x + %d < y + %d$.' % (k1, k1)
-    nb_da_1_s = '$x + %d > y + %d$.' % (k1, k1)
+    nb_da_1_d = '\\True $x + %d < y + %d$' % (k1, k1)
+    nb_da_1_s = '$x + %d > y + %d$' % (k1, k1)
     list_nb_da_1 = [nb_da_1_d, nb_da_1_s]
     loigiai_nb_1 = '''Cộng cả hai vế của bất đẳng thức $x < y$ với cùng một số $%d$ ta được bất đẳng thức cùng chiều: $x + %d < y + %d$.''' % (k1, k1, k1)
     
     # Mệnh đề 2
-    th_da_1_d = '\\True $x - %d < y - %d$.' % (k2, k2)
-    th_da_1_s = '$x - %d > y - %d$.' % (k2, k2)
+    th_da_1_d = '\\True $x - %d < y - %d$' % (k2, k2)
+    th_da_1_s = '$x - %d > y - %d$' % (k2, k2)
     list_th_da_1 = [th_da_1_d, th_da_1_s]
     loigiai_th_1 = '''Cộng cả hai vế của bất đẳng thức $x < y$ với cùng một số $-%d$ ta được bất đẳng thức cùng chiều: $x - %d < y - %d$.''' % (k2, k2, k2)
     
     # Mệnh đề 3
-    vd_da_1_d = '\\True $x + \\sqrt{%d} < y + %d$.' % (n_can, m_int)
-    vd_da_1_s = '$x + \\sqrt{%d} > y + %d$.' % (n_can, m_int)
+    vd_da_1_d = '\\True $x + \\sqrt{%d} < y + %d$' % (n_can, m_int)
+    vd_da_1_s = '$x + \\sqrt{%d} > y + %d$' % (n_can, m_int)
     list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
     loigiai_vd_1 = '''Ta có $x < y \\Rightarrow x + \\sqrt{%d} < y + \\sqrt{%d}$. Mặt khác $\\sqrt{%d} < %d \\Rightarrow y + \\sqrt{%d} < y + %d$. Theo tính chất bắc cầu suy ra $x + \\sqrt{%d} < y + %d$.''' % (n_can, n_can, n_can, m_int, n_can, m_int, n_can, m_int)
     
     # Mệnh đề 4
-    vdc_da_1_d = '\\True $x - a^2 \\le y - a^2$ với mọi số thực $a$.'
-    vdc_da_1_s = '$x - a^2 > y - a^2$ với mọi số thực $a$.'
+    vdc_da_1_d = '\\True $x - a^2 \\le y - a^2$ với mọi số thực $a$'
+    vdc_da_1_s = '$x - a^2 > y - a^2$ với mọi số thực $a$'
     list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
     loigiai_vdc_1 = '''Cộng cả hai vế của $x < y$ với $-a^2$ ta được $x - a^2 < y - a^2$, do đó $x - a^2 \\le y - a^2$ luôn đúng với mọi số thực $a$.'''
     

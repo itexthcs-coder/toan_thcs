@@ -142,26 +142,26 @@ def bt_dang17_p2_b2_c2_ds9(self):
     noidungcauhoi = '''Lớp 9A có ngân sách quỹ lớp là $%s$ đồng để tổ chức liên hoan cuối năm. Chi phí thuê địa điểm và trang trí cố định là $%s$ đồng, chi phí ăn uống cho mỗi học sinh tham gia là $%s$ đồng. Gọi $x$ ($x \\in \\mathbb{N}^*$) là số học sinh tham gia buổi liên hoan. Xét tính đúng sai của các khẳng định sau:''' % (fmt_tien(ngan_sach), fmt_tien(co_dinh), fmt_tien(don_gia))
     
     # Mệnh đề 1
-    nb_da_1_d = '\\True Tổng chi phí tổ chức cho $x$ học sinh là $%s + %sx$ (đồng).' % (fmt_tien(co_dinh), fmt_tien(don_gia))
-    nb_da_1_s = 'Tổng chi phí tổ chức cho $x$ học sinh là $%sx + %s$ (đồng).' % (fmt_tien(co_dinh), fmt_tien(don_gia))
+    nb_da_1_d = '\\True Tổng chi phí tổ chức cho $x$ học sinh là $%s + %sx$ (đồng)'% (fmt_tien(co_dinh), fmt_tien(don_gia))
+    nb_da_1_s = 'Tổng chi phí tổ chức cho $x$ học sinh là $%sx + %s$ (đồng)'% (fmt_tien(co_dinh), fmt_tien(don_gia))
     list_nb_da_1 = [nb_da_1_d, nb_da_1_s]
     loigiai_nb_1 = '''Tổng chi phí gồm chi phí cố định $%s$ đồng và chi phí ăn uống cho $x$ học sinh là $%sx$ đồng, tổng cộng là $%s + %sx$ (đồng).''' % (fmt_tien(co_dinh), fmt_tien(don_gia), fmt_tien(co_dinh), fmt_tien(don_gia))
     
     # Mệnh đề 2
-    th_da_1_d = '\\True Để tổng chi phí không vượt quá ngân sách quỹ lớp thì $%s + %sx \\le %s$.' % (fmt_tien(co_dinh), fmt_tien(don_gia), fmt_tien(ngan_sach))
-    th_da_1_s = 'Để tổng chi phí không vượt quá ngân sách quỹ lớp thì $%s + %sx < %s$.' % (fmt_tien(co_dinh), fmt_tien(don_gia), fmt_tien(ngan_sach))
+    th_da_1_d = '\\True Để tổng chi phí không vượt quá ngân sách quỹ lớp thì $%s + %sx \\le %s$'% (fmt_tien(co_dinh), fmt_tien(don_gia), fmt_tien(ngan_sach))
+    th_da_1_s = 'Để tổng chi phí không vượt quá ngân sách quỹ lớp thì $%s + %sx < %s$'% (fmt_tien(co_dinh), fmt_tien(don_gia), fmt_tien(ngan_sach))
     list_th_da_1 = [th_da_1_d, th_da_1_s]
     loigiai_th_1 = '''Cụm từ ``không vượt quá'' được biểu diễn bằng dấu ``$\\le$'', nên bất đẳng thức đúng là $%s + %sx \\le %s$.''' % (fmt_tien(co_dinh), fmt_tien(don_gia), fmt_tien(ngan_sach))
     
     # Mệnh đề 3
-    vd_da_1_d = '\\True Số tiền tối đa dành cho phần ăn uống của cả lớp là $%s$ đồng.' % fmt_tien(con_lai)
-    vd_da_1_s = 'Số tiền tối đa dành cho phần ăn uống của cả lớp là $%s$ đồng.' % fmt_tien(ngan_sach)
+    vd_da_1_d = '\\True Số tiền tối đa dành cho phần ăn uống của cả lớp là $%s$ đồng'% fmt_tien(con_lai)
+    vd_da_1_s = 'Số tiền tối đa dành cho phần ăn uống của cả lớp là $%s$ đồng'% fmt_tien(ngan_sach)
     list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
     loigiai_vd_1 = '''Cộng cả hai vế của bất đẳng thức $%s + %sx \\le %s$ với $-%s$ ta được $%sx \\le %s$ (đồng).''' % (fmt_tien(co_dinh), fmt_tien(don_gia), fmt_tien(ngan_sach), fmt_tien(co_dinh), fmt_tien(don_gia), fmt_tien(con_lai))
     
     # Mệnh đề 4
-    vdc_da_1_d = '\\True Lớp 9A có thể tổ chức cho nhiều nhất $%d$ học sinh tham gia.' % max_hs
-    vdc_da_1_s = 'Lớp 9A có thể tổ chức cho nhiều nhất $%d$ học sinh tham gia.' % (max_hs - 1)
+    vdc_da_1_d = '\\True Lớp 9A có thể tổ chức cho nhiều nhất $%d$ học sinh tham gia'% max_hs
+    vdc_da_1_s = 'Lớp 9A có thể tổ chức cho nhiều nhất $%d$ học sinh tham gia'% (max_hs - 1)
     list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
     loigiai_vdc_1 = '''Nhân cả hai vế của $%sx \\le %s$ với số dương $\\dfrac{1}{%s} > 0$ ta được $x \\le %d$. Vậy có thể tổ chức cho nhiều nhất $%d$ học sinh tham gia.''' % (fmt_tien(don_gia), fmt_tien(con_lai), fmt_tien(don_gia), max_hs, max_hs)
     

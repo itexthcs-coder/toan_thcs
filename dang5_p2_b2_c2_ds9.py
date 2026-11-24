@@ -144,26 +144,26 @@ def bt_dang5_p2_b2_c2_ds9(self):
     noidungcauhoi = '''Xét tính đúng sai của các phép so sánh sau (không thực hiện phép tính trực tiếp giá trị biểu thức):'''
     
     # Mệnh đề 1
-    nb_da_1_d = '\\True $%d + (-%d) < %d + (-%d)$.' % (n1, c1, n1+1, c1)
-    nb_da_1_s = '$%d + (-%d) > %d + (-%d)$.' % (n1, c1, n1+1, c1)
+    nb_da_1_d = '\\True $%d + (-%d) < %d + (-%d)$' % (n1, c1, n1+1, c1)
+    nb_da_1_s = '$%d + (-%d) > %d + (-%d)$' % (n1, c1, n1+1, c1)
     list_nb_da_1 = [nb_da_1_d, nb_da_1_s]
     loigiai_nb_1 = '''Vì $%d < %d$, cộng cả hai vế với $-%d$ ta được $%d + (-%d) < %d + (-%d)$.''' % (n1, n1+1, c1, n1, c1, n1+1, c1)
     
     # Mệnh đề 2
-    th_da_1_d = '\\True $(-%d) \\cdot %d > (-%d) \\cdot %d$.' % (k2, a2, k2, b2)
-    th_da_1_s = '$(-%d) \\cdot %d < (-%d) \\cdot %d$.' % (k2, a2, k2, b2)
+    th_da_1_d = '\\True $(-%d) \\cdot %d > (-%d) \\cdot %d$' % (k2, a2, k2, b2)
+    th_da_1_s = '$(-%d) \\cdot %d < (-%d) \\cdot %d$' % (k2, a2, k2, b2)
     list_th_da_1 = [th_da_1_d, th_da_1_s]
     loigiai_th_1 = '''Vì $%d < %d$ và $-%d < 0$ nên khi nhân hai vế với $-%d$ ta được bất đẳng thức ngược chiều: $(-%d) \\cdot %d > (-%d) \\cdot %d$.''' % (a2, b2, k2, k2, k2, a2, k2, b2)
     
     # Mệnh đề 3
-    vd_da_1_d = '\\True $(-%d) \\cdot (-%d) + 2026 > (-%d) \\cdot (-%d) + 2026$.' % (k3, a3, k3, b3)
-    vd_da_1_s = '$(-%d) \\cdot (-%d) + 2026 < (-%d) \\cdot (-%d) + 2026$.' % (k3, a3, k3, b3)
+    vd_da_1_d = '\\True $(-%d) \\cdot (-%d) + 2026 > (-%d) \\cdot (-%d) + 2026$' % (k3, a3, k3, b3)
+    vd_da_1_s = '$(-%d) \\cdot (-%d) + 2026 < (-%d) \\cdot (-%d) + 2026$' % (k3, a3, k3, b3)
     list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
     loigiai_vd_1 = '''Vì $-%d < -%d$ và $-%d < 0$ nên $(-%d) \\cdot (-%d) > (-%d) \\cdot (-%d)$. Cộng cả hai vế với $2026$ ta được $(-%d) \\cdot (-%d) + 2026 > (-%d) \\cdot (-%d) + 2026$.''' % (a3, b3, k3, k3, a3, k3, b3, k3, a3, k3, b3)
     
     # Mệnh đề 4
-    vdc_da_1_d = '\\True $\\sqrt{%d} \\cdot (-%d) - 5 < \\sqrt{%d} \\cdot (-%d) - 5$.' % (can4, a4, can4, b4)
-    vdc_da_1_s = '$\\sqrt{%d} \\cdot (-%d) - 5 > \\sqrt{%d} \\cdot (-%d) - 5$.' % (can4, a4, can4, b4)
+    vdc_da_1_d = '\\True $\\sqrt{%d} \\cdot (-%d) - 5 < \\sqrt{%d} \\cdot (-%d) - 5$' % (can4, a4, can4, b4)
+    vdc_da_1_s = '$\\sqrt{%d} \\cdot (-%d) - 5 > \\sqrt{%d} \\cdot (-%d) - 5$' % (can4, a4, can4, b4)
     list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
     loigiai_vdc_1 = '''Vì $-%d < -%d$ và $\\sqrt{%d} > 0$ nên $\\sqrt{%d} \\cdot (-%d) < \\sqrt{%d} \\cdot (-%d)$. Cộng $-5$ vào hai vế ta được $\\sqrt{%d} \\cdot (-%d) - 5 < \\sqrt{%d} \\cdot (-%d) - 5$.''' % (a4, b4, can4, can4, a4, can4, b4, can4, a4, can4, b4)
     

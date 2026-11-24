@@ -137,26 +137,26 @@ def bt_dang3_p2_b2_c2_ds9(self):
     noidungcauhoi = '''Cho bất đẳng thức $m \\le n$. Xét tính đúng sai của các khẳng định sau:'''
     
     # Mệnh đề 1
-    nb_da_1_d = '\\True $%dm + %d \\le %dn + %d$.' % (a1, b1, a1, b1)
-    nb_da_1_s = '$%dm + %d \\ge %dn + %d$.' % (a1, b1, a1, b1)
+    nb_da_1_d = '\\True $%dm + %d \\le %dn + %d$' % (a1, b1, a1, b1)
+    nb_da_1_s = '$%dm + %d \\ge %dn + %d$' % (a1, b1, a1, b1)
     list_nb_da_1 = [nb_da_1_d, nb_da_1_s]
     loigiai_nb_1 = '''Vì $m \\le n$ và $%d > 0$ nên $%dm \\le %dn$. Cộng cả hai vế với $%d$ ta được $%dm + %d \\le %dn + %d$.''' % (a1, a1, a1, b1, a1, b1, a1, b1)
     
     # Mệnh đề 2
-    th_da_1_d = '\\True $-%dm + %d \\ge -%dn + %d$.' % (a2, b2, a2, b2)
-    th_da_1_s = '$-%dm + %d \\le -%dn + %d$.' % (a2, b2, a2, b2)
+    th_da_1_d = '\\True $-%dm + %d \\ge -%dn + %d$' % (a2, b2, a2, b2)
+    th_da_1_s = '$-%dm + %d \\le -%dn + %d$' % (a2, b2, a2, b2)
     list_th_da_1 = [th_da_1_d, th_da_1_s]
     loigiai_th_1 = '''Vì $m \\le n$ và $-%d < 0$ nên $-%dm \\ge -%dn$. Cộng cả hai vế với $%d$ ta được $-%dm + %d \\ge -%dn + %d$.''' % (a2, a2, a2, b2, a2, b2, a2, b2)
     
     # Mệnh đề 3
-    vd_da_1_d = '\\True $%dm - %d \\le %dn - %d$.' % (a3, b3, a3, b3)
-    vd_da_1_s = '$%dm - %d \\ge %dn - %d$.' % (a3, b3, a3, b3)
+    vd_da_1_d = '\\True $%dm - %d \\le %dn - %d$' % (a3, b3, a3, b3)
+    vd_da_1_s = '$%dm - %d \\ge %dn - %d$' % (a3, b3, a3, b3)
     list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
     loigiai_vd_1 = '''Nhân hai vế của $m \\le n$ với $%d > 0$ được $%dm \\le %dn$, sau đó cộng hai vế với $-%d$ ta được $%dm - %d \\le %dn - %d$.''' % (a3, a3, a3, b3, a3, b3, a3, b3)
     
     # Mệnh đề 4
-    vdc_da_1_d = '\\True $%d - %dm \\ge %d - %dn$.' % (b4, a4, b4, a4)
-    vdc_da_1_s = '$%d - %dm \\le %d - %dn$.' % (b4, a4, b4, a4)
+    vdc_da_1_d = '\\True $%d - %dm \\ge %d - %dn$' % (b4, a4, b4, a4)
+    vdc_da_1_s = '$%d - %dm \\le %d - %dn$' % (b4, a4, b4, a4)
     list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
     loigiai_vdc_1 = '''Nhân hai vế của $m \\le n$ với $-%d < 0$ ta được $-%dm \\ge -%dn$. Cộng cả hai vế với $%d$ ta được $%d - %dm \\ge %d - %dn$.''' % (a4, a4, a4, b4, b4, a4, b4, a4)
     

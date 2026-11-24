@@ -138,26 +138,26 @@ def bt_dang12_p2_b2_c2_ds9(self):
     noidungcauhoi = '''Cho $a > b > 0$. Xét tính đúng sai của các khẳng định sau:'''
     
     # Mệnh đề 1
-    nb_da_1_d = '\\True $a + %d > b + %d$.' % (c1, c1)
-    nb_da_1_s = '$a + %d < b + %d$.' % (c1, c1)
+    nb_da_1_d = '\\True $a + %d > b + %d$'% (c1, c1)
+    nb_da_1_s = '$a + %d < b + %d$'% (c1, c1)
     list_nb_da_1 = [nb_da_1_d, nb_da_1_s]
     loigiai_nb_1 = '''Cộng cả hai vế của bất đẳng thức $a > b$ với $%d$ ta được $a + %d > b + %d$.''' % (c1, c1, c1)
     
     # Mệnh đề 2
-    th_da_1_d = '\\True $-%da + %d < -%db + %d$.' % (k2, c2, k2, c2)
-    th_da_1_s = '$-%da + %d > -%db + %d$.' % (k2, c2, k2, c2)
+    th_da_1_d = '\\True $-%da + %d < -%db + %d$'% (k2, c2, k2, c2)
+    th_da_1_s = '$-%da + %d > -%db + %d$'% (k2, c2, k2, c2)
     list_th_da_1 = [th_da_1_d, th_da_1_s]
     loigiai_th_1 = '''Từ $a > b$, nhân hai vế với $-%d < 0$ được $-%da < -%db$. Cộng cả hai vế với $%d$ ta được $-%da + %d < -%db + %d$.''' % (k2, k2, k2, c2, k2, c2, k2, c2)
     
     # Mệnh đề 3
-    vd_da_1_d = '\\True $%da - %d > %db - %d$.' % (k3, d3, k3, d3+1)
-    vd_da_1_s = '$%da - %d < %db - %d$.' % (k3, d3, k3, d3+1)
+    vd_da_1_d = '\\True $%da - %d > %db - %d$'% (k3, d3, k3, d3+1)
+    vd_da_1_s = '$%da - %d < %db - %d$'% (k3, d3, k3, d3+1)
     list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
     loigiai_vd_1 = '''Ta có $a > b \\Rightarrow %da > %db \\Rightarrow %da - %d > %db - %d$. Mặt khác $-%d > -%d \\Rightarrow %db - %d > %db - %d$. Theo tính chất bắc cầu suy ra $%da - %d > %db - %d$.''' % (k3, k3, k3, d3, k3, d3, d3, d3+1, k3, d3, k3, d3+1, k3, d3, k3, d3+1)
     
     # Mệnh đề 4
-    vdc_da_1_d = '\\True $a^2 > ab$.'
-    vdc_da_1_s = '$a^2 < ab$.'
+    vdc_da_1_d = '\\True $a^2 > ab$'
+    vdc_da_1_s = '$a^2 < ab$'
     list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
     loigiai_vdc_1 = '''Vì $a > 0$, nhân cả hai vế của bất đẳng thức $a > b$ với số dương $a$ ta được bất đẳng thức cùng chiều: $a^2 > ab$.'''
     

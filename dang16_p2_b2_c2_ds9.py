@@ -137,26 +137,26 @@ def bt_dang16_p2_b2_c2_ds9(self):
     noidungcauhoi = '''Trên một tuyến đường cao tốc, biển báo quy định tốc độ tối thiểu là $%d\\text{ km/h}$ và tốc độ tối đa là $%d\\text{ km/h}$. Gọi $v\\text{ (km/h)}$ là tốc độ của một ô tô lưu thông hợp lệ trên tuyến đường này trong điều kiện bình thường. Xét tính đúng sai của các khẳng định sau:''' % (v_min, v_max)
     
     # Mệnh đề 1
-    nb_da_1_d = '\\True Điều kiện của tốc độ $v$ được biểu diễn là $%d \\le v \\le %d$.' % (v_min, v_max)
-    nb_da_1_s = 'Điều kiện của tốc độ $v$ được biểu diễn là $%d < v < %d$.' % (v_min, v_max)
+    nb_da_1_d = '\\True Điều kiện của tốc độ $v$ được biểu diễn là $%d \\le v \\le %d$'% (v_min, v_max)
+    nb_da_1_s = 'Điều kiện của tốc độ $v$ được biểu diễn là $%d < v < %d$'% (v_min, v_max)
     list_nb_da_1 = [nb_da_1_d, nb_da_1_s]
     loigiai_nb_1 = '''Tốc độ tối thiểu là $%d\\text{ km/h}$ ($v \\ge %d$) và tốc độ tối đa là $%d\\text{ km/h}$ ($v \\le %d$), nên $%d \\le v \\le %d$.''' % (v_min, v_min, v_max, v_max, v_min, v_max)
     
     # Mệnh đề 2
-    th_da_1_d = '\\True Nếu xe chạy với tốc độ $v = %d\\text{ km/h}$ thì xe không vi phạm quy định tốc độ.' % v_min
-    th_da_1_s = 'Nếu xe chạy với tốc độ $v = %d\\text{ km/h}$ thì xe vi phạm quy định tốc độ tối thiểu.' % v_min
+    th_da_1_d = '\\True Nếu xe chạy với tốc độ $v = %d\\text{ km/h}$ thì xe không vi phạm quy định tốc độ'% v_min
+    th_da_1_s = 'Nếu xe chạy với tốc độ $v = %d\\text{ km/h}$ thì xe vi phạm quy định tốc độ tối thiểu'% v_min
     list_th_da_1 = [th_da_1_d, th_da_1_s]
     loigiai_th_1 = '''Vì tốc độ tối thiểu cho phép là không nhỏ hơn $%d\\text{ km/h}$ ($v \\ge %d$), nên khi $v = %d\\text{ km/h}$ xe vẫn chạy đúng quy định.''' % (v_min, v_min, v_min)
     
     # Mệnh đề 3
-    vd_da_1_d = '\\True Trong $%d$ giờ chạy liên tục với tốc độ hợp lệ, quãng đường $S\\text{ (km)}$ xe đi được thỏa mãn $%d \\le S \\le %d$.' % (t_gio, t_gio*v_min, t_gio*v_max)
-    vd_da_1_s = 'Trong $%d$ giờ chạy liên tục với tốc độ hợp lệ, quãng đường $S\\text{ (km)}$ xe đi được thỏa mãn $%d < S < %d$.' % (t_gio, t_gio*v_min, t_gio*v_max)
+    vd_da_1_d = '\\True Trong $%d$ giờ chạy liên tục với tốc độ hợp lệ, quãng đường $S\\text{ (km)}$ xe đi được thỏa mãn $%d \\le S \\le %d$'% (t_gio, t_gio*v_min, t_gio*v_max)
+    vd_da_1_s = 'Trong $%d$ giờ chạy liên tục với tốc độ hợp lệ, quãng đường $S\\text{ (km)}$ xe đi được thỏa mãn $%d < S < %d$'% (t_gio, t_gio*v_min, t_gio*v_max)
     list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
     loigiai_vd_1 = '''Quãng đường đi được là $S = %dv$. Nhân các vế của $%d \\le v \\le %d$ với số dương $%d > 0$ ta được $%d \\le S \\le %d$.''' % (t_gio, v_min, v_max, t_gio, t_gio*v_min, t_gio*v_max)
     
     # Mệnh đề 4
-    vdc_da_1_d = '\\True Nếu một xe đang chạy với tốc độ $v$ hợp lệ và giảm tốc độ đi $%d\\text{ km/h}$ thì tốc độ mới $v\'$ thỏa mãn $%d \\le v\' \\le %d$.' % (dv, v_min - dv, v_max - dv)
-    vdc_da_1_s = 'Nếu một xe đang chạy với tốc độ $v$ hợp lệ và giảm tốc độ đi $%d\\text{ km/h}$ thì tốc độ mới $v\'$ thỏa mãn $%d \\le v\' \\le %d$.' % (dv, v_min + dv, v_max + dv)
+    vdc_da_1_d = '\\True Nếu một xe đang chạy với tốc độ $v$ hợp lệ và giảm tốc độ đi $%d\\text{ km/h}$ thì tốc độ mới $v\'$ thỏa mãn $%d \\le v\' \\le %d$'% (dv, v_min - dv, v_max - dv)
+    vdc_da_1_s = 'Nếu một xe đang chạy với tốc độ $v$ hợp lệ và giảm tốc độ đi $%d\\text{ km/h}$ thì tốc độ mới $v\'$ thỏa mãn $%d \\le v\' \\le %d$'% (dv, v_min + dv, v_max + dv)
     list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
     loigiai_vdc_1 = '''Tốc độ mới là $v\' = v - %d$. Cộng $-%d$ vào các vế của $%d \\le v \\le %d$ ta được $%d \\le v\' \\le %d$.''' % (dv, dv, v_min, v_max, v_min - dv, v_max - dv)
     

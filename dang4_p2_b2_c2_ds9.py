@@ -137,26 +137,26 @@ def bt_dang4_p2_b2_c2_ds9(self):
     noidungcauhoi = '''Cho hai số thực $u, v$ thỏa mãn $-%du + %d > -%dv + %d$. Xét tính đúng sai của các khẳng định sau:''' % (k, c, k, c)
     
     # Mệnh đề 1
-    nb_da_1_d = '\\True $-%du > -%dv$.' % (k, k)
-    nb_da_1_s = '$-%du < -%dv$.' % (k, k)
+    nb_da_1_d = '\\True $-%du > -%dv$' % (k, k)
+    nb_da_1_s = '$-%du < -%dv$' % (k, k)
     list_nb_da_1 = [nb_da_1_d, nb_da_1_s]
     loigiai_nb_1 = '''Cộng cả hai vế của bất đẳng thức $-%du + %d > -%dv + %d$ với $-%d$ ta được $-%du > -%dv$.''' % (k, c, k, c, c, k, k)
     
     # Mệnh đề 2
-    th_da_1_d = '\\True $u < v$.'
-    th_da_1_s = '$u > v$.'
+    th_da_1_d = '\\True $u < v$'
+    th_da_1_s = '$u > v$'
     list_th_da_1 = [th_da_1_d, th_da_1_s]
     loigiai_th_1 = '''Nhân cả hai vế của $-%du > -%dv$ với số âm $-\\dfrac{1}{%d} < 0$, đổi chiều bất đẳng thức ta được $u < v$.''' % (k, k, k)
     
     # Mệnh đề 3
-    vd_da_1_d = '\\True $u - %d < v - %d$.' % (nam, nam)
-    vd_da_1_s = '$u - %d > v - %d$.' % (nam, nam)
+    vd_da_1_d = '\\True $u - %d < v - %d$' % (nam, nam)
+    vd_da_1_s = '$u - %d > v - %d$' % (nam, nam)
     list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
     loigiai_vd_1 = '''Từ $u < v$, cộng cả hai vế với $-%d$ ta được $u - %d < v - %d$.''' % (nam, nam, nam)
     
     # Mệnh đề 4
-    vdc_da_1_d = '\\True $%du - 1 < %dv - 1$.' % (m, m)
-    vdc_da_1_s = '$%du - 1 > %dv - 1$.' % (m, m)
+    vdc_da_1_d = '\\True $%du - 1 < %dv - 1$' % (m, m)
+    vdc_da_1_s = '$%du - 1 > %dv - 1$' % (m, m)
     list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
     loigiai_vdc_1 = '''Từ $u < v$, nhân hai vế với số dương $%d > 0$ được $%du < %dv$, sau đó cộng $-1$ vào hai vế được $%du - 1 < %dv - 1$.''' % (m, m, m, m, m)
     

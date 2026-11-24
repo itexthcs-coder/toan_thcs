@@ -138,26 +138,26 @@ def bt_dang19_p2_b2_c2_ds9(self):
     noidungcauhoi = '''Một thang máy chở hàng có tải trọng tối đa là $%d\\text{ kg}$. Người vận chuyển nặng $%d\\text{ kg}$ cần đưa các thùng hàng có khối lượng mỗi thùng là $%d\\text{ kg}$ lên tầng trên. Gọi $n$ ($n \\in \\mathbb{N}^*$) là số thùng hàng người đó mang theo trong một lượt đi. Xét tính đúng sai của các khẳng định sau:''' % (tai_max, nguoi, thung)
     
     # Mệnh đề 1
-    nb_da_1_d = '\\True Tổng khối lượng người và hàng trong thang máy là $%d + %dn\\text{ (kg)}$.' % (nguoi, thung)
-    nb_da_1_s = 'Tổng khối lượng người và hàng trong thang máy là $%dn + %d\\text{ (kg)}$.' % (nguoi, thung)
+    nb_da_1_d = '\\True Tổng khối lượng người và hàng trong thang máy là $%d + %dn\\text{ (kg)}$'% (nguoi, thung)
+    nb_da_1_s = 'Tổng khối lượng người và hàng trong thang máy là $%dn + %d\\text{ (kg)}$'% (nguoi, thung)
     list_nb_da_1 = [nb_da_1_d, nb_da_1_s]
     loigiai_nb_1 = '''Tổng khối lượng gồm khối lượng người vận chuyển ($%d\\text{ kg}$) và khối lượng của $n$ thùng hàng ($%dn\\text{ kg}$), tổng cộng là $%d + %dn\\text{ (kg)}$.''' % (nguoi, thung, nguoi, thung)
     
     # Mệnh đề 2
-    th_da_1_d = '\\True Điều kiện an toàn của thang máy được biểu diễn bởi bất đẳng thức $%d + %dn \\le %d$.' % (nguoi, thung, tai_max)
-    th_da_1_s = 'Điều kiện an toàn của thang máy được biểu diễn bởi bất đẳng thức $%d + %dn < %d$.' % (nguoi, thung, tai_max)
+    th_da_1_d = '\\True Điều kiện an toàn của thang máy được biểu diễn bởi bất đẳng thức $%d + %dn \\le %d$'% (nguoi, thung, tai_max)
+    th_da_1_s = 'Điều kiện an toàn của thang máy được biểu diễn bởi bất đẳng thức $%d + %dn < %d$'% (nguoi, thung, tai_max)
     list_th_da_1 = [th_da_1_d, th_da_1_s]
     loigiai_th_1 = '''Tải trọng tối đa là $%d\\text{ kg}$ nghĩa là tổng khối lượng không được lớn hơn $%d\\text{ kg}$, ta có bất đẳng thức $%d + %dn \\le %d$.''' % (tai_max, tai_max, nguoi, thung, tai_max)
     
     # Mệnh đề 3
-    vd_da_1_d = '\\True Từ bất đẳng thức an toàn, ta suy ra $%dn \\le %d$.' % (thung, con_lai)
-    vd_da_1_s = 'Từ bất đẳng thức an toàn, ta suy ra $%dn \\le %d$.' % (thung, tai_max)
+    vd_da_1_d = '\\True Từ bất đẳng thức an toàn, ta suy ra $%dn \\le %d$'% (thung, con_lai)
+    vd_da_1_s = 'Từ bất đẳng thức an toàn, ta suy ra $%dn \\le %d$'% (thung, tai_max)
     list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
     loigiai_vd_1 = '''Cộng cả hai vế của bất đẳng thức $%d + %dn \\le %d$ với $-%d$ ta được $%dn \\le %d$.''' % (nguoi, thung, tai_max, nguoi, thung, con_lai)
     
     # Mệnh đề 4
-    vdc_da_1_d = '\\True Mỗi lượt đi thang máy, người đó chở được tối đa $%d$ thùng hàng.' % max_thung
-    vdc_da_1_s = 'Mỗi lượt đi thang máy, người đó chở được tối đa $%d$ thùng hàng.' % (max_thung + 1)
+    vdc_da_1_d = '\\True Mỗi lượt đi thang máy, người đó chở được tối đa $%d$ thùng hàng'% max_thung
+    vdc_da_1_s = 'Mỗi lượt đi thang máy, người đó chở được tối đa $%d$ thùng hàng'% (max_thung + 1)
     list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
     loigiai_vdc_1 = '''Nhân cả hai vế của $%dn \\le %d$ với số dương $\\dfrac{1}{%d} > 0$ ta được $n \\le \\dfrac{%d}{%d}$. Vì $n \\in \\mathbb{N}^*$ nên người đó chở được tối đa $%d$ thùng hàng.''' % (thung, con_lai, thung, con_lai, thung, max_thung)
     

@@ -230,5 +230,5 @@ def bt_dang4_p2_b2_c4_hh8(self):
                '\\item ' + str(shuffled_solutions_vd[0]) + '\n' +
                '\\item ' + str(shuffled_solutions_vdc[0]) + '\n' +
                '\\end{enumEX}} \n' +
-               '\\end{ex}\n \end{minipage}\n\n')
+               '\\end{ex}\n \\end{minipage}\n\n')
     return content

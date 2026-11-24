@@ -136,26 +136,26 @@ def bt_dang10_p2_b2_c2_ds9(self):
     noidungcauhoi = '''Cho hai số thực $x, y$ thỏa mãn $x - y > %d$. Xét tính đúng sai của các khẳng định sau:''' % k
     
     # Mệnh đề 1
-    nb_da_1_d = '\\True $x > y + %d$.' % k
-    nb_da_1_s = '$x < y + %d$.' % k
+    nb_da_1_d = '\\True $x > y + %d$'% k
+    nb_da_1_s = '$x < y + %d$'% k
     list_nb_da_1 = [nb_da_1_d, nb_da_1_s]
     loigiai_nb_1 = '''Cộng cả hai vế của bất đẳng thức $x - y > %d$ với $y$ ta được $x > y + %d$.''' % (k, k)
     
     # Mệnh đề 2
-    th_da_1_d = '\\True $x > y$.'
-    th_da_1_s = '$x < y$.'
+    th_da_1_d = '\\True $x > y$'
+    th_da_1_s = '$x < y$'
     list_th_da_1 = [th_da_1_d, th_da_1_s]
     loigiai_th_1 = '''Vì $x > y + %d$ và $y + %d > y$ (do $%d > 0$), theo tính chất bắc cầu suy ra $x > y$.''' % (k, k, k)
     
     # Mệnh đề 3
-    vd_da_1_d = '\\True $%dx - %dy > %d$.' % (m, m, mk)
-    vd_da_1_s = '$%dx - %dy < %d$.' % (m, m, mk)
+    vd_da_1_d = '\\True $%dx - %dy > %d$'% (m, m, mk)
+    vd_da_1_s = '$%dx - %dy < %d$'% (m, m, mk)
     list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
     loigiai_vd_1 = '''Nhân cả hai vế của bất đẳng thức $x - y > %d$ với số dương $%d > 0$ ta được $%dx - %dy > %d$.''' % (k, m, m, m, mk)
     
     # Mệnh đề 4
-    vdc_da_1_d = '\\True $y - x < -%d$.' % k
-    vdc_da_1_s = '$y - x > -%d$.' % k
+    vdc_da_1_d = '\\True $y - x < -%d$'% k
+    vdc_da_1_s = '$y - x > -%d$'% k
     list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
     loigiai_vdc_1 = '''Nhân cả hai vế của bất đẳng thức $x - y > %d$ với số âm $-1 < 0$, đổi chiều bất đẳng thức ta được $y - x < -%d$.''' % (k, k)
     

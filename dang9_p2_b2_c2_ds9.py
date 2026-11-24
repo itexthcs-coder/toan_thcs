@@ -134,26 +134,26 @@ def bt_dang9_p2_b2_c2_ds9(self):
     noidungcauhoi = '''Cho hai số thực $a, b$ thỏa mãn $a < b$ và một số thực $c \\ne 0$. Xét tính đúng sai của các khẳng định sau:'''
     
     # Mệnh đề 1
-    nb_da_1_d = '\\True Nếu $ac < bc$ thì $c > 0$.'
-    nb_da_1_s = 'Nếu $ac < bc$ thì $c < 0$.'
+    nb_da_1_d = '\\True Nếu $ac < bc$ thì $c > 0$'
+    nb_da_1_s = 'Nếu $ac < bc$ thì $c < 0$'
     list_nb_da_1 = [nb_da_1_d, nb_da_1_s]
     loigiai_nb_1 = '''Từ $a < b$ suy ra $ac < bc$ (giữ nguyên chiều bất đẳng thức) với $c \\ne 0$, chứng tỏ đã nhân cả hai vế với một số dương $c > 0$.'''
     
     # Mệnh đề 2
-    th_da_1_d = '\\True Nếu $ac > bc$ thì $c < 0$.'
-    th_da_1_s = 'Nếu $ac > bc$ thì $c > 0$.'
+    th_da_1_d = '\\True Nếu $ac > bc$ thì $c < 0$'
+    th_da_1_s = 'Nếu $ac > bc$ thì $c > 0$'
     list_th_da_1 = [th_da_1_d, th_da_1_s]
     loigiai_th_1 = '''Từ $a < b$ suy ra $ac > bc$ (đổi chiều bất đẳng thức) với $c \\ne 0$, chứng tỏ đã nhân cả hai vế với một số âm $c < 0$.'''
     
     # Mệnh đề 3
-    vd_da_1_d = '\\True Bất đẳng thức $c^2 a < c^2 b$ luôn đúng với mọi $c \\ne 0$.'
-    vd_da_1_s = 'Bất đẳng thức $c^2 a > c^2 b$ luôn đúng với mọi $c \\ne 0$.'
+    vd_da_1_d = '\\True Bất đẳng thức $c^2 a < c^2 b$ luôn đúng với mọi $c \\ne 0$'
+    vd_da_1_s = 'Bất đẳng thức $c^2 a > c^2 b$ luôn đúng với mọi $c \\ne 0$'
     list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
     loigiai_vd_1 = '''Với mọi $c \\ne 0$ ta luôn có $c^2 > 0$. Nhân cả hai vế của $a < b$ với số dương $c^2$ ta được $c^2 a < c^2 b$.'''
     
     # Mệnh đề 4
-    vdc_da_1_d = '\\True Nếu $(c - %d)a > (c - %d)b$ thì $c < %d$.' % (k, k, k)
-    vdc_da_1_s = 'Nếu $(c - %d)a > (c - %d)b$ thì $c > %d$.' % (k, k, k)
+    vdc_da_1_d = '\\True Nếu $(c - %d)a > (c - %d)b$ thì $c < %d$'% (k, k, k)
+    vdc_da_1_s = 'Nếu $(c - %d)a > (c - %d)b$ thì $c > %d$'% (k, k, k)
     list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
     loigiai_vdc_1 = '''Từ $a < b$ suy ra $(c - %d)a > (c - %d)b$ (đổi chiều bất đẳng thức) nên $c - %d < 0 \\Rightarrow c < %d$.''' % (k, k, k, k)
     
