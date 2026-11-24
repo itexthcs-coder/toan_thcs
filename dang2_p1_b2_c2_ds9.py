@@ -143,15 +143,15 @@ def bt_dang2_p1_b2_c2_ds9(self):
         vt = a*x**2 - b*x + c
         vp = d*x - e
         
-        du = [f'Vế trái là ${latex(vt)}$, vế phải là ${latex(vp)}$.']
+        du = [f'Vế trái là ${latex(vt)}$, vế phải là ${latex(vp)}$']
         da = random.choice(du)
         
         s = [
-            f'Vế trái là ${latex(vp)}$, vế phải là ${latex(vt)}$.',
-            f'Vế trái là ${latex(a*x**2 - b*x)}$, vế phải là ${latex(d*x)}$.',
-            f'Vế trái là ${latex(vt - vp)}$, vế phải là $0$.',
-            f'Vế trái là ${latex(vt)}$, vế phải là $0$.',
-            f'Vế trái là $0$, vế phải là ${latex(vp)}$.'
+            f'Vế trái là ${latex(vp)}$, vế phải là ${latex(vt)}$',
+            f'Vế trái là ${latex(a*x**2 - b*x)}$, vế phải là ${latex(d*x)}$',
+            f'Vế trái là ${latex(vt - vp)}$, vế phải là $0$',
+            f'Vế trái là ${latex(vt)}$, vế phải là $0$',
+            f'Vế trái là $0$, vế phải là ${latex(vp)}$'
         ]
         
         das1 = random.choice(s)
