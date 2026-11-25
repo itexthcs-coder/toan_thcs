@@ -134,23 +134,23 @@ def bt_dang20_p4_b1_c6_ds8(self):
     
     if dang == '1':
         scenarios = [
-            ('2\,000', '1\,200', '800', 5, 2, 25, 23), # 1200x + 800(x-5) = 2000x - 4000 => /2000 = x - 2
-            ('3\,000', '2\,000', '1\,000', 6, 2, 30, 28), # 2000x + 1000(x-6) = 3000x - 6000 => /3000 = x - 2
-            ('2\,500', '1\,500', '1\,000', 5, 2, 28, 26)  # 1500x + 1000(x-5) = 2500x - 5000 => /2500 = x - 2
+            ('2\\,000', '1\\,200', '800', 5, 2, 25, 23), # 1200x + 800(x-5) = 2000x - 4000 => /2000 = x - 2
+            ('3\\,000', '2\\,000', '1\\,000', 6, 2, 30, 28), # 2000x + 1000(x-6) = 3000x - 6000 => /3000 = x - 2
+            ('2\\,500', '1\\,500', '1\\,000', 5, 2, 28, 26)  # 1500x + 1000(x-5) = 2500x - 5000 => /2500 = x - 2
         ]
         tong_kg, kg1, kg2, giam, tru_tb, x_val, ans = random.choice(scenarios)
         
-        noidungcauhoi = ('Một hợp tác xã nông nghiệp thu hoạch được $%s\\text{ kg}$ vải thiều. Trong đợt đầu, hợp tác xã bán được $%s\\text{ kg}$ với giá $x$ nghìn đồng/kg ($x > %s$). Do thời tiết nắng nóng, số vải còn lại phải giảm giá bán $%s$ nghìn đồng/kg so với đợt đầu mới bán hết.\\\n'
-                         'a) Viết phân thức biểu thị khối lượng vải bán được ở đợt đầu theo doanh thu $D_1$ (nghìn đồng) của đợt đầu và phân thức biểu thị khối lượng vải bán được ở đợt sau theo doanh thu $D_2$ (nghìn đồng) của đợt sau.\\\n'
+        noidungcauhoi = ('Một hợp tác xã nông nghiệp thu hoạch được $%s\\text{ kg}$ vải thiều. Trong đợt đầu, hợp tác xã bán được $%s\\text{ kg}$ với giá $x$ nghìn đồng/kg ($x > %s$). Do thời tiết nắng nóng, số vải còn lại phải giảm giá bán $%s$ nghìn đồng/kg so với đợt đầu mới bán hết.\\\\'
+                         'a) Viết phân thức biểu thị khối lượng vải bán được ở đợt đầu theo doanh thu $D_1$ (nghìn đồng) của đợt đầu và phân thức biểu thị khối lượng vải bán được ở đợt sau theo doanh thu $D_2$ (nghìn đồng) của đợt sau.\\\\'
                          'b) Lập phân thức biểu thị giá bán trung bình của mỗi kilôgam vải thiều trên toàn bộ vụ thu hoạch theo $x$, rút gọn biểu thức đó và tính giá bán trung bình khi $x = %s$ nghìn đồng/kg.'
                          % (tong_kg, kg1, giam, giam, x_val))
         
         loigiai = ('\\begin{enumEX}[a)]{1}\n'
-                   '\\item Giá bán đợt đầu là $x$ (nghìn đồng/kg) nên khối lượng vải bán được ở đợt đầu là $\\dfrac{D_1}{x}\\text{ (kg)}$.\\\n'
+                   '\\item Giá bán đợt đầu là $x$ (nghìn đồng/kg) nên khối lượng vải bán được ở đợt đầu là $\\dfrac{D_1}{x}\\text{ (kg)}$.\\\\'
                    'Giá bán đợt sau là $x - %s$ (nghìn đồng/kg) nên khối lượng vải bán được ở đợt sau là $\\dfrac{D_2}{x - %s}\\text{ (kg)}$.\n'
-                   '\\item Tổng doanh thu cả hai đợt là $D = %sx + %s(x - %s) = %sx - %s \\cdot %s$ (nghìn đồng).\\\n'
-                   'Phân thức biểu thị giá bán trung bình trên toàn bộ vụ thu hoạch là:\\\n'
-                   '$P(x) = \\dfrac{%sx + %s(x - %s)}{%s} = \\dfrac{%s(x - %s)}{%s} = x - %s$ (nghìn đồng/kg).\\\n'
+                   '\\item Tổng doanh thu cả hai đợt là $D = %sx + %s(x - %s) = %sx - %s \\cdot %s$ (nghìn đồng).\\\\'
+                   'Phân thức biểu thị giá bán trung bình trên toàn bộ vụ thu hoạch là:\\\\'
+                   '$P(x) = \\dfrac{%sx + %s(x - %s)}{%s} = \\dfrac{%s(x - %s)}{%s} = x - %s$ (nghìn đồng/kg).\\\\'
                    'Khi $x = %s$ nghìn đồng/kg, giá bán trung bình của mỗi kilôgam vải thiều là $%s - %s = %s$ (nghìn đồng/kg).\n'
                    '\\end{enumEX}'
                    % (giam, giam, kg1, kg2, giam, tong_kg, kg2, giam,

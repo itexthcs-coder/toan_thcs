@@ -134,30 +134,30 @@ def bt_dang16_p4_b1_c6_ds8(self):
     
     if dang == '1':
         scenarios = [
-            (180, 100, 30, 20, 80, '3\text{ giờ } 5\text{ phút}'),  # 100/80 + 0,5 + 80/60 = 1,25 + 0,5 + 4/3 = 37/12 h = 3h 5p
-            (210, 120, 30, 15, 60, '4\text{ giờ } 30\text{ phút}'), # 120/60 + 0,5 + 90/45 = 2 + 0,5 + 2 = 4,5 h = 4h 30p
-            (150, 90, 15, 15, 60, '3\text{ giờ } 15\text{ phút}')   # 90/60 + 0,25 + 60/45 -> đổi: (150, 90, 30, 15, 60, '3\text{ giờ } 20\text{ phút}') -> 1,5 + 0,5 + 4/3 = 10/3 h = 3h 20p
+            (180, 100, 30, 20, 80, '3\\text{ giờ } 5\\text{ phút}'),  # 100/80 + 0,5 + 80/60 = 1,25 + 0,5 + 4/3 = 37/12 h = 3h 5p
+            (210, 120, 30, 15, 60, '4\text{ giờ } 30\\text{ phút}'), # 120/60 + 0,5 + 90/45 = 2 + 0,5 + 2 = 4,5 h = 4h 30p
+            (150, 90, 15, 15, 60, '3\\text{ giờ } 15\\text{ phút}')   # 90/60 + 0,25 + 60/45 -> đổi: (150, 90, 30, 15, 60, '3\text{ giờ } 20\text{ phút}') -> 1,5 + 0,5 + 4/3 = 10/3 h = 3h 20p
         ]
         S_ab, s_ct, phut_nghi, dv, x_val, tong_tg_str = random.choice(scenarios)
         if S_ab == 150:
             phut_nghi = 30
-            tong_tg_str = '3\text{ giờ } 20\text{ phút}'
+            tong_tg_str = '3\\text{ giờ } 20\\text{ phút}'
         s_ql = S_ab - s_ct
         
-        noidungcauhoi = ('Một xe khách xuất phát từ tỉnh $A$ đến tỉnh $B$ cách nhau $%s\\text{ km}$. Trong $%s\\text{ km}$ đầu tiên trên đường cao tốc, xe chạy với vận tốc trung bình $x\\text{ (km/h)}$ ($x > %s$). Sau đó xe dừng nghỉ $%s\\text{ phút}$ tại trạm dừng chân rồi tiếp tục đi nốt quãng đường còn lại trên quốc lộ với vận tốc giảm đi $%s\\text{ km/h}$ so với trên đường cao tốc.\\\n'
-                         'a) Viết các phân thức biểu thị thời gian xe chạy trên đường cao tốc và thời gian xe chạy trên quốc lộ.\\\n'
+        noidungcauhoi = ('Một xe khách xuất phát từ tỉnh $A$ đến tỉnh $B$ cách nhau $%s\\text{ km}$. Trong $%s\\text{ km}$ đầu tiên trên đường cao tốc, xe chạy với vận tốc trung bình $x\\text{ (km/h)}$ ($x > %s$). Sau đó xe dừng nghỉ $%s\\text{ phút}$ tại trạm dừng chân rồi tiếp tục đi nốt quãng đường còn lại trên quốc lộ với vận tốc giảm đi $%s\\text{ km/h}$ so với trên đường cao tốc.\\\\'
+                         'a) Viết các phân thức biểu thị thời gian xe chạy trên đường cao tốc và thời gian xe chạy trên quốc lộ.\\\\'
                          'b) Tính tổng thời gian kể từ lúc xe xuất phát tại $A$ đến khi tới $B$ (bao gồm cả thời gian nghỉ) nếu vận tốc xe trên đường cao tốc là $%s\\text{ km/h}$.'
                          % (S_ab, s_ct, dv, phut_nghi, dv, x_val))
         
         loigiai = ('\\begin{enumEX}[a)]{1}\n'
-                   '\\item Phân thức biểu thị thời gian xe chạy hết $%s\\text{ km}$ đường cao tốc với vận tốc $x\\text{ (km/h)}$ là $\\dfrac{%s}{x}$ (giờ).\\\n'
+                   '\\item Phân thức biểu thị thời gian xe chạy hết $%s\\text{ km}$ đường cao tốc với vận tốc $x\\text{ (km/h)}$ là $\\dfrac{%s}{x}$ (giờ).\\\\'
                    'Quãng đường quốc lộ còn lại dài $%s - %s = %s\\text{ (km)}$, vận tốc trên quốc lộ là $x - %s\\text{ (km/h)}$ nên phân thức biểu thị thời gian xe chạy trên quốc lộ là $\\dfrac{%s}{x - %s}$ (giờ).\n'
-                   '\\item Đổi $%s\\text{ phút} = 0,5\\text{ giờ}$. Thay $x = %s$ vào các phân thức trên, tổng thời gian kể từ lúc xe xuất phát tại $A$ đến khi tới $B$ là:\\\n'
+                   '\\item Đổi $%s\\text{ phút} = 0,5\\text{ giờ}$. Thay $x = %s$ vào các phân thức trên, tổng thời gian kể từ lúc xe xuất phát tại $A$ đến khi tới $B$ là:\\\\'
                    '$T = \\dfrac{%s}{%s} + 0,5 + \\dfrac{%s}{%s - %s} = %s$ ($%s$).\n'
                    '\\end{enumEX}'
                    % (s_ct, s_ct, S_ab, s_ct, s_ql, dv, s_ql, dv,
                       phut_nghi, x_val, s_ct, x_val, s_ql, x_val, dv,
-                      str(Fraction(s_ct, x_val) + Fraction(1, 2) + Fraction(s_ql, x_val - dv)).replace('/', '\\dfrac{', 1) if False else '\dfrac{%s}{%s}\text{ giờ}' % (
+                      str(Fraction(s_ct, x_val) + Fraction(1, 2) + Fraction(s_ql, x_val - dv)).replace('/', '\\dfrac{', 1) if False else '\\dfrac{%s}{%s}\\text{ giờ}' % (
                           (Fraction(s_ct, x_val) + Fraction(1, 2) + Fraction(s_ql, x_val - dv)).numerator,
                           (Fraction(s_ct, x_val) + Fraction(1, 2) + Fraction(s_ql, x_val - dv)).denominator
                       ), tong_tg_str))
