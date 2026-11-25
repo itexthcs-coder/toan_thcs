@@ -139,13 +139,13 @@ def bt_dang14_p3_b2_c5_ds8(self):
         noidungcauhoi = ("""Kết quả bình chọn lớp trưởng lớp 8A có $4$ ứng cử viên được thống kê trong bảng sau:\\\\
         \\begin{center}
         \\begin{tabular}{|c|c|c|c|c|}
-        \hline
+        \\hline
         \\textbf{Ứng cử viên} & An & Bình & Chi & Dũng \\\\
-        \hline
+        \\hline
         \\textbf{Số phiếu} & $%s$ & $%s$ & $%s$ & $%s$ \\\\
-        \hline
-        \end{tabular}
-        \end{center}
+        \\hline
+        \\end{tabular}
+        \\end{center}
         Nếu biểu diễn kết quả này bằng biểu đồ hình quạt tròn, thì tỉ lệ phần trăm của ứng cử viên cao phiếu nhất nhiều hơn tỉ lệ phần trăm của ứng cử viên thấp phiếu nhất bao nhiêu phần trăm (làm tròn kết quả đến chữ số thập phân thứ nhất)?"""
                          % (p_an, p_binh, p_chi, p_dung))
         

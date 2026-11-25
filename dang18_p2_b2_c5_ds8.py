@@ -138,15 +138,15 @@ def bt_dang18_p2_b2_c5_ds8(self):
     tang_tong = y25 - y21
     
     noidungcauhoi = ("""Bảng số liệu sau ghi lại năng suất lúa trung bình (đơn vị: tạ/ha) của một hợp tác xã nông nghiệp qua $5$ năm liên tiếp:\\\\
-    \begin{center}
-    \begin{tabular}{|c|c|c|c|c|c|}
-    \hline
-    \textbf{Năm} & $2021$ & $2022$ & $2023$ & $2024$ & $2025$ \\\\
-    \hline
-    \textbf{Năng suất (tạ/ha)} & $%s$ & $%s$ & $%s$ & $%s$ & $%s$ \\\\
-    \hline
-    \end{tabular}
-    \end{center}
+    \\begin{center}
+    \\begin{tabular}{|c|c|c|c|c|c|}
+    \\hline
+    \\textbf{Năm} & $2021$ & $2022$ & $2023$ & $2024$ & $2025$ \\\\
+    \\hline
+    \\textbf{Năng suất (tạ/ha)} & $%s$ & $%s$ & $%s$ & $%s$ & $%s$ \\\\
+    \\hline
+    \\end{tabular}
+    \\end{center}
     Xét tính đúng sai của các khẳng định sau:""" % (fmt_vn(y21), fmt_vn(y22), fmt_vn(y23), fmt_vn(y24), fmt_vn(y25)))
     
     nb_da_1_d = '\\True Biểu đồ đoạn thẳng là lựa chọn tối ưu để thể hiện xu hướng biến động năng suất lúa của hợp tác xã qua $5$ năm'

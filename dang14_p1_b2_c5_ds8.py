@@ -152,15 +152,15 @@ def bt_dang14_p1_b2_c5_ds8(self):
         das3 = random.choice(s)
         
         noidungcauhoi = ("""Khảo sát phương tiện đến trường của $%s$ học sinh một trường THCS thu được bảng thống kê sau:\\\\
-        \begin{center}
-        \begin{tabular}{|c|c|c|c|}
-        \hline
-        \textbf{Phương tiện} & Xe đạp & Xe buýt & Đi bộ \\\\
-        \hline
-        \textbf{Số học sinh} & $%s$ & $%s$ & $%s$ \\\\
-        \hline
-        \end{tabular}
-        \end{center}
+        \\begin{center}
+        \\begin{tabular}{|c|c|c|c|}
+        \\hline
+        \\textbf{Phương tiện} & Xe đạp & Xe buýt & Đi bộ \\\\
+        \\hline
+        \\textbf{Số học sinh} & $%s$ & $%s$ & $%s$ \\\\
+        \\hline
+        \\end{tabular}
+        \\end{center}
         Nếu biểu diễn dữ liệu này bằng biểu đồ hình quạt tròn thì hình quạt biểu diễn số học sinh đi xe buýt ứng với tỉ lệ bao nhiêu phần trăm?"""
                          % (tong_hs, n_dap, n_buyt, n_bo))
         

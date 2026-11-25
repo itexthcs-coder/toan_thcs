@@ -129,15 +129,15 @@ def bt_dang5_p2_b2_c5_ds8(self):
     tong = g1 + g2 + g3 + g4
     
     noidungcauhoi = ("""Cho bảng thống kê phân chia một tập hợp gồm $N$ phần tử thành bốn nhóm $G_1, G_2, G_3, G_4$:\\\\
-    \begin{center}
-    \begin{tabular}{|c|c|c|c|c|}
-    \hline
-    \textbf{Nhóm} & $G_1$ & $G_2$ & $G_3$ & $G_4$ \\\\
-    \hline
-    \textbf{Số phần tử} & $%s$ & $%s$ & $%s$ & $%s$ \\\\
-    \hline
-    \end{tabular}
-    \end{center}
+    \\begin{center}
+    \\begin{tabular}{|c|c|c|c|c|}
+    \\hline
+    \\textbf{Nhóm} & $G_1$ & $G_2$ & $G_3$ & $G_4$ \\\\
+    \\hline
+    \\textbf{Số phần tử} & $%s$ & $%s$ & $%s$ & $%s$ \\\\
+    \\hline
+    \\end{tabular}
+    \\end{center}
     Xét tính đúng sai của các khẳng định sau:""" % (g1, g2, g3, g4))
     
     nb_da_1_d = '\\True Tổng số phần tử của tập hợp là $N = %s$' % tong

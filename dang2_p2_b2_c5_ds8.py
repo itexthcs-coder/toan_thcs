@@ -132,15 +132,15 @@ def bt_dang2_p2_b2_c5_ds8(self):
     bad_unit = gcd_val - 20 if gcd_val == 60 else gcd_val + 20
     
     noidungcauhoi = ("""Cho bảng số liệu thống kê bốn đối tượng $M_1, M_2, M_3, M_4$:\\\\
-    \begin{center}
-    \begin{tabular}{|c|c|c|c|c|}
-    \hline
-    \textbf{Đối tượng} & $M_1$ & $M_2$ & $M_3$ & $M_4$ \\\\
-    \hline
-    \textbf{Số lượng} & $%s$ & $%s$ & $%s$ & $%s$ \\\\
-    \hline
-    \end{tabular}
-    \end{center}
+    \\begin{center}
+    \\begin{tabular}{|c|c|c|c|c|}
+    \\hline
+    \\textbf{Đối tượng} & $M_1$ & $M_2$ & $M_3$ & $M_4$ \\\\
+    \\hline
+    \\textbf{Số lượng} & $%s$ & $%s$ & $%s$ & $%s$ \\\\
+    \\hline
+    \\end{tabular}
+    \\end{center}
     Người ta muốn biểu diễn bảng số liệu này bằng biểu đồ tranh sao cho không phải chia nhỏ bất kì biểu tượng nào. Xét tính đúng sai của các khẳng định sau:"""
                      % (v1, v2, v3, v4))
     

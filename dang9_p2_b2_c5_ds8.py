@@ -130,17 +130,17 @@ def bt_dang9_p2_b2_c5_ds8(self):
     tong_i = i1 + i2 + i3
     
     noidungcauhoi = ("""Cho bảng số liệu hai chiều kích thước $2 \\times 3$ gồm hai đối tượng $I, II$ và ba tiêu chí $K_1, K_2, K_3$:\\\\
-    \begin{center}
-    \begin{tabular}{|c|c|c|c|}
-    \hline
-    \textbf{Đối tượng / Tiêu chí} & $K_1$ & $K_2$ & $K_3$ \\\\
-    \hline
-    \textbf{Đối tượng $I$} & $%s$ & $%s$ & $%s$ \\\\
-    \hline
-    \textbf{Đối tượng $II$} & $%s$ & $%s$ & $%s$ \\\\
-    \hline
-    \end{tabular}
-    \end{center}
+    \\begin{center}
+    \\begin{tabular}{|c|c|c|c|}
+    \\hline
+    \\textbf{Đối tượng / Tiêu chí} & $K_1$ & $K_2$ & $K_3$ \\\\
+    \\hline
+    \\textbf{Đối tượng $I$} & $%s$ & $%s$ & $%s$ \\\\
+    \\hline
+    \\textbf{Đối tượng $II$} & $%s$ & $%s$ & $%s$ \\\\
+    \\hline
+    \\end{tabular}
+    \\end{center}
     Xét tính đúng sai của các khẳng định sau:""" % (i1, i2, i3, j1, j2, j3))
     
     nb_da_1_d = '\\True Để so sánh trực tiếp đối tượng $I$ và đối tượng $II$ trong từng tiêu chí $K_1, K_2, K_3$, trục ngang của biểu đồ cột kép phải chia làm $3$ nhóm là $K_1, K_2, K_3$, mỗi nhóm gồm $2$ cột'

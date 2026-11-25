@@ -130,17 +130,17 @@ def bt_dang17_p2_b2_c5_ds8(self):
     diff_tong = (hn_dh + hn_tl) - (dn_dh + dn_tl)
     
     noidungcauhoi = ("""Một chuỗi cửa hàng điện máy lập bảng thống kê số lượng máy điều hòa và tủ lạnh bán được trong mùa hè tại hai chi nhánh Hà Nội và Đà Nẵng:\\\\
-    \begin{center}
-    \begin{tabular}{|c|c|c|}
-    \hline
-    \textbf{Chi nhánh / Mặt hàng} & \textbf{Điều hòa (chiếc)} & \textbf{Tủ lạnh (chiếc)} \\\\
-    \hline
-    \textbf{Hà Nội} & $%s$ & $%s$ \\\\
-    \hline
-    \textbf{Đà Nẵng} & $%s$ & $%s$ \\\\
-    \hline
-    \end{tabular}
-    \end{center}
+    \\begin{center}
+    \\begin{tabular}{|c|c|c|}
+    \\hline
+    \\textbf{Chi nhánh / Mặt hàng} & \\textbf{Điều hòa (chiếc)} & \textbf{Tủ lạnh (chiếc)} \\\\
+    \\hline
+    \\textbf{Hà Nội} & $%s$ & $%s$ \\\\
+    \\hline
+    \\textbf{Đà Nẵng} & $%s$ & $%s$ \\\\
+    \\hline
+    \\end{tabular}
+    \\end{center}
     Xét tính đúng sai của các khẳng định sau:""" % (hn_dh, hn_tl, dn_dh, dn_tl))
     
     nb_da_1_d = '\\True Để so sánh doanh số từng mặt hàng giữa hai chi nhánh Hà Nội và Đà Nẵng, ta nên vẽ biểu đồ cột kép gồm $2$ nhóm trên trục ngang là ``Điều hòa và ``Tủ lạnh'
