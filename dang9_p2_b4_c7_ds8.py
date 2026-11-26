@@ -292,5 +292,5 @@ $AB = \\sqrt{OA^2 + OB^2} = \\sqrt{%s^2 + %s^2} = \\sqrt{%s + %s} = \\sqrt{%s}$ 
                '\\item ' + str(shuffled_solutions_vd[0]) + '\n' +
                '\\item ' + str(shuffled_solutions_vdc[0]) + '\n' +
                '\\end{enumEX}} \n' +
-               '\\end{ex}\n \end{minipage}\n\n')
+               '\\end{ex}\n \\end{minipage}\n\n')
     return content

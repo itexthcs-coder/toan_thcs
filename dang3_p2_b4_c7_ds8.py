@@ -286,5 +286,5 @@ Giá trị này đúng bằng tung độ của điểm $C$, nên điểm $C\\lef
                '\\item ' + str(shuffled_solutions_vd[0]) + '\n' +
                '\\item ' + str(shuffled_solutions_vdc[0]) + '\n' +
                '\\end{enumEX}} \n' +
-               '\\end{ex}\n \end{minipage}\n\n')
+               '\\end{ex}\n \\end{minipage}\n\n')
     return content

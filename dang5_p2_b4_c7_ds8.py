@@ -271,5 +271,5 @@ Vì $%s > 0$ và $\\sqrt{%s} - %s > 0$ nên $x < 0$. Vậy hoành độ giao đi
                '\\item ' + str(shuffled_solutions_vd[0]) + '\n' +
                '\\item ' + str(shuffled_solutions_vdc[0]) + '\n' +
                '\\end{enumEX}} \n' +
-               '\\end{ex}\n \end{minipage}\n\n')
+               '\\end{ex}\n \\end{minipage}\n\n')
     return content

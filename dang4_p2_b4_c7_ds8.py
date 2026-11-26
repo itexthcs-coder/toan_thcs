@@ -273,5 +273,5 @@ Vì đồ thị đi qua điểm $N(%s; 0)$ nên thay $x = %s, y = 0$ vào ta đ�
                '\\item ' + str(shuffled_solutions_vd[0]) + '\n' +
                '\\item ' + str(shuffled_solutions_vdc[0]) + '\n' +
                '\\end{enumEX}} \n' +
-               '\\end{ex}\n \end{minipage}\n\n')
+               '\\end{ex}\n \\end{minipage}\n\n')
     return content
