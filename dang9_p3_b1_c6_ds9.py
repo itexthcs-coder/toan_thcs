@@ -157,7 +157,7 @@ $x = %s$ & $f(%s) = %s \\cdot (%s)^2$ & $%s$ \\\\
 $x = 0$ & $f(0) = %s \\cdot 0^2$ & $0$ \\\\
 \\hline
 \\end{tabular}
-\\end{center} \\\\
+\\end{center}
 Thay các giá trị vừa tính được vào biểu thức $T$, ta có: \\\\
 $T = %s - %s \\cdot (%s) + 0 = %s - (%s) = %s$.'''
                    % (latex(f),

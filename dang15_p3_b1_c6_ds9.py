@@ -178,7 +178,7 @@ Kích thước & Công thức & Giá trị \\\\
 Chiều cao $HK$ & $|x_A - x_B|$ & $%s$ \\\\
 \\hline
 \\end{tabular}
-\\end{center} \\\\
+\\end{center}
 Diện tích hình thang vuông $ABKH$ là: \\\\
 $S_{ABKH} = \\dfrac{(AH + BK) \\cdot HK}{2} = \\dfrac{(%s + %s) \\cdot %s}{2} = %s$.'''
                    % (str(xA), latex(yA), str(xA), latex(yA),

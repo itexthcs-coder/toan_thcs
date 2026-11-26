@@ -178,7 +178,7 @@ Khi đó ta có bảng tọa độ và độ dài các đoạn thẳng như sau:
 Chiều cao $OH$ & $|y_H|$ & $%s$ \\\\
 \\hline
 \\end{tabular}
-\\end{center} \\\\
+\\end{center}
 Vậy diện tích tam giác $OAB$ là $S_{OAB} = \\dfrac{1}{2} \\cdot OH \\cdot AB = \\dfrac{1}{2} \\cdot %s \\cdot %s = %s$.'''
                    % (latex(f), latex(y0),
                       latex(f), latex(y0), latex(k**2), latex(-k), latex(k),

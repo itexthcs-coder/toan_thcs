@@ -177,7 +177,7 @@ $OA$ & $\\sqrt{x_A^2 + y_A^2}$ & $\\sqrt{%s}$ \\\\
 $OB$ & $\\sqrt{x_B^2 + y_B^2}$ & $\\sqrt{%s}$ \\\\
 \\hline
 \\end{tabular}
-\\end{center} \\\\
+\\end{center}
 Chu vi của tam giác $OAB$ là: \\\\
 $C_{OAB} = AB + OA + OB = %s + 2\\sqrt{%s} \\approx %s$.'''
                    % (str(x0), str(y0), str(x0), str(y0), str(y0),

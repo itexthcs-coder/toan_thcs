@@ -156,7 +156,7 @@ $M$ & $%s$ & $%s$ \\\\
 $N$ & $%s$ & $%s$ \\\\
 \\hline
 \\end{tabular}
-\\end{center} \\\\
+\\end{center}
 Vậy tung độ của điểm $N$ bằng $%s$.'''
                    % (str(xM), str(yM), str(xM), str(yM),
                       str(yM), str(xM), str(xM**2), str(yM), str(a),

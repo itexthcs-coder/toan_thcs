@@ -164,7 +164,7 @@ $1 \\le m \\le %s$ & $a < 0$ & Nằm phía dưới trục hoành \\\\
 $m \\ge %s$ & $a > 0$ & Nằm phía trên trục hoành \\\\
 \\hline
 \\end{tabular}
-\\end{center} \\\\
+\\end{center}
 Vậy có tất cả $%s$ giá trị nguyên dương của tham số $m$ thỏa mãn yêu cầu bài toán.'''
                    % (str(p), str(q),
                       str(p), str(q), str(p), str(q), str(q), str(p),

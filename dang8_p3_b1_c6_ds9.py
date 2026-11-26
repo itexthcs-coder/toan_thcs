@@ -182,7 +182,7 @@ Yếu tố hình thang & Biểu thức & Giá trị \\\\
 Chiều cao $h$ & $y_C - y_A$ & $%s$ \\\\
 \\hline
 \\end{tabular}
-\\end{center} \\\\
+\\end{center}
 Diện tích hình thang $ABCD$ là: \\\\
 $S_{ABCD} = \\dfrac{(AB + CD) \\cdot h}{2} = \\dfrac{(%s + %s) \\cdot %s}{2} = %s$.'''
                    % (latex(y1),
