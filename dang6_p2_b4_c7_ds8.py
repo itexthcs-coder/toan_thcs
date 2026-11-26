@@ -175,9 +175,9 @@ def bt_dang6_p2_b4_c7_ds8(self):
     y_k = a_val * k_val + b_val
 
     table_tex = (
-        '\\begin{center}\\begin{tabular}{|c|c|c|c|c|}\hline '
-        '$x$ & $-1$ & $0$ & $2$ & $k$ \\\\ \hline '
-        '$y$ & $%s$ & $%s$ & $h$ & $%s$ \\\\ \hline '
+        '\\begin{center}\\begin{tabular}{|c|c|c|c|c|}\\hline '
+        '$x$ & $-1$ & $0$ & $2$ & $k$ \\\\ \\hline '
+        '$y$ & $%s$ & $%s$ & $h$ & $%s$ \\\\ \\hline '
         '\\end{tabular}\\end{center}'
         % (y_m1, b_val, y_k)
     )

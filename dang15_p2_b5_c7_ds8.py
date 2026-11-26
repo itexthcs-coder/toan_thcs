@@ -168,10 +168,10 @@ def bt_dang15_p2_b5_c7_ds8(self):
         x_new = x_old + p_right
         b_new = -a_val * p_right + b_val - q_down
 
-        nb_da_1_d = '\\True Đường thẳng $(d\\')$ và đường thẳng $(d)$ có cùng hệ số góc'
-        nb_da_1_s = 'Hệ số góc của đường thẳng $(d\\')$ nhỏ hơn hệ số góc của $(d)$'
+        nb_da_1_d = '\\True Đường thẳng $(d\')$ và đường thẳng $(d)$ có cùng hệ số góc'
+        nb_da_1_s = 'Hệ số góc của đường thẳng $(d\')$ nhỏ hơn hệ số góc của $(d)$'
         list_nb_da_1 = [nb_da_1_d, nb_da_1_s]
-        loigiai_nb_1 = ('''Phép tịnh tiến giữ nguyên hướng của đường thẳng nên $(d\\')$ song song hoặc trùng với $(d)$, suy ra hai đường thẳng có cùng hệ số góc $a = %d$.'''
+        loigiai_nb_1 = ('''Phép tịnh tiến giữ nguyên hướng của đường thẳng nên $(d\')$ song song hoặc trùng với $(d)$, suy ra hai đường thẳng có cùng hệ số góc $a = %d$.'''
                         % a_val)
 
         th_da_1_d = '\\True Khi tịnh tiến $(d)$ sang phải $%d$ đơn vị, giao điểm mới với trục hoành có hoành độ là $%s$' % (p_right, fmt_num(x_new))
@@ -180,19 +180,19 @@ def bt_dang15_p2_b5_c7_ds8(self):
         loigiai_th_1 = ('''Ban đầu $(d)$ cắt trục hoành tại điểm có hoành độ $x_0 = %s$. Khi tịnh tiến sang phải $%d$ đơn vị, hoành độ giao điểm mới là $%s + %d = %s$.'''
                         % (fmt_num(x_old), p_right, fmt_num(x_old), p_right, fmt_num(x_new)))
 
-        vd_da_1_d = '\\True Phương trình của đường thẳng $(d\\')$ là $y = %s$' % fmt_line(a_val, b_new)
-        vd_da_1_s = 'Phương trình của đường thẳng $(d\\')$ là $y = %s$' % fmt_line(a_val, b_new + 2 * a_val * p_right)
+        vd_da_1_d = '\\True Phương trình của đường thẳng $(d\')$ là $y = %s$' % fmt_line(a_val, b_new)
+        vd_da_1_s = 'Phương trình của đường thẳng $(d\')$ là $y = %s$' % fmt_line(a_val, b_new + 2 * a_val * p_right)
         list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
-        loigiai_vd_1 = ('''Điểm $(0; %d) \\in (d)$ qua phép tịnh tiến sang phải $%d$ đơn vị và xuống dưới $%d$ đơn vị biến thành điểm $(%d; %d) \\in (d\\')$. Vì $(d\\')$ có hệ số góc $a = %d$ nên $%d = %d \\cdot %d + b\\' \\Rightarrow b\\' = %d$. Vậy $(d\\'): y = %s$.'''
+        loigiai_vd_1 = ('''Điểm $(0; %d) \\in (d)$ qua phép tịnh tiến sang phải $%d$ đơn vị và xuống dưới $%d$ đơn vị biến thành điểm $(%d; %d) \\in (d\')$. Vì $(d\')$ có hệ số góc $a = %d$ nên $%d = %d \\cdot %d + b\' \\Rightarrow b\' = %d$. Vậy $(d\'): y = %s$.'''
                         % (b_val, p_right, q_down, p_right, b_val - q_down, a_val, b_val - q_down, a_val, p_right, b_new, fmt_line(a_val, b_new)))
 
-        vdc_da_1_d = '\\True Góc tạo bởi đường thẳng $(d\\')$ và trục $Ox$ bằng góc tạo bởi đường thẳng $(d)$ và trục $Ox$'
-        vdc_da_1_s = 'Góc tạo bởi đường thẳng $(d\\')$ và trục $Ox$ lớn hơn góc tạo bởi đường thẳng $(d)$ và trục $Ox$'
+        vdc_da_1_d = '\\True Góc tạo bởi đường thẳng $(d\')$ và trục $Ox$ bằng góc tạo bởi đường thẳng $(d)$ và trục $Ox$'
+        vdc_da_1_s = 'Góc tạo bởi đường thẳng $(d\')$ và trục $Ox$ lớn hơn góc tạo bởi đường thẳng $(d)$ và trục $Ox$'
         list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
-        loigiai_vdc_1 = ('''Vì $(d)$ và $(d\\')$ có cùng hệ số góc $a = %d$ nên góc tạo bởi hai đường thẳng này với trục $Ox$ bằng nhau.'''
+        loigiai_vdc_1 = ('''Vì $(d)$ và $(d\')$ có cùng hệ số góc $a = %d$ nên góc tạo bởi hai đường thẳng này với trục $Ox$ bằng nhau.'''
                          % a_val)
 
-        noidungcauhoi = ('''Trên mặt phẳng tọa độ $Oxy$, cho đường thẳng $(d): y = %s$. Người ta thực hiện tịnh tiến đường thẳng $(d)$ sang phải $%d$ đơn vị, sau đó tịnh tiến xuống dưới $%d$ đơn vị để thu được đường thẳng $(d\\')$.'''
+        noidungcauhoi = ('''Trên mặt phẳng tọa độ $Oxy$, cho đường thẳng $(d): y = %s$. Người ta thực hiện tịnh tiến đường thẳng $(d)$ sang phải $%d$ đơn vị, sau đó tịnh tiến xuống dưới $%d$ đơn vị để thu được đường thẳng $(d\')$.'''
                          % (fmt_line(a_val, b_val), p_right, q_down))
 
         while True:

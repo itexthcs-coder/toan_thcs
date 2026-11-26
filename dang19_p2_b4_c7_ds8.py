@@ -176,9 +176,9 @@ def bt_dang19_p2_b4_c7_ds8(self):
     y_check_k = init_k + weekly * w_check
 
     table_tex = (
-        '\\begin{center}\\begin{tabular}{|c|c|c|c|c|}\hline '
-        'Số tuần ($x$) & $0$ & $1$ & $2$ & $10$ \\\\ \hline '
-        'Tổng tiền ($y$, nghìn đồng) & $%s$ & $%s$ & $%s$ & $?$ \\\\ \hline '
+        '\\begin{center}\\begin{tabular}{|c|c|c|c|c|}\\hline '
+        'Số tuần ($x$) & $0$ & $1$ & $2$ & $10$ \\\\ \\hline '
+        'Tổng tiền ($y$, nghìn đồng) & $%s$ & $%s$ & $%s$ & $?$ \\\\ \\hline '
         '\\end{tabular}\\end{center}'
         % (init_k, init_k + weekly, init_k + 2 * weekly)
     )
