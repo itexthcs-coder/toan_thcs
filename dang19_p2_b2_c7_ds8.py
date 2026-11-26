@@ -142,7 +142,7 @@ def bt_dang19_p2_b2_c7_ds8(self):
     tong_kd = ngay_kd * ns_kd
 
     def fmt_num(n):
-        return f"{n:,}".replace(",", "\,")
+        return f"{n:,}".replace(",", "\\,")
 
     noidungcauhoi = "Một phân xưởng dệt được giao kế hoạch sản xuất một lô khăn bông trong $%s$ ngày. Nhờ cải tiến dây chuyền, mỗi ngày phân xưởng dệt vượt mức kế hoạch $%s$ chiếc khăn nên chẳng những đã hoàn thành sớm hơn dự định $%s$ ngày mà còn làm vượt mức được giao thêm $%s$ chiếc khăn nữa. Gọi $x$ (chiếc) ($x \\in \\mathbb{N}^*$) là số khăn phân xưởng phải dệt mỗi ngày theo kế hoạch. Xét tính đúng, sai của các khẳng định sau:" % (
         ngay_kd, vuot_ns, som, vuot_sp

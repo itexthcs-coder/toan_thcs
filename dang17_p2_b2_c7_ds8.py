@@ -141,7 +141,7 @@ def bt_dang17_p2_b2_c7_ds8(self):
     tong_thanh_toan = int(round(tien_chua_thue * 1.15))
 
     def fmt_num(n):
-        return f"{n:,}".replace(",", "\,")
+        return f"{n:,}".replace(",", "\\,")
 
     noidungcauhoi = "Để khuyến khích tiết kiệm nước sạch, công ty cấp nước áp dụng biểu giá lũy tiến theo bậc thang như sau:\\\\- Bậc 1: Từ $0\\text{ m}^3$ đến $10\\text{ m}^3$ đầu tiên tính giá $a$ (đồng/$\\text{m}^3$).\\\\- Bậc 2: Trên $10\\text{ m}^3$ đến $20\\text{ m}^3$, mỗi mét khối đắt hơn $%s$ đồng so với Bậc 1.\\\\- Bậc 3: Trên $20\\text{ m}^3$, mỗi mét khối đắt hơn $%s$ đồng so với Bậc 2.\\\\Ngoài tiền nước, khách hàng phải trả thêm $5\\%%$ thuế giá trị gia tăng (VAT) và $10\\%%$ phí bảo vệ môi trường (tổng cộng cộng thêm $15\\%%$ trên tổng tiền nước chưa thuế và phí). Tháng vừa qua, gia đình cô Lan sử dụng hết $%s\\text{ m}^3$ nước và thanh toán tổng cộng $%s$ đồng. Xét tính đúng, sai của các khẳng định sau:" % (
         fmt_num(d1), fmt_num(d2), m3_dung, fmt_num(tong_thanh_toan)

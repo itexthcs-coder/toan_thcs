@@ -147,9 +147,9 @@ def bt_dang18_p2_b2_c7_ds8(self):
     s_tl_cong_don = str(tl_cong_don).replace('.', ',')
 
     def fmt_num(n):
-        return f"{n:,}".replace(",", "\,")
+        return f"{n:,}".replace(",", "\\,")
 
-    noidungcauhoi = "Nhân dịp lễ hội mua sắm, một cửa hàng điện tử giảm giá $%s\\%%$ trên giá niêm yết cho tất cả các mẫu tai nghe không dây. Chị Thảo có thẻ thành viên hạng Vàng nên được giảm thêm $%s\\%%$ trên giá đã giảm ở lần thứ nhất. Cuối cùng, chị Thảo chỉ phải thanh toán $%s\,000$ đồng cho chiếc tai nghe đó. Gọi $x$ (nghìn đồng) ($x > 0$) là giá niêm yết ban đầu của chiếc tai nghe. Xét tính đúng, sai của các khẳng định sau:" % (
+    noidungcauhoi = "Nhân dịp lễ hội mua sắm, một cửa hàng điện tử giảm giá $%s\\%%$ trên giá niêm yết cho tất cả các mẫu tai nghe không dây. Chị Thảo có thẻ thành viên hạng Vàng nên được giảm thêm $%s\\%%$ trên giá đã giảm ở lần thứ nhất. Cuối cùng, chị Thảo chỉ phải thanh toán $%s\\,000$ đồng cho chiếc tai nghe đó. Gọi $x$ (nghìn đồng) ($x > 0$) là giá niêm yết ban đầu của chiếc tai nghe. Xét tính đúng, sai của các khẳng định sau:" % (
         giam1, giam2, fmt_num(gia_tra_nghin)
     )
 
@@ -170,15 +170,15 @@ def bt_dang18_p2_b2_c7_ds8(self):
     vd_da_1_d = '\\True Phương trình tính giá niêm yết ban đầu của chiếc tai nghe là $%sx = %s$.' % (s_tl_chung, fmt_num(gia_tra_nghin))
     vd_da_1_s = 'Phương trình tính giá niêm yết ban đầu của chiếc tai nghe là $%sx = %s$.' % (s_tl_cong_don, fmt_num(gia_tra_nghin))
     list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
-    loigiai_vd_1 = 'Đổi $%s\,000$ đồng $= %s$ nghìn đồng. Ta có phương trình: $%sx = %s$.' % (
+    loigiai_vd_1 = 'Đổi $%s\\,000$ đồng $= %s$ nghìn đồng. Ta có phương trình: $%sx = %s$.' % (
         fmt_num(gia_tra_nghin), fmt_num(gia_tra_nghin), s_tl_chung, fmt_num(gia_tra_nghin)
     )
     list_vd_2 = [loigiai_vd_1]
 
-    vdc_da_1_d = '\\True Giá niêm yết ban đầu của chiếc tai nghe là $%s\,000$ đồng.' % fmt_num(gia_goc_nghin)
-    vdc_da_1_s = 'Giá niêm yết ban đầu của chiếc tai nghe là $%s\,000$ đồng.' % fmt_num(gia_goc_nghin + 200)
+    vdc_da_1_d = '\\True Giá niêm yết ban đầu của chiếc tai nghe là $%s\\,000$ đồng.' % fmt_num(gia_goc_nghin)
+    vdc_da_1_s = 'Giá niêm yết ban đầu của chiếc tai nghe là $%s\\,000$ đồng.' % fmt_num(gia_goc_nghin + 200)
     list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
-    loigiai_vdc_1 = 'Giải phương trình: $%sx = %s \\Leftrightarrow x = \\dfrac{%s}{%s} = %s$ (nghìn đồng) $= %s\,000$ đồng.' % (
+    loigiai_vdc_1 = 'Giải phương trình: $%sx = %s \\Leftrightarrow x = \\dfrac{%s}{%s} = %s$ (nghìn đồng) $= %s\\,000$ đồng.' % (
         s_tl_chung, fmt_num(gia_tra_nghin), fmt_num(gia_tra_nghin), s_tl_chung, fmt_num(gia_goc_nghin), fmt_num(gia_goc_nghin)
     )
     list_vdc_2 = [loigiai_vdc_1]
