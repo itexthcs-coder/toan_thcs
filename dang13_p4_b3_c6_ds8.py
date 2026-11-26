@@ -1,0 +1,150 @@
+import sys
+from PyQt5.QtWidgets import QApplication, QColorDialog, QMainWindow, QSplitter, QTreeWidget, QSpacerItem, QSizePolicy, QTreeWidgetItem, QCheckBox, QFileDialog, QVBoxLayout, QTextEdit, QPushButton, QWidget, QLabel, QLineEdit, QDialog, QAction, QMessageBox, QScrollBar, QHeaderView, QMenu, QGridLayout
+from sympy import *
+from sympy.abc import x
+import sympy as sp
+from sympy import symbols,sqrt,evaluate,Subs,latex, Rational, expand, simplify, integrate
+import random
+import math
+from sympy import Rational
+from fractions import Fraction as frac
+from random import randint
+from PyQt5.QtGui import QTextCursor
+from PyQt5.QtGui import QFont
+import hashlib
+import uuid
+import os
+from sympy import symbols, Eq, solve
+import numpy as np
+from PyQt5.QtGui import QIcon
+from math import factorial
+from PyQt5.QtCore import Qt
+from PyQt5.QtGui import QTextDocument
+from subprocess import run, CalledProcessError
+import shutil
+from PyQt5.QtWidgets import QProgressBar
+from docx import Document
+from PyQt5 import QtGui
+import re
+import pandas as pd
+from PyQt5.QtGui import QPixmap
+import subprocess
+import platform
+import json
+from decimal import Decimal, ROUND_HALF_UP
+from PyQt5.QtWidgets import QComboBox, QPushButton, QVBoxLayout, QWidget
+from PyQt5.QtWidgets import QApplication, QWidget, QVBoxLayout, QSpinBox, QTreeWidget, QTreeWidgetItem, QCheckBox, QTextEdit, QPushButton, QHBoxLayout
+from random import randint, choice, shuffle
+from sympy import latex
+from fractions import Fraction
+from collections import Counter
+from random import sample
+import shutil
+import sys
+from PyQt5.QtWidgets import QApplication, QMainWindow, QTableWidget, QTableWidgetItem, QVBoxLayout, QWidget
+from PyQt5.QtCore import Qt
+import qrcode
+import json
+import glob
+import os
+import platform
+import subprocess
+import hashlib
+import base64
+from datetime import datetime, timedelta
+from PyQt5.QtWidgets import (QApplication, QDialog, QVBoxLayout, QLabel, QLineEdit, QPushButton, QMessageBox)
+from sympy import symbols, solve, Lt
+import re
+import pyperclip
+import warnings
+warnings.filterwarnings("ignore", category=FutureWarning)
+
+import google.generativeai as genai
+from sympy.abc import x, y, z, t
+import sys
+import os
+from PyQt5.QtWidgets import (
+    QApplication, QWidget, QVBoxLayout, QPushButton, QLabel, QFileDialog, QMessageBox
+)
+from pdf2image import convert_from_path
+from math import degrees
+import openpyxl
+from openpyxl import Workbook
+from openpyxl.styles import Alignment, Font
+from openpyxl.utils import get_column_letter
+from sympy import simplify, collect
+from itertools import combinations
+import itertools
+from PyQt5.QtCore import QSettings
+import sys
+import os
+import platform
+import subprocess
+import hashlib
+import time
+from datetime import datetime, timedelta
+from PyQt5.QtWidgets import (
+    QApplication, QMainWindow, QWidget, QDialog, QLabel, QLineEdit, 
+    QPushButton, QComboBox, QCheckBox, QTextEdit, QVBoxLayout, 
+    QHBoxLayout, QGridLayout, QMessageBox, QColorDialog,
+    QSplashScreen, QProgressBar
+)
+from PyQt5.QtCore import Qt, QSettings, QThread, pyqtSignal
+from PyQt5.QtGui import QIcon, QPixmap, QFont
+from PyQt5.QtGui import QFont, QBrush, QColor
+from PyQt5.QtWidgets import (
+    QApplication, QMainWindow, QWidget, QVBoxLayout, QHBoxLayout,
+    QSplitter, QTreeWidget, QTreeWidgetItem, QTextEdit, QLabel, 
+    QSpacerItem, QSizePolicy, QStackedWidget, QPushButton, QCheckBox, QSpinBox,
+    QScrollArea
+)
+from PyQt5.QtWidgets import QCheckBox
+from PyQt5.QtGui import QPainter, QColor, QPen
+from PyQt5.QtCore import Qt, QPropertyAnimation, pyqtProperty
+from functools import wraps
+import re
+import uuid
+import json, base64
+from datetime import datetime
+from nacl.signing import VerifyKey
+from nacl.encoding import HexEncoder
+from nacl.exceptions import BadSignatureError
+import sys
+import numpy as np
+from PyQt5.QtWidgets import (
+    QApplication, QMainWindow, QPushButton, QDialog, 
+    QVBoxLayout, QHBoxLayout, QTabWidget, QWidget, 
+    QLabel, QSlider, QDoubleSpinBox, QGroupBox
+)
+from PyQt5.QtCore import Qt
+from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
+from matplotlib.figure import Figure
+from mpl_toolkits.mplot3d import Axes3D
+def bt_dang13_p4_b3_c6_ds8(self):
+    # Dạng 13: Tính giá trị biểu thức phân thức bậc ba dựa vào đẳng thức trừ phân thức điều kiện
+    lisdang = ['1']
+    dang = random.choice(lisdang)
+    if dang == '1':
+        m = random.choice([2, 3, 4])
+        gt_b2 = m ** 2 + 2
+        gt_b3 = m ** 3 + 3 * m
+        kq = gt_b3 + 2 * gt_b2
+        
+        noidungcauhoi = ('Cho số thực $x \\neq 0$ thỏa mãn $x - \\dfrac{1}{x} = %s$. Tính giá trị của biểu thức:\\'
+                         '$$K = x^3 - \\dfrac{1}{x^3} + 2\\left(x^2 + \\dfrac{1}{x^2}\\right).$$'
+                         % m)
+        
+        loigiai = ('Ta tính lần lượt giá trị của $x^2 + \\dfrac{1}{x^2}$ và $x^3 - \\dfrac{1}{x^3}$ từ giả thiết $x - \\dfrac{1}{x} = %s$:\\'
+                   '- Bình phương hai vế của $x - \\dfrac{1}{x} = %s$, ta được:\\'
+                   '$$\\left(x - \\dfrac{1}{x}\\right)^2 = %s^2 \\Leftrightarrow x^2 - 2 + \\dfrac{1}{x^2} = %s \\Leftrightarrow x^2 + \\dfrac{1}{x^2} = %s.$$\\'
+                   '- Lập phương hai vế của $x - \\dfrac{1}{x} = %s$, ta được:\\'
+                   '$$\\left(x - \\dfrac{1}{x}\\right)^3 = %s^3 \\Leftrightarrow x^3 - \\dfrac{1}{x^3} - 3 \\cdot x \\cdot \\dfrac{1}{x}\\left(x - \\dfrac{1}{x}\\right) = %s \\Leftrightarrow x^3 - \\dfrac{1}{x^3} - 3 \\cdot %s = %s \\Leftrightarrow x^3 - \\dfrac{1}{x^3} = %s.$$\\'
+                   'Thay các kết quả trên vào biểu thức $K$, ta được:\\'
+                   '$$K = %s + 2 \\cdot %s = %s.$$'
+                   % (m, m, m, m ** 2, gt_b2, m, m, m ** 3, m, m ** 3, gt_b3, gt_b3, gt_b2, kq))
+        
+    content = ('\\begin{minipage}{\\textwidth} \n' +
+               '\\begin{ex}\n' +
+               str(noidungcauhoi) + '\n\\loigiai{ \n' + str(loigiai) + '}\n' +
+               '\\end{ex}\n \\end{minipage} \n\n')
+    return content
