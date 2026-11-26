@@ -149,7 +149,7 @@ def bt_dang8_p1_b2_c7_ds8(self):
     else:
         mo_cua = random.choice([10, 12, 15])
         gia_km = random.choice([12, 14, 15, 16])
-        noidungcauhoi = "Một hãng taxi tính giá mở cửa (cho kilômét đầu tiên) là $%s\\,000$ đồng và mỗi kilômét tiếp theo tính giá $%s\,000$ đồng. Nếu gọi $x$ ($\\text{km}$) ($x > 1$) là quãng đường khách đã đi thì số tiền (tính theo nghìn đồng) khách phải trả là:" % (mo_cua, gia_km)
+        noidungcauhoi = "Một hãng taxi tính giá mở cửa (cho kilômét đầu tiên) là $%s\\,000$ đồng và mỗi kilômét tiếp theo tính giá $%s\\,000$ đồng. Nếu gọi $x$ ($\\text{km}$) ($x > 1$) là quãng đường khách đã đi thì số tiền (tính theo nghìn đồng) khách phải trả là:" % (mo_cua, gia_km)
         da = "$%s + %s(x - 1)$" % (mo_cua, gia_km)
         s = [
             "$%s + %sx$" % (mo_cua, gia_km),
