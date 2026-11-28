@@ -1,0 +1,179 @@
+import sys
+from PyQt5.QtWidgets import QApplication, QColorDialog, QMainWindow, QSplitter, QTreeWidget, QSpacerItem, QSizePolicy, QTreeWidgetItem, QCheckBox, QFileDialog, QVBoxLayout, QTextEdit, QPushButton, QWidget, QLabel, QLineEdit, QDialog, QAction, QMessageBox, QScrollBar, QHeaderView, QMenu, QGridLayout
+from sympy import *
+from sympy.abc import x
+import sympy as sp
+from sympy import symbols,sqrt,evaluate,Subs,latex, Rational, expand, simplify, integrate
+import random
+import math
+from sympy import Rational
+from fractions import Fraction as frac
+from random import randint
+from PyQt5.QtGui import QTextCursor
+from PyQt5.QtGui import QFont
+import hashlib
+import uuid
+import os
+from sympy import symbols, Eq, solve
+import numpy as np
+from PyQt5.QtGui import QIcon
+from math import factorial
+from PyQt5.QtCore import Qt
+from PyQt5.QtGui import QTextDocument
+from subprocess import run, CalledProcessError
+import shutil
+from PyQt5.QtWidgets import QProgressBar
+from docx import Document
+from PyQt5 import QtGui
+import re
+import pandas as pd
+from PyQt5.QtGui import QPixmap
+import subprocess
+import platform
+import json
+from decimal import Decimal, ROUND_HALF_UP
+from PyQt5.QtWidgets import QComboBox, QPushButton, QVBoxLayout, QWidget
+from PyQt5.QtWidgets import QApplication, QWidget, QVBoxLayout, QSpinBox, QTreeWidget, QTreeWidgetItem, QCheckBox, QTextEdit, QPushButton, QHBoxLayout
+from random import randint, choice, shuffle
+from sympy import latex
+from fractions import Fraction
+from collections import Counter
+from random import sample
+import shutil
+import sys
+from PyQt5.QtWidgets import QApplication, QMainWindow, QTableWidget, QTableWidgetItem, QVBoxLayout, QWidget
+from PyQt5.QtCore import Qt
+import qrcode
+import json
+import glob
+import os
+import platform
+import subprocess
+import hashlib
+import base64
+from datetime import datetime, timedelta
+from PyQt5.QtWidgets import (QApplication, QDialog, QVBoxLayout, QLabel, QLineEdit, QPushButton, QMessageBox)
+from sympy import symbols, solve, Lt
+#from PyQt5.QtWebEngineWidgets import QWebEngineView
+#from PyQt5.QtCore import QUrl
+#from sympy import latex
+import re
+import pyperclip
+import warnings
+warnings.filterwarnings("ignore", category=FutureWarning)
+
+import google.generativeai as genai
+from sympy.abc import x, y, z, t
+import sys
+import os
+from PyQt5.QtWidgets import (
+    QApplication, QWidget, QVBoxLayout, QPushButton, QLabel, QFileDialog, QMessageBox
+)
+from pdf2image import convert_from_path
+from math import degrees
+import openpyxl
+from openpyxl import Workbook
+from openpyxl.styles import Alignment, Font
+from openpyxl.utils import get_column_letter
+from sympy import simplify, collect
+from itertools import combinations
+import itertools
+from PyQt5.QtCore import QSettings
+import sys
+import os
+import platform
+import subprocess
+import hashlib
+import time
+from datetime import datetime, timedelta
+# Bổ sung các widget và core cho Splash Screen
+from PyQt5.QtWidgets import (
+    QApplication, QMainWindow, QWidget, QDialog, QLabel, QLineEdit, 
+    QPushButton, QComboBox, QCheckBox, QTextEdit, QVBoxLayout, 
+    QHBoxLayout, QGridLayout, QMessageBox, QColorDialog,
+    QSplashScreen, QProgressBar  # <-- BỔ SUNG 2 CÁI NÀY
+)
+from PyQt5.QtCore import Qt, QSettings, QThread, pyqtSignal  # <-- BỔ SUNG QThread, pyqtSignal
+from PyQt5.QtGui import QIcon, QPixmap, QFont
+from PyQt5.QtGui import QFont, QBrush, QColor
+from PyQt5.QtWidgets import (
+    QApplication, QMainWindow, QWidget, QVBoxLayout, QHBoxLayout,
+    QSplitter, QTreeWidget, QTreeWidgetItem, QTextEdit, QLabel, 
+    QSpacerItem, QSizePolicy, QStackedWidget, QPushButton, QCheckBox, QSpinBox,
+    QScrollArea  # <-- Thêm mục này vào đây
+)
+from PyQt5.QtWidgets import QCheckBox
+from PyQt5.QtGui import QPainter, QColor, QPen
+from PyQt5.QtCore import Qt, QPropertyAnimation, pyqtProperty
+from functools import wraps
+import re
+import uuid
+import json, base64
+from datetime import datetime
+from nacl.signing import VerifyKey
+from nacl.encoding import HexEncoder
+from nacl.exceptions import BadSignatureError
+### CÔNG CỤ
+import sys
+import numpy as np
+from PyQt5.QtWidgets import (
+    QApplication, QMainWindow, QPushButton, QDialog, 
+    QVBoxLayout, QHBoxLayout, QTabWidget, QWidget, 
+    QLabel, QSlider, QDoubleSpinBox, QGroupBox
+)
+from PyQt5.QtCore import Qt
+from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
+from matplotlib.figure import Figure
+from mpl_toolkits.mplot3d import Axes3D  # Cần cho 3D
+
+
+def bt_dang18_p3_b5_c7_ds8(self):
+    # Dang 18: Bai toan thuc te ve cuoc phi taxi va giao diem hai duong thang
+    lisdang = ['1']
+    dang = random.choice(lisdang)
+    if dang == '1':
+        b1 = random.choice([10, 12, 14])
+        a1 = random.choice([15, 16, 18])
+        x0 = random.choice([4, 5])
+        y_common = a1 * x0 + b1
+        a2 = a1 - 2
+        b2 = y_common - a2 * x0
+        
+        tikz = (
+            '\\begin{center}\n'
+            '\\begin{tikzpicture}[scale=0.6, font=\\footnotesize, line join=round, line cap=round, >=stealth]\n'
+            '\\draw[->, line width=1pt] (-0.5,0) -- (4.5,0) node[below] {$x$ (km)};\n'
+            '\\draw[->, line width=1pt] (0,-0.5) -- (0,3.5) node[left] {$y$ (nghìn đồng)};\n'
+            '\\draw[line width=1pt] (0,0.6) -- (3.8,3.2) node[right] {Hãng 1};\n'
+            '\\draw[line width=1pt, dashed] (0,1.2) -- (3.8,2.8) node[right] {Hãng 2};\n'
+            '\\fill (0,0) circle (1pt) node[below left] {$O$};\n'
+            '\\fill (2.28,2.16) circle (1pt) node[above] {$I$};\n'
+            '\\end{tikzpicture}\n'
+            '\\end{center}'
+        )
+        
+        noidungcauhoi = (
+            'Một hãng taxi áp dụng mức cước mở cửa là $%s$ nghìn đồng và mỗi kilômét tiếp theo tính giá $%s$ nghìn đồng. '
+            'Một hãng taxi khác muốn thiết kế bảng giá $y = ax + b$ (nghìn đồng) có phí mở cửa là $%s$ nghìn đồng sao cho '
+            'đồ thị chi phí di chuyển $x$ (km) của hai hãng cắt nhau tại đúng điểm ứng với quãng đường $x = %s$ km. '
+            'Tính hệ số góc $a$ (đơn giá mỗi km, tính theo nghìn đồng) của hãng taxi thứ hai.\n%s'
+            % (b1, a1, b2, x0, tikz)
+        )
+        
+        loigiai = (
+            'Hàm số biểu diễn chi phí di chuyển $x$ (km) của hãng taxi thứ nhất là: $y = %sx + %s$.\\ '
+            'Tại quãng đường $x = %s$ km, chi phí di chuyển của hãng thứ nhất là: $y = %s \\cdot %s + %s = %s$ (nghìn đồng).\\ '
+            'Hãng taxi thứ hai có phí mở cửa là $%s$ nghìn đồng nên hàm chi phí có dạng: $y = ax + %s$.\\ '
+            'Vì đồ thị của hai hãng cắt nhau tại điểm ứng với $x = %s$ km nên đồ thị của hãng thứ hai đi qua điểm $(%s; %s)$.\\ '
+            'Thay $x = %s$ và $y = %s$ vào hàm số của hãng thứ hai, ta được:\\ '
+            '$%s = a \\cdot %s + %s \\Leftrightarrow %sa = %s \\Leftrightarrow a = %s$.'
+            % (a1, b1, x0, a1, x0, b1, y_common, b2, b2, x0, x0, y_common, x0, y_common, y_common, x0, b2, x0, y_common - b2, a2)
+        )
+        
+        dapan = '\\shortans[0]{$%s$}\n' % a2
+
+    content = ('\\begin{minipage}{\\textwidth} \n'
+               '\\begin{ex}\n' + str(noidungcauhoi) + str(dapan) +
+               '\\loigiai{ \n' + str(loigiai) + '}\n'
+               '\\end{ex}\n \\end{minipage} \n\n')
+    return content

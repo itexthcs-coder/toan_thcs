@@ -1,0 +1,219 @@
+import sys
+from PyQt5.QtWidgets import QApplication, QColorDialog, QMainWindow, QSplitter, QTreeWidget, QSpacerItem, QSizePolicy, QTreeWidgetItem, QCheckBox, QFileDialog, QVBoxLayout, QTextEdit, QPushButton, QWidget, QLabel, QLineEdit, QDialog, QAction, QMessageBox, QScrollBar, QHeaderView, QMenu, QGridLayout
+from sympy import *
+from sympy.abc import x
+import sympy as sp
+from sympy import symbols,sqrt,evaluate,Subs,latex, Rational, expand, simplify, integrate
+import random
+import math
+from sympy import Rational
+from fractions import Fraction as frac
+from random import randint
+from PyQt5.QtGui import QTextCursor
+from PyQt5.QtGui import QFont
+import hashlib
+import uuid
+import os
+from sympy import symbols, Eq, solve
+import numpy as np
+from PyQt5.QtGui import QIcon
+from math import factorial
+from PyQt5.QtCore import Qt
+from PyQt5.QtGui import QTextDocument
+from subprocess import run, CalledProcessError
+import shutil
+from PyQt5.QtWidgets import QProgressBar
+from docx import Document
+from PyQt5 import QtGui
+import re
+import pandas as pd
+from PyQt5.QtGui import QPixmap
+import subprocess
+import platform
+import json
+from decimal import Decimal, ROUND_HALF_UP
+from PyQt5.QtWidgets import QComboBox, QPushButton, QVBoxLayout, QWidget
+from PyQt5.QtWidgets import QApplication, QWidget, QVBoxLayout, QSpinBox, QTreeWidget, QTreeWidgetItem, QCheckBox, QTextEdit, QPushButton, QHBoxLayout
+from random import randint, choice, shuffle
+from sympy import latex
+from fractions import Fraction
+from collections import Counter
+from random import sample
+import shutil
+import sys
+from PyQt5.QtWidgets import QApplication, QMainWindow, QTableWidget, QTableWidgetItem, QVBoxLayout, QWidget
+from PyQt5.QtCore import Qt
+import qrcode
+import json
+import glob
+import os
+import platform
+import subprocess
+import hashlib
+import base64
+from datetime import datetime, timedelta
+from PyQt5.QtWidgets import (QApplication, QDialog, QVBoxLayout, QLabel, QLineEdit, QPushButton, QMessageBox)
+from sympy import symbols, solve, Lt
+#from PyQt5.QtWebEngineWidgets import QWebEngineView
+#from PyQt5.QtCore import QUrl
+#from sympy import latex
+import re
+import pyperclip
+import warnings
+warnings.filterwarnings("ignore", category=FutureWarning)
+
+import google.generativeai as genai
+from sympy.abc import x, y, z, t
+import sys
+import os
+from PyQt5.QtWidgets import (
+    QApplication, QWidget, QVBoxLayout, QPushButton, QLabel, QFileDialog, QMessageBox
+)
+from pdf2image import convert_from_path
+from math import degrees
+import openpyxl
+from openpyxl import Workbook
+from openpyxl.styles import Alignment, Font
+from openpyxl.utils import get_column_letter
+from sympy import simplify, collect
+from itertools import combinations
+import itertools
+from PyQt5.QtCore import QSettings
+import sys
+import os
+import platform
+import subprocess
+import hashlib
+import time
+from datetime import datetime, timedelta
+# Bổ sung các widget và core cho Splash Screen
+from PyQt5.QtWidgets import (
+    QApplication, QMainWindow, QWidget, QDialog, QLabel, QLineEdit, 
+    QPushButton, QComboBox, QCheckBox, QTextEdit, QVBoxLayout, 
+    QHBoxLayout, QGridLayout, QMessageBox, QColorDialog,
+    QSplashScreen, QProgressBar  # <-- BỔ SUNG 2 CÁI NÀY
+)
+from PyQt5.QtCore import Qt, QSettings, QThread, pyqtSignal  # <-- BỔ SUNG QThread, pyqtSignal
+from PyQt5.QtGui import QIcon, QPixmap, QFont
+from PyQt5.QtGui import QFont, QBrush, QColor
+from PyQt5.QtWidgets import (
+    QApplication, QMainWindow, QWidget, QVBoxLayout, QHBoxLayout,
+    QSplitter, QTreeWidget, QTreeWidgetItem, QTextEdit, QLabel, 
+    QSpacerItem, QSizePolicy, QStackedWidget, QPushButton, QCheckBox, QSpinBox,
+    QScrollArea  # <-- Thêm mục này vào đây
+)
+from PyQt5.QtWidgets import QCheckBox
+from PyQt5.QtGui import QPainter, QColor, QPen
+from PyQt5.QtCore import Qt, QPropertyAnimation, pyqtProperty
+from functools import wraps
+import re
+import uuid
+import json, base64
+from datetime import datetime
+from nacl.signing import VerifyKey
+from nacl.encoding import HexEncoder
+from nacl.exceptions import BadSignatureError
+### CÔNG CỤ
+import sys
+import numpy as np
+from PyQt5.QtWidgets import (
+    QApplication, QMainWindow, QPushButton, QDialog, 
+    QVBoxLayout, QHBoxLayout, QTabWidget, QWidget, 
+    QLabel, QSlider, QDoubleSpinBox, QGroupBox
+)
+from PyQt5.QtCore import Qt
+from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
+from matplotlib.figure import Figure
+from mpl_toolkits.mplot3d import Axes3D  # Cần cho 3D
+
+
+
+def fmt_frac(num, den):
+    f = Fraction(num, den)
+    if f.denominator == 1:
+        return str(f.numerator)
+    return "\\dfrac{%s}{%s}" % (f.numerator, f.denominator)
+
+def fmt_list_str(lst):
+    return "; ".join(str(x) for x in lst)
+
+def is_prime(n):
+    if n < 2:
+        return False
+    for i in range(2, int(math.isqrt(n)) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+def is_square(n):
+    if n < 1:
+        return False
+    r = math.isqrt(n)
+    return r * r == n
+
+def bt_dang5_p1_b2_c8_ds8(self):
+    # Dạng 5: Tình huống chọn đồ vật cùng loại - tính xác suất và rút gọn phân số
+    lisdang = ['1']
+    dang = random.choice(lisdang)
+    
+    if dang == '1':
+        k = random.choice([2, 3, 4, 5])
+        a_base = random.choice([1, 2, 3])
+        b_base = random.choice([2, 3, 4, 5])
+        while math.gcd(a_base, b_base) != 1 or a_base == b_base:
+            b_base = random.choice([2, 3, 4, 5])
+        
+        so_xanh = a_base * k
+        so_den = b_base * k
+        tong = so_xanh + so_den
+        
+        da = '$%s$' % fmt_frac(so_xanh, tong)
+        
+        candidates = [
+            fmt_frac(so_den, tong),
+            fmt_frac(so_xanh, so_den),
+            fmt_frac(1, tong),
+            fmt_frac(1, 2),
+            fmt_frac(1, so_xanh)
+        ]
+        s = []
+        for c in candidates:
+            cs = '$%s$' % c
+            if cs != da and cs not in s:
+                s.append(cs)
+                
+        das1 = random.choice(s)
+        s.remove(das1)
+        das2 = random.choice(s)
+        s.remove(das2)
+        das3 = random.choice(s)
+        
+        noidungcauhoi = (
+            'Trong ngăn kéo có $%s$ chiếc bút bi giống hệt nhau về hình dạng và kích thước, gồm $%s$ bút mực xanh và $%s$ bút mực đen. Lấy ngẫu nhiên $1$ chiếc bút từ ngăn kéo. Xác suất lấy được bút mực xanh là'
+            % (tong, so_xanh, so_den)
+        )
+        
+        da_d = ('\\True ' + str(da))
+        da_s1 = str(das1)
+        da_s2 = str(das2)
+        da_s3 = str(das3)
+        
+        list_1 = [da_d, da_s1, da_s2, da_s3]
+        random.shuffle(list_1)
+        
+        loigiai = (
+            'Vì trong ngăn kéo có $%s$ chiếc bút bi giống hệt nhau nên khi lấy ngẫu nhiên $1$ chiếc bút thì có $%s$ kết quả có thể và các kết quả này là đồng khả năng.\\\\ '
+            'Có $%s$ bút mực xanh nên số kết quả thuận lợi cho biến cố ``Lấy được bút mực xanh" là $%s$.\\\\ '
+            'Vậy xác suất lấy được bút mực xanh là $\\dfrac{%s}{%s} = %s$.'
+            % (tong, tong, so_xanh, so_xanh, so_xanh, tong, fmt_frac(so_xanh, tong))
+        )
+    content = ('\\begin{minipage}{\\textwidth} \n' +
+               '\\begin{ex}\n' +
+               str(noidungcauhoi) + '\n\\choice \n' +
+               '{' + str(list_1[1]) + '}\n' +
+               '{' + str(list_1[2]) + '}\n' +
+               '{' + str(list_1[3]) + '}\n' +
+               '{' + str(list_1[0]) + '}\n' +
+               '\\loigiai{' + str(loigiai) + '}\n' +
+               '\\end{ex}\n \\end{minipage} \n\n')
+    return content
