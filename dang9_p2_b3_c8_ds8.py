@@ -1,0 +1,239 @@
+import sys
+from PyQt5.QtWidgets import QApplication, QColorDialog, QMainWindow, QSplitter, QTreeWidget, QSpacerItem, QSizePolicy, QTreeWidgetItem, QCheckBox, QFileDialog, QVBoxLayout, QTextEdit, QPushButton, QWidget, QLabel, QLineEdit, QDialog, QAction, QMessageBox, QScrollBar, QHeaderView, QMenu, QGridLayout
+from sympy import *
+from sympy.abc import x
+import sympy as sp
+from sympy import symbols,sqrt,evaluate,Subs,latex, Rational, expand, simplify, integrate
+import random
+import math
+from sympy import Rational
+from fractions import Fraction as frac
+from random import randint
+from PyQt5.QtGui import QTextCursor
+from PyQt5.QtGui import QFont
+import hashlib
+import uuid
+import os
+from sympy import symbols, Eq, solve
+import numpy as np
+from PyQt5.QtGui import QIcon
+from math import factorial
+from PyQt5.QtCore import Qt
+from PyQt5.QtGui import QTextDocument
+from subprocess import run, CalledProcessError
+import shutil
+from PyQt5.QtWidgets import QProgressBar
+from docx import Document
+from PyQt5 import QtGui
+import re
+import pandas as pd
+from PyQt5.QtGui import QPixmap
+import subprocess
+import platform
+import json
+from decimal import Decimal, ROUND_HALF_UP
+from PyQt5.QtWidgets import QComboBox, QPushButton, QVBoxLayout, QWidget
+from PyQt5.QtWidgets import QApplication, QWidget, QVBoxLayout, QSpinBox, QTreeWidget, QTreeWidgetItem, QCheckBox, QTextEdit, QPushButton, QHBoxLayout
+from random import randint, choice, shuffle
+from sympy import latex
+from fractions import Fraction
+from collections import Counter
+from random import sample
+import shutil
+import sys
+from PyQt5.QtWidgets import QApplication, QMainWindow, QTableWidget, QTableWidgetItem, QVBoxLayout, QWidget
+from PyQt5.QtCore import Qt
+import qrcode
+import json
+import glob
+import os
+import platform
+import subprocess
+import hashlib
+import base64
+from datetime import datetime, timedelta
+from PyQt5.QtWidgets import (QApplication, QDialog, QVBoxLayout, QLabel, QLineEdit, QPushButton, QMessageBox)
+from sympy import symbols, solve, Lt
+import re
+import pyperclip
+import warnings
+warnings.filterwarnings("ignore", category=FutureWarning)
+
+import google.generativeai as genai
+from sympy.abc import x, y, z, t
+import sys
+import os
+from PyQt5.QtWidgets import (
+    QApplication, QWidget, QVBoxLayout, QPushButton, QLabel, QFileDialog, QMessageBox
+)
+from pdf2image import convert_from_path
+from math import degrees
+import openpyxl
+from openpyxl import Workbook
+from openpyxl.styles import Alignment, Font
+from openpyxl.utils import get_column_letter
+from sympy import simplify, collect
+from itertools import combinations
+import itertools
+from PyQt5.QtCore import QSettings
+import sys
+import os
+import platform
+import subprocess
+import hashlib
+import time
+from datetime import datetime, timedelta
+from PyQt5.QtWidgets import (
+    QApplication, QMainWindow, QWidget, QDialog, QLabel, QLineEdit, 
+    QPushButton, QComboBox, QCheckBox, QTextEdit, QVBoxLayout, 
+    QHBoxLayout, QGridLayout, QMessageBox, QColorDialog,
+    QSplashScreen, QProgressBar
+)
+from PyQt5.QtCore import Qt, QSettings, QThread, pyqtSignal
+from PyQt5.QtGui import QIcon, QPixmap, QFont
+from PyQt5.QtGui import QFont, QBrush, QColor
+from PyQt5.QtWidgets import (
+    QApplication, QMainWindow, QWidget, QVBoxLayout, QHBoxLayout,
+    QSplitter, QTreeWidget, QTreeWidgetItem, QTextEdit, QLabel, 
+    QSpacerItem, QSizePolicy, QStackedWidget, QPushButton, QCheckBox, QSpinBox,
+    QScrollArea
+)
+from PyQt5.QtWidgets import QCheckBox
+from PyQt5.QtGui import QPainter, QColor, QPen
+from PyQt5.QtCore import Qt, QPropertyAnimation, pyqtProperty
+from functools import wraps
+import re
+import uuid
+import json, base64
+from datetime import datetime
+from nacl.signing import VerifyKey
+from nacl.encoding import HexEncoder
+from nacl.exceptions import BadSignatureError
+import sys
+import numpy as np
+from PyQt5.QtWidgets import (
+    QApplication, QMainWindow, QPushButton, QDialog, 
+    QVBoxLayout, QHBoxLayout, QTabWidget, QWidget, 
+    QLabel, QSlider, QDoubleSpinBox, QGroupBox
+)
+from PyQt5.QtCore import Qt
+from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
+from matplotlib.figure import Figure
+from mpl_toolkits.mplot3d import Axes3D
+
+def fmt_dec(val, places=2):
+    d = Decimal(str(val)).quantize(Decimal('1.' + '0'*places) if places > 0 else Decimal('1'), rounding=ROUND_HALF_UP)
+    s = format(d, 'f')
+    if '.' in s:
+        s = s.rstrip('0').rstrip('.')
+    return s.replace('.', ',')
+
+def fmt_frac(num, den):
+    f = Fraction(num, den)
+    if f.denominator == 1:
+        return str(f.numerator)
+    return '\\dfrac{%s}{%s}' % (f.numerator, f.denominator)
+
+def count_true_answers(answers):
+    return sum('\\True' in ans for ans in answers)
+
+def bt_dang9_p2_b3_c8_ds8(self):
+    # Dạng 9: Thống kê kết quả bắn cung (So sánh xác suất thực nghiệm)
+    lisdang = ['1']
+    dang = random.choice(lisdang)
+    if dang == '1':
+        nA = 80
+        nB = 100
+        a10 = random.choice([36, 40, 44])
+        a9 = 64 - a10
+        b10 = a10 + 4  # pB10 = (a10+4)/100 < a10/80
+        b9 = 80 - b10
+
+        pA10 = fmt_dec(Fraction(a10, nA), 2)
+        pA10_sai = fmt_dec(Fraction(a10 + 4, nA), 2)
+        pB10 = fmt_dec(Fraction(b10, nB), 2)
+        pct_duoi9_A = ((nA - a10 - a9) * 100) // nA
+        pct_duoi9_A_sai = pct_duoi9_A + 5
+
+        noidungcauhoi = (
+            'Trong buổi tập luyện, vận động viên A bắn $%s$ mũi tên và vận động viên B bắn $%s$ mũi tên vào bia. Kết quả số mũi tên trúng hồng tâm ($10$ điểm) và vòng $9$ điểm được ghi lại như sau:\\'
+            '- Vận động viên A: $%s$ mũi tên điểm $10$; $%s$ mũi tên điểm $9$; còn lại dưới $9$ điểm.\\'
+            '- Vận động viên B: $%s$ mũi tên điểm $10$; $%s$ mũi tên điểm $9$; còn lại dưới $9$ điểm.\\'
+            'Xét tính đúng sai của các mệnh đề sau:'
+            % (nA, nB, a10, a9, b10, b9)
+        )
+
+        nb_da_1_d = '\\True Xác suất thực nghiệm bắn trúng hồng tâm ($10$ điểm) của vận động viên A là $%s$' % pA10
+        nb_da_1_s = 'Xác suất thực nghiệm bắn trúng hồng tâm ($10$ điểm) của vận động viên A là $%s$' % pA10_sai
+        list_nb_da_1 = [nb_da_1_d, nb_da_1_s]
+
+        th_da_1_d = '\\True Xác suất thực nghiệm bắn trúng hồng tâm của vận động viên A cao hơn của vận động viên B'
+        th_da_1_s = 'Xác suất thực nghiệm bắn trúng hồng tâm của vận động viên B cao hơn của vận động viên A'
+        list_th_da_1 = [th_da_1_d, th_da_1_s]
+
+        vd_da_1_d = '\\True Xác suất thực nghiệm bắn đạt từ $9$ điểm trở lên của cả hai vận động viên là bằng nhau'
+        vd_da_1_s = 'Xác suất thực nghiệm bắn đạt từ $9$ điểm trở lên của vận động viên B lớn hơn của vận động viên A'
+        list_vd_da_1 = [vd_da_1_d, vd_da_1_s]
+
+        vdc_da_1_d = '\\True Xác suất thực nghiệm bắn dưới $9$ điểm của vận động viên A là $%s\\%%$' % pct_duoi9_A
+        vdc_da_1_s = 'Xác suất thực nghiệm bắn dưới $9$ điểm của vận động viên A là $%s\\%%$' % pct_duoi9_A_sai
+        list_vdc_da_1 = [vdc_da_1_d, vdc_da_1_s]
+
+        loigiai_nb_1 = (
+            'Xác suất thực nghiệm bắn trúng hồng tâm của vận động viên A là $\\dfrac{%s}{%s} = %s$.'
+            % (a10, nA, pA10)
+        )
+        loigiai_th_1 = (
+            'Xác suất thực nghiệm bắn trúng hồng tâm của vận động viên B là $\\dfrac{%s}{%s} = %s < %s$.\\'
+            'Vậy vận động viên A có xác suất thực nghiệm trúng hồng tâm cao hơn.'
+            % (b10, nB, pB10, pA10)
+        )
+        loigiai_vd_1 = (
+            'Xác suất thực nghiệm đạt từ $9$ điểm trở lên của A là $\\dfrac{%s + %s}{%s} = 0,8$.\\'
+            'Xác suất thực nghiệm đạt từ $9$ điểm trở lên của B là $\\dfrac{%s + %s}{%s} = 0,8$. Hai xác suất này bằng nhau.'
+            % (a10, a9, nA, b10, b9, nB)
+        )
+        loigiai_vdc_1 = (
+            'Số mũi tên dưới $9$ điểm của vận động viên A là $%s - (%s + %s) = %s$ (mũi tên).\\'
+            'Xác suất thực nghiệm tương ứng là $\\dfrac{%s}{%s} = %s\\%%$.'
+            % (nA, a10, a9, nA - a10 - a9, nA - a10 - a9, nA, pct_duoi9_A)
+        )
+
+        while True:
+            nb_da_1 = random.choice(list_nb_da_1)
+            th_da_1 = random.choice(list_th_da_1)
+            vd_da_1 = random.choice(list_vd_da_1)
+            vdc_da_1 = random.choice(list_vdc_da_1)
+            answers = [nb_da_1, th_da_1, vd_da_1, vdc_da_1]
+            if 1 <= count_true_answers(answers) <= 3:
+                break
+
+        combined_nb = list(zip([nb_da_1], [loigiai_nb_1]))
+        combined_th = list(zip([th_da_1], [loigiai_th_1]))
+        combined_vd = list(zip([vd_da_1], [loigiai_vd_1]))
+        combined_vdc = list(zip([vdc_da_1], [loigiai_vdc_1]))
+        random.shuffle(combined_nb)
+        random.shuffle(combined_th)
+        random.shuffle(combined_vd)
+        random.shuffle(combined_vdc)
+        shuffled_answers_nb, shuffled_solutions_nb = zip(*combined_nb)
+        shuffled_answers_th, shuffled_solutions_th = zip(*combined_th)
+        shuffled_answers_vd, shuffled_solutions_vd = zip(*combined_vd)
+        shuffled_answers_vdc, shuffled_solutions_vdc = zip(*combined_vdc)
+
+    content = ('\\begin{minipage}{\\textwidth} \n'
+               '\\begin{ex}\n' + str(noidungcauhoi) + '\n'
+               '\\choiceTFn \n'
+               '{' + str(shuffled_answers_nb[0]) + '}\n'
+               '{' + str(shuffled_answers_th[0]) + '}\n'
+               '{' + str(shuffled_answers_vd[0]) + '}\n'
+               '{' + str(shuffled_answers_vdc[0]) + '}\n'
+               '\\loigiai{ \n'
+               '\\begin{enumEX}[a)]{1} \n'
+               '\\item ' + str(shuffled_solutions_nb[0]) + '\n'
+               '\\item ' + str(shuffled_solutions_th[0]) + '\n'
+               '\\item ' + str(shuffled_solutions_vd[0]) + '\n'
+               '\\item ' + str(shuffled_solutions_vdc[0]) + '\n'
+               '\\end{enumEX}} \n'
+               '\\end{ex}\n \\end{minipage}\n\n')
+    return content

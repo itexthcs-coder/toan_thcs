@@ -1,0 +1,216 @@
+import sys
+from PyQt5.QtWidgets import QApplication, QColorDialog, QMainWindow, QSplitter, QTreeWidget, QSpacerItem, QSizePolicy, QTreeWidgetItem, QCheckBox, QFileDialog, QVBoxLayout, QTextEdit, QPushButton, QWidget, QLabel, QLineEdit, QDialog, QAction, QMessageBox, QScrollBar, QHeaderView, QMenu, QGridLayout
+from sympy import *
+from sympy.abc import x
+import sympy as sp
+from sympy import symbols,sqrt,evaluate,Subs,latex, Rational, expand, simplify, integrate
+import random
+import math
+from sympy import Rational
+from fractions import Fraction as frac
+from random import randint
+from PyQt5.QtGui import QTextCursor
+from PyQt5.QtGui import QFont
+import hashlib
+import uuid
+import os
+from sympy import symbols, Eq, solve
+import numpy as np
+from PyQt5.QtGui import QIcon
+from math import factorial
+from PyQt5.QtCore import Qt
+from PyQt5.QtGui import QTextDocument
+from subprocess import run, CalledProcessError
+import shutil
+from PyQt5.QtWidgets import QProgressBar
+from docx import Document
+from PyQt5 import QtGui
+import re
+import pandas as pd
+from PyQt5.QtGui import QPixmap
+import subprocess
+import platform
+import json
+from decimal import Decimal, ROUND_HALF_UP
+from PyQt5.QtWidgets import QComboBox, QPushButton, QVBoxLayout, QWidget
+from PyQt5.QtWidgets import QApplication, QWidget, QVBoxLayout, QSpinBox, QTreeWidget, QTreeWidgetItem, QCheckBox, QTextEdit, QPushButton, QHBoxLayout
+from random import randint, choice, shuffle
+from sympy import latex
+from fractions import Fraction
+from collections import Counter
+from random import sample
+import shutil
+import sys
+from PyQt5.QtWidgets import QApplication, QMainWindow, QTableWidget, QTableWidgetItem, QVBoxLayout, QWidget
+from PyQt5.QtCore import Qt
+import qrcode
+import json
+import glob
+import os
+import platform
+import subprocess
+import hashlib
+import base64
+from datetime import datetime, timedelta
+from PyQt5.QtWidgets import (QApplication, QDialog, QVBoxLayout, QLabel, QLineEdit, QPushButton, QMessageBox)
+from sympy import symbols, solve, Lt
+#from PyQt5.QtWebEngineWidgets import QWebEngineView
+#from PyQt5.QtCore import QUrl
+#from sympy import latex
+import re
+import pyperclip
+import warnings
+warnings.filterwarnings("ignore", category=FutureWarning)
+
+import google.generativeai as genai
+from sympy.abc import x, y, z, t
+import sys
+import os
+from PyQt5.QtWidgets import (
+    QApplication, QWidget, QVBoxLayout, QPushButton, QLabel, QFileDialog, QMessageBox
+)
+from pdf2image import convert_from_path
+from math import degrees
+import openpyxl
+from openpyxl import Workbook
+from openpyxl.styles import Alignment, Font
+from openpyxl.utils import get_column_letter
+from sympy import simplify, collect
+from itertools import combinations
+import itertools
+from PyQt5.QtCore import QSettings
+import sys
+import os
+import platform
+import subprocess
+import hashlib
+import time
+from datetime import datetime, timedelta
+# Bổ sung các widget và core cho Splash Screen
+from PyQt5.QtWidgets import (
+    QApplication, QMainWindow, QWidget, QDialog, QLabel, QLineEdit, 
+    QPushButton, QComboBox, QCheckBox, QTextEdit, QVBoxLayout, 
+    QHBoxLayout, QGridLayout, QMessageBox, QColorDialog,
+    QSplashScreen, QProgressBar  # <-- BỔ SUNG 2 CÁI NÀY
+)
+from PyQt5.QtCore import Qt, QSettings, QThread, pyqtSignal  # <-- BỔ SUNG QThread, pyqtSignal
+from PyQt5.QtGui import QIcon, QPixmap, QFont
+from PyQt5.QtGui import QFont, QBrush, QColor
+from PyQt5.QtWidgets import (
+    QApplication, QMainWindow, QWidget, QVBoxLayout, QHBoxLayout,
+    QSplitter, QTreeWidget, QTreeWidgetItem, QTextEdit, QLabel, 
+    QSpacerItem, QSizePolicy, QStackedWidget, QPushButton, QCheckBox, QSpinBox,
+    QScrollArea  # <-- Thêm mục này vào đây
+)
+from PyQt5.QtWidgets import QCheckBox
+from PyQt5.QtGui import QPainter, QColor, QPen
+from PyQt5.QtCore import Qt, QPropertyAnimation, pyqtProperty
+from functools import wraps
+import re
+import uuid
+import json, base64
+from datetime import datetime
+from nacl.signing import VerifyKey
+from nacl.encoding import HexEncoder
+from nacl.exceptions import BadSignatureError
+### CÔNG CỤ
+import sys
+import numpy as np
+from PyQt5.QtWidgets import (
+    QApplication, QMainWindow, QPushButton, QDialog, 
+    QVBoxLayout, QHBoxLayout, QTabWidget, QWidget, 
+    QLabel, QSlider, QDoubleSpinBox, QGroupBox
+)
+from PyQt5.QtCore import Qt
+from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
+from matplotlib.figure import Figure
+from mpl_toolkits.mplot3d import Axes3D  # Cần cho 3D
+
+def fmt_num(val):
+    if isinstance(val, int) or (isinstance(val, float) and val.is_integer()):
+        return str(int(val))
+    if isinstance(val, Fraction):
+        if val.denominator == 1:
+            return str(val.numerator)
+        dec = (Decimal(val.numerator) / Decimal(val.denominator)).quantize(Decimal('0.01'), rounding=ROUND_HALF_UP)
+        s = format(dec.normalize(), 'f')
+        if '.' in s:
+            s = s.rstrip('0').rstrip('.')
+        return s.replace('.', ',')
+    s = str(val)
+    if '.' in s:
+        s = s.rstrip('0').rstrip('.')
+    return s.replace('.', ',')
+def bt_dang3_p3_b1_c9_hh8(self):
+    # Dạng 3: Tìm độ dài đường cao tương ứng của hai tam giác đồng dạng
+    lisdang = ['1']
+    dang = random.choice(lisdang)
+    if dang == '1':
+        pairs = [
+            (4, 10, 3),
+            (6, 15, 4),
+            (4, 6, 5),
+            (6, 9, 4),
+            (8, 12, 6),
+            (5, 8, 4),
+            (4, 5, 6),
+            (6, 15, 3),
+        ]
+        ab, mn, ah = random.choice(pairs)
+        k = Fraction(ab, mn)
+        mk = Fraction(ah * mn, ab)
+        k_tex = '\\frac{%s}{%s}' % (k.numerator, k.denominator)
+        kq_str = fmt_num(mk)
+
+        tikz_code = (
+            '\\begin{center}\n'
+            '\\begin{tikzpicture}[scale=1, font=\\footnotesize, line join=round, line cap=round, >=stealth]\n'
+            ' \\coordinate (A) at (0.8,1.5);\n'
+            ' \\coordinate (B) at (0,0);\n'
+            ' \\coordinate (C) at (2.2,0);\n'
+            ' \\coordinate (H) at (0.8,0);\n'
+            ' \\coordinate (M) at (4.6,2.4);\n'
+            ' \\coordinate (N) at (3.3,0);\n'
+            ' \\coordinate (P) at (6.8,0);\n'
+            ' \\coordinate (K) at (4.6,0);\n'
+            ' \\draw[line width=1pt] (A)--(B)--(C)--cycle (M)--(N)--(P)--cycle;\n'
+            ' \\draw[line width=1pt, dashed] (A)--(H) (M)--(K);\n'
+            ' \\draw[line width=1pt] (0.8,0.18)--(0.98,0.18)--(0.98,0) (4.6,0.18)--(4.78,0.18)--(4.78,0);\n'
+            ' \\fill (A) circle (1pt) node[above] {$A$};\n'
+            ' \\fill (B) circle (1pt) node[below left] {$B$};\n'
+            ' \\fill (C) circle (1pt) node[below right] {$C$};\n'
+            ' \\fill (H) circle (1pt) node[below] {$H$};\n'
+            ' \\fill (M) circle (1pt) node[above] {$M$};\n'
+            ' \\fill (N) circle (1pt) node[below left] {$N$};\n'
+            ' \\fill (P) circle (1pt) node[below right] {$P$};\n'
+            ' \\fill (K) circle (1pt) node[below] {$K$};\n'
+            '\\end{tikzpicture}\n'
+            '\\end{center}'
+        )
+
+        noidungcauhoi = (
+            '''Cho $\\Delta ABC \\backsim \\Delta MNP$. Biết $AB = %s\\text{ cm}$, $MN = %s\\text{ cm}$ và độ dài đường cao $AH$ của $\\Delta ABC$ là $%s\\text{ cm}$. Tính độ dài đường cao tương ứng $MK$ của $\\Delta MNP$ (đơn vị: cm).\\\\
+%s''' % (ab, mn, ah, tikz_code)
+        )
+
+        loigiai = (
+            '''Vì $\\Delta ABC \\backsim \\Delta MNP$ nên tỉ số đồng dạng của $\\Delta ABC$ và $\\Delta MNP$ là:\\\\
+$k = \\frac{AB}{MN} = \\frac{%s}{%s} = %s$.\\\\
+Trong hai tam giác đồng dạng, tỉ số hai đường cao tương ứng bằng tỉ số đồng dạng nên ta có:\\\\
+$\\frac{AH}{MK} = k = %s$.\\\\
+Thay $AH = %s\\text{ cm}$ vào hệ thức trên, ta được:\\\\
+$\\frac{%s}{MK} = %s \\Rightarrow MK = \\frac{%s \\cdot %s}{%s} = %s\\text{ (cm)}$.\\\\
+Vậy độ dài đường cao $MK$ bằng $%s\\text{ cm}$.''' % (
+                ab, mn, k_tex, k_tex, ah,
+                ah, k_tex, ah, k.denominator, k.numerator, kq_str, kq_str
+            )
+        )
+
+        dapan = '\\shortans[0]{$%s$}\n' % kq_str
+
+    content = ('\\begin{minipage}{\\textwidth} \n'
+               '\\begin{ex}\n' +
+               str(noidungcauhoi) + str(dapan) +
+               '\\loigiai{ \n' + str(loigiai) + '}\n'
+               '\\end{ex}\n \\end{minipage} \n\n')
+    return content
