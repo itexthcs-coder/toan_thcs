@@ -142,14 +142,14 @@ def bt_dang8_p1_b1_c4_hh8(self):
         A_t, B_t, C_t, D_t, E_t = random.choice(bo_ten)
 
         # Các đáp án trắc nghiệm
-        du = ['$\dfrac{%s%s}{%s%s} = \dfrac{%s%s}{%s%s}$' % (A_t, D_t, A_t, B_t, A_t, E_t, A_t, C_t),
-              '$\dfrac{%s%s}{%s%s} = \dfrac{%s%s}{%s%s}$' % (A_t, D_t, D_t, B_t, A_t, E_t, E_t, C_t),
-              '$\dfrac{%s%s}{%s%s} = \dfrac{%s%s}{%s%s}$' % (D_t, B_t, A_t, B_t, E_t, C_t, A_t, C_t)]
+        du = ['$\\dfrac{%s%s}{%s%s} = \\dfrac{%s%s}{%s%s}$' % (A_t, D_t, A_t, B_t, A_t, E_t, A_t, C_t),
+              '$\\dfrac{%s%s}{%s%s} = \\dfrac{%s%s}{%s%s}$' % (A_t, D_t, D_t, B_t, A_t, E_t, E_t, C_t),
+              '$\\dfrac{%s%s}{%s%s} = \\dfrac{%s%s}{%s%s}$' % (D_t, B_t, A_t, B_t, E_t, C_t, A_t, C_t)]
         da = random.choice(du)
-        s = ['$\dfrac{%s%s}{%s%s} = \dfrac{%s%s}{%s%s}$' % (A_t, D_t, D_t, B_t, E_t, C_t, A_t, E_t),
-             '$\dfrac{%s%s}{%s%s} = \dfrac{%s%s}{%s%s}$' % (A_t, D_t, A_t, E_t, B_t, C_t, D_t, E_t),
-             '$\dfrac{%s%s}{%s%s} = \dfrac{%s%s}{%s%s}$' % (D_t, B_t, A_t, B_t, A_t, E_t, A_t, C_t),
-             '$\dfrac{%s%s}{%s%s} = \dfrac{%s%s}{%s%s}$' % (A_t, D_t, A_t, B_t, E_t, C_t, A_t, C_t)]
+        s = ['$\\dfrac{%s%s}{%s%s} = \\dfrac{%s%s}{%s%s}$' % (A_t, D_t, D_t, B_t, E_t, C_t, A_t, E_t),
+             '$\\dfrac{%s%s}{%s%s} = \\dfrac{%s%s}{%s%s}$' % (A_t, D_t, A_t, E_t, B_t, C_t, D_t, E_t),
+             '$\\dfrac{%s%s}{%s%s} = \\dfrac{%s%s}{%s%s}$' % (D_t, B_t, A_t, B_t, A_t, E_t, A_t, C_t),
+             '$\\dfrac{%s%s}{%s%s} = \\dfrac{%s%s}{%s%s}$' % (A_t, D_t, A_t, B_t, E_t, C_t, A_t, C_t)]
         das1 = random.choice(s)
         s.remove(das1)
         das2 = random.choice(s)

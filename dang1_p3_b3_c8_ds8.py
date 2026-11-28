@@ -139,31 +139,31 @@ def bt_dang1_p3_b3_c8_ds8(self):
         p_dat_str = str(p_dat_num.quantize(Decimal('0.001'), rounding=ROUND_HALF_UP)).rstrip('0').rstrip('.').replace('.', ',')
 
         noidungcauhoi = ('''Một xưởng sản xuất đồ gốm kiểm tra ngẫu nhiên $%s$ chiếc bát sứ xuất xưởng, kết quả thống kê được ghi trong bảng sau:\\
-\begin{center}
-\begin{tabular}{|l|c|c|}
-\hline
-Tình trạng & Đạt chuẩn & Lỗi men \\
-\hline
-Số lượng (chiếc) & $%s$ & $%s$ \\
-\hline
-\end{tabular}
-\end{center}
+\\begin{center}
+\\begin{tabular}{|l|c|c|}
+\\hline
+Tình trạng & Đạt chuẩn & Lỗi men \\\\
+\\hline
+Số lượng (chiếc) & $%s$ & $%s$ \\\\
+\\hline
+\\end{tabular}
+\\end{center}
 Nếu xưởng sản xuất một lô hàng gồm $%s$ chiếc bát sứ theo quy trình trên, hãy dự đoán xem có khoảng bao nhiêu chiếc bát đạt chuẩn?'''
                          % (n_mau, k_dat, k_loi, n_lo))
 
-        loigiai = ('''Trong $%s$ chiếc bát sứ được kiểm tra, có $%s$ chiếc đạt chuẩn.\\
-Xác suất thực nghiệm của biến cố $E$: ``Chiếc bát sứ đạt chuẩn'' là $\\dfrac{%s}{%s} = %s$.\\
-Vậy xác suất của biến cố $E$ được ước lượng là $P(E) \\approx %s$.\\
-Gọi $k$ là số chiếc bát đạt chuẩn trong lô hàng gồm $%s$ chiếc.\\
-Ta có $P(E) \\approx \\dfrac{k}{%s}$, suy ra $k \\approx %s \\cdot %s = %s$.\\
+        loigiai = ('''Trong $%s$ chiếc bát sứ được kiểm tra, có $%s$ chiếc đạt chuẩn.\\\\
+Xác suất thực nghiệm của biến cố $E$: ``Chiếc bát sứ đạt chuẩn'' là $\\dfrac{%s}{%s} = %s$.\\\\
+Vậy xác suất của biến cố $E$ được ước lượng là $P(E) \\approx %s$.\\\\
+Gọi $k$ là số chiếc bát đạt chuẩn trong lô hàng gồm $%s$ chiếc.\\\\
+Ta có $P(E) \\approx \\dfrac{k}{%s}$, suy ra $k \\approx %s \\cdot %s = %s$.\\\\
 Vậy dự đoán có khoảng $%s$ chiếc bát đạt chuẩn.'''
                    % (n_mau, k_dat, k_dat, n_mau, p_dat_str, p_dat_str, n_lo, n_lo, n_lo, p_dat_str, kq_str, kq_str))
 
         dapan = '\shortans[0]{$%s$}\n' % (str(kq_str))
 
-    content = ('\begin{minipage}{\textwidth} \n' +
-               '\begin{ex}\n' +
+    content = ('\\begin{minipage}{\\textwidth} \n' +
+               '\\begin{ex}\n' +
                str(noidungcauhoi) + str(dapan) +
-               '\loigiai{ \n' + str(loigiai) + '}\n' +
-               '\end{ex}\n \end{minipage} \n\n')
+               '\\loigiai{ \n' + str(loigiai) + '}\n' +
+               '\\end{ex}\n \\end{minipage} \n\n')
     return content

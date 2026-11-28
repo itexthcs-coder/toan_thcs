@@ -140,29 +140,29 @@ def bt_dang15_p3_b3_c8_ds8(self):
         p_str = str((Decimal(k_thuan) / Decimal(n_mau)).quantize(Decimal('0.001'), rounding=ROUND_HALF_UP)).rstrip('0').rstrip('.').replace('.', ',')
 
         noidungcauhoi = ('''Khảo sát ngẫu nhiên $%s$ học sinh trong một trường THCS có $%s$ học sinh về thời gian tự học buổi tối tại nhà, kết quả thu được như bảng sau:\\
-\begin{center}
-\begin{tabular}{|l|c|c|c|}
-\hline
-Thời gian tự học & Dưới $1$ giờ & Từ $1$ đến dưới $2$ giờ & Từ $2$ giờ trở lên \\
-\hline
-Số học sinh & $%s$ & $%s$ & $%s$ \\
-\hline
-\end{tabular}
-\end{center}
+\\begin{center}
+\\begin{tabular}{|l|c|c|c|}
+\\hline
+Thời gian tự học & Dưới $1$ giờ & Từ $1$ đến dưới $2$ giờ & Từ $2$ giờ trở lên \\\\
+\\hline
+Số học sinh & $%s$ & $%s$ & $%s$ \\\\
+\\hline
+\\end{tabular}
+\\end{center}
 Hãy ước lượng toàn trường có khoảng bao nhiêu học sinh tự học buổi tối từ $1$ giờ trở lên?'''
                          % (n_mau, n_truong, t1, t2, t3))
 
-        loigiai = ('''Trong $%s$ học sinh được khảo sát, số học sinh tự học buổi tối từ $1$ giờ trở lên là: $%s + %s = %s$ (học sinh).\\
-Xác suất thực nghiệm của biến cố $E$: ``Học sinh tự học buổi tối từ $1$ giờ trở lên'' là $\\dfrac{%s}{%s} = %s$.\\
-Vậy xác suất của biến cố $E$ được ước lượng là $P(E) \\approx %s$.\\
+        loigiai = ('''Trong $%s$ học sinh được khảo sát, số học sinh tự học buổi tối từ $1$ giờ trở lên là: $%s + %s = %s$ (học sinh).\\\\
+Xác suất thực nghiệm của biến cố $E$: ``Học sinh tự học buổi tối từ $1$ giờ trở lên'' là $\\dfrac{%s}{%s} = %s$.\\\\
+Vậy xác suất của biến cố $E$ được ước lượng là $P(E) \\approx %s$.\\\\
 Ước lượng số học sinh toàn trường tự học buổi tối từ $1$ giờ trở lên là: $%s \\cdot %s = %s$ (học sinh).'''
                    % (n_mau, t2, t3, k_thuan, k_thuan, n_mau, p_str, p_str, n_truong, p_str, kq_str))
 
-        dapan = '\shortans[0]{$%s$}\n' % (str(kq_str))
+        dapan = '\\shortans[0]{$%s$}\n' % (str(kq_str))
 
-    content = ('\begin{minipage}{\textwidth} \n' +
-               '\begin{ex}\n' +
+    content = ('\\begin{minipage}{\\textwidth} \n' +
+               '\\begin{ex}\n' +
                str(noidungcauhoi) + str(dapan) +
-               '\loigiai{ \n' + str(loigiai) + '}\n' +
-               '\end{ex}\n \end{minipage} \n\n')
+               '\\loigiai{ \n' + str(loigiai) + '}\n' +
+               '\\end{ex}\n \\end{minipage} \n\n')
     return content

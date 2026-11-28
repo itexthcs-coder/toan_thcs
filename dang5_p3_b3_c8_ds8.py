@@ -142,33 +142,33 @@ def bt_dang5_p3_b3_c8_ds8(self):
         kq_str = str(kq).rstrip('0').rstrip('.').replace('.', ',')
 
         noidungcauhoi = ('''Khảo sát mức độ hài lòng về căn-tin của học sinh khối 8 và khối 9 tại một trường THCS thu được bảng số liệu sau (một số ô bị mờ):\\
-\begin{center}
-\begin{tabular}{|l|c|c|}
-\hline
-Đối tượng & Số học sinh khảo sát & Số học sinh hài lòng \\
-\hline
-Khối 8 & $%s$ & $%s$ \\
-\hline
-Khối 9 & ? & ? \\
-\hline
-Tổng cộng & $%s$ & $%s$ \\
-\hline
-\end{tabular}
-\end{center}
+\\begin{center}
+\\begin{tabular}{|l|c|c|}
+\\hline
+Đối tượng & Số học sinh khảo sát & Số học sinh hài lòng \\\\
+\\hline
+Khối 8 & $%s$ & $%s$ \\\\
+\\hline
+Khối 9 & ? & ? \\\\
+\\hline
+Tổng cộng & $%s$ & $%s$ \\\\
+\\hline
+\\end{tabular}
+\\end{center}
 Chọn ngẫu nhiên $1$ học sinh khối 9 được khảo sát, hãy ước lượng xác suất để học sinh đó hài lòng (viết kết quả dưới dạng số thập phân).'''
                          % (n8, h8, tong_n, tong_h))
 
-        loigiai = ('''Từ bảng số liệu tổng cộng, ta tính được số học sinh khối 9 được khảo sát là: $%s - %s = %s$ (học sinh).\\
-Số học sinh khối 9 hài lòng là: $%s - %s = %s$ (học sinh).\\
-Xác suất thực nghiệm của biến cố $E$: ``Học sinh khối 9 được chọn hài lòng'' là $\\dfrac{%s}{%s} = %s$.\\
+        loigiai = ('''Từ bảng số liệu tổng cộng, ta tính được số học sinh khối 9 được khảo sát là: $%s - %s = %s$ (học sinh).\\\\
+Số học sinh khối 9 hài lòng là: $%s - %s = %s$ (học sinh).\\\\
+Xác suất thực nghiệm của biến cố $E$: ``Học sinh khối 9 được chọn hài lòng'' là $\\dfrac{%s}{%s} = %s$.\\\\
 Vậy xác suất của biến cố $E$ được ước lượng là $%s$.'''
                    % (tong_n, n8, n9, tong_h, h8, h9, h9, n9, kq_str, kq_str))
 
-        dapan = '\shortans[0]{$%s$}\n' % (str(kq_str))
+        dapan = '\\shortans[0]{$%s$}\n' % (str(kq_str))
 
-    content = ('\begin{minipage}{\textwidth} \n' +
-               '\begin{ex}\n' +
+    content = ('\\begin{minipage}{\\textwidth} \n' +
+               '\\begin{ex}\n' +
                str(noidungcauhoi) + str(dapan) +
-               '\loigiai{ \n' + str(loigiai) + '}\n' +
-               '\end{ex}\n \end{minipage} \n\n')
+               '\\loigiai{ \n' + str(loigiai) + '}\n' +
+               '\\end{ex}\n \\end{minipage} \n\n')
     return content

@@ -140,30 +140,30 @@ def bt_dang17_p3_b3_c8_ds8(self):
         val_raw_str = str(val_raw.quantize(Decimal('0.01'), rounding=ROUND_HALF_UP)).rstrip('0').rstrip('.').replace('.', ',')
 
         noidungcauhoi = ('''Trong một sự kiện tri ân khách hàng, ban tổ chức chuẩn bị thùng phiếu bốc thăm trúng thưởng. Sau $%s$ lượt khách hàng đầu tiên bốc thăm ngẫu nhiên, kết quả thống kê được ghi trong bảng sau:\\
-\begin{center}
-\begin{tabular}{|l|c|c|c|}
-\hline
-Loại phiếu & Giải Nhất & Giải Khuyến khích & Chúc may mắn \\
-\hline
-Số lượt khách & $%s$ & $%s$ & $%s$ \\
-\hline
-\end{tabular}
-\end{center}
+\\begin{center}
+\\begin{tabular}{|l|c|c|c|}
+\\hline
+Loại phiếu & Giải Nhất & Giải Khuyến khích & Chúc may mắn \\\\
+\\hline
+Số lượt khách & $%s$ & $%s$ & $%s$ \\\\
+\\hline
+\\end{tabular}
+\\end{center}
 Dự đoán trong $%s$ lượt khách tiếp theo, có khoảng bao nhiêu lượt khách trúng giải (gồm giải Nhất hoặc giải Khuyến khích, làm tròn kết quả đến hàng đơn vị)?'''
                          % (n_luot, g1, g2, g3, n_tiep))
 
-        loigiai = ('''Trong $%s$ lượt khách đầu tiên, số lượt khách trúng giải (gồm giải Nhất hoặc giải Khuyến khích) là: $%s + %s = %s$ (lượt).\\
-Xác suất thực nghiệm của biến cố $E$: ``Khách hàng bốc thăm trúng giải'' là $\\dfrac{%s}{%s}$.\\
-Gọi $k$ là số lượt khách trúng giải trong $%s$ lượt khách tiếp theo.\\
-Ta có $\\dfrac{k}{%s} \\approx \\dfrac{%s}{%s}$, suy ra $k \\approx %s \\cdot \\dfrac{%s}{%s} = %s \\approx %s$.\\
+        loigiai = ('''Trong $%s$ lượt khách đầu tiên, số lượt khách trúng giải (gồm giải Nhất hoặc giải Khuyến khích) là: $%s + %s = %s$ (lượt).\\\\
+Xác suất thực nghiệm của biến cố $E$: ``Khách hàng bốc thăm trúng giải'' là $\\dfrac{%s}{%s}$.\\\\
+Gọi $k$ là số lượt khách trúng giải trong $%s$ lượt khách tiếp theo.\\\\
+Ta có $\\dfrac{k}{%s} \\approx \\dfrac{%s}{%s}$, suy ra $k \\approx %s \\cdot \\dfrac{%s}{%s} = %s \\approx %s$.\\\\
 Vậy dự đoán có khoảng $%s$ lượt khách trúng giải.'''
                    % (n_luot, g1, g2, k_trung, k_trung, n_luot, n_tiep, n_tiep, k_trung, n_luot, n_tiep, k_trung, n_luot, val_raw_str, kq_str, kq_str))
 
-        dapan = '\shortans[0]{$%s$}\n' % (str(kq_str))
+        dapan = '\\shortans[0]{$%s$}\n' % (str(kq_str))
 
-    content = ('\begin{minipage}{\textwidth} \n' +
-               '\begin{ex}\n' +
+    content = ('\\begin{minipage}{\\textwidth} \n' +
+               '\\begin{ex}\n' +
                str(noidungcauhoi) + str(dapan) +
-               '\loigiai{ \n' + str(loigiai) + '}\n' +
-               '\end{ex}\n \end{minipage} \n\n')
+               '\\loigiai{ \n' + str(loigiai) + '}\n' +
+               '\\end{ex}\n \\end{minipage} \n\n')
     return content

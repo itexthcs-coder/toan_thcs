@@ -141,7 +141,7 @@ def fmt_num(val):
     if isinstance(val, Fraction):
         if val.denominator == 1:
             return str(val.numerator)
-        return '\dfrac{%s}{%s}' % (val.numerator, val.denominator)
+        return '\\dfrac{%s}{%s}' % (val.numerator, val.denominator)
     return str(val)
 
 def bt_dang11_p2_b1_c9_hh8(self):
@@ -270,5 +270,5 @@ def bt_dang11_p2_b1_c9_hh8(self):
                '\\item ' + str(shuffled_solutions_vd[0]) + '\n'
                '\\item ' + str(shuffled_solutions_vdc[0]) + '\n'
                '\\end{enumEX}} \n'
-               '\\end{ex}\n \end{minipage}\n\n')
+               '\\end{ex}\n \\end{minipage}\n\n')
     return content

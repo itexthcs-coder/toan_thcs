@@ -152,15 +152,15 @@ def bt_dang4_p1_b2_c5_ds8(self):
         das3 = random.choice(s)
         
         noidungcauhoi = ("""Khi thống kê số lượt khách tham quan một khu di tích lịch sử trong $4$ quý lần lượt là $%s$; $%s$; $%s$ và $%s$ lượt, tại sao ta \textbf{không} nên dùng biểu đồ tranh để biểu diễn?\\\\
-        \begin{center}
-        \begin{tabular}{|c|c|c|c|c|}
-        \hline
-        \textbf{Quý} & Quý I & Quý II & Quý III & Quý IV \\\\
-        \hline
-        \textbf{Số lượt khách} & $%s$ & $%s$ & $%s$ & $%s$ \\\\
-        \hline
-        \end{tabular}
-        \end{center}""" % (s1, s2, s3, s4, s1, s2, s3, s4))
+        \\begin{center}
+        \\begin{tabular}{|c|c|c|c|c|}
+        \\hline
+        \\textbf{Quý} & Quý I & Quý II & Quý III & Quý IV \\\\
+        \\hline
+        \\textbf{Số lượt khách} & $%s$ & $%s$ & $%s$ & $%s$ \\\\
+        \\hline
+        \\end{tabular}
+        \\end{center}""" % (s1, s2, s3, s4, s1, s2, s3, s4))
         
         da_d = ('\\True ' + str(da))
         da_s1 = str(das1)

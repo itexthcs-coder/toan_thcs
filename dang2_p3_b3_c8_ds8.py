@@ -143,37 +143,37 @@ def bt_dang2_p3_b3_c8_ds8(self):
         val_raw_str = str(val_raw.quantize(Decimal('0.01'), rounding=ROUND_HALF_UP)).rstrip('0').rstrip('.').replace('.', ',')
 
         noidungcauhoi = ('''Minh và Lan chơi trò gieo đồng thời $3$ đồng xu cân đối và đếm số mặt ngửa xuất hiện trong mỗi lần gieo. Minh gieo trước $%s$ lần và ghi lại kết quả ở bảng sau:\\
-\begin{center}
-\begin{tabular}{|l|c|c|c|c|}
-\hline
-Số mặt ngửa & $0$ & $1$ & $2$ & $3$ \\
-\hline
-Số lần & $%s$ & $%s$ & $%s$ & $%s$ \\
-\hline
-\end{tabular}
-\end{center}
-\begin{center}
-\begin{tikzpicture}[scale=1, font=\footnotesize, line join=round, line cap=round, >=stealth]
-\draw[line width=1pt] (0,0) circle (0.6cm) node {$N$};
-\draw[line width=1pt] (2,0) circle (0.6cm) node {$N$};
-\draw[line width=1pt] (4,0) circle (0.6cm) node {$S$};
-\end{tikzpicture}
-\end{center}
+\\begin{center}
+\\begin{tabular}{|l|c|c|c|c|}
+\\hline
+Số mặt ngửa & $0$ & $1$ & $2$ & $3$ \\\\
+\\hline
+Số lần & $%s$ & $%s$ & $%s$ & $%s$ \\\\
+\\hline
+\\end{tabular}
+\\end{center}
+\\begin{center}
+\\begin{tikzpicture}[scale=1, font=\\footnotesize, line join=round, line cap=round, >=stealth]
+\\draw[line width=1pt] (0,0) circle (0.6cm) node {$N$};
+\\draw[line width=1pt] (2,0) circle (0.6cm) node {$N$};
+\\draw[line width=1pt] (4,0) circle (0.6cm) node {$S$};
+\\end{tikzpicture}
+\\end{center}
 Trước khi Lan gieo $%s$ lần, hãy dự đoán xem có khoảng bao nhiêu lần Lan nhận được ít nhất $2$ mặt ngửa (làm tròn kết quả đến hàng đơn vị)?'''
                          % (n_mau, c0, c1, c2, c3, n_du_bao))
 
-        loigiai = ('''Trong $%s$ lần gieo của Minh, số lần xuất hiện ít nhất $2$ mặt ngửa (gồm $2$ mặt ngửa hoặc $3$ mặt ngửa) là: $%s + %s = %s$ (lần).\\
-Xác suất thực nghiệm của biến cố $E$: ``Nhận được ít nhất $2$ mặt ngửa'' là $\\dfrac{%s}{%s} \\approx %s$.\\
-Gọi $k$ là số lần Lan nhận được ít nhất $2$ mặt ngửa trong $%s$ lần gieo.\\
-Ta có $\\dfrac{k}{%s} \\approx \\dfrac{%s}{%s}$, suy ra $k \\approx %s \\cdot \\dfrac{%s}{%s} = %s \\approx %s$.\\
+        loigiai = ('''Trong $%s$ lần gieo của Minh, số lần xuất hiện ít nhất $2$ mặt ngửa (gồm $2$ mặt ngửa hoặc $3$ mặt ngửa) là: $%s + %s = %s$ (lần).\\\\
+Xác suất thực nghiệm của biến cố $E$: ``Nhận được ít nhất $2$ mặt ngửa'' là $\\dfrac{%s}{%s} \\approx %s$.\\\\
+Gọi $k$ là số lần Lan nhận được ít nhất $2$ mặt ngửa trong $%s$ lần gieo.\\\\
+Ta có $\\dfrac{k}{%s} \\approx \\dfrac{%s}{%s}$, suy ra $k \\approx %s \\cdot \\dfrac{%s}{%s} = %s \\approx %s$.\\\\
 Vậy dự đoán có khoảng $%s$ lần Lan nhận được ít nhất $2$ mặt ngửa.'''
                    % (n_mau, c2, c3, k_thuan, k_thuan, n_mau, p_str, n_du_bao, n_du_bao, k_thuan, n_mau, n_du_bao, k_thuan, n_mau, val_raw_str, kq_str, kq_str))
 
-        dapan = '\shortans[0]{$%s$}\n' % (str(kq_str))
+        dapan = '\\shortans[0]{$%s$}\n' % (str(kq_str))
 
-    content = ('\begin{minipage}{\textwidth} \n' +
-               '\begin{ex}\n' +
+    content = ('\\begin{minipage}{\\textwidth} \n' +
+               '\\begin{ex}\n' +
                str(noidungcauhoi) + str(dapan) +
-               '\loigiai{ \n' + str(loigiai) + '}\n' +
-               '\end{ex}\n \end{minipage} \n\n')
+               '\\loigiai{ \n' + str(loigiai) + '}\n' +
+               '\\end{ex}\n \\end{minipage} \n\n')
     return content

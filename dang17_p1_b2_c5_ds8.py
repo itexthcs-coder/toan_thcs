@@ -147,17 +147,17 @@ def bt_dang17_p1_b2_c5_ds8(self):
         das3 = random.choice(s)
         
         noidungcauhoi = ("""Cho bảng số liệu về doanh thu (đơn vị: triệu đồng) của hai chi nhánh cửa hàng A và B trong Quý I và Quý II:\\\\
-        \begin{center}
-        \begin{tabular}{|c|c|c|}
-        \hline
-        \textbf{Chi nhánh / Thời gian} & \textbf{Quý I} & \textbf{Quý II} \\\\
-        \hline
-        \textbf{Chi nhánh A} & $%s$ & $%s$ \\\\
-        \hline
-        \textbf{Chi nhánh B} & $%s$ & $%s$ \\\\
-        \hline
-        \end{tabular}
-        \end{center}
+        \\begin{center}
+        \\begin{tabular}{|c|c|c|}
+        \\hline
+        \\textbf{Chi nhánh / Thời gian} & \\textbf{Quý I} & \\textbf{Quý II} \\\\
+        \\hline
+        \\textbf{Chi nhánh A} & $%s$ & $%s$ \\\\
+        \\hline
+        \\textbf{Chi nhánh B} & $%s$ & $%s$ \\\\
+        \\hline
+        \\end{tabular}
+        \\end{center}
         Nếu muốn vẽ biểu đồ cột kép để dễ dàng so sánh \textbf{doanh thu của hai chi nhánh trong cùng một quý}, trên trục ngang ta nên chia thành các nhóm nào?"""
                          % (a1, a2, b1, b2))
         

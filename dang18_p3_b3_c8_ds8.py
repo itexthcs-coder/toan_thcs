@@ -142,18 +142,18 @@ def bt_dang18_p3_b3_c8_ds8(self):
         noidungcauhoi = ('''Dữ liệu của một công ty bảo hiểm xe máy cho thấy trong $%s$ chủ xe tham gia bảo hiểm trong năm qua, có $%s$ trường hợp yêu cầu bồi thường tai nạn. Với danh mục $%s$ hợp đồng bảo hiểm mới trong năm tới, công ty dự báo sẽ có khoảng bao nhiêu trường hợp yêu cầu bồi thường?'''
                          % (n_xe, k_bt, n_hd_moi))
 
-        loigiai = ('''Xác suất thực nghiệm của biến cố $E$: ``Chủ xe tham gia bảo hiểm yêu cầu bồi thường tai nạn'' là $\\dfrac{%s}{%s} = %s$.\\
-Vậy xác suất của biến cố $E$ được ước lượng là $P(E) \\approx %s$.\\
-Gọi $k$ là số trường hợp yêu cầu bồi thường trong $%s$ hợp đồng mới.\\
-Ta có $P(E) \\approx \\dfrac{k}{%s}$, suy ra $k \\approx %s \\cdot %s = %s$.\\
+        loigiai = ('''Xác suất thực nghiệm của biến cố $E$: ``Chủ xe tham gia bảo hiểm yêu cầu bồi thường tai nạn'' là $\\dfrac{%s}{%s} = %s$.\\\\
+Vậy xác suất của biến cố $E$ được ước lượng là $P(E) \\approx %s$.\\\\
+Gọi $k$ là số trường hợp yêu cầu bồi thường trong $%s$ hợp đồng mới.\\\\
+Ta có $P(E) \\approx \\dfrac{k}{%s}$, suy ra $k \\approx %s \\cdot %s = %s$.\\\\
 Vậy công ty dự báo sẽ có khoảng $%s$ trường hợp yêu cầu bồi thường.'''
                    % (k_bt, n_xe, p_str, p_str, n_hd_moi, n_hd_moi, n_hd_moi, p_str, kq_str, kq_str))
 
-        dapan = '\shortans[0]{$%s$}\n' % (str(kq_str))
+        dapan = '\\shortans[0]{$%s$}\n' % (str(kq_str))
 
-    content = ('\begin{minipage}{\textwidth} \n' +
-               '\begin{ex}\n' +
+    content = ('\\begin{minipage}{\\textwidth} \n' +
+               '\\begin{ex}\n' +
                str(noidungcauhoi) + str(dapan) +
-               '\loigiai{ \n' + str(loigiai) + '}\n' +
-               '\end{ex}\n \end{minipage} \n\n')
+               '\\loigiai{ \n' + str(loigiai) + '}\n' +
+               '\\end{ex}\n \\end{minipage} \n\n')
     return content

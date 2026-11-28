@@ -161,16 +161,16 @@ def bt_dang11_p4_b1_c9_hh8(self):
             '\\fill (A) circle (1pt) node[below left] {$A$};\n'
             '\\fill (B) circle (1pt) node[below right] {$B$};\n'
             '\\fill (C) circle (1pt) node[above left] {$C$};\n'
-            '\\fill (A1) circle (1pt) node[below left] {$A^{\prime}$};\n'
-            '\\fill (B1) circle (1pt) node[below right] {$B^{\prime}$};\n'
-            '\\fill (C1) circle (1pt) node[above left] {$C^{\prime}$};\n'
+            '\\fill (A1) circle (1pt) node[below left] {$A^{\\prime}$};\n'
+            '\\fill (B1) circle (1pt) node[below right] {$B^{\\prime}$};\n'
+            '\\fill (C1) circle (1pt) node[above left] {$C^{\\prime}$};\n'
             '\\end{tikzpicture}\n'
             '\\end{center}'
         )
         
         noidungcauhoi = (
-            'Cho $\\Delta ABC \\backsim \\Delta A^{\prime}B^{\prime}C^{\prime}$ theo tỉ số đồng dạng $k = \\dfrac{%s}{%s}$. '
-            'Biết $\\Delta A^{\prime}B^{\prime}C^{\prime}$ vuông tại $A^{\prime}$, có $A^{\prime}B^{\prime} = %s\\text{ cm}$ và diện tích bằng $%s\\text{ cm}^2$.\\\n'
+            'Cho $\\Delta ABC \\backsim \\Delta A^{\\prime}B^{\\prime}C^{\\prime}$ theo tỉ số đồng dạng $k = \\dfrac{%s}{%s}$. '
+            'Biết $\\Delta A^{\\prime}B^{\\prime}C^{\\prime}$ vuông tại $A^{\\prime}$, có $A^{\\prime}B^{\\prime} = %s\\text{ cm}$ và diện tích bằng $%s\\text{ cm}^2$.\\\n'
             'a) Chứng minh $\\Delta ABC$ là tam giác vuông cân.\\\n'
             'b) Tính độ dài cạnh $AB$ và cạnh huyền $BC$.\\\n%s'
             % (p, q, A1B1, str_S1, tikz)
@@ -178,13 +178,13 @@ def bt_dang11_p4_b1_c9_hh8(self):
         
         loigiai = (
             '\\begin{enumEX}[a)]{1}\n'
-            '\\item Vì $\\Delta A^{\prime}B^{\prime}C^{\prime}$ vuông tại $A^{\prime}$ nên diện tích của nó là $S_{\\Delta A^{\prime}B^{\prime}C^{\prime}} = \\dfrac{1}{2} A^{\prime}B^{\prime} \\cdot A^{\prime}C^{\prime}$.\\\n'
-            'Suy ra $A^{\prime}C^{\prime} = \\dfrac{2 S_{\\Delta A^{\prime}B^{\prime}C^{\prime}}}{A^{\prime}B^{\prime}} = \\dfrac{2 \\cdot %s}{%s} = %s\\text{ (cm)}$.\\\n'
-            'Ta thấy $A^{\prime}B^{\prime} = A^{\prime}C^{\prime} = %s\\text{ cm}$ và $\\widehat{A^{\prime}} = 90^\\circ$ nên $\\Delta A^{\prime}B^{\prime}C^{\prime}$ vuông cân tại $A^{\prime}$.\\\n'
-            'Vì $\\Delta ABC \\backsim \\Delta A^{\prime}B^{\prime}C^{\prime}$ nên $\\widehat{A} = \\widehat{A^{\prime}} = 90^\\circ$ và $\\dfrac{AB}{A^{\prime}B^{\prime}} = \\dfrac{AC}{A^{\prime}C^{\prime}}$.\\\n'
-            'Mà $A^{\prime}B^{\prime} = A^{\prime}C^{\prime}$ nên $AB = AC$. Vậy $\\Delta ABC$ vuông cân tại $A$.\n'
-            '\\item Vì $\\Delta ABC \\backsim \\Delta A^{\prime}B^{\prime}C^{\prime}$ theo tỉ số đồng dạng $k = \\dfrac{%s}{%s}$ nên:\\\n'
-            '$AB = \\dfrac{%s}{%s} \\cdot A^{\prime}B^{\prime} = \\dfrac{%s}{%s} \\cdot %s = %s\\text{ (cm)}$, suy ra $AC = %s\\text{ cm}$.\\\n'
+            '\\item Vì $\\Delta A^{\\prime}B^{\\prime}C^{\\prime}$ vuông tại $A^{\\prime}$ nên diện tích của nó là $S_{\\Delta A^{\\prime}B^{\\prime}C^{\\prime}} = \\dfrac{1}{2} A^{\\prime}B^{\\prime} \\cdot A^{\\prime}C^{\\prime}$.\\\n'
+            'Suy ra $A^{\\prime}C^{\\prime} = \\dfrac{2 S_{\\Delta A^{\\prime}B^{\\prime}C^{\\prime}}}{A^{\\prime}B^{\\prime}} = \\dfrac{2 \\cdot %s}{%s} = %s\\text{ (cm)}$.\\\n'
+            'Ta thấy $A^{\\prime}B^{\\prime} = A^{\\prime}C^{\\prime} = %s\\text{ cm}$ và $\\widehat{A^{\\prime}} = 90^\\circ$ nên $\\Delta A^{\\prime}B^{\\prime}C^{\\prime}$ vuông cân tại $A^{\\prime}$.\\\n'
+            'Vì $\\Delta ABC \\backsim \\Delta A^{\\prime}B^{\\prime}C^{\\prime}$ nên $\\widehat{A} = \\widehat{A^{\\prime}} = 90^\\circ$ và $\\dfrac{AB}{A^{\\prime}B^{\\prime}} = \\dfrac{AC}{A^{\\prime}C^{\\prime}}$.\\\n'
+            'Mà $A^{\\prime}B^{\\prime} = A^{\\prime}C^{\\prime}$ nên $AB = AC$. Vậy $\\Delta ABC$ vuông cân tại $A$.\n'
+            '\\item Vì $\\Delta ABC \\backsim \\Delta A^{\\prime}B^{\\prime}C^{\\prime}$ theo tỉ số đồng dạng $k = \\dfrac{%s}{%s}$ nên:\\\n'
+            '$AB = \\dfrac{%s}{%s} \\cdot A^{\\prime}B^{\\prime} = \\dfrac{%s}{%s} \\cdot %s = %s\\text{ (cm)}$, suy ra $AC = %s\\text{ cm}$.\\\n'
             'Áp dụng định lí Pythagore trong $\\Delta ABC$ vuông tại $A$, ta có:\\\n'
             '$BC^2 = AB^2 + AC^2 = %s^2 + %s^2 = %s \\Rightarrow BC = %s\\sqrt{2}\\text{ (cm)}$.\n'
             '\\end{enumEX}'

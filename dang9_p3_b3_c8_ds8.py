@@ -139,18 +139,18 @@ def bt_dang9_p3_b3_c8_ds8(self):
         noidungcauhoi = ('''Viện nghiên cứu nông nghiệp gieo thử nghiệm $%s$ hạt giống ngô lai mới thì thấy có $%s$ hạt nảy mầm. Một nông trại muốn thu được khoảng $%s$ cây ngô con khỏe mạnh thì cần gieo khoảng bao nhiêu hạt giống loại này?'''
                          % (n_gieo, k_nay, k_cay_con))
 
-        loigiai = ('''Xác suất thực nghiệm của biến cố $E$: ``Hạt giống ngô nảy mầm'' là $\\dfrac{%s}{%s} = %s$.\\
-Ước lượng xác suất nảy mầm của hạt giống là $P(E) \\approx %s$.\\
-Gọi $N$ là số hạt giống cần gieo để thu được khoảng $%s$ cây ngô con.\\
-Ta có $P(E) \\approx \\dfrac{%s}{N}$, suy ra $\\dfrac{%s}{N} \\approx %s \\Rightarrow N \\approx \\dfrac{%s}{%s} = %s$.\\
+        loigiai = ('''Xác suất thực nghiệm của biến cố $E$: ``Hạt giống ngô nảy mầm'' là $\\dfrac{%s}{%s} = %s$.\\\\
+Ước lượng xác suất nảy mầm của hạt giống là $P(E) \\approx %s$.\\\\
+Gọi $N$ là số hạt giống cần gieo để thu được khoảng $%s$ cây ngô con.\\\\
+Ta có $P(E) \\approx \\dfrac{%s}{N}$, suy ra $\\dfrac{%s}{N} \\approx %s \\Rightarrow N \\approx \\dfrac{%s}{%s} = %s$.\\\\
 Vậy nông trại cần gieo khoảng $%s$ hạt giống loại này.'''
                    % (k_nay, n_gieo, p_str, p_str, k_cay_con, k_cay_con, k_cay_con, p_str, k_cay_con, p_str, kq_str, kq_str))
 
-        dapan = '\shortans[0]{$%s$}\n' % (str(kq_str))
+        dapan = '\\shortans[0]{$%s$}\n' % (str(kq_str))
 
-    content = ('\begin{minipage}{\textwidth} \n' +
-               '\begin{ex}\n' +
+    content = ('\\begin{minipage}{\textwidth} \n' +
+               '\\begin{ex}\n' +
                str(noidungcauhoi) + str(dapan) +
-               '\loigiai{ \n' + str(loigiai) + '}\n' +
-               '\end{ex}\n \end{minipage} \n\n')
+               '\\loigiai{ \n' + str(loigiai) + '}\n' +
+               '\\end{ex}\n \\end{minipage} \n\n')
     return content

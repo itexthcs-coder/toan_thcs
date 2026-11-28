@@ -142,16 +142,16 @@ def bt_dang19_p3_b3_c8_ds8(self):
         noidungcauhoi = ('''Một chiến dịch quảng cáo trực tuyến hiển thị $%s$ lượt tới người dùng và thu về $%s$ lượt nhấp chuột vào liên kết sản phẩm. Nếu doanh nghiệp chi ngân sách để quảng cáo hiển thị thêm $%s$ lượt với hiệu quả tương đương, dự đoán số lượt nhấp chuột thu về là khoảng bao nhiêu?'''
                          % (n_hien_thi, k_nhap, n_them))
 
-        loigiai = ('''Xác suất thực nghiệm của biến cố $E$: ``Người dùng nhấp chuột vào liên kết quảng cáo'' là $\\dfrac{%s}{%s} = %s$.\\
-Vậy xác suất của biến cố $E$ được ước lượng là $P(E) \\approx %s$.\\
+        loigiai = ('''Xác suất thực nghiệm của biến cố $E$: ``Người dùng nhấp chuột vào liên kết quảng cáo'' là $\\dfrac{%s}{%s} = %s$.\\\\
+Vậy xác suất của biến cố $E$ được ước lượng là $P(E) \\approx %s$.\\\\
 Dự đoán trong $%s$ lượt hiển thị thêm, số lượt nhấp chuột thu về là: $%s \\cdot %s = %s$ (lượt).'''
                    % (k_nhap, n_hien_thi, p_str, p_str, n_them, n_them, p_str, kq_str))
 
-        dapan = '\shortans[0]{$%s$}\n' % (str(kq_str))
+        dapan = '\\shortans[0]{$%s$}\n' % (str(kq_str))
 
-    content = ('\begin{minipage}{\textwidth} \n' +
-               '\begin{ex}\n' +
+    content = ('\\begin{minipage}{\\textwidth} \n' +
+               '\\begin{ex}\n' +
                str(noidungcauhoi) + str(dapan) +
-               '\loigiai{ \n' + str(loigiai) + '}\n' +
-               '\end{ex}\n \end{minipage} \n\n')
+               '\\loigiai{ \n' + str(loigiai) + '}\n' +
+               '\\end{ex}\n \\end{minipage} \n\n')
     return content

@@ -141,18 +141,18 @@ def bt_dang10_p3_b3_c8_ds8(self):
         noidungcauhoi = ('''Một máy quay số ngẫu nhiên tạo ra các số tự nhiên có hai chữ số. Sau $%s$ lần vận hành, máy xuất hiện các số là số chính phương $%s$ lần và các số là số nguyên tố $%s$ lần. Nếu vận hành máy thêm $%s$ lần nữa, dự đoán tổng số lần máy xuất hiện số chính phương hoặc số nguyên tố là khoảng bao nhiêu lần (làm tròn kết quả đến hàng đơn vị)?'''
                          % (n_mau, k_cp, k_nt, n_tiep))
 
-        loigiai = ('''Vì không có số tự nhiên nào vừa là số chính phương vừa là số nguyên tố nên trong $%s$ lần vận hành đầu tiên, số lần máy xuất hiện số chính phương hoặc số nguyên tố là: $%s + %s = %s$ (lần).\\
-Xác suất thực nghiệm của biến cố $E$: ``Số xuất hiện là số chính phương hoặc số nguyên tố'' là $\\dfrac{%s}{%s}$.\\
-Gọi $k$ là số lần biến cố $E$ xảy ra trong $%s$ lần vận hành tiếp theo.\\
-Ta có $\\dfrac{k}{%s} \\approx \\dfrac{%s}{%s}$, suy ra $k \\approx %s \\cdot \\dfrac{%s}{%s} = %s \\approx %s$.\\
+        loigiai = ('''Vì không có số tự nhiên nào vừa là số chính phương vừa là số nguyên tố nên trong $%s$ lần vận hành đầu tiên, số lần máy xuất hiện số chính phương hoặc số nguyên tố là: $%s + %s = %s$ (lần).\\\\
+Xác suất thực nghiệm của biến cố $E$: ``Số xuất hiện là số chính phương hoặc số nguyên tố'' là $\\dfrac{%s}{%s}$.\\\\
+Gọi $k$ là số lần biến cố $E$ xảy ra trong $%s$ lần vận hành tiếp theo.\\\\
+Ta có $\\dfrac{k}{%s} \\approx \\dfrac{%s}{%s}$, suy ra $k \\approx %s \\cdot \\dfrac{%s}{%s} = %s \\approx %s$.\\\\
 Vậy dự đoán có khoảng $%s$ lần máy xuất hiện số chính phương hoặc số nguyên tố.'''
                    % (n_mau, k_cp, k_nt, k_hop, k_hop, n_mau, n_tiep, n_tiep, k_hop, n_mau, n_tiep, k_hop, n_mau, val_raw_str, kq_str, kq_str))
 
-        dapan = '\shortans[0]{$%s$}\n' % (str(kq_str))
+        dapan = '\\shortans[0]{$%s$}\n' % (str(kq_str))
 
-    content = ('\begin{minipage}{\textwidth} \n' +
-               '\begin{ex}\n' +
+    content = ('\\begin{minipage}{\\textwidth} \n' +
+               '\\begin{ex}\n' +
                str(noidungcauhoi) + str(dapan) +
-               '\loigiai{ \n' + str(loigiai) + '}\n' +
-               '\end{ex}\n \end{minipage} \n\n')
+               '\\loigiai{ \n' + str(loigiai) + '}\n' +
+               '\\end{ex}\n \\end{minipage} \n\n')
     return content

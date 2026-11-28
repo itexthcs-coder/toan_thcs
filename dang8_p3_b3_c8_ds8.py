@@ -140,30 +140,30 @@ def bt_dang8_p3_b3_c8_ds8(self):
         val_raw_str = str(val_raw.quantize(Decimal('0.01'), rounding=ROUND_HALF_UP)).rstrip('0').rstrip('.').replace('.', ',')
 
         noidungcauhoi = ('''Theo dõi chỉ số chất lượng không khí (AQI) tại một đô thị trong $%s$ ngày liên tiếp thu được kết quả thống kê trong bảng sau:\\
-\begin{center}
-\begin{tabular}{|l|c|c|c|c|}
-\hline
-Mức chất lượng & Tốt & Trung bình & Kém & Xấu \\
-\hline
-Số ngày & $%s$ & $%s$ & $%s$ & $%s$ \\
-\hline
-\end{tabular}
-\end{center}
+\\begin{center}
+\\begin{tabular}{|l|c|c|c|c|}
+\\hline
+Mức chất lượng & Tốt & Trung bình & Kém & Xấu \\\\
+\\hline
+Số ngày & $%s$ & $%s$ & $%s$ & $%s$ \\\\
+\\hline
+\\end{tabular}
+\\end{center}
 Dựa trên số liệu này, hãy dự đoán trong một năm không nhuận ($365$ ngày), đô thị đó có khoảng bao nhiêu ngày có chất lượng không khí ở mức Kém hoặc Xấu (làm tròn kết quả đến hàng đơn vị)?'''
                          % (n_ngay, d_tot, d_tb, d_kem, d_xau))
 
-        loigiai = ('''Trong $%s$ ngày theo dõi, số ngày có chất lượng không khí ở mức Kém hoặc Xấu là: $%s + %s = %s$ (ngày).\\
-Xác suất thực nghiệm của biến cố $E$: ``Ngày có chất lượng không khí ở mức Kém hoặc Xấu'' là $\\dfrac{%s}{%s}$.\\
-Gọi $k$ là số ngày có chất lượng không khí ở mức Kém hoặc Xấu trong $365$ ngày.\\
-Ta có $\\dfrac{k}{365} \\approx \\dfrac{%s}{%s}$, suy ra $k \\approx 365 \\cdot \\dfrac{%s}{%s} = %s \\approx %s$.\\
+        loigiai = ('''Trong $%s$ ngày theo dõi, số ngày có chất lượng không khí ở mức Kém hoặc Xấu là: $%s + %s = %s$ (ngày).\\\\
+Xác suất thực nghiệm của biến cố $E$: ``Ngày có chất lượng không khí ở mức Kém hoặc Xấu'' là $\\dfrac{%s}{%s}$.\\\\
+Gọi $k$ là số ngày có chất lượng không khí ở mức Kém hoặc Xấu trong $365$ ngày.\\\\
+Ta có $\\dfrac{k}{365} \\approx \\dfrac{%s}{%s}$, suy ra $k \\approx 365 \\cdot \\dfrac{%s}{%s} = %s \\approx %s$.\\\\
 Vậy dự đoán trong năm đó đô thị có khoảng $%s$ ngày có chất lượng không khí ở mức Kém hoặc Xấu.'''
                    % (n_ngay, d_kem, d_xau, k_thuan, k_thuan, n_ngay, k_thuan, n_ngay, k_thuan, n_ngay, val_raw_str, kq_str, kq_str))
 
-        dapan = '\shortans[0]{$%s$}\n' % (str(kq_str))
+        dapan = '\\shortans[0]{$%s$}\n' % (str(kq_str))
 
-    content = ('\begin{minipage}{\textwidth} \n' +
-               '\begin{ex}\n' +
+    content = ('\\begin{minipage}{\\textwidth} \n' +
+               '\\begin{ex}\n' +
                str(noidungcauhoi) + str(dapan) +
-               '\loigiai{ \n' + str(loigiai) + '}\n' +
-               '\end{ex}\n \end{minipage} \n\n')
+               '\\loigiai{ \n' + str(loigiai) + '}\n' +
+               '\\end{ex}\n \\end{minipage} \n\n')
     return content

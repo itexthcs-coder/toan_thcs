@@ -139,13 +139,13 @@ def bt_dang3_p3_b2_c5_ds8(self):
         noidungcauhoi = ("""Khảo sát môn thể thao yêu thích của $%s$ học sinh khối 8 thu được bảng thống kê sau:\\\\
         \\begin{center}
         \\begin{tabular}{|c|c|c|c|c|}
-        \hline
+        \\hline
         \\textbf{Môn thể thao} & Bóng đá & Cầu lông & Bơi lội & Bóng rổ \\\\
-        \hline
+        \\hline
         \\textbf{Số học sinh} & $%s$ & $%s$ & $%s$ & $%s$ \\\\
-        \hline
-        \end{tabular}
-        \end{center}
+        \\hline
+        \\end{tabular}
+        \\end{center}
         Khi biểu diễn dữ liệu này bằng biểu đồ hình quạt tròn, hình quạt biểu diễn số học sinh thích môn Cầu lông có góc ở tâm bằng bao nhiêu độ?"""
                          % (tong, n_bd, n_cl, n_bl, n_br))
         

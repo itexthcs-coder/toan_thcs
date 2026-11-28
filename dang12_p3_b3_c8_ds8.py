@@ -145,19 +145,19 @@ def bt_dang12_p3_b3_c8_ds8(self):
         noidungcauhoi = ('''Kiểm tra ngẫu nhiên $%s$ chiếc tai nghe không dây của một hãng điện tử thấy có $%s$ chiếc bị lỗi pin. Hãng xuất bán một lô gồm $%s$ chiếc tai nghe và cam kết hoàn tiền $%s$ nghìn đồng cho mỗi chiếc bị lỗi pin. Hỏi hãng cần dự trù khoản tiền hoàn trả cho lô hàng này là bao nhiêu triệu đồng?'''
                          % (n_mau, k_loi, n_lo, tien_hoan_nghin))
 
-        loigiai = ('''Xác suất thực nghiệm của biến cố $E$: ``Chiếc tai nghe bị lỗi pin'' là $\\dfrac{%s}{%s} = %s$.\\
-Dự đoán trong lô hàng $%s$ chiếc tai nghe có khoảng $%s \\cdot %s = %s$ (chiếc) bị lỗi pin.\\
-Đổi $%s$ nghìn đồng $= %s$ triệu đồng.\\
+        loigiai = ('''Xác suất thực nghiệm của biến cố $E$: ``Chiếc tai nghe bị lỗi pin'' là $\\dfrac{%s}{%s} = %s$.\\\\
+Dự đoán trong lô hàng $%s$ chiếc tai nghe có khoảng $%s \\cdot %s = %s$ (chiếc) bị lỗi pin.\\\\
+Đổi $%s$ nghìn đồng $= %s$ triệu đồng.\\\\
 Khoản tiền hãng cần dự trù để hoàn trả là: $%s \\cdot %s = %s$ (triệu đồng).'''
                    % (k_loi, n_mau, p_str, n_lo, n_lo, p_str, so_loi_du_bao,
                       tien_hoan_nghin, str(Decimal(tien_hoan_nghin)/Decimal(1000)).rstrip('0').rstrip('.').replace('.', ','),
                       so_loi_du_bao, str(Decimal(tien_hoan_nghin)/Decimal(1000)).rstrip('0').rstrip('.').replace('.', ','), kq_str))
 
-        dapan = '\shortans[0]{$%s$}\n' % (str(kq_str))
+        dapan = '\\shortans[0]{$%s$}\n' % (str(kq_str))
 
-    content = ('\begin{minipage}{\textwidth} \n' +
-               '\begin{ex}\n' +
+    content = ('\\begin{minipage}{\\textwidth} \n' +
+               '\\begin{ex}\n' +
                str(noidungcauhoi) + str(dapan) +
-               '\loigiai{ \n' + str(loigiai) + '}\n' +
-               '\end{ex}\n \end{minipage} \n\n')
+               '\\loigiai{ \n' + str(loigiai) + '}\n' +
+               '\\end{ex}\n \\end{minipage} \n\n')
     return content

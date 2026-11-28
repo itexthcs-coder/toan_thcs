@@ -143,17 +143,17 @@ def bt_dang13_p3_b3_c8_ds8(self):
         noidungcauhoi = ('''Thống kê tại khoa Nhi của một bệnh viện trong tuần cao điểm cho thấy trong $%s$ bệnh nhi đến khám sốt virus, có $%s$ trẻ phải nhập viện điều trị nội trú. Nếu tuần tiếp theo dự kiến có $%s$ bệnh nhi đến khám với triệu chứng tương tự, hãy dự đoán có khoảng bao nhiêu trẻ chỉ cần điều trị ngoại trú (không phải nhập viện)?'''
                          % (n_kham, k_noi_tru, n_tuan_toi))
 
-        loigiai = ('''Trong $%s$ bệnh nhi đến khám, số trẻ điều trị ngoại trú là: $%s - %s = %s$ (trẻ).\\
-Xác suất thực nghiệm của biến cố $E$: ``Bệnh nhi chỉ cần điều trị ngoại trú'' là $\\dfrac{%s}{%s} = %s$.\\
-Vậy xác suất của biến cố $E$ được ước lượng là $P(E) \\approx %s$.\\
+        loigiai = ('''Trong $%s$ bệnh nhi đến khám, số trẻ điều trị ngoại trú là: $%s - %s = %s$ (trẻ).\\\\
+Xác suất thực nghiệm của biến cố $E$: ``Bệnh nhi chỉ cần điều trị ngoại trú'' là $\\dfrac{%s}{%s} = %s$.\\\\
+Vậy xác suất của biến cố $E$ được ước lượng là $P(E) \\approx %s$.\\\\
 Dự đoán trong $%s$ bệnh nhi tuần tới có khoảng $%s \\cdot %s = %s$ trẻ chỉ cần điều trị ngoại trú.'''
                    % (n_kham, n_kham, k_noi_tru, k_ngoai_tru, k_ngoai_tru, n_kham, p_ngoai_str, p_ngoai_str, n_tuan_toi, n_tuan_toi, p_ngoai_str, kq_str))
 
-        dapan = '\shortans[0]{$%s$}\n' % (str(kq_str))
+        dapan = '\\shortans[0]{$%s$}\n' % (str(kq_str))
 
-    content = ('\begin{minipage}{\textwidth} \n' +
-               '\begin{ex}\n' +
+    content = ('\\begin{minipage}{\\textwidth} \n' +
+               '\\begin{ex}\n' +
                str(noidungcauhoi) + str(dapan) +
-               '\loigiai{ \n' + str(loigiai) + '}\n' +
-               '\end{ex}\n \end{minipage} \n\n')
+               '\\loigiai{ \n' + str(loigiai) + '}\n' +
+               '\\end{ex}\n \\end{minipage} \n\n')
     return content

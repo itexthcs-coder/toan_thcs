@@ -138,32 +138,32 @@ def bt_dang16_p3_b3_c8_ds8(self):
         val_raw_str = str(val_raw.quantize(Decimal('0.01'), rounding=ROUND_HALF_UP)).rstrip('0').rstrip('.').replace('.', ',')
 
         noidungcauhoi = ('''Một vận động viên bắn cung thực hiện $%s$ phát bắn vào một tấm bia tròn có gắn vùng hồng tâm ở giữa, kết quả có $%s$ mũi tên trúng vào vùng hồng tâm.\\
-\begin{center}
-\begin{tikzpicture}[scale=1, font=\footnotesize, line join=round, line cap=round, >=stealth]
-\draw[line width=1pt] (0,0) circle (1.5cm);
-\draw[line width=1pt] (0,0) circle (1.0cm);
-\draw[line width=1pt] (0,0) circle (0.45cm);
-\fill (0.15,-0.1) circle (1pt);
-\fill (-0.2,0.15) circle (1pt);
-\fill (0.8,0.5) circle (1pt);
-\fill (-1.1,-0.4) circle (1pt);
-\end{tikzpicture}
-\end{center}
+\\begin{center}
+\\begin{tikzpicture}[scale=1, font=\\footnotesize, line join=round, line cap=round, >=stealth]
+\\draw[line width=1pt] (0,0) circle (1.5cm);
+\\draw[line width=1pt] (0,0) circle (1.0cm);
+\\draw[line width=1pt] (0,0) circle (0.45cm);
+\\fill (0.15,-0.1) circle (1pt);
+\\fill (-0.2,0.15) circle (1pt);
+\\fill (0.8,0.5) circle (1pt);
+\\fill (-1.1,-0.4) circle (1pt);
+\\end{tikzpicture}
+\\end{center}
 Nếu vận động viên này thực hiện thêm $%s$ phát bắn với phong độ tương tự, dự đoán có khoảng bao nhiêu mũi tên bắn trượt ra ngoài vùng hồng tâm (làm tròn kết quả đến hàng đơn vị)?'''
                          % (n_ban, k_trung, n_them))
 
-        loigiai = ('''Trong $%s$ phát bắn đầu tiên, số mũi tên bắn trượt ra ngoài vùng hồng tâm là: $%s - %s = %s$ (mũi tên).\\
-Xác suất thực nghiệm của biến cố $E$: ``Mũi tên bắn trượt ra ngoài vùng hồng tâm'' là $\\dfrac{%s}{%s}$.\\
-Gọi $k$ là số mũi tên bắn trượt ra ngoài vùng hồng tâm trong $%s$ phát bắn thêm.\\
-Ta có $\\dfrac{k}{%s} \\approx \\dfrac{%s}{%s}$, suy ra $k \\approx %s \\cdot \\dfrac{%s}{%s} = %s \\approx %s$.\\
+        loigiai = ('''Trong $%s$ phát bắn đầu tiên, số mũi tên bắn trượt ra ngoài vùng hồng tâm là: $%s - %s = %s$ (mũi tên).\\\\
+Xác suất thực nghiệm của biến cố $E$: ``Mũi tên bắn trượt ra ngoài vùng hồng tâm'' là $\\dfrac{%s}{%s}$.\\\\
+Gọi $k$ là số mũi tên bắn trượt ra ngoài vùng hồng tâm trong $%s$ phát bắn thêm.\\\\
+Ta có $\\dfrac{k}{%s} \\approx \\dfrac{%s}{%s}$, suy ra $k \\approx %s \\cdot \\dfrac{%s}{%s} = %s \\approx %s$.\\\\
 Vậy dự đoán có khoảng $%s$ mũi tên bắn trượt ra ngoài vùng hồng tâm.'''
                    % (n_ban, n_ban, k_trung, k_truot, k_truot, n_ban, n_them, n_them, k_truot, n_ban, n_them, k_truot, n_ban, val_raw_str, kq_str, kq_str))
 
-        dapan = '\shortans[0]{$%s$}\n' % (str(kq_str))
+        dapan = '\\shortans[0]{$%s$}\n' % (str(kq_str))
 
-    content = ('\begin{minipage}{\textwidth} \n' +
-               '\begin{ex}\n' +
+    content = ('\\begin{minipage}{\\textwidth} \n' +
+               '\\begin{ex}\n' +
                str(noidungcauhoi) + str(dapan) +
-               '\loigiai{ \n' + str(loigiai) + '}\n' +
-               '\end{ex}\n \end{minipage} \n\n')
+               '\\loigiai{ \n' + str(loigiai) + '}\n' +
+               '\\end{ex}\n \\end{minipage} \n\n')
     return content

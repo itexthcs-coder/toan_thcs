@@ -143,18 +143,18 @@ def bt_dang3_p3_b3_c8_ds8(self):
         noidungcauhoi = ('''Thống kê tại một trạm thu phí tự động cho thấy trong $%s$ lượt xe đi qua, có $%s$ lượt xe gặp sự cố đọc thẻ. Để thu được dữ liệu của khoảng $%s$ lượt xe gặp sự cố nhằm nâng cấp hệ thống, trạm cần theo dõi khoảng bao nhiêu lượt xe đi qua?'''
                          % (n_mau, k_loi, k_ky_vong))
 
-        loigiai = ('''Xác suất thực nghiệm của biến cố $E$: ``Xe đi qua trạm gặp sự cố đọc thẻ'' là $\\dfrac{%s}{%s} = %s$.\\
-Ước lượng xác suất của biến cố $E$ là $P(E) \\approx %s$.\\
-Gọi $N$ là số lượt xe cần theo dõi để có khoảng $%s$ lượt xe gặp sự cố.\\
-Ta có $P(E) \\approx \\dfrac{%s}{N}$, suy ra $\\dfrac{%s}{N} \\approx %s \\Rightarrow N \\approx \\dfrac{%s}{%s} = %s$.\\
+        loigiai = ('''Xác suất thực nghiệm của biến cố $E$: ``Xe đi qua trạm gặp sự cố đọc thẻ'' là $\\dfrac{%s}{%s} = %s$.\\\\
+Ước lượng xác suất của biến cố $E$ là $P(E) \\approx %s$.\\\\
+Gọi $N$ là số lượt xe cần theo dõi để có khoảng $%s$ lượt xe gặp sự cố.\\\\
+Ta có $P(E) \\approx \\dfrac{%s}{N}$, suy ra $\\dfrac{%s}{N} \\approx %s \\Rightarrow N \\approx \\dfrac{%s}{%s} = %s$.\\\\
 Vậy trạm cần theo dõi khoảng $%s$ lượt xe đi qua.'''
                    % (k_loi, n_mau, p_str, p_str, k_ky_vong, k_ky_vong, k_ky_vong, p_str, k_ky_vong, p_str, kq_str, kq_str))
 
         dapan = '\shortans[0]{$%s$}\n' % (str(kq_str))
 
-    content = ('\begin{minipage}{\textwidth} \n' +
-               '\begin{ex}\n' +
+    content = ('\\begin{minipage}{\\textwidth} \n' +
+               '\\begin{ex}\n' +
                str(noidungcauhoi) + str(dapan) +
-               '\loigiai{ \n' + str(loigiai) + '}\n' +
-               '\end{ex}\n \end{minipage} \n\n')
+               '\\loigiai{ \n' + str(loigiai) + '}\n' +
+               '\\end{ex}\n \\end{minipage} \n\n')
     return content

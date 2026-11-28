@@ -136,13 +136,13 @@ def bt_dang1_p3_b2_c5_ds8(self):
         noidungcauhoi = ("""Một kho nông sản xuất đi ba loại hạt giống được thống kê trong bảng sau:\\\\
         \\begin{center}
         \\begin{tabular}{|c|c|c|c|}
-        \hline
+        \\hline
         \\textbf{Loại hạt giống} & Lúa giống & Ngô giống & Đậu tương \\\\
-        \hline
+        \\hline
         \\textbf{Khối lượng (kg)} & $%s$ & $%s$ & $%s$ \\\\
-        \hline
-        \end{tabular}
-        \end{center}
+        \\hline
+        \\end{tabular}
+        \\end{center}
         Nếu dùng biểu đồ tranh để biểu diễn bảng số liệu này sao cho không phải chia nhỏ bất kì biểu tượng nào và tổng số biểu tượng vẽ ra là ít nhất, thì tổng số biểu tượng cần vẽ cho cả ba loại hạt giống là bao nhiêu?"""
                          % (a, b, c))
         

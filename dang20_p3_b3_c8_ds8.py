@@ -141,33 +141,33 @@ def bt_dang20_p3_b3_c8_ds8(self):
         val_raw_str = str(val_raw.quantize(Decimal('0.01'), rounding=ROUND_HALF_UP)).rstrip('0').rstrip('.').replace('.', ',')
 
         noidungcauhoi = ('''Hai tổ kiểm tra chất lượng độc lập cùng kiểm tra một loại linh kiện điện tử, kết quả được ghi trong bảng sau:\\
-\begin{center}
-\begin{tabular}{|l|c|c|}
-\hline
-Đơn vị kiểm tra & Số linh kiện kiểm tra & Số linh kiện bị lỗi \\
-\hline
-Tổ 1 & $%s$ & $%s$ \\
-\hline
-Tổ 2 & $%s$ & $%s$ \\
-\hline
-\end{tabular}
-\end{center}
+\\begin{center}
+\\begin{tabular}{|l|c|c|}
+\\hline
+Đơn vị kiểm tra & Số linh kiện kiểm tra & Số linh kiện bị lỗi \\\\
+\\hline
+Tổ 1 & $%s$ & $%s$ \\\\
+\\hline
+Tổ 2 & $%s$ & $%s$ \\\\
+\\hline
+\\end{tabular}
+\\end{center}
 Gộp dữ liệu của cả hai tổ để ước lượng xác suất, hãy dự đoán trong một kiện hàng gồm $%s$ linh kiện loại này có khoảng bao nhiêu linh kiện bị lỗi (làm tròn kết quả đến hàng đơn vị)?'''
                          % (n1, k1, n2, k2, n_kien))
 
-        loigiai = ('''Gộp dữ liệu của cả hai tổ, tổng số linh kiện được kiểm tra là: $%s + %s = %s$ (linh kiện).\\
-Tổng số linh kiện bị lỗi được phát hiện là: $%s + %s = %s$ (linh kiện).\\
-Xác suất thực nghiệm của biến cố $E$: ``Linh kiện điện tử bị lỗi'' là $\\dfrac{%s}{%s}$.\\
-Gọi $k$ là số linh kiện bị lỗi trong kiện hàng gồm $%s$ linh kiện.\\
-Ta có $\\dfrac{k}{%s} \\approx \\dfrac{%s}{%s}$, suy ra $k \\approx %s \\cdot \\dfrac{%s}{%s} = %s \\approx %s$.\\
+        loigiai = ('''Gộp dữ liệu của cả hai tổ, tổng số linh kiện được kiểm tra là: $%s + %s = %s$ (linh kiện).\\\\
+Tổng số linh kiện bị lỗi được phát hiện là: $%s + %s = %s$ (linh kiện).\\\\
+Xác suất thực nghiệm của biến cố $E$: ``Linh kiện điện tử bị lỗi'' là $\\dfrac{%s}{%s}$.\\\\
+Gọi $k$ là số linh kiện bị lỗi trong kiện hàng gồm $%s$ linh kiện.\\\\
+Ta có $\\dfrac{k}{%s} \\approx \\dfrac{%s}{%s}$, suy ra $k \\approx %s \\cdot \\dfrac{%s}{%s} = %s \\approx %s$.\\\\
 Vậy dự đoán trong kiện hàng đó có khoảng $%s$ linh kiện bị lỗi.'''
                    % (n1, n2, tong_n, k1, k2, tong_k, tong_k, tong_n, n_kien, n_kien, tong_k, tong_n, n_kien, tong_k, tong_n, val_raw_str, kq_str, kq_str))
 
-        dapan = '\shortans[0]{$%s$}\n' % (str(kq_str))
+        dapan = '\\shortans[0]{$%s$}\n' % (str(kq_str))
 
-    content = ('\begin{minipage}{\textwidth} \n' +
-               '\begin{ex}\n' +
+    content = ('\\begin{minipage}{\\textwidth} \n' +
+               '\\begin{ex}\n' +
                str(noidungcauhoi) + str(dapan) +
-               '\loigiai{ \n' + str(loigiai) + '}\n' +
-               '\end{ex}\n \end{minipage} \n\n')
+               '\\loigiai{ \n' + str(loigiai) + '}\n' +
+               '\\end{ex}\n \\end{minipage} \n\n')
     return content

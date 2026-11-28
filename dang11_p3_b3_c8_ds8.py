@@ -142,15 +142,15 @@ def bt_dang11_p3_b3_c8_ds8(self):
         val_raw_str = str(val_raw.quantize(Decimal('0.01'), rounding=ROUND_HALF_UP)).rstrip('0').rstrip('.').replace('.', ',')
 
         noidungcauhoi = ('''Hệ thống camera AI giám sát một ngã tư trong $%s$ ngày ghi nhận số vụ vi phạm vượt đèn đỏ mỗi ngày như bảng sau:\\
-\begin{center}
-\begin{tabular}{|l|c|c|c|c|}
-\hline
+\\begin{center}
+\\begin{tabular}{|l|c|c|c|c|}
+\\hline
 Số vụ vi phạm & $0$ & $1$ & $2$ & $\\ge 3$ \\
-\hline
+\\hline
 Số ngày & $%s$ & $%s$ & $%s$ & $%s$ \\
-\hline
-\end{tabular}
-\end{center}
+\\hline
+\\end{tabular}
+\\end{center}
 Dự đoán trong $%s$ ngày tới, số ngày có không quá $1$ vụ vi phạm nhiều hơn số ngày có từ $2$ vụ vi phạm trở lên là khoảng bao nhiêu ngày (làm tròn kết quả đến hàng đơn vị)?'''
                          % (n_ngay, v0, v1, v2, v3, n_toi))
 
@@ -166,5 +166,5 @@ Chênh lệch số ngày dự đoán trong $%s$ ngày tới là: $%s \\cdot \\df
                '\begin{ex}\n' +
                str(noidungcauhoi) + str(dapan) +
                '\loigiai{ \n' + str(loigiai) + '}\n' +
-               '\end{ex}\n \end{minipage} \n\n')
+               '\end{ex}\n \\end{minipage} \n\n')
     return content

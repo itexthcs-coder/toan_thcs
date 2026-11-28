@@ -141,18 +141,18 @@ def bt_dang7_p3_b3_c8_ds8(self):
         noidungcauhoi = ('''Để ước lượng số cá chép trong một hồ nuôi, người ta bắt lên $%s$ con cá chép, đánh dấu vào vây rồi thả lại xuống hồ. Một tuần sau, người ta bắt ngẫu nhiên $%s$ con cá chép từ hồ đó thì thấy có $%s$ con có dấu trên vây. Hãy ước lượng tổng số cá chép có trong hồ.'''
                          % (k_danh_dau, n_bat_lai, k_co_dau))
 
-        loigiai = ('''Trong $%s$ con cá chép bắt lại, có $%s$ con có dấu trên vây nên xác suất thực nghiệm bắt được cá có dấu là $\\dfrac{%s}{%s} = %s$.\\
-Gọi $N$ là tổng số cá chép có trong hồ. Vì có $%s$ con cá được đánh dấu nên xác suất chọn ngẫu nhiên một con cá có dấu là $\\dfrac{%s}{N}$.\\
-Ước lượng xác suất bằng xác suất thực nghiệm, ta có: $\\dfrac{%s}{N} \\approx \\dfrac{%s}{%s}$.\\
-Suy ra $N \\approx \\dfrac{%s \\cdot %s}{%s} = %s$.\\
+        loigiai = ('''Trong $%s$ con cá chép bắt lại, có $%s$ con có dấu trên vây nên xác suất thực nghiệm bắt được cá có dấu là $\\dfrac{%s}{%s} = %s$.\\\\
+Gọi $N$ là tổng số cá chép có trong hồ. Vì có $%s$ con cá được đánh dấu nên xác suất chọn ngẫu nhiên một con cá có dấu là $\\dfrac{%s}{N}$.\\\\
+Ước lượng xác suất bằng xác suất thực nghiệm, ta có: $\\dfrac{%s}{N} \\approx \\dfrac{%s}{%s}$.\\\\
+Suy ra $N \\approx \\dfrac{%s \\cdot %s}{%s} = %s$.\\\\
 Vậy ước lượng có khoảng $%s$ con cá chép trong hồ.'''
                    % (n_bat_lai, k_co_dau, k_co_dau, n_bat_lai, p_str, k_danh_dau, k_danh_dau, k_danh_dau, k_co_dau, n_bat_lai, k_danh_dau, n_bat_lai, k_co_dau, kq_str, kq_str))
 
-        dapan = '\shortans[0]{$%s$}\n' % (str(kq_str))
+        dapan = '\\shortans[0]{$%s$}\n' % (str(kq_str))
 
-    content = ('\begin{minipage}{\textwidth} \n' +
-               '\begin{ex}\n' +
+    content = ('\\begin{minipage}{\\textwidth} \n' +
+               '\\begin{ex}\n' +
                str(noidungcauhoi) + str(dapan) +
-               '\loigiai{ \n' + str(loigiai) + '}\n' +
-               '\end{ex}\n \end{minipage} \n\n')
+               '\\loigiai{ \n' + str(loigiai) + '}\n' +
+               '\\end{ex}\n \\end{minipage} \n\n')
     return content

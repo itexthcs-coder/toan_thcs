@@ -140,32 +140,32 @@ def bt_dang4_p3_b3_c8_ds8(self):
         p_tc_str = str((Decimal(k_tc) / Decimal(n_mau)).quantize(Decimal('0.001'), rounding=ROUND_HALF_UP)).rstrip('0').rstrip('.').replace('.', ',')
 
         noidungcauhoi = ('''Một quán trà sữa khảo sát ngẫu nhiên $%s$ khách hàng trong ngày khai trương, kết quả thu được như bảng sau:\\
-\begin{center}
-\begin{tabular}{|l|c|c|c|}
-\hline
-Loại đồ uống & Vị truyền thống & Vị ô long & Vị trái cây \\
-\hline
-Số khách chọn & $%s$ & $%s$ & $%s$ \\
-\hline
-\end{tabular}
-\end{center}
+\\begin{center}
+\\begin{tabular}{|l|c|c|c|}
+\\hline
+Loại đồ uống & Vị truyền thống & Vị ô long & Vị trái cây \\\\
+\\hline
+Số khách chọn & $%s$ & $%s$ & $%s$ \\\\
+\\hline
+\\end{tabular}
+\\end{center}
 Nếu trong tuần lễ khuyến mãi quán phục vụ $%s$ lượt khách, dự đoán lượng khách chọn vị ô long nhiều hơn lượng khách chọn vị trái cây là bao nhiêu người?'''
                          % (n_mau, k_tt, k_ol, k_tc, n_khach))
 
-        loigiai = ('''Xác suất thực nghiệm khách chọn vị ô long là $\\dfrac{%s}{%s} = %s$.\\
-Dự đoán trong $%s$ lượt khách có khoảng $%s \\cdot %s = %s$ khách chọn vị ô long.\\
-Xác suất thực nghiệm khách chọn vị trái cây là $\\dfrac{%s}{%s} = %s$.\\
-Dự đoán trong $%s$ lượt khách có khoảng $%s \\cdot %s = %s$ khách chọn vị trái cây.\\
+        loigiai = ('''Xác suất thực nghiệm khách chọn vị ô long là $\\dfrac{%s}{%s} = %s$.\\\\
+Dự đoán trong $%s$ lượt khách có khoảng $%s \\cdot %s = %s$ khách chọn vị ô long.\\\\
+Xác suất thực nghiệm khách chọn vị trái cây là $\\dfrac{%s}{%s} = %s$.\\\\
+Dự đoán trong $%s$ lượt khách có khoảng $%s \\cdot %s = %s$ khách chọn vị trái cây.\\\\
 Vậy lượng khách chọn vị ô long nhiều hơn lượng khách chọn vị trái cây là: $%s - %s = %s$ (người).'''
                    % (k_ol, n_mau, p_ol_str, n_khach, n_khach, p_ol_str, k_ol * he_so,
                       k_tc, n_mau, p_tc_str, n_khach, n_khach, p_tc_str, k_tc * he_so,
                       k_ol * he_so, k_tc * he_so, kq_str))
 
-        dapan = '\shortans[0]{$%s$}\n' % (str(kq_str))
+        dapan = '\\shortans[0]{$%s$}\n' % (str(kq_str))
 
-    content = ('\begin{minipage}{\textwidth} \n' +
-               '\begin{ex}\n' +
+    content = ('\\begin{minipage}{\\textwidth} \n' +
+               '\\begin{ex}\n' +
                str(noidungcauhoi) + str(dapan) +
-               '\loigiai{ \n' + str(loigiai) + '}\n' +
-               '\end{ex}\n \end{minipage} \n\n')
+               '\\loigiai{ \n' + str(loigiai) + '}\n' +
+               '\\end{ex}\n \\end{minipage} \n\n')
     return content

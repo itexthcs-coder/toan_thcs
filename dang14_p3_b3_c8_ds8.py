@@ -139,32 +139,32 @@ def bt_dang14_p3_b3_c8_ds8(self):
         hieu_raw_str = str(hieu_raw.quantize(Decimal('0.0001'), rounding=ROUND_HALF_UP)).rstrip('0').rstrip('.').replace('.', ',')
 
         noidungcauhoi = ('''Gieo một con xúc xắc cân đối $6$ mặt đồng chất $%s$ lần, người ta thấy mặt $%s$ chấm xuất hiện $%s$ lần.\\
-\begin{center}
-\begin{tikzpicture}[scale=1, font=\footnotesize, line join=round, line cap=round, >=stealth]
-\draw[line width=1pt] (0,0) rectangle (1.4,1.4);
-\draw[line width=1pt] (0,1.4) -- (0.5,1.8) -- (1.9,1.8) -- (1.4,1.4);
-\draw[line width=1pt] (1.4,0) -- (1.9,0.4) -- (1.9,1.8);
-\fill (0.4,0.4) circle (1pt);
-\fill (1.0,1.0) circle (1pt);
-\fill (0.7,0.7) circle (1pt);
-\fill (0.4,1.0) circle (1pt);
-\fill (1.0,0.4) circle (1pt);
-\end{tikzpicture}
-\end{center}
+\\begin{center}
+\\begin{tikzpicture}[scale=1, font=\\footnotesize, line join=round, line cap=round, >=stealth]
+\\draw[line width=1pt] (0,0) rectangle (1.4,1.4);
+\\draw[line width=1pt] (0,1.4) -- (0.5,1.8) -- (1.9,1.8) -- (1.4,1.4);
+\\draw[line width=1pt] (1.4,0) -- (1.9,0.4) -- (1.9,1.8);
+\\fill (0.4,0.4) circle (1pt);
+\\fill (1.0,1.0) circle (1pt);
+\\fill (0.7,0.7) circle (1pt);
+\\fill (0.4,1.0) circle (1pt);
+\\fill (1.0,0.4) circle (1pt);
+\\end{tikzpicture}
+\\end{center}
 Hỏi xác suất thực nghiệm xuất hiện mặt $%s$ chấm lớn hơn xác suất lý thuyết của biến cố đó bao nhiêu (viết kết quả dưới dạng số thập phân làm tròn đến hàng phần trăm)?'''
                          % (n_gieo, mat_cham, k_tn, mat_cham))
 
-        loigiai = ('''Vì con xúc xắc cân đối và đồng chất nên $6$ mặt có khả năng xuất hiện như nhau.\\
-Xác suất lý thuyết của biến cố $E$: ``Xuất hiện mặt $%s$ chấm'' là $P(E) = \\dfrac{1}{6}$.\\
-Trong $%s$ lần gieo, mặt $%s$ chấm xuất hiện $%s$ lần nên xác suất thực nghiệm của biến cố $E$ là $\\dfrac{%s}{%s}$.\\
+        loigiai = ('''Vì con xúc xắc cân đối và đồng chất nên $6$ mặt có khả năng xuất hiện như nhau.\\\\
+Xác suất lý thuyết của biến cố $E$: ``Xuất hiện mặt $%s$ chấm'' là $P(E) = \\dfrac{1}{6}$.\\\\
+Trong $%s$ lần gieo, mặt $%s$ chấm xuất hiện $%s$ lần nên xác suất thực nghiệm của biến cố $E$ là $\\dfrac{%s}{%s}$.\\\\
 Xác suất thực nghiệm lớn hơn xác suất lý thuyết là: $\\dfrac{%s}{%s} - \\dfrac{1}{6} = \\dfrac{%s}{%s} = %s \\approx %s$.'''
                    % (mat_cham, n_gieo, mat_cham, k_tn, k_tn, n_gieo, k_tn, n_gieo, chenh, n_gieo, hieu_raw_str, kq_str))
 
-        dapan = '\shortans[0]{$%s$}\n' % (str(kq_str))
+        dapan = '\\shortans[0]{$%s$}\n' % (str(kq_str))
 
-    content = ('\begin{minipage}{\textwidth} \n' +
-               '\begin{ex}\n' +
+    content = ('\\begin{minipage}{\\textwidth} \n' +
+               '\\begin{ex}\n' +
                str(noidungcauhoi) + str(dapan) +
-               '\loigiai{ \n' + str(loigiai) + '}\n' +
-               '\end{ex}\n \end{minipage} \n\n')
+               '\\loigiai{ \n' + str(loigiai) + '}\n' +
+               '\\end{ex}\n \\end{minipage} \n\n')
     return content

@@ -150,15 +150,15 @@ def bt_dang19_p1_b2_c5_ds8(self):
         das3 = random.choice(s)
         
         noidungcauhoi = ("""Bảng thống kê điểm trung bình môn Toán học kì I của bốn tổ lớp 8C được cho như sau:\\\\
-        \begin{center}
-        \begin{tabular}{|c|c|c|c|c|}
-        \hline
-        \textbf{Tổ} & Tổ 1 & Tổ 2 & Tổ 3 & Tổ 4 \\\\
-        \hline
-        \textbf{Điểm trung bình} & $%s$ & $%s$ & $%s$ & $%s$ \\\\
-        \hline
-        \end{tabular}
-        \end{center}
+        \\begin{center}
+        \\begin{tabular}{|c|c|c|c|c|}
+        \\hline
+        \\textbf{Tổ} & Tổ 1 & Tổ 2 & Tổ 3 & Tổ 4 \\\\
+        \\hline
+        \\textbf{Điểm trung bình} & $%s$ & $%s$ & $%s$ & $%s$ \\\\
+        \\hline
+        \\end{tabular}
+        \\end{center}
         Trong các loại biểu đồ sau, biểu đồ nào biểu diễn chính xác và trực quan nhất bảng số liệu trên?"""
                          % (fmt_vn(d1), fmt_vn(d2), fmt_vn(d3), fmt_vn(d4)))
         

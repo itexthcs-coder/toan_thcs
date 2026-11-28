@@ -138,34 +138,34 @@ def bt_dang6_p3_b3_c8_ds8(self):
         pi_raw_str = str(pi_raw.quantize(Decimal('0.0001'), rounding=ROUND_HALF_UP)).replace('.', ',')
 
         noidungcauhoi = ('''Trên sân gạch kẻ các đường thẳng song song cách đều nhau một khoảng $d = %s\\text{ cm}$, một nhóm học sinh thực hiện ném ngẫu nhiên một chiếc que thẳng có độ dài $h = %s\\text{ cm}$ tổng cộng $%s$ lần và đếm được $%s$ lần chiếc que cắt một trong các đường thẳng kẻ trên sân.\\
-\begin{center}
-\begin{tikzpicture}[scale=1, font=\footnotesize, line join=round, line cap=round, >=stealth]
-\draw[line width=1pt] (0,0) -- (6,0);
-\draw[line width=1pt] (0,1.5) -- (6,1.5);
-\draw[line width=1pt] (0,3) -- (6,3);
-\draw[line width=1pt] (1.2,1.1) -- (1.8,1.8);
-\fill (1.2,1.1) circle (1pt);
-\fill (1.8,1.8) circle (1pt);
-\draw[line width=1pt] (3.5,0.3) -- (4.3,0.7);
-\fill (3.5,0.3) circle (1pt);
-\fill (4.3,0.7) circle (1pt);
-\draw[line width=1pt, <->] (5.3,1.5) -- (5.3,3) node[midway, right] {$d$};
-\end{tikzpicture}
-\end{center}
+\\begin{center}
+\\begin{tikzpicture}[scale=1, font=\\footnotesize, line join=round, line cap=round, >=stealth]
+\\draw[line width=1pt] (0,0) -- (6,0);
+\\draw[line width=1pt] (0,1.5) -- (6,1.5);
+\\draw[line width=1pt] (0,3) -- (6,3);
+\\draw[line width=1pt] (1.2,1.1) -- (1.8,1.8);
+\\fill (1.2,1.1) circle (1pt);
+\\fill (1.8,1.8) circle (1pt);
+\\draw[line width=1pt] (3.5,0.3) -- (4.3,0.7);
+\\fill (3.5,0.3) circle (1pt);
+\\fill (4.3,0.7) circle (1pt);
+\\draw[line width=1pt, <->] (5.3,1.5) -- (5.3,3) node[midway, right] {$d$};
+\\end{tikzpicture}
+\\end{center}
 Biết xác suất lý thuyết để chiếc que cắt đường thẳng là $P(E) = \\dfrac{2h}{\\pi d}$, hãy tính giá trị gần đúng của số $\\pi$ thu được từ thí nghiệm trên (làm tròn kết quả đến hàng phần trăm).'''
                          % (d, h, n_nem, k_cat))
 
-        loigiai = ('''Xác suất thực nghiệm của biến cố $E$: ``Chiếc que cắt một trong các đường thẳng kẻ trên sân'' là $\\dfrac{%s}{%s}$.\\
-Theo mối liên hệ giữa xác suất thực nghiệm và xác suất, ta có $P(E) \\approx \\dfrac{%s}{%s}$, suy ra $\\dfrac{2h}{\\pi d} \\approx \\dfrac{%s}{%s}$.\\
-Thay $h = %s$ và $d = %s$ vào hệ thức trên, ta được: $\\dfrac{2 \\cdot %s}{\\pi \\cdot %s} \\approx \\dfrac{%s}{%s} \\Leftrightarrow \\dfrac{1}{\\pi} \\approx \\dfrac{%s}{%s}$.\\
+        loigiai = ('''Xác suất thực nghiệm của biến cố $E$: ``Chiếc que cắt một trong các đường thẳng kẻ trên sân'' là $\\dfrac{%s}{%s}$.\\\\
+Theo mối liên hệ giữa xác suất thực nghiệm và xác suất, ta có $P(E) \\approx \\dfrac{%s}{%s}$, suy ra $\\dfrac{2h}{\\pi d} \\approx \\dfrac{%s}{%s}$.\\\\
+Thay $h = %s$ và $d = %s$ vào hệ thức trên, ta được: $\\dfrac{2 \\cdot %s}{\\pi \\cdot %s} \\approx \\dfrac{%s}{%s} \\Leftrightarrow \\dfrac{1}{\\pi} \\approx \\dfrac{%s}{%s}$.\\\\
 Từ đó suy ra $\\pi \\approx \\dfrac{%s}{%s} = %s \\approx %s$.'''
                    % (k_cat, n_nem, k_cat, n_nem, k_cat, n_nem, h, d, h, d, k_cat, n_nem, k_cat, n_nem, n_nem, k_cat, pi_raw_str, kq_str))
 
-        dapan = '\shortans[0]{$%s$}\n' % (str(kq_str))
+        dapan = '\\shortans[0]{$%s$}\n' % (str(kq_str))
 
-    content = ('\begin{minipage}{\textwidth} \n' +
-               '\begin{ex}\n' +
+    content = ('\\begin{minipage}{\\textwidth} \n' +
+               '\\begin{ex}\n' +
                str(noidungcauhoi) + str(dapan) +
-               '\loigiai{ \n' + str(loigiai) + '}\n' +
-               '\end{ex}\n \end{minipage} \n\n')
+               '\\loigiai{ \n' + str(loigiai) + '}\n' +
+               '\\end{ex}\n \\end{minipage} \n\n')
     return content
